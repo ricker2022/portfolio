@@ -1,0 +1,508 @@
+<html lang="zh-TW">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport"
+    content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0" />
+  <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+  <title>Ricker's portfolio</title>
+
+  <meta property="og:type" content="website" />
+  <meta property="og:title" content="Ricker's portfolio" />
+  <meta property="og:site_name" content="Ricker's portfolio" />
+  <meta property="og:locale" content="zh-TW" />
+  <meta name="twitter:card" content="summary" />
+  <meta name="twitter:title" content="Ricker's portfolio" />
+  <meta name="keywords" content="tanxin,Ricker's portfolio" />
+  <meta name="apple-mobile-web-app-capable" content="yes" />
+  <meta name="apple-mobile-web-app-status-bar-style" content="black" />
+  <link rel="icon" href="icon192.png" sizes="192x192" type="image/png">
+  <link rel="apple-touch-icon" href="icon180.png" sizes="180x180">
+  <link rel="shortcut icon" href="icon64.ico">
+  <meta name="description" content="Ricker's portfolio" />
+
+  <link rel="stylesheet" href="src/css/bootstrap.min.css" />
+  <!--[if lt IE 9]>
+      <script src="src/js/html5shiv.min.js"></script>
+      <script src="src/js/respond.min.js"></script>
+    <![endif]-->
+
+  <link rel="stylesheet" href="src/css/animate.min.css" />
+  <link rel="stylesheet" href="src/css/index.css?d=20230212" />
+  <link rel="stylesheet" href="src/css/autoTyped.css?d=202302" />
+</head>
+
+<body>
+  <!-- <div class="loading">Loading&#8230;</div> -->
+
+  <div id="wrap" class="container">
+    <div class="row">
+      <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
+        <div class="container">
+          <div class="navbar-header">
+            <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+              <span class="sr-only"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+            </button>
+            <!-- <a class="navbar-brand" href="/">
+              <div class="logo">
+                <img src="src/img/ricker_portfolio.png" />
+              </div>
+              <div class="logo_name">//</div>
+            </a> -->
+          </div>
+          <!-- 手機隱藏選單區 -->
+          <div class="collapse navbar-collapse navbar-collapse">
+            <!-- 右選單 -->
+            <ul class="nav navbar-nav navbar-right">
+              <li class="active"><a class="mainPage" href="/main">關於我</a></li>
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">作品集 <b class="caret"></b></a>
+                <ul class="dropdown-menu">
+                  <li>
+                    <a class="dropdown-menu-a-web" href="javascript:;" data-type="menu_web">about 網站</a>
+                  </li>
+                  <li>
+                    <a class="dropdown-menu-a-ui" href="javascript:;" data-type="menu_ui">about 平面</a>
+                  </li>
+                </ul>
+              </li>
+            </ul>
+          </div>
+          <!-- 手機隱藏選單區結束 -->
+        </div>
+      </nav>
+    </div>
+  </div>
+
+  <main>
+    <div id="mainPhoto_Area" class="col-sm-12 mainPhoto_container">
+      <div class="row">
+        <div class="mainPhoto_info">
+          <div class="mainPhoto_img">
+            <img src="src/img/mickey.jpg">
+            <div class="mainPhoto_pic"></div>
+            <div class="mainPhoto_pic mainPhoto_pic_right"></div>
+          </div>
+          <div class="mainPhoto_sign">
+            <img class="ricker_sign" src="src/img/Ricker_sign.svg">
+          </div>
+          <div class="mainPhoto_txt">
+            <span id="ityped" class="autoTyped_Position"></span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <div id="AboutMe_Area" class="col-sm-12 aboutMe_container">
+      <div class="col-xs-12 col-lg-6 AboutMe_Education">
+        <div class="row">
+          <ul>
+            <li>
+              <h4>國立台中技術學院(現台中科技大學)</h4>
+              <h4>多媒體設計研究所</h4>
+              <h5>2008 / 09 - 2010 / 06 (畢業)</h5>
+            </li>
+            <li>
+              <h4>國立虎尾科技大學</h4>
+              <h4>資訊管理系</h4>
+              <h5>2004 / 09 - 2008 / 06 (畢業)</h5>
+            </li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-xs-12 col-lg-6 AboutMe_Experience">
+        <div class="row">
+          <ul>
+            <li>
+              <h4>台灣區運營經理</h4>
+              <h5>香港商泰克科技亞洲有限公司 2020 / 10 - 2022 / 08</h5>
+            </li>
+            <li>
+              <h4>網頁設計 & 前端工程師</h4>
+              <h5>香港商泰克科技亞洲有限公司 2018 / 12 - 2022 / 08</h5>
+            </li>
+            <li>
+              <h4>網頁設計 & 前端工程師</h4>
+              <h5>網銀國際股份有限公司 2013 / 03 - 2018 / 10</h5>
+            </li>
+            <li>
+              <h4>網頁設計師</h4>
+              <h5>中陽集團 2011 / 11 - 2013 / 03</h5>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+
+    <div id="portfolio_Area" class="col-sm-12 portfolio_container">
+      <div class="col-sm-12 portfolio_title">
+        <h3>About Work Experience</h3>
+        <div>
+          <h6>多年網頁開發經驗，豐富的網站開發及動態效果之呈現，擁有電商、遊戲產業經驗，為公司前端人員之主力</h6>
+          <h6>熟悉 HTML5、CSS3 及 jQuery 之運用，熟悉 MVC 架構，並擁有多項實作專案，可獨立作業</h6>
+          <h6>個性穩重嚴謹，工作上細心且積極，樂於學習，學習力良好，樂於溝通協助他人</h6>          
+        </div>
+      </div>
+      <div class="col-sm-12 col-lg-6 protfolio_info">
+        <h4>★ 香港商泰克科技亞洲有限公司 2018 / 12 - 2022 / 08</h4>
+        <h5>2018年在台成立辦事處，母公司為英國上市的金融科技公司，
+          已有10年機構交易平台建立的專業經驗，專門為銀行、期貨公司和外匯公司提供流動性報價和交易系統。
+        </h5>
+        <h5>職稱： 台灣區運營經理 (前期為前端工程師)</h5>
+        <h5>職責：</h5>
+        <div class="portfolio_items">
+          <ul>
+            <li>台灣區人才招募、教育訓練、出缺勤管理及薪資核算</li>
+            <li>金融app系統運作異常時緊急處理</li>
+            <li>客訴方案制訂及後續處理追蹤</li>
+            <li>社交app官網規劃制作及維護</li>
+            <li>與社交app前端人員溝通出圖</li>
+          </ul>
+        </div>
+        <h5>專案成就：</h5>
+        <div class="portfolio_items">
+          <ul>
+            <li>社交app官網規劃及製作 (HTML/SASS/jQuery/RWD/JavaScript ES6) - 已結束運營</li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-sm-12 col-lg-6 protfolio_info">
+        <h4>★ 網銀國際股份有限公司 2013 / 03 – 2018 / 10</h4>
+        <h5>
+          2008年創立，是台灣最具規模的遊戲研發公司，在專業領域上，不
+          論是自製遊戲、代理營運遊戲、應用程式皆有相當亮眼的成績，其
+          中星城 Online 更在 APP 市場於遊戲類別達到 Top1 的成績。
+        </h5>
+        <h5>職稱：前端工程師/h5>
+          <h5>職責：</h5>
+          <div class="portfolio_items">
+            <ul>
+              <li>公司各官網切版製作及維護</li>
+              <li>EDM製作</li>
+              <li>網站導入新技術 (RWD、bootstrap、CSS3、Html5、SASS)</li>
+              <li>PageSpeed Insights效能優化</li>
+              <li>美術及後端人員溝通</li>
+            </ul>
+          </div>
+          <h5>專案成就：</h5>
+          <div class="portfolio_items">
+            <ul>
+              <li>HelloKitty夢幻樂園 (Html5、SASS、jQuery、RWD、MVC) - 已結束運營</li>
+              <li>閃電狼官方網站 (Html5、CSS、jQuery) - 已更版</li>
+              <li>MoLo 官方網站 (HTML5、CSS、jQeury)</li>
+              <li>Casinsanity官方網站 (HTML/SASS/jQuery/RWD/MVC) - 網域已變更</li>
+              <li>網銀基金會官方網站 (HTML5/CSS/jQuery)</li>
+              <li>星城Online官方網站手機版 (Html5/jQuery/CSS) - 已更版</li>
+            </ul>
+          </div>
+      </div>
+
+      <div class="col-sm-12 col-lg-6 protfolio_info">
+        <h4>★ 中陽集團 大買家股份有限公司 2011 / 11 – 2013 / 03</h4>
+        <h5>
+          中陽集團，旗下包含集團總公司、坤福營造、中陽建設、中陽文創
+          藝術、大買家量販等事業體。大買家除享有台中量販業績龍頭美譽
+          外更是首創全台大型實體店投入電子商務之先例。
+        </h5>
+        <h5>職稱：網頁設計師</h5>
+        <h5>職責：</h5>
+        <div class="portfolio_items">
+          <ul>
+            <li>商場網頁設計</li>
+            <li>EDM製作</li>
+            <li>BANNER製作</li>
+            <li>商品修圖</li>
+          </ul>
+        </div>
+        <h5>專案成就：</h5>
+        <div class="portfolio_items">
+          <ul>
+            <li>檔期 EDM 獨立製作</li>
+            <li>商場活動網頁設計開發</li>
+        </div>
+      </div>
+    </div>
+
+    <div id="skill_Area" class="col-sm-12 Skill_container">
+      <div class="col-sm-12 skill_title">
+        <h3>About Technology</h3>
+      </div>
+      <div class="col-sm-6 col-lg-3">
+        <h5>語言：</h5>
+        <ul>
+          <li class="HTML5">
+            <img src="src/img/html5_icon.png">
+            HTML5</li>
+          <li class="CSS3">
+            <img src="src/img/css3_icon.png">
+            CSS3</li>
+          <li class="Javascript">
+            <img src="src/img/java_icon.png">
+            Javascript</li>
+        </ul>
+      </div>
+      <div class="col-sm-6 col-lg-3">
+        <h5>軟體：</h5>
+        <ul>
+          <li class="Photoshop">
+            <img src="src/img/ps_icon.png">
+            Photoshop</li>
+          <li class="Illustrator">
+            <img src="src/img/ai_icon.png">
+            Illustrator</li>
+          <li class="Dreamweaver">
+            <img src="src/img/dw_icon.png">
+            Dreamweaver</li>
+          <li class="Xd">
+            <img src="src/img/xd_icon.png">
+            Adobe Xd</li>
+        </ul>
+      </div>
+      <div class="col-sm-6 col-lg-3">
+        <h5>版控：</h5>
+        <ul>
+          <li class="Svn">SVN</li>
+          <li class="Git">
+            <img src="src/img/git_icon.png">
+            GIT</li>
+        </ul>
+      </div>
+      <div class="col-sm-6 col-lg-3">
+        <h5>函式庫：</h5>
+        <ul>
+          <li class="jQuery">
+            <img src="src/img/jquery_icon.png">
+            jQuery</li>
+        </ul>
+      </div>
+      <div class="clear-fix"></div>
+      <div class="col-sm-6 col-lg-3">
+        <h5>架構：</h5>
+        <ul>
+          <li class="Mvc">MVC</li>
+        </ul>
+      </div>
+    </div>
+
+    <div id="collections_Area" class="col-sm-12 collections_container">
+      <div class="col-sm-12 collections_title">
+        <h3>About Collections</h3>
+      </div>
+      <div class="col-sm-12 col-lg-4 collections_items">
+        <div class="collections_img">
+          <a href="/" target="_blank">
+            <img src="src/img/html5_icon.png">
+          </a>
+        </div>
+        <div class="collections_name">探心社交app官方網站</div>
+        <div class="collections_info">HTML / SASS / jQuery / RWD / JavaScript ES6</div>
+      </div>
+
+      <div class="col-sm-12 col-lg-4 collections_items">
+        <div class="collections_img">
+          <a href="/" target="_blank">
+            <img src="src/img/css3_icon.png">
+          </a>
+        </div>
+        <div class="collections_name">Hello Kitty夢幻樂園</div>
+        <div class="collections_info">HTML / SASS / jQuery / RWD / MVC</div>
+      </div>
+
+      <div class="col-sm-12 col-lg-4 collections_items">
+        <div class="collections_img">
+          <a href="/" target="_blank">
+            <img src="src/img/html5_icon.png">
+          </a>
+        </div>
+        <div class="collections_name">探心社交app官方網站</div>
+        <div class="collections_info">HTML / SASS / jQuery / RWD / JavaScript ES6</div>
+      </div>
+
+      <div class="col-sm-12 col-lg-4 collections_items">
+        <div class="collections_img">
+          <a href="/" target="_blank">
+            <img src="src/img/css3_icon.png">
+          </a>
+        </div>
+        <div class="collections_name">Hello Kitty夢幻樂園</div>
+        <div class="collections_info">HTML / SASS / jQuery / RWD / MVC</div>
+      </div>
+      <div class="col-sm-12 col-lg-4 collections_items">
+        <div class="collections_img">
+          <a href="/" target="_blank">
+            <img src="src/img/html5_icon.png">
+          </a>
+        </div>
+        <div class="collections_name">探心社交app官方網站</div>
+        <div class="collections_info">HTML / SASS / jQuery / RWD / JavaScript ES6</div>
+      </div>
+
+      <div class="col-sm-12 col-lg-4 collections_items">
+        <div class="collections_img">
+          <a href="/" target="_blank">
+            <img src="src/img/css3_icon.png">
+          </a>
+        </div>
+        <div class="collections_name">Hello Kitty夢幻樂園</div>
+        <div class="collections_info">HTML / SASS / jQuery / RWD / MVC</div>
+      </div>
+    </div>
+  </main>
+
+  <footer id="default-footer">
+    <div class="container">
+      <div class="bottom-bar">
+        <span class="footer-companyName">Copyright © 2023 RICKER All rights reserved.</span>
+      </div>
+    </div>
+  </footer>
+
+  <script src="src/js/jquery.js"></script>
+  <script src="src/js/bootstrap.min.js"></script>
+  <!-- <script src=".//src/js/index.js"></script> -->
+
+  <script>
+    $(document).ready(function () {
+      // 下載區
+      // $(".app-download-Android").click(function() {
+      //   var isWeixin;
+      //   var path ="https://tanxin-app.oss-cn-shenzhen.aliyuncs.com/release/website/tanxin-cn.apk";
+      //     var ua = navigator.userAgent.toLowerCase();
+      //     if (ua.match(/MicroMessenger/i) == "micromessenger") {
+      //       isWeixin = true;
+      //     } else {
+      //       isWeixin = false;
+      //     }
+      //     if (isWeixin) {
+      //       $("#weixin-tip").show();
+      //       $("html").css('position','fixed');
+      //     } else {
+      //       window.open(path, "_blank"); // 新窗口打开外链接
+      //     }
+      //   return false;
+      // });
+
+      // $(".app-download-iOS").click(function() {
+      //   window.open("https://apps.apple.com/cn/app/id1525846625");
+      //   return false;
+      // });
+
+      // $("#weixin-tip").click(function() {
+      //   $("#weixin-tip").hide();
+      //   $("html").css('position','initial');
+      // })
+
+      //載入對應的css
+      // var head = document.getElementsByTagName("HEAD").item(0);
+      // var style = document.createElement("link");
+      // var langCss = "cn";
+      // style.href = "src/css/autoTyped_" + langCss + ".min.css";
+      // style.rel = "stylesheet";
+      // style.type = "text/css";
+      // head.appendChild(style);
+
+      // $(".dropdown-menu li a").click(function() {
+      //   var langCss = $(this)
+      //     .attr("data-lan")
+      //     .split("_");
+
+      //   var head = document.getElementsByTagName("HEAD").item(0);
+      //   var style = document.createElement("link");
+      //   style.href = "src/css/autoTyped_" + langCss[1].toLowerCase() + ".min.css";
+      //   style.rel = "stylesheet";
+      //   style.type = "text/css";
+      //   head.appendChild(style);
+
+      //   if (langCss[1].toLowerCase() === "cn") {
+      //     $("link").each(function() {
+      //       if ($(this).attr("href") == "src/css/autoTyped_hk.min.css") {
+      //         $(this).remove();
+      //       }
+      //     });
+      //   } else if (langCss[1].toLowerCase() === "hk") {
+      //     $("link").each(function() {
+      //       if ($(this).attr("href") == "src/css/autoTyped_cn.min.css") {
+      //         $(this).remove();
+      //       }
+      //     });
+      //   }
+
+      //   if (langCss[1].toLowerCase() === "cn") {
+      //     $(".dropdown-toggle").html("简体中文(zh-CN) <b class='caret'></b>");
+      //     $(".sr-only").text("选单切换");
+      //     $(".mainPage").text("首页");
+      //     $(".supportPage").text("支持服务");
+      //     $("#topAreaImg").attr("src", "https://tanxin-app.oss-cn-shenzhen.aliyuncs.com/website/pink/mainPic_cn.png");
+      //     $(".topArea-link-span > div").text("想要脱单，你的人脉就要广泛。");
+      //     $(".app-qrCode-txt").text("手机扫码下载");
+      //     $(".app-appDownloadiOS").text("苹果端客户下载");
+      //     $(".app-appDownloadAndioid").text("安卓客户端下载");
+      //     $(".modal-body > p").text("敬请期待!!");
+      //     $("#infoImg1").attr("src", "https://tanxin-app.oss-cn-shenzhen.aliyuncs.com/website/pink/info1_cn.jpg");
+      //     $(".infoTxt1 > div >  h2").text("探心APP介紹");
+      //     $(".infoTxt1 > div >  div").html(
+      //       "<p>探心是一款快速高效认识新朋友的交友软件。</p><p>有趣的人在这等你。</p><p>发动态发照片展示自我，让大家更了解你。</p><p>发约会更加轻松高效交友。</p><p>探心里的相遇更为有趣。</p>"
+      //     );
+      //     $("#infoImg2").attr("src", "https://tanxin-app.oss-cn-shenzhen.aliyuncs.com/website/pink/info2_cn.jpg");
+      //     $(".infoTxt2 > div >  h2").text("探心APP特点");
+      //     $(".infoTxt2 > div >  div").html(
+      //       "<p>【附近】浏览附近的人，发现身边有趣的人</p><p>【动态】发布文字或图片动态，展示自己，聊天不尴尬</p><p>【约会】发布约会快速见到兴趣相投的人</p>"
+      //     );
+      //     $(".footer-companyName").text("深圳市卡迪帝科技有限公司");
+      //     $(".footer-icp").text("粤ICP备20022749号");
+      //     $(".footer-privacy").text("隐私政策");
+      //   } else if (langCss[1].toLowerCase() === "hk") {
+      //     $(".dropdown-toggle").html("繁體中文(zh-HK) <b class='caret'></b>");
+      //     $(".sr-only").text("選單切換");
+      //     $(".mainPage").text("首頁");
+      //     $(".supportPage").text("支持服務");
+      //     $("#topAreaImg").attr("src", "https://tanxin-app.oss-cn-shenzhen.aliyuncs.com/website/pink/mainPic_hk.png");
+      //     $(".topArea-link-span > div").text("想要脫單，你的人脈就要廣泛。");
+      //     $(".app-qrCode-txt").text("手機掃碼下載");
+      //     $(".app-appDownloadiOS").text("蘋果客戶端下載");
+      //     $(".app-appDownloadAndioid").text("安卓客戶端下載");
+      //     $(".modal-body > p").text("敬請期待!!");
+      //     $("#infoImg1").attr("src", "https://tanxin-app.oss-cn-shenzhen.aliyuncs.com/website/pink/info1_hk.jpg");
+      //     $(".infoTxt1 > div >  h2").text("探心APP介紹");
+      //     $(".infoTxt1 > div >  div").html(
+      //       "<p>探心是一款快速高效認識新朋友的交友軟件。</p><p>有趣的人在這等你。</p><p>發動態發照片展示自我，讓大家更了解你。</p><p>發約會更加輕鬆高效交友。</p><p>探心裡的相遇更為有趣。</p>"
+      //     );
+      //     $("#infoImg2").attr("src", "https://tanxin-app.oss-cn-shenzhen.aliyuncs.com/website/pink/info2_hk.jpg");
+      //     $(".infoTxt2 > div >  h2").text("探心APP特點");
+      //     $(".infoTxt2 > div >  div").html(
+      //       "<p>【附近】瀏覽附近的人，發現身邊有趣的人</p><p>【動態】發布文字或圖片動態，展示自己，聊天不尷尬</p><p>【約會】發布約會快速見到興趣相投的人</p>"
+      //     );
+      //     $(".footer-companyName").text("深圳市卡迪帝科技有限公司");
+      //     $(".footer-icp").text("粵ICP備20022749號");
+      //     $(".footer-privacy").text("隱私政策");
+      //   }
+      // });
+
+      window.onload = function () {
+        $(".loading").fadeOut(500);
+
+        // var winHeight = window.innerHeight;
+        // var isWeixin;
+        // var ua = navigator.userAgent.toLowerCase();
+        // if (ua.match(/MicroMessenger/i) == 'micromessenger') {
+        //   isWeixin = true;
+        // } else {
+        //   isWeixin = false;
+        // }
+        // if (isWeixin) {
+        //   $("html").css('position', 'initial');
+        //   $("#weixin-tip").css('height',winHeight);
+        //   $("#weixin-tip").hide();
+        // }
+        // console.log("lanch on weixin:", isWeixin);
+      };
+    });
+  </script>
+</body>
+
+</html>
