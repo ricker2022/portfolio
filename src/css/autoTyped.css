@@ -1,0 +1,749 @@
+@charset "UTF-8";
+@-webkit-keyframes typed {
+  /* string 1, char 1 */
+  0%, 0.7082198582% {
+    content: "F";
+  }
+  /* string 1, char 2 */
+  0.7092198582%, 1.4174397163% {
+    content: "Fo";
+  }
+  /* string 1, char 3 */
+  1.4184397163%, 2.1266595745% {
+    content: "Fon";
+  }
+  /* string 1, char 4 */
+  2.1276595745%, 2.8358794326% {
+    content: "Font";
+  }
+  /* string 1, char 5 */
+  2.8368794326%, 3.5450992908% {
+    content: "Font-";
+  }
+  /* string 1, char 6 */
+  3.5460992908%, 4.2543191489% {
+    content: "Font-E";
+  }
+  /* string 1, char 7 */
+  4.2553191489%, 4.9635390071% {
+    content: "Font-En";
+  }
+  /* string 1, char 8 */
+  4.9645390071%, 5.6727588652% {
+    content: "Font-End";
+  }
+  /* string 1, char 9 */
+  5.6737588652%, 6.3819787234% {
+    content: "Font-End ";
+  }
+  /* string 1, char 10 */
+  6.3829787234%, 7.0911985816% {
+    content: "Font-End E";
+  }
+  /* string 1, char 11 */
+  7.0921985816%, 7.8004184397% {
+    content: "Font-End En";
+  }
+  /* string 1, char 12 */
+  7.8014184397%, 8.5096382979% {
+    content: "Font-End Eng";
+  }
+  /* string 1, char 13 */
+  8.5106382979%, 9.218858156% {
+    content: "Font-End Engi";
+  }
+  /* string 1, char 14 */
+  9.219858156%, 9.9280780142% {
+    content: "Font-End Engin";
+  }
+  /* string 1, char 15 */
+  9.9290780142%, 10.6372978723% {
+    content: "Font-End Engine";
+  }
+  /* string 1, char 16 */
+  10.6382978723%, 11.3465177305% {
+    content: "Font-End Enginee";
+  }
+  /* string 1, char 17 */
+  11.3475177305%, 12.0557375887% {
+    content: "Font-End Engineer";
+  }
+  /* string 1, char 18 */
+  12.0567375887%, 12.7649574468% {
+    content: "Font-End Engineer ";
+  }
+  /* string 1, char 19 */
+  12.7659574468%, 13.474177305% {
+    content: "Font-End Engineer /";
+  }
+  /* string 1, char 20 */
+  13.475177305%, 14.1833971631% {
+    content: "Font-End Engineer / ";
+  }
+  /* string 1, char 21 */
+  14.1843971631%, 14.8926170213% {
+    content: "Font-End Engineer / W";
+  }
+  /* string 1, char 22 */
+  14.8936170213%, 15.6018368794% {
+    content: "Font-End Engineer / We";
+  }
+  /* string 1, char 23 */
+  15.6028368794%, 16.3110567376% {
+    content: "Font-End Engineer / Web";
+  }
+  /* string 1, char 24 */
+  16.3120567376%, 17.0202765957% {
+    content: "Font-End Engineer / Web ";
+  }
+  /* string 1, char 25 */
+  17.0212765957%, 17.7294964539% {
+    content: "Font-End Engineer / Web D";
+  }
+  /* string 1, char 26 */
+  17.7304964539%, 18.4387163121% {
+    content: "Font-End Engineer / Web De";
+  }
+  /* string 1, char 27 */
+  18.4397163121%, 19.1479361702% {
+    content: "Font-End Engineer / Web Des";
+  }
+  /* string 1, char 28 */
+  19.1489361702%, 19.8571560284% {
+    content: "Font-End Engineer / Web Desi";
+  }
+  /* string 1, char 29 */
+  19.8581560284%, 20.5663758865% {
+    content: "Font-End Engineer / Web Desig";
+  }
+  /* string 1, char 30 */
+  20.5673758865%, 21.2755957447% {
+    content: "Font-End Engineer / Web Design";
+  }
+  /* string 1, char 31 */
+  21.2765957447%, 21.9848156028% {
+    content: "Font-End Engineer / Web Designe";
+  }
+  /* string 1, char 32 */
+  21.9858156028%, 37.4458085106% {
+    content: "Font-End Engineer / Web Designer";
+  }
+  /* string 1, char 33 */
+  37.4468085106%, 38.0131843972% {
+    content: "Font-End Engineer / Web Designe";
+  }
+  /* string 1, char 34 */
+  38.0141843972%, 38.5805602837% {
+    content: "Font-End Engineer / Web Design";
+  }
+  /* string 1, char 35 */
+  38.5815602837%, 39.1479361702% {
+    content: "Font-End Engineer / Web Desig";
+  }
+  /* string 1, char 36 */
+  39.1489361702%, 39.7153120567% {
+    content: "Font-End Engineer / Web Desi";
+  }
+  /* string 1, char 37 */
+  39.7163120567%, 40.2826879433% {
+    content: "Font-End Engineer / Web Des";
+  }
+  /* string 1, char 38 */
+  40.2836879433%, 40.8500638298% {
+    content: "Font-End Engineer / Web De";
+  }
+  /* string 1, char 39 */
+  40.8510638298%, 41.4174397163% {
+    content: "Font-End Engineer / Web D";
+  }
+  /* string 1, char 40 */
+  41.4184397163%, 41.9848156028% {
+    content: "Font-End Engineer / Web ";
+  }
+  /* string 1, char 41 */
+  41.9858156028%, 42.5521914894% {
+    content: "Font-End Engineer / Web";
+  }
+  /* string 1, char 42 */
+  42.5531914894%, 43.1195673759% {
+    content: "Font-End Engineer / We";
+  }
+  /* string 1, char 43 */
+  43.1205673759%, 43.6869432624% {
+    content: "Font-End Engineer / W";
+  }
+  /* string 1, char 44 */
+  43.6879432624%, 44.2543191489% {
+    content: "Font-End Engineer / ";
+  }
+  /* string 1, char 45 */
+  44.2553191489%, 44.8216950355% {
+    content: "Font-End Engineer /";
+  }
+  /* string 1, char 46 */
+  44.8226950355%, 45.389070922% {
+    content: "Font-End Engineer ";
+  }
+  /* string 1, char 47 */
+  45.390070922%, 45.9564468085% {
+    content: "Font-End Engineer";
+  }
+  /* string 1, char 48 */
+  45.9574468085%, 46.523822695% {
+    content: "Font-End Enginee";
+  }
+  /* string 1, char 49 */
+  46.524822695%, 47.0911985816% {
+    content: "Font-End Engine";
+  }
+  /* string 1, char 50 */
+  47.0921985816%, 47.6585744681% {
+    content: "Font-End Engin";
+  }
+  /* string 1, char 51 */
+  47.6595744681%, 48.2259503546% {
+    content: "Font-End Engi";
+  }
+  /* string 1, char 52 */
+  48.2269503546%, 48.7933262411% {
+    content: "Font-End Eng";
+  }
+  /* string 1, char 53 */
+  48.7943262411%, 49.3607021277% {
+    content: "Font-End En";
+  }
+  /* string 1, char 54 */
+  49.3617021277%, 49.9280780142% {
+    content: "Font-End E";
+  }
+  /* string 1, char 55 */
+  49.9290780142%, 50.4954539007% {
+    content: "Font-End ";
+  }
+  /* string 1, char 56 */
+  50.4964539007%, 51.0628297872% {
+    content: "Font-End";
+  }
+  /* string 1, char 57 */
+  51.0638297872%, 51.6302056738% {
+    content: "Font-En";
+  }
+  /* string 1, char 58 */
+  51.6312056738%, 52.1975815603% {
+    content: "Font-E";
+  }
+  /* string 1, char 59 */
+  52.1985815603%, 52.7649574468% {
+    content: "Font-";
+  }
+  /* string 1, char 60 */
+  52.7659574468%, 53.3323333333% {
+    content: "Font";
+  }
+  /* string 1, char 61 */
+  53.3333333333%, 53.8997092199% {
+    content: "Fon";
+  }
+  /* string 1, char 62 */
+  53.9007092199%, 54.4670851064% {
+    content: "Fo";
+  }
+  /* string 1, char 63 */
+  54.4680851064%, 55.0344609929% {
+    content: "F";
+  }
+  /* string 1, char 64 */
+  55.0354609929%, 62.1266595745% {
+    content: "​";
+  }
+  /* string 2, char 1 */
+  62.1276595745%, 62.8358794326% {
+    content: "前";
+  }
+  /* string 2, char 2 */
+  62.8368794326%, 63.5450992908% {
+    content: "前端";
+  }
+  /* string 2, char 3 */
+  63.5460992908%, 64.2543191489% {
+    content: "前端工";
+  }
+  /* string 2, char 4 */
+  64.2553191489%, 64.9635390071% {
+    content: "前端工程";
+  }
+  /* string 2, char 5 */
+  64.9645390071%, 65.6727588652% {
+    content: "前端工程師";
+  }
+  /* string 2, char 6 */
+  65.6737588652%, 66.3819787234% {
+    content: "前端工程師 ";
+  }
+  /* string 2, char 7 */
+  66.3829787234%, 67.0911985816% {
+    content: "前端工程師 /";
+  }
+  /* string 2, char 8 */
+  67.0921985816%, 67.8004184397% {
+    content: "前端工程師 / ";
+  }
+  /* string 2, char 9 */
+  67.8014184397%, 68.5096382979% {
+    content: "前端工程師 / 網";
+  }
+  /* string 2, char 10 */
+  68.5106382979%, 69.218858156% {
+    content: "前端工程師 / 網頁";
+  }
+  /* string 2, char 11 */
+  69.219858156%, 69.9280780142% {
+    content: "前端工程師 / 網頁設";
+  }
+  /* string 2, char 12 */
+  69.9290780142%, 70.6372978723% {
+    content: "前端工程師 / 網頁設計";
+  }
+  /* string 2, char 13 */
+  70.6382978723%, 86.0982907801% {
+    content: "前端工程師 / 網頁設計師";
+  }
+  /* string 2, char 14 */
+  86.0992907801%, 86.6656666667% {
+    content: "前端工程師 / 網頁設計";
+  }
+  /* string 2, char 15 */
+  86.6666666667%, 87.2330425532% {
+    content: "前端工程師 / 網頁設";
+  }
+  /* string 2, char 16 */
+  87.2340425532%, 87.8004184397% {
+    content: "前端工程師 / 網頁";
+  }
+  /* string 2, char 17 */
+  87.8014184397%, 88.3677943262% {
+    content: "前端工程師 / 網";
+  }
+  /* string 2, char 18 */
+  88.3687943262%, 88.9351702128% {
+    content: "前端工程師 / ";
+  }
+  /* string 2, char 19 */
+  88.9361702128%, 89.5025460993% {
+    content: "前端工程師 /";
+  }
+  /* string 2, char 20 */
+  89.5035460993%, 90.0699219858% {
+    content: "前端工程師 ";
+  }
+  /* string 2, char 21 */
+  90.0709219858%, 90.6372978723% {
+    content: "前端工程師";
+  }
+  /* string 2, char 22 */
+  90.6382978723%, 91.2046737589% {
+    content: "前端工程";
+  }
+  /* string 2, char 23 */
+  91.2056737589%, 91.7720496454% {
+    content: "前端工";
+  }
+  /* string 2, char 24 */
+  91.7730496454%, 92.3394255319% {
+    content: "前端";
+  }
+  /* string 2, char 25 */
+  92.3404255319%, 92.9068014184% {
+    content: "前";
+  }
+  /* string 2, char 26 */
+  92.9078014184%, 100% {
+    content: "​";
+  }
+}
+@keyframes typed {
+  /* string 1, char 1 */
+  0%, 0.7082198582% {
+    content: "F";
+  }
+  /* string 1, char 2 */
+  0.7092198582%, 1.4174397163% {
+    content: "Fo";
+  }
+  /* string 1, char 3 */
+  1.4184397163%, 2.1266595745% {
+    content: "Fon";
+  }
+  /* string 1, char 4 */
+  2.1276595745%, 2.8358794326% {
+    content: "Font";
+  }
+  /* string 1, char 5 */
+  2.8368794326%, 3.5450992908% {
+    content: "Font-";
+  }
+  /* string 1, char 6 */
+  3.5460992908%, 4.2543191489% {
+    content: "Font-E";
+  }
+  /* string 1, char 7 */
+  4.2553191489%, 4.9635390071% {
+    content: "Font-En";
+  }
+  /* string 1, char 8 */
+  4.9645390071%, 5.6727588652% {
+    content: "Font-End";
+  }
+  /* string 1, char 9 */
+  5.6737588652%, 6.3819787234% {
+    content: "Font-End ";
+  }
+  /* string 1, char 10 */
+  6.3829787234%, 7.0911985816% {
+    content: "Font-End E";
+  }
+  /* string 1, char 11 */
+  7.0921985816%, 7.8004184397% {
+    content: "Font-End En";
+  }
+  /* string 1, char 12 */
+  7.8014184397%, 8.5096382979% {
+    content: "Font-End Eng";
+  }
+  /* string 1, char 13 */
+  8.5106382979%, 9.218858156% {
+    content: "Font-End Engi";
+  }
+  /* string 1, char 14 */
+  9.219858156%, 9.9280780142% {
+    content: "Font-End Engin";
+  }
+  /* string 1, char 15 */
+  9.9290780142%, 10.6372978723% {
+    content: "Font-End Engine";
+  }
+  /* string 1, char 16 */
+  10.6382978723%, 11.3465177305% {
+    content: "Font-End Enginee";
+  }
+  /* string 1, char 17 */
+  11.3475177305%, 12.0557375887% {
+    content: "Font-End Engineer";
+  }
+  /* string 1, char 18 */
+  12.0567375887%, 12.7649574468% {
+    content: "Font-End Engineer ";
+  }
+  /* string 1, char 19 */
+  12.7659574468%, 13.474177305% {
+    content: "Font-End Engineer /";
+  }
+  /* string 1, char 20 */
+  13.475177305%, 14.1833971631% {
+    content: "Font-End Engineer / ";
+  }
+  /* string 1, char 21 */
+  14.1843971631%, 14.8926170213% {
+    content: "Font-End Engineer / W";
+  }
+  /* string 1, char 22 */
+  14.8936170213%, 15.6018368794% {
+    content: "Font-End Engineer / We";
+  }
+  /* string 1, char 23 */
+  15.6028368794%, 16.3110567376% {
+    content: "Font-End Engineer / Web";
+  }
+  /* string 1, char 24 */
+  16.3120567376%, 17.0202765957% {
+    content: "Font-End Engineer / Web ";
+  }
+  /* string 1, char 25 */
+  17.0212765957%, 17.7294964539% {
+    content: "Font-End Engineer / Web D";
+  }
+  /* string 1, char 26 */
+  17.7304964539%, 18.4387163121% {
+    content: "Font-End Engineer / Web De";
+  }
+  /* string 1, char 27 */
+  18.4397163121%, 19.1479361702% {
+    content: "Font-End Engineer / Web Des";
+  }
+  /* string 1, char 28 */
+  19.1489361702%, 19.8571560284% {
+    content: "Font-End Engineer / Web Desi";
+  }
+  /* string 1, char 29 */
+  19.8581560284%, 20.5663758865% {
+    content: "Font-End Engineer / Web Desig";
+  }
+  /* string 1, char 30 */
+  20.5673758865%, 21.2755957447% {
+    content: "Font-End Engineer / Web Design";
+  }
+  /* string 1, char 31 */
+  21.2765957447%, 21.9848156028% {
+    content: "Font-End Engineer / Web Designe";
+  }
+  /* string 1, char 32 */
+  21.9858156028%, 37.4458085106% {
+    content: "Font-End Engineer / Web Designer";
+  }
+  /* string 1, char 33 */
+  37.4468085106%, 38.0131843972% {
+    content: "Font-End Engineer / Web Designe";
+  }
+  /* string 1, char 34 */
+  38.0141843972%, 38.5805602837% {
+    content: "Font-End Engineer / Web Design";
+  }
+  /* string 1, char 35 */
+  38.5815602837%, 39.1479361702% {
+    content: "Font-End Engineer / Web Desig";
+  }
+  /* string 1, char 36 */
+  39.1489361702%, 39.7153120567% {
+    content: "Font-End Engineer / Web Desi";
+  }
+  /* string 1, char 37 */
+  39.7163120567%, 40.2826879433% {
+    content: "Font-End Engineer / Web Des";
+  }
+  /* string 1, char 38 */
+  40.2836879433%, 40.8500638298% {
+    content: "Font-End Engineer / Web De";
+  }
+  /* string 1, char 39 */
+  40.8510638298%, 41.4174397163% {
+    content: "Font-End Engineer / Web D";
+  }
+  /* string 1, char 40 */
+  41.4184397163%, 41.9848156028% {
+    content: "Font-End Engineer / Web ";
+  }
+  /* string 1, char 41 */
+  41.9858156028%, 42.5521914894% {
+    content: "Font-End Engineer / Web";
+  }
+  /* string 1, char 42 */
+  42.5531914894%, 43.1195673759% {
+    content: "Font-End Engineer / We";
+  }
+  /* string 1, char 43 */
+  43.1205673759%, 43.6869432624% {
+    content: "Font-End Engineer / W";
+  }
+  /* string 1, char 44 */
+  43.6879432624%, 44.2543191489% {
+    content: "Font-End Engineer / ";
+  }
+  /* string 1, char 45 */
+  44.2553191489%, 44.8216950355% {
+    content: "Font-End Engineer /";
+  }
+  /* string 1, char 46 */
+  44.8226950355%, 45.389070922% {
+    content: "Font-End Engineer ";
+  }
+  /* string 1, char 47 */
+  45.390070922%, 45.9564468085% {
+    content: "Font-End Engineer";
+  }
+  /* string 1, char 48 */
+  45.9574468085%, 46.523822695% {
+    content: "Font-End Enginee";
+  }
+  /* string 1, char 49 */
+  46.524822695%, 47.0911985816% {
+    content: "Font-End Engine";
+  }
+  /* string 1, char 50 */
+  47.0921985816%, 47.6585744681% {
+    content: "Font-End Engin";
+  }
+  /* string 1, char 51 */
+  47.6595744681%, 48.2259503546% {
+    content: "Font-End Engi";
+  }
+  /* string 1, char 52 */
+  48.2269503546%, 48.7933262411% {
+    content: "Font-End Eng";
+  }
+  /* string 1, char 53 */
+  48.7943262411%, 49.3607021277% {
+    content: "Font-End En";
+  }
+  /* string 1, char 54 */
+  49.3617021277%, 49.9280780142% {
+    content: "Font-End E";
+  }
+  /* string 1, char 55 */
+  49.9290780142%, 50.4954539007% {
+    content: "Font-End ";
+  }
+  /* string 1, char 56 */
+  50.4964539007%, 51.0628297872% {
+    content: "Font-End";
+  }
+  /* string 1, char 57 */
+  51.0638297872%, 51.6302056738% {
+    content: "Font-En";
+  }
+  /* string 1, char 58 */
+  51.6312056738%, 52.1975815603% {
+    content: "Font-E";
+  }
+  /* string 1, char 59 */
+  52.1985815603%, 52.7649574468% {
+    content: "Font-";
+  }
+  /* string 1, char 60 */
+  52.7659574468%, 53.3323333333% {
+    content: "Font";
+  }
+  /* string 1, char 61 */
+  53.3333333333%, 53.8997092199% {
+    content: "Fon";
+  }
+  /* string 1, char 62 */
+  53.9007092199%, 54.4670851064% {
+    content: "Fo";
+  }
+  /* string 1, char 63 */
+  54.4680851064%, 55.0344609929% {
+    content: "F";
+  }
+  /* string 1, char 64 */
+  55.0354609929%, 62.1266595745% {
+    content: "​";
+  }
+  /* string 2, char 1 */
+  62.1276595745%, 62.8358794326% {
+    content: "前";
+  }
+  /* string 2, char 2 */
+  62.8368794326%, 63.5450992908% {
+    content: "前端";
+  }
+  /* string 2, char 3 */
+  63.5460992908%, 64.2543191489% {
+    content: "前端工";
+  }
+  /* string 2, char 4 */
+  64.2553191489%, 64.9635390071% {
+    content: "前端工程";
+  }
+  /* string 2, char 5 */
+  64.9645390071%, 65.6727588652% {
+    content: "前端工程師";
+  }
+  /* string 2, char 6 */
+  65.6737588652%, 66.3819787234% {
+    content: "前端工程師 ";
+  }
+  /* string 2, char 7 */
+  66.3829787234%, 67.0911985816% {
+    content: "前端工程師 /";
+  }
+  /* string 2, char 8 */
+  67.0921985816%, 67.8004184397% {
+    content: "前端工程師 / ";
+  }
+  /* string 2, char 9 */
+  67.8014184397%, 68.5096382979% {
+    content: "前端工程師 / 網";
+  }
+  /* string 2, char 10 */
+  68.5106382979%, 69.218858156% {
+    content: "前端工程師 / 網頁";
+  }
+  /* string 2, char 11 */
+  69.219858156%, 69.9280780142% {
+    content: "前端工程師 / 網頁設";
+  }
+  /* string 2, char 12 */
+  69.9290780142%, 70.6372978723% {
+    content: "前端工程師 / 網頁設計";
+  }
+  /* string 2, char 13 */
+  70.6382978723%, 86.0982907801% {
+    content: "前端工程師 / 網頁設計師";
+  }
+  /* string 2, char 14 */
+  86.0992907801%, 86.6656666667% {
+    content: "前端工程師 / 網頁設計";
+  }
+  /* string 2, char 15 */
+  86.6666666667%, 87.2330425532% {
+    content: "前端工程師 / 網頁設";
+  }
+  /* string 2, char 16 */
+  87.2340425532%, 87.8004184397% {
+    content: "前端工程師 / 網頁";
+  }
+  /* string 2, char 17 */
+  87.8014184397%, 88.3677943262% {
+    content: "前端工程師 / 網";
+  }
+  /* string 2, char 18 */
+  88.3687943262%, 88.9351702128% {
+    content: "前端工程師 / ";
+  }
+  /* string 2, char 19 */
+  88.9361702128%, 89.5025460993% {
+    content: "前端工程師 /";
+  }
+  /* string 2, char 20 */
+  89.5035460993%, 90.0699219858% {
+    content: "前端工程師 ";
+  }
+  /* string 2, char 21 */
+  90.0709219858%, 90.6372978723% {
+    content: "前端工程師";
+  }
+  /* string 2, char 22 */
+  90.6382978723%, 91.2046737589% {
+    content: "前端工程";
+  }
+  /* string 2, char 23 */
+  91.2056737589%, 91.7720496454% {
+    content: "前端工";
+  }
+  /* string 2, char 24 */
+  91.7730496454%, 92.3394255319% {
+    content: "前端";
+  }
+  /* string 2, char 25 */
+  92.3404255319%, 92.9068014184% {
+    content: "前";
+  }
+  /* string 2, char 26 */
+  92.9078014184%, 100% {
+    content: "​";
+  }
+}
+@-webkit-keyframes beam-blink {
+  75% {
+    border-color: transparent;
+  }
+}
+@keyframes beam-blink {
+  75% {
+    border-color: transparent;
+  }
+}
+* {
+  -webkit-backface-visibility: hidden;
+          backface-visibility: hidden;
+}
+
+main .autoTyped_Position::after {
+  content: "​";
+  position: relative;
+  padding-right: 3px;
+  border-right: 2px solid rgba(0, 0, 0, 0.75);
+  white-space: nowrap;
+  -webkit-animation: typed 14.1s linear 1s infinite, beam-blink 1s infinite;
+          animation: typed 14.1s linear 1s infinite, beam-blink 1s infinite;
+}/*# sourceMappingURL=autoTyped.css.map */
