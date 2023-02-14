@@ -544,7 +544,7 @@ footer {
   text-align: right;
   background: linear-gradient(#000, #333333);
   color: #ccc;
-  border-top: 1px solid #ccc;
+  border-top: 1px solid #212121;
 }
 
 @media (min-width: 768px) {
