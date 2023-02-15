@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bank>
+	<branch num="" name="請選擇分行.."/>
+	<branch num="0016" name="澎湖縣第二信用合作社營業部"/>
+	<branch num="0025" name="澎湖縣第二信用合作社民生分社"/>
+	<branch num="0034" name="澎湖縣第二信用合作社陽明分社"/>
+	<branch num="0043" name="澎湖縣第二信用合作社澎南分社"/>
+	<branch num="0052" name="澎湖縣第二信用合作社白沙分社"/>
+	<branch num="0061" name="澎湖縣第二信用合作社西嶼分社"/>
+	<branch num="0070" name="澎湖縣第二信用合作社湖西分社"/>
+	<branch num="0089" name="澎湖縣第二信用合作社漁港分社"/>
+	<branch num="0098" name="澎湖縣第二信用合作社中興分社"/>
+</bank>
+

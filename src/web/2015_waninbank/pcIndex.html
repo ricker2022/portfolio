@@ -1,0 +1,105 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head id="Head1" runat="server">
+    <title>網銀國際</title>
+    <meta name="keywords" content="網銀,網銀國際,waninbank,MoLo,Safee,彩金,彩金俱樂部,yoe,遊e卡,yoe 鋼鐵人,yoe ironmen,數位雲端,點數加值,遊戲娛樂,金流服務,職業電競,遊戲點數,遊戲點卡,即時通訊,線上購卡,遊戲點數,gash,mycard,omg點數卡,凡特斯,爭龍傳,天行寶貝,遊戲滿屋,萌騎士,怒戰諸神,小小復仇者,海商紀元,聚焦,星城online,王牌包,J CARD" />
+    <link rel="icon" href="image/waninlogo.png" />
+    <link href="css/index.css" rel="stylesheet" type="text/css" />
+    <script src="css/jquery.min.js" type="text/javascript"></script>
+    <script src="css/pageTab.js" type="text/javascript"></script>
+    <script src="css/cookie.js" type="text/javascript"></script>
+    <script>
+        $(function () {
+
+            var onBtn;
+            if (location.href.search("business") != -1) {
+                onBtn = "#business";
+            } else if (location.href.search("About") != -1) {
+                onBtn = "#About";
+            } else if (location.href.search("brands") != -1) {
+                onBtn = "#brands";
+            } else if (location.href.search("contactUs") != -1) {
+                onBtn = "#contactUs";
+            } else if (location.href.search("joinUs") != -1) {
+                onBtn = "#joinUs";
+            }
+            $(onBtn).attr("class", "menuBtnActive");
+        });
+
+        var _gaq = _gaq || [];
+        _gaq.push(['_setAccount', 'UA-39024682-1']);
+        _gaq.push(['_trackPageview']);
+
+        (function () {
+            var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+            ga.src = ('https:' == document.location.protocol ? 'https://' : 'http://') + 'stats.g.doubleclick.net/dc.js';
+            var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+        })();
+    </script>
+</head>
+<body>
+    <form id="form2" runat="server">
+    <div id="allBox" style="width:100%">
+     <ul id="box">
+      <li class="header">
+       <div>
+        <ul class="menu">
+            <li style="margin-right:215px" id="waninLogoA"><span><a href="waninIndex.aspx" class="menuBtn"><img src="image/waninLogo.jpg" width="164" height="70" /></a></span></li>
+            <li><a id="About" href="javascript:void(0)" onclick="gotoTab('About.aspx',0)" class="menuBtn">企業簡介</a></li>
+            <li><a id="business" href="javascript:void(0)" onclick="gotoTab('business.aspx',0)" class="menuBtn">社會責任</a></li>
+            <li><a id="brands" href="javascript:void(0)" onclick="gotoTab('brands.aspx',0)" class="menuBtn">營運項目</a></li>
+            <li><a id="contactUs" href="javascript:void(0)" onclick="gotoTab('contactUs.aspx',0)" class="menuBtn">聯絡我們</a></li>
+            <li><a id="joinUs" href="javascript:void(0)" onclick="gotoTab('joinUs.aspx',0)"  class="menuBtn">人力招募</a></li>
+        </ul>
+       </div>
+      </li>
+      <li class="section">
+        <div style="background: url('image/sectionBG.jpg') no-repeat center top; padding:75px 0">
+           <div style="width:998px; margin:0 auto">
+            <iframe name="TOP1" src="brandO.html" width="980" height="418" border="0" frameborder="0" scrolling="no"></iframe>  
+            </div> 
+        </div>
+      </li>
+      <li class="menufooter">
+      <div>
+       <ul>
+        <li><h1>企業簡介</h1></li>
+        <li><a onclick="gotoTab('About.aspx',0)">關於網銀</a></li>
+        <li><a onclick="gotoTab('About.aspx',1)">經營理念</a></li>
+        <li><a onclick="gotoTab('About.aspx',2)">重要里程碑</a></li>
+        <li><a onclick="gotoTab('About.aspx',3)">未來願景</a></li>
+       </ul>
+       <ul>
+        <li><h1>社會責任</h1></li>
+        <li><a onclick="gotoTab('business.aspx',0)">組織架構</a></li>
+        <li><a onclick="gotoTab('business.aspx',1)">合作夥伴</a></li>
+        <li><a onclick="gotoTab('business.aspx',2)">人文關懷</a></li>
+        <li><a onclick="gotoTab('business.aspx',3)">影音專區</a></li>
+       </ul>
+       <ul>
+        <li><h1>營運項目</h1></li>
+        <li><a  onclick="gotoBrand('brands.aspx',1)">數位雲端</a></li>
+        <li><a  onclick="gotoBrand('brands.aspx',2)">點數加值</a></li>
+        <li><a  onclick="gotoBrand('brands.aspx',3)">遊戲娛樂</a></li>
+        <li><a  onclick="gotoBrand('brands.aspx',4)">金流服務</a></li>
+        <li><a  onclick="gotoBrand('brands.aspx',5)">職業電競</a></li>
+       </ul>
+       <ul>
+        <li><h1>聯絡我們</h1></li>
+        <li><a onclick="gotoTab('contactUs.aspx',0)">台中總部</a></li>
+        <li><a onclick="gotoTab('contactUs.aspx',0)">台北分部</a></li>
+       </ul>
+       <ul>
+        <li><h1>人才招募</h1></li>
+        <li><a onclick="gotoTab('joinUs.aspx',0)">職涯發展</a></li>
+        <li><a onclick="gotoTab('joinUs.aspx',1)">員工關懷</a></li>
+        <li><a onclick="gotoTab('joinUs.aspx',2)">人資訊息</a></li>
+       </ul>
+       </div>
+      </li>
+      <li class="footer"><img src="image/footer.jpg" width="369" height="50" /></li>
+     </ul>
+    </div>
+    </form>
+</body>
+</html>

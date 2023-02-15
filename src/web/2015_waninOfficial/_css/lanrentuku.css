@@ -1,0 +1,82 @@
+#imgPlay {
+    margin: 0 auto;
+    overflow: hidden;
+    width: 498px;
+    zoom: 1;
+    position: relative;
+    height : 459px;
+}
+
+    #imgPlay .imgs img {
+        width: 498px;
+    }
+
+    #imgPlay .imgs li {
+        float: left;
+        position: relative;
+    }
+    #imgPlay .imgs {
+        width: 2490px;
+    }
+
+    #imgPlay .prev {
+        background: url(/_img/layout/ADbtn.png) no-repeat 0px 0px;
+        left:14px;
+        width: 27px;
+        cursor: pointer;
+        text-indent: -9999px;
+        position: absolute;
+        top: 188px;
+        height: 50px;
+    }
+        #imgPlay .prev:hover {background: url(/_img/layout/ADbtn.png) no-repeat 0px -50px;
+        }
+
+    #imgPlay .next {
+        background: url(/_img/layout/ADbtn.png) no-repeat -27px 0px;
+        width: 27px;
+        cursor: pointer;
+        text-indent: -9999px;
+        position: absolute;
+        top: 188px;
+        height: 50px;
+    }
+
+    #imgPlay .next {
+        background-position: right 0px;
+        right: 14px;
+        left: auto;
+    }
+
+        #imgPlay .next:hover {background: url(/_img/layout/ADbtn.png) no-repeat -27px -50px;}
+
+    #imgPlay .num {
+        display: inline;
+        left: 0;
+        position : absolute;
+        top: 275px;
+        height: 19px;
+    }
+
+        #imgPlay .num span {
+            display: inline-block;
+            background: url(/_img/layout/selection.png) no-repeat 0px 0px;
+            margin: 0px 2px;
+            overflow: hidden;
+            width: 11px;
+            cursor : pointer;
+            line-height : 0;
+            height : 11px;
+        }
+
+            #imgPlay .num span.on {
+                background-position: 0px -11px;
+            }
+
+    #imgPlay #numInner {
+        background: none transparent scroll repeat 0% 0%;
+        position: absolute;
+        top : 434px;
+        text-align : center;
+        border:1px #000 solid;
+    }

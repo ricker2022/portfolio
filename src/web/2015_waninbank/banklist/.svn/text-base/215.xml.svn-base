@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bank>
+	<branch num="" name="請選擇分行.."/>
+	<branch num="0017" name="花蓮第一信用合作社復興分社"/>
+	<branch num="0026" name="花蓮第一信用合作社自由分社"/>
+	<branch num="0035" name="花蓮第一信用合作社中華分社"/>
+	<branch num="0044" name="花蓮第一信用合作社營業部"/>
+	<branch num="0053" name="花蓮第一信用合作社美侖簡易型分社"/>
+	<branch num="0062" name="花蓮第一信用合作社信義簡易型分社"/>
+	<branch num="0071" name="花蓮第一信用合作社自強分社"/>
+	<branch num="0080" name="花蓮第一信用合作社國光分社"/>
+	<branch num="0099" name="花蓮第一信用合作社鳳山分社"/>
+	<branch num="0105" name="花蓮第一信用合作社建國分社"/>
+	<branch num="0114" name="花蓮第一信用合作社慶豐簡易型分社"/>
+	<branch num="0123" name="花蓮第一信用合作社新秀簡易型分社"/>
+	<branch num="0132" name="花蓮第一信用合作社台東分社"/>
+	<branch num="0141" name="花蓮第一信用合作社仁武分社"/>
+	<branch num="0150" name="花蓮第一信用合作社橋頭分社"/>
+</bank>
+

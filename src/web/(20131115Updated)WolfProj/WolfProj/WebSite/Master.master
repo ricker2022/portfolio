@@ -1,0 +1,80 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Master.master.cs" Inherits="MasterPage" %>
+
+<%@ Register Src="~/controls/main/menu.ascx" TagPrefix="uc1" TagName="menu" %>
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta name="description" content="description" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Wolf Site</title>
+    
+
+  
+    <script src="js/jquery-ui-1.10.3.custom/js/jquery-1.9.1.js"></script>
+    <script src="js/jquery-ui-1.10.3.custom/js/jquery-ui-1.10.3.custom.js"></script>
+
+    <link href="_css/reset.css" rel="stylesheet" type="text/css" />
+    <link href="_css/main.css" rel="stylesheet" type="text/css" />
+
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="wrapper">
+            <div id="header">
+                <!--主選單-->
+                <uc1:menu runat="server" />
+                <a id="logo" href="/" title="yoeFW 閃電狼官方網站"></a>
+            </div>
+
+            <div id="main">
+                <div id="gameScore">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+
+                <div id="hotDefault">
+                    <!--↓↓輪播廣告特效↓↓-->
+                    <div id="dSlideshow">
+                        <asp:ContentPlaceHolder ID="ContentPlaceHolder2" runat="server">
+                        </asp:ContentPlaceHolder>
+                    </div>
+                    <!--↑↑輪播廣告特效↑↑-->
+                </div>
+
+                <div id="gmaeTime">                  
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder3" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+
+                <div id="news">
+                    <asp:ContentPlaceHolder ID="ContentPlaceHolder4" runat="server">
+                    </asp:ContentPlaceHolder>
+                </div>
+
+            </div>
+            <div id="footer">
+                <ul>
+                    <li><a href="http://www.waininbank.com.tw/About.aspx">
+                        <img src="_img/layout/footer/wanin.jpg" width="104" alt="waninbank" /></a></li>
+                    <li><a href="https://www.molo.gs">
+                        <img src="_img/layout/footer/moLo.jpg" width="91" alt="moLo" /></a></li>
+                    <li><a href="http://www.roccat.org/home/">
+                        <img src="_img/layout/footer/roccat.jpg" width="103" alt="Roccat" /></a></li>
+                    <li><a href="http://">
+                        <img src="_img/layout/footer/fantasy.jpg" width="107" alt="Fantasy" /></a></li>
+                    <li><a href="http://www.focus.game.tw">
+                        <img src="_img/layout/footer/focus.jpg" width="68" alt="FocusGame" /></a></li>
+                    <li><a href="http://www.family.com.tw/Marketing/index.aspx">
+                        <img src="_img/layout/footer/family.jpg" width="92" alt="familyMart" /></a></li>
+                </ul>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

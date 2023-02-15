@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bank>
+	<branch num="" name="請選擇分行.."/>
+	   <branch num="0021" name="吉安本會"/>
+	   <branch num="0032" name="壽豐本會"/>
+	   <branch num="0043" name="富里本會"/>
+	   <branch num="0098" name="新秀本會"/>
+	   <branch num="0102" name="吉安仁里"/>
+	   <branch num="0113" name="壽豐豐田"/>
+	   <branch num="0124" name="壽豐志學"/>
+	   <branch num="0135" name="富里東竹"/>
+	   <branch num="0146" name="富里東里"/>
+	   <branch num="0191" name="新秀新城"/>
+	   <branch num="0205" name="新秀嘉里"/>
+	   <branch num="0216" name="新秀秀林"/>
+	   <branch num="0227" name="吉安北昌"/>
+	   <branch num="0238" name="吉安宜昌"/>
+	   <branch num="0331" name="壽豐豐裡"/>
+</bank>

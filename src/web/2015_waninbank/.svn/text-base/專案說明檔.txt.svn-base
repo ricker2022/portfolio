@@ -1,0 +1,8 @@
+http://www.waninbank.com.tw/
+
+
+官網內埋有判斷行動裝置程式碼，於
+menuPage.master.cs
+indexFlash.aspx.cs
+
+條款頁有多語系切換，後端有參數可設定(l=ch/en;p=1~4(英文只到3))

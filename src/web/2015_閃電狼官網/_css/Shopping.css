@@ -1,0 +1,179 @@
+﻿/*主頁*/
+#Smenu {display:block;font-family:微軟正黑體;font-size:15px;font-weight:bold;height:26px;line-height:26px;float:right;margin-right:14px;}
+#Smenu table {border:none;padding:0;margin:0;}
+#Smenu td {color:#b6b6b6;}
+#Smenu td a {text-align:center;color:#000;margin:0 15px;}
+#Smenu td a:hover {font-size:13px;text-align:center;color:#000;letter-spacing :-0.2px;}
+
+#Smain {position:relative;display:block;width:966px;height:auto;margin:0 auto;}
+#Sleft {position:relative;display:block;float:left;width:136px;height:auto;}
+#Sleft ul {margin-bottom:50px;}
+#Sleft ul li a {display:block;width:136px;overflow: hidden; white-space: nowrap; text-overflow: ellipsis;font-family:新細明體;font-size:12px;color:#265476;line-height:28px;letter-spacing:0.5px;margin-left:9px;}
+.SLtitle {font-family:微軟正黑體;font-size:14px;color:#000;padding-left:6px;background:url('../_img/Shopping/layout/Titleicon.jpg') top left no-repeat;margin-bottom:16px;font-weight:bold;}
+#Sright {position:relative;display:block;float:left;width:830px;height:auto;}
+#SRproducts li {display:block;float:left;width:253px;height:385px;margin-left:23px;margin-bottom:20px;}
+#SRproducts li ul.Sicon {display:block;position:absolute;margin-top:10px;margin-left:4px;}
+#SRproducts li ul.Sicon li {display:block;float:left;margin-left:6px;width:44px;}
+#SRproducts li .Scolor {display:block;position:relative;width:30px;height:30px;background:#000;left:18px;bottom:90px;}
+.SproductName {font-family:新細明體;font-size:12px;color:#000;line-height:20px;letter-spacing:0.5px;}
+.SproductPrice {font-family:新細明體;font-size:12px;color:#265476;line-height:20px;letter-spacing:0.5px;}
+
+/*會員中心*/
+.SmemberTitle, .SorderRecordTitle, .SorderListTitle {display:block;background:url(../_img/Shopping/layout/Sicon.png) 0px 0px no-repeat;font-size:25px;font-family:微軟正黑體;color:#000;letter-spacing:0.8px;padding-left:34px;padding-top:4px;}
+.SorderRecordTitle {background-position:0px -32px;}
+.SmemberContent {display:block;position:relative;margin:10px 0;width:966px;height:254px;border-radius:5px;border:1px #b5b5b5 solid;background:url(../_img/Shopping/layout/Sareabg.png) top left repeat-x;}
+.SMCitem {display:block;position:relative;margin:23px 0 0 23px;}
+.SMCitem li {display:block;font-size:16px;line-height:36px;letter-spacing:0.8px;font-family:微軟正黑體;color:#000;}
+.SMCinput {height:28px;}
+.SBtn_storeModify {display:block;position:relative;float:right;border:none;background:url(../_img/Shopping/layout/Sbtn.png) 0px 0px no-repeat;width:91px;height:30px;right:25px;text-indent:-999999px;cursor:pointer;}
+.SBtn_storeModify:hover {background-position:0px -30px;}
+#SorderRecordTab {border:1px #b5b5b5 solid;width:966px;margin-top:12px;font-family:微軟正黑體;font-size:14px;letter-spacing:0.8px;text-align:center;color:#000;background:#fff;}
+#SorderRecordTab th {background:#f3f3f3;height:32px;border:1px #b5b5b5 solid;}
+#SorderRecordTab td {height:50px;border:1px #b5b5b5 solid;}
+.SorderNum {color:#7e6b5a;text-decoration:underline;}
+.Sreturn {color:#650202;}
+
+/*退貨頁面*/
+.SorderNumTxt {display:block;font-family:微軟正黑體;font-size:14px;color:#000;letter-spacing:0.8px;margin-top:-24px;margin-bottom:12px;}
+.SorderListContent {display:block;width:966px;min-height:610px;border-radius:5px;border:1px #b5b5b5 solid;background:url(../_img/Shopping/layout/Sreturnbg.png) bottom left repeat-x #fff;}
+.SorderListTitle {background-position:0px -64px;margin:14px 0 0 24px;width:880px;padding-bottom:5px;border-bottom:1px #b5b5b5 solid;}
+.SorderListTab {display:block;margin-top:4px;margin-left:24px;font-size:14px;font-family:微軟正黑體;color:#000;text-align:center;}
+#SLtab {width:914px;height:auto;}
+#SLtab th {font-weight:bold;height:35px;border-bottom:1px #b5b5b5 solid;}
+#SLtab td {height:35px;border-bottom:1px #b5b5b5 solid;}
+.SLtabspan {display:block;width:300px;overflow: hidden; white-space: nowrap; text-overflow: ellipsis;margin-left:50px;}
+.SruteruReasonArea, .SruternDescriptionArea, .SReceiverInfoArea, .SInvoiceArea {display:block;width:914px;height:auto;margin:22px 0 0 24px;}
+.SruternReasonTitle, .SruternDescriptionTitle {font-size:25px;font-family:微軟正黑體;color:#000;letter-spacing:0.8px;margin:0px 0 14px 0px;}
+.SruternReasonContent {height:84px;width:100%;}
+.SruternDescriptionContent {font-size:14px;font-family:微軟正黑體;color:#416987;}
+.SruternDescriptionContent ul li {line-height:24px;letter-spacing:0.8px;padding-left:12px;text-indent:-12px;}
+.SruternSubmitBtn {display:block;position:relative;border:none;left:50%;margin:34px 0 27px -39px;background:url(../_img/Shopping/layout/Sbtn.png) -91px 0px no-repeat;width:91px;height:30px;text-indent:-999999px;cursor:pointer;}
+.SruternSubmitBtn:hover {background-position:-91px -30px;}
+
+/*訂單明細*/
+.SbackOrderListBtn {float:right;display:block;position:relative;margin-top:-33px;border:none;background:url(../_img/Shopping/layout/Sbtn.png) -182px 0px no-repeat;width:109px;height:30px;text-indent:-999999px;cursor:pointer;}
+.SbackOrderListBtn:hover {background-position:-182px -30px;}
+.SOLspan {margin-left:65px;}
+.SorderProcessingStatus, .SLogisticsStatus, .SPayWay {font-size:20px;font-family:微軟正黑體;color:#000;letter-spacing:0.8px;margin:0px 0 10px 0px;display:block;width:914px;height:auto;margin:18px 0 0 24px;border-bottom:1px #b5b5b5 solid;padding-bottom:14px;}
+.SReceiverInfoTitle, .SInvoiceTitle {font-size:20px;font-family:微軟正黑體;color:#000;letter-spacing:0.8px;margin:0px 0 10px 0px;}
+.SReceiverInfoContent, .SInvoiceContent {font-size:14px;font-family:微軟正黑體;color:#416987;line-height:24px;letter-spacing:0.8px;padding-bottom:14px;}
+.SReceiverInfoContent {border-bottom:1px #b5b5b5 solid;}
+.SEInvoiceIntro {color:#1d2088; text-decoration:underline;}
+
+/*商品內頁*/
+.SLmargintop {margin-top:37px;}
+#SRtitle {font-size:14px;font-family:微軟正黑體;color:#313131;letter-spacing:0.8px;line-height:36px;margin-left:24px;}
+#SRproductsPic {display:block;width:360px;height:361px;margin-left:24px;float:left;}
+#SRproductsPic li {display:block;float:left;}
+#SRproductMainpic {display:block;width:282px;height:361px;}
+#SRproductMainpic img {border:1px #b5b5b5 solid;}
+#SRproductSecpic {display:block;width:66px;height:361px;margin-left:10px;}
+#SRproductSecpic li {width:64px;height:82px;border:1px #b5b5b5 solid;margin-bottom:9px;}
+.SRPSecpicLast {margin-bottom:0px;}
+#SRproductinfo {display:block;float:left;width:430px;height:auto;margin-left:14px;}
+#SRproductinfo li {display:block;margin:0px 0px 12px 0;}
+.SRproductName {font-size:18px;font-family:微軟正黑體;color:#000;letter-spacing:0.8px;}
+.SRproductDiscountPrice {font-size:18px;font-family:Arial;font-weight:bold;color:#000;letter-spacing :0.8px;}
+.SRproductPrice {font-size:18px;font-family:Arial;font-weight:bold;color:#bfbfbf;letter-spacing :0.8px;text-decoration:line-through;padding-left:16px;}
+.SRproductColor {font-size:14px;font-family:微軟正黑體;color:#000;letter-spacing:0.8px;}
+.SRproductAddCartBtn {float:right;display:block;border:none;margin-right:150px;margin-top:-3px;background:url(../_img/Shopping/layout/Sbtn.png) -291px 0px no-repeat;width:91px;height:30px;text-indent:-999999px;cursor:pointer;}
+.SRproductAddCartBtn:hover {background-position:-291px -30px;}
+
+.coloroutside_ae5da1 {display:block;width:23px;height:23px;background:#fff;border:1px #ae5da1 solid;border-radius:3px;}
+.colorinside_ae5da1 {display:block;width:19px;height:19px;background:#ae5da1;margin:2px;}
+.coloroutside_b3d465 {display:block;width:23px;height:23px;background:#fff;border:1px #b3d465 solid;border-radius:3px;}
+.colorinside_b3d465 {display:block;width:19px;height:19px;background:#b3d465;margin:2px;}
+.coloroutside_f19149 {display:block;width:23px;height:23px;background:#fff;border:1px #f19149 solid;border-radius:3px;}
+.colorinside_f19149 {display:block;width:19px;height:19px;background:#f19149;margin:2px;}
+.coloroutside_448aca {display:block;width:23px;height:23px;background:#fff;border:1px #448aca solid;border-radius:3px;}
+.colorinside_448aca {display:block;width:19px;height:19px;background:#448aca;margin:2px;}
+.coloroutside_b28850 {display:block;width:23px;height:23px;background:#fff;border:1px #b28850 solid;border-radius:3px;}
+.colorinside_b28850 {display:block;width:19px;height:19px;background:#b28850;margin:2px;}
+.coloroutside_8957a1 {display:block;width:23px;height:23px;background:#fff;border:1px #8957a1 solid;border-radius:3px;}
+.colorinside_8957a1 {display:block;width:19px;height:19px;background:#8957a1;margin:2px;}
+.coloroutside_007130 {display:block;width:23px;height:23px;background:#fff;border:1px #007130 solid;border-radius:3px;}
+.colorinside_007130 {display:block;width:19px;height:19px;background:#007130;margin:2px;}
+.coloroutside_000 {display:block;width:23px;height:23px;background:#fff;border:1px #000 solid;border-radius:3px;}
+.colorinside_000 {display:block;width:19px;height:19px;background:#000;margin:2px;}
+.colorinside_fff {display:block;width:19px;height:19px;background:#fff;margin:2px;}
+
+#productsColorArea {display:block;}
+#productsColorArea li {display:block;float:left;margin-right:6px;}
+
+.SRproductsSelectBtn {float:left;display:block;width:76px;height:26px;border:1px #b5b5b5 solid; color:#000;font-size:14px;font-family:微軟正黑體;cursor:pointer;margin-right:10px;margin-bottom:10px;background:#fff;}
+.SRprodtuctxt {clear:both;display:block;font-size:12px;font-family:微軟正黑體;color:#265476;letter-spacing:1px;line-height:18px;}
+#SRproductBigPic {clear:both;position:relative;top:30px;display:block;width:810px;height:auto;margin-left:24px;margin-bottom:30px;}
+#SRproductRecommendArea {position:relative;display:block;width:810px;height:auto;margin-left:24px; top:20px \9;}
+.SRpreductRecommendTitle {font-size:16px;font-family:微軟正黑體;font-weight:bold;color:#000;}
+.SRpreductRecommendContent {display:block;margin:8px 0;}
+.SRpreductRecommendContent li {float:left;display:block;width:192px;height:249px;margin-right:14px;margin-bottom:40px;}
+.SRpreductRecommendContent li img {width:192px;height:249px;}
+
+.SswitchTopBtn {position:absolute;display:block;border:none;background:url(../_img/Shopping/layout/switchBtn.png) 0px 0px no-repeat;width:65px;height:25px;text-indent:-999999px;cursor:pointer;margin-left:-66px;z-index:99;}
+.SswitchDownBtn {position:relative;display:block;border:none;background:url(../_img/Shopping/layout/switchBtn.png) 0px -25px no-repeat;width:65px;height:25px;text-indent:-999999px;cursor:pointer;margin-left:-66px;margin-top:338px;z-index:99;}
+
+/*確認購物流程*/
+.SproductShoppingStepArea {display:block;margin-top:40px;}
+.SproductShoppingStepArea ul li {display:block;float:left;margin-right:8px;margin-bottom:25px;}
+#Stab01, #Stab02 {width:966px;height:auto;font-size:14px;font-family:微軟正黑體;color:#000;letter-spacing:-0.1px; clear:both;}
+#Stab01 th, #Stab02 th {border-bottom:1px #b5b5b5 solid;text-align:center;padding-bottom:12px;}
+#Stab01 td, #Stab02 td {border-bottom:1px #b5b5b5 solid;text-align:center;padding:10px 0px;height:80px;margin:0 auto;}
+.SproductTabpic {display:block;width:60px;height:77px;float:left;}
+.SproductTabNum {width:60px;text-align:center;height:30px;line-height:30px;}
+.SproductTabname {display:block;width:300px;float:left;overflow: hidden; white-space: nowrap; text-overflow: ellipsis;margin-left:15px;line-height:80px;}
+.SproductDeleteBtn {display:block;border:none;background:url(../_img/Shopping/layout/deleteBtn.png) 0px 0px no-repeat;width:18px;height:18px;text-indent:-999999px;cursor:pointer;margin:0 auto;}
+.ScontinueShoppingBtn {float:left;margin-left:760px;display:block;border:none;background:url(../_img/Shopping/layout/Sbtn.png) -382px 0px no-repeat;width:91px;height:30px;text-indent:-999999px;cursor:pointer;}
+.ScontinueShoppingBtn:hover {background-position:-382px -30px;}
+.ScheckoutBtn {float:left;margin-left:18px;display:block;border:none;background:url(../_img/Shopping/layout/Sbtn.png) -473px 0px no-repeat;width:91px;height:30px;text-indent:-999999px;cursor:pointer;margin-bottom:6px;}
+.ScheckoutBtn:hover {background-position:-473px -30px;}
+
+.S2BLOCK {display:block;border-bottom:1px #b5b5b5 solid;padding-bottom:20px;}
+.S2BLOCK li {line-height:42px;}
+.S2Title {font-size:20px;font-family:微軟正黑體;color:#000;letter-spacing:0.8px;margin-top:20px;}
+.S2Content {font-size:16px;font-family:微軟正黑體;color:#000;letter-spacing:0.8px;}
+.S2blockBtn {display:block;width:122px;height:30px;border:1px #b5b5b5 solid; color:#000;font-size:16px;font-family:微軟正黑體;cursor:pointer;background:linear-gradient(top,#dcdcdc,#ffffff);}
+
+.S3note {font-size:14px;font-family :微軟正黑體; color:#416987;letter-spacing:0.8px;padding-bottom:40px;}
+.S3note li {line-height:32px;}
+
+.S4txt {font-family:微軟正黑體; font-size:20px;color:#000;letter-spacing:0.8px;}
+.S4sumArea {height:20px;width:990px;font-family:微軟正黑體;font-size:14px;color:#000;letter-spacing:-0.1px;}
+.S4spantitle {width:805px;text-align:right;display:block;float:left;padding-right:30px;}
+.S4spanprice {display:block;float:left;width:140px;text-align:center;}
+.S4introTitle {font-family:微軟正黑體;font-size:16px;color:#000;letter-spacing:0.8px;line-height:42px;}
+.S4introContent{font-family:微軟正黑體;font-size:14px;color:#000;letter-spacing:0.8px;line-height:24px;}
+
+.S5txt {display:block;font-family:微軟正黑體; font-size:22px;color:#000;letter-spacing:0.8px;line-height:40px;text-align:center;}
+.S5backHomeBtn {display:block;border:none;background:url(../_img/Shopping/layout/Sbtn.png) -564px 0px no-repeat;width:91px;height:30px;text-indent:-999999px;cursor:pointer;}
+.S5backHomeBtn:hover {background-position:-564px -30px;}
+
+/*popup*/
+#popupProductSizeTab {display:block;position:relative;left:50%;margin-left:-483px;z-index:9;top:140px;}
+.popupProductSizeTabContent {float: left;display: block;width: 924px;height:612px;background: #fff;border: 1px #b6b6b6 solid;overflow-x:hidden;font-family:微軟正黑體;color:#000;}
+#popupCheckbox {display:block;position:relative;left:50%;margin-left:-293px;z-index:9;top:150px;}
+.popupCheckboxContent {float: left;display: block;width: 538px;height: auto;background: #fff;border: 1px #b6b6b6 solid;}
+.popcloseBtn {float:left;display:block;border:none;background:url(../_img/Shopping/layout/closeBtn.png) 0px 0px no-repeat;width:37px;height:37px;text-indent:-999999px;cursor:pointer;margin-left:5px;}
+.popcloseBtn:hover {background-position:0px -37px;}
+.popSubmitBtn {display:block;position:relative;border:none;left:50%;margin:34px 0 27px -39px;background:url(../_img/Shopping/layout/Sbtn.png) -91px 0px no-repeat;width:91px;height:30px;text-indent:-999999px;cursor:pointer;}
+.popSubmitBtn:hover {background-position:-91px -30px;}
+#popSizeTab {width:694px;margin:24px 0;text-align:center;font-size:14px;border:1px #b6b6b6 solid;}
+#popSizeTab td {padding:10px 0; width:20%; border:1px #b6b6b6 solid;}
+#popupCart {display:block;float:right;position:relative;width:346px;height:802px;top:120px;z-index:9;border:1px #b5b5b5 solid;background:#fff;box-shadow:2px 0px 8px rgba(14%,5%,10%,0.4),-2px 0px 8px rgba(14%,5%,10%,0.4);font-family:微軟正黑體;padding:0 14px;}
+.popCartTitle {background:url(../_img/Shopping/layout/popcart.png) top center no-repeat;width:350px;height:28px;margin:17px auto 0 auto;padding-bottom:14px;border-bottom:1px #b5b5b5 solid;}
+.popCartTxt {font-size:18px;letter-spacing:1px;line-height:56px;}
+#popCartContentTab {width:100%;max-width:324px;height:auto;margin:0 auto;display:block;}
+#popCartContentTab tr {display:table;margin-bottom:17px;}
+#popCartContentTab td {height:116px;}
+#popCartContentTab .popCartCTpic {width:90px;text-align:center;}
+.popCartCTpic img {vertical-align:middle;}
+#popCartContentTab .popCartCTintro {width:165px;padding:0 15px;color:#265476;}
+#popCartContentTab .popCartCTintrop1 {font-size:16px;line-height:28px;}
+#popCartContentTab .popCartCTintrop2 {font-size:14px;margin-top:18px;}
+#popCartContentTab .popCartCTbtn {position:relative;width:30px;margin:0px auto;vertical-align:middle;}
+
+.popCartDelBtn {display:block;border:none;background:url(../_img/Shopping/layout/deleteBtn.png) 0px 0px no-repeat;width:18px;height:18px;text-indent:-999999px;cursor:pointer;margin:0 auto;}
+
+.popCartPriceTotal {clear:both;display:block;width:324px;height:40px;background:#00b7ee;line-height:40px;font-size:30px;font-family:Arial;font-weight:bold;color:#fff;text-align:right;padding-right:10px;margin:0 auto 22px auto;}
+.popCartSubmitBtn {display:block;border:none;background:url(../_img/Shopping/layout/popCartSubmitBtn.png) 0px 0px no-repeat;width:224px;height:45px;text-indent:-999999px;cursor:pointer;margin:0 auto;}
+.popCartSubmitBtn:hover {background-position:0px -45px;}
+.popmask {width:100%;height:100%;float:left;background-color:#000;filter:alpha(opacity=50);opacity:0.5; position:fixed;z-index:1;top:0;left:0;display:none;}

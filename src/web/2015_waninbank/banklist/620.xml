@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bank>
+	<branch num="" name="請選擇分行.."/>
+	   <branch num="0031" name="東港農信"/>
+	   <branch num="0042" name="恆春本會"/>
+	   <branch num="0075" name="麟洛本會"/>
+	   <branch num="0086" name="九如農信"/>
+	   <branch num="0112" name="里港本會"/>
+	   <branch num="0167" name="崁頂農信"/>
+	   <branch num="0189" name="南州本會"/>
+	   <branch num="0204" name="琉球農會"/>
+	   <branch num="0215" name="滿州本會"/>
+	   <branch num="0259" name="枋山農會"/>
+	   <branch num="0330" name="里港農土庫"/>
+	   <branch num="0341" name="里港農載興"/>
+	   <branch num="0547" name="恆春墾丁"/>
+	   <branch num="0628" name="里港農三廓"/>
+	   <branch num="0709" name="崁頂農力社"/>
+	   <branch num="0710" name="崁頂農港東"/>
+	   <branch num="0721" name="東港農下部"/>
+	   <branch num="0743" name="枋山枋山"/>
+	   <branch num="0754" name="枋山加祿"/>
+	   <branch num="0787" name="九如洽興"/>
+	   <branch num="0813" name="南州新埤"/>
+	   <branch num="0868" name="屏市農會"/>
+	   <branch num="0879" name="車程農會"/>
+	   <branch num="0880" name="屏東縣農會"/>
+	   <branch num="0891" name="枋寮農會"/>
+	   <branch num="0905" name="竹田農會"/>
+	   <branch num="0916" name="萬丹農會"/>
+	   <branch num="0927" name="長治農會"/>
+</bank>

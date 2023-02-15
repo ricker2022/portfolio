@@ -1,0 +1,110 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <script src="JS/jquery.mobile-1.1.1.css"></script>
+    <script src="JS/jquery.mobile-1.1.1.js"></script>
+
+   <script src="JS/jq.js"></script>
+   <script src="JS/wanin.js"></script>
+
+    <link href="JS/wanin.css" rel="stylesheet" type="text/css" />
+    <script>
+     $(window).load(function() {
+      //var moloH = $("#game").height();
+     // var h =document.body.clientHeight;
+      var h =window.innerHeight;
+       // $('#molo').css('height',moloH);
+       //alert(h);
+        });
+        
+        $(function () {
+        var contentH = $(window).height()-63-94-50;
+         $('.content').css('min-height',contentH);
+        });
+    </script>
+    <style>
+       
+        .ui-block-a{
+            background:url('img/topmenuBg.jpg') repeat-x top left;
+            height:47px;
+        }
+        .ui-block-a a{
+            display:inline-block;
+            float:left;
+            line-height:47px;
+            width:33.3%;
+            text-align:center;
+            text-decoration:none;
+            color:#fff;
+            font-size:20px;
+        }
+        
+        
+    </style>
+
+      
+
+</head>
+<body>
+<!-- Home -->
+<div data-role="page" id="page1">
+    <div data-theme="a" data-role="header">
+        <div class="ui-grid-b">
+            <div class="ui-block-a" id="dd">
+                <div>
+                    <a href="molo.html" data-transition="fade">
+                        數位雲端
+                    </a>
+                    <a href="yoe.html" data-transition="fade">
+                        點數加值
+                    </a>
+                    <a href="game.html" data-transition="fade">
+                         遊戲娛樂
+                    </a>
+                </div>
+            </div>
+
+            <div class="ui-block-a">
+                <div>
+                    <a href="FlashWolves.html" data-transition="fade">
+                        職業電競
+                    </a>
+                    <a href="about.html" data-transition="fade">
+                        關於網銀
+                    </a>
+                     <a href="contact.html" data-transition="fade">
+                        聯絡我們
+                    </a>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+    <div id="contentB" data-role="content" style="background:url('img/金流服務底.png') repeat top left;padding:10px;">
+        <ul class="content" style="height:100%">
+            <li id="logo" style="background:url('img/分隔線.png') no-repeat center bottom; padding-bottom:15px; position:relative">
+                <img src="img/safee.png" width="30%"  />
+                <span style="color:#848484; position:absolute; right:0; top:10px;">随心所付 值得託付！</span>
+            </li><br />
+            <li style="width:100%;word-wrap: break-word;word-break: normal;line-height:40px">【遊e卡】一張可以玩遍各家線上遊戲的整合儲值卡，簡單便捷的介面與付費管道，一卡在手、一次儲值，您可以同時暢玩多款遊戲不費力！</li>
+            <li><a style="color:#00b0ff;line-height:40px" href="https://www.yoe.com.tw" target="_blank">→前往《遊e卡》官網</a></li>
+        </ul>
+    </div>
+
+    <div data-theme="a" data-role="footer" data-position="fixed" class="footer" style="clear:both">
+       <img src="img/footerL.png" style="float:left; vertical-align:middle;" />
+        <a href="index.html" data-transition="fade" class="footerHome">
+        </a>
+    </div>
+</div>
+    <script>
+        //alert($("#dd").height());
+        //$('#contentB').html('aaa');
+        //$('#contentB').css({height:'1000px'});
+            //$('#contentB').height(1000);
+    </script>
+</body>
+</html>

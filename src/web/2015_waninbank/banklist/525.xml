@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bank>
+	<branch num="" name="請選擇分行.."/>
+	   <branch num="0017" name="澎湖漁本會"/>
+	   <branch num="0028" name="澎湖漁西嶼"/>
+	   <branch num="0039" name="澎湖漁白沙"/>
+</bank>

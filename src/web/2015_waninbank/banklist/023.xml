@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bank>
+	<branch num="" name="請選擇分行.."/>
+      <branch num="0010" name="泰國盤谷銀行股份有限公司台北分行"/>
+	   <branch num="0032" name="泰國盤谷銀行股份有限公司高雄分行"/>
+	   <branch num="0043" name="泰國盤谷銀行股份有限公司台中分行"/>
+              </bank>
+

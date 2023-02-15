@@ -1,0 +1,824 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="4.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProductVersion>
+    </ProductVersion>
+    <SchemaVersion>2.0</SchemaVersion>
+    <ProjectGuid>{5FE211E5-C87C-42F5-B803-182E35FE5C03}</ProjectGuid>
+    <ProjectTypeGuids>{E3E379DF-F4C6-4180-9B81-6769533ABE47};{349c5851-65df-11da-9384-00065b846f21};{fae04ec0-301f-11d3-bf4b-00c04f79efbc}</ProjectTypeGuids>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>Wb</RootNamespace>
+    <AssemblyName>Wb</AssemblyName>
+    <TargetFrameworkVersion>v4.5</TargetFrameworkVersion>
+    <MvcBuildViews>false</MvcBuildViews>
+    <UseIISExpress>true</UseIISExpress>
+    <IISExpressSSLPort />
+    <IISExpressAnonymousAuthentication>enabled</IISExpressAnonymousAuthentication>
+    <IISExpressWindowsAuthentication>enabled</IISExpressWindowsAuthentication>
+    <IISExpressUseClassicPipelineMode>false</IISExpressUseClassicPipelineMode>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AntiXssLibrary, Version=4.2.0.0, Culture=neutral, PublicKeyToken=d127efab8a9c114f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\AntiXSS.4.2.1\lib\net40\AntiXssLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="Autofac">
+      <HintPath>..\lib\Autofac.dll</HintPath>
+    </Reference>
+    <Reference Include="CsQuery">
+      <HintPath>..\packages\CsQuery.1.3.4\lib\net40\CsQuery.dll</HintPath>
+    </Reference>
+    <Reference Include="ElFinder.Net">
+      <HintPath>..\lib\ElFinder.Net.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlSanitizationLibrary, Version=4.2.0.0, Culture=neutral, PublicKeyToken=d127efab8a9c114f, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\AntiXSS.4.2.1\lib\net40\HtmlSanitizationLibrary.dll</HintPath>
+    </Reference>
+    <Reference Include="HtmlSanitizer">
+      <HintPath>..\packages\HtmlSanitizer.1.1.5243.28448\lib\net45\HtmlSanitizer.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.SignalR.Core">
+      <HintPath>..\packages\Microsoft.AspNet.SignalR.Core.2.0.3\lib\net45\Microsoft.AspNet.SignalR.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.SignalR.Owin">
+      <HintPath>..\packages\Microsoft.AspNet.SignalR.Owin.1.0.0\lib\net45\Microsoft.AspNet.SignalR.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.AspNet.SignalR.SystemWeb">
+      <HintPath>..\packages\Microsoft.AspNet.SignalR.SystemWeb.2.0.3\lib\net45\Microsoft.AspNet.SignalR.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="Microsoft.Owin">
+      <HintPath>..\packages\Microsoft.Owin.2.0.1\lib\net45\Microsoft.Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Host.SystemWeb">
+      <HintPath>..\packages\Microsoft.Owin.Host.SystemWeb.2.0.1\lib\net45\Microsoft.Owin.Host.SystemWeb.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Owin.Security">
+      <HintPath>..\packages\Microsoft.Owin.Security.2.0.1\lib\net45\Microsoft.Owin.Security.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=4.5.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <SpecificVersion>False</SpecificVersion>
+      <HintPath>..\packages\Newtonsoft.Json.5.0.1\lib\net45\Newtonsoft.Json.dll</HintPath>
+    </Reference>
+    <Reference Include="Owin">
+      <HintPath>..\packages\Owin.1.0\lib\net40\Owin.dll</HintPath>
+    </Reference>
+    <Reference Include="System" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Data.Entity" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Runtime.Serialization" />
+    <Reference Include="System.Security" />
+    <Reference Include="System.Web.DynamicData" />
+    <Reference Include="System.Web.Entity" />
+    <Reference Include="System.Web.ApplicationServices" />
+    <Reference Include="System.ComponentModel.DataAnnotations" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Web.Extensions" />
+    <Reference Include="System.Web.Abstractions" />
+    <Reference Include="System.Web.Routing" />
+    <Reference Include="System.Xml" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Transactions" />
+    <Reference Include="System.Web.Services" />
+    <Reference Include="System.EnterpriseServices" />
+    <Reference Include="EntityFramework">
+      <HintPath>..\packages\EntityFramework.5.0.0\lib\net45\EntityFramework.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Infrastructure, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Web.Infrastructure.1.0.0.0\lib\net40\Microsoft.Web.Infrastructure.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.Mvc.FixedDisplayModes, Version=1.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.FixedDisplayModes.1.0.0\lib\net40\Microsoft.Web.Mvc.FixedDisplayModes.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http">
+    </Reference>
+    <Reference Include="System.Net.Http.Formatting, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Client.4.0.20710.0\lib\net40\System.Net.Http.Formatting.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Net.Http.WebRequest">
+    </Reference>
+    <Reference Include="System.Web.Helpers, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.Helpers.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.Core.4.0.20710.0\lib\net40\System.Web.Http.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.WebHost, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.WebHost.4.0.20710.0\lib\net40\System.Web.Http.WebHost.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Mvc, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Mvc.4.0.20710.0\lib\net40\System.Web.Mvc.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Optimization">
+      <HintPath>..\packages\Microsoft.AspNet.Web.Optimization.1.0.0\lib\net40\System.Web.Optimization.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.Razor.2.0.20715.0\lib\net40\System.Web.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Deployment, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Deployment.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.WebPages.Razor, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.2.0.20710.0\lib\net40\System.Web.WebPages.Razor.dll</HintPath>
+    </Reference>
+    <Reference Include="WebMatrix.Data, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.Data.2.0.20710.0\lib\net40\WebMatrix.Data.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Web.WebPages.OAuth, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.OAuth.2.0.20710.0\lib\net40\Microsoft.Web.WebPages.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="WebMatrix.WebData, Version=2.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebPages.WebData.2.0.20710.0\lib\net40\WebMatrix.WebData.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.AspNet, Version=4.1.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\DotNetOpenAuth.AspNet.4.1.4.12333\lib\net45-full\DotNetOpenAuth.AspNet.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.Core, Version=4.1.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\DotNetOpenAuth.Core.4.1.4.12333\lib\net45-full\DotNetOpenAuth.Core.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OAuth.Consumer, Version=4.1.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\DotNetOpenAuth.OAuth.Consumer.4.1.4.12333\lib\net45-full\DotNetOpenAuth.OAuth.Consumer.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OAuth, Version=4.1.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\DotNetOpenAuth.OAuth.Core.4.1.4.12333\lib\net45-full\DotNetOpenAuth.OAuth.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OpenId, Version=4.1.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\DotNetOpenAuth.OpenId.Core.4.1.4.12333\lib\net45-full\DotNetOpenAuth.OpenId.dll</HintPath>
+    </Reference>
+    <Reference Include="DotNetOpenAuth.OpenId.RelyingParty, Version=4.1.0.0, Culture=neutral, PublicKeyToken=2780ccd10d57b246, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\DotNetOpenAuth.OpenId.RelyingParty.4.1.4.12333\lib\net45-full\DotNetOpenAuth.OpenId.RelyingParty.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Web.Http.OData, Version=4.0.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.AspNet.WebApi.OData.4.0.0\lib\net40\System.Web.Http.OData.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.Edm, Version=5.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Data.Edm.5.2.0\lib\net40\Microsoft.Data.Edm.dll</HintPath>
+    </Reference>
+    <Reference Include="Microsoft.Data.OData, Version=5.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\Microsoft.Data.OData.5.2.0\lib\net40\Microsoft.Data.OData.dll</HintPath>
+    </Reference>
+    <Reference Include="System.Spatial, Version=5.2.0.0, Culture=neutral, PublicKeyToken=31bf3856ad364e35, processorArchitecture=MSIL">
+      <Private>True</Private>
+      <HintPath>..\packages\System.Spatial.5.2.0\lib\net40\System.Spatial.dll</HintPath>
+    </Reference>
+    <Reference Include="WebGrease">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.3.0\lib\WebGrease.dll</HintPath>
+    </Reference>
+    <Reference Include="Antlr3.Runtime">
+      <Private>True</Private>
+      <HintPath>..\packages\WebGrease.1.3.0\lib\Antlr3.Runtime.dll</HintPath>
+    </Reference>
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="App_Start\AuthConfig.cs" />
+    <Compile Include="App_Start\BundleConfig.cs" />
+    <Compile Include="App_Start\FilterConfig.cs" />
+    <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="App_Start\WebApiConfig.cs" />
+    <Compile Include="Common\AdminInfo.cs" />
+    <Compile Include="Common\CropImageUtility.cs" />
+    <Compile Include="Common\Db_ctrl.cs" />
+    <Compile Include="Common\imsgObj.cs" />
+    <Compile Include="Common\JsonNetResult.cs" />
+    <Compile Include="Common\myStatic.cs" />
+    <Compile Include="Common\tempAfterObj.cs" />
+    <Compile Include="Common\url.cs" />
+    <Compile Include="Common\Validate_add.aspx.cs">
+      <DependentUpon>Validate_add.aspx</DependentUpon>
+      <SubType>ASPXCodeBehind</SubType>
+    </Compile>
+    <Compile Include="Common\Validate_add.aspx.designer.cs">
+      <DependentUpon>Validate_add.aspx</DependentUpon>
+    </Compile>
+    <Compile Include="Common\Validator.cs" />
+    <Compile Include="Common\WbHelper.cs" />
+    <Compile Include="Common\WbUtil.cs" />
+    <Compile Include="Common\UserInfo.cs" />
+    <Compile Include="Controllers\AccountController.cs" />
+    <Compile Include="Controllers\HomeController.cs" />
+    <Compile Include="Controllers\HttpResponseMessage.cs" />
+    <Compile Include="Controllers\IVCodeController.cs" />
+    <Compile Include="Controllers\FrontendController.cs" />
+    <Compile Include="Controllers\NewsController.cs" />
+    <Compile Include="Controllers\ProjectController.cs" />
+    <Compile Include="Controllers\ForumController.cs" />
+    <Compile Include="Controllers\MemberController.cs" />
+    <Compile Include="Controllers\TeamController.cs" />
+    <Compile Include="Filters\InitializeSimpleMembershipAttribute.cs" />
+    <Compile Include="Global.asax.cs">
+      <DependentUpon>Global.asax</DependentUpon>
+    </Compile>
+    <Compile Include="Models\AccountModels.cs" />
+    <Compile Include="Models\DB日統計資訊.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DB錯誤記錄.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Iron.Context.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Iron.Context.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Iron.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\Iron.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DesignTime>True</DesignTime>
+      <DependentUpon>Iron.edmx</DependentUpon>
+    </Compile>
+    <Compile Include="Models\IronContext.cs" />
+    <Compile Include="Models\IronDBBase.cs" />
+    <Compile Include="Models\Friend.cs" />
+    <Compile Include="Models\M_News.cs" />
+    <Compile Include="Models\RP檔.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\sysdiagrams.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\WbContext.cs" />
+    <Compile Include="Models\M_Project.cs" />
+    <Compile Include="Models\M_Forum.cs" />
+    <Compile Include="Models\M_Member.cs" />
+    <Compile Include="Models\M_Team.cs" />
+    <Compile Include="Models\人員識別.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\公告.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\即時訊息.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\國家.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\好友.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\專欄.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\專欄動作記錄.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\專欄回覆.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\專欄牆.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\導覽圖片.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\導覽廣告.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\導覽影片.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\影片.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\影片回覆.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\意見反應.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\意見反應屬性.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\戰隊.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\戰隊成員.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\擅用英雄.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\文章.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\文章動作記錄.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\文章回覆.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\文章回覆檔案.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\文章屬性.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\文章檔案.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\文章留言.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\新聞.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\新聞動作記錄.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\新聞回覆.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\新聞屬性.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\新聞點擊.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\暱稱列表.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\會員.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\會員交易.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\會員停權鎖定.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\會員停權鎖定歷程.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\會員回覆推文.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\會員專欄收藏.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\會員推文.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\會員文章收藏.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\會員文章訂閱.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\會員新聞收藏.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\會員異動歷程.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\會員簽到.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\會員訂閱.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\會員計數.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\業餘戰隊.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\業餘戰隊_推文.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\業餘戰隊_文章.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\業餘戰隊_文章回覆.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\業餘戰隊_文章屬性.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\業餘戰隊_文章留言.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\業餘戰隊加入區.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\業餘戰隊回覆推文.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\業餘戰隊成員.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\業餘戰隊申請區.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\業餘戰隊約戰.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\活動_連續登入加碼送.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\爐石卡片.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\爐石套牌.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\爐石攻略.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\爐石攻略回覆.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\爐石素質.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\爐石職業.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\登出入歷程.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\直播列表.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\相片.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\相簿.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\稱號設定.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\系統使用者.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\系統使用者異動歷程.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\英雄列表.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\英雄攻略.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\英雄攻略_會員推文.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\英雄攻略回覆.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\行事曆.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\訊息通知.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\論壇列表.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\賽事.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\賽事隊伍.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\賽事隊員.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\趣味遊戲_下注.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\趣味遊戲_主客.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\趣味遊戲_主檔.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\趣味遊戲_對戰表.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\趣味遊戲_明細.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\趣味遊戲_開盤.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\趣味遊戲主客編號.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\趣味遊戲編號.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\趣味遊戲項目.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\鐵幣異動記錄.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\電競選手.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Models\電競選手照片.cs">
+      <DependentUpon>Iron.tt</DependentUpon>
+    </Compile>
+    <Compile Include="Pager\IPagedList.cs" />
+    <Compile Include="Pager\PagedList.cs" />
+    <Compile Include="Pager\PageLinqExtensions.cs" />
+    <Compile Include="Pager\PagerBuilder.cs" />
+    <Compile Include="Pager\PagerHelper.cs" />
+    <Compile Include="Pager\PagerItem.cs" />
+    <Compile Include="Pager\PagerOptions.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="SingalRHub\CustomUserIdProvider.cs" />
+    <Compile Include="SingalRHub\IronHub.cs" />
+    <Compile Include="SingalRHub\Startup.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="Common\Validate_add.aspx" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\jquery-ui.css" />
+    <Content Include="Content\themes\base\jquery.ui.accordion.css" />
+    <Content Include="Content\themes\base\jquery.ui.all.css" />
+    <Content Include="Content\themes\base\jquery.ui.autocomplete.css" />
+    <Content Include="Content\themes\base\jquery.ui.base.css" />
+    <Content Include="Content\themes\base\jquery.ui.button.css" />
+    <Content Include="Content\themes\base\jquery.ui.core.css" />
+    <Content Include="Content\themes\base\jquery.ui.datepicker.css" />
+    <Content Include="Content\themes\base\jquery.ui.dialog.css" />
+    <Content Include="Content\themes\base\jquery.ui.progressbar.css" />
+    <Content Include="Content\themes\base\jquery.ui.resizable.css" />
+    <Content Include="Content\themes\base\jquery.ui.selectable.css" />
+    <Content Include="Content\themes\base\jquery.ui.slider.css" />
+    <Content Include="Content\themes\base\jquery.ui.tabs.css" />
+    <Content Include="Content\themes\base\jquery.ui.theme.css" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_flat_0_aaaaaa_40x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_flat_75_ffffff_40x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_55_fbf9ee_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_65_ffffff_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_75_dadada_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_75_e6e6e6_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_glass_95_fef1ec_1x400.png" />
+    <Content Include="Content\themes\base\minified\images\ui-bg_highlight-soft_75_cccccc_1x100.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_222222_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_2e83ff_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_454545_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_888888_256x240.png" />
+    <Content Include="Content\themes\base\minified\images\ui-icons_cd0a0a_256x240.png" />
+    <Content Include="Content\themes\base\minified\jquery-ui.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.accordion.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.autocomplete.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.button.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.core.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.datepicker.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.dialog.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.progressbar.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.resizable.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.selectable.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.slider.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.tabs.min.css" />
+    <Content Include="Content\themes\base\minified\jquery.ui.theme.min.css" />
+    <Content Include="favicon.ico" />
+    <Content Include="Global.asax" />
+    <EntityDeploy Include="Models\Iron.edmx">
+      <Generator>EntityModelCodeGenerator</Generator>
+      <LastGenOutput>Iron.Designer.cs</LastGenOutput>
+    </EntityDeploy>
+    <Content Include="Models\Iron.Context.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Iron.edmx</DependentUpon>
+      <LastGenOutput>Iron.Context.cs</LastGenOutput>
+    </Content>
+    <Content Include="Models\Iron.edmx.diagram">
+      <DependentUpon>Iron.edmx</DependentUpon>
+    </Content>
+    <Content Include="Models\Iron.tt">
+      <Generator>TextTemplatingFileGenerator</Generator>
+      <DependentUpon>Iron.edmx</DependentUpon>
+      <LastGenOutput>Iron.cs</LastGenOutput>
+    </Content>
+    <None Include="Properties\PublishProfiles\209.pubxml" />
+    <None Include="Properties\PublishProfiles\Irom_m_216.pubxml">
+      <SubType>Designer</SubType>
+    </None>
+    <None Include="Scripts\jquery-1.8.2.intellisense.js" />
+    <Content Include="Scripts\jquery-1.8.2.js" />
+    <Content Include="Scripts\jquery-1.8.2.min.js" />
+    <None Include="Scripts\jquery.validate-vsdoc.js" />
+    <Content Include="Scripts\jquery-ui-1.8.24.js" />
+    <Content Include="Scripts\jquery-ui-1.8.24.min.js" />
+    <Content Include="Scripts\jquery.signalR-2.0.3.js" />
+    <Content Include="Scripts\jquery.signalR-2.0.3.min.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.js" />
+    <Content Include="Scripts\jquery.unobtrusive-ajax.min.js" />
+    <Content Include="Scripts\jquery.validate.js" />
+    <Content Include="Scripts\jquery.validate.min.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.js" />
+    <Content Include="Scripts\jquery.validate.unobtrusive.min.js" />
+    <Content Include="Scripts\knockout-2.2.0.debug.js" />
+    <Content Include="Scripts\knockout-2.2.0.js" />
+    <Content Include="Scripts\modernizr-2.6.2.js" />
+    <Content Include="Web.config">
+      <SubType>Designer</SubType>
+    </Content>
+    <Content Include="Web.Debug.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Web.Release.config">
+      <DependentUpon>Web.config</DependentUpon>
+    </Content>
+    <Content Include="Content\Site.css" />
+    <Content Include="Scripts\_references.js" />
+    <Content Include="Images\accent.png" />
+    <Content Include="Images\bullet.png" />
+    <Content Include="Images\heroAccent.png" />
+    <Content Include="Images\orderedList0.png" />
+    <Content Include="Images\orderedList1.png" />
+    <Content Include="Images\orderedList2.png" />
+    <Content Include="Images\orderedList3.png" />
+    <Content Include="Images\orderedList4.png" />
+    <Content Include="Images\orderedList5.png" />
+    <Content Include="Images\orderedList6.png" />
+    <Content Include="Images\orderedList7.png" />
+    <Content Include="Images\orderedList8.png" />
+    <Content Include="Images\orderedList9.png" />
+    <Content Include="Views\_ViewStart.cshtml" />
+    <Content Include="Views\Account\_ChangePasswordPartial.cshtml" />
+    <Content Include="Views\Account\_ExternalLoginsListPartial.cshtml" />
+    <Content Include="Views\Account\_RemoveExternalLoginsPartial.cshtml" />
+    <Content Include="Views\Account\_SetPasswordPartial.cshtml" />
+    <Content Include="Views\Account\Login.cshtml" />
+    <Content Include="Views\Account\Manage.cshtml" />
+    <Content Include="Views\Account\Register.cshtml" />
+    <Content Include="Views\Account\ExternalLoginFailure.cshtml" />
+    <Content Include="Views\Account\ExternalLoginConfirmation.cshtml" />
+    <Content Include="Views\Home\Index.cshtml" />
+    <Content Include="Views\Shared\Error.cshtml" />
+    <Content Include="Views\Shared\_FooterArea.cshtml" />
+    <Content Include="Views\Shared\_Layout.cshtml" />
+    <Content Include="Views\Web.config" />
+    <Content Include="Views\Shared\_HeaderArea.cshtml" />
+    <Content Include="Views\Shared\_RightMenu.cshtml" />
+    <Content Include="Views\Shared\_MainNavi.cshtml" />
+    <Content Include="Views\Shared\_JsArea.cshtml" />
+    <Content Include="Views\Shared\_PageArea.cshtml" />
+    <Content Include="Views\News\Index.cshtml" />
+    <Content Include="Views\News\Detail.cshtml" />
+    <Content Include="Views\Project\Index.cshtml" />
+    <Content Include="Views\Project\Detail.cshtml" />
+    <Content Include="Views\Member\Edit.cshtml" />
+    <Content Include="Views\Shared\_GameCategory.cshtml" />
+    <Content Include="Views\Forum\Index.cshtml" />
+    <Content Include="Views\Forum\Detail.cshtml" />
+    <Content Include="Views\Forum\Reply.cshtml" />
+    <Content Include="Views\Forum\ReplyRedirect.cshtml" />
+    <Content Include="Views\Forum\Message.cshtml" />
+    <Content Include="Views\Forum\MessageRedirect.cshtml" />
+    <Content Include="Views\News\Reply.cshtml" />
+    <Content Include="Views\Project\Reply.cshtml" />
+    <Content Include="Views\Member\Info.cshtml" />
+    <Content Include="Views\Forum\Post.cshtml" />
+    <Content Include="Views\Forum\Search.cshtml" />
+    <Content Include="Views\News\Search.cshtml" />
+    <Content Include="Views\Project\Search.cshtml" />
+    <Content Include="Views\Shared\_TeamLayout.cshtml" />
+    <Content Include="Views\Shared\_CssArea.cshtml" />
+    <Content Include="Views\Shared\_TeamNavi.cshtml" />
+    <Content Include="Views\Team\Pro.cshtml" />
+    <Content Include="Views\Team\ProDetail.cshtml" />
+    <Content Include="Views\Team\ProMember.cshtml" />
+    <Content Include="Views\Shared\_TeamKv.cshtml" />
+    <Content Include="Views\Team\ProMemberDetail.cshtml" />
+    <Content Include="Views\Team\Sparetime.cshtml" />
+    <Content Include="Views\Team\Article.cshtml" />
+    <Content Include="Views\Team\Post.cshtml" />
+    <Content Include="Views\Team\Detail.cshtml" />
+    <Content Include="Views\Team\Reply.cshtml" />
+    <Content Include="Views\Team\Message.cshtml" />
+    <Content Include="Views\Team\SparetimeDetail.cshtml" />
+    <Content Include="Views\Team\My.cshtml" />
+    <Content Include="Views\Team\MyNoJoin.cshtml" />
+    <Content Include="Views\Team\MyPost.cshtml" />
+    <Content Include="Views\Team\MyDetail.cshtml" />
+    <Content Include="Views\Team\MyMessage.cshtml" />
+    <Content Include="Views\Team\MyReply.cshtml" />
+    <Content Include="Views\Member\MyInfo.cshtml" />
+    <Content Include="Views\Member\Friends.cshtml" />
+    <Content Include="Views\Member\Chat.cshtml" />
+    <Content Include="Views\Member\Test.cshtml" />
+    <Content Include="Views\Member\Usermsg.cshtml" />
+    <Content Include="Views\Member\MsgBox.cshtml" />
+    <Content Include="Views\Member\txtMsg.cshtml" />
+    <Content Include="Views\Member\PersonalRule.cshtml" />
+    <Content Include="Views\Shared\_nonLayout.cshtml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Folder Include="App_Data\" />
+    <Folder Include="Areas\" />
+    <Folder Include="Views\Frontend\" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="packages.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
+  </ItemGroup>
+  <PropertyGroup>
+    <VisualStudioVersion Condition="'$(VisualStudioVersion)' == ''">10.0</VisualStudioVersion>
+    <VSToolsPath Condition="'$(VSToolsPath)' == ''">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
+  </PropertyGroup>
+  <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
+  <Import Project="$(VSToolsPath)\WebApplications\Microsoft.WebApplication.targets" Condition="'$(VSToolsPath)' != ''" />
+  <Import Project="$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v10.0\WebApplications\Microsoft.WebApplication.targets" Condition="false" />
+  <Target Name="MvcBuildViews" AfterTargets="AfterBuild" Condition="'$(MvcBuildViews)'=='true'">
+    <AspNetCompiler VirtualPath="temp" PhysicalPath="$(WebProjectOutputDir)" />
+  </Target>
+  <ProjectExtensions>
+    <VisualStudio>
+      <FlavorProperties GUID="{349c5851-65df-11da-9384-00065b846f21}">
+        <WebProjectProperties>
+          <UseIIS>True</UseIIS>
+          <AutoAssignPort>True</AutoAssignPort>
+          <DevelopmentServerPort>2543</DevelopmentServerPort>
+          <DevelopmentServerVPath>/</DevelopmentServerVPath>
+          <IISUrl>http://localhost:2502/</IISUrl>
+          <NTLMAuthentication>False</NTLMAuthentication>
+          <UseCustomServer>False</UseCustomServer>
+          <CustomServerUrl>
+          </CustomServerUrl>
+          <SaveServerSettingsInUserFile>False</SaveServerSettingsInUserFile>
+        </WebProjectProperties>
+      </FlavorProperties>
+    </VisualStudio>
+  </ProjectExtensions>
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target> -->
+</Project>

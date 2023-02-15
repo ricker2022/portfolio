@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bank>
+	<branch num="" name="請選擇分行.."/>
+	<branch num="0010" name="星展商業銀行台中分行"/>
+	<branch num="0021" name="星展商業銀行忠孝分行"/>
+	<branch num="0032" name="星展商業銀行台北分行"/>
+	<branch num="0043" name="星展商業銀行高雄分行"/>
+	<branch num="0054" name="星展商業銀行桃園分行"/>
+	<branch num="0065" name="星展商業銀行豐原分行"/>
+	<branch num="0076" name="星展商業銀行林口分行"/>
+	<branch num="0087" name="星展商業銀行信託部"/>
+	<branch num="0098" name="星展商業銀行台南分行"/>
+	<branch num="0102" name="星展商業銀行大安分行"/>
+	<branch num="0113" name="星展商業銀行新樹分行"/>
+	<branch num="0124" name="星展商業銀行太平分行"/>
+	<branch num="0135" name="星展商業銀行中清分行"/>
+	<branch num="0146" name="星展商業銀行國外部"/>
+	<branch num="0157" name="星展商業銀行三重分行"/>
+	<branch num="0168" name="星展商業銀行蘆洲分行"/>
+	<branch num="0179" name="星展商業銀行松山分行"/>
+	<branch num="0180" name="星展商業銀行中港分行"/>
+	<branch num="0191" name="星展商業銀行國際金融業務分行"/>
+	<branch num="0205" name="星展商業銀行南高雄分行"/>
+	<branch num="0216" name="星展商業銀行汐止分行"/>
+	<branch num="0227" name="星展商業銀行城東分行"/>
+	<branch num="0238" name="星展商業銀行八德分行"/>
+	<branch num="0249" name="星展商業銀行大甲分行"/>
+	<branch num="0250" name="星展商業銀行永康分行"/>
+	<branch num="0261" name="星展商業銀行板橋分行"/>
+	<branch num="0272" name="星展商業銀行中和分行"/>
+	<branch num="0283" name="星展商業銀行楠梓分行"/>
+	<branch num="0294" name="星展商業銀行民權分行"/>
+	<branch num="0308" name="星展商業銀行苓雅分行"/>
+	<branch num="0319" name="星展商業銀行五福分行"/>
+	<branch num="0320" name="星展商業銀行彰化分行"/>
+	<branch num="0331" name="星展商業銀行前鎮分行"/>
+	<branch num="0342" name="星展商業銀行斗六分行"/>
+	<branch num="0353" name="星展商業銀行鼎強分行"/>
+	<branch num="0364" name="星展商業銀行營業部"/>
+	<branch num="0375" name="星展商業銀行莒光分行"/>
+	<branch num="0386" name="星展商業銀行中壢分行"/>
+	<branch num="0397" name="星展商業銀行新竹分行"/>
+	<branch num="0401" name="星展商業銀行大同分行"/>
+	<branch num="0412" name="星展商業銀行敦南分行"/>
+	<branch num="0423" name="星展商業銀行內湖分行"/>
+</bank>
+

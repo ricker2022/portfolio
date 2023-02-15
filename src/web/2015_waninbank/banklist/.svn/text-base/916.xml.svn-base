@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bank>
+	<branch num="" name="請選擇分行.."/>
+	   <branch num="0024" name="草屯本會"/>
+	   <branch num="0183" name="草屯雙冬"/>
+	   <branch num="0493" name="草屯南埔"/>
+	   <branch num="0600" name="草屯芳草路"/>
+	   <branch num="0611" name="草屯虎山路"/>
+	   <branch num="0677" name="草屯北勢"/>
+	   <branch num="0688" name="草屯富寮"/>
+	   <branch num="0758" name="草屯新庄"/>
+</bank>

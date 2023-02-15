@@ -1,0 +1,1494 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="IronModelStoreContainer" CdmEntityContainer="IronEntities">
+    <EntitySetMapping Name="DB日統計資訊">
+      <EntityTypeMapping TypeName="IronModel.DB日統計資訊">
+        <MappingFragment StoreEntitySet="DB日統計資訊">
+          <ScalarProperty Name="年月日" ColumnName="年月日" />
+          <ScalarProperty Name="註冊數" ColumnName="註冊數" />
+          <ScalarProperty Name="Molo註冊數" ColumnName="Molo註冊數" />
+          <ScalarProperty Name="總人數" ColumnName="總人數" />
+          <ScalarProperty Name="登入數" ColumnName="登入數" />
+          <ScalarProperty Name="簽到數" ColumnName="簽到數" />
+          <ScalarProperty Name="FB推廣總數" ColumnName="FB推廣總數" />
+          <ScalarProperty Name="文章發文總數" ColumnName="文章發文總數" />
+          <ScalarProperty Name="文章回覆總數" ColumnName="文章回覆總數" />
+          <ScalarProperty Name="文章推文總數" ColumnName="文章推文總數" />
+          <ScalarProperty Name="文章留言總數" ColumnName="文章留言總數" />
+          <ScalarProperty Name="文章瀏覽總數" ColumnName="文章瀏覽總數" />
+          <ScalarProperty Name="新聞回覆總數" ColumnName="新聞回覆總數" />
+          <ScalarProperty Name="專欄回覆總數" ColumnName="專欄回覆總數" />
+          <ScalarProperty Name="會員持有鐵幣" ColumnName="會員持有鐵幣" />
+          <ScalarProperty Name="贈送總鐵幣" ColumnName="贈送總鐵幣" />
+          <ScalarProperty Name="收回總鐵幣" ColumnName="收回總鐵幣" />
+          <ScalarProperty Name="建立日期" ColumnName="建立日期" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="DB錯誤記錄">
+      <EntityTypeMapping TypeName="IronModel.DB錯誤記錄">
+        <MappingFragment StoreEntitySet="DB錯誤記錄">
+          <ScalarProperty Name="錯誤號碼" ColumnName="錯誤號碼" />
+          <ScalarProperty Name="錯誤嚴重性" ColumnName="錯誤嚴重性" />
+          <ScalarProperty Name="錯誤狀態碼" ColumnName="錯誤狀態碼" />
+          <ScalarProperty Name="觸發程序名稱" ColumnName="觸發程序名稱" />
+          <ScalarProperty Name="錯誤訊息" ColumnName="錯誤訊息" />
+          <ScalarProperty Name="錯誤行號" ColumnName="錯誤行號" />
+          <ScalarProperty Name="建立日期" ColumnName="建立日期" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="RP檔">
+      <EntityTypeMapping TypeName="IronModel.RP檔">
+        <MappingFragment StoreEntitySet="RP檔">
+          <ScalarProperty Name="RP流水號" ColumnName="RP流水號" />
+          <ScalarProperty Name="種族A" ColumnName="種族A" />
+          <ScalarProperty Name="選手A" ColumnName="選手A" />
+          <ScalarProperty Name="選手A圖片" ColumnName="選手A圖片" />
+          <ScalarProperty Name="種族B" ColumnName="種族B" />
+          <ScalarProperty Name="選手B" ColumnName="選手B" />
+          <ScalarProperty Name="選手B圖片" ColumnName="選手B圖片" />
+          <ScalarProperty Name="賽事" ColumnName="賽事" />
+          <ScalarProperty Name="檔案路徑" ColumnName="檔案路徑" />
+          <ScalarProperty Name="下載次數" ColumnName="下載次數" />
+          <ScalarProperty Name="上傳時間" ColumnName="上傳時間" />
+          <ScalarProperty Name="異動者" ColumnName="異動者" />
+          <ScalarProperty Name="論壇識別" ColumnName="論壇識別" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sysdiagrams">
+      <EntityTypeMapping TypeName="IronModel.sysdiagrams">
+        <MappingFragment StoreEntitySet="sysdiagrams">
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="principal_id" ColumnName="principal_id" />
+          <ScalarProperty Name="diagram_id" ColumnName="diagram_id" />
+          <ScalarProperty Name="version" ColumnName="version" />
+          <ScalarProperty Name="definition" ColumnName="definition" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="人員識別">
+      <EntityTypeMapping TypeName="IronModel.人員識別">
+        <MappingFragment StoreEntitySet="人員識別">
+          <ScalarProperty Name="論壇識別" ColumnName="論壇識別" />
+          <ScalarProperty Name="MoloKey" ColumnName="MoloKey" />
+          <ScalarProperty Name="身份識別" ColumnName="身份識別" />
+          <ScalarProperty Name="啟用YN" ColumnName="啟用YN" />
+          <ScalarProperty Name="建立日期" ColumnName="建立日期" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="公告">
+      <EntityTypeMapping TypeName="IronModel.公告">
+        <MappingFragment StoreEntitySet="公告">
+          <ScalarProperty Name="公告流水號" ColumnName="公告流水號" />
+          <ScalarProperty Name="標題" ColumnName="標題" />
+          <ScalarProperty Name="內容" ColumnName="內容" />
+          <ScalarProperty Name="公告狀態" ColumnName="公告狀態" />
+          <ScalarProperty Name="狀態" ColumnName="狀態" />
+          <ScalarProperty Name="置首YN" ColumnName="置首YN" />
+          <ScalarProperty Name="登入YN" ColumnName="登入YN" />
+          <ScalarProperty Name="圖片路徑" ColumnName="圖片路徑" />
+          <ScalarProperty Name="影片連結" ColumnName="影片連結" />
+          <ScalarProperty Name="發佈開始日" ColumnName="發佈開始日" />
+          <ScalarProperty Name="發佈結束日" ColumnName="發佈結束日" />
+          <ScalarProperty Name="異動者" ColumnName="異動者" />
+          <ScalarProperty Name="建立日期" ColumnName="建立日期" />
+          <ScalarProperty Name="論壇識別" ColumnName="論壇識別" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="文章">
+      <EntityTypeMapping TypeName="IronModel.文章">
+        <MappingFragment StoreEntitySet="文章">
+          <ScalarProperty Name="屬性編號" ColumnName="屬性編號" />
+          <ScalarProperty Name="MoloKey" ColumnName="MoloKey" />
+          <ScalarProperty Name="文章流水號" ColumnName="文章流水號" />
+          <ScalarProperty Name="標題" ColumnName="標題" />
+          <ScalarProperty Name="內容" ColumnName="內容" />
+          <ScalarProperty Name="文章狀態" ColumnName="文章狀態" />
+          <ScalarProperty Name="置頂YN" ColumnName="置頂YN" />
+          <ScalarProperty Name="置頂時間" ColumnName="置頂時間" />
+          <ScalarProperty Name="推薦YN" ColumnName="推薦YN" />
+          <ScalarProperty Name="前台推薦YN" ColumnName="前台推薦YN" />
+          <ScalarProperty Name="精華YN" ColumnName="精華YN" />
+          <ScalarProperty Name="隱藏YN" ColumnName="隱藏YN" />
+          <ScalarProperty Name="鎖定YN" ColumnName="鎖定YN" />
+          <ScalarProperty Name="水桶YN" ColumnName="水桶YN" />
+          <ScalarProperty Name="圖片路徑" ColumnName="圖片路徑" />
+          <ScalarProperty Name="影片連結" ColumnName="影片連結" />
+          <ScalarProperty Name="推文數" ColumnName="推文數" />
+          <ScalarProperty Name="回覆數" ColumnName="回覆數" />
+          <ScalarProperty Name="人氣數" ColumnName="人氣數" />
+          <ScalarProperty Name="發佈開始日" ColumnName="發佈開始日" />
+          <ScalarProperty Name="最後回覆日" ColumnName="最後回覆日" />
+          <ScalarProperty Name="異動者" ColumnName="異動者" />
+          <ScalarProperty Name="建立日期" ColumnName="建立日期" />
+          <ScalarProperty Name="前台刪除YN" ColumnName="前台刪除YN" />
+          <ScalarProperty Name="論壇識別" ColumnName="論壇識別" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="文章回覆">
+      <EntityTypeMapping TypeName="IronModel.文章回覆">
+        <MappingFragment StoreEntitySet="文章回覆">
+          <ScalarProperty Name="文章流水號" ColumnName="文章流水號" />
+          <ScalarProperty Name="回覆流水號" ColumnName="回覆流水號" />
+          <ScalarProperty Name="MoloKey" ColumnName="MoloKey" />
+          <ScalarProperty Name="內容" ColumnName="內容" />
+          <ScalarProperty Name="回覆狀態" ColumnName="回覆狀態" />
+          <ScalarProperty Name="置頂YN" ColumnName="置頂YN" />
+          <ScalarProperty Name="置頂時間" ColumnName="置頂時間" />
+          <ScalarProperty Name="隱藏YN" ColumnName="隱藏YN" />
+          <ScalarProperty Name="水桶YN" ColumnName="水桶YN" />
+          <ScalarProperty Name="建立日期" ColumnName="建立日期" />
+          <ScalarProperty Name="前台刪除YN" ColumnName="前台刪除YN" />
+          <ScalarProperty Name="推文數" ColumnName="推文數" />
+          <ScalarProperty Name="論壇識別" ColumnName="論壇識別" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="文章回覆檔案">
+      <EntityTypeMapping TypeName="IronModel.文章回覆檔案">
+        <MappingFragment StoreEntitySet="文章回覆檔案">
+          <ScalarProperty Name="MoloKey" ColumnName="MoloKey" />
+          <ScalarProperty Name="回覆流水號" ColumnName="回覆流水號" />
+          <ScalarProperty Name="檔案流水號" ColumnName="檔案流水號" />
+          <ScalarProperty Name="檔案名稱" ColumnName="檔案名稱" />
+          <ScalarProperty Name="檔案路徑" ColumnName="檔案路徑" />
+          <ScalarProperty Name="建立日期" ColumnName="建立日期" />
+          <ScalarProperty Name="論壇識別" ColumnName="論壇識別" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="文章留言">
+      <EntityTypeMapping TypeName="IronModel.文章留言">
+        <MappingFragment StoreEntitySet="文章留言">
+          <ScalarProperty Name="文章流水號" ColumnName="文章流水號" />
+          <ScalarProperty Name="回覆流水號" ColumnName="回覆流水號" />
+          <ScalarProperty Name="留言流水號" ColumnName="留言流水號" />
+          <ScalarProperty Name="MoloKey" ColumnName="MoloKey" />
+          <ScalarProperty Name="暱稱" ColumnName="暱稱" />
+          <ScalarProperty Name="內容" ColumnName="內容" />
+          <ScalarProperty Name="留言狀態" ColumnName="留言狀態" />
+          <ScalarProperty Name="置頂YN" ColumnName="置頂YN" />
+          <ScalarProperty Name="置頂時間" ColumnName="置頂時間" />
+          <ScalarProperty Name="隱藏YN" ColumnName="隱藏YN" />
+          <ScalarProperty Name="水桶YN" ColumnName="水桶YN" />
+          <ScalarProperty Name="建立日期" ColumnName="建立日期" />
+          <ScalarProperty Name="論壇識別" ColumnName="論壇識別" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="文章動作記錄">
+      <EntityTypeMapping TypeName="IronModel.文章動作記錄">
+        <MappingFragment StoreEntitySet="文章動作記錄">
+          <ScalarProperty Name="動作記錄編號" ColumnName="動作記錄編號" />
+          <ScalarProperty Name="文章流水號" ColumnName="文章流水號" />
+          <ScalarProperty Name="MoloKey" ColumnName="MoloKey" />
+          <ScalarProperty Name="暱稱" ColumnName="暱稱" />
+          <ScalarProperty Name="動作識別" ColumnName="動作識別" />
+          <ScalarProperty Name="執行動作" ColumnName="執行動作" />
+          <ScalarProperty Name="備註" ColumnName="備註" />
+          <ScalarProperty Name="備註2" ColumnName="備註2" />
+          <ScalarProperty Name="異動者" ColumnName="異動者" />
+          <ScalarProperty Name="會員識別" ColumnName="會員識別" />
+          <ScalarProperty Name="建立日期" ColumnName="建立日期" />
+          <ScalarProperty Name="論壇識別" ColumnName="論壇識別" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="文章檔案">
+      <EntityTypeMapping TypeName="IronModel.文章檔案">
+        <MappingFragment StoreEntitySet="文章檔案">
+          <ScalarProperty Name="MoloKey" ColumnName="MoloKey" />
+          <ScalarProperty Name="文章流水號" ColumnName="文章流水號" />
+          <ScalarProperty Name="檔案流水號" ColumnName="檔案流水號" />
+          <ScalarProperty Name="檔案名稱" ColumnName="檔案名稱" />
+          <ScalarProperty Name="檔案路徑" ColumnName="檔案路徑" />
+          <ScalarProperty Name="建立日期" ColumnName="建立日期" />
+          <ScalarProperty Name="論壇識別" ColumnName="論壇識別" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="文章屬性">
+      <EntityTypeMapping TypeName="IronModel.文章屬性">
+        <MappingFragment StoreEntitySet="文章屬性">
+          <ScalarProperty Name="屬性編號" ColumnName="屬性編號" />
+          <ScalarProperty Name="屬性名稱" ColumnName="屬性名稱" />
+          <ScalarProperty Name="屬性圖片" ColumnName="屬性圖片" />
+          <ScalarProperty Name="屬性狀態" ColumnName="屬性狀態" />
+          <ScalarProperty Name="備註" ColumnName="備註" />
+          <ScalarProperty Name="隱藏YN" ColumnName="隱藏YN" />
+          <ScalarProperty Name="版主" ColumnName="版主" />
+          <ScalarProperty Name="副版主" ColumnName="副版主" />
+          <ScalarProperty Name="置頂時間" ColumnName="置頂時間" />
+          <ScalarProperty Name="建立時間" ColumnName="建立時間" />
+          <ScalarProperty Name="論壇識別" ColumnName="論壇識別" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="好友">
+      <EntityTypeMapping TypeName="IronModel.好友">
+        <MappingFragment StoreEntitySet="好友">
+          <ScalarProperty Name="名稱1" ColumnName="名稱1" />
+          <ScalarProperty Name="Icon名稱1" ColumnName="Icon名稱1" />
+          <ScalarProperty Name="問候訊息" ColumnName="問候訊息" />
+          <ScalarProperty Name="名稱2" ColumnName="名稱2" />
+          <ScalarProperty Name="Icon名稱2" ColumnName="Icon名稱2" />
+          <ScalarProperty Name="確認2" ColumnName="確認2" />
+          <ScalarProperty Name="確認日" ColumnName="確認日" />
+          <ScalarProperty Name="好友狀態" ColumnName="好友狀態" />
+          <ScalarProperty Name="建立日期" ColumnName="建立日期" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="行事曆">
+      <EntityTypeMapping TypeName="IronModel.行事曆">
+        <MappingFragment StoreEntitySet="行事曆">
+          <ScalarProperty Name="流水號" ColumnName="流水號" />
+          <ScalarProperty Name="MoloKey" ColumnName="MoloKey" />
+          <ScalarProperty Name="年月日" ColumnName="年月日" />
+          <ScalarProperty Name="星期" ColumnName="星期" />
+          <ScalarProperty Name="項目" ColumnName="項目" />
+          <ScalarProperty Name="標題" ColumnName="標題" />
+          <ScalarProperty Name="內容" ColumnName="內容" />
+          <ScalarProperty Name="直播網址" ColumnName="直播網址" />
+          <ScalarProperty Name="新聞連結" ColumnName="新聞連結" />
+          <ScalarProperty Name="開始時間" ColumnName="開始時間" />
+          <ScalarProperty Name="建立日期" ColumnName="建立日期" />
+          <ScalarProperty Name="論壇識別" ColumnName="論壇識別" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="即時訊息">
+      <EntityTypeMapping TypeName="IronModel.即時訊息">
+        <MappingFragment StoreEntitySet="即時訊息">
+          <ScalarProperty Name="流水號" ColumnName="流水號" />
+          <ScalarProperty Name="訊息發送者" ColumnName="訊息發送者" />
+          <ScalarProperty Name="Icon名稱1" ColumnName="Icon名稱1" />
+          <ScalarProperty Name="訊息接收者" ColumnName="訊息接收者" />
+          <ScalarProperty Name="Icon名稱2" ColumnName="Icon名稱2" />
+          <ScalarProperty Name="訊息內容" ColumnName="訊息內容" />
+          <ScalarProperty Name="讀取YN" ColumnName="讀取YN" />
+          <ScalarProperty Name="建立日期" ColumnName="建立日期" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="系統使用者">
+      <EntityTypeMapping TypeName="IronModel.系統使用者">
+        <MappingFragment StoreEntitySet="系統使用者">
+          <ScalarProperty Name="MoloKey" ColumnName="MoloKey" />
+          <ScalarProperty Name="帳號" ColumnName="帳號" />
+          <ScalarProperty Name="密碼" ColumnName="密碼" />
+          <ScalarProperty Name="名稱" ColumnName="名稱" />
+          <ScalarProperty Name="啟用YN" ColumnName="啟用YN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="系統使用者異動歷程">
+      <EntityTypeMapping TypeName="IronModel.系統使用者異動歷程">
+        <MappingFragment StoreEntitySet="系統使用者異動歷程">
+          <ScalarProperty Name="異動編號" ColumnName="異動編號" />
+          <ScalarProperty Name="MoloKey" ColumnName="MoloKey" />
+          <ScalarProperty Name="異動說明" ColumnName="異動說明" />
+          <ScalarProperty Name="舊資料" ColumnName="舊資料" />
+          <ScalarProperty Name="新資料" ColumnName="新資料" />
+          <ScalarProperty Name="異動者" ColumnName="異動者" />
+          <ScalarProperty Name="備註" ColumnName="備註" />
+          <ScalarProperty Name="建立日期" ColumnName="建立日期" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="直播列表">
+      <EntityTypeMapping TypeName="IronModel.直播列表">
+        <MappingFragment StoreEntitySet="直播列表">
+          <ScalarProperty Name="直播編號" ColumnName="直播編號" />
+          <ScalarProperty Name="行程日期" ColumnName="行程日期" />
+          <ScalarProperty Name="直播名稱" ColumnName="直播名稱" />
+          <ScalarProperty Name="直播網址" ColumnName="直播網址" />
+          <ScalarProperty Name="直播狀態" ColumnName="直播狀態" />
+          <ScalarProperty Name="人數" ColumnName="人數" />
+          <ScalarProperty Name="發佈開始日" ColumnName="發佈開始日" />
+          <ScalarProperty Name="發佈結束日" ColumnName="發佈結束日" />
+          <ScalarProperty Name="異動者" ColumnName="異動者" />
+          <ScalarProperty Name="建立時間" ColumnName="建立時間" />
+          <ScalarProperty Name="論壇識別" ColumnName="論壇識別" />
+          <ScalarProperty Name="直播描述" ColumnName="直播描述" />
+          <ScalarProperty Name="直播類別" ColumnName="直播類別" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="活動_連續登入加碼送">
+      <EntityTypeMapping TypeName="IronModel.活動_連續登入加碼送">
+        <MappingFragment StoreEntitySet="活動_連續登入加碼送">
+          <ScalarProperty Name="論壇識別" ColumnName="論壇識別" />
+          <ScalarProperty Name="MoloKey" ColumnName="MoloKey" />
+          <ScalarProperty Name="贈送YN" ColumnName="贈送YN" />
+          <ScalarProperty Name="建立日期" ColumnName="建立日期" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="相片">
+      <EntityTypeMapping TypeName="IronModel.相片">
+        <MappingFragment StoreEntitySet="相片">
+          <ScalarProperty Name="相簿編號" ColumnName="相簿編號" />
+          <ScalarProperty Name="相片編號" ColumnName="相片編號" />
+          <ScalarProperty Name="相片路徑" ColumnName="相片路徑" />
+          <ScalarProperty Name="異動者" ColumnName="異動者" />
+          <ScalarProperty Name="論壇識別" ColumnName="論壇識別" />
+          <ScalarProperty Name="建立日期" ColumnName="建立日期" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="相簿">
+      <EntityTypeMapping TypeName="IronModel.相簿">
+        <MappingFragment StoreEntitySet="相簿">
+          <ScalarProperty Name="相簿編號" ColumnName="相簿編號" />
+          <ScalarProperty Name="相簿名稱" ColumnName="相簿名稱" />
+          <ScalarProperty Name="封面路徑" ColumnName="封面路徑" />
+          <ScalarProperty Name="異動者" ColumnName="異動者" />
+          <ScalarProperty Name="論壇識別" ColumnName="論壇識別" />
+          <ScalarProperty Name="建立日期" ColumnName="建立日期" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="英雄列表">
+      <EntityTypeMapping TypeName="IronModel.英雄列表">
+        <MappingFragment StoreEntitySet="英雄列表">
+          <ScalarProperty Name="流水號" ColumnName="流水號" />
+          <ScalarProperty Name="英雄名稱" ColumnName="英雄名稱" />
+          <ScalarProperty Name="被動技" ColumnName="被動技" />
+          <ScalarProperty Name="被動技Icon" ColumnName="被動技Icon" />
+          <ScalarProperty Name="被動技說明" ColumnName="被動技說明" />
+          <ScalarProperty Name="主動技Q" ColumnName="主動技Q" />
+          <ScalarProperty Name="主動技QIcon" ColumnName="主動技QIcon" />
+          <ScalarProperty Name="主動技Q說明" ColumnName="主動技Q說明" />
+          <ScalarProperty Name="主動技W" ColumnName="主動技W" />
+          <ScalarProperty Name="主動技WIcon" ColumnName="主動技WIcon" />
+          <ScalarProperty Name="主動技W說明" ColumnName="主動技W說明" />
+          <ScalarProperty Name="主動技E" ColumnName="主動技E" />
+          <ScalarProperty Name="主動技EIcon" ColumnName="主動技EIcon" />
+          <ScalarProperty Name="主動技E說明" ColumnName="主動技E說明" />
+          <ScalarProperty Name="主動技R" ColumnName="主動技R" />
+          <ScalarProperty Name="主動技RIcon" ColumnName="主動技RIcon" />
+          <ScalarProperty Name="主動技R說明" ColumnName="主動技R說明" />
+          <ScalarProperty Name="圖片路徑" ColumnName="圖片路徑" />
+          <ScalarProperty Name="背景" ColumnName="背景" />
+          <ScalarProperty Name="建立日期" ColumnName="建立日期" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="英雄攻略">
+      <EntityTypeMapping TypeName="IronModel.英雄攻略">
+        <MappingFragment StoreEntitySet="英雄攻略">
+          <ScalarProperty Name="流水號" ColumnName="流水號" />
+          <ScalarProperty Name="選手流水號" ColumnName="選手流水號" />
+          <ScalarProperty Name="標題" ColumnName="標題" />
+          <ScalarProperty Name="英雄介紹" ColumnName="英雄介紹" />
+          <ScalarProperty Name="MoloKey" ColumnName="MoloKey" />
+          <ScalarProperty Name="人氣數" ColumnName="人氣數" />
+          <ScalarProperty Name="推文數" ColumnName="推文數" />
+          <ScalarProperty Name="攻略類別" ColumnName="攻略類別" />
+          <ScalarProperty Name="英雄流水號" ColumnName="英雄流水號" />
+          <ScalarProperty Name="符文" ColumnName="符文" />
+          <ScalarProperty Name="天賦" ColumnName="天賦" />
+          <ScalarProperty Name="召喚師" ColumnName="召喚師" />
+          <ScalarProperty Name="道具" ColumnName="道具" />
+          <ScalarProperty Name="技能" ColumnName="技能" />
+          <ScalarProperty Name="敵對英雄" ColumnName="敵對英雄" />
+          <ScalarProperty Name="其它道具" ColumnName="其它道具" />
+          <ScalarProperty Name="技能解釋" ColumnName="技能解釋" />
+          <ScalarProperty Name="技能解釋Q" ColumnName="技能解釋Q" />
+          <ScalarProperty Name="技能解釋W" ColumnName="技能解釋W" />
+          <ScalarProperty Name="技能解釋E" ColumnName="技能解釋E" />
+          <ScalarProperty Name="技能解釋R" ColumnName="技能解釋R" />
+          <ScalarProperty Name="備註" ColumnName="備註" />
+          <ScalarProperty Name="建立日期" ColumnName="建立日期" />
+          <ScalarProperty Name="置頂YN" ColumnName="置頂YN" />
+          <ScalarProperty Name="刪除YN" ColumnName="刪除YN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="英雄攻略_會員推文">
+      <EntityTypeMapping TypeName="IronModel.英雄攻略_會員推文">
+        <MappingFragment StoreEntitySet="英雄攻略_會員推文">
+          <ScalarProperty Name="流水號" ColumnName="流水號" />
+          <ScalarProperty Name="英雄攻略流水號" ColumnName="英雄攻略流水號" />
+          <ScalarProperty Name="推文MoloKey" ColumnName="推文MoloKey" />
+          <ScalarProperty Name="建立日期" ColumnName="建立日期" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="英雄攻略回覆">
+      <EntityTypeMapping TypeName="IronModel.英雄攻略回覆">
+        <MappingFragment StoreEntitySet="英雄攻略回覆">
+          <ScalarProperty Name="回覆流水號" ColumnName="回覆流水號" />
+          <ScalarProperty Name="攻略流水號" ColumnName="攻略流水號" />
+          <ScalarProperty Name="MoloKey" ColumnName="MoloKey" />
+          <ScalarProperty Name="內容" ColumnName="內容" />
+          <ScalarProperty Name="建立日期" ColumnName="建立日期" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="訊息通知">
+      <EntityTypeMapping TypeName="IronModel.訊息通知">
+        <MappingFragment StoreEntitySet="訊息通知">
+          <ScalarProperty Name="訊息編號" ColumnName="訊息編號" />
+          <ScalarProperty Name="訊息發送者" ColumnName="訊息發送者" />
+          <ScalarProperty Name="訊息接收者" ColumnName="訊息接收者" />
+          <ScalarProperty Name="讀取YN" ColumnName="讀取YN" />
+          <ScalarProperty Name="標題" ColumnName="標題" />
+          <ScalarProperty Name="訊息內容" ColumnName="訊息內容" />
+          <ScalarProperty Name="傳送次數" ColumnName="傳送次數" />
+          <ScalarProperty Name="連結網址" ColumnName="連結網址" />
+          <ScalarProperty Name="建立日期" ColumnName="建立日期" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="國家">
+      <EntityTypeMapping TypeName="IronModel.國家">
+        <MappingFragment StoreEntitySet="國家">
+          <ScalarProperty Name="國名" ColumnName="國名" />
+          <ScalarProperty Name="圖示" ColumnName="圖示" />
+          <ScalarProperty Name="國內外識別" ColumnName="國內外識別" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="專欄">
+      <EntityTypeMapping TypeName="IronModel.專欄">
+        <MappingFragment StoreEntitySet="專欄">
+          <ScalarProperty Name="專欄流水號" ColumnName="專欄流水號" />
+          <ScalarProperty Name="標題" ColumnName="標題" />
+          <ScalarProperty Name="內容" ColumnName="內容" />
+          <ScalarProperty Name="專欄狀態" ColumnName="專欄狀態" />
+          <ScalarProperty Name="置首YN" ColumnName="置首YN" />
+          <ScalarProperty Name="推薦YN" ColumnName="推薦YN" />
+          <ScalarProperty Name="圖片路徑" ColumnName="圖片路徑" />
+          <ScalarProperty Name="影片連結" ColumnName="影片連結" />
+          <ScalarProperty Name="發佈開始日" ColumnName="發佈開始日" />
+          <ScalarProperty Name="發佈結束日" ColumnName="發佈結束日" />
+          <ScalarProperty Name="異動者" ColumnName="異動者" />
+          <ScalarProperty Name="建立日期" ColumnName="建立日期" />
+          <ScalarProperty Name="論壇識別" ColumnName="論壇識別" />
+          <ScalarProperty Name="相簿編號" ColumnName="相簿編號" />
+          <ScalarProperty Name="行動圖片路徑" ColumnName="行動圖片路徑" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="專欄回覆">
+      <EntityTypeMapping TypeName="IronModel.專欄回覆">
+        <MappingFragment StoreEntitySet="專欄回覆">
+          <ScalarProperty Name="專欄流水號" ColumnName="專欄流水號" />
+          <ScalarProperty Name="回覆流水號" ColumnName="回覆流水號" />
+          <ScalarProperty Name="MoloKey" ColumnName="MoloKey" />
+          <ScalarProperty Name="內容" ColumnName="內容" />
+          <ScalarProperty Name="回覆狀態" ColumnName="回覆狀態" />
+          <ScalarProperty Name="置頂YN" ColumnName="置頂YN" />
+          <ScalarProperty Name="置頂時間" ColumnName="置頂時間" />
+          <ScalarProperty Name="隱藏YN" ColumnName="隱藏YN" />
+          <ScalarProperty Name="建立日期" ColumnName="建立日期" />
+          <ScalarProperty Name="論壇識別" ColumnName="論壇識別" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="專欄動作記錄">
+      <EntityTypeMapping TypeName="IronModel.專欄動作記錄">
+        <MappingFragment StoreEntitySet="專欄動作記錄">
+          <ScalarProperty Name="動作記錄編號" ColumnName="動作記錄編號" />
+          <ScalarProperty Name="專欄流水號" ColumnName="專欄流水號" />
+          <ScalarProperty Name="動作識別" ColumnName="動作識別" />
+          <ScalarProperty Name="執行動作" ColumnName="執行動作" />
+          <ScalarProperty Name="備註" ColumnName="備註" />
+          <ScalarProperty Name="異動者" ColumnName="異動者" />
+          <ScalarProperty Name="建立日期" ColumnName="建立日期" />
+          <ScalarProperty Name="論壇識別" ColumnName="論壇識別" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="專欄牆">
+      <EntityTypeMapping TypeName="IronModel.專欄牆">
+        <MappingFragment StoreEntitySet="專欄牆">
+          <ScalarProperty Name="圖片編號" ColumnName="圖片編號" />
+          <ScalarProperty Name="圖片路徑" ColumnName="圖片路徑" />
+          <ScalarProperty Name="標題" ColumnName="標題" />
+          <ScalarProperty Name="圖片連結" ColumnName="圖片連結" />
+          <ScalarProperty Name="論壇識別" ColumnName="論壇識別" />
+          <ScalarProperty Name="異動者" ColumnName="異動者" />
+          <ScalarProperty Name="建立日期" ColumnName="建立日期" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="登出入歷程">
+      <EntityTypeMapping TypeName="IronModel.登出入歷程">
+        <MappingFragment StoreEntitySet="登出入歷程">
+          <ScalarProperty Name="論壇識別" ColumnName="論壇識別" />
+          <ScalarProperty Name="流水號" ColumnName="流水號" />
+          <ScalarProperty Name="MoloKey" ColumnName="MoloKey" />
+          <ScalarProperty Name="項目" ColumnName="項目" />
+          <ScalarProperty Name="使用IP" ColumnName="使用IP" />
+          <ScalarProperty Name="備註" ColumnName="備註" />
+          <ScalarProperty Name="建立日期" ColumnName="建立日期" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="意見反應">
+      <EntityTypeMapping TypeName="IronModel.意見反應">
+        <MappingFragment StoreEntitySet="意見反應">
+          <ScalarProperty Name="問題流水號" ColumnName="問題流水號" />
+          <ScalarProperty Name="MoloKey" ColumnName="MoloKey" />
+          <ScalarProperty Name="屬性編號" ColumnName="屬性編號" />
+          <ScalarProperty Name="問題說明" ColumnName="問題說明" />
+          <ScalarProperty Name="處理狀態" ColumnName="處理狀態" />
+          <ScalarProperty Name="處理說明" ColumnName="處理說明" />
+          <ScalarProperty Name="處理人員" ColumnName="處理人員" />
+          <ScalarProperty Name="建立日期" ColumnName="建立日期" />
+          <ScalarProperty Name="論壇識別" ColumnName="論壇識別" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="意見反應屬性">
+      <EntityTypeMapping TypeName="IronModel.意見反應屬性">
+        <MappingFragment StoreEntitySet="意見反應屬性">
+          <ScalarProperty Name="屬性編號" ColumnName="屬性編號" />
+          <ScalarProperty Name="屬性名稱" ColumnName="屬性名稱" />
+          <ScalarProperty Name="屬性圖片" ColumnName="屬性圖片" />
+          <ScalarProperty Name="屬性狀態" ColumnName="屬性狀態" />
+          <ScalarProperty Name="備註" ColumnName="備註" />
+          <ScalarProperty Name="隱藏YN" ColumnName="隱藏YN" />
+          <ScalarProperty Name="建立時間" ColumnName="建立時間" />
+          <ScalarProperty Name="論壇識別" ColumnName="論壇識別" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="新聞">
+      <EntityTypeMapping TypeName="IronModel.新聞">
+        <MappingFragment StoreEntitySet="新聞">
+          <ScalarProperty Name="屬性編號" ColumnName="屬性編號" />
+          <ScalarProperty Name="新聞流水號" ColumnName="新聞流水號" />
+          <ScalarProperty Name="標題" ColumnName="標題" />
+          <ScalarProperty Name="內容" ColumnName="內容" />
+          <ScalarProperty Name="新聞狀態" ColumnName="新聞狀態" />
+          <ScalarProperty Name="置首YN" ColumnName="置首YN" />
+          <ScalarProperty Name="推薦YN" ColumnName="推薦YN" />
+          <ScalarProperty Name="圖片路徑" ColumnName="圖片路徑" />
+          <ScalarProperty Name="影片連結" ColumnName="影片連結" />
+          <ScalarProperty Name="發佈開始日" ColumnName="發佈開始日" />
+          <ScalarProperty Name="發佈結束日" ColumnName="發佈結束日" />
+          <ScalarProperty Name="異動者" ColumnName="異動者" />
+          <ScalarProperty Name="建立日期" ColumnName="建立日期" />
+          <ScalarProperty Name="論壇識別" ColumnName="論壇識別" />
+          <ScalarProperty Name="點擊率" ColumnName="點擊率" />
+          <ScalarProperty Name="相簿編號" ColumnName="相簿編號" />
+          <ScalarProperty Name="行動圖片路徑" ColumnName="行動圖片路徑" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="新聞回覆">
+      <EntityTypeMapping TypeName="IronModel.新聞回覆">
+        <MappingFragment StoreEntitySet="新聞回覆">
+          <ScalarProperty Name="新聞流水號" ColumnName="新聞流水號" />
+          <ScalarProperty Name="回覆流水號" ColumnName="回覆流水號" />
+          <ScalarProperty Name="MoloKey" ColumnName="MoloKey" />
+          <ScalarProperty Name="內容" ColumnName="內容" />
+          <ScalarProperty Name="回覆狀態" ColumnName="回覆狀態" />
+          <ScalarProperty Name="置頂YN" ColumnName="置頂YN" />
+          <ScalarProperty Name="置頂時間" ColumnName="置頂時間" />
+          <ScalarProperty Name="隱藏YN" ColumnName="隱藏YN" />
+          <ScalarProperty Name="建立日期" ColumnName="建立日期" />
+          <ScalarProperty Name="論壇識別" ColumnName="論壇識別" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="新聞動作記錄">
+      <EntityTypeMapping TypeName="IronModel.新聞動作記錄">
+        <MappingFragment StoreEntitySet="新聞動作記錄">
+          <ScalarProperty Name="動作記錄編號" ColumnName="動作記錄編號" />
+          <ScalarProperty Name="新聞流水號" ColumnName="新聞流水號" />
+          <ScalarProperty Name="動作識別" ColumnName="動作識別" />
+          <ScalarProperty Name="執行動作" ColumnName="執行動作" />
+          <ScalarProperty Name="備註" ColumnName="備註" />
+          <ScalarProperty Name="異動者" ColumnName="異動者" />
+          <ScalarProperty Name="建立日期" ColumnName="建立日期" />
+          <ScalarProperty Name="論壇識別" ColumnName="論壇識別" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="新聞點擊">
+      <EntityTypeMapping TypeName="IronModel.新聞點擊">
+        <MappingFragment StoreEntitySet="新聞點擊">
+          <ScalarProperty Name="論壇識別" ColumnName="論壇識別" />
+          <ScalarProperty Name="年月日" ColumnName="年月日" />
+          <ScalarProperty Name="新聞流水號" ColumnName="新聞流水號" />
+          <ScalarProperty Name="標題" ColumnName="標題" />
+          <ScalarProperty Name="點擊率" ColumnName="點擊率" />
+          <ScalarProperty Name="更新日期" ColumnName="更新日期" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="新聞屬性">
+      <EntityTypeMapping TypeName="IronModel.新聞屬性">
+        <MappingFragment StoreEntitySet="新聞屬性">
+          <ScalarProperty Name="屬性編號" ColumnName="屬性編號" />
+          <ScalarProperty Name="屬性名稱" ColumnName="屬性名稱" />
+          <ScalarProperty Name="屬性圖片" ColumnName="屬性圖片" />
+          <ScalarProperty Name="屬性狀態" ColumnName="屬性狀態" />
+          <ScalarProperty Name="備註" ColumnName="備註" />
+          <ScalarProperty Name="建立時間" ColumnName="建立時間" />
+          <ScalarProperty Name="論壇識別" ColumnName="論壇識別" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="會員">
+      <EntityTypeMapping TypeName="IronModel.會員">
+        <MappingFragment StoreEntitySet="會員">
+          <ScalarProperty Name="MoloKey" ColumnName="MoloKey" />
+          <ScalarProperty Name="Icon名稱" ColumnName="Icon名稱" />
+          <ScalarProperty Name="暱稱" ColumnName="暱稱" />
+          <ScalarProperty Name="性別" ColumnName="性別" />
+          <ScalarProperty Name="生日" ColumnName="生日" />
+          <ScalarProperty Name="門號" ColumnName="門號" />
+          <ScalarProperty Name="電子信箱" ColumnName="電子信箱" />
+          <ScalarProperty Name="信箱公開YN" ColumnName="信箱公開YN" />
+          <ScalarProperty Name="等級" ColumnName="等級" />
+          <ScalarProperty Name="經驗值" ColumnName="經驗值" />
+          <ScalarProperty Name="鐵幣" ColumnName="鐵幣" />
+          <ScalarProperty Name="上次發文時間" ColumnName="上次發文時間" />
+          <ScalarProperty Name="上次登入IP" ColumnName="上次登入IP" />
+          <ScalarProperty Name="上次活動時間" ColumnName="上次活動時間" />
+          <ScalarProperty Name="累計在線時間" ColumnName="累計在線時間" />
+          <ScalarProperty Name="註冊時間" ColumnName="註冊時間" />
+          <ScalarProperty Name="MoloYN" ColumnName="MoloYN" />
+          <ScalarProperty Name="註冊來源" ColumnName="註冊來源" />
+          <ScalarProperty Name="永久停權YN" ColumnName="永久停權YN" />
+          <ScalarProperty Name="停權日期" ColumnName="停權日期" />
+          <ScalarProperty Name="永久鎖定YN" ColumnName="永久鎖定YN" />
+          <ScalarProperty Name="鎖定日期" ColumnName="鎖定日期" />
+          <ScalarProperty Name="上次登入時間" ColumnName="上次登入時間" />
+          <ScalarProperty Name="簽名檔" ColumnName="簽名檔" />
+          <ScalarProperty Name="鐵幣顯示YN" ColumnName="鐵幣顯示YN" />
+          <ScalarProperty Name="特殊稱號" ColumnName="特殊稱號" />
+          <ScalarProperty Name="邊框名稱" ColumnName="邊框名稱" />
+          <ScalarProperty Name="邊框Icon" ColumnName="邊框Icon" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="會員文章收藏">
+      <EntityTypeMapping TypeName="IronModel.會員文章收藏">
+        <MappingFragment StoreEntitySet="會員文章收藏">
+          <ScalarProperty Name="收藏流水號" ColumnName="收藏流水號" />
+          <ScalarProperty Name="屬性編號" ColumnName="屬性編號" />
+          <ScalarProperty Name="發文MoloKey" ColumnName="發文MoloKey" />
+          <ScalarProperty Name="收藏MoloKey" ColumnName="收藏MoloKey" />
+          <ScalarProperty Name="文章流水號" ColumnName="文章流水號" />
+          <ScalarProperty Name="標題" ColumnName="標題" />
+          <ScalarProperty Name="文章發佈日" ColumnName="文章發佈日" />
+          <ScalarProperty Name="建立日期" ColumnName="建立日期" />
+          <ScalarProperty Name="論壇識別" ColumnName="論壇識別" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="會員文章訂閱">
+      <EntityTypeMapping TypeName="IronModel.會員文章訂閱">
+        <MappingFragment StoreEntitySet="會員文章訂閱">
+          <ScalarProperty Name="訂閱流水號" ColumnName="訂閱流水號" />
+          <ScalarProperty Name="屬性編號" ColumnName="屬性編號" />
+          <ScalarProperty Name="發文MoloKey" ColumnName="發文MoloKey" />
+          <ScalarProperty Name="訂閱MoloKey" ColumnName="訂閱MoloKey" />
+          <ScalarProperty Name="文章流水號" ColumnName="文章流水號" />
+          <ScalarProperty Name="標題" ColumnName="標題" />
+          <ScalarProperty Name="文章發佈日" ColumnName="文章發佈日" />
+          <ScalarProperty Name="通知YN" ColumnName="通知YN" />
+          <ScalarProperty Name="讀取YN" ColumnName="讀取YN" />
+          <ScalarProperty Name="建立日期" ColumnName="建立日期" />
+          <ScalarProperty Name="論壇識別" ColumnName="論壇識別" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="會員交易">
+      <EntityTypeMapping TypeName="IronModel.會員交易">
+        <MappingFragment StoreEntitySet="會員交易">
+          <ScalarProperty Name="交易流水號" ColumnName="交易流水號" />
+          <ScalarProperty Name="發起方MoloKey" ColumnName="發起方MoloKey" />
+          <ScalarProperty Name="發起方暱稱" ColumnName="發起方暱稱" />
+          <ScalarProperty Name="接收方MoloKey" ColumnName="接收方MoloKey" />
+          <ScalarProperty Name="接收方暱稱" ColumnName="接收方暱稱" />
+          <ScalarProperty Name="鐵幣" ColumnName="鐵幣" />
+          <ScalarProperty Name="手續費" ColumnName="手續費" />
+          <ScalarProperty Name="狀態" ColumnName="狀態" />
+          <ScalarProperty Name="建立時間" ColumnName="建立時間" />
+          <ScalarProperty Name="發起方刪除YN" ColumnName="發起方刪除YN" />
+          <ScalarProperty Name="接收方刪除YN" ColumnName="接收方刪除YN" />
+          <ScalarProperty Name="論壇識別" ColumnName="論壇識別" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="會員回覆推文">
+      <EntityTypeMapping TypeName="IronModel.會員回覆推文">
+        <MappingFragment StoreEntitySet="會員回覆推文">
+          <ScalarProperty Name="屬性編號" ColumnName="屬性編號" />
+          <ScalarProperty Name="文章回覆流水號" ColumnName="文章回覆流水號" />
+          <ScalarProperty Name="推文MoloKey" ColumnName="推文MoloKey" />
+          <ScalarProperty Name="建立日期" ColumnName="建立日期" />
+          <ScalarProperty Name="論壇識別" ColumnName="論壇識別" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="會員訂閱">
+      <EntityTypeMapping TypeName="IronModel.會員訂閱">
+        <MappingFragment StoreEntitySet="會員訂閱">
+          <ScalarProperty Name="發文MoloKey" ColumnName="發文MoloKey" />
+          <ScalarProperty Name="訂閱MoloKey" ColumnName="訂閱MoloKey" />
+          <ScalarProperty Name="建立日期" ColumnName="建立日期" />
+          <ScalarProperty Name="論壇識別" ColumnName="論壇識別" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="會員計數">
+      <EntityTypeMapping TypeName="IronModel.會員計數">
+        <MappingFragment StoreEntitySet="會員計數">
+          <ScalarProperty Name="MoloKey" ColumnName="MoloKey" />
+          <ScalarProperty Name="發文次數" ColumnName="發文次數" />
+          <ScalarProperty Name="星海發文次數" ColumnName="星海發文次數" />
+          <ScalarProperty Name="英雄發文次數" ColumnName="英雄發文次數" />
+          <ScalarProperty Name="英雄攻略次數" ColumnName="英雄攻略次數" />
+          <ScalarProperty Name="爐石發文次數" ColumnName="爐石發文次數" />
+          <ScalarProperty Name="回覆次數" ColumnName="回覆次數" />
+          <ScalarProperty Name="推文次數" ColumnName="推文次數" />
+          <ScalarProperty Name="留言次數" ColumnName="留言次數" />
+          <ScalarProperty Name="文章總瀏覽數" ColumnName="文章總瀏覽數" />
+          <ScalarProperty Name="文章被瀏覽數" ColumnName="文章被瀏覽數" />
+          <ScalarProperty Name="FB宣傳次數" ColumnName="FB宣傳次數" />
+          <ScalarProperty Name="累計贈送次數" ColumnName="累計贈送次數" />
+          <ScalarProperty Name="登入次數" ColumnName="登入次數" />
+          <ScalarProperty Name="連續登入天數" ColumnName="連續登入天數" />
+          <ScalarProperty Name="好友數" ColumnName="好友數" />
+          <ScalarProperty Name="連續簽到天數" ColumnName="連續簽到天數" />
+          <ScalarProperty Name="下載RP次數" ColumnName="下載RP次數" />
+          <ScalarProperty Name="刪文次數" ColumnName="刪文次數" />
+          <ScalarProperty Name="約戰次數" ColumnName="約戰次數" />
+          <ScalarProperty Name="被收藏次數" ColumnName="被收藏次數" />
+          <ScalarProperty Name="總贏次數" ColumnName="總贏次數" />
+          <ScalarProperty Name="連贏次數" ColumnName="連贏次數" />
+          <ScalarProperty Name="連輸次數" ColumnName="連輸次數" />
+          <ScalarProperty Name="下注次數" ColumnName="下注次數" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="會員停權鎖定">
+      <EntityTypeMapping TypeName="IronModel.會員停權鎖定">
+        <MappingFragment StoreEntitySet="會員停權鎖定">
+          <ScalarProperty Name="異動編號" ColumnName="異動編號" />
+          <ScalarProperty Name="識別" ColumnName="識別" />
+          <ScalarProperty Name="MoloKey" ColumnName="MoloKey" />
+          <ScalarProperty Name="天數" ColumnName="天數" />
+          <ScalarProperty Name="開始日" ColumnName="開始日" />
+          <ScalarProperty Name="結束日" ColumnName="結束日" />
+          <ScalarProperty Name="建立日期" ColumnName="建立日期" />
+          <ScalarProperty Name="論壇識別" ColumnName="論壇識別" />
+          <ScalarProperty Name="永久YN" ColumnName="永久YN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="會員停權鎖定歷程">
+      <EntityTypeMapping TypeName="IronModel.會員停權鎖定歷程">
+        <MappingFragment StoreEntitySet="會員停權鎖定歷程">
+          <ScalarProperty Name="異動編號" ColumnName="異動編號" />
+          <ScalarProperty Name="MoloKey" ColumnName="MoloKey" />
+          <ScalarProperty Name="異動說明" ColumnName="異動說明" />
+          <ScalarProperty Name="舊資料" ColumnName="舊資料" />
+          <ScalarProperty Name="新資料" ColumnName="新資料" />
+          <ScalarProperty Name="異動者" ColumnName="異動者" />
+          <ScalarProperty Name="備註" ColumnName="備註" />
+          <ScalarProperty Name="建立日期" ColumnName="建立日期" />
+          <ScalarProperty Name="論壇識別" ColumnName="論壇識別" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="會員專欄收藏">
+      <EntityTypeMapping TypeName="IronModel.會員專欄收藏">
+        <MappingFragment StoreEntitySet="會員專欄收藏">
+          <ScalarProperty Name="收藏流水號" ColumnName="收藏流水號" />
+          <ScalarProperty Name="收藏MoloKey" ColumnName="收藏MoloKey" />
+          <ScalarProperty Name="專欄流水號" ColumnName="專欄流水號" />
+          <ScalarProperty Name="標題" ColumnName="標題" />
+          <ScalarProperty Name="專欄發佈日" ColumnName="專欄發佈日" />
+          <ScalarProperty Name="建立日期" ColumnName="建立日期" />
+          <ScalarProperty Name="論壇識別" ColumnName="論壇識別" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="會員推文">
+      <EntityTypeMapping TypeName="IronModel.會員推文">
+        <MappingFragment StoreEntitySet="會員推文">
+          <ScalarProperty Name="屬性編號" ColumnName="屬性編號" />
+          <ScalarProperty Name="文章流水號" ColumnName="文章流水號" />
+          <ScalarProperty Name="推文MoloKey" ColumnName="推文MoloKey" />
+          <ScalarProperty Name="建立日期" ColumnName="建立日期" />
+          <ScalarProperty Name="論壇識別" ColumnName="論壇識別" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="會員異動歷程">
+      <EntityTypeMapping TypeName="IronModel.會員異動歷程">
+        <MappingFragment StoreEntitySet="會員異動歷程">
+          <ScalarProperty Name="異動編號" ColumnName="異動編號" />
+          <ScalarProperty Name="MoloKey" ColumnName="MoloKey" />
+          <ScalarProperty Name="異動說明" ColumnName="異動說明" />
+          <ScalarProperty Name="舊資料" ColumnName="舊資料" />
+          <ScalarProperty Name="新資料" ColumnName="新資料" />
+          <ScalarProperty Name="異動者" ColumnName="異動者" />
+          <ScalarProperty Name="備註" ColumnName="備註" />
+          <ScalarProperty Name="建立日期" ColumnName="建立日期" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="會員新聞收藏">
+      <EntityTypeMapping TypeName="IronModel.會員新聞收藏">
+        <MappingFragment StoreEntitySet="會員新聞收藏">
+          <ScalarProperty Name="收藏流水號" ColumnName="收藏流水號" />
+          <ScalarProperty Name="收藏MoloKey" ColumnName="收藏MoloKey" />
+          <ScalarProperty Name="新聞流水號" ColumnName="新聞流水號" />
+          <ScalarProperty Name="標題" ColumnName="標題" />
+          <ScalarProperty Name="新聞發佈日" ColumnName="新聞發佈日" />
+          <ScalarProperty Name="建立日期" ColumnName="建立日期" />
+          <ScalarProperty Name="論壇識別" ColumnName="論壇識別" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="會員簽到">
+      <EntityTypeMapping TypeName="IronModel.會員簽到">
+        <MappingFragment StoreEntitySet="會員簽到">
+          <ScalarProperty Name="年月日" ColumnName="年月日" />
+          <ScalarProperty Name="MoloKey" ColumnName="MoloKey" />
+          <ScalarProperty Name="建立日期" ColumnName="建立日期" />
+          <ScalarProperty Name="論壇識別" ColumnName="論壇識別" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="業餘戰隊">
+      <EntityTypeMapping TypeName="IronModel.業餘戰隊">
+        <MappingFragment StoreEntitySet="業餘戰隊">
+          <ScalarProperty Name="論壇識別" ColumnName="論壇識別" />
+          <ScalarProperty Name="戰隊編號" ColumnName="戰隊編號" />
+          <ScalarProperty Name="戰隊Logo" ColumnName="戰隊Logo" />
+          <ScalarProperty Name="戰隊隊名" ColumnName="戰隊隊名" />
+          <ScalarProperty Name="戰隊圖片" ColumnName="戰隊圖片" />
+          <ScalarProperty Name="戰隊簡介" ColumnName="戰隊簡介" />
+          <ScalarProperty Name="成員數" ColumnName="成員數" />
+          <ScalarProperty Name="成立時間" ColumnName="成立時間" />
+          <ScalarProperty Name="備註" ColumnName="備註" />
+          <ScalarProperty Name="關閉YN" ColumnName="關閉YN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="業餘戰隊_文章">
+      <EntityTypeMapping TypeName="IronModel.業餘戰隊_文章">
+        <MappingFragment StoreEntitySet="業餘戰隊_文章">
+          <ScalarProperty Name="屬性編號" ColumnName="屬性編號" />
+          <ScalarProperty Name="戰隊編號" ColumnName="戰隊編號" />
+          <ScalarProperty Name="MoloKey" ColumnName="MoloKey" />
+          <ScalarProperty Name="文章流水號" ColumnName="文章流水號" />
+          <ScalarProperty Name="標題" ColumnName="標題" />
+          <ScalarProperty Name="內容" ColumnName="內容" />
+          <ScalarProperty Name="文章狀態" ColumnName="文章狀態" />
+          <ScalarProperty Name="置頂YN" ColumnName="置頂YN" />
+          <ScalarProperty Name="置頂時間" ColumnName="置頂時間" />
+          <ScalarProperty Name="推薦YN" ColumnName="推薦YN" />
+          <ScalarProperty Name="前台推薦YN" ColumnName="前台推薦YN" />
+          <ScalarProperty Name="精華YN" ColumnName="精華YN" />
+          <ScalarProperty Name="隱藏YN" ColumnName="隱藏YN" />
+          <ScalarProperty Name="鎖定YN" ColumnName="鎖定YN" />
+          <ScalarProperty Name="水桶YN" ColumnName="水桶YN" />
+          <ScalarProperty Name="圖片路徑" ColumnName="圖片路徑" />
+          <ScalarProperty Name="影片連結" ColumnName="影片連結" />
+          <ScalarProperty Name="推文數" ColumnName="推文數" />
+          <ScalarProperty Name="回覆數" ColumnName="回覆數" />
+          <ScalarProperty Name="人氣數" ColumnName="人氣數" />
+          <ScalarProperty Name="發佈開始日" ColumnName="發佈開始日" />
+          <ScalarProperty Name="最後回覆日" ColumnName="最後回覆日" />
+          <ScalarProperty Name="異動者" ColumnName="異動者" />
+          <ScalarProperty Name="建立日期" ColumnName="建立日期" />
+          <ScalarProperty Name="前台刪除YN" ColumnName="前台刪除YN" />
+          <ScalarProperty Name="論壇識別" ColumnName="論壇識別" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="業餘戰隊_文章回覆">
+      <EntityTypeMapping TypeName="IronModel.業餘戰隊_文章回覆">
+        <MappingFragment StoreEntitySet="業餘戰隊_文章回覆">
+          <ScalarProperty Name="文章流水號" ColumnName="文章流水號" />
+          <ScalarProperty Name="回覆流水號" ColumnName="回覆流水號" />
+          <ScalarProperty Name="MoloKey" ColumnName="MoloKey" />
+          <ScalarProperty Name="內容" ColumnName="內容" />
+          <ScalarProperty Name="回覆狀態" ColumnName="回覆狀態" />
+          <ScalarProperty Name="置頂YN" ColumnName="置頂YN" />
+          <ScalarProperty Name="置頂時間" ColumnName="置頂時間" />
+          <ScalarProperty Name="隱藏YN" ColumnName="隱藏YN" />
+          <ScalarProperty Name="水桶YN" ColumnName="水桶YN" />
+          <ScalarProperty Name="建立日期" ColumnName="建立日期" />
+          <ScalarProperty Name="前台刪除YN" ColumnName="前台刪除YN" />
+          <ScalarProperty Name="推文數" ColumnName="推文數" />
+          <ScalarProperty Name="論壇識別" ColumnName="論壇識別" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="業餘戰隊_文章留言">
+      <EntityTypeMapping TypeName="IronModel.業餘戰隊_文章留言">
+        <MappingFragment StoreEntitySet="業餘戰隊_文章留言">
+          <ScalarProperty Name="文章流水號" ColumnName="文章流水號" />
+          <ScalarProperty Name="回覆流水號" ColumnName="回覆流水號" />
+          <ScalarProperty Name="留言流水號" ColumnName="留言流水號" />
+          <ScalarProperty Name="MoloKey" ColumnName="MoloKey" />
+          <ScalarProperty Name="暱稱" ColumnName="暱稱" />
+          <ScalarProperty Name="內容" ColumnName="內容" />
+          <ScalarProperty Name="留言狀態" ColumnName="留言狀態" />
+          <ScalarProperty Name="置頂YN" ColumnName="置頂YN" />
+          <ScalarProperty Name="置頂時間" ColumnName="置頂時間" />
+          <ScalarProperty Name="隱藏YN" ColumnName="隱藏YN" />
+          <ScalarProperty Name="水桶YN" ColumnName="水桶YN" />
+          <ScalarProperty Name="建立日期" ColumnName="建立日期" />
+          <ScalarProperty Name="論壇識別" ColumnName="論壇識別" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="業餘戰隊_文章屬性">
+      <EntityTypeMapping TypeName="IronModel.業餘戰隊_文章屬性">
+        <MappingFragment StoreEntitySet="業餘戰隊_文章屬性">
+          <ScalarProperty Name="戰隊編號" ColumnName="戰隊編號" />
+          <ScalarProperty Name="屬性編號" ColumnName="屬性編號" />
+          <ScalarProperty Name="屬性名稱" ColumnName="屬性名稱" />
+          <ScalarProperty Name="屬性圖片" ColumnName="屬性圖片" />
+          <ScalarProperty Name="屬性狀態" ColumnName="屬性狀態" />
+          <ScalarProperty Name="備註" ColumnName="備註" />
+          <ScalarProperty Name="隱藏YN" ColumnName="隱藏YN" />
+          <ScalarProperty Name="版主" ColumnName="版主" />
+          <ScalarProperty Name="副版主" ColumnName="副版主" />
+          <ScalarProperty Name="置頂時間" ColumnName="置頂時間" />
+          <ScalarProperty Name="建立時間" ColumnName="建立時間" />
+          <ScalarProperty Name="論壇識別" ColumnName="論壇識別" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="業餘戰隊_推文">
+      <EntityTypeMapping TypeName="IronModel.業餘戰隊_推文">
+        <MappingFragment StoreEntitySet="業餘戰隊_推文">
+          <ScalarProperty Name="屬性編號" ColumnName="屬性編號" />
+          <ScalarProperty Name="文章流水號" ColumnName="文章流水號" />
+          <ScalarProperty Name="推文MoloKey" ColumnName="推文MoloKey" />
+          <ScalarProperty Name="建立日期" ColumnName="建立日期" />
+          <ScalarProperty Name="論壇識別" ColumnName="論壇識別" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="業餘戰隊加入區">
+      <EntityTypeMapping TypeName="IronModel.業餘戰隊加入區">
+        <MappingFragment StoreEntitySet="業餘戰隊加入區">
+          <ScalarProperty Name="流水號" ColumnName="流水號" />
+          <ScalarProperty Name="戰隊編號" ColumnName="戰隊編號" />
+          <ScalarProperty Name="MoloKey" ColumnName="MoloKey" />
+          <ScalarProperty Name="暱稱" ColumnName="暱稱" />
+          <ScalarProperty Name="核准YN" ColumnName="核准YN" />
+          <ScalarProperty Name="建立日期" ColumnName="建立日期" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="業餘戰隊申請區">
+      <EntityTypeMapping TypeName="IronModel.業餘戰隊申請區">
+        <MappingFragment StoreEntitySet="業餘戰隊申請區">
+          <ScalarProperty Name="論壇識別" ColumnName="論壇識別" />
+          <ScalarProperty Name="申請編號" ColumnName="申請編號" />
+          <ScalarProperty Name="申請隊名" ColumnName="申請隊名" />
+          <ScalarProperty Name="MoloKey" ColumnName="MoloKey" />
+          <ScalarProperty Name="暱稱" ColumnName="暱稱" />
+          <ScalarProperty Name="說明" ColumnName="說明" />
+          <ScalarProperty Name="核准YN" ColumnName="核准YN" />
+          <ScalarProperty Name="異動者" ColumnName="異動者" />
+          <ScalarProperty Name="簽核日期" ColumnName="簽核日期" />
+          <ScalarProperty Name="建立日期" ColumnName="建立日期" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="業餘戰隊回覆推文">
+      <EntityTypeMapping TypeName="IronModel.業餘戰隊回覆推文">
+        <MappingFragment StoreEntitySet="業餘戰隊回覆推文">
+          <ScalarProperty Name="屬性編號" ColumnName="屬性編號" />
+          <ScalarProperty Name="文章回覆流水號" ColumnName="文章回覆流水號" />
+          <ScalarProperty Name="推文MoloKey" ColumnName="推文MoloKey" />
+          <ScalarProperty Name="建立日期" ColumnName="建立日期" />
+          <ScalarProperty Name="論壇識別" ColumnName="論壇識別" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="業餘戰隊成員">
+      <EntityTypeMapping TypeName="IronModel.業餘戰隊成員">
+        <MappingFragment StoreEntitySet="業餘戰隊成員">
+          <ScalarProperty Name="流水號" ColumnName="流水號" />
+          <ScalarProperty Name="論壇識別" ColumnName="論壇識別" />
+          <ScalarProperty Name="戰隊編號" ColumnName="戰隊編號" />
+          <ScalarProperty Name="隊員名稱" ColumnName="隊員名稱" />
+          <ScalarProperty Name="隊長YN" ColumnName="隊長YN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="業餘戰隊約戰">
+      <EntityTypeMapping TypeName="IronModel.業餘戰隊約戰">
+        <MappingFragment StoreEntitySet="業餘戰隊約戰">
+          <ScalarProperty Name="流水號" ColumnName="流水號" />
+          <ScalarProperty Name="約戰確認方" ColumnName="約戰確認方" />
+          <ScalarProperty Name="約戰提出方" ColumnName="約戰提出方" />
+          <ScalarProperty Name="約戰時間" ColumnName="約戰時間" />
+          <ScalarProperty Name="約戰原因" ColumnName="約戰原因" />
+          <ScalarProperty Name="約戰回覆" ColumnName="約戰回覆" />
+          <ScalarProperty Name="約戰狀態" ColumnName="約戰狀態" />
+          <ScalarProperty Name="建立日期" ColumnName="建立日期" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="電競選手">
+      <EntityTypeMapping TypeName="IronModel.電競選手">
+        <MappingFragment StoreEntitySet="電競選手">
+          <ScalarProperty Name="流水號" ColumnName="流水號" />
+          <ScalarProperty Name="選手名稱" ColumnName="選手名稱" />
+          <ScalarProperty Name="選手圖片" ColumnName="選手圖片" />
+          <ScalarProperty Name="年齡" ColumnName="年齡" />
+          <ScalarProperty Name="國名" ColumnName="國名" />
+          <ScalarProperty Name="遊戲年齡" ColumnName="遊戲年齡" />
+          <ScalarProperty Name="競技項目" ColumnName="競技項目" />
+          <ScalarProperty Name="種族" ColumnName="種族" />
+          <ScalarProperty Name="隱藏YN" ColumnName="隱藏YN" />
+          <ScalarProperty Name="使用配備" ColumnName="使用配備" />
+          <ScalarProperty Name="建立日期" ColumnName="建立日期" />
+          <ScalarProperty Name="論壇識別" ColumnName="論壇識別" />
+          <ScalarProperty Name="選手介紹" ColumnName="選手介紹" />
+          <ScalarProperty Name="團隊位置" ColumnName="團隊位置" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="電競選手照片">
+      <EntityTypeMapping TypeName="IronModel.電競選手照片">
+        <MappingFragment StoreEntitySet="電競選手照片">
+          <ScalarProperty Name="流水號" ColumnName="流水號" />
+          <ScalarProperty Name="戰隊編號" ColumnName="戰隊編號" />
+          <ScalarProperty Name="選手流水號" ColumnName="選手流水號" />
+          <ScalarProperty Name="選手名稱" ColumnName="選手名稱" />
+          <ScalarProperty Name="照片路徑" ColumnName="照片路徑" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="稱號設定">
+      <EntityTypeMapping TypeName="IronModel.稱號設定">
+        <MappingFragment StoreEntitySet="稱號設定">
+          <ScalarProperty Name="流水號" ColumnName="流水號" />
+          <ScalarProperty Name="啟始等級" ColumnName="啟始等級" />
+          <ScalarProperty Name="結束等級" ColumnName="結束等級" />
+          <ScalarProperty Name="稱號" ColumnName="稱號" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="影片">
+      <EntityTypeMapping TypeName="IronModel.影片">
+        <MappingFragment StoreEntitySet="影片">
+          <ScalarProperty Name="影片流水號" ColumnName="影片流水號" />
+          <ScalarProperty Name="標題" ColumnName="標題" />
+          <ScalarProperty Name="內容" ColumnName="內容" />
+          <ScalarProperty Name="影片狀態" ColumnName="影片狀態" />
+          <ScalarProperty Name="置首YN" ColumnName="置首YN" />
+          <ScalarProperty Name="推薦YN" ColumnName="推薦YN" />
+          <ScalarProperty Name="圖片路徑" ColumnName="圖片路徑" />
+          <ScalarProperty Name="影片連結" ColumnName="影片連結" />
+          <ScalarProperty Name="發佈開始日" ColumnName="發佈開始日" />
+          <ScalarProperty Name="發佈結束日" ColumnName="發佈結束日" />
+          <ScalarProperty Name="異動者" ColumnName="異動者" />
+          <ScalarProperty Name="建立日期" ColumnName="建立日期" />
+          <ScalarProperty Name="論壇識別" ColumnName="論壇識別" />
+          <ScalarProperty Name="影片識別" ColumnName="影片識別" />
+          <ScalarProperty Name="點擊數" ColumnName="點擊數" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="影片回覆">
+      <EntityTypeMapping TypeName="IronModel.影片回覆">
+        <MappingFragment StoreEntitySet="影片回覆">
+          <ScalarProperty Name="影片流水號" ColumnName="影片流水號" />
+          <ScalarProperty Name="回覆流水號" ColumnName="回覆流水號" />
+          <ScalarProperty Name="MoloKey" ColumnName="MoloKey" />
+          <ScalarProperty Name="內容" ColumnName="內容" />
+          <ScalarProperty Name="回覆狀態" ColumnName="回覆狀態" />
+          <ScalarProperty Name="置頂YN" ColumnName="置頂YN" />
+          <ScalarProperty Name="置頂時間" ColumnName="置頂時間" />
+          <ScalarProperty Name="隱藏YN" ColumnName="隱藏YN" />
+          <ScalarProperty Name="建立日期" ColumnName="建立日期" />
+          <ScalarProperty Name="論壇識別" ColumnName="論壇識別" />
+          <ScalarProperty Name="推文數" ColumnName="推文數" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="暱稱列表">
+      <EntityTypeMapping TypeName="IronModel.暱稱列表">
+        <MappingFragment StoreEntitySet="暱稱列表">
+          <ScalarProperty Name="流水號" ColumnName="流水號" />
+          <ScalarProperty Name="MoloKey" ColumnName="MoloKey" />
+          <ScalarProperty Name="暱稱" ColumnName="暱稱" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="論壇列表">
+      <EntityTypeMapping TypeName="IronModel.論壇列表">
+        <MappingFragment StoreEntitySet="論壇列表">
+          <ScalarProperty Name="論壇識別" ColumnName="論壇識別" />
+          <ScalarProperty Name="論壇名稱" ColumnName="論壇名稱" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="趣味遊戲_下注">
+      <EntityTypeMapping TypeName="IronModel.趣味遊戲_下注">
+        <MappingFragment StoreEntitySet="趣味遊戲_下注">
+          <ScalarProperty Name="遊戲編號" ColumnName="遊戲編號" />
+          <ScalarProperty Name="MoloKey" ColumnName="MoloKey" />
+          <ScalarProperty Name="開盤流水號" ColumnName="開盤流水號" />
+          <ScalarProperty Name="下注流水號" ColumnName="下注流水號" />
+          <ScalarProperty Name="下注張數" ColumnName="下注張數" />
+          <ScalarProperty Name="輸贏" ColumnName="輸贏" />
+          <ScalarProperty Name="派彩YN" ColumnName="派彩YN" />
+          <ScalarProperty Name="派彩時間" ColumnName="派彩時間" />
+          <ScalarProperty Name="獲得鐵幣" ColumnName="獲得鐵幣" />
+          <ScalarProperty Name="建立日期" ColumnName="建立日期" />
+          <ScalarProperty Name="論壇識別" ColumnName="論壇識別" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="趣味遊戲_主客">
+      <EntityTypeMapping TypeName="IronModel.趣味遊戲_主客">
+        <MappingFragment StoreEntitySet="趣味遊戲_主客">
+          <ScalarProperty Name="流水號" ColumnName="流水號" />
+          <ScalarProperty Name="遊戲編號" ColumnName="遊戲編號" />
+          <ScalarProperty Name="場次" ColumnName="場次" />
+          <ScalarProperty Name="選手流水號" ColumnName="選手流水號" />
+          <ScalarProperty Name="排序" ColumnName="排序" />
+          <ScalarProperty Name="選手名稱" ColumnName="選手名稱" />
+          <ScalarProperty Name="位置" ColumnName="位置" />
+          <ScalarProperty Name="選用角色" ColumnName="選用角色" />
+          <ScalarProperty Name="備註" ColumnName="備註" />
+          <ScalarProperty Name="建立日期" ColumnName="建立日期" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="趣味遊戲_主檔">
+      <EntityTypeMapping TypeName="IronModel.趣味遊戲_主檔">
+        <MappingFragment StoreEntitySet="趣味遊戲_主檔">
+          <ScalarProperty Name="遊戲編號" ColumnName="遊戲編號" />
+          <ScalarProperty Name="遊戲項目" ColumnName="遊戲項目" />
+          <ScalarProperty Name="比賽時間" ColumnName="比賽時間" />
+          <ScalarProperty Name="比賽YN" ColumnName="比賽YN" />
+          <ScalarProperty Name="封盤時間" ColumnName="封盤時間" />
+          <ScalarProperty Name="封盤YN" ColumnName="封盤YN" />
+          <ScalarProperty Name="單複選" ColumnName="單複選" />
+          <ScalarProperty Name="比賽賽制" ColumnName="比賽賽制" />
+          <ScalarProperty Name="遊戲玩法" ColumnName="遊戲玩法" />
+          <ScalarProperty Name="直播連結" ColumnName="直播連結" />
+          <ScalarProperty Name="總投注" ColumnName="總投注" />
+          <ScalarProperty Name="狀態" ColumnName="狀態" />
+          <ScalarProperty Name="比賽結果" ColumnName="比賽結果" />
+          <ScalarProperty Name="備註" ColumnName="備註" />
+          <ScalarProperty Name="論壇回收" ColumnName="論壇回收" />
+          <ScalarProperty Name="派彩時間" ColumnName="派彩時間" />
+          <ScalarProperty Name="上傳時間" ColumnName="上傳時間" />
+          <ScalarProperty Name="異動者" ColumnName="異動者" />
+          <ScalarProperty Name="論壇識別" ColumnName="論壇識別" />
+          <ScalarProperty Name="標題" ColumnName="標題" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="趣味遊戲_明細">
+      <EntityTypeMapping TypeName="IronModel.趣味遊戲_明細">
+        <MappingFragment StoreEntitySet="趣味遊戲_明細">
+          <ScalarProperty Name="遊戲編號" ColumnName="遊戲編號" />
+          <ScalarProperty Name="對戰流水號" ColumnName="對戰流水號" />
+          <ScalarProperty Name="A選手" ColumnName="A選手" />
+          <ScalarProperty Name="B選手" ColumnName="B選手" />
+          <ScalarProperty Name="建立日期" ColumnName="建立日期" />
+          <ScalarProperty Name="論壇識別" ColumnName="論壇識別" />
+          <ScalarProperty Name="戰隊YN" ColumnName="戰隊YN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="趣味遊戲_開盤">
+      <EntityTypeMapping TypeName="IronModel.趣味遊戲_開盤">
+        <MappingFragment StoreEntitySet="趣味遊戲_開盤">
+          <ScalarProperty Name="遊戲編號" ColumnName="遊戲編號" />
+          <ScalarProperty Name="開盤流水號" ColumnName="開盤流水號" />
+          <ScalarProperty Name="A選手" ColumnName="A選手" />
+          <ScalarProperty Name="B選手" ColumnName="B選手" />
+          <ScalarProperty Name="累積張數" ColumnName="累積張數" />
+          <ScalarProperty Name="建立日期" ColumnName="建立日期" />
+          <ScalarProperty Name="論壇識別" ColumnName="論壇識別" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="趣味遊戲_對戰表">
+      <EntityTypeMapping TypeName="IronModel.趣味遊戲_對戰表">
+        <MappingFragment StoreEntitySet="趣味遊戲_對戰表">
+          <ScalarProperty Name="遊戲編號" ColumnName="遊戲編號" />
+          <ScalarProperty Name="場次" ColumnName="場次" />
+          <ScalarProperty Name="主隊" ColumnName="主隊" />
+          <ScalarProperty Name="主隊得分" ColumnName="主隊得分" />
+          <ScalarProperty Name="客隊" ColumnName="客隊" />
+          <ScalarProperty Name="客隊得分" ColumnName="客隊得分" />
+          <ScalarProperty Name="論壇識別" ColumnName="論壇識別" />
+          <ScalarProperty Name="地圖" ColumnName="地圖" />
+          <ScalarProperty Name="備註1" ColumnName="備註1" />
+          <ScalarProperty Name="備註2" ColumnName="備註2" />
+          <ScalarProperty Name="建立日期" ColumnName="建立日期" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="趣味遊戲主客編號">
+      <EntityTypeMapping TypeName="IronModel.趣味遊戲主客編號">
+        <MappingFragment StoreEntitySet="趣味遊戲主客編號">
+          <ScalarProperty Name="主客流水號" ColumnName="主客流水號" />
+          <ScalarProperty Name="異動日期" ColumnName="異動日期" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="趣味遊戲項目">
+      <EntityTypeMapping TypeName="IronModel.趣味遊戲項目">
+        <MappingFragment StoreEntitySet="趣味遊戲項目">
+          <ScalarProperty Name="項目名稱" ColumnName="項目名稱" />
+          <ScalarProperty Name="項目狀態" ColumnName="項目狀態" />
+          <ScalarProperty Name="備註" ColumnName="備註" />
+          <ScalarProperty Name="建立時間" ColumnName="建立時間" />
+          <ScalarProperty Name="論壇識別" ColumnName="論壇識別" />
+          <ScalarProperty Name="項目Logo" ColumnName="項目Logo" />
+          <ScalarProperty Name="連結" ColumnName="連結" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="趣味遊戲編號">
+      <EntityTypeMapping TypeName="IronModel.趣味遊戲編號">
+        <MappingFragment StoreEntitySet="趣味遊戲編號">
+          <ScalarProperty Name="遊戲流水號" ColumnName="遊戲流水號" />
+          <ScalarProperty Name="異動日期" ColumnName="異動日期" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="導覽圖片">
+      <EntityTypeMapping TypeName="IronModel.導覽圖片">
+        <MappingFragment StoreEntitySet="導覽圖片">
+          <ScalarProperty Name="編號" ColumnName="編號" />
+          <ScalarProperty Name="名稱" ColumnName="名稱" />
+          <ScalarProperty Name="路徑" ColumnName="路徑" />
+          <ScalarProperty Name="網址" ColumnName="網址" />
+          <ScalarProperty Name="上架YN" ColumnName="上架YN" />
+          <ScalarProperty Name="建立日期" ColumnName="建立日期" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="導覽廣告">
+      <EntityTypeMapping TypeName="IronModel.導覽廣告">
+        <MappingFragment StoreEntitySet="導覽廣告">
+          <ScalarProperty Name="編號" ColumnName="編號" />
+          <ScalarProperty Name="名稱" ColumnName="名稱" />
+          <ScalarProperty Name="路徑" ColumnName="路徑" />
+          <ScalarProperty Name="網址" ColumnName="網址" />
+          <ScalarProperty Name="上架YN" ColumnName="上架YN" />
+          <ScalarProperty Name="建立日期" ColumnName="建立日期" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="導覽影片">
+      <EntityTypeMapping TypeName="IronModel.導覽影片">
+        <MappingFragment StoreEntitySet="導覽影片">
+          <ScalarProperty Name="編號" ColumnName="編號" />
+          <ScalarProperty Name="名稱" ColumnName="名稱" />
+          <ScalarProperty Name="路徑" ColumnName="路徑" />
+          <ScalarProperty Name="網址" ColumnName="網址" />
+          <ScalarProperty Name="上架YN" ColumnName="上架YN" />
+          <ScalarProperty Name="建立日期" ColumnName="建立日期" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="戰隊">
+      <EntityTypeMapping TypeName="IronModel.戰隊">
+        <MappingFragment StoreEntitySet="戰隊">
+          <ScalarProperty Name="論壇識別" ColumnName="論壇識別" />
+          <ScalarProperty Name="戰隊編號" ColumnName="戰隊編號" />
+          <ScalarProperty Name="戰隊Logo" ColumnName="戰隊Logo" />
+          <ScalarProperty Name="戰隊隊名" ColumnName="戰隊隊名" />
+          <ScalarProperty Name="戰隊圖片" ColumnName="戰隊圖片" />
+          <ScalarProperty Name="母企業" ColumnName="母企業" />
+          <ScalarProperty Name="贊助企業" ColumnName="贊助企業" />
+          <ScalarProperty Name="戰隊介紹" ColumnName="戰隊介紹" />
+          <ScalarProperty Name="歷年戰績" ColumnName="歷年戰績" />
+          <ScalarProperty Name="國名" ColumnName="國名" />
+          <ScalarProperty Name="成員數" ColumnName="成員數" />
+          <ScalarProperty Name="成立時間" ColumnName="成立時間" />
+          <ScalarProperty Name="備註" ColumnName="備註" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="戰隊成員">
+      <EntityTypeMapping TypeName="IronModel.戰隊成員">
+        <MappingFragment StoreEntitySet="戰隊成員">
+          <ScalarProperty Name="流水號" ColumnName="流水號" />
+          <ScalarProperty Name="論壇識別" ColumnName="論壇識別" />
+          <ScalarProperty Name="戰隊編號" ColumnName="戰隊編號" />
+          <ScalarProperty Name="選手流水號" ColumnName="選手流水號" />
+          <ScalarProperty Name="選手名稱" ColumnName="選手名稱" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="擅用英雄">
+      <EntityTypeMapping TypeName="IronModel.擅用英雄">
+        <MappingFragment StoreEntitySet="擅用英雄">
+          <ScalarProperty Name="流水號" ColumnName="流水號" />
+          <ScalarProperty Name="論壇識別" ColumnName="論壇識別" />
+          <ScalarProperty Name="選手流水號" ColumnName="選手流水號" />
+          <ScalarProperty Name="選手名稱" ColumnName="選手名稱" />
+          <ScalarProperty Name="英雄名稱" ColumnName="英雄名稱" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="賽事">
+      <EntityTypeMapping TypeName="IronModel.賽事">
+        <MappingFragment StoreEntitySet="賽事">
+          <ScalarProperty Name="賽事編號" ColumnName="賽事編號" />
+          <ScalarProperty Name="論壇識別" ColumnName="論壇識別" />
+          <ScalarProperty Name="賽事名稱" ColumnName="賽事名稱" />
+          <ScalarProperty Name="賽事圖片" ColumnName="賽事圖片" />
+          <ScalarProperty Name="參賽規則" ColumnName="參賽規則" />
+          <ScalarProperty Name="賽事資訊" ColumnName="賽事資訊" />
+          <ScalarProperty Name="賽程表" ColumnName="賽程表" />
+          <ScalarProperty Name="開始時間" ColumnName="開始時間" />
+          <ScalarProperty Name="結束時間" ColumnName="結束時間" />
+          <ScalarProperty Name="賽事結果" ColumnName="賽事結果" />
+          <ScalarProperty Name="結束YN" ColumnName="結束YN" />
+          <ScalarProperty Name="建立日期" ColumnName="建立日期" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="賽事隊伍">
+      <EntityTypeMapping TypeName="IronModel.賽事隊伍">
+        <MappingFragment StoreEntitySet="賽事隊伍">
+          <ScalarProperty Name="賽事編號" ColumnName="賽事編號" />
+          <ScalarProperty Name="隊伍編號" ColumnName="隊伍編號" />
+          <ScalarProperty Name="論壇識別" ColumnName="論壇識別" />
+          <ScalarProperty Name="隊伍Logo" ColumnName="隊伍Logo" />
+          <ScalarProperty Name="隊名" ColumnName="隊名" />
+          <ScalarProperty Name="建立日期" ColumnName="建立日期" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="賽事隊員">
+      <EntityTypeMapping TypeName="IronModel.賽事隊員">
+        <MappingFragment StoreEntitySet="賽事隊員">
+          <ScalarProperty Name="隊伍編號" ColumnName="隊伍編號" />
+          <ScalarProperty Name="流水號" ColumnName="流水號" />
+          <ScalarProperty Name="隊員名稱" ColumnName="隊員名稱" />
+          <ScalarProperty Name="隊長YN" ColumnName="隊長YN" />
+          <ScalarProperty Name="建立日期" ColumnName="建立日期" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="爐石卡片">
+      <EntityTypeMapping TypeName="IronModel.爐石卡片">
+        <MappingFragment StoreEntitySet="爐石卡片">
+          <ScalarProperty Name="卡片流水號" ColumnName="卡片流水號" />
+          <ScalarProperty Name="卡片名稱" ColumnName="卡片名稱" />
+          <ScalarProperty Name="卡片介紹" ColumnName="卡片介紹" />
+          <ScalarProperty Name="數量限制" ColumnName="數量限制" />
+          <ScalarProperty Name="一般圖片" ColumnName="一般圖片" />
+          <ScalarProperty Name="特殊圖片" ColumnName="特殊圖片" />
+          <ScalarProperty Name="能力" ColumnName="能力" />
+          <ScalarProperty Name="職業" ColumnName="職業" />
+          <ScalarProperty Name="類型" ColumnName="類型" />
+          <ScalarProperty Name="種族" ColumnName="種族" />
+          <ScalarProperty Name="法力" ColumnName="法力" />
+          <ScalarProperty Name="攻擊力" ColumnName="攻擊力" />
+          <ScalarProperty Name="生命力" ColumnName="生命力" />
+          <ScalarProperty Name="稀有度" ColumnName="稀有度" />
+          <ScalarProperty Name="系列" ColumnName="系列" />
+          <ScalarProperty Name="技能" ColumnName="技能" />
+          <ScalarProperty Name="下架YN" ColumnName="下架YN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="爐石攻略">
+      <EntityTypeMapping TypeName="IronModel.爐石攻略">
+        <MappingFragment StoreEntitySet="爐石攻略">
+          <ScalarProperty Name="流水號" ColumnName="流水號" />
+          <ScalarProperty Name="MoloKey" ColumnName="MoloKey" />
+          <ScalarProperty Name="標題" ColumnName="標題" />
+          <ScalarProperty Name="戰術" ColumnName="戰術" />
+          <ScalarProperty Name="說明" ColumnName="說明" />
+          <ScalarProperty Name="建立日期" ColumnName="建立日期" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="爐石攻略回覆">
+      <EntityTypeMapping TypeName="IronModel.爐石攻略回覆">
+        <MappingFragment StoreEntitySet="爐石攻略回覆">
+          <ScalarProperty Name="回覆流水號" ColumnName="回覆流水號" />
+          <ScalarProperty Name="攻略流水號" ColumnName="攻略流水號" />
+          <ScalarProperty Name="MoloKey" ColumnName="MoloKey" />
+          <ScalarProperty Name="內容" ColumnName="內容" />
+          <ScalarProperty Name="建立日期" ColumnName="建立日期" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="爐石套牌">
+      <EntityTypeMapping TypeName="IronModel.爐石套牌">
+        <MappingFragment StoreEntitySet="爐石套牌">
+          <ScalarProperty Name="套牌流水號" ColumnName="套牌流水號" />
+          <ScalarProperty Name="moLoKey" ColumnName="moLoKey" />
+          <ScalarProperty Name="卡片流水號" ColumnName="卡片流水號" />
+          <ScalarProperty Name="攻略流水號" ColumnName="攻略流水號" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="爐石素質">
+      <EntityTypeMapping TypeName="IronModel.爐石素質">
+        <MappingFragment StoreEntitySet="爐石素質">
+          <ScalarProperty Name="素質流水號" ColumnName="素質流水號" />
+          <ScalarProperty Name="素質分類" ColumnName="素質分類" />
+          <ScalarProperty Name="素質項目" ColumnName="素質項目" />
+          <ScalarProperty Name="下架YN" ColumnName="下架YN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="爐石職業">
+      <EntityTypeMapping TypeName="IronModel.爐石職業">
+        <MappingFragment StoreEntitySet="爐石職業">
+          <ScalarProperty Name="職業流水號" ColumnName="職業流水號" />
+          <ScalarProperty Name="職業名稱" ColumnName="職業名稱" />
+          <ScalarProperty Name="職業介紹" ColumnName="職業介紹" />
+          <ScalarProperty Name="職業圖片A" ColumnName="職業圖片A" />
+          <ScalarProperty Name="職業圖片B" ColumnName="職業圖片B" />
+          <ScalarProperty Name="職業圖片C" ColumnName="職業圖片C" />
+          <ScalarProperty Name="職業圖片D" ColumnName="職業圖片D" />
+          <ScalarProperty Name="職業圖片E" ColumnName="職業圖片E" />
+          <ScalarProperty Name="下架YN" ColumnName="下架YN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="鐵幣異動記錄">
+      <EntityTypeMapping TypeName="IronModel.鐵幣異動記錄">
+        <MappingFragment StoreEntitySet="鐵幣異動記錄">
+          <ScalarProperty Name="論壇識別" ColumnName="論壇識別" />
+          <ScalarProperty Name="異動編號" ColumnName="異動編號" />
+          <ScalarProperty Name="MoloKey" ColumnName="MoloKey" />
+          <ScalarProperty Name="異動識別" ColumnName="異動識別" />
+          <ScalarProperty Name="異動說明" ColumnName="異動說明" />
+          <ScalarProperty Name="異動額" ColumnName="異動額" />
+          <ScalarProperty Name="異動後餘額" ColumnName="異動後餘額" />
+          <ScalarProperty Name="備註" ColumnName="備註" />
+          <ScalarProperty Name="異動者名稱" ColumnName="異動者名稱" />
+          <ScalarProperty Name="建立日期" ColumnName="建立日期" />
+          <ScalarProperty Name="取消YN" ColumnName="取消YN" />
+          <ScalarProperty Name="顯示YN" ColumnName="顯示YN" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

@@ -1,0 +1,103 @@
+/* ½ü¼½banner */
+
+#container{
+	max-width:346px;
+	margin:auto;
+	padding-bottom:0px;
+}
+
+#banner-fade,
+#banner-slide{
+	margin-bottom: 0px;
+}
+
+ul.bjqs{
+    position:relative;
+    list-style:none;
+    padding:0;
+    margin:0;
+    overflow:hidden;
+    display:none;
+}
+li.bjqs-slide{
+    position:absolute;
+    display:none;
+}
+ul.bjqs-controls{
+    list-style:none;
+    margin:0;
+    padding:0;
+    z-index:9999;
+}
+
+ul.bjqs-controls.v-centered li a{
+	display:block;
+	padding:10px;
+	background:#ff8a00;
+	color:#ff8a00;
+	text-decoration: none;
+    position:absolute;
+}
+
+ul.bjqs-controls.v-centered li a:hover{
+	background:#ff8a00;
+	color:#ff8a00;
+}
+
+ul.bjqs-controls.v-centered li.bjqs-next a{
+    right:0;
+}
+ul.bjqs-controls.v-centered li.bjqs-prev a{
+    left:0;
+}
+ol.bjqs-markers{
+    list-style: none; 
+    padding:0; 
+    margin: 0; 
+    width:346px;
+    position:absolute;
+    top:0px;
+}
+ol.bjqs-markers.h-centered{
+    text-align:left;
+    height:20px;
+    background: rgba(0,0,0,0.5);
+}
+ol.bjqs-markers li{
+    display:inline; 
+    width:12px;
+    height:20px;
+    float:right;
+    padding:4px 5px 0 0px;
+}
+
+ol.bjqs-markers li a{
+	padding:0;
+    margin:0;
+	background:#2b3d5e;
+	color:#2b3d5e;
+    border:1px solid #476499;
+	text-decoration: none;
+    width:10px;
+    height:10px;
+    font-size:0px;
+    position:absolute;
+    display:inline-block;
+}
+
+ol.bjqs-markers li.active-marker a,
+ol.bjqs-markers li a:hover{
+	background: #ff8a00;
+    border:1px solid #fff4b6;
+    color:#ff8a00;
+}
+
+p.bjqs-caption{
+    display:block;
+    width:333px;
+    margin:0;
+    padding:2%;
+    position:absolute;
+    bottom:0;
+    background: rgba(0,0,0,0.5);
+}

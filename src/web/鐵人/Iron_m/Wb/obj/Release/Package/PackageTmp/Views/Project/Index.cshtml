@@ -1,0 +1,24 @@
+﻿@using Wb.Models;
+@using Wb.Pager;
+@using Wb.Common;
+@model PagedList<專欄>
+@{    
+    Dictionary<int, string> type_map = ViewBag.type_map;
+}
+
+<!-- 遊戲選單 -->
+@Html.Partial("_GameCategory") 
+
+<div  class="sub_navi list_row_title" >
+    <div class="col_8">專欄列表</div>
+    <div class="col_2"><a href="#popupPager" class="function_btn call_pager"><i class="fa fa-sort"></i></a></div>
+    <br clear="all"/>
+</div>
+
+
+<ul id="news_list" class="reset_ul" >
+@foreach (專欄 item in Model)
+{    
+    <li ><a href="@Url.Action("Detail", new { sn = item.專欄流水號})" ><div class="img"><img src="@item.圖片路徑"  /></div><h3 class="has_img">@Html.Raw(item.標題)<div class="news_datetime"> @string.Format("{0:yyyy/MM/d}", item.建立日期)</div></h3></a></li>
+}
+</ul>

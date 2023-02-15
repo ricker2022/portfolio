@@ -1,0 +1,238 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <script src="JS/jquery.mobile-1.1.1.css"></script>
+    <script src="JS/jquery.mobile-1.1.1.js"></script>
+    <script src="JS/jquery-1.10.2.js"></script>
+    <script src="JS/wanin.js"></script>
+
+    <link href="JS/wanin.css" rel="stylesheet" type="text/css" />
+    <script>
+        $(function () {
+            var tAgent = navigator.userAgent;
+            if (tAgent.indexOf("Opera") != -1) {
+                $('a').each(function () {
+                    if (($(this).attr("id") == "") && ($(this).attr("href").indexOf("tel:") != -1)) {
+                        $(this).removeAttr("href");
+                    }
+                });
+            }
+
+            var contentH = $(window).height() - 63 - 94 - 50;
+            $('.content').css('min-height', contentH);
+            //if ($(window).width() < 418) {
+            //    $('.bookClass').css('margin-left', '35%');
+            //}
+            //$(window).resize(function () {
+            //    if ($(window).width() < 418) {
+            //        $('.bookClass').css('margin-left', '35%');
+            //    } else {
+            //        $('.bookClass').css('margin-left', '0');
+            //        $('.bookClass').css('margin-left', '20&');
+            //    }
+            //})
+
+        });
+    </script>
+    <style>
+        .ui-block-a {
+            background: url('img/topmenuBg.jpg') repeat-x top left;
+            height: 47px;
+        }
+
+            .ui-block-a a {
+                display: inline-block;
+                float: left;
+                line-height: 47px;
+                width: 33.3%;
+                text-align: center;
+                text-decoration: none;
+                color: #fff;
+                font-size: 20px;
+            }
+
+        .content ul.blue li {
+            background: url(img/about_01.jpg) 0px 0px no-repeat;
+            padding: 30px;
+        }
+
+        .arrowLi {
+            background: url(img/about_01.jpg) 0px 0px no-repeat;
+            padding-left: 37px;
+        }
+
+        .history span {
+            color: #00b0ff;
+        }
+    </style>
+</head>
+<body>
+    <!-- Home -->
+    <div data-role="page" id="page1">
+        <div data-theme="a" data-role="header">
+            <div class="ui-grid-b">
+                <a name="t1" id="a1"></a>
+                <div class="ui-grid-b">
+                    <div class="ui-block-a">
+                        <div>
+                            <a href="molo.html" data-transition="fade">
+                                數位雲端
+                            </a>
+                            <a href="yoe.html" data-transition="fade">
+                                點數加值
+                            </a>
+                            <a href="game.html" data-transition="fade">
+                                遊戲娛樂
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ui-block-a">
+                        <div>
+                            <a href="FlashWolves.html" data-transition="fade">
+                                職業電競
+                            </a>
+                            <a href="mgame.html" data-transition="fade">
+                                手機遊戲
+                            </a>
+                            <a href="forum.html" data-transition="fade">
+                                遊戲論壇
+                            </a>
+                        </div>
+                    </div>
+                    <!--<div class="ui-block-a">
+                        <div>
+
+                              <a href="about.html" data-transition="fade">
+                                關於網銀
+                            </a>
+                            <a href="index.html" data-transition="fade">
+                                回首頁
+                            </a>
+                        </div>
+                    </div>-->
+                </div>
+
+
+            </div>
+        </div>
+        <div data-role="content" style="background:url('img/關於網銀底.png') repeat top left;padding:10px;">
+            <ul class="content" id="t1" style="height:100%">
+                <li id="logo" style="position:relative">
+                    <img src="img/waninLogo.png" id="logoImg" />
+                    <img src="img/分隔線2.png" width="100%" style="text-align:center; vertical-align:text-top" />
+                    <span style="color:#848484; position:absolute; right:0;  bottom:35px;" id="logoSpan">關於網銀</span>
+                </li>
+                <li id="tab1" style="width:100%;word-wrap: break-word;word-break: normal; line-height:40px">
+                    <ul>
+                        <li style="margin-bottom:20px">行動時代手機號碼等同個人身份，網銀國際從手機登入機制moLo開始，持續研發與串接更多行動服務，包括：moLo 領航員、行動應用程式 moLo App 以及多款手機遊戲。2014年更積極跨入整合運動與遊戲的平台。</li>
+                        <li style="margin-bottom:20px">除了線上服務，網銀國際也投入實體遊戲點卡通路市場，發行遊戲點卡「 遊e卡」，以及知名電競團隊 「yoe閃電狼(Flash Wolves)」。</li>
+                        <li style="margin-bottom:20px">站在使用者角度，提供跨平台娛樂整合服務，是開發者的任務，也是網銀不變的使命。</li>
+                        <p style="text-align:center"><img src="img/waninLogo.png" /></p>
+                        <li class="arrowLi">網銀國際企業識別，是取英文名稱WANIN字首「W」及「i」編排而成。</li>
+                        <li class="arrowLi">網絡就如同一個圓，無論在哪全部都能連接在一起。</li>
+                        <li class="arrowLi">從純淨的白灰色系圓球，透過輕快的流順弧線，勾勒出象徵自由的翅膀，搭配沉穩精鍊的藍色調系，在動靜之間取得視覺平衡；期望帶著創新、超越的精神，恣意遨遊飛向網路世界。</li>
+                    </ul>
+                </li>
+                <li style="position:relative">
+                    <a href="#a1"><img src="img/about_03.jpg" /></a>
+                    <span style="color:#848484; position:absolute; right:0; ">經營理念</span>
+                    <img src="img/分隔線2.png" width="100%" style="text-align:center; vertical-align:text-top" />
+                </li>
+                <li id="tab2" style="width:100%;word-wrap: break-word;word-break: normal; line-height:40px">
+                    <ul>
+                        <li>公司定位</li>
+                        <li>『娛樂數位內容提供者』，以網路金流整合與新興系統工具開發、服務為主。</li>
+                        <p style="padding-top:10px; text-align:center"><img src="img/about_02.jpg" /></p>
+                        <li>公司理念</li>
+                        <li style="color:#00b0ff;">安全便利：</li>
+                        <li>網銀專業團隊秉持以"安全為本．便利為輔"的研發精神，致力經營旗下每項產品與服務；並以高標準的「安全」、「便利」兩大原則，研發快捷的網路服務、行動裝置應用為目的，期望能滿足消費者需求，深獲社會大眾的信賴與支持！</li>
+                        <li style="color:#00b0ff; padding-top:30px">多元創新：</li>
+                        <li>本公司以一開始的金流交易平台為發展基礎，跨足行動裝置軟體應用及3D引擎研製等，追求多角化經營與創新研發，建立全方位通路平台，未來更將持續挑戰與不同產業合作，透過雲端科技讓消費者帶來便利、安全的網路服務，達到智慧生活的目標！</li>
+                        <li style="color:#00b0ff;padding-top:30px">FUN!</li>
+                        <li>遊戲世界不僅要好玩，更要方便，我們是「娛樂數位內容提供者」，讓遊戲世界更加有趣！！</li>
+                    </ul>
+                </li>
+                <!--<li style="position:relative">
+                <a href="#a1"><img src="img/about_03.jpg" /></a>
+                <span style="color:#848484; position:absolute; right:0; ">重要里程碑</span>
+                    <img src="img/分隔線2.png" width="100%" style="text-align:center; vertical-align:text-top"  />
+                </li>
+                 <li id="tab3" style="width:100%;word-wrap: break-word;word-break: normal; line-height:40px">
+                  <ul class="history">
+                   <li>重要里程碑</li>
+                    <li><span style="color: #00b0ff;">2008.7</span>網銀創立 由一群資訊領域團隊設立而成</li>
+                    <li>2010.7分別與Seattle University和朝陽科大建教合作</li>
+                    <li><span>2010.9</span>推出「Safee」金流代收代付交易平台為發展中心，拓展市場佔有率</li>
+                    <li><span>2010.12</span>網路安全隨付系統(中華民國 M 393753 號)經濟部財產局核准</li>
+                    <li><span>2011.7</span>ISO27001通過資訊安全管理驗證績優廠商</li>
+                    <li><span>2011.7</span>投入3D引擎研製，發展獨特3D成像技術，打造流暢真實數位娛樂界面</li>
+                    <li><span>2011.10</span>獲得<a href='http://www.managertoday.com.tw/?p=7610' style='color:#0685b7;' target='_blank'>《經理人MANAGER today雜誌》</a>專題報導</li>
+                    <li><span>2011.11</span>以通訊身分識別之概念，結合食衣住行育樂計劃，推動<br/>「moLo」全方位數位雲端平台</li>
+                    <li><span>2012.3</span>整合遊e卡發行業務，跨足遊戲通路市場</li>
+                    <li><span>2012.8</span>職業電競隊伍「yoe鋼鐵人」成為正式員工</li>
+                    <li><span>2013.4</span>納入「彩金俱樂部」線上遊戲，朝向遊戲娛樂產業推進</li>
+                    <li><span>2013.8</span>職業電競隊伍「yoe鋼鐵人」重新更名為「yoe閃電狼(Flash Wolves)」</li>
+                    <li><span>2013.10</span>宣佈取得「星城平台」全球運營權</li>
+                    <li><span>2013.12</span>以服務專業玩家為宗旨，成立遊戲論壇(鉄人)</li>
+                  </ul>
+                 </li>-->
+                <li style="position:relative">
+                    <a href="#a1"><img src="img/about_03.jpg" /></a>
+                    <span style="color:#848484; position:absolute; right:0; ">未來願景</span>
+                    <img src="img/分隔線2.png" width="100%" style="text-align:center; vertical-align:text-top" />
+                </li>
+                <li id="tab4" style="width:100%;word-wrap: break-word;word-break: normal; line-height:40px">
+                    <ul>
+                        <li>未來願景</li>
+                        <li>
+                            全世界己經進入了網路e化的時代，讓消費者帶來便利性、安全性的網路交易模式，透過雲端運算發展科技化服務，達到智慧生活的目標，顯然已是必然的趨勢。
+                            網銀國際將秉持一貫的經營信念，努力發展促進新興產業的雲端服務為最終使命！
+
+                        </li>
+                    </ul>
+                </li>
+                <li style="position:relative">
+                    <a href="#a1"><img src="img/about_03.jpg" /></a>
+                    <span style="color:#848484; position:absolute; right:0; ">網銀季刊</span>
+                    <img src="img/分隔線2.png" width="100%" style="text-align:center; vertical-align:text-top" />
+                </li>
+                <li id="Li1" style="width:100%;word-wrap: break-word;word-break: normal; line-height:40px;text-align:center;">
+                    <div style="display:inline-block; width:150px;" class="bookClass">
+                        <ul>
+                            <li>網銀季刊</li>
+                            <li style="margin-bottom:0;"><img alt="" src="../image/waninBook.png" /></li>
+                            <li>網銀季刊創刊號</li>
+                            <li><a href="waninbook.html" style="margin-left: 10%; color: #00b0ff; text-decoration: underline;">線上預覽</a></li>
+                        </ul>
+                    </div>
+                    <div style="display: inline-block; width: 150px; " class="bookClass">
+                        <ul>
+                            <li>&nbsp</li>
+                            <li style="margin-bottom:0;"><img alt="" src="../image/waninBook02.jpg" /></li>
+                            <li>《網銀人》NO.2 </li>
+                            <li><a href="waninbook02.html" style="margin-left:10%;color:#00b0ff;text-decoration:underline;">線上預覽</a></li>
+                        </ul>
+                    </div>
+                    <div style="display: inline-block; width: 150px; " class="bookClass">
+                        <ul>
+                            <li>&nbsp</li>
+                            <li style="margin-bottom:0;"><img alt="" src="../image/waninBook03.jpg" /></li>
+                            <li>《網銀人》NO.3 </li>
+                            <li><a href="waninbook03.html" style="margin-left:10%;color:#00b0ff;text-decoration:underline;">線上預覽</a></li>
+                        </ul>
+                    </div>
+                    <div style="clear:both;"/>
+                </li>
+            </ul>
+        </div>
+        <div data-theme="a" data-role="footer" data-position="fixed" class="footer" style="clear:both">
+            <!--<img src="img/footerL.png" style="float:left;" />-->
+            <a href="about.html" data-transition="fade" class="footerAbout"></a>
+            <a href="index.html" data-transition="fade" class="footerHome"></a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bank>
+	<branch num="" name="請選擇分行.."/>
+	   <branch num="0011" name="關山本會"/>
+	   <branch num="0022" name="成功本會"/>
+	   <branch num="0033" name="池上本會"/>
+	   <branch num="0044" name="東河東河"/>
+	   <branch num="0055" name="長濱本會"/>
+	   <branch num="0066" name="台東本會"/>
+	   <branch num="0077" name="鹿野本會"/>
+	   <branch num="0088" name="太麻里本會"/>
+	   <branch num="0099" name="台東豐里"/>
+	   <branch num="0103" name="東河本會"/>
+	   <branch num="0114" name="東河泰源"/>
+	   <branch num="0125" name="台東台東"/>
+	   <branch num="0136" name="台東知本"/>
+	   <branch num="0147" name="台東綠島"/>
+	   <branch num="0158" name="台東初鹿"/>
+	   <branch num="0169" name="鹿野瑞源"/>
+	   <branch num="0170" name="太麻里美和"/>
+	   <branch num="0181" name="太麻里金崙"/>
+	   <branch num="0192" name="太麻里大武"/>
+	   <branch num="0206" name="成功忠孝"/>
+	   <branch num="0217" name="台東太平"/>
+	   <branch num="0228" name="台東蘭嶼"/>
+	   <branch num="0239" name="關山海端"/>
+	   <branch num="0240" name="鹿野瑞豐"/>
+	   <branch num="0251" name="成功信義"/>
+	   <branch num="0284" name="台東新園"/>
+</bank>

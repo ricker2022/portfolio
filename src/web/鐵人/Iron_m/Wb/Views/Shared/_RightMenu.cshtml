@@ -1,0 +1,53 @@
+﻿@{
+    bool isPower = true;
+    string isSign = "簽到";
+    if (Userinfo.myProfile != null)
+    {
+        if (Userinfo.myProfile.nologinDisplay != "")
+        {
+            isPower = false;
+        }
+        if(Userinfo.myProfile.signinToday){
+            isSign = "已簽到";
+        }
+    }
+    
+}
+<div id="member_panel"> 
+    <ul id="member_navi" class="reset_ul" >
+    @if (isPower)
+    {
+        <li data-role="none">
+            <a href="@Url.RouteUrl("Default", new { controller="member",action="myinfo"})">個人資訊</a>
+        </li>
+        <li data-role="none">
+            <a href="@Url.RouteUrl("Default", new { controller="member",action="usermsg"})">
+                即時訊息
+                @if (ViewBag.hasReadMsg == 1)
+                {
+                    <div class="new_attention"><i class="fa fa-bell-o"></i></div>
+                }
+            </a>
+        </li>
+        <li data-role="none">
+            <a href="@Url.RouteUrl("Default", new { controller="member",action="friends"})">
+                好友
+                @if (ViewBag.hasFriendRequest == 1)
+                {
+                    <div class="new_attention"><i class="fa fa-bell-o"></i></div>
+                }
+            </a>
+        </li>
+        <li data-role="none">
+            <a href="@Url.RouteUrl("Default", new { controller="team",action="pro"})">戰隊</a>
+        </li>
+        @*<li data-role="none">
+            <a href="@Url.RouteUrl("Default", new { controller = "member", action = "AjaxSign" })" class="push_btn">@isSign</a>
+        </li>*@
+    }
+        <li data-role="none">
+            <a href="@Url.RouteUrl("Default", new { action="Logout" })">登出</a>
+        </li>
+        
+    </ul>
+</div> 

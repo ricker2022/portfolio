@@ -1,0 +1,29 @@
+﻿.ui-block-a {
+            background: url('../img/topmenuBg.jpg') repeat-x top left;
+            height: 47px;
+        }
+
+            .ui-block-a a {
+                display: inline-block;
+                float: left;
+                line-height: 47px;
+                width: 32.3%;
+                text-align: center;
+                text-decoration: none;
+                color: #fff;
+                font-size: 18px;
+            }
+
+        #prov01ch {
+            display: none;
+        }
+        #prov01en {
+            display: none;
+        }
+        .lbtn {
+            cursor: pointer;
+        }
+
+        #title {
+            color: #a9a7a7;
+        }

@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bank>
+	<branch num="" name="請選擇分行.."/>
+   <branch num="0023" name="花蓮區中小企業銀行營業部"/>
+	<branch num="0034" name="花蓮區中小企業銀行鳳林分行"/>
+	<branch num="0045" name="花蓮區中小企業銀行光復分行"/>
+	<branch num="0056" name="花蓮區中小企業銀行玉里分行"/>
+	<branch num="0067" name="花蓮區中小企業銀行台中分行"/>
+	<branch num="0089" name="花蓮區中小企業銀行瑞穗分行"/>
+	<branch num="0104" name="花蓮區中小企業銀行中山路分行"/>
+   <branch num="0115" name="花蓮區中小企業銀行羅東分行"/>
+   <branch num="0126" name="花蓮區中小企業銀行板橋分行"/>
+	<branch num="0137" name="花蓮區中小企業銀行永和分行"/>
+	<branch num="0148" name="花蓮區中小企業銀行三重分行"/>
+	<branch num="0159" name="花蓮區中小企業銀行土城簡易型分行"/>
+	<branch num="0171" name="花蓮區中小企業銀行信託部"/>
+	<branch num="0182" name="花蓮區中小企業銀行宜蘭分行"/>
+	<branch num="0193" name="花蓮區中小企業銀行東台北分行"/>
+	<branch num="0207" name="花蓮區中小企業銀行埔墘分行"/>
+	<branch num="0218" name="花蓮區中小企業銀行蘆洲分行"/>
+	<branch num="0229" name="花蓮區中小企業銀行新莊分行"/>
+	<branch num="0230" name="花蓮區中小企業銀行樹林簡易型分行"/>
+	<branch num="0241" name="花蓮區中小企業銀行吉安分行"/>
+	<branch num="0252" name="花蓮區中小企業銀行中正分行"/>
+	<branch num="0263" name="花蓮區中小企業銀行重慶分行"/>
+	<branch num="0274" name="花蓮區中小企業銀行中和分行"/>
+	<branch num="0285" name="花蓮區中小企業銀行清水分行"/>
+	<branch num="0296" name="花蓮區中小企業銀行台北市分行"/>
+	<branch num="0300" name="花蓮區中小企業銀行板和簡易型分行"/>
+	<branch num="0311" name="花蓮區中小企業銀行蘆洲簡易型分行"/>
+	<branch num="0322" name="花蓮區中小企業銀行迴龍簡易型分行"/>
+	<branch num="0333" name="花蓮區中小企業銀行二重埔簡易型分行"/>
+</bank>
+

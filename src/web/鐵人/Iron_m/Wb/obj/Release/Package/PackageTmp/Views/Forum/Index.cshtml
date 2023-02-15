@@ -1,0 +1,97 @@
+﻿@using Wb.Models;
+@using Wb.Pager;
+@using Wb.Common;
+@model PagedList<文章>
+@{    
+    string cur_action = HttpContext.Current.Request.RequestContext.RouteData.Values["action"].ToString();
+    cur_action = cur_action == null ? "" : cur_action.ToLower();
+    string cur_controller = HttpContext.Current.Request.RequestContext.RouteData.Values["controller"].ToString();
+    
+    Dictionary<int, string> cat_map = ViewBag.cat_map;
+    List<文章屬性> category_list = ViewBag.category_list;
+    
+}
+
+<script>
+    
+    function goGameCategory(game_id) {
+
+        var location_string = '@Url.RouteUrl("Default", new {  game = "#game#", controller = cur_controller,action = cur_action})';
+        location_string = location_string.replace(encodeURIComponent("#game#"), game_id);
+
+        location.href = location_string;
+    }
+
+
+    function goForumCategory() {
+        //alert($('#game_selection').val());
+        //alert($('#cat_select').val());
+
+        var location_string = '@Url.RouteUrl("Default", new {controller="forum", action = "index",  game = "#game#", c = "#c#"})';
+        //alert(location_string);
+        location_string = location_string.replace(encodeURIComponent("#game#"), $('#game_selection').val());
+        location_string = location_string.replace(encodeURIComponent("#c#"), $('#cat_select').val());
+        location.href = location_string;
+    }
+
+
+</script>
+
+
+<!-- 遊戲選單 -->
+<div  class="sub_navi">
+    <div class="col_6">
+        <div class="game_select">
+        <i class="fa fa-sort-asc"></i>
+         <select id="game_selection" onchange=goGameCategory($('#game_selection').val())>
+            <option @(ViewBag.game_id=="SCII"?"selected":"") value="SCII">星海爭霸</option>
+            <option @(ViewBag.game_id=="lol"?"selected":"") value="lol">英雄聯盟</option>
+            <option @(ViewBag.game_id == "stone" ? "selected" : "") value="stone">爐石戰記</option>
+        </select>
+    </div>
+    </div>
+    <div class="col_2"><a href="@Html.FUrl("post","", new { c = ViewBag.cat_sn })" class="function_btn"><i class="fa fa-pencil"></i></a></div>
+    <div class="col_2"><a href="@Html.FUrl("Search")" class="function_btn"><i class="fa fa-search"></i></a></div>
+    <br clear="all"/>
+</div>
+
+<div  class="sub_navi">
+  <div class="col_6">
+    <div class="game_select">
+        <i class="fa fa-sort-asc"></i>
+        <select id="cat_select" onchange=goForumCategory()>
+            <option value="0">全部主題</option>            
+            @foreach (文章屬性 item in category_list)
+            {
+                 <option @(ViewBag.cat_sn==item.屬性編號?"selected":"") value="@item.屬性編號" >@item.屬性名稱</option>
+            }
+      </select>
+    </div>
+  </div>
+  <div class="col_2" style="background:#000">&nbsp;</div>
+    @if(Model.Count>0)
+    {
+    <div class="col_2"><a href="#popupPager" class="function_btn call_pager" ><i class="fa fa-sort"></i></a></div>
+    }
+  <br clear="all"/>
+</div>
+
+
+
+
+
+
+<ul id="news_list" class="forum reset_ul">
+@foreach (文章 item in Model)
+{
+    <li class="@(item.置頂YN == true ? "blue_line" : "")">
+        <a href="@Html.FUrl("Detail", "", new { asn = item.文章流水號 })">
+            <h6>【@cat_map[item.屬性編號]】</h6><h3>@Html.Raw(item.標題)</h3>
+            <div class="datetime">
+                <div>作者:@item.異動者 人氣:@item.人氣數</div>
+                @string.Format("{0:yyyy/MM/d}", item.建立日期)
+            </div>
+        </a>
+    </li>    
+}
+</ul>

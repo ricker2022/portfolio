@@ -1,0 +1,294 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Main.master.cs" Inherits="Main" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>網銀國際</title>
+    <meta name="keywords" content="網銀,網銀國際,waninbank,MoLo,Safee,彩金,彩金俱樂部,yoe,遊e卡,yoe 閃電狼,yoe ironmen,數位雲端,點數加值,遊戲娛樂,金流服務,職業電競,遊戲點數,遊戲點卡,即時通訊,線上購卡,遊戲點數,gash,mycard,omg點數卡,凡特斯,爭龍傳,天行寶貝,遊戲滿屋,萌騎士,怒戰諸神,小小復仇者,海商紀元,聚焦,星城online,王牌包,J CARD" />
+    <link rel="icon" href="_img/layout/waninlogo.png" />
+
+    <meta name="viewport" content="width=device-width,user-scalable=yes,initial-scale=1.0" />
+
+    <link href="_css/device.css?150707" rel="stylesheet" />
+    <link href="_css/reset.css" rel="stylesheet" />
+
+    <link href="bootstrap/Content/bootstrap.css" rel="stylesheet" />
+
+    <script src="bootstrap/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="bootstrap/Scripts/bootstrap.min.js"></script>
+    <script src="_js/jquery-1.9.1.min.js"></script>
+    <script src="_js/jquery.FX.js"></script>
+    <script src="_js/html5shiv-master/src/html5shiv.js"></script>
+    <script src="_js/Respond-master/dest/respond.min.js"></script>
+    <script type="text/javascript">
+        (function (i, s, o, g, r, a, m) {
+            i['GoogleAnalyticsObject'] = r; i[r] = i[r] || function () {
+                (i[r].q = i[r].q || []).push(arguments)
+            }, i[r].l = 1 * new Date(); a = s.createElement(o),
+            m = s.getElementsByTagName(o)[0]; a.async = 1; a.src = g; m.parentNode.insertBefore(a, m)
+        })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+        ga('create', 'UA-39024682-1', 'auto');
+        ga('send', 'pageview');
+</script>
+    <script type="text/javascript">
+        function gotop() {
+            $('html,body').animate({ scrollTop: 0 }, 'fast');
+        }
+
+        $(window).scroll(function () {
+            if ($(this).scrollTop()) {
+                $('#goTop').fadeIn("fast");
+            } else {
+                $('#goTop').stop().fadeOut("fast");
+            }
+        });
+
+        $(function () {
+            $("#mainMenu,#subMenu").mouseenter(function () {
+                $("#subMenu").show();
+            })
+            $("#mainMenu,#subMenu").mouseleave(function () {
+                $("#subMenu").hide();
+            })
+        })
+
+        $(document).ready(function () {
+            var isHiden = true; /*控制切換選单*/
+            $(".menu_S").click(
+                function () {
+                    if (isHiden) {
+                        $("#MenuM").show();
+                    } else {
+                        setTimeout(function () {
+                            $("#MenuM").hide();
+                        }, 400);
+                    }
+                    isHiden = !isHiden;
+                });
+            $(".menu_S320").click(
+                function () {
+                    if (isHiden) {
+                        $("#MenuM").show();
+                    } else {
+                        setTimeout(function () {
+                            $("#MenuM").hide();
+                        }, 400);
+                    }
+                    isHiden = !isHiden;
+                });
+        })
+
+           
+    </script>
+
+    <script type="text/javascript">
+        var isCtrlMenu = true;
+        $(document).ready(function () {
+            menuCtrl();
+        });
+
+        function menuCtrl() {
+            var ll_object_w = document.documentElement.clientWidth;
+            if (ll_object_w >= 300 && ll_object_w < 979 && isCtrlMenu) {
+                isCtrlMenu = false;
+                $(".Menu1").click(function () {
+                    subMenuCtrl('1');
+                })
+
+                $(".Menu2").click(function () {
+                    subMenuCtrl('2');
+                })
+
+                $(".Menu3").click(function () {
+                    subMenuCtrl('3');
+                })
+
+                $(".Menu4").click(function () {
+                    subMenuCtrl('4');
+                })
+
+                $(".Menu5").click(function () {
+                    subMenuCtrl('5');
+                })
+
+            }
+        }
+
+
+        function subMenuCtrl(no) {
+
+            for (i = 1 ; i < 6 ; i++) {
+                if (no != i) {
+                    $(".subMenu0" + i + ":eq(1)").hide();
+                }
+            }
+            $(".Menu1:eq(1),.Menu2:eq(1),.Menu3:eq(1),.Menu4:eq(1),.Menu5:eq(1)").css("background", "#ffffff");
+            $(".Menu1:eq(1) p,.Menu2:eq(1) p,.Menu3:eq(1) p,.Menu4:eq(1) p,.Menu5:eq(1) p").css("color", "#0068b7");
+
+            if ($(".subMenu0" + no).eq(1).css('display') == 'none') {
+                $(".Menu" + no).eq(1).css("background", "#00b3ff");
+                $(".Menu" + no + ":eq(1) p").css("color", "#ffffff");
+                $(".subMenu0" + no).eq(1).show();
+                $(".subMenu0" + no + ":eq(1) a").css("color", "#0068b7");
+
+            } else {
+                $(".Menu" + no).eq(1).css("background", "#ffffff");
+                $(".Menu" + no + ":eq(1) p").css("color", "#0068b7");
+                $(".subMenu0" + no).eq(1).hide();
+                $(".subMenu0" + no + ":eq(1) a").css("color", "#0068b7");
+            }
+        }
+        window.onresize = function () {
+            menuCtrl();
+        }
+
+    </script>
+
+    <!-- IE8↓CSS3語法hack -->
+    <!--[if IE 8]>
+        <script type="text/javascript" src="_js/html5shiv-master/src/html5shiv.js"></script>
+        <script type="text/javascript" src="_js/Respond-master/dest/respond.min.js"></script>
+        <link href="_css/IEhack.css" rel="stylesheet" />
+ <![endif]-->
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="dPageHolder">
+            <div id="dHeader">
+                <div id="Logo_B">
+                    <a href="Default.aspx">
+                        <img src="_img/layout/Logo_B.png" /></a>
+                </div>
+                <nav id="Menu">
+                    <ul id="mainMenu">
+                        <li class="Menu1 First"><a href="#">企業簡介</a></li>
+                        <li class="Menu2"><a href="#">營運項目</a></li>
+                        <li class="Menu3"><a href="#">社會責任</a></li>
+                        <li class="Menu4"><a href="#">聯絡我們</a></li>
+                        <li class="Menu5"><a href="#">人力招募</a></li>
+                    </ul>
+                    <div id="subMenu">
+                        <ul class="subMenu01">
+                            <li><a href="about.aspx" onclick="ga('send', 'event', '前往網頁', '關於網銀', '1')">關於網銀</a></li>
+                            <li><a href="concept.aspx" onclick="ga('send', 'event', '前往網頁', '經營理念', '1')">經營理念</a></li>
+                            <li><a href="periodical.aspx" onclick="ga('send', 'event', '前往網頁', '網銀刊物', '1')">網銀刊物</a></li>
+                            <li><a href="video.aspx" onclick="ga('send', 'event', '前往網頁', '影音專區', '1')">影音專區</a></li>
+                        </ul>
+                        <ul class="subMenu02">
+                            <li><a href="moLo.aspx" onclick="ga('send', 'event', '前往網頁', '數位雲端', '1')">數位雲端</a></li>
+                            <li><a href="points.aspx" onclick="ga('send', 'event', '前往網頁', '點數加值', '1')">點數加值</a></li>
+                            <li><a href="mobileGames.aspx" onclick="ga('send', 'event', '前往網頁', '手機遊戲', '1')">手機遊戲</a></li>
+                            <li><a href="games.aspx" onclick="ga('send', 'event', '前往網頁', '遊戲娛樂', '1')">遊戲娛樂</a></li>
+                            <li><a href="gameTeam.aspx" onclick="ga('send', 'event', '前往網頁', '職業電競', '1')">職業電競</a></li>
+                            <li><a href="ironforum.aspx" onclick="ga('send', 'event', '前往網頁', '遊戲論壇', '1')">遊戲論壇</a></li>
+                        </ul>
+                        <ul class="subMenu03">
+                            <li><a href="wanin.aspx" onclick="ga('send', 'event', '前往網頁', '人文關懷', '1')">人文關懷</a></li>
+                        </ul>
+                        <ul class="subMenu04">
+                            <li><a href="contact.aspx" onclick="ga('send', 'event', '前往網頁', '台中總部', '1')">台中總部</a></li>
+                            <li><a href="contact.aspx" onclick="ga('send', 'event', '前往網頁', '台北分部', '1')">台北分部</a></li>
+                            <li><a href="contact.aspx" onclick="ga('send', 'event', '前往網頁', '遊e卡事業群', '1')">遊e卡事業群</a></li>
+                        </ul>
+                        <ul class="subMenu05">
+                            <li><a href="CD.aspx" onclick="ga('send', 'event', '前往網頁', '職涯發展', '1')">職涯發展</a></li>
+                            <li><a href="care.aspx" onclick="ga('send', 'event', '前往網頁', '員工關懷', '1')">員工關懷</a></li>
+                            <li><a href="message.aspx" onclick="ga('send', 'event', '前往網頁', '人資訊息', '1')">人資訊息</a></li>
+                        </ul>
+                    </div>
+                </nav>
+            </div>
+            <div id="dHeaderM">
+                <div id="dHearderMtop">
+                    <div class="Logo_S">
+                        <a class="img-responsive" href="Default.aspx">
+                            <img src="_img/layout/Logo_M.jpg" /></a>
+                    </div>
+                    <div class="menu_S">
+                        <img src="_img/mobile/layout/menuBtn.jpg" />
+                    </div>
+                    <div class="Logo_S320">
+                        <a class="img-responsive" href="Default.aspx">
+                            <img src="_img/layout/Logo_M320.jpg" /></a>
+                    </div>
+                    <div class="menu_S320">
+                        <img src="_img/mobile/layout/menuBtn320.jpg" />
+                    </div>
+                </div>
+                <nav id="MenuM">
+                    <ul id="mainMenuM">
+                        <li class="Menu1">
+                            <p>企業簡介</p>
+                            <ul class="subMenu01">
+                                <li><a href="about.aspx">關於網銀</a></li>
+                                <li><a href="concept.aspx">經營理念</a></li>
+                                <li><a href="periodical.aspx">網銀刊物</a></li>
+                                <li><a href="video.aspx">影音專區</a></li>
+                            </ul>
+                        </li>
+                        <li class="Menu2">
+                            <p>營運項目</p>
+                            <ul class="subMenu02">
+                                <li><a href="moLo.aspx">數位雲端</a></li>
+                                <li><a href="points.aspx">點數加值</a></li>
+                                <li><a href="mobileGames.aspx">手機遊戲</a></li>
+                                <li><a href="games.aspx">遊戲娛樂</a></li>
+                                <li><a href="gameTeam.aspx">職業電競</a></li>
+                                <li><a href="ironforum.aspx">遊戲論壇</a></li>
+                            </ul>
+                        </li>
+                        <li class="Menu3">
+                            <p>社會責任</p>
+                            <ul class="subMenu03">
+                                <li><a href="wanin.aspx">人文關懷</a></li>
+                            </ul>
+                        </li>
+                        <li class="Menu4">
+                            <p>聯絡我們</p>
+                            <ul class="subMenu04">
+                                <li><a href="contact.aspx">台中總部</a></li>
+                                <li><a href="contact.aspx">台北分部</a></li>
+                                <li><a href="contact.aspx">遊e卡事業群</a></li>
+                            </ul>
+                        </li>
+                        <li class="Menu5">
+                            <p>人力招募</p>
+                            <ul class="subMenu05">
+                                <li><a href="CD.aspx">職涯發展</a></li>
+                                <li><a href="care.aspx">員工關懷</a></li>
+                                <li><a href="message.aspx">人資訊息</a></li>
+                            </ul>
+                        </li>
+                    </ul>
+                </nav>
+            </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <footer id="dFooter">
+                <div class="dFooterLK">
+                    <a class="dFooterLK1" href="provision.aspx">相關法務條款</a> | <a class="dFooterLK2" href="siteMap.aspx">網站導覽</a>
+                </div>
+                <div class="dFooterCY">© 2015 網銀國際股份有限公司 版權所有</div>
+            </footer>
+            <div id="goTop" class="goTop" onclick="gotop();"></div>
+        </div>
+        <%-- 季刊線上預覽開始--%>
+        <div class="popDivBg" style="display: none;"></div>
+        <div class="popDiv" style="display: none;">
+            <div class="pobBox">
+            </div>
+            <%--<a class="btnClose" onclick="closeIronPop()" style="position: absolute;right:8px;top:8px;margin:0;"></a>--%>
+        </div>
+        <div class="popDivBig" style="display: none;">
+            <a style="position: fixed; top: 0; left: 0;" href="javascript:closeZoom()" class="zoomBack"></a>
+            <img alt="" src="" />
+        </div>
+        <%-- 季刊線上預覽結束--%>
+    </form>
+</body>
+</html>

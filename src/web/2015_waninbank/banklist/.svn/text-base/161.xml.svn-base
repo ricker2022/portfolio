@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bank>
+	<branch num="" name="請選擇分行.."/>
+   <branch num="0013" name="彰化第五信用合作社營業部"/>
+   <branch num="0022" name="彰化第五信用合作社華山分社"/>
+   <branch num="0031" name="彰化第五信用合作社彰南路分社"/>
+	<branch num="0040" name="彰化第五信用合作社東芳分社"/>
+	<branch num="0059" name="彰化第五信用合作社旭光分社"/>
+	<branch num="0068" name="彰化第五信用合作社新華分社"/>
+</bank>
+

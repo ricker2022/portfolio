@@ -1,0 +1,796 @@
+﻿body {
+    /*font-family: Verdana, Geneva, sans-serif,"細明體","新細明體","微軟正黑體";
+    font-size: 12px;
+    line-height: 1.8em;
+    color: #000;*/
+    background: #FFF;
+    font-family:微軟正黑體;
+    overflow-x:hidden;
+}
+
+/*master 主顯示區*/
+#dPageHolder {
+    width:100%;
+    height: auto;
+    margin: 0 auto 76px auto;
+    padding: 0;
+}
+
+
+/*provision*/
+.pindentb20 {padding-left:20px;text-indent:-20px;display:block;}
+.pindent16 {padding-left:16px;text-indent:-16px;}
+.pb16 {padding-left:16px;display:block;}
+.p16d30b {padding-left:16px;display:block;padding-bottom:30px;}
+.p52indent61b {padding-left:52px;text-indent:-61px;display:block;}
+.p26indent26b {padding-left:26px;text-indent:-26px;display:block;}
+.pindentb36en {padding-left:36px;text-indent:-36px;display:block;}
+
+#mainMenuM p, #goTop{
+    cursor:pointer;
+}
+
+/* Large screens ----------- */
+@media only screen and (min-width : 1280px) {
+    #Menu, #subMenu {width:1272px;}
+    #dFooter {width:1272px;margin:0 auto;}
+}
+@media only screen and (min-width : 1280px) {/*min-width : 1824px*/
+    /*master_top*/
+    #dHeader {width:100%;margin:30px auto 0 auto;height:122px;}
+    #dHeaderM {display:none;}
+    #Logo_B {width:219px;height:60px;margin:0px auto 27px auto;}
+    #Menu {width:100%;height:37px;background:#f8f8f8;margin:0 auto;z-index:9;}
+    #mainMenu {width:1272px;height:37px;margin:0 auto;}
+    #mainMenu > li {width:220px;display:inline-block;height:37px;line-height:37px;color:#0068b7;font-size:18px;text-align:center;}
+    #mainMenu > li > a {display:block;width:100%;}
+    #mainMenu li a {width:120px;margin:0 50px;}
+    #mainMenu > li > a:hover {position:relative;display:block;width:120px;background:#00b3ff;color:#fff;text-decoration:none;margin:0 auto;}
+    .First {margin:0 0 0 78px;}
+
+    #subMenu {position:relative;display:none;width:100%;height:185px;background:rgba(177,230,252,0.95);z-index:9;margin:0px auto 0px auto;border-top:1px #fff solid;text-align:center;background:#b1e6fc \9;filter: alpha(opacity=95);opacity: 0.95;}
+    #subMenu ul.subMenu01, #subMenu ul.subMenu02, 
+    #subMenu ul.subMenu03, #subMenu ul.subMenu04, 
+    #subMenu ul.subMenu05 {display:inline-block;width:220px;height:auto;vertical-align:top;font-size:16px;color:#0068b7;line-height:25px; letter-spacing:0.35px;margin:16px 0 0 0;font-weight:bold;}
+    #subMenu ul.subMenu01 li, #subMenu ul.subMenu02 li,
+    #subMenu ul.subMenu03 li, #subMenu ul.subMenu04 li,
+    #subMenu ul.subMenu05 li {text-align:left;margin:0 0 0 75px;}
+    #subMenu ul.subMenu01 li a:hover, #subMenu ul.subMenu02 li a:hover,
+    #subMenu ul.subMenu03 li a:hover, #subMenu ul.subMenu04 li a:hover,
+    #subMenu ul.subMenu05 li a:hover {color:#00b3ff;}
+
+    #main, .dContent {position:relative; display:block;height:auto;}
+    #MainContentM {display:none;}
+    section {position:relative;width:1274px;display:table;margin:50px auto 30px auto;}
+    #item11, #item12, #item13, #item14, #item15, #item16 {display:none;}
+    .item {float:left; display:block;}
+    .item2, .item2 img, .item4, .item4 img, .item5, .item5 img, .item6, .item6 img, .item7, .item7 img, .item8, .item8 img, .item9, .item9 img {
+        width:240px;height:220px;}
+    .item1, .item1 img {width:498px;height:458px;}
+    .item3, .item3 img {width:498px;height:220px;}
+
+    .item1, .item2, .item4, .item5 {margin-right:18px;margin-bottom:17px;}
+    .item3, .item6 {margin-bottom:18px;}
+    .item7, .item8, .item9 {margin-right:18px;}
+
+    .mtnum {margin-top:238px;}
+
+    .ItemTitle { position:absolute; margin-left:17px; margin-top:16px; z-index:4; color:#000; font-size:20px;font-family:微軟正黑體;letter-spacing:0.5px;}
+    .ItemHoverTitle, .ItemHoverTitle a {color:#fff;z-index:8; cursor:pointer;}
+    .ItemHoverTitle a:hover {color:#fff;}
+    .itemHover { position:absolute; z-index:5;background-color:#0068b7; top:0; display:none;}
+    .hoverText {position:absolute; z-index:5; color:#fff; font-size:20px; line-height:26px; letter-spacing:0.5px; width:100%;height:100%;padding-top:87px;}
+    .hoverText li, .hoverText li a, .hoverText li:active {color:#fff;}
+    .hoverTextLiTAL {text-align:left;}
+    .hoverTextLiTAC {text-align:center;}
+    
+    #dFooter {clear:both;position:relative;display:block;height:50px;background:#b5b5b5;top: 30px;}
+    .dFooterCY {color:#ffffff;font-size:16px;line-height:50px;float:left;padding:0 0 0 15px;position:absolute;}
+    .dFooterLK {color:#fff;font-size:16px;line-height:50px;padding:0 10px 0 0;position:absolute;right:0;}
+        .dFooterLK a {color:#fff; padding:0 10px;}
+    /*.dFooterLK1 {color:#fff; padding:0 10px;}
+    .dFooterLK2 {color:#fff;padding:0 10px;float:right;}*/
+    .dFooterLK1:hover, .dFooterLK2:hover {color:#ffff00;text-decoration:underline;}
+    #goTop {
+        position:fixed;display:none;width:57px;
+            height:49px;
+            right:1%;
+            bottom:48px;
+            bottom:30px \9;
+            background:url(../_img/layout/goTop.jpg) top left no-repeat;
+    }
+    /*default*/
+    .ADbannerSpad, .ADbannerBpad {display:none;}
+    /*about*/
+    #pageTitle {font-size:30px; color:#0068b7;font-weight:bold;letter-spacing:0.5px;margin-bottom:34px;}
+    .pageBorder {border:2px #d3d3d3 solid;}
+    .conConten {width:100%;height:auto;display:block;padding:56px;}
+    .conTxt {color:#535353;font-size:20px; line-height:30px;letter-spacing:0.5px;}
+    .color_00b3ff {color:#00b3ff;}
+    .textPadding {padding-left:32px;text-indent:-32px;}
+    .logo980, .logo320 {display:none;}
+    .mainPageMargin {margin:50px auto 30px;}
+    /*concept*/
+    .orengTitle {color:#ec6941;font-size:27px;line-height:30px;font-family:微軟正黑體;}
+    /*periodical*/
+    .periodicalCon {width:100%;height:auto;display:block;padding:0 0 0 50px;}
+    .periodicalCon li {width:320px;display:inline-block;margin:0 14px 5px 14px;}
+    .blackTitle {font-size:27px;color:#000; letter-spacing:0.5px;text-align:center;}
+    .pimg, .pimg img {width:250px;display:block;margin:30px auto 28px auto;}
+    .ponlineviewBtn, .ponlineviewBtn a,
+    .pdownloadBtn, .pdownloadBtn a {width:250px; height:57px;display:block;background:url(../_img/pages/intro/periodical/pBtn.png) 0px 0px no-repeat #0068b7;margin:0 auto 27px auto;}
+    .pdownloadBtn, .pdownloadBtn a {background:url(../_img/pages/intro/periodical/pBtn.png) 0px -57px no-repeat #0068b7; margin:0 auto;}
+    .ponlineviewBtn:hover {background:url(../_img/pages/intro/periodical/pBtn.png) 0px 0px no-repeat #00b7ee;}
+    .pdownloadBtn:hover {background:url(../_img/pages/intro/periodical/pBtn.png) 0px -57px no-repeat #00b7ee;}
+    /*video*/
+    .videoConM {display:none;}
+    .videoCon {width:100%;height:auto;display:block;padding:0 0 0 0px;}
+    .videoCon li {width:347px; height:301px; display:inline-block;margin:0 16px 0px 16px;cursor:pointer;background:url(../_img/pages/intro/video/F.jpg) top left no-repeat;}
+    .videoCon li:hover {cursor:pointer;background:url(../_img/pages/intro/video/Fhover.jpg) top left no-repeat;}
+    .pinkTitle {font-size:20px; color:#e5004f;text-align:center;letter-spacing:0.5px;margin:32px 0 24px 0;}
+    .videoImg {width:305px;height:173px;display:block;margin:0 auto;}
+    #videoFrame {width:100%;height:100%;margin:0 auto;}
+    #videoCloseBtn {position:relative;width:46px;height:46px;background:url(../_img/layout/closeBtn.png) top left no-repeat;z-index:9;top:-389px;left:1033px;cursor:pointer;}
+    #video {position:absolute;top:50%;margin:-240px auto 0 115px;z-index:5;}
+    #videomask {width: 100%;height: 100%;float: left;background-color:#fff;filter: alpha(opacity=90);opacity: 0.9; position:fixed; z-index:1;top:0;left:0;display:none;}
+    /*digital*/
+    .ContenImgM {display:none;}
+    .ContenImg {width:1272px;height:500px;display:block;margin:0;padding:0;}
+    .Contentext {width:100%;height:auto;display:block;padding:70px 53px 85px 53px;font-size:20px;letter-spacing:0.5px;color:#535353;line-height:30px;}
+    .digitalConM {display:none;}
+    .digitalCon {width:100%;height:auto;display:block;margin:42px 0 0 0;}
+    .digitalCon li {width:390px; height:358px;display:inline-block;}
+    .digitalRight {margin:0 47px 0 0;}
+    .moLoImg {width:296px;height:103px;margin:20px auto 18px auto;}
+    .moLoIntro {font-size:20px;color:#000;letter-spacing:0.5px;line-height:35px;text-align:center;height:105px;display:table; vertical-align:middle;margin:0 auto;}
+    .moLoBtn a, .moLoBtn a:hover {display:block;width:250px;height:57px;color:#fff;background:#0068b7;font-size:25px;font-weight:bold;text-align:center;margin:20px auto 0 auto;line-height:57px;}
+    .moLoBtn a:hover {text-decoration:none;background:#00b3ff;}
+    /*points*/
+    .pointsBtn a, .gamesGoBtn a {width:250px;height:57px;display:inline-block;background:#0068b7;color:#fff;line-height:57px;text-align:center;font-size:25px;font-weight:bold;}
+    .pointsBtn a:hover, .gamesGoBtn a:hover {background:#00b3ff;text-decoration:none;}
+    .pointsFBBtn a {width:250px;height:57px;display:inline-block;background:#3b5998;color:#fff;line-height:57px;text-align:center;font-size:25px;font-weight:bold;}
+    .pointsFBBtn a:hover {background:#6999ff;text-decoration:none;}
+    .pointsRight {margin:0 30px 0 0;}
+    .pointP {text-align:center;}
+    /*mobileGames*/
+    .MGCon980 {display:none;}
+    .MGConM {display:none;}
+    .MGCon,.GCon {width:100%;height:auto;display:block;}
+    .MGCon li, .GCon li{width:100%;height:315px;display:block;}
+    .MGdown, .Gdown {margin:0 0 52px 0;}
+    .MGCon li table, .GCon li table {width:100%;}
+    .MGimg,.Gimg {width:539px;height:269px;display:block;margin:20px;position:relative \9; top:20px \9; left:20px \9;}
+    .logoArea {width:300px;text-align:center;}
+    .logoTitle {color:#333333;font-size:27px;letter-spacing:0.5px;line-height:40px;margin:20px 0 0 0; text-align:center;}
+    .logotxt {color:#535353;font-size:20px;letter-spacing:0.5px;line-height:30px;text-align:center;position:relative \9; left:20px \9;}
+    .qrArea {width:350px;text-align:center;}
+    .qrimg img{width:92px;height:92px;}
+    .downABtn a {width:152px;height:36px;display:block;background:url(../_img/pages/items/mobileGames/downBtn.png) 0px 0px no-repeat #a4ca39;margin:28px auto 0 auto;}
+    .downABtn a:hover {background:url(../_img/pages/items/mobileGames/downBtn.png) -152px 0px no-repeat #d7ff88;}
+    .downIBtn a {width:152px;height:36px;display:block;background:url(../_img/pages/items/mobileGames/downBtn.png) 0px -36px no-repeat #3999ca;margin:18px auto 0 auto;}
+    .downIBtn a:hover {background:url(../_img/pages/items/mobileGames/downBtn.png) -152px -36px no-repeat #00b7ee;}
+    /*games*/
+    .GCon980 {display:none;}
+    .GConM {display:none;}
+    .Gintro {width:690px;padding:0 48px;}
+    .gamesLogo {display:inline-block;width:233px;height:120px;}
+    .gamesGoBtn {display:inline-block;width:250px;position:absolute; margin:30px;}
+    .gamesIntro {width:575px;}
+    /*wanin*/
+    .pinkTitle1M{display:none;}
+    .pinkTitle1 {font-size:27px;color:#d72f83;line-height:40px;letter-spacing:0.5px;}
+    /*contact*/
+    .contactTitle {text-align:left;line-height:40px;}
+    .CimgName {width:230px;height:200px;display:inline-block; text-align:center;vertical-align:top;padding:10px 0;}
+    .Cimg {width:230px;height:auto;display:block; text-align:center;margin:10px 0;}
+    .Cimg980 {display:none;}
+    .Cname {width:230px;height:auto; text-align:center;margin:10px 0;display:inline-block}
+    .Cway {width:900px;height:auto;min-height:200px;display:inline-block;padding:10px;}
+    .contactArea > li {display:block;margin:20px 0;}
+    .Ctop {margin:15px 0 0 0;}
+    .contactAreaM {display:none;}
+    /*CD*/
+    .CDimg980, .CDAreaM {display:none;}
+    .CDArea > li {display:block;margin:40px 0 20px 0; height:150px;}
+    .CDimg {width:100px;height:150px;display:table;float:left;text-align:center; margin:0 20px;}
+    .CDimg1280 {display:table;}
+    .CDintro {width:1000px; height:150px;display:table;float:left;padding:0 10px;}
+    /*care*/
+    #dSlideshowCM, .playC980, .ADbannerCpad{display: none;}
+    .careTxt {position:relative; display:inline-block;}
+    .careliheight {margin-bottom:30px;}
+    /*message*/
+    .messageBtn, .messageBtn a {display:block;width:250px;height:57px;color:#fff;background:#0068b7;font-size:25px;font-weight:bold;text-align:center;margin:20px auto 0 auto;line-height:57px;}
+    .messageBtn a:hover {text-decoration:none;background:#00b3ff;}
+    /*siteMap*/
+    #siteMap980, #siteMaptb980, #siteMapM {display:none;}
+    #siteMaptb {width:1080px;height:auto;margin:50px auto;}
+    #siteMaptb td {padding:4px;vertical-align:top;width:208px;}
+    .siteMapTitle {color:#ec6941;font-size:20px;line-height:43px;letter-spacing:0.5px;text-align:center;}
+    .linkTxt li a {color:#535353;font-size:20px;line-height:43px;letter-spacing:0.5px;text-align:center;display:block;}
+    .linkTxt li a:hover {color:#00b3ff;}
+    .linkTxt1 {margin :0 0 0 65px;}
+    .linkTxt1 li a {color:#535353;font-size:20px;line-height:43px;letter-spacing:0.5px;text-align:left;display:block;}
+    .linkTxt1 li a:hover {color:#00b3ff;}
+    /*provision*/
+    #topAreaM {display:none;}
+    #topArea {display:block;width:100%;height:55px;border-bottom:1px #dcdcdc solid; margin:0 5px;}
+    #topArea .toplink li a {display:block; margin:0 0 0 45px;font-size:27px;color:#0068b7;letter-spacing:0.5px;float:left;}
+    #topArea .toplink li a:hover {color:#00b3ff;}
+    #topArea .prvLang {display:block;float:right;}
+    #topArea .prvLang li {display:inline-block; margin:30px 0 0 30px;}
+    #topArea .TC, #topArea .SC, #topArea .EN {width:106px; height:35px;border:1px #bfbfbf solid; border-radius:5px;background:#fff;font-size:18px;color:#333333;letter-spacing:0.5px;}
+    #topArea .TC:hover, #topArea .SC:hover, #topArea .EN:hover {background:#b5b5b5;color:#535353;}
+    .proContent {display:table;width:100%; height:auto;margin:30px 0 0 0;font-size:20px;color:#535353;letter-spacing:0.5px;line-height:26px;}
+    .tbCon li {margin-bottom:33px;}
+    .tbConTitle {font-weight:bold;}
+    .tbConUl {display:inline-block; width:500px;}
+    .tbConUl li {margin:0;}
+}
+
+@media only screen and (min-width : 1280px) and (max-width : 1435px){
+    #goTop {clear:both;max-width:1272px; width:100%;position:relative ;display:block;height:50px;background:#b5b5b5 url(../_img/layout/goTopS.png) center center no-repeat;margin:0 auto;margin-top:85px;left:0;float:center;}
+}
+@media only screen and (min-width : 980px) and (max-width : 1279px) {
+    #Menu, #subMenu {width:980px;}
+    #dFooter, #goTop {width:980px;margin:0 auto;}
+}
+@media only screen and (min-width : 980px) and (max-width : 1279px) {
+    /*master_top*/
+    #dHeader {width:100%;margin:30px auto 0 auto;height:122px;}
+    #dHeaderM {display:none;}
+    #Logo_B {width:190px;height:60px;margin:0px auto 27px auto;}
+    #Menu {width:100%;height:37px;background:#f8f8f8;margin:0 auto;z-index:9;}
+    #mainMenu {width:980px;height:37px;margin:0 auto;}
+    #mainMenu > li {width:190px;display:inline-block;height:37px;line-height:37px;color:#0068b7;font-size:23px;text-align:center;}
+    #mainMenu > li > a {display:block;width:100%;}
+    #mainMenu li a {width:150px;margin:0 20px;}
+    #mainMenu > li > a:hover {position:relative;display:block;width:150px;background:#00b3ff;color:#fff;text-decoration:none;margin:0 auto;}
+    .First {margin:0;}
+
+    #subMenu {
+        position:relative;display:none;width:100%;height:268px;background:rgba(177,230,252,0.95);
+        /*filter: alpha(opacity=80);
+        opacity: 0.8;*/
+        z-index:9;margin:0px auto 0px auto;text-align:center;border-top:1px #fff solid;
+    }
+        #subMenu ul.subMenu01, #subMenu ul.subMenu02, 
+        #subMenu ul.subMenu03, #subMenu ul.subMenu04, 
+        #subMenu ul.subMenu05 {display:inline-block;width:190px;height:auto;vertical-align:top;font-size:23px;color:#0068b7;line-height:40px; letter-spacing:0.35px;margin:16px 0 0 0;font-weight:bold;}
+        #subMenu ul.subMenu01 li, #subMenu ul.subMenu02 li,
+        #subMenu ul.subMenu03 li, #subMenu ul.subMenu04 li,
+        #subMenu ul.subMenu05 li {text-align:left;margin:0 0 0 42px;}
+        #subMenu ul.subMenu01 li a:hover, #subMenu ul.subMenu02 li a:hover,
+        #subMenu ul.subMenu03 li a:hover, #subMenu ul.subMenu04 li a:hover,
+        #subMenu ul.subMenu05 li a:hover {color:#00b3ff;}
+
+    #main, .dContent {position:relative; display:block;height:auto;}
+    #MainContentM {display:none;}
+    section {position:relative;width:980px;display:table;margin:50px auto 30px auto;}
+    #item03, #item05, #item06, #item07, #item08, #item09 {display:none;}
+    .item {float:left; display:block;}
+    .item2, .item2 img, .item4, .item4 img, .item11, .item11 img, .item12, .item12 img, .item13, .item13 img, .item14, .item14 img, .item16, .item16 img {
+        width:277px;height:254px;}
+    .item1, .item1 img {width:574px;height:529px;}
+    .item15, .item15 img {width:576px;height:255px;}
+
+    .item1, .item2, .item4, .item11, .item12, .item13, .item14, .item15 {margin-right:21px;margin-bottom:21px;}
+    .item1, .item11, .item14, .item16 {margin-left:50px;}
+    .item16 {margin-right:21px;}
+    .mtnum {margin-top:275px;}
+
+    .ItemTitle { position:absolute; margin-left:17px; margin-top:16px; z-index:4; color:#000; font-size:23px;font-family:微軟正黑體;letter-spacing:0.5px;}
+    .ItemHoverTitle, .ItemHoverTitle a {color:#fff;z-index:8; cursor:pointer;}
+    .ItemHoverTitle a:hover {color:#fff;}
+    .itemHover { position:absolute; z-index:5;background-color:#0068b7; top:0; display:none;}
+    .hoverText {position:absolute; z-index:5; color:#fff; font-size:23px; line-height:26px; letter-spacing:0.5px; width:100%;height:100%;padding-top:87px;}
+    .hoverText li, .hoverText li a, .hoverText li:active {color:#fff;}
+    .hoverTextLiTAL {text-align:left;}
+    .hoverTextLiTAC {text-align:center;}
+    .pt30 {padding-top:30px;}
+    
+    #dFooter {clear:both;position:relative;display:block;height:50px;background:#b5b5b5;}
+    .dFooterCY {color:#ffffff;font-size:16px;line-height:50px;float:left;padding:0 0 0 15px;}
+    .dFooterLK {color:#fff;font-size:16px;line-height:50px;float:right;padding:0 10px 0 0;}
+    .dFooterLK1 {color:#fff; padding:0 10px;}
+    .dFooterLK2 {float:right;color:#fff;text-decoration:none;padding:0 10px;}
+    .dFooterLK1:hover, .dFooterLK2:hover {color:#ffff00;text-decoration:underline;}
+    #goTop {clear:both;position:relative ;display:block;height:50px;background:#b5b5b5 url(../_img/layout/goTopS.png) center center no-repeat;margin :30px auto 0 auto;}
+    /*default*/
+    .ADbannerS, .ADbannerB {display:none;}
+    /*about*/
+    .dCont980 {width:860px;margin:0 auto;}
+    #pageTitle {font-size:30px; color:#0068b7;font-weight:bold;letter-spacing:0.5px;margin-bottom:34px;margin-left:60px;}
+    .pageBorder {border:2px #d3d3d3 solid;}
+    .conConten {width:100%;height:auto;display:block;padding:50px 0;}
+    .conContenPadding {padding-right: 40px; padding-left:40px;}
+    .conTxt {color:#535353;font-size:20px; line-height:30px;letter-spacing:0.5px;}
+    .color_00b3ff {color:#00b3ff;}
+    .textPadding {padding-left:28px;text-indent:-28px;}
+    .logo1280, .logo320 {display:none;}
+    .logo980 {margin:0 auto;display:block;}
+    .mainPageMargin {margin:50px auto 30px;}
+    /*concept*/
+    .orengTitle {color:#ec6941;font-size:27px;line-height:30px;font-family:微軟正黑體;}
+    /*periodical*/
+    .periodicalCon {width:100%;height:auto;display:block;padding:0 0 0 10px;}
+    .periodicalCon li {width:404px;display:inline-block;margin:0 8px 5px 8px;padding:0 40px;}
+    .blackTitle {font-size:27px;color:#000; letter-spacing:0.5px;text-align:center;}
+    .pimg, .pimg img {width:250px;display:block;margin:30px auto 28px auto;}
+    .ponlineviewBtn, .ponlineviewBtn a,
+    .pdownloadBtn, .pdownloadBtn a {width:250px; height:57px;display:block;background:url(../_img/pages/intro/periodical/pBtn.png) 0px 0px no-repeat #0068b7;margin:0 auto 27px auto;}
+    .pdownloadBtn, .pdownloadBtn a {background:url(../_img/pages/intro/periodical/pBtn.png) 0px -57px no-repeat #0068b7; margin:0 auto;}
+    .ponlineviewBtn:hover {background:url(../_img/pages/intro/periodical/pBtn.png) 0px 0px no-repeat #00b7ee;}
+    .pdownloadBtn:hover {background:url(../_img/pages/intro/periodical/pBtn.png) 0px -57px no-repeat #00b7ee;}
+    /*video*/
+    .videoConM, #videoFrame {display:none;}
+    .videoCon {width:100%;height:auto;display:block;padding:0 44px; margin:0 auto;}
+    .videoCon li {width:347px; height:301px; display:inline-block;margin:0 16px 0px 16px;cursor:pointer;background:url(../_img/pages/intro/video/F.jpg) top left no-repeat;}
+    .videoCon li:hover {cursor:pointer;background:url(../_img/pages/intro/video/Fhover.jpg) top left no-repeat;}
+    .pinkTitle {font-size:20px; color:#e5004f;text-align:center;letter-spacing:0.5px;margin:32px 0 24px 0;}
+    .videoImg {width:305px;height:173px;display:block;margin:0 auto;}
+    #video {position:absolute;top:50%;margin:-240px auto 0 115px;z-index:5;}
+    /*digital*/
+    .ContenImgM {display:none;}
+    .ContenImg img {width:860px;height:auto;display:block;margin:0;padding:0;}
+    .Contentext {width:100%;height:auto;display:block;padding:70px 53px 85px 53px;font-size:20px;letter-spacing:0.5px;color:#535353;line-height:30px;}
+    .digitalConM {display:none;}
+    .digitalCon {width:100%;height:auto;display:block;margin:42px 0 0 0;}
+    .digitalCon li {width:275px; height:305px;display:inline-block;}
+    .digitalRight {margin:0 13px 0 0;}
+    .moLoImg {margin:20px auto 10px auto;}
+    .moLoImg img {width:240px;height:auto;display:block;margin:0 auto;}
+    .moLoIntro {font-size:20px;color:#000;letter-spacing:0.5px;line-height:35px;text-align:center;height:105px;display:table; vertical-align:middle;margin:0 auto;}
+    .moLoBtn a, .moLoBtn a:hover {display:block;width:220px;height:50px;color:#fff;background:#0068b7;font-size:25px;font-weight:bold;text-align:center;margin:8px auto 0 auto;line-height:50px;}
+    .moLoBtn a:hover {text-decoration:none;background:#00b3ff;}
+    /*points*/
+    .pointsBtn a, .gamesGoBtn a {width:250px;height:57px;display:inline-block;background:#0068b7;color:#fff;line-height:57px;text-align:center;font-size:25px;font-weight:bold;}
+    .pointsBtn a:hover, .gamesGoBtn a:hover {background:#00b3ff;text-decoration:none;}
+    .pointsFBBtn a {width:250px;height:57px;display:inline-block;background:#3b5998;color:#fff;line-height:57px;text-align:center;font-size:25px;font-weight:bold;}
+    .pointsFBBtn a:hover {background:#6999ff;text-decoration:none;}
+    .pointsRight {margin:0 30px 0 0;}
+    .pointP {text-align:center;}
+    /*mobileGames*/
+    .MGCon {display:none;}
+    .MGConM {display:none;}
+    .MGCon980 {width:100%;height:auto;display:block;}
+    .MGCon980 li {width:398px;height:590px;display:block; float:left; margin:0 0 0 20px;}
+    .MGCon980margin {margin-top:30px;}
+    .MGimg {width:335px;height:168px;display:block;margin:23px auto;}
+    .logoArea {width:398px;text-align:center;}
+    .logoArea img {width:85px;height:auto;}
+    .logoTitle {color:#333333;font-size:24px;letter-spacing:0.5px;line-height:40px;margin:20px 0 0 0; text-align:center;}
+    .logotxt {color:#535353;font-size:23px;letter-spacing:0.5px;line-height:30px;width:320px;text-align:center;margin:0 auto;}
+    .downABtn a {width:234px;height:56px;display:block;background:url(../_img/pages/items/mobileGames/downBtn980.png) 0px 0px no-repeat #a4ca39;margin:28px auto 0 auto;}
+    .downABtn a:hover {background:url(../_img/pages/items/mobileGames/downBtn980.png) 0px -56px no-repeat #d7ff88;}
+    .downIBtn a {width:234px;height:56px;display:block;background:url(../_img/pages/items/mobileGames/downBtn980.png) -234px 0px no-repeat #3999ca;margin:28px auto 0 auto;}
+    .downIBtn a:hover {background:url(../_img/pages/items/mobileGames/downBtn980.png) -234px -56px no-repeat #00b7ee;}
+    /*games*/
+    .GCon {display:none;}
+    .GConM {display:none;}
+    .GCon980 {width:100%;}
+    .GCon980 li {width:776px;margin-right:auto; margin-left:auto;}
+    .Gdown {margin-bottom:30px;}
+    .Gintro {width:410px;height:auto;}
+    .Gimg {width:367px;height:182px;display:block;margin:20px;}
+    .gamesLogo {display:block;width:166px;height:auto; float:left;}
+    .gamesLogo img {width:166px;height:auto;}
+    .gamesGoBtn, .gamesGoBtn a {display:inline-block;width:145px;height:47px;line-height:47px;font-size:21px;margin:8px;}
+    .gamesIntro {display:inline-block;text-align:left;}
+    .logotxtG {color:#535353;font-size:22px;letter-spacing:0.5px;line-height:25px;width:340px;text-align:left;margin:0 auto;}
+    /*wanin*/
+    .pinkTitle1M{display:none;}
+    .pinkTitle1 {font-size:27px;color:#d72f83;line-height:40px;letter-spacing:-1.2px;}
+    /*contact*/
+    .contactTitle {text-align:left;line-height:40px;width:97%;}
+    .CimgName {width:230px;height:200px;display:inline-block; text-align:center;vertical-align:top;padding:10px 0;}
+    .Cimg {display:none;}
+    .Cimg980 {width:230px;height:auto;display:block; text-align:center;margin:10px 0;}
+    .Cname {width:230px;height:auto; text-align:center;margin:10px 0;display:inline-block}
+    .Cway {width:700px;height:auto;min-height:200px;display:inline-block;padding:10px;}
+    .contactArea > li {display:block;margin:20px 0;}
+    .Ctop {margin:15px 0 0 0;}
+    .contactAreaM {display:none;}
+    /*CD*/
+    .CDimg1280, .CDAreaM {display:none;}
+    .CDArea > li {width:770px;display:block;margin:40px 0 20px 0; height:auto;}
+    .CDimg {width:100px;height:150px;display:inline-block;text-align:center; margin:0 20px;}
+    .CDintro {width:680px; height:auto;display:inline-block;padding:0 20px;font-size:22px;}
+    /*care*/
+    #dSlideshowCM, .playC1280, .ADbannerC {display:none;}
+    .careTxt {position:relative; display:inline-block;font-size:23px;margin:20px auto 30px 0px;width:100%; padding:0 60px;}
+    .careUL {padding:0 60px;}
+    .careliheight {margin-bottom:30px;}
+    /*message*/
+    .messageBtn, .messageBtn a {display:block;width:250px;height:57px;color:#fff;background:#0068b7;font-size:25px;font-weight:bold;text-align:center;margin:20px auto 0 auto;line-height:57px;}
+    .messageBtn a:hover {text-decoration:none;background:#00b3ff;}
+    /*siteMap*/
+    #siteMap1280, #siteMaptb, #siteMapM {display:none;}
+    #siteMaptb980 {width:860px;height:auto;margin:50px auto;}
+    .conContenM {width:100%;height:auto;display:block;}
+    #siteMaptb980 td {padding:4px;vertical-align:top;width:190px;}
+    .siteMapTitle {color:#ec6941;font-size:24px;line-height:43px;letter-spacing:0.5px;text-align:center;}
+    .linkTxt li a {color:#535353;font-size:24px;line-height:43px;letter-spacing:0.5px;text-align:center;display:block;}
+    .linkTxt li a:hover {color:#00b3ff;}
+    .linkTxt1 {margin :0 0 0 96px;}
+    .linkTxt1 li a {color:#535353;font-size:20px;line-height:43px;letter-spacing:0.5px;text-align:left;display:block;}
+        .linkTxt1 li a:hover {color:#00b3ff;}
+    /*provision*/
+    .conContenP {width:100%;height:auto;display:block;padding:40px;}
+    #topAreaM {display:none;}
+    #topArea {display:block;width:100%;height:auto;border-bottom:1px #dcdcdc solid; margin:50px 5px 0 5px; padding-bottom:30px;}
+    #topArea .toplink li a {display:block; margin:0px 0 0 45px;font-size:24px;color:#0068b7;letter-spacing:0.5px;float:left;}
+    #topArea .toplink li a:hover {color:#00b3ff;}
+    #topArea .prvLang {clear:both;display:block;text-align:center;padding-top:30px;}
+    #topArea .prvLang li {display:inline-block; margin:30px 0 0 0;}
+    #topArea .TC, #topArea .SC, #topArea .EN {width:106px; height:35px;border:1px #bfbfbf solid; border-radius:5px;background:#fff;font-size:18px;color:#333333;letter-spacing:0.5px;}
+    #topArea .TC:hover, #topArea .SC:hover, #topArea .EN:hover {background:#b5b5b5;color:#535353;}
+    .proContent {display:table;width:100%; height:auto;margin:30px 0 0 0;font-size:20px;color:#535353;letter-spacing:0.5px;line-height:26px;}
+    .tbCon li {margin-bottom:33px;}
+    .tbConTitle {font-weight:bold;}
+    .tbConUl {display:inline-block; width:385px;}
+    .tbConUl li {margin:0;}
+}
+
+@media only screen and (min-width : 400px) and (max-width : 979px) {
+    /*master_top*/
+    #dHeader {display:none;}
+    #dHeaderM {width:100%;margin:0 auto;height:auto;}
+    #dHearderMtop {width:100%;height:150px;display:block;border-bottom:1px #c9c9c9 solid;}
+    .Logo_S {width:250px;height:81px;display:block;margin:30px 0 0 43px;float:left;}
+    .menu_S {width:60px;height:60px;display:block;margin:38px 0 0 0;float:right;right:40px;position:relative;}
+    .Logo_S320, .menu_S320 {display:none;}
+    #MenuM {width:100%;height:auto;background:#fff;margin:0 auto 0 auto;z-index:9;display:none;}
+    #mainMenuM {width:100%;height:auto;}
+    #mainMenuM > li {width:100%;display:block;height:auto;line-height:60px;color:#0068b7;font-size:25px;text-align:left;border-bottom:1px #c9c9c9 solid;}
+    #mainMenuM > li > a {display:block;width:100%;padding-left:20px;}
+    #mainMenuM > li > a:hover {background:#00b3ff;color:#fff;text-decoration:none;padding-left:20px;}
+
+    .subMenu01, .subMenu02, .subMenu03, .subMenu04, .subMenu05 {display:none;width:100%;height:auto;background:#c1ebfd;}
+    .subMenu01 > li a, .subMenu02 > li a, .subMenu03 > li a, .subMenu04 > li a, .subMenu05 > li a {display:block;height:60px;line-height:60px;border-bottom:1px #fff solid;color:#0068b7;padding-left:50px;}
+    .subMenu01 li a:hover, .subMenu02 li a:hover, .subMenu03 li a:hover, .subMenu04 li a:hover, .subMenu05 li a:hover {text-decoration:none;color:#0068b7}
+    .Menu1 p, .Menu2 p, .Menu3 p, .Menu4 p, .Menu5 p {padding-left:20px;}
+
+    #dFooter {clear:both;position:relative;display:block;height:160px;background:#b5b5b5;width:94%;margin:0 auto;}
+    .dFooterCY {color:#ffffff;font-size:18px;line-height:30px;text-align:center;display:block;}
+    .dFooterLK {color:#fff;font-size:28px;line-height:40px;display:block;text-align:center;padding:30px 0;}
+    .dFooterLK1 {color:#fff; padding:0 10px;}
+    .dFooterLK2 {color:#fff;text-decoration:none;padding:0 10px;}
+    .dFooterLK1:hover, .dFooterLK2:hover {color:#ffff00;text-decoration:underline;}
+    #goTop {clear:both;position:relative ;display:block;height:50px;background:#b5b5b5 url(../_img/layout/goTopS.png) center center no-repeat;margin :30px auto 0 auto;width:94%;}
+
+    #main, .dContent {position:relative; display:block;height:auto;}
+    #MainContent {display:none;}
+    section {position:relative;width:100%;display:table;margin:50px auto;padding:0 20px;}
+    .item {float:left; display:block;}
+
+    .item1, .item2, .item5 {width:100%;height:auto;}
+    .item3, .item4 {width:49%;margin:20px 0;}
+    .item6, .item7, .item8, .item9 {width:49%;margin:10px 0;}
+    .item3 img, .item4 img, .item6 img, .item7 img, .item8 img, .item9 img {width:100%;height:auto;}
+    .itemMargin {margin-left:2%;}
+
+    .ItemTitle { position:absolute; margin-left:17px; margin-top:16px; z-index:4; color:#000; font-size:23px;font-family:微軟正黑體;letter-spacing:0.5px;}
+
+    /*about*/
+    .dContMobile {width:100%;margin:0 auto;/*padding:0 20px;*/}
+    #pageTitle {font-size:30px; color:#0068b7;font-weight:bold;letter-spacing:0.5px;margin-bottom:34px;}
+    .pageBorder {border:2px #d3d3d3 solid;}
+    .conConten {width:100%;height:auto;display:block;padding:30px 0;}
+    .conTxt {color:#535353;font-size:26px; line-height:45px;letter-spacing:0.5px; padding:20px;}
+    .color_00b3ff {color:#00b3ff;}
+    .textPadding {padding-left:32px;text-indent:-32px;}
+    .logo1280, .logo320 {display:none;}
+    .logo980 {margin:0 auto;display:block;}
+
+    /*concept*/
+    .orengTitle {color:#ec6941;font-size:40px;line-height:48px;font-family:微軟正黑體;}
+
+     /*periodical*/
+    .periodicalCon {width:100%;height:auto;display:block;}
+    .periodicalCon li {width:324px;display:block;margin:0 auto;}
+    .periodicalConPadding {padding-top:90px;}
+    .blackTitle {font-size:27px;color:#000; letter-spacing:0.5px;text-align:center;}
+    .pimg, .pimg img {width:250px;display:block;margin:0 auto;}
+    .ponlineviewBtn, .ponlineviewBtn a,
+    .pdownloadBtn, .pdownloadBtn a {width:250px; height:57px;display:block;background:url(../_img/pages/intro/periodical/pBtn.png) 0px 0px no-repeat #0068b7;margin:0 auto 27px auto;}
+    .pdownloadBtn, .pdownloadBtn a {background:url(../_img/pages/intro/periodical/pBtn.png) 0px -57px no-repeat #0068b7; margin:0 auto;}
+    .ponlineviewBtn:hover {background:url(../_img/pages/intro/periodical/pBtn.png) 0px 0px no-repeat #00b7ee;}
+    .pdownloadBtn:hover {background:url(../_img/pages/intro/periodical/pBtn.png) 0px -57px no-repeat #00b7ee;}
+    /*video*/
+    .videoCon, #videoFrame {display:none;}
+    .videoConM {width:100%;height:auto;display:block;padding:0 0 0 0px;}
+    .videoConM li {width:100%; height:auto; display:block;border:1px #c9c9c9 solid;cursor:pointer;}
+    .videoConM li:hover {border:2px #ee0040 solid;width:100%;}
+    .videoConMmargin {margin:60px auto 0 auto;}
+    .pinkTitle {font-size:26px; color:#e5004f;text-align:center;letter-spacing:0.5px;margin:32px 0 10px 0;}
+    .videoImg {width:100%;height:auto;display:block;margin:0 auto;padding:20px;}
+    #videomask {width: 100%;height: 100%;float: left;background-color:#fff;filter: alpha(opacity=10);opacity: 0.1; position:fixed; z-index:1;top:0;left:0;display:none;}
+    /*digital*/
+    .ContenImg {display:none;}
+    .ContenImgM {width:100%;height:auto;display:block;margin:0;padding:0;}
+    .Contentext {width:100%;height:auto;display:block;padding:30px 40px;font-size:20px;letter-spacing:0.5px;color:#535353;line-height:30px;}
+    .orengTitleM {font-size:26px;}
+    .digitalCon{display:none;}
+    .digitalConM {width:80%;height:auto;display:block;margin:42px auto 0px auto;}
+    .digitalConM li {width:100%; height:auto;display:block; padding:20px;margin:0 0 20px 0;}
+    .digitalRight {margin:0 13px 0 0;}
+    .moLoImg {margin:20px auto 10px auto;}
+    .moLoImg img {width:240px;height:auto;display:block;margin:0 auto;}
+    .moLoIntro {font-size:20px;color:#000;letter-spacing:0.5px;line-height:35px;text-align:center;height:105px;display:table; vertical-align:middle;margin:0 auto;}
+    .moLoBtn a, .moLoBtn a:hover {display:block;max-width:220px;width:90%;height:50px;color:#fff;background:#0068b7;font-size:25px;font-weight:bold;text-align:center;margin:8px auto 0 auto;line-height:50px;}
+    .moLoBtn a:hover {text-decoration:none;background:#00b3ff;}
+
+        /*points*/
+    .pointsBtn a, .gamesGoBtn a {max-width:250px;width:90%;height:57px;display:inline-block;background:#0068b7;color:#fff;line-height:57px;text-align:center;font-size:25px;font-weight:bold;margin-bottom:20px;}
+    .pointsBtn a:hover, .gamesGoBtn a:hover {background:#00b3ff;text-decoration:none;}
+    .pointsFBBtn a {width:250px;height:57px;display:inline-block;background:#3b5998;color:#fff;line-height:57px;text-align:center;font-size:25px;font-weight:bold;}
+    .pointsFBBtn a:hover {background:#6999ff;text-decoration:none;}
+    .pointsRight {margin:0 30px 0 0;}
+    .pointP {text-align:center;}
+    /*mobileGames*/
+    .MGCon {display:none;}
+    .MGCon980 {display:none;}
+    .MGConM {width:100%;height:auto;display:block;}
+    .MGConM li {width:100%;height:auto;display:block;margin:0 auto 20px auto;padding-bottom:20px;}
+    .MGimg {width:100%;height:auto;display:block;margin:23px auto;padding:0 8%;}
+    .logoArea {width:100%;text-align:center;}
+    .logoArea img {width:85px;height:auto;}
+    .logoTitle {color:#333333;font-size:24px;letter-spacing:0.5px;line-height:40px;margin:20px 0 0 0; text-align:center;}
+    .logotxt {color:#535353;font-size:23px;letter-spacing:0.5px;line-height:30px;width:320px;text-align:center;margin:0 auto;}
+    .downABtn a {width:234px;height:56px;display:block;background:url(../_img/pages/items/mobileGames/downBtn980.png) 0px 0px no-repeat #a4ca39;margin:28px auto 0 auto;}
+    .downABtn a:hover {background:url(../_img/pages/items/mobileGames/downBtn980.png) 0px -56px no-repeat #d7ff88;}
+    .downIBtn a {width:234px;height:56px;display:block;background:url(../_img/pages/items/mobileGames/downBtn980.png) -234px 0px no-repeat #3999ca;margin:28px auto 0 auto;}
+    .downIBtn a:hover {background:url(../_img/pages/items/mobileGames/downBtn980.png) -234px -56px no-repeat #00b7ee;}
+    /*games*/
+    .GCon {display:none;}
+    .GCon980 {display:none;}
+    .GConM {width:100%;}
+    .GConM li {width:100%;height:auto;display:block;margin:0 auto 20px auto;padding-bottom:20px;}
+    .Gdown {margin-bottom:30px;}
+    .Gimg {width:100%;height:auto;display:block;margin:23px auto;padding:0 8%;}
+    .gamesLogo {display:block;width:166px;height:auto;margin:0 auto;}
+    .gamesLogo img {width:166px;height:auto;}
+    .gamesGoBtn, .gamesGoBtn a {display:block;width:80%;max-width:300px;height:47px;line-height:47px;font-size:21px;margin:30px auto;}
+    .gamesIntro {width:90%;display:block;text-align:left;color:#535353;font-size:22px;letter-spacing:0.5px;line-height:25px;margin:10px auto;}
+    /*gameTeam*/
+    .ContentextM {padding:20px;}
+    /*wanin*/
+    .pinkTitle1{display:none;}
+    .pinkTitle1M {font-size:27px;color:#d72f83;line-height:40px;letter-spacing:-1.2px;}
+    /*contact*/
+    .contactArea {display:none;}
+    .contactTitle {text-align:left;line-height:40px;width:100%;}
+    .contactAreaM {width:100%;height:auto;display:block;}
+    .CimgName {width:100%;height:auto;}
+    .Cimg {display:none;}
+    .Cimg980 {display:none;}
+    .CimgM {width:100%;height:auto;text-align:left;}
+    .Cname {width:100%;height:auto; text-align:left;font-size:26px;}
+    .Cway {width:100%;height:auto;height:auto;display:block;padding:0 10px;}
+    .Cway li {font-size:18px;line-height:28px;margin:0 0 0 -10px;padding-left:60px;text-indent:-60px;}
+    .contactAreaM > li {display:block;margin:10px 0;}
+    /*CD*/
+    .CDArea {display:none;}
+    .CDAreaM {width:100%;display:block; height:auto;}
+    .CDimg li{width:100%;height:auto;display:block;text-align:center;}
+    .CDintro {width:100%; height:auto;display:block;padding:0 20px;font-size:22px;}
+    .CDname {width:100%;height:auto; text-align:left;font-size:26px;}
+    .CDtop {margin:40px 0 0 0;}
+    /*care*/
+    #dSlideshowC {display:none;}
+    .careTxt {position:relative; display:inline-block;font-size:23px;margin:0 auto 30px 0px;width:100%;}
+    .orengTitleM {font-size:26px;}
+    /*message*/
+    .messageBtn, .messageBtn a {display:block;width:250px;height:57px;color:#fff;background:#0068b7;font-size:25px;font-weight:bold;text-align:center;margin:20px auto 0 auto;line-height:57px;}
+    .messageBtn a:hover {text-decoration:none;background:#00b3ff;}
+    /*siteMap*/
+    #siteMap1280, #siteMaptb, #siteMap980 {display:none;}
+    #siteMapM {width:100%;height:auto;margin:50px auto;}
+    .conContenM {width:100%;height:auto;display:block;}
+    #siteMaptb980 td {padding:4px;vertical-align:top;width:190px;}
+    .siteMapTitle {color:#ec6941;font-size:24px;line-height:43px;letter-spacing:0.5px;text-align:center;}
+    .linkTxt li a {color:#535353;font-size:24px;line-height:43px;letter-spacing:0.5px;text-align:center;display:block;}
+    .linkTxt li a:hover {color:#00b3ff;}
+    .linkTxt1 {margin :0 0 0 96px;}
+    .linkTxt1 li a {color:#535353;font-size:20px;line-height:43px;letter-spacing:0.5px;text-align:left;display:block;}
+    .linkTxt1 li a:hover {color:#00b3ff;}
+    /*provision*/
+    .conContenP {width:100%;height:auto;display:block;padding:20px;}
+    #topArea {display:none;}
+    #topAreaM {display:block;width:100%;height:auto;border-bottom:1px #dcdcdc solid; margin:40px 5px 0 5px; padding-bottom:30px;}
+    #topAreaM .toplink li a {display:block;font-size:24px;color:#0068b7;letter-spacing:0.5px;}
+    #topAreaM .toplink li a:hover {color:#00b3ff;}
+    #topAreaM .prvLang {display:block;text-align:center;}
+    #topAreaM .prvLang li {display:inline-block; margin:30px 0px 0 0;line-height:35px;}
+    #topAreaM .TC, #topAreaM .SC, #topAreaM .EN {width:106px; height:35px;border:1px #bfbfbf solid; border-radius:5px;background:#fff;font-size:18px;color:#333333;letter-spacing:0.5px;}
+    #topAreaM .TC:hover, #topAreaM .SC:hover, #topAreaM .EN:hover {background:#b5b5b5;color:#535353;}
+    .proContent {display:table;width:100%; height:auto;margin:30px 0 0 0;font-size:20px;color:#535353;letter-spacing:0.5px;line-height:26px;}
+    .tbCon li {margin-bottom:33px;}
+    .tbConTitle {font-weight:bold;}
+    .pindentb20 {padding-left:20px;text-indent:-20px;display:block;}
+    .pindent16 {padding-left:16px;text-indent:-16px;}
+    .pb16 {padding-left:16px;display:block;}
+    .p16d30b {padding-left:16px;display:block;padding-bottom:30px;}
+    .tbConUl {display:block; margin-bottom:20px;}
+    .tbConUl li {margin:0;}
+}
+
+@media only screen and (min-width : 200px) and (max-width : 399px) {
+    /*master_top*/
+    #dHeader {display:none;}
+    #dHeaderM {width:100%;margin:0 auto;height:auto;}
+    #dHearderMtop {width:100%;height:130px;display:block;border-bottom:1px #c9c9c9 solid;}
+    .Logo_S, .menu_S {display:none;}
+    .Logo_S320 {width:180px;height:58px;display:block;margin:30px 0 0 20px;float:left;}
+    .menu_S320 {width:45px;height:45px;display:block;margin:38px 0 0 0;float:right;right:20px;position:relative;}
+    #MenuM {width:100%;height:auto;background:#fff;margin:0 auto 0 auto;z-index:9;display:none;}
+    #mainMenuM {width:100%;height:auto;}
+    #mainMenuM > li {width:100%;display:block;height:auto;line-height:60px;color:#0068b7;font-size:25px;text-align:left;border-bottom:1px #c9c9c9 solid;}
+    #mainMenuM > li > a {display:block;width:100%;padding-left:20px;}
+    #mainMenuM > li > a:hover {background:#00b3ff;color:#fff;text-decoration:none;padding-left:20px;}
+
+    .subMenu01, .subMenu02, .subMenu03, .subMenu04, .subMenu05 {display:none;width:100%;height:auto;background:#c1ebfd;}
+    .subMenu01 > li a, .subMenu02 > li a, .subMenu03 > li a, .subMenu04 > li a, .subMenu05 > li a {display:block;height:60px;line-height:60px;border-bottom:1px #fff solid;color:#0068b7;padding-left:50px;}
+    .subMenu01 li a:hover, .subMenu02 li a:hover, .subMenu03 li a:hover, .subMenu04 li a:hover, .subMenu05 li a:hover {text-decoration:none;color:#0068b7}
+    .Menu1 p, .Menu2 p, .Menu3 p, .Menu4 p, .Menu5 p {padding-left:20px;}
+
+    #dFooter {clear:both;position:relative;display:block;height:90px;background:#b5b5b5;width:94%;margin:0 auto;}
+    .dFooterCY {color:#ffffff;font-size:14px;line-height:20px;text-align:center;display:block;}
+    .dFooterLK {color:#fff;font-size:20px;line-height:28px;display:block;text-align:center;padding:15px 0;}
+    .dFooterLK1 {color:#fff; padding:0 10px;}
+    .dFooterLK2 {color:#fff;text-decoration:none;padding:0 10px;}
+    .dFooterLK1:hover, .dFooterLK2:hover {color:#ffff00;text-decoration:underline;}
+    #goTop {clear:both;position:relative ;display:block;height:50px;background:#b5b5b5 url(../_img/layout/goTopS.png) center center no-repeat;margin :30px auto 0 auto;width:94%;}
+
+    #main, .dContent {position:relative; display:block;height:auto;}
+    #MainContent {display:none;}
+    section {position:relative;width:100%;display:table;margin:50px auto;padding:0 20px;}
+    .item {float:left; display:block;}
+
+    .item1, .item2, .item5 {width:100%;height:auto;}
+    .item3, .item4 {width:49%;margin:20px 0;}
+    .item6, .item7, .item8, .item9 {width:49%;margin:10px 0;}
+    .item3 img, .item4 img, .item6 img, .item7 img, .item8 img, .item9 img {width:100%;height:auto;}
+    .itemMargin {margin-left:2%;}
+
+    .ItemTitle { position:absolute; margin-left:10px; margin-top:10px; z-index:4; color:#000; font-size:16px;font-family:微軟正黑體;letter-spacing:0.5px;}
+
+    /*about*/
+    .dContMobile {width:100%;margin:0 auto;padding:0;}
+    #pageTitle {font-size:30px; color:#0068b7;font-weight:bold;letter-spacing:0.5px;margin-bottom:34px;}
+    .pageBorder {border:2px #d3d3d3 solid;}
+    .conConten {width:100%;height:auto;display:block;padding:30px 0;}
+    .conTxt {color:#535353;font-size:20px; line-height:30px;letter-spacing:0.5px;padding:10px;}
+    .color_00b3ff {color:#00b3ff;}
+    .textPadding {padding-left:32px;text-indent:-32px;}
+    .logo1280, .logo980 {display:none;}
+    .logo320 {margin:0 auto;display:block;}
+
+    /*concept*/
+    .orengTitle {color:#ec6941;font-size:26px;line-height:36px;font-family:微軟正黑體;}
+
+     /*periodical*/
+    .periodicalCon {width:100%;height:auto;display:block;}
+    .periodicalCon li {width:100%;display:block;margin:0 auto 50px auto;}
+    .blackTitle {font-size:24px;color:#000; letter-spacing:0.5px;text-align:center;}
+    .pimg, .pimg img {width:90%;display:block;margin:20px auto;}
+    .ponlineviewBtn, .ponlineviewBtn a,
+    .pdownloadBtn, .pdownloadBtn a {width:100%; height:57px;display:block;background:url(../_img/pages/intro/periodical/pBtn.png) 0px 0px no-repeat #0068b7;margin:0 auto 27px auto;}
+    .pdownloadBtn, .pdownloadBtn a {background:url(../_img/pages/intro/periodical/pBtn.png) 0px -57px no-repeat #0068b7; margin:0 auto;}
+    .ponlineviewBtn a:hover {background:url(../_img/pages/intro/periodical/pBtn.png) 0px 0px no-repeat #00b7ee;}
+    .pdownloadBtn a:hover {background:url(../_img/pages/intro/periodical/pBtn.png) 0px -57px no-repeat #00b7ee;}
+    /*video*/
+    .videoCon, #videoFrame {display:none;}
+    .videoConM {width:100%;height:auto;display:block;padding:0 0 0 0px;}
+    .videoConM li {width:100%; height:auto; display:block;margin:0 auto 40px auto;border:1px #c9c9c9 solid; cursor:pointer;}
+    .videoConM li:hover {border:2px #ee0040 solid;width:100%;}
+    .videoConMmargin {margin:60px auto 0 auto;}
+    .pinkTitle {font-size:14px; color:#e5004f;text-align:center;letter-spacing:0.5px;margin:15px 0 0px 0;}
+    .videoImg {width:100%;height:auto;display:block;margin:0 auto;padding:20px;}
+    #videomask {width: 100%;height: 100%;float: left;background-color:#fff;filter: alpha(opacity=10);opacity: 0.1; position:fixed; z-index:1;top:0;left:0;display:none;}
+    /*digital*/
+    .ContenImg {display:none;}
+    .ContenImgM {width:100%;height:auto;display:block;}
+    .Contentext {width:100%;height:auto;display:block;padding:10px 5px;font-size:20px;letter-spacing:0.5px;color:#535353;line-height:30px;}
+    .orengTitleM {font-size:26px;}
+    .digitalCon{display:none;}
+    .digitalConM {width:90%;height:auto;display:block;margin:42px auto 0px auto;}
+    .digitalConM li {width:100%; height:auto;display:block; padding:20px;margin:0 0 20px 0;}
+    .digitalRight {margin:0 13px 0 0;}
+    .moLoImg {margin:20px auto 10px auto;}
+    .moLoImg img {width:240px;height:auto;display:block;margin:0 auto;}
+    .moLoIntro {font-size:18px;color:#000;letter-spacing:0.5px;line-height:30px;text-align:center;height:105px;display:table; vertical-align:middle;margin:0 auto;}
+    .moLoBtn a, .moLoBtn a:hover {display:block;max-width:220px;width:90%;height:50px;color:#fff;background:#0068b7;font-size:25px;font-weight:bold;text-align:center;margin:8px auto 0 auto;line-height:50px;}
+    .moLoBtn a:hover {text-decoration:none;background:#00b3ff;}
+
+        /*points*/
+    .pointsBtn a, .gamesGoBtn a {max-width:250px;width:90%;height:57px;display:inline-block;background:#0068b7;color:#fff;line-height:57px;text-align:center;font-size:25px;font-weight:bold;margin-bottom:20px;}
+    .pointsBtn a:hover, .gamesGoBtn a:hover {background:#00b3ff;text-decoration:none;}
+    .pointsFBBtn a {max-width:250px;width:90%;height:57px;display:inline-block;background:#3b5998;color:#fff;line-height:57px;text-align:center;font-size:25px;font-weight:bold;}
+    .pointsFBBtn a:hover {background:#6999ff;text-decoration:none;}
+    .pointsRight {margin:0 0px 0 0;}
+    .pointP {text-align:center;}
+    /*mobileGames*/
+    .MGCon {display:none;}
+    .MGCon980 {display:none;}
+    .MGConM {width:100%;height:auto;display:block;}
+    .MGConM li {width:100%;height:auto;display:block;margin:0 auto 20px auto;padding-bottom:20px;}
+    .MGimg {width:100%;height:auto;display:block;margin:23px auto;padding:0 8%;}
+    .logoArea {width:100%;text-align:center;}
+    .logoArea img {width:85px;height:auto;}
+    .logoTitle {color:#333333;font-size:24px;letter-spacing:0.5px;line-height:40px;margin:20px 0 0 0; text-align:center;}
+    .logotxt {color:#535353;font-size:18px;letter-spacing:0.5px;line-height:30px;width:100%;text-align:center;margin:0 auto;}
+    .downABtn a {width:234px;height:56px;display:block;background:url(../_img/pages/items/mobileGames/downBtn980.png) 0px 0px no-repeat #a4ca39;margin:28px auto 0 auto;}
+    .downABtn a:hover {background:url(../_img/pages/items/mobileGames/downBtn980.png) 0px -56px no-repeat #d7ff88;}
+    .downIBtn a {width:234px;height:56px;display:block;background:url(../_img/pages/items/mobileGames/downBtn980.png) -234px 0px no-repeat #3999ca;margin:28px auto 0 auto;}
+    .downIBtn a:hover {background:url(../_img/pages/items/mobileGames/downBtn980.png) -234px -56px no-repeat #00b7ee;}
+    /*games*/
+    .GCon {display:none;}
+    .GCon980 {display:none;}
+    .GConM {width:100%;}
+    .GConM li {width:100%;height:auto;display:block;margin:0 auto 20px auto;padding-bottom:20px;}
+    .Gdown {margin-bottom:30px;}
+    .Gimg {width:100%;height:auto;display:block;margin:23px auto;padding:0 8%;}
+    .gamesLogo {display:block;width:166px;height:auto;margin:0 auto;}
+    .gamesLogo img {width:166px;height:auto;}
+    .gamesGoBtn, .gamesGoBtn a {display:block;width:80%;max-width:300px;height:47px;line-height:47px;font-size:21px;margin:30px auto;}
+    .gamesIntro {width:90%;display:block;text-align:left;color:#535353;font-size:22px;letter-spacing:0.5px;line-height:25px;margin:10px auto;}
+    /*gameTeam*/
+    .ContentextM {padding:20px;}
+    /*wanin*/
+    .pinkTitle1{display:none;}
+    .pinkTitle1M {font-size:22px;color:#d72f83;line-height:36px;letter-spacing:-1.2px;}
+    /*contact*/
+    .contactArea {display:none;}
+    .contactTitle {text-align:left;line-height:40px;width:100%;}
+    .contactAreaM {width:100%;height:auto;display:block;}
+    .CimgName {width:100%;height:auto;}
+    .Cimg {display:none;}
+    .Cimg980 {display:none;}
+    .CimgM {width:100%;height:auto;text-align:left;}
+    .Cname {width:100%;height:auto; text-align:left;font-size:26px;}
+    .Cway {width:100%;height:auto;height:auto;display:block;padding:0 10px;}
+    .Cway li {font-size:18px;line-height:28px;margin:0 0 0 -10px;padding-left:60px;text-indent:-60px;}
+    .contactAreaM > li {display:block;margin:10px 0;}
+    /*CD*/
+    .CDArea {display:none;}
+    .CDAreaM {width:100%;display:block; height:auto;}
+    .CDimg li{width:100%;height:auto;display:block;text-align:center;}
+    .CDintro {width:100%; height:auto;display:block;padding:0 20px;font-size:22px;}
+    .CDname {width:100%;height:auto; text-align:left;font-size:26px;}
+    .CDtop {margin:40px 0 0 0;}
+    /*care*/
+    #dSlideshowC {display:none;}
+    .careTxt {position:relative; display:inline-block;font-size:23px;margin:0 auto 30px 0px;width:100%;}
+    .orengTitleM {font-size:26px;}
+    /*message*/
+    .messageBtn, .messageBtn a {display:block;width:250px;height:57px;color:#fff;background:#0068b7;font-size:25px;font-weight:bold;text-align:center;margin:20px auto 0 auto;line-height:57px;}
+    .messageBtn a:hover {text-decoration:none;background:#00b3ff;}
+    /*siteMap*/
+    #siteMap1280, #siteMaptb, #siteMap980 {display:none;}
+    #siteMapM {width:100%;height:auto;margin:50px auto;}
+    .conContenM {width:100%;height:auto;display:block;}
+    #siteMaptb980 td {padding:4px;vertical-align:top;width:190px;}
+    .siteMapTitle {color:#ec6941;font-size:24px;line-height:43px;letter-spacing:0.5px;text-align:center;}
+    .linkTxt li a {color:#535353;font-size:24px;line-height:43px;letter-spacing:0.5px;text-align:center;display:block;}
+    .linkTxt li a:hover {color:#00b3ff;}
+    .linkTxt1 {margin :0 0 0 96px;}
+    .linkTxt1 li a {color:#535353;font-size:20px;line-height:43px;letter-spacing:0.5px;text-align:left;display:block;}
+        .linkTxt1 li a:hover {color:#00b3ff;}
+    /*provision*/
+    .conContenP {width:100%;height:auto;display:block;padding:20px;}
+    #topArea {display:none;}
+    #topAreaM {display:block;width:100%;height:auto;border-bottom:1px #dcdcdc solid; margin:40px 5px 0 5px; padding-bottom:30px;}
+    #topAreaM .toplink li a {display:block;font-size:24px;color:#0068b7;letter-spacing:0.5px;}
+    #topAreaM .toplink li a:hover {color:#00b3ff;}
+    #topAreaM .prvLang {display:block;text-align:center;}
+    #topAreaM .prvLang li {display:inline-block; margin:30px 0px 0 0;line-height:35px;}
+    #topAreaM .TC, #topAreaM .SC, #topAreaM .EN {width:106px; height:35px;border:1px #bfbfbf solid; border-radius:5px;background:#fff;font-size:18px;color:#333333;letter-spacing:0.5px;}
+    #topAreaM .TC:hover, #topAreaM .SC:hover, #topAreaM .EN:hover {background:#b5b5b5;color:#535353;}
+    .proContent {display:table;width:100%; height:auto;margin:30px 0 0 0;font-size:20px;color:#535353;letter-spacing:0.5px;line-height:26px;}
+    .tbCon li {margin-bottom:33px;}
+    .tbConTitle {font-weight:bold;}
+    .tbConUl {display:block;}
+    .tbConUl li {margin:0;}
+}

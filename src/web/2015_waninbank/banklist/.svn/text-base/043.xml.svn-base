@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bank>
+	<branch num="" name="請選擇分行.."/>
+	<branch num="0016" name="中聯信託投資公司總公司"/>
+	<branch num="0027" name="中聯信託投資公司審查部"/>
+	<branch num="0038" name="中聯信託投資公司營業部"/>
+	<branch num="0049" name="中聯信託投資公司城東分公司"/>
+	<branch num="0050" name="中聯信託投資公司三重分公司"/>
+	<branch num="0061" name="中聯信託投資公司桃園分公司 "/>
+	<branch num="0072" name="中聯信託投資公司台中分公司"/>
+	<branch num="0083" name="中聯信託投資公司高雄分公司"/>
+	<branch num="0094" name="中聯信託投資公司台南分公司"/>
+	<branch num="0108" name="中聯信託投資公司城中分公司"/>
+	<branch num="0119" name="中聯信託投資公司板橋分公司"/>
+	<branch num="0131" name="中聯信託投資公司信義分公司"/>
+	<branch num="0142" name="中聯信託投資公司中正分公司"/>
+	<branch num="0175" name="中聯信託投資公司雙和分公司"/>
+	<branch num="0186" name="中聯信託投資公司民生分公司"/>
+	<branch num="0212" name="中聯信託投資公司內湖分公司"/>
+	<branch num="0223" name="中聯信託投資公司仁愛分公司"/>
+</bank>
+

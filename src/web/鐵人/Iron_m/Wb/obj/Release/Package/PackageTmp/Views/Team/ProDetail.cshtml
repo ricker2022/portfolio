@@ -1,0 +1,86 @@
+﻿@{Layout = "~/Views/Shared/_TeamLayout.cshtml";}
+@using Wb.Models;
+@using Wb.Common;
+@model 戰隊
+
+@{
+    戰隊 team_info = ViewBag.team_info;    
+}
+
+ <div class="sub_navi">
+    <div class="col_1"><a href="@Html.FUrl("Pro")" class="back_btn"><i class="fa fa-arrow-left"></i></a></div>
+    <div class="col_9 category_title">@team_info.戰隊隊名 @ViewBag.team_page_sub_title</div>
+    <br clear="all">
+</div>
+
+<div id="team_kv">
+    <!-- 圖片寬度 3:1.2 -->
+    <img src="@team_info.戰隊圖片" style="width:100%;"/>
+    <div id="team_logo">
+    <img src="@team_info.戰隊Logo"/>
+    </div>
+</div>
+
+<a href="@Html.FUrl("ProMember")" class="function_btn member_btn">成員介紹(@Model.成員數)</a>
+
+
+<ul class="reset_ul" id="team_description">
+         <li>
+          <div class="team_description_title">
+            <i class="fa fa-dot-circle-o"></i>
+          戰隊介紹</div>
+          <table id='team_spec'>
+              <tr>
+                  <td>來自:</td>
+                  <td>@Model.國名</td>
+              </tr>
+               <tr>
+                  <td>成員:</td>
+                  <td>@Model.成員數 人</td>
+              </tr>
+               <tr>
+                  <td>成立時間:</td>
+                  <td>@string.Format("{0:yyyy-MM-d hh:mm}", Model.成立時間)</td>
+              </tr>
+          </table>
+          <div class="team_contet">@Html.Raw(Model.戰隊介紹)</div>
+       </li>
+       
+        <li>
+          <div class="team_description_title"><i class="fa fa-dot-circle-o"></i>歷年戰績</div>
+          <div class="team_contet">
+              @Html.Raw(Model.歷年戰績)
+          </div>
+       </li>
+      <li>
+        <div class="team_description_title">
+          <i class="fa fa-dot-circle-o"></i>
+        母企業</div>
+
+        <ul class="logo_list reset_ul">
+            <li>
+                 <img src="@Model.母企業"/>               
+            </li>          
+        </ul>
+      </li>
+       <li>
+        <div class="team_description_title">
+          <i class="fa fa-dot-circle-o"></i>
+        贊助企業</div>
+
+        <ul class="logo_list reset_ul">
+            @{
+                string[] sponsors = Model.贊助企業.Split(',');
+            }
+            <li>
+            @foreach (string item in sponsors)
+            {
+                <img src="@item"/>       
+            }
+                
+            </li>
+        </ul>
+      </li>
+
+   
+    </ul>

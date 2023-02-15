@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bank>
+	<branch num="" name="請選擇分行.."/>
+	<branch num="0010" name="台南第三信用合作社營業部"/>
+	<branch num="0029" name="台南第三信用合作社東門分社"/>
+	<branch num="0038" name="台南第三信用合作社西門分社"/>
+	<branch num="0047" name="台南第三信用合作社安平分社"/>
+	<branch num="0056" name="台南第三信用合作社成功分社"/>
+	<branch num="0083" name="台南第三信用合作社金華分社"/>
+	<branch num="0092" name="台南第三信用合作社小東分社"/>
+	<branch num="0065" name="台南第三信用合作社大同分社"/>
+	<branch num="0074" name="台南第三信用合作社文賢分社"/>
+	<branch num="0108" name="台南第三信用合作社開元分社"/>
+	<branch num="0117" name="台南第三信用合作社中華分社"/>
+	<branch num="0126" name="台南第三信用合作社大灣分社"/>
+	<branch num="0135" name="台南第三信用合作社安中分社"/>
+</bank>
+

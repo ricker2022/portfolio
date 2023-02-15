@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bank>
+	<branch num="" name="請選擇分行.."/>
+	<branch num="0016" name="花蓮第二信用合作社營業部"/>
+	<branch num="0025" name="花蓮第二信用合作社中山分社"/>
+	<branch num="0034" name="花蓮第二信用合作社主里分社"/>
+	<branch num="0043" name="花蓮第二信用合作社美侖分社"/>
+	<branch num="0052" name="花蓮第二信用合作社中正分社"/>
+	<branch num="0061" name="花蓮第二信用合作社富國分社"/>
+	<branch num="0070" name="花蓮第二信用合作社田蒲分社"/>
+	<branch num="0089" name="花蓮第二信用合作社建國分社"/>
+	<branch num="0098" name="花蓮第二信用合作社壽豐分社"/>
+	<branch num="0104" name="花蓮第二信用合作社玉里分社"/>
+	<branch num="0122" name="花蓮第二信用合作社台東分社"/>
+	<branch num="0131" name="花蓮第二信用合作社大里分社"/>
+	<branch num="0140" name="花蓮第二信用合作社太平分社"/>
+	<branch num="0159" name="花蓮第二信用合作社大雅分社"/>
+</bank>
+

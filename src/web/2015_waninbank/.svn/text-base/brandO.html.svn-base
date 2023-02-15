@@ -1,0 +1,57 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>無標題文件</title>
+    <link href="css/brandSty.css" rel="stylesheet" type="text/css" />
+    <script src="css/jquery.min.js" type="text/javascript"></script>
+    <script src="css/Accord.js" type="text/javascript"></script>
+    <script src="css/cookie.js" type="text/javascript"></script>
+</head>
+
+<body>
+    <div id="nav_container">
+        <ul id="nav">
+            <li><a id="a00"></a></li>
+            <li>
+                <a class="a01" target="_blank"></a>
+                <span style="position:absolute; top:325px; left:110px;width:130px;"></span>
+                <span style="position:absolute; top:325px; left:265px;width:130px;"></span>
+                <span style="position:absolute; top:325px; left:410px;width:160px;"></span>
+            </li>
+            <li>
+                <a class="a02"></a>
+                <span style="position:absolute; top:330px; left:220px"></span>
+            </li>
+            <!--<li><a class="a03"></a><span style="position:absolute; top:320px; left:110px; width:150px"></span><span style="position:absolute; top:320px; left:350px;width:190px"></span></li>-->
+            <li>
+                <a class="a04"></a>
+                <span style="position: absolute; top: 132px; left: 212px; width: 100px; "></span>
+                <span style="position: absolute; top: 132px; left: 448px; width: 100px; "></span>
+                <span style="position: absolute; top: 312px; left: 212px; width: 100px; "></span>
+                <span style="position: absolute; top: 312px; left: 448px; width: 100px; "></span>
+            </li>
+            <li>
+                <a class="a05"></a>
+                <span style="position: absolute; top: 170px; left: 135px; width: 165px;"></span>
+                <span style="position: absolute; top: 175px; left: 360px; width: 165px;"></span>
+                <span style="position: absolute; top: 350px; left: 135px; width: 150px;"></span>
+                <span style="position: absolute; top: 350px; left: 360px; width: 150px;"></span>
+            </li>
+            <li>
+                <a class="a06"></a>
+                <span style="position:absolute; top:340px; left:120px;">
+                </span><span style="position:absolute; top:340px; left:335px;width:170px;"></span>
+            </li>
+            <li>
+                <a class="a07"></a>
+                <span style="position:absolute; top:340px; left:150px;"></span>
+            </li>
+            <!--<li><a class="a03"></a><span style="position:absolute; top:320px; left:110px; width:150px"></span><span style="position:absolute; top:320px; left:350px;width:190px"></span></li>
+            <li><a class="a04"></a><span style="position:absolute; top:330px; left:120px"></span></li>
+            <li><a class="a05"></a><span style="position:absolute; top:360px; left:150px;width:160px"></span><span style="position:absolute; top:360px; left:335px;width:170px"></span></li>
+            <li><a class="a06"></a><span style="position:absolute; top:340px; left:120px;"></span></li>-->
+        </ul>
+    </div>
+</body>
+</html>

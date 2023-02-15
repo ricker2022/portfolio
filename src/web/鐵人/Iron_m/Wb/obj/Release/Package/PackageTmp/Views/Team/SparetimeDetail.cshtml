@@ -1,0 +1,67 @@
+﻿@{Layout = "~/Views/Shared/_TeamLayout.cshtml";}
+@using Wb.Models;
+@using Wb.Common;
+@model 業餘戰隊
+@{    
+    List<業餘戰隊成員> member_list = ViewBag.member_list;
+
+    Dictionary<string, 會員> member_map = ViewBag.member_map;
+    
+}
+
+<div class="sub_navi">
+    <div class="col_1"><a href="javascript:window.history.back()" class="back_btn"><i class="fa fa-arrow-left"></i></a></div>
+    <div class="col_9 category_title">@Model.戰隊隊名</div>
+    <br clear="all">
+</div>
+
+<div id="team_amateur_img">
+    <div id="member_pic"><img src="@Model.戰隊Logo"/></div>       
+</div>
+
+<ul class="reset_ul" id="team_description">
+    <li>
+        <div class="team_description_title">
+        <i class="fa fa-dot-circle-o"></i>
+        戰隊介紹</div>
+        <table id='team_spec'>
+            <tr>
+                <td>成員:</td>
+                <td>@Model.成員數 人</td>
+            </tr>
+            <tr>
+                <td>成立時間:</td>
+                <td>@string.Format("{0:yyyy-MM-d hh:mm}", Model.成立時間)</td>
+            </tr>
+        </table>
+        <div class="team_contet">@Html.Raw(Model.戰隊簡介)</div>
+    </li>
+       
+    <li>
+        <div class="team_description_title">
+        <i class="fa fa-dot-circle-o"></i>
+        所有成員</div>
+    </li>
+</ul>
+<ul id="news_list" class="reset_ul" >
+@{string tmp_key = "";}
+@foreach (業餘戰隊成員 item in member_list)
+{
+    if (member_map.ContainsKey(item.隊員名稱))
+    {
+        tmp_key = member_map[item.隊員名稱].MoloKey;
+    }
+    <li >
+        <a href="@Url.RouteUrl("Default", new { controller = "member",action="info",molo=WbUtil.EncryptDES(tmp_key)})" >
+            <div class="img">@Html.IconUrlByNickName(member_map,item.隊員名稱,98)</div>
+            <h3 class="has_img">@item.隊員名稱</h3>
+        </a>
+    </li>
+}
+    
+ 
+        
+</ul>
+
+
+   

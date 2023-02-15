@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bank>
+	<branch num="" name="請選擇分行.."/>
+	   <branch num="0015" name="里農"/>
+	   <branch num="0026" name="里農內新"/>
+	   <branch num="0037" name="里農草湖"/>
+	   <branch num="0048" name="里農健民"/>
+	   <branch num="0059" name="里農東榮"/>
+	   <branch num="0060" name="里農金城"/>
+	   <branch num="0071" name="里農十九甲"/>
+	   <branch num="0093" name="里農仁化"/>
+	   <branch num="0107" name="里農國光"/>
+	   <branch num="0118" name="里農成功"/>
+</bank>

@@ -1,0 +1,116 @@
+﻿body {
+    background:#353535;
+    margin:0;
+    padding:0;
+    min-width:720px;
+}
+#dPageHolder {
+    width:100%;
+    height:auto;
+    margin:0 auto;
+    padding:0;
+}
+
+/*Menu*/
+#dHeader, #sideBar {
+    top:0;
+    width:100%;
+    height:120px;
+    background:#cfcfcf;
+    display:block;
+    margin:0 auto;
+    padding:0;
+    position:fixed;
+    z-index:99;
+    border-bottom:2px #c7c7c7 solid;
+}
+    #sideBar ul {
+        width:94%;
+        height:100px;
+        margin:0 auto;
+        padding:0;
+    }
+        #sideBar ul li{
+            display:block;
+            float:left;
+            width:14%;
+            height:75px;
+            margin:20px 1%; 
+            max-height:75px;
+            background-size:contain;         
+        }
+.sideBarhome {
+    width:75px;
+    height:75px;
+    background:url('../_img/sideBar/001home.png') bottom center no-repeat;
+}
+.sideBarmember {
+    width:75px;
+    height:75px;
+    background:url('../_img/sideBar/002member.png') bottom center no-repeat;
+}
+.sideBarservice {
+    width:75px;
+    height:75px;
+    background:url('../_img/sideBar/003service.png') bottom center no-repeat;
+}
+.sideBardownload {
+    width:75px;
+    height:75px;
+    background:url('../_img/sideBar/004download.png') bottom center no-repeat;
+}
+.sideBarpost {
+    width:75px;
+    height:75px;
+    background:url('../_img/sideBar/005post.png') bottom center no-repeat;
+}
+.sideBarfb {
+    width:75px;
+    height:75px;
+    background:url('../_img/sideBar/006fb.png') bottom center no-repeat;
+}
+
+/*main區塊*/
+#main {
+    position:relative;
+    width:98%;
+    height:auto;
+    margin:130px auto 0 auto;
+    padding-bottom:20px;
+    display:block;
+    background:#cfcfcf;
+    border-radius:5px;
+}
+
+/*Footer*/
+#dFooter {
+    position:relative;
+    width:100%;
+    height:60px;
+    padding:20px 0;
+    display:block;
+    background:#353535;
+}
+.dFooterLogo {
+    width:163px;
+    height:64px;
+    margin:0 2% 0 4%;
+    background:url('../_img/dFooterLogo.png') top center no-repeat;
+    float:left;
+    display:block;
+}
+.dFooterInfo {
+    font-size:14px;
+    font-family:Arial, 微軟正黑體;
+    color:#fff;
+    display:block;
+    padding:6px 0 10px 25%;
+    line-height:18px;
+}
+.dFooter12 {
+    width:34px;
+    height:33px;
+    margin:-40px 0 0 90%;
+    background:url('../_img/dFooter12.png') top left no-repeat;
+    display:block;
+}

@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title></title>
+    <link href="css/popBox.css" rel="stylesheet" />
+    <script>
+        $(function () {
+
+            $(".hotDiv a").bind("click", function () {
+                var imgUrl = $(this).children().attr("src");
+                $("#bigImg img").attr("src", imgUrl);
+                clearStyle();
+                $(this).css("border", "3px #00b0ff solid");
+                $(this).children().css("width", "214px");
+                $(this).children().css("height", "144px");
+            });
+
+            $(".hotDiv a:first").css("border", "3px #00b0ff solid");
+            $(".hotDiv img:first").css("width", "214px");
+            $(".hotDiv img:first").css("height", "144px");
+
+        });
+        function clearStyle() {
+            $(".hotDiv a").each(function () {
+                $(this).removeAttr('style');
+                $(this).children().removeAttr('style');
+            });
+        }
+    </script>
+</head>
+<body>
+    <div class="photoBar">
+        <ul>
+            <li style="width:29px"></li>
+            <li id="bigImg">
+                <img src="image/bookImg/01.jpg"/>
+            </li>
+            <li style="vertical-align:top">
+                <a id="closeB" href="javascript:closePop()" class="closeB" style="margin-top:0"></a>
+                <a id="zoomB" href="javascript:zoomB()" class="zoomB"></a>
+            </li>
+         </ul>
+        <ul>
+            <li><a class="preB" href="javascript:preB()"></a></li>
+            <li class="gameHot">
+                <div style="width:100%; overflow: hidden; position:relative; height:170px;">
+                    <ul class="hotDiv">
+                        <li><a><img src="image/bookImg/01.jpg"/></a></li>
+                        <li><a><img src="image/bookImg/02.jpg"/></a></li>
+                        <li><a><img src="image/bookImg/03.jpg"/></a></li>
+                        <li><a><img src="image/bookImg/04.jpg"/></a></li>
+                        <li><a><img src="image/bookImg/05.jpg"/></a></li>
+                        <li><a><img src="image/bookImg/06.jpg"/></a></li>
+                        <li><a><img src="image/bookImg/07.jpg"/></a></li>
+                        <li><a><img src="image/bookImg/08.jpg"/></a></li>
+                        <li><a><img src="image/bookImg/09.jpg"/></a></li>
+                        <li><a><img src="image/bookImg/10.jpg"/></a></li>
+                        <li><a><img src="image/bookImg/11.jpg"/></a></li>
+                        <li><a><img src="image/bookImg/12.jpg"/></a></li>
+                        <li><a><img src="image/bookImg/13.jpg"/></a></li>
+                        <li><a><img src="image/bookImg/14.jpg"/></a></li>
+                        <li><a><img src="image/bookImg/15.jpg"/></a></li>
+                        <li><a><img src="image/bookImg/16.jpg"/></a></li>
+                        <li><a><img src="image/bookImg/17.jpg"/></a></li>
+                        <li><a><img src="image/bookImg/18.jpg"/></a></li>
+                        <li><a><img src="image/bookImg/19.jpg"/></a></li>
+
+                    </ul>
+                </div>
+            </li>
+            <li style="width:45px"><a href="javascript:nextB()" class="nextB"></a></li>
+         </ul>
+    </div>
+</body>
+</html>

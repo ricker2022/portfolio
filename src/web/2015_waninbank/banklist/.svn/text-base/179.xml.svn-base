@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bank>
+	<branch num="" name="請選擇分行.."/>
+	<branch num="0012" name="嘉義市第四信用合作社營業部"/>
+	<branch num="0021" name="嘉義市第四信用合作社仁愛分社"/>
+	<branch num="0030" name="嘉義市第四信用合作社中正分社"/>
+	<branch num="0049" name="嘉義市第四信用合作社台林分社"/>
+</bank>
+

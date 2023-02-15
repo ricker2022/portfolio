@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bank>
+	<branch num="" name="請選擇分行.."/>
+	   <branch num="0192" name="匯豐商業銀行國際金融業務分行"/>
+	   <branch num="0033" name="匯豐商業銀行台北分行"/>
+        <branch num="0022" name="匯豐商業銀行光復分行"/>
+        <branch num="0365" name="匯豐商業銀行太原路分行"/>
+        <branch num="0321" name="匯豐商業銀行仁愛分行"/>
+        <branch num="0206" name="匯豐商業銀行松江分行"/>
+        <branch num="0158" name="匯豐商業銀行新生分行"/>
+        <branch num="0398" name="匯豐商業銀行大安分行"/>
+	   <branch num="0099" name="匯豐商業銀行南京東路分行"/>
+        <branch num="0088" name="匯豐商業銀行信託部"/>
+        <branch num="0295" name="匯豐商業銀行南港分行"/>
+        <branch num="0147" name="匯豐商業銀行國外部"/>
+        <branch num="0011" name="匯豐商業銀行營業部"/>
+        <branch num="0251" name="匯豐商業銀行基隆分行"/>
+        <branch num="0284" name="匯豐商業銀行新店分行"/>
+        <branch num="0262" name="匯豐商業銀行新莊分行"/>
+        <branch num="0170" name="匯豐商業銀行三重分行"/>
+	   <branch num="0217" name="匯豐商業銀行雙和分行"/>
+        <branch num="0103" name="匯豐商業銀行板橋分行"/>
+        <branch num="0387" name="匯豐商業銀行土城分行"/>
+        <branch num="0354" name="匯豐商業銀行羅東分行"/>
+        <branch num="0181" name="匯豐商業銀行新竹分行"/>
+        <branch num="0044" name="匯豐商業銀行桃園分行"/>
+        <branch num="0309" name="匯豐商業銀行中壢分行"/>
+        <branch num="0343" name="匯豐商業銀行頭份分行"/>
+        <branch num="0332" name="匯豐商業銀行東興分行"/>
+        <branch num="0055" name="匯豐商業銀行台中分行"/>
+        <branch num="0114" name="匯豐商業銀行豐原分行"/>
+        <branch num="0228" name="匯豐商業銀行彰化分行"/>
+        <branch num="0310" name="匯豐商業銀行南投分行"/>
+	   <branch num="0125" name="匯豐商業銀行嘉義分行"/>
+        <branch num="0066" name="匯豐商業銀行台南分行"/>
+        <branch num="0273" name="匯豐商業銀行永康分行"/>
+        <branch num="0169" name="匯豐商業銀行大順分行"/>
+        <branch num="0376" name="匯豐商業銀行前鎮分行"/>
+        <branch num="0136" name="匯豐商業銀行高雄分行"/>
+        <branch num="0077" name="匯豐商業銀行鳳山分行"/>
+        <branch num="0239" name="匯豐商業銀行屏東分行"/>
+      </bank>
+

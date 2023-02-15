@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bank>
+	<branch num="" name="請選擇分行.."/>
+	<branch num="0010" name="華泰商業銀行營業部"/>
+	<branch num="0029" name="華泰商業銀行迪化街分行"/>
+	<branch num="0038" name="華泰商業銀行建成簡易型分行"/>
+	<branch num="0047" name="華泰商業銀行大同分行"/>
+	<branch num="0056" name="華泰商業銀行中山分行"/>
+	<branch num="0065" name="華泰商業銀行大安分行"/>
+	<branch num="0074" name="華泰商業銀行松山分行"/>
+	<branch num="0083" name="華泰商業銀行古亭分行"/>
+	<branch num="0092" name="華泰商業銀行士林分行"/>
+	<branch num="0108" name="華泰商業銀行內湖分行"/>
+	<branch num="0117" name="華泰商業銀行信義分行"/>
+	<branch num="0126" name="華泰商業銀行永吉分行"/>
+	<branch num="0135" name="華泰商業銀行和平分行"/>
+	<branch num="0144" name="華泰商業銀行光復分行"/>
+	<branch num="0153" name="華泰商業銀行文山分行"/>
+	<branch num="0171" name="華泰商業銀行石牌分行"/>
+	<branch num="0180" name="華泰商業銀行萬華分行"/>
+	<branch num="0199" name="華泰商業銀行南門分行"/>
+	<branch num="0205" name="華泰商業銀行松德分行"/>
+	<branch num="0214" name="華泰商業銀行新莊分行"/>
+	<branch num="0223" name="華泰商業銀行中和分行"/>
+	<branch num="0232" name="華泰商業銀行板橋分行"/>
+	<branch num="0241" name="華泰商業銀行南京東路分行"/>
+	<branch num="0250" name="華泰商業銀行敦化分行"/>
+	<branch num="0269" name="華泰商業銀行新店分行"/>
+	<branch num="0278" name="華泰商業銀行中壢分行"/>
+	<branch num="0287" name="華泰商業銀行高雄分行"/>
+	<branch num="0296" name="華泰商業銀行三重簡易型分行"/>
+	<branch num="0302" name="華泰商業銀行復興分行"/>
+	<branch num="0366" name="華泰商業銀行台中分行"/>
+</bank>
+

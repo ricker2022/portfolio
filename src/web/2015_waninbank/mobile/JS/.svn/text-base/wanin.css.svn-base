@@ -1,0 +1,74 @@
+﻿body, div {
+    padding: 0px;
+    margin: 0px;
+    font-family: 微軟雅黑體,微軟正黑體, MS PMincho, 新細明體;
+}
+
+ul, li {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.footer {
+    background: url('../img/footerBg.jpg') repeat-x top left;
+    height: 63px;
+    padding: 0 3px;
+}
+
+    .footer a {
+        line-height: 63px;
+        color: #ffffff;
+        font-size: 18px;
+        text-decoration: none;
+    }
+
+.footerHome {
+    background: url('../img/footerHome.png') repeat-x top left;
+    height: 63px;
+    float: right;
+    width: 107px;
+    margin-right: 3px;
+}
+
+.footerAbout {
+    background: url('../img/footerAbout.jpg') repeat-x top left;
+    height: 63px;
+    float: left;
+    width: 143px;
+    margin-left: 3px;
+}
+
+.content {
+    border: 1px solid #ccc;
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0px 2px 3px #F2F2F2;
+    -moz-box-shadow: 0px 2px 3px #F2F2F2;
+    box-shadow: 0px 2px 3px #F2F2F2;
+    background: #fff;
+    color: #000;
+    font-size: 20px;
+    line-height: 30px;
+    margin: 0 auto;
+    padding: 15px;
+    
+}
+
+.provMenu {
+    background: url('../img/contractBg.jpg') repeat top left;
+    /*height: 43px;*/
+    padding: 0 3px;
+    text-align:center;
+}
+
+    .provMenu a {
+        display: inline-block;
+        line-height: 42px;
+        color: #000000;
+        font-size: 14px;
+        font-weight:700;
+        text-decoration: none;
+        text-align: center;
+    }

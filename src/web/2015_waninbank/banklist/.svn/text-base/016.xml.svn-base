@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bank>
+	<branch num="" name="請選擇分行.."/>
+	<branch num="1017" name="高雄銀行營業部"/>
+	<branch num="1028" name="高雄銀行公庫部"/>
+	<branch num="1039" name="高雄銀行七賢分行"/>
+	<branch num="1040" name="高雄銀行國外部"/>
+	<branch num="1051" name="高雄銀行信託部"/>
+	<branch num="2003" name="高雄銀行鳳山分行"/>
+	<branch num="2025" name="高雄銀行前金分行"/>
+	<branch num="2036" name="高雄銀行三民分行"/>
+	<branch num="2081" name="高雄銀行左營分行"/>
+	<branch num="2106" name="高雄銀行小港分行"/>
+	<branch num="2117" name="高雄銀行桃園分行"/>
+	<branch num="2128" name="高雄銀行前鎮分行"/>
+	<branch num="2139" name="高雄銀行右昌分行"/>
+	<branch num="2140" name="高雄銀行灣內分行"/>
+	<branch num="2151" name="高雄銀行屏東分行"/>
+	<branch num="2162" name="高雄銀行桂林分行"/>
+	<branch num="2173" name="高雄銀行六合分行"/>
+	<branch num="2184" name="高雄銀行楠梓分行"/>
+	<branch num="2195" name="高雄銀行鼓山分行"/>
+	<branch num="2209" name="高雄銀行建國分行"/>
+	<branch num="2210" name="高雄銀行九如分行"/>
+	<branch num="2221" name="高雄銀行鹽埕簡易型分行"/>
+	<branch num="2232" name="高雄銀行草衙分行"/>
+	<branch num="2243" name="高雄銀行板橋分行"/>
+	<branch num="2254" name="高雄銀行台南分行"/>
+	<branch num="2265" name="高雄銀行三多分行"/>
+	<branch num="2276" name="高雄銀行大發分行"/>
+	<branch num="2287" name="高雄銀行大直分行"/>
+	<branch num="2298" name="高雄銀行台中分行"/>
+	<branch num="2302" name="高雄銀行國際金融業務分行"/>
+	<branch num="2313" name="高雄銀行旗津分行"/>
+	<branch num="2324" name="高雄銀行南高雄分行"/>
+	<branch num="2335" name="高雄銀行大昌簡易型分行"/>
+	<branch num="2346" name="高雄銀行新竹分行"/>
+	<branch num="2357" name="高雄銀行市府分行"/>
+	<branch num="2379" name="高雄銀行中和分行"/>
+	<branch num="2380" name="高雄銀行台北分行"/>
+	<branch num="2405" name="高雄銀行明誠分行"/>
+	<branch num="2416" name="高雄銀行北高雄分行"/>
+	<branch num="2450" name="高雄銀行博愛分行"/>
+	
+	
+</bank>
+

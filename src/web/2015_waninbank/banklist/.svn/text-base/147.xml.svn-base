@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bank>
+	<branch num="" name="請選擇分行.."/>
+   <branch num="0013" name="三信商業銀行營業部"/>
+	<branch num="0022" name="三信商業銀行南屯分行"/>
+   <branch num="0031" name="三信商業銀行中正簡易型分行"/>
+   <branch num="0040" name="三信商業銀行成功分行"/>
+	<branch num="0059" name="三信商業銀行西屯分行"/>
+	<branch num="0068" name="三信商業銀行國光分行"/>
+	<branch num="0077" name="三信商業銀行大智分行"/>
+	<branch num="0086" name="三信商業銀行林森分行"/>
+	<branch num="0095" name="三信商業銀行南門分行"/>
+	<branch num="0101" name="三信商業銀行進化分行"/>
+	<branch num="0110" name="三信商業銀行南屯分行"/>
+	<branch num="0138" name="三信商業銀行北屯簡易型分行"/>
+	<branch num="0147" name="三信商業銀行豐原分行"/>
+	<branch num="0156" name="三信商業銀行彰化分行"/>
+	<branch num="0165" name="三信商業銀行員林分行"/>
+	<branch num="0183" name="三信商業銀行台北分行"/>
+	<branch num="0192" name="三信商業銀行桃園分行"/>
+	<branch num="0208" name="三信商業銀行板橋分行"/>
+	<branch num="0244" name="三信商業銀行三民分行"/>
+	<branch num="0253" name="三信商業銀行豐信分行"/>
+	<branch num="0262" name="三信商業銀行中山分行"/>
+	<branch num="0271" name="三信商業銀行豐東分行"/>
+	<branch num="0280" name="三信商業銀行豐樂分行"/>
+	<branch num="0299" name="三信商業銀行台南分行"/>
+	<branch num="0305" name="三信商業銀行高雄分行"/>
+	<branch num="0314" name="三信商業銀行新莊分行"/>
+	<branch num="0323" name="三信商業銀行新竹分行"/>
+</bank>
+

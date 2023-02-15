@@ -1,0 +1,42 @@
+﻿@{Layout = "~/Views/Shared/_TeamLayout.cshtml";}
+@using Wb.Models;
+@using Wb.Pager;
+@using Wb.Common;
+@model PagedList<業餘戰隊_文章>
+@{
+    業餘戰隊 team_info = ViewBag.team_info;
+    Dictionary<int, string> cat_map = ViewBag.cat_map;
+}
+
+<div class="sub_navi">
+    <div class="col_1"><a href="javascript:window.history.back()" class="back_btn"><i class="fa fa-arrow-left"></i></a></div>
+    <div class="col_9 category_title">@team_info.戰隊隊名</div>
+    <br clear="all">
+</div>
+  
+<div id="team_amateur_img">
+    <div id="member_pic"><img src="@team_info.戰隊Logo"/></div>       
+</div>
+
+<ul class="reply_btn_group reset_ul">
+    <li class="two_col"><a href="@Html.FUrl("MySparetimeDetail","", new { t=team_info.戰隊編號})" class="reply_btn">關於</a></li> 
+    <li class="two_col"><a href="@Html.FUrl("MyPost","", new { t=team_info.戰隊編號, c = ViewBag.cat_sn })" class="reply_btn">發表文章</a></li>    
+</ul>
+
+
+<ul id="news_list" class="forum reset_ul">
+@foreach (業餘戰隊_文章 item in Model)
+{
+    <!-- 至頂 加 blue_line -->
+    <li  class="@(item.置頂YN == true ? "blue_line" : "")">
+        <a href="@Html.FUrl("MyDetail", "", new { asn = item.文章流水號 })">
+            <h3>《@cat_map[item.屬性編號]》@item.標題</h3><div class="datetime">
+                <div>作者:@item.異動者 人氣:@item.人氣數</div> @string.Format("{0:yyyy/MM/d}", item.建立日期)</div>
+        </a>
+    </li>
+} 
+</ul>
+@if(Model.Count>0)
+{
+<a href="#popupPager" class="function_btn black call_pager"><i class="fa fa-ellipsis-h"></i></a>
+}

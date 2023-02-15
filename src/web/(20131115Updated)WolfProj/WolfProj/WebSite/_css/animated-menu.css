@@ -1,0 +1,78 @@
+﻿/* 主選單sytle */
+#navMenu{
+    display:block;
+    position:absolute;
+    top:131px;
+    left:0px;
+    width:1024px;
+    height:52px;
+    margin:0;
+    padding:0;
+    z-index:2;
+}
+
+#navBar_m{
+    padding:0;
+    margin:0;
+    width:1024px;
+    height:52px;
+    float:left;
+}
+
+#navBar_m ul{
+	margin:0;
+	padding:0;
+    width:1024px;
+    height:52px;
+    float:left;
+}
+
+.nav_li li{
+	width:147px;
+	height:52px;
+	float:left;
+	overflow:hidden;
+}
+
+li#left{margin:0px;padding:0;width:48px;height:52px;background:url(../_img/layout/nav/nav_left.png) top left no-repeat;}
+li#right{margin:0px;padding:0;width:48px;height:52px;background:url(../_img/layout/nav/nav_right.png) top left no-repeat;}
+
+#subMenu{
+    padding-top:52px;
+}
+
+#subMenu a{
+	color:#FFF;
+	text-decoration:none;
+}
+
+#subMenu .top{
+    height:2px;
+    background:url('../_img/layout/nav/subMenu_top.png') top center no-repeat;
+}
+#subMenu .bottom{
+    height:25px;
+    background:url('../_img/layout/nav/subMenu_bottom.png') top center no-repeat;
+}
+
+#subMenu p{
+	padding:0px 0px;
+    background:url('../_img/layout/nav/subMenu_top.png') top center repeat-y;
+}
+
+	.subtext{
+        font-size:15px;
+        text-align:center;
+        line-height:22px;
+	}
+
+/*Menu Color Classes*/
+#nav_FW{background:url('../_img/layout/nav/nav_FW.png')top left no-repeat;}
+#nav_FW:hover{background:url('../_img/layout/nav/nav_FW.png') bottom left no-repeat;}
+#nav_GC{background:url('../_img/layout/nav/nav_GC.png') top left no-repeat;}
+#nav_GC:hover{background:url('../_img/layout/nav/nav_GC_hover.png') top left no-repeat;}
+#BD{background:url('../_img/layout/nav/nav_body.png') top left no-repeat;width:340px;}
+#nav_YS{background:url('../_img/layout/nav/nav_YS.png') top left no-repeat;}
+#nav_YS:hover{background:url('../_img/layout/nav/nav_YS.png') bottom left no-repeat;}
+#nav_OL{background:url('../_img/layout/nav/nav_OL.png') top left no-repeat;}
+#nav_OL:hover{background:url('../_img/layout/nav/nav_OL.png') bottom left no-repeat;}

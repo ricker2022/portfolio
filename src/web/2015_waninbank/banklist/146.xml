@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bank>
+	<branch num="" name="請選擇分行.."/>
+   <branch num="0014" name="台中市第二信用合作社營業部"/>
+   <branch num="0023" name="台中市第二信用合作社文昌分社"/>
+   <branch num="0032" name="台中市第二信用合作社南屯分社"/>
+   <branch num="0041" name="台中市第二信用合作社五權分社"/>
+   <branch num="0050" name="台中市第二信用合作社東南分社"/>
+   <branch num="0069" name="台中市第二信用合作社大智分社"/>
+   <branch num="0078" name="台中市第二信用合作社港路分社"/>
+	<branch num="0087" name="台中市第二信用合作社精進分社"/>
+	<branch num="0096" name="台中市第二信用合作社中興分社"/>
+	<branch num="0102" name="台中市第二信用合作社水湳分社"/>
+	<branch num="0111" name="台中市第二信用合作社中和分社"/>
+	<branch num="0120" name="台中市第二信用合作社松竹分社"/>
+	<branch num="0139" name="台中市第二信用合作社向上分社"/>
+	<branch num="0148" name="台中市第二信用合作社大雅分社"/>
+	<branch num="0157" name="台中市第二信用合作社西屯分社"/>
+</bank>
+

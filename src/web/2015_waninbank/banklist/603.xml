@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bank>
+	<branch num="" name="請選擇分行.."/>
+	   <branch num="0016" name="基隆農會"/>
+	   <branch num="0027" name="基隆安樂"/>
+	   <branch num="0038" name="基隆百福"/>
+	   <branch num="0049" name="基隆愛六路"/>
+</bank>

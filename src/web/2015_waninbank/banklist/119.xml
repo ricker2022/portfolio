@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bank>
+	<branch num="" name="請選擇分行.."/>
+   <branch num="0010" name="淡水第一信用合作社營業部"/>
+   <branch num="0029" name="淡水第一信用合作社三重分社"/>
+   <branch num="0038" name="淡水第一信用合作社三芝分社"/>
+   <branch num="0047" name="淡水第一信用合作社八里分社"/>
+	<branch num="0056" name="淡水第一信用合作社石門分社"/>
+	<branch num="0065" name="淡水第一信用合作社竹圍分社"/>
+	<branch num="0074" name="淡水第一信用合作社水碓分社"/>
+	<branch num="0083" name="淡水第一信用合作社英專分社"/>
+	<branch num="0092" name="淡水第一信用合作社義山分社"/>
+	<branch num="0108" name="淡水第一信用合作社龍形分社"/>
+	<branch num="0117" name="淡水第一信用合作社金山分社"/>
+</bank>
+

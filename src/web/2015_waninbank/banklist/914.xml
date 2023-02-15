@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bank>
+	<branch num="" name="請選擇分行.."/>
+	   <branch num="0000" name="虎尾本會"/>
+</bank>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bank>
+	<branch num="" name="請選擇分行.."/>
+	   <branch num="0043" name="員林本會"/>
+	   <branch num="0087" name="二林農會"/>
+	   <branch num="0124" name="秀水本會"/>
+	   <branch num="0179" name="埔心本會"/>
+	   <branch num="0180" name="永靖本會"/>
+	   <branch num="0227" name="埤頭本會"/>
+	   <branch num="0261" name="竹塘本會"/>
+	   <branch num="0320" name="秀水福安"/>
+	   <branch num="0401" name="埤頭口厝"/>
+	   <branch num="0412" name="埤頭埤頭"/>
+	   <branch num="0423" name="埤頭芙朝"/>
+	   <branch num="0478" name="秀水馬鳴"/>
+	   <branch num="0515" name="秀水金興"/>
+	   <branch num="0526" name="員林東山"/>
+	   <branch num="0548" name="埔心太平"/>
+	   <branch num="0559" name="埔心舊館"/>
+	   <branch num="0593" name="埔心明聖"/>
+	   <branch num="0696" name="永靖永安"/>
+	   <branch num="0700" name="員林百果山"/>
+	   <branch num="0711" name="二林原斗"/>
+	   <branch num="0733" name="永靖五福"/>
+	   <branch num="0799" name="二林挖仔"/>
+	   <branch num="0858" name="二林中山"/>
+	   <branch num="0870" name="永靖同安"/>
+	   <branch num="1017" name="竹塘長安"/>
+	   <branch num="1028" name="永靖永興"/>
+	   <branch num="1291" name="二林萬興"/>
+	   <branch num="1327" name="芬園農會"/>
+	   <branch num="1338" name="芳苑農會"/>
+</bank>

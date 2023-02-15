@@ -1,0 +1,70 @@
+﻿@using Wb.Models;
+@using Wb.Common;
+@model List<imsgObj>
+@{
+    Userinfo userinfo = M_Member.myProfile;
+}
+
+<div  class="sub_navi" >
+    <div class="col_2"><a href="@Html.FUrl("usermsg","",null,"molo")" class="back_btn"><i class="fa fa-arrow-left"></i></a></div>
+    <div class="col_8 category_title" >@ViewBag.friend_nickname</div>
+    <br clear="all"/>
+</div>
+
+@if (ViewBag.show_pre_msg_btn == 1)
+{
+<a href="#" id="btn_pre_message" class="reply_btn" >稍早留言</a>
+}
+
+<ul id="chat_box" class="reset_ul" >
+@foreach (imsgObj item in Model)
+{
+    if (item.rightside)
+    {
+        <li class="guest">
+        <div class="message">@item.content
+            <span>@string.Format("{0:yyyy-MM-d HH:mm}", item.date)</span>
+            <div class="right_arrow"></div>
+        </div>
+        <div class="img">
+            <img src="@item.showicon" onerror="this.src='@Url.Content("~/upload/website/default.png")'" alt="head_icon">
+        </div>
+      
+        </li>
+
+	    <br clear="all" />     
+    }
+    else
+    {
+    <li>
+      <div class="img">
+        <img src="@item.showicon"  onerror="this.src='@Url.Content("~/upload/website/default.png")'" alt="">
+
+      </div>
+      <div class="message">@item.content
+        <span>@string.Format("{0:yyyy-MM-d HH:mm}", item.date)</span>
+        <div class="left_arrow"></div>
+     </div>
+   </li>
+   <br clear="all" />    
+    }
+}
+	
+  </ul>
+
+
+<div id="input_chat">
+    <input type="text" id="message" maxlength="70">
+    <a href="#" id="send"><i class="fa fa-pencil"></i></a>
+</div>
+<input type="hidden" id="nickname" value="@userinfo.nickname" />
+<input type="hidden" id="f_nickname" value="@ViewBag.friend_nickname" />
+@if (Model.Count > 0)
+{
+    <input type="hidden" id="first_date" value="@string.Format("{0:yyyy-MM-d HH:mm:ss}", Model.FirstOrDefault().date)" />
+}
+
+@if(@Request.Browser.Browser == "Safari")
+{
+
+}

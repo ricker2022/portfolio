@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bank>
+	<branch num="" name="請選擇分行.."/>
+	   <branch num="0010" name="瑞漁本會"/>
+	   <branch num="0021" name="瑞漁深澳"/>
+	   <branch num="0032" name="萬里區漁會"/>
+	   <branch num="0054" name="萬里漁萬里"/>
+</bank>

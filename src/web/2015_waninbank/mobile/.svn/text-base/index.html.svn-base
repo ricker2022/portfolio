@@ -1,0 +1,101 @@
+﻿<!DOCTYPE HTML PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title></title>
+    <script src="JS/jquery.mobile-1.1.1.css"></script>
+    <script src="JS/jquery.mobile-1.1.1.js"></script>
+    <script src="JS/jquery-1.10.2.js"></script>
+
+    <link href="JS/wanin.css" rel="stylesheet" type="text/css" />
+    <script>
+        $(window).load(function () {
+            changeSize();
+        });
+        $(window).resize(function () {
+            changeSize();
+        });
+        function changeSize() {
+            var moloH = $("#game").height();
+            var t = 2.54;
+            $('#molo').css('height', moloH);
+            $('.provMenu a').css('font-size', $(window).width() / 33);
+            //$('.provMenu').css('height', $(window).width() > 342 ? '42px' : '84px');
+            $('#copyright').css('width', $(window).width() > 342 ? '55%' : '30%');
+            $('.ftext').css('font-size', $(window).width() > 342 ? '18px' : '14px');
+        }
+    </script>
+    <style>
+        #ui-block-a a {
+            display: inline-block;
+            float: left;
+        }
+    </style>
+</head>
+
+<body>
+    <form id="form1">
+
+        <!-- Home -->
+        <div data-role="page" id="Div1" style="padding:0px; margin:0px">
+            <div data-role="content">
+                <div id="ss">
+                    <img src="img/menu_01.jpg" width="100%" />
+                </div>
+                <!--<a data-role="button" href="yoe.html" style="display:inline-block; width:100%;">
+                    <img src="img/menu_02.jpg" width="100%" />
+                </a>-->
+                <div id="ui-block-a">
+                    <div id="ui-block-a">
+                        <!--<a data-role="button" href="yoe.html" style="display:inline-block; width:32.9%;">
+                        <img src="img/menu_02.jpg" width="100%" />
+                        </a>-->
+                        <a data-role="button" href="mgame.html" style="display:inline-block; width:100%;">
+                            <img src="img/menu_10.jpg" width="100%" />
+                        </a>
+                    </div>
+                    <div id="ui-block-a">
+                        <a data-role="button" href="FlashWolves.html" style="display:inline-block; width:50%;">
+                            <img src="img/menu_03.jpg" width="100%" />
+                        </a>
+                        <a data-role="button" href="game.html" style="display:inline-block; width:50%;">
+                            <img src="img/menu_05.jpg" width="100%" />
+                        </a>
+                    </div>
+                    <div id="ui-block-a">
+                        <a data-role="button" href="yoe.html" style="width:66%;">
+                            <img src="img/menu_02.jpg" width="100%" id="game" />
+                        </a>
+                        <a data-role="button" href="molo.html" style="width:34%;">
+                            <img src="img/menu_06.jpg" width="100%" id="molo" />
+                        </a>
+                    </div>
+                    <div id="ui-block-a">
+                        <a data-role="button" href="about.html" style="display:inline-block; width:50%;">
+                            <img src="img/menu_07.jpg" width="100%" />
+                        </a>
+                        <a data-role="button" href="forum.html" style="display:inline-block; width:50%;">
+                            <img src="img/menu_08.jpg" width="100%" />
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <div class="provMenu" style="clear:both">
+                <div>
+                    <a href="provision.html" data-transition="fade">使用者合約&nbsp;&nbsp;|&nbsp;&nbsp;</a>
+                    <a href="provisionTerms.html" data-transition="fade">廠商條款&nbsp;&nbsp;|&nbsp;&nbsp;</a>
+                    <a href="provisionPrivacy.html" data-transition="fade">隱私權條款&nbsp;&nbsp;|&nbsp;&nbsp;</a>
+                    <a href="provisionPersonal.html" data-transition="fade">個人資料使用同意書</a>
+                </div>
+            </div>
+            <div data-theme="a" data-role="footer" data-position="fixed" class="footer" style="clear:both">
+                <a class="ftext" href="contact.html">聯絡我們&nbsp;|</a>
+                <a class="ftext" href="../pcIndex.html">電腦版</a>
+                <img id="copyright" src="img/footerL.png" style="float:right;width:55%; height:63px" />
+            </div>
+        </div>
+    </form>
+</body>
+</html>

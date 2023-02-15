@@ -1,0 +1,135 @@
+﻿@using Wb.Models;
+@using Wb.Pager;
+@using Wb.Common;
+@model 文章
+@{
+    PagedList<文章回覆> reply_list = ViewBag.reply_list;
+
+    Dictionary<string, 會員> member_map = ViewBag.member_map;
+
+    Dictionary<long, List<文章留言>> message_map = ViewBag.message_map;
+       
+    int rpage = (int)ViewBag.rpage;
+    
+    bool isPost = true;
+    string errorRouteUrl = Url.RouteUrl("default", new { controller = "Member", action = "alertMsg", txt = "禁言中，無法操作!" });
+
+    if (Userinfo.myProfile != null && Userinfo.myProfile.nopostDisplay != "")
+    {
+        isPost = false;
+    }
+}
+
+
+ <div  class="sub_navi" >
+    <div class="col_2"><a href="@Html.FUrl("index","",null,"asn,rpage")" class="back_btn"><i class="fa fa-arrow-left"></i></a></div>
+    <div class="col_8 category_title" >討論區列表</div>
+    <br clear="all"/>
+</div>
+
+<div  class="sub_navi list_row_title"  >
+    <div class="col_8" id="Detail_ID">@Html.Raw(Model.標題)</div>
+    <div class="col_2"><a href="#popupPager" class="function_btn call_pager" ><i class="fa fa-sort"></i></a></div>
+    <br clear="all"/>
+</div>
+
+
+
+<ul id="news_detail_list" class="reset_ul" >
+
+    @if (rpage == 1)
+    {
+    <li>
+        <div class="member_info">
+            <a href="@Url.RouteUrl("Default", new { controller = "member",action="info",molo=WbUtil.EncryptDES(Model.MoloKey)})" class="member_pic">@Html.IconUrl(member_map,Model.MoloKey)</a>
+            <div class="member_name_time">
+                <div class="forum_user_name" id="Detail_ID">@Html.GetNickNameByMolokey(member_map, Model.MoloKey)</div>
+                <div class="forum_detail">
+                    <div>@string.Format("{0:yyyy-MM-d hh:mm}", Model.發佈開始日)</div>
+                    <div>推文數：@Model.推文數</div>
+                </div>
+            </div>
+        </div>
+        <div class="news_detail_content">
+            @Html.Raw(Html.FilterScript(Model.內容))
+        </div>
+       
+            <ul class="reply_btn_group reset_ul">
+                <li class="tree_col"><a href="@(isPost ? Html.Raw(Url.RouteUrl("Default", new { action = "AjaxPushArticle", csn = ViewBag.csn, pushedMolokey = Model.MoloKey, pushedCount = Model.推文數 })).ToString() : errorRouteUrl)" sn="@ViewBag.asn"  class="reply_btn push_btn">推文</a></li>
+                <li class="tree_col"><a href="@(isPost ? Html.FUrl("message").ToString() : errorRouteUrl)" class="@(isPost ? "reply_btn" : "reply_btn push_btn")">留言</a></li>
+                <li class="tree_col"><a href="@(isPost ? Html.FUrl("reply").ToString() : errorRouteUrl)" class="@(isPost ? "reply_btn" : "reply_btn push_btn")">回覆</a></li>
+            </ul>
+        
+        <ul class="reply_list reset_ul" >
+        @foreach (文章留言 item in message_map[0])
+        {
+            <li>
+                <div class="member_info">
+                <a href="@Url.RouteUrl("Default", new { controller = "member",action="info",molo=WbUtil.EncryptDES(item.MoloKey)})" class="member_pic">@Html.IconUrl(member_map,item.MoloKey,42)</a>
+                <div class="member_name_time">
+                    <div class="forum_user_name" id="Detail_ID">@Html.GetNickNameByMolokey(member_map, item.MoloKey)</div>
+                <div class="forum_detail">
+                <div>@string.Format("{0:yyyy-MM-d hh:mm}", item.建立日期)</div>                         
+                </div>
+                </div>
+                </div>
+                <div class="news_detail_content">              
+                @Html.Raw(Html.FilterScript(item.內容)) 
+                </div>
+            </li>
+        }          
+        </ul>
+
+    </li>     
+    }
+    @foreach (文章回覆 item in reply_list)
+    {
+        <li>
+            <div class="member_info">
+                <a href="@Url.RouteUrl("Default", new { controller = "member",action="info",molo=WbUtil.EncryptDES(item.MoloKey)})" class="member_pic">@Html.IconUrl(member_map,item.MoloKey) </a>
+                <div class="member_name_time">
+                    <div class="forum_user_name" id="Detail_ID">@Html.GetNickNameByMolokey(member_map, item.MoloKey)</div>
+                    <div class="forum_detail">
+                        <div>@string.Format("{0:yyyy-MM-d hh:mm}", item.建立日期)</div>
+                        <div>推文數： @item.推文數</div>
+                    </div>
+                </div>
+            </div>
+            <div class="news_detail_content">               
+                @Html.Raw(Html.FilterScript(item.內容))
+            </div>
+            <ul class="reply_btn_group reset_ul">                   
+                    <li class="two_col">
+                        <a href="@(isPost ? Html.Raw(Url.RouteUrl("Default", new { action="AjaxPushReply",csn=ViewBag.csn})).ToString():errorRouteUrl)" sn="@item.回覆流水號" class="reply_btn push_btn">推文</a>
+                    </li>  
+                <li class="two_col"><a href="@(isPost ? Html.FUrl("message", "", new { rsn = item.回覆流水號 }).ToString() : errorRouteUrl)" class="@(isPost ? "reply_btn" : "reply_btn push_btn")">留言</a></li>
+            </ul>
+            <ul class="reply_list reset_ul" >
+            @foreach (文章留言 mitem in message_map[item.回覆流水號])
+            {
+                <li>
+                    <div class="member_info">
+                    <a href="@Url.RouteUrl("Default", new { controller = "member",action="info",molo=WbUtil.EncryptDES(mitem.MoloKey)})" class="member_pic">@Html.IconUrl(member_map,mitem.MoloKey,42)</a>
+                    <div class="member_name_time">
+                        <div class="forum_user_name" id="Detail_ID">@Html.GetNickNameByMolokey(member_map, mitem.MoloKey)</div>
+                    <div class="forum_detail">
+                    <div>@string.Format("{0:yyyy-MM-d hh:mm}", mitem.建立日期)</div>                         
+                    </div>
+                    </div>
+                    </div>
+                    <div class="news_detail_content">                    
+                    @Html.Raw(Html.FilterScript(mitem.內容))
+                    </div>
+                </li>
+            }          
+            </ul>
+
+
+        </li>           
+    }
+
+       
+</ul>
+
+
+

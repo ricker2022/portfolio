@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bank>
+	<branch num="" name="請選擇分行.."/>
+	<branch num="0014" name="竹南信用合作社營業部"/>
+	<branch num="0032" name="竹南信用合作社頭份分社"/>
+	<branch num="0041" name="竹南信用合作社後龍分社"/>
+	<branch num="0069" name="竹南信用合作社通霄分社"/>
+	<branch num="0078" name="竹南信用合作社苑裡分社"/>
+	<branch num="0087" name="竹南信用合作社前進分社"/>
+	<branch num="0096" name="竹南信用合作社竹北分社"/>
+	<branch num="0102" name="竹南信用合作社新竹分社"/>
+	<branch num="0111" name="竹南信用合作社豐原分社"/>
+</bank>
+

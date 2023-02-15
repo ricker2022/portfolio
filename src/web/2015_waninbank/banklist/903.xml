@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bank>
+	<branch num="" name="請選擇分行.."/>
+	   <branch num="0109" name="汐農信"/>
+	   <branch num="0110" name="汐農社后"/>
+	   <branch num="0121" name="汐農橫科"/>
+	   <branch num="0132" name="汐農白雲"/>
+	   <branch num="0143" name="汐農大新"/>
+	   <branch num="0154" name="汐農中興"/>
+</bank>

@@ -1,0 +1,122 @@
+﻿<%@ Master Language="VB" CodeFile="MasterPage.master.vb" Inherits="MasterPage" %>
+
+<%@ Register Src="~/_uc/MainMenu.ascx" TagPrefix="uc1" TagName="MainMenu" %>
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>moLo官方網站手機版</title>
+    <meta name="viewport" id="viewport" />
+
+    <link href="bootstrap/Content/bootstrap.min.css" rel="stylesheet" />
+    <script src="bootstrap/Scripts/jquery-1.10.2.min.js"></script>
+    <script src="bootstrap/Scripts/bootstrap.min.js"></script>
+
+    <link href="_css/reset.css" rel="stylesheet" />
+    <link href="_css/main.css" rel="stylesheet" />
+    <link href="_css/page.css" rel="stylesheet" />
+    <link href="_css/device.css" rel="stylesheet" />
+    <script src="_js/jquery.FX.js"></script>
+    <script src="_js/jquery.min.js"></script>
+
+    <script type="text/javascript">
+        //var is_ios = /(iphone|itouch|ipad)/.test(navigator.userAgent.toLowerCase());
+        //$(document).ready(function () {
+        //    var ll_object_w = document.documentElement.clientWidth;
+        //    if (!is_ios && ll_object_w >= 480) {
+        //        $("#dPageHolder").css({ "width": "480px" });
+        //    }
+        //    else if (!is_ios && ll_object_w < 480) {
+        //        $("#dPageHolder").css("width", "360px");
+        //    }
+        //})
+        //if ($.browser.msie == true) {
+        //    var ll_object_w2 = document.body.clientHeight * 1.05;
+        //}
+        //else {
+        //    var ll_object_w2 = document.documentElement.offsetHeight;
+        //}
+        //if (ll_object_h > ll_object_h2) {
+        //    $("#header").css({ "margin-left": -608 +"px" });
+        //    $("#mainLeft").css({ "left": 132 + "px" });
+        //}
+
+        //var viewport_width = 400;
+        //(function (target_width) {
+        //    var device_width = screen.width || 320,
+        //        ratio = (device_width / target_width);
+        //    // desktop or some old mobile browser
+        //    if (device_width > 414 || device_width < 320)
+        //        ratio = 1.0;
+        //    alert(device_width);
+        //    alert(ratio);
+        //    document.getElementById('viewport').content = "width=device-width,user-scalable=1,initial-scale=" + ratio;
+        //})(viewport_width);
+
+        
+
+        var viewport_width = 400;
+        var device_width = screen.width;
+        var is_ios = /(iphone|itouch|ipad)/.test(navigator.userAgent.toLowerCase());
+        $(document).ready(function () {
+            if (is_ios) {
+                document.getElementById('viewport').content = "width=device-width,user-scalable=yes,";
+            }
+            else if (!is_ios) {
+                    var ratio = (device_width / 480);
+                    if (device_width > 480) {
+                        alert(device_width);
+                        alert(ratio);
+                        ratio = 0.6;
+                        alert(ratio);
+                        document.getElementById('viewport').content = "width=device-width,user-scalable=yes,initial-scale=" + ratio;
+                    } else if (device_width < 480) {
+                        alert(device_width);
+                        alert(ratio);
+                        document.getElementById('viewport').content = "width=device-width,user-scalable=yes,initial-scale=" + ratio;
+                    }
+            }
+        })
+    </script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="dPageHolder">
+            <div id="dHeader">
+                <div id="logo"><a href="Default.aspx"></a></div>
+                <uc1:MainMenu runat="server" ID="MainMenu" />
+            </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+
+            <div id="dFooter">
+                <div id="langBtn" class="langBtn">
+                    語系選擇
+                <div class="langIcon">
+                    <ul>
+                        <li class="langTxt"><a href="/Lang/zh-TW" title="使用繁體中文瀏覽moLo">繁體中文</a></li>
+                        <li class="langTxt"><a href="/Lang/zh-CN" title="使用简体中文浏览moLo">简体中文</a></li>
+                        <li class="langTxt"><a href="/Lang/en-US" title="使用其他語言瀏覽moLo">English</a></li>
+                    </ul>
+                </div>
+                </div>
+                <div class="bownLink">
+                    <ul>
+                        <li class="bLink01"><a href="#">粉絲團</a></li>
+                        <li class="bLink02"><a href="#">意見回覆</a></li>
+                        <li class="bLink01"><a href="FAQ.aspx">常見問題</a></li>
+                        <li class="bLink02"><a href="#">法務條文</a></li>
+                    </ul>
+                </div>
+                <div class="dFooterInfo">© 2014 moLo</div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bank>
+	<branch num="" name="請選擇分行.."/>
+   <branch num="0016" name="台北市第九信用合作社營業部"/>
+	<branch num="0025" name="台北市第九信用合作社興隆分社"/>
+	<branch num="0034" name="台北市第九信用合作社雙園分社"/>
+	<branch num="0043" name="台北市第九信用合作社西門分社"/>
+	<branch num="0052" name="台北市第九信用合作社古亭分社"/>
+	<branch num="0061" name="台北市第九信用合作社中正分社"/>
+	<branch num="0070" name="台北市第九信用合作社松山分社"/>
+	<branch num="0089" name="台北市第九信用合作社士林分社"/>
+	<branch num="0098" name="台北市第九信用合作社東湖分社"/>
+	<branch num="0104" name="台北市第九信用合作社安和分社"/>
+	<branch num="0113" name="台北市第九信用合作社民生分社"/>
+	<branch num="0122" name="台北市第九信用合作社雙連分社"/>
+	<branch num="0131" name="台北市第九信用合作社重慶分社"/>
+	<branch num="0140" name="台北市第九信用合作社木柵分社"/>
+	<branch num="0159" name="台北市第九信用合作社吉林分社"/>
+	<branch num="0168" name="台北市第九信用合作社大直分社"/>
+	<branch num="0177" name="台北市第九信用合作社萬大分社"/>
+	<branch num="0186" name="台北市第九信用合作社東門分社"/>
+</bank>
+

@@ -1,0 +1,82 @@
+﻿@{
+    ViewBag.Title = "Lucky Table";
+}
+
+<script>
+    $(function () {
+        $(window).resize(function () {
+            index_CG_comSoon();
+            index_CG_preload();            
+        });
+        index_CG_comSoon();
+        carousel_touchwipe();        
+        index_CG_popup();
+    });
+    index_CG_preload();
+</script>
+
+<div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 bodyArea">
+    <div class="titleSet">
+        <img class="img-responsive" src="/Content/_img/titleBG/Promotions_titleBG.png" />
+    </div>
+
+    @*silder*@
+    <div id="myCarousel" class="carousel slide" data-ride="carousel">
+        <!-- Indicators -->
+        <ol class="carousel-indicators">
+            <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
+            <li data-target="#myCarousel" data-slide-to="1"></li>
+            <li data-target="#myCarousel" data-slide-to="2"></li>
+        </ol>
+        <div class="carousel-inner">
+            <div class="item active"><a href="/Default/Promotions"><img src="/Content/_img/Promotions/banner.jpg"></a></div>
+            <div class="item"><a href="/Default/Promotions"><img src="/Content/_img/Promotions/banner.jpg" /></a></div>
+            <div class="item"><a href="/Default/Promotions"><img src="/Content/_img/Promotions/banner.jpg"></a></div>
+        </div>
+        <a id="prev" class="left carousel-control" href="#myCarousel" data-slide="prev"></a>
+        <a id="next" class="right carousel-control" href="#myCarousel" data-slide="next"></a>
+    </div> 
+
+    <div class="titleSet_gc">
+        <img class="img-responsive" src="/Content/_img/titleBG/CasionGame_titleBG.png" />
+    </div>
+</div>
+
+    <div id="CasionGames">
+        <ul>
+            <li class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                <a class="Pandora" href="javascript:void(0);">
+                    <div class="new"><img class="img-responsive" src="/Content/_img/games/new.png" /></div>
+                    <img class="img-responsive" src="/Content/_img/games/Pandora.png" />
+                </a>
+            </li>
+            <li class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                <a class="Robinhood" href="javascript:void(0);">
+                    <div class="hot"><img class="img-responsive" src="/Content/_img/games/hot.png" /></div>
+                    <img class="img-responsive" src="/Content/_img/games/Robinhood.png" />
+                </a>
+            </li>
+            <li class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                <a class="Pirate" href="javascript:void(0);">
+                    <img class="img-responsive" src="/Content/_img/games/Pirate.png" />
+                </a>
+            </li>
+            <li class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                <a class="LiaoZhai" href="javascript:void(0);">
+                    <img class="img-responsive" src="/Content/_img/games/LiaoZhai.png" />
+                </a>
+            </li>
+            <li class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                <a class="Sicbo" href="javascript:void(0);">
+                    <img class="img-responsive" src="/Content/_img/games/Sicbo.png" />
+                </a>
+            </li>
+            <li class="col-xs-6 col-sm-6 col-md-4 col-lg-4">
+                <a class="BlackJack" href="javascript:void(0);">
+                    <img class="img-responsive" src="/Content/_img/games/BlackJack.png" />
+                </a>
+            </li>
+            <li id="comSoon" class="col-xs-6 col-sm-6 col-md-4 col-lg-4"><img class="img-responsive" src="/Content/_img/games/ComeSoon.png" /></li>
+            <li id="comSoon1" class="col-xs-6 col-sm-6 col-md-4 col-lg-4"><img class="img-responsive" src="/Content/_img/games/ComeSoon.png" /></li>
+        </ul>
+    </div>

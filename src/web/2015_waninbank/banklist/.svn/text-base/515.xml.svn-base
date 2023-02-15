@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bank>
+	<branch num="" name="請選擇分行.."/>
+	   <branch num="0014" name="嘉義漁本會"/>
+	   <branch num="0025" name="嘉義漁新塭"/>
+	   <branch num="0036" name="嘉義漁義竹"/>
+	   <branch num="0047" name="嘉義漁過溝"/>
+	   <branch num="0058" name="嘉義漁東石"/>
+	   <branch num="0069" name="嘉義漁過路"/>
+	   <branch num="0070" name="嘉義漁副瀨"/>
+	   <branch num="0081" name="嘉義漁景山"/>
+</bank>

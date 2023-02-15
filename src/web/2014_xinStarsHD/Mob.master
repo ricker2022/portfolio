@@ -1,0 +1,48 @@
+﻿<%@ Master Language="VB" CodeFile="Mob.master.vb" Inherits="MasterPage" %>
+
+<%@ Register Src="_uc/menu.ascx" TagPrefix="uc1" TagName="menu" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>星城Online線上遊藝館:::HD手機版</title>
+    <meta name="title" content="星城Online線上遊藝館:::水果盤、百家樂、賓果行星、13支、超級小丑、德州撲克、東方明珠" />
+    <meta name="description" content="全國第一款給大人玩的線上遊戲《星城online》，有別於市場上其他撮合制遊戲，主推機台類的休閒遊戲平台，擁有多款獨家線上機台主題遊戲，集結最經典的水果盤、7PK、西楚霸王、百家樂及賓果彈珠城等多種豐富遊戲，擬真介面充滿挑戰與變化！在家就可以一次玩得痛快！"/>
+    <meta name="keywords" content="星城,星城Online,星城官方網站,百家樂,玩百家樂,星城百家樂,5PK,7PK,水果盤,水果盤,玩水果盤,星城水果盤,小鋼珠,賓果行星,小瑪莉,皇冠列車,十三支,賽馬,777,德州撲克,超級小丑" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0; maximum-scale=1.0; user-scalable=0;" />
+
+    <link href="_css/main720.css" rel="stylesheet" type="text/css" media="handheld, only screen and (min-device-width:720px), only screen and (min-width:720px)" />
+    <link href="_css/page720.css" rel="stylesheet" type="text/css" media="handheld, only screen and (min-device-width:720px), only screen and (min-width:720px)" />
+    <link href="_css/main320.css" rel="stylesheet" type="text/css" media="handheld, only screen and (max-device-width:700px), only screen and (max-width:700px)" />
+    <link href="_css/page320.css" rel="stylesheet" type="text/css" media="handheld, only screen and (max-device-width:700px), only screen and (max-width:700px)" />
+
+    <script type="text/javascript" src="_js/jquery-1.11.1.min.js"></script>
+
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="dPageHolder">
+            <div id="dHeader">
+                <uc1:menu runat="server" ID="menu" />
+            </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <div id="dFooter">
+                <div class="dFooterLogo"></div>
+                <div class="dFooterInfo">
+                    網銀國際  Copyright@2013 WANIN INTERNATIONAL ALL Rights Reserved<br />
+                    <span style="color: #00a7e9;">服務專線：(04)2708-5191  週一至週日 24hr<br />
+                        客服傳真：(04)2259-3887<br />
+                        服務信箱：service@cs.waninbank.com
+                    </span>
+                </div>
+                <div class="dFooter12"></div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

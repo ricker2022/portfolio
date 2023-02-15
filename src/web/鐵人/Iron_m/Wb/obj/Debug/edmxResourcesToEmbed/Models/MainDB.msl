@@ -1,0 +1,392 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="MainDBModelStoreContainer" CdmEntityContainer="MainDBEntities">
+    <EntitySetMapping Name="form_item">
+      <EntityTypeMapping TypeName="MainDBModel.form_item">
+        <MappingFragment StoreEntitySet="form_item">
+          <ScalarProperty Name="sn" ColumnName="sn" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="launch" ColumnName="launch" />
+          <ScalarProperty Name="update_date" ColumnName="update_date" />
+          <ScalarProperty Name="sort" ColumnName="sort" />
+          <ScalarProperty Name="web_menu_sn" ColumnName="web_menu_sn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="form_setting">
+      <EntityTypeMapping TypeName="MainDBModel.form_setting">
+        <MappingFragment StoreEntitySet="form_setting">
+          <ScalarProperty Name="sn" ColumnName="sn" />
+          <ScalarProperty Name="web_menu_sn" ColumnName="web_menu_sn" />
+          <ScalarProperty Name="header_content" ColumnName="header_content" />
+          <ScalarProperty Name="footer_content" ColumnName="footer_content" />
+          <ScalarProperty Name="mail_list" ColumnName="mail_list" />
+          <ScalarProperty Name="form_submit_message" ColumnName="form_submit_message" />
+          <ScalarProperty Name="create_date" ColumnName="create_date" />
+          <ScalarProperty Name="update_date" ColumnName="update_date" />
+          <ScalarProperty Name="create_admin_sn" ColumnName="create_admin_sn" />
+          <ScalarProperty Name="update_admin_sn" ColumnName="update_admin_sn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="html_page">
+      <EntityTypeMapping TypeName="MainDBModel.html_page">
+        <MappingFragment StoreEntitySet="html_page">
+          <ScalarProperty Name="sn" ColumnName="sn" />
+          <ScalarProperty Name="web_menu_sn" ColumnName="web_menu_sn" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="create_date" ColumnName="create_date" />
+          <ScalarProperty Name="update_date" ColumnName="update_date" />
+          <ScalarProperty Name="create_admin_sn" ColumnName="create_admin_sn" />
+          <ScalarProperty Name="update_admin_sn" ColumnName="update_admin_sn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="index_promotion">
+      <EntityTypeMapping TypeName="MainDBModel.index_promotion">
+        <MappingFragment StoreEntitySet="index_promotion">
+          <ScalarProperty Name="sn" ColumnName="sn" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="img_filename" ColumnName="img_filename" />
+          <ScalarProperty Name="img2_filename" ColumnName="img2_filename" />
+          <ScalarProperty Name="url" ColumnName="url" />
+          <ScalarProperty Name="target" ColumnName="target" />
+          <ScalarProperty Name="brief" ColumnName="brief" />
+          <ScalarProperty Name="start_date" ColumnName="start_date" />
+          <ScalarProperty Name="end_date" ColumnName="end_date" />
+          <ScalarProperty Name="forever" ColumnName="forever" />
+          <ScalarProperty Name="sort" ColumnName="sort" />
+          <ScalarProperty Name="launch" ColumnName="launch" />
+          <ScalarProperty Name="avail_language_sn" ColumnName="avail_language_sn" />
+          <ScalarProperty Name="create_date" ColumnName="create_date" />
+          <ScalarProperty Name="update_date" ColumnName="update_date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="index_setting">
+      <EntityTypeMapping TypeName="MainDBModel.index_setting">
+        <MappingFragment StoreEntitySet="index_setting">
+          <ScalarProperty Name="sn" ColumnName="sn" />
+          <ScalarProperty Name="avail_language_sn" ColumnName="avail_language_sn" />
+          <ScalarProperty Name="header_area" ColumnName="header_area" />
+          <ScalarProperty Name="footer_area" ColumnName="footer_area" />
+          <ScalarProperty Name="area1_title" ColumnName="area1_title" />
+          <ScalarProperty Name="area1" ColumnName="area1" />
+          <ScalarProperty Name="area2_title" ColumnName="area2_title" />
+          <ScalarProperty Name="area2" ColumnName="area2" />
+          <ScalarProperty Name="update_date" ColumnName="update_date" />
+          <ScalarProperty Name="update_admin_sn" ColumnName="update_admin_sn" />
+          <ScalarProperty Name="area1_link" ColumnName="area1_link" />
+          <ScalarProperty Name="area2_link" ColumnName="area2_link" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="index_web_menu">
+      <EntityTypeMapping TypeName="MainDBModel.index_web_menu">
+        <MappingFragment StoreEntitySet="index_web_menu">
+          <ScalarProperty Name="sn" ColumnName="sn" />
+          <ScalarProperty Name="website_sn" ColumnName="website_sn" />
+          <ScalarProperty Name="web_menu_sn" ColumnName="web_menu_sn" />
+          <ScalarProperty Name="module_sn" ColumnName="module_sn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="member">
+      <EntityTypeMapping TypeName="MainDBModel.member">
+        <MappingFragment StoreEntitySet="member">
+          <ScalarProperty Name="sn" ColumnName="sn" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="company" ColumnName="company" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="avail_language_sn" ColumnName="avail_language_sn" />
+          <ScalarProperty Name="update_admin_sn" ColumnName="update_admin_sn" />
+          <ScalarProperty Name="update_date" ColumnName="update_date" />
+          <ScalarProperty Name="start_date" ColumnName="start_date" />
+          <ScalarProperty Name="end_date" ColumnName="end_date" />
+          <ScalarProperty Name="forever" ColumnName="forever" />
+          <ScalarProperty Name="launch" ColumnName="launch" />
+          <ScalarProperty Name="phone" ColumnName="phone" />
+          <ScalarProperty Name="address" ColumnName="address" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="module">
+      <EntityTypeMapping TypeName="MainDBModel.module">
+        <MappingFragment StoreEntitySet="module">
+          <ScalarProperty Name="sn" ColumnName="sn" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="frontend" ColumnName="frontend" />
+          <ScalarProperty Name="backend" ColumnName="backend" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="reusable" ColumnName="reusable" />
+          <ScalarProperty Name="sort" ColumnName="sort" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="sys_config">
+      <EntityTypeMapping TypeName="MainDBModel.sys_config">
+        <MappingFragment StoreEntitySet="sys_config">
+          <ScalarProperty Name="sn" ColumnName="sn" />
+          <ScalarProperty Name="website_sn" ColumnName="website_sn" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="value" ColumnName="value" />
+          <ScalarProperty Name="update_date" ColumnName="update_date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="templates">
+      <EntityTypeMapping TypeName="MainDBModel.templates">
+        <MappingFragment StoreEntitySet="templates">
+          <ScalarProperty Name="sn" ColumnName="sn" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="create_date" ColumnName="create_date" />
+          <ScalarProperty Name="update_date" ColumnName="update_date" />
+          <ScalarProperty Name="is_default" ColumnName="is_default" />
+          <ScalarProperty Name="img_filename" ColumnName="img_filename" />
+          <ScalarProperty Name="description" ColumnName="description" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="web_admin">
+      <EntityTypeMapping TypeName="MainDBModel.web_admin">
+        <MappingFragment StoreEntitySet="web_admin">
+          <ScalarProperty Name="sn" ColumnName="sn" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="password" ColumnName="password" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="email" ColumnName="email" />
+          <ScalarProperty Name="is_default" ColumnName="is_default" />
+          <ScalarProperty Name="start_date" ColumnName="start_date" />
+          <ScalarProperty Name="end_date" ColumnName="end_date" />
+          <ScalarProperty Name="forever" ColumnName="forever" />
+          <ScalarProperty Name="launch" ColumnName="launch" />
+          <ScalarProperty Name="update_date" ColumnName="update_date" />
+          <ScalarProperty Name="create_date" ColumnName="create_date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="web_admin_belong_group">
+      <EntityTypeMapping TypeName="MainDBModel.web_admin_belong_group">
+        <MappingFragment StoreEntitySet="web_admin_belong_group">
+          <ScalarProperty Name="sn" ColumnName="sn" />
+          <ScalarProperty Name="web_admin_sn" ColumnName="web_admin_sn" />
+          <ScalarProperty Name="web_admin_group_sn" ColumnName="web_admin_group_sn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="web_admin_group">
+      <EntityTypeMapping TypeName="MainDBModel.web_admin_group">
+        <MappingFragment StoreEntitySet="web_admin_group">
+          <ScalarProperty Name="sn" ColumnName="sn" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="is_default" ColumnName="is_default" />
+          <ScalarProperty Name="create_date" ColumnName="create_date" />
+          <ScalarProperty Name="update_date" ColumnName="update_date" />
+          <ScalarProperty Name="create_admin_sn" ColumnName="create_admin_sn" />
+          <ScalarProperty Name="update_admin_sn" ColumnName="update_admin_sn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="web_admin_group_admin">
+      <EntityTypeMapping TypeName="MainDBModel.web_admin_group_admin">
+        <MappingFragment StoreEntitySet="web_admin_group_admin">
+          <ScalarProperty Name="sn" ColumnName="sn" />
+          <ScalarProperty Name="admin_group_sn" ColumnName="admin_group_sn" />
+          <ScalarProperty Name="admin_sn" ColumnName="admin_sn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="web_admin_group_authority">
+      <EntityTypeMapping TypeName="MainDBModel.web_admin_group_authority">
+        <MappingFragment StoreEntitySet="web_admin_group_authority">
+          <ScalarProperty Name="sn" ColumnName="sn" />
+          <ScalarProperty Name="web_admin_group_sn" ColumnName="web_admin_group_sn" />
+          <ScalarProperty Name="web_menu_sn" ColumnName="web_menu_sn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="web_backend_log">
+      <EntityTypeMapping TypeName="MainDBModel.web_backend_log">
+        <MappingFragment StoreEntitySet="web_backend_log">
+          <ScalarProperty Name="sn" ColumnName="sn" />
+          <ScalarProperty Name="admin_sn" ColumnName="admin_sn" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="create_date" ColumnName="create_date" />
+          <ScalarProperty Name="ip" ColumnName="ip" />
+          <ScalarProperty Name="avail_language_sn" ColumnName="avail_language_sn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="web_menu">
+      <EntityTypeMapping TypeName="MainDBModel.web_menu">
+        <MappingFragment StoreEntitySet="web_menu">
+          <ScalarProperty Name="sn" ColumnName="sn" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="module_sn" ColumnName="module_sn" />
+          <ScalarProperty Name="website_sn" ColumnName="website_sn" />
+          <ScalarProperty Name="b_launch" ColumnName="b_launch" />
+          <ScalarProperty Name="start_date" ColumnName="start_date" />
+          <ScalarProperty Name="end_date" ColumnName="end_date" />
+          <ScalarProperty Name="forever" ColumnName="forever" />
+          <ScalarProperty Name="launch" ColumnName="launch" />
+          <ScalarProperty Name="sort" ColumnName="sort" />
+          <ScalarProperty Name="display" ColumnName="display" />
+          <ScalarProperty Name="parent_sn" ColumnName="parent_sn" />
+          <ScalarProperty Name="sitemap_code" ColumnName="sitemap_code" />
+          <ScalarProperty Name="node_type" ColumnName="node_type" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="frontend_type" ColumnName="frontend_type" />
+          <ScalarProperty Name="is_root" ColumnName="is_root" />
+          <ScalarProperty Name="is_home" ColumnName="is_home" />
+          <ScalarProperty Name="url" ColumnName="url" />
+          <ScalarProperty Name="target" ColumnName="target" />
+          <ScalarProperty Name="update_date" ColumnName="update_date" />
+          <ScalarProperty Name="create_date" ColumnName="create_date" />
+          <ScalarProperty Name="img_filename" ColumnName="img_filename" />
+          <ScalarProperty Name="action" ColumnName="action" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="web_menu_banner">
+      <EntityTypeMapping TypeName="MainDBModel.web_menu_banner">
+        <MappingFragment StoreEntitySet="web_menu_banner">
+          <ScalarProperty Name="sn" ColumnName="sn" />
+          <ScalarProperty Name="web_menu_sn" ColumnName="web_menu_sn" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="path" ColumnName="path" />
+          <ScalarProperty Name="filename" ColumnName="filename" />
+          <ScalarProperty Name="bg_filename" ColumnName="bg_filename" />
+          <ScalarProperty Name="url" ColumnName="url" />
+          <ScalarProperty Name="target" ColumnName="target" />
+          <ScalarProperty Name="create_date" ColumnName="create_date" />
+          <ScalarProperty Name="update_date" ColumnName="update_date" />
+          <ScalarProperty Name="start_date" ColumnName="start_date" />
+          <ScalarProperty Name="end_date" ColumnName="end_date" />
+          <ScalarProperty Name="forever" ColumnName="forever" />
+          <ScalarProperty Name="launch" ColumnName="launch" />
+          <ScalarProperty Name="sort" ColumnName="sort" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="web_menu_content">
+      <EntityTypeMapping TypeName="MainDBModel.web_menu_content">
+        <MappingFragment StoreEntitySet="web_menu_content">
+          <ScalarProperty Name="sn" ColumnName="sn" />
+          <ScalarProperty Name="website_sn" ColumnName="website_sn" />
+          <ScalarProperty Name="web_menu_sn" ColumnName="web_menu_sn" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="description" ColumnName="description" />
+          <ScalarProperty Name="description2" ColumnName="description2" />
+          <ScalarProperty Name="brief" ColumnName="brief" />
+          <ScalarProperty Name="brief2" ColumnName="brief2" />
+          <ScalarProperty Name="filename" ColumnName="filename" />
+          <ScalarProperty Name="img_filename" ColumnName="img_filename" />
+          <ScalarProperty Name="img_filename2" ColumnName="img_filename2" />
+          <ScalarProperty Name="url" ColumnName="url" />
+          <ScalarProperty Name="target" ColumnName="target" />
+          <ScalarProperty Name="start_date" ColumnName="start_date" />
+          <ScalarProperty Name="end_date" ColumnName="end_date" />
+          <ScalarProperty Name="forever" ColumnName="forever" />
+          <ScalarProperty Name="launch" ColumnName="launch" />
+          <ScalarProperty Name="sort" ColumnName="sort" />
+          <ScalarProperty Name="hot" ColumnName="hot" />
+          <ScalarProperty Name="create_date" ColumnName="create_date" />
+          <ScalarProperty Name="update_date" ColumnName="update_date" />
+          <ScalarProperty Name="create_admin_sn" ColumnName="create_admin_sn" />
+          <ScalarProperty Name="update_admin_sn" ColumnName="update_admin_sn" />
+          <ScalarProperty Name="content_type" ColumnName="content_type" />
+          <ScalarProperty Name="parent_sn" ColumnName="parent_sn" />
+          <ScalarProperty Name="related_sn" ColumnName="related_sn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="website">
+      <EntityTypeMapping TypeName="MainDBModel.website">
+        <MappingFragment StoreEntitySet="website">
+          <ScalarProperty Name="sn" ColumnName="sn" />
+          <ScalarProperty Name="name" ColumnName="name" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="sort" ColumnName="sort" />
+          <ScalarProperty Name="launch" ColumnName="launch" />
+          <ScalarProperty Name="display" ColumnName="display" />
+          <ScalarProperty Name="is_default" ColumnName="is_default" />
+          <ScalarProperty Name="update_date" ColumnName="update_date" />
+          <ScalarProperty Name="create_date" ColumnName="create_date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="website_allow_ip_list">
+      <EntityTypeMapping TypeName="MainDBModel.website_allow_ip_list">
+        <MappingFragment StoreEntitySet="website_allow_ip_list">
+          <ScalarProperty Name="sn" ColumnName="sn" />
+          <ScalarProperty Name="type" ColumnName="type" />
+          <ScalarProperty Name="ip_1_start" ColumnName="ip_1_start" />
+          <ScalarProperty Name="ip_1_end" ColumnName="ip_1_end" />
+          <ScalarProperty Name="ip_2_start" ColumnName="ip_2_start" />
+          <ScalarProperty Name="ip_2_end" ColumnName="ip_2_end" />
+          <ScalarProperty Name="ip_3_start" ColumnName="ip_3_start" />
+          <ScalarProperty Name="ip_3_end" ColumnName="ip_3_end" />
+          <ScalarProperty Name="ip_4_start" ColumnName="ip_4_start" />
+          <ScalarProperty Name="ip_4_end" ColumnName="ip_4_end" />
+          <ScalarProperty Name="start_date" ColumnName="start_date" />
+          <ScalarProperty Name="end_date" ColumnName="end_date" />
+          <ScalarProperty Name="forever" ColumnName="forever" />
+          <ScalarProperty Name="launch" ColumnName="launch" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="word_language_mapping">
+      <EntityTypeMapping TypeName="MainDBModel.word_language_mapping">
+        <MappingFragment StoreEntitySet="word_language_mapping">
+          <ScalarProperty Name="sn" ColumnName="sn" />
+          <ScalarProperty Name="word_mapping_sn" ColumnName="word_mapping_sn" />
+          <ScalarProperty Name="value" ColumnName="value" />
+          <ScalarProperty Name="avail_language_sn" ColumnName="avail_language_sn" />
+          <ScalarProperty Name="update_date" ColumnName="update_date" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="word_mapping">
+      <EntityTypeMapping TypeName="MainDBModel.word_mapping">
+        <MappingFragment StoreEntitySet="word_mapping">
+          <ScalarProperty Name="sn" ColumnName="sn" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="value" ColumnName="value" />
+          <ScalarProperty Name="create_date" ColumnName="create_date" />
+          <ScalarProperty Name="update_date" ColumnName="update_date" />
+          <ScalarProperty Name="word_mapping_category_sn" ColumnName="word_mapping_category_sn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="word_mapping_category">
+      <EntityTypeMapping TypeName="MainDBModel.word_mapping_category">
+        <MappingFragment StoreEntitySet="word_mapping_category">
+          <ScalarProperty Name="sn" ColumnName="sn" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="id" ColumnName="id" />
+          <ScalarProperty Name="create_date" ColumnName="create_date" />
+          <ScalarProperty Name="update_date" ColumnName="update_date" />
+          <ScalarProperty Name="is_frontend" ColumnName="is_frontend" />
+          <ScalarProperty Name="sort" ColumnName="sort" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="module_action">
+      <EntityTypeMapping TypeName="MainDBModel.module_action">
+        <MappingFragment StoreEntitySet="module_action">
+          <ScalarProperty Name="update_date" ColumnName="update_date" />
+          <ScalarProperty Name="action" ColumnName="action" />
+          <ScalarProperty Name="title" ColumnName="title" />
+          <ScalarProperty Name="module_sn" ColumnName="module_sn" />
+          <ScalarProperty Name="sn" ColumnName="sn" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

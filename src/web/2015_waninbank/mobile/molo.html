@@ -1,0 +1,102 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <script src="JS/jquery.mobile-1.1.1.css"></script>
+    <script src="JS/jquery.mobile-1.1.1.js"></script>
+    <script src="JS/jquery-1.10.2.js"></script>
+<script>
+        $(function () {
+        var contentH = $(window).height()-63-94-50;
+         $('.content').css('min-height',contentH);
+        });
+    </script>
+    <link href="JS/wanin.css" rel="stylesheet" type="text/css" />
+    <script src="JS/wanin.js"></script>
+    
+    <style>
+        .ui-block-a{
+            background:url('img/topmenuBg.jpg') repeat-x top left;
+            height:47px;
+        }
+        .ui-block-a a{
+            display:inline-block;
+            float:left;
+            line-height:47px;
+            width:33.3%;
+            text-align:center;
+            text-decoration:none;
+            color:#fff;
+            font-size:20px;
+        }
+        
+    </style>
+</head>
+<body>
+<!-- Home -->
+<div data-role="page" id="page1">
+    <div data-theme="a" data-role="header">
+        <div class="ui-grid-b">
+            <div class="ui-grid-b">
+            <div class="ui-block-a">
+                <div>
+                     <a href="molo.html" data-transition="fade">
+                        數位雲端
+                    </a>
+                    <a href="yoe.html" data-transition="fade">
+                        點數加值
+                    </a>
+                    <a href="game.html" data-transition="fade">
+                       遊戲娛樂
+                    </a>
+                </div>
+            </div>
+            <div class="ui-block-a">
+                <div>
+                    <a href="FlashWolves.html" data-transition="fade">
+                        職業電競
+                    </a>
+                      <a href="mgame.html" data-transition="fade">
+                        手機遊戲
+                    </a>
+                    <a href="forum.html" data-transition="fade">
+                        遊戲論壇
+                    </a>
+                </div>
+            </div>
+        </div>
+        </div>
+    </div>
+    <div data-role="content" style="background:url('img/數位雲端底.png') repeat top left;padding:10px;">
+        <ul class="content"  style="height:100%">
+            <li  style="position:relative">
+                <img src="img/molo.png" id="logoImg" />
+                <img src="img/分隔線2.png" width="100%" style="text-align:center; vertical-align:text-top"  />
+                <span style="color:#848484; position:absolute; right:0;  bottom:35px; font-size:18px;" >多樣化的娛樂提供！</span><!--id="logoSpan"-->
+            </li>
+            <li style="width:100%;word-wrap: break-word;word-break: normal;line-height:40px ">moLo是你的娛樂任意門， 只要擁有手機門號，就能暢遊跨平台各項服務:</li>
+            <!--<li><a style="color:#00b0ff;line-height:40px" href="https://www.molo.gs/" target="_blank">→前往《moLo》官網</a></li>-->
+
+            <li style="margin-top:70px; text-align:center;"><img src="img/molo_01.png" /></li>
+            <li style="width:100%;word-wrap: break-word;word-break: normal;line-height:40px ">PC端- moLo領航員: 免費暢玩超過5千款線上遊戲。</li>
+            <li><a style="color:#00b0ff;line-height:40px" href="https://www.molo.gs/" target="_blank">→前往《moLo》官網</a></li>
+
+            <li style="margin-top:70px; text-align:center;"><img src="img/molo_02.png" /></li>
+            <li style="width:100%;word-wrap: break-word;word-break: normal;line-height:40px ">行動服務-moLo App:娛樂溝通隨時玩樂。</li>
+            <li><a style="color:#00b0ff;line-height:40px" href="https://play.google.com/store/apps/details?id=molo.molo" target="_blank">→下載《moLo App》</a></li>
+
+            <li style="margin-top:70px; text-align:center;"><img src="img/molo_03.png" /></li>
+            <li style="width:100%;word-wrap: break-word;word-break: normal;line-height:40px ">運動平台-moLo Sport互動式娛樂健身車: 結合運動，遊戲與社群的創新健身車， 給你全新的運動體驗。</li>
+            <li><a style="color:#00b0ff;line-height:40px" href="http://sport.molo.gs/preorder/" target="_blank">→前往《moLo  Sport》官網</a></li>
+        </ul>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed" class="footer" style="clear:both">
+       <!--<img src="img/footerL.png" style="float:left;" />-->
+        <a href="about.html" data-transition="fade" class="footerAbout"></a>
+       <a href="index.html" data-transition="fade" class="footerHome"></a>
+    </div>
+</div>
+</body>
+</html>

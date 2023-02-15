@@ -1,0 +1,113 @@
+﻿/*slideShow banner preview style*/
+*{padding:0;margin:0}
+img{border:0}
+@media only screen and (min-width : 1280px) {
+    /* 廣告輪播區域 */
+        /*deafult*/
+    #dSlideshow {display: block;max-width: 498px;height: auto;margin: 0 auto;width:498px \9;}
+    .ADbannerB{width:498px;height:459px;position:relative;float:center;}
+    .f498x459{width:498px;height:459px;overflow:hidden}
+    .f498x459 img {width: 100%;height: auto;}
+    .rslides{width:100%;position:relative;list-style:none;padding:0}
+    .rslides_nav{height:50px;width:27px;position:absolute;-webkit-tap-highlight-color:rgba(0,0,0,0);top:50%;left:0;opacity:1.0;text-indent:-9999px;overflow:hidden;text-decoration:none;background:url(../_img/layout/ADbtn.png) no-repeat 0 0px;margin-top:-27px}
+    .rslides_nav:hover {background-position:0 -50px;}
+    .rslides_nav:active{opacity:1.0}
+    .rslides_nav.next{left:auto;background-position:-27px 0px;right:0}
+    .rslides_nav.next:hover{background-position:-27px -50px;}
+    .rslides_tabs{margin:12px auto;clear:both;text-align:center;}
+    .rslides_tabs li{display:inline;float:none;_float:left;*float:left;margin-right:5px;z-index:999;}
+    .rslides_tabs a{position:relative;bottom:30px;text-indent:-9999px;overflow:hidden;display:inline-block;_display:block;*display:block;width:11px;height:11px;background:url(../_img/layout/selection.png) 0px 0px no-repeat;}
+    .rslides_tabs .rslides_here a{background-position:0px -11px;}
+
+    #dSlideshowS {display: block;max-width: 496px;height: auto;margin: 0 auto;width:496px \9;}
+    .ADbannerS{width:496px;height:219px;position:relative;float:center;}
+    .f496x219{width:496px;height:219px;overflow:hidden}
+    .f496x219 img {width: 100%;height: auto;}
+
+
+        /*care*/
+    #dSlideshowC {display: block;width:100%;height: auto;margin: 0 auto;}
+   .ADbannerC {width:1166px;height: auto;position: relative;overflow: hidden; padding:0 80px 40px 80px;margin:0 auto;}
+    .f1006x417 img {width: 100%;height: auto;}
+    .rslides {width: 100%;position: relative ;list-style: none;padding: 0;}
+    #dSlideshowC .rslides_nav{height:77px;width:40px;position:absolute;-webkit-tap-highlight-color:rgba(0,0,0,0);top:50%;left:0;opacity:1.0;text-indent:-9999px;text-overflow:hidden;text-decoration:none;background:url(../_img/pages/recruitment/care/slideBtn.png) no-repeat 0 0px;margin-top:-56px}
+    #dSlideshowC .rslides_nav:hover {background-position:0 -77px;}
+    #dSlideshowC .rslides_nav:active{opacity:1.0}
+    #dSlideshowC .rslides_nav.next{left:auto;background-position:-40px 0px;right:0}
+    #dSlideshowC .rslides_nav.next:hover {background-position:-40px -77px;}
+    #dSlideshowC.rslides_tabs {margin: 0 auto;clear: both;text-align: center;bottom:0px;position:relative;width:150px;display:block;}
+    #dSlideshowC .rslides_tabs li {display: inline;float: none;_float: left;*float: left;margin-right: 5px;}
+    #dSlideshowC .rslides_tabs a {position:relative;top:15px;text-indent: -9999px;overflow: hidden;background:url(../_img/pages/recruitment/care/selectionC.png) no-repeat 0px 0px;display: inline-block;_display: block;*display: block;width: 15px;height: 15px;}
+    #dSlideshowC .rslides_tabs .rslides_here a {background:url(../_img/pages/recruitment/care/selectionC.png) no-repeat 0px -15px;}
+}
+
+@media only screen and (min-width : 980px) and (max-width : 1279px) {
+    /* 廣告輪播區域 */
+    /*deafult*/
+    #dSlideshow {display: block;max-width: 574px;height: auto;margin: 0 auto;}
+    .ADbannerBpad {width: 100%;height: auto;position: relative;overflow: hidden;}
+    .f574x529 img {width: 100%;height: auto;}
+    .rslides {width: 100%;position: relative ;list-style: none;padding: 0;}
+    .ADbannerBpad .rslides_nav{height:87px;width:47px;position:absolute;-webkit-tap-highlight-color:rgba(0,0,0,0);top:50%;left:0;opacity:1.0;text-indent:-9999px;overflow:hidden;text-decoration:none;background:url(../_img/layout/AD980btn.png) no-repeat 0 0px;margin-top:-56px}
+    .ADbannerBpad .rslides_nav:hover {background-position:0 -87px;}
+    .ADbannerBpad .rslides_nav:active{opacity:1.0}
+    .ADbannerBpad .rslides_nav.next{left:auto;background-position:-47px 0px;right:0}
+    .ADbannerBpad .rslides_nav.next:hover {background-position:-47px -87px;}
+    .ADbannerBpad .rslides_tabs {margin: 0 auto;clear: both;text-align: center;bottom:30px;position:relative;width:150px;display:block;}
+    .ADbannerBpad .rslides_tabs li {display: inline;float: none;_float: left;*float: left;margin-right: 5px;}
+    .ADbannerBpad .rslides_tabs a {text-indent: -9999px;overflow: hidden;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius: 15px;background: rgba(0,0,0, 0);background: #fff;display: inline-block;_display: block;*display: block;width: 18px;height: 18px;}
+    .ADbannerBpad .rslides_tabs .rslides_here a {background: rgba(0,0,0,0);background: #00b4ff;}
+
+    #dSlideshowS {display: block;max-width: 570px;height: auto;margin: 0 auto;}
+    .ADbannerSpad {width: 100%;height: auto;position: relative;overflow: hidden;}
+    .ADbannerSpad .rslides_nav{height:87px;width:47px;position:absolute;-webkit-tap-highlight-color:rgba(0,0,0,0);top:50%;left:0;opacity:1.0;text-indent:-9999px;overflow:hidden;text-decoration:none;background:url(../_img/layout/AD980btn.png) no-repeat 0 0px;margin-top:-56px}
+    .ADbannerSpad .rslides_nav:hover {background-position:0 -87px;}
+    .ADbannerSpad .rslides_nav:active{opacity:1.0}
+    .ADbannerSpad .rslides_nav.next{left:auto;background-position:-47px 0px;right:0}
+    .ADbannerSpad .rslides_nav.next:hover {background-position:-47px -87px;}
+    .ADbannerSpad .rslides_tabs {margin: 0 auto;clear: both;text-align: center;bottom:30px;position:relative;width:150px;display:block;}
+    .ADbannerSpad .rslides_tabs li {display: inline;float: none;_float: left;*float: left;margin-right: 5px;}
+    .ADbannerSpad .rslides_tabs a {text-indent: -9999px;overflow: hidden;-webkit-border-radius: 15px;-moz-border-radius: 15px;border-radius: 15px;background: rgba(0,0,0, 0);background: #fff;display: inline-block;_display: block;*display: block;width: 18px;height: 18px;}
+    .ADbannerSpad .rslides_tabs .rslides_here a {background: rgba(0,0,0,0);background: #00b4ff;}
+    .f570x253 img {width: 100%;height: auto;}
+    
+    /*care*/
+    #dSlideshowC {display: block;width:100%;height: auto;margin: 0 auto;}
+   .ADbannerCpad {max-width:803px;height: auto;position: relative;overflow: hidden; padding:0 0 40px 0;margin:0 auto;}
+    .f803x374 img {width: 100%;height: auto;}
+    .rslides {width: 100%;position: relative ;list-style: none;padding: 0;}
+    #dSlideshowC .rslides_nav{height:77px;width:40px;position:absolute;-webkit-tap-highlight-color:rgba(0,0,0,0);top:50%;left:0;opacity:1.0;text-indent:-9999px;overflow:hidden;text-decoration:none;background:url(../_img/pages/recruitment/care/slideBtn.png) no-repeat 0 0px;margin-top:-56px}
+    #dSlideshowC .rslides_nav:hover {background-position:0 -77px;}
+    #dSlideshowC .rslides_nav:active{opacity:1.0}
+    #dSlideshowC .rslides_nav.next{left:auto;background-position:-40px 0px;right:0}
+    #dSlideshowC .rslides_nav.next:hover {background-position:-40px -77px;}
+    #dSlideshowC .rslides_tabs {margin: 0 auto;clear: both;text-align: center;bottom:0px;position:relative;width:150px;display:block;}
+    #dSlideshowC .rslides_tabs li {display: inline;float: none;_float: left;*float: left;margin-right: 5px;}
+    #dSlideshowC .rslides_tabs a {text-indent: -9999px;overflow: hidden;background:url(../_img/pages/recruitment/care/selectionC.png) no-repeat 0px 0px;display: inline-block;_display: block;*display: block;width: 15px;height: 15px;}
+    #dSlideshowC .rslides_tabs .rslides_here a {background:url(../_img/pages/recruitment/care/selectionC.png) no-repeat 0px -15px;}
+}
+
+@media only screen and (min-width : 200px) and (max-width : 979px) {
+    /* 廣告輪播區域 */
+    /*deafult*/
+    #dSlideshowM {display: block;max-width: 920px;height: auto;margin: 0 auto;}
+    .ADbannerBm {width: 100%;height: auto;position: relative;overflow: hidden;}
+    .f920x847 img {width: 100%;height: auto;}
+    .rslides {width: 100%;position: relative ;list-style: none;padding: 0;}
+    .rslides_tabs {margin: 0 auto;clear: both;text-align: center;bottom:30px;position:relative;width:150px;display:block;}
+        .rslides_tabs li {display: inline;float: none;_float: left;*float: left;margin-right: 5px;}
+        .rslides_tabs a {text-indent: -9999px;overflow: hidden;-webkit-border-radius: 10px;-moz-border-radius: 10px;border-radius: 10px;background: rgba(0,0,0, 0);background: #fff;display: inline-block;_display: block;*display: block;width: 10px;height: 10px;}
+        .rslides_tabs .rslides_here a {background: rgba(0,0,0,0);background: #00b4ff;}
+
+        #dSlideshowSM {display: block;max-width: 920px;height: auto;margin: 0 auto;}
+    .ADbannerSm {width: 100%;height: auto;position: relative;overflow: hidden;}
+    .f920x409 img {width: 100%;height: auto;}
+
+    #dSlideshowCM {display: block;max-width: 789px;height: auto;margin: 0 auto;}
+    .ADbannerCm {width: 100%;height: auto;position: relative;overflow: hidden;}
+    .f789x384 img {width: 100%;height: auto;}
+    #dSlideshowCM .rslides_tabs {margin: 0 auto;clear: both;text-align: center;position:relative;width:150px;display:block;padding-top:30px;}
+    #dSlideshowCM .rslides_tabs li {display: inline;float: none;_float: left;*float: left;margin-right: 10px;}
+    #dSlideshowCM .rslides_tabs a {text-indent: -9999px;overflow: hidden;-webkit-border-radius: 10px;-moz-border-radius: 10px;border-radius: 10px;background: rgba(0,0,0, 0);background: #ccc;display: inline-block;_display: block;*display: block;width: 10px;height: 10px;}
+    #dSlideshowCM .rslides_tabs .rslides_here a {background: rgba(0,0,0,0);background: #00b4ff;}
+}

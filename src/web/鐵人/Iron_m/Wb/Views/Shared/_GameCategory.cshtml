@@ -1,0 +1,40 @@
+﻿@using Wb.Common;
+@{    
+    string cur_controller = ViewBag.cur_controller;
+    string cur_action = ViewBag.cur_action;
+}
+
+
+<script>
+    
+
+
+    function goGameCategory(game_id) {
+
+        var location_string = '@Url.RouteUrl("Default", new {  game = "#game#", controller = cur_controller,action = cur_action})';
+        location_string = location_string.replace(encodeURIComponent("#game#"), game_id);
+
+        location.href = location_string;
+    }
+
+
+</script>
+
+
+<div  class="sub_navi" >
+    <div class="@(cur_action=="search"?"col_10":"col_8")">
+        <div class="game_select">
+        <i class="fa fa-sort-asc"></i>
+        <select id="game_selection" onchange=goGameCategory($('#game_selection').val())>
+            <option @(ViewBag.game_id == "SCII" ? "selected" : "") value="SCII">星海爭霸II</option>
+            <option @(ViewBag.game_id == "lol" ? "selected" : "") value="lol">英雄聯盟</option>
+            <option @(ViewBag.game_id == "stone" ? "selected" : "") value="stone">爐石戰記</option>
+        </select>
+        </div>
+    </div>
+    @if (cur_action != "search")
+    {
+    <div class="col_2"><a href="@Html.FUrl("Search")" class="function_btn"><i class="fa fa-search"></i></a></div>
+    }
+    <br clear="all"/>
+</div>

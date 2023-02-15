@@ -1,0 +1,94 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <script src="JS/jquery.mobile-1.1.1.css"></script>
+    <script src="JS/jquery.mobile-1.1.1.js"></script>
+    <script src="JS/jquery-1.10.2.js"></script>
+    <script src="JS/wanin.js"></script>
+    
+    <script>
+        $(function () {
+            var contentH = $(window).height() - 63 - 94 - 50;
+            $('.content').css('min-height', contentH);
+        });
+    </script>
+    <link href="JS/wanin.css" rel="stylesheet" type="text/css" />
+    <style>
+        .ui-block-a{
+            background:url('img/topmenuBg.jpg') repeat-x top left;
+            height:47px;
+        }
+        .ui-block-a a{
+            display:inline-block;
+            float:left;
+            line-height:47px;
+            width:33.3%;
+            text-align:center;
+            text-decoration:none;
+            color:#fff;
+            font-size:20px;
+        }
+        
+    </style>
+</head>
+<body>
+<!-- Home -->
+<div data-role="page" id="page1">
+    <div data-theme="a" data-role="header">
+        <div class="ui-grid-b">
+            <div class="ui-grid-b">
+                <div class="ui-block-a">
+                    <div>
+                         <a href="molo.html" data-transition="fade">
+                            數位雲端
+                        </a>
+                        <a href="yoe.html" data-transition="fade">
+                            點數加值
+                        </a>
+                        <a href="game.html" data-transition="fade">
+                           遊戲娛樂
+                        </a>
+                    </div>
+                </div>
+                <div class="ui-block-a">
+                    <div>
+                        <a href="FlashWolves.html" data-transition="fade">
+                            職業電競
+                        </a>
+                          <a href="mgame.html" data-transition="fade">
+                            手機遊戲
+                        </a>
+                        <a href="forum.html" data-transition="fade">
+                            遊戲論壇
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-role="content" style="background:url('img/聯絡我們底.png') repeat top left;padding:7px;">
+        <ul class="content"  style="height:100%">
+            <li  style="position:relative">
+                <img src="img/forum.png" id="logoImg" />
+                <img src="img/分隔線2.png" width="100%" style="text-align:center; vertical-align:text-top"  />
+                <span style="color:#848484; position:absolute; right:0;  bottom:35px;" id="logoSpan">遊戲論壇第一站!</span>
+            </li>
+            <li style="width:100%;word-wrap: break-word;word-break: normal;line-height:25px;margin-bottom:20px">鉄人是由一群熱血打死不退的怪咖團隊所成立，你不必在意我們是由各領域的程式設計師、遊戲高手、律師、藝術家所成我們和你一樣是全心悍衛遊戲的骨灰級職人遊戲是我們與生俱來的DNA。</li>
+            <li style="width:100%;word-wrap: break-word;word-break: normal;line-height:25px;margin-bottom:20px">我們期待以一個專業的遊戲論壇改變現有遊戲怪象
+這裏沒有口水戰、沒有廣告寫手、只有夠強悍的遊戲職人在此對決!</li>
+            <li style="width:100%;word-wrap: break-word;word-break: normal;line-height:25px;margin-bottom:20px">一起加入鉄人，和我們攜手創造你想要的遊戲職人世界。</li>
+            <li style="width:100%;word-wrap: break-word;word-break: normal;line-height:40px ">鉄人的使命:悍衛所愛，鉄血意志。</li>
+            <li><a style="color:#00b0ff;line-height:40px" href="http://www.ironforum.com.tw/" target="_blank">→前往(鉄人論壇)官網</a></li>
+        </ul>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed" class="footer" style="clear:both">
+       <!--<img src="img/footerL.png" style="float:left;" />-->
+        <a href="about.html" data-transition="fade" class="footerAbout"></a>
+        <a  href="index.html" data-transition="fade" class="footerHome"></a>
+    </div>
+</div>
+</body>
+</html>

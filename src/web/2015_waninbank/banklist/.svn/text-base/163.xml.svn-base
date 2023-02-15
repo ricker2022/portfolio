@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bank>
+	<branch num="" name="請選擇分行.."/>
+   <branch num="0011" name="彰化第十信用合作社營業部"/>
+	<branch num="0020" name="彰化第十信用合作社華山分社"/>
+	<branch num="0039" name="彰化第十信用合作社三民分社"/>
+	<branch num="0048" name="彰化第十信用合作社中華分社"/>
+	<branch num="0057" name="彰化第十信用合作社大竹分社"/>
+	<branch num="0066" name="彰化第十信用合作社和美分社"/>
+	<branch num="0075" name="彰化第十信用合作社大埔分社"/>
+	<branch num="0084" name="彰化第十信用合作社埔鹽分社"/>
+	<branch num="0093" name="彰化第十信用合作社溪湖分社"/>
+	<branch num="0109" name="彰化第十信用合作社伸港分社"/>
+</bank>
+

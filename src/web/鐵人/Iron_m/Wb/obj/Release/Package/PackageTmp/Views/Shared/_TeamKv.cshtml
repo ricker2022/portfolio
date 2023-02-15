@@ -1,0 +1,19 @@
+﻿@using Wb.Models;
+@using Wb.Common;
+@{
+    戰隊 team_info = ViewBag.team_info;    
+}
+
+ <div class="sub_navi">
+    <div class="col_1"><a href="@Html.FUrl("ProDetail")" class="back_btn"><i class="fa fa-arrow-left"></i></a></div>
+    <div class="col_9 category_title">@team_info.戰隊隊名 @ViewBag.team_page_sub_title</div>
+    <br clear="all">
+</div>
+
+<div id="team_kv">
+    <!-- 圖片寬度 3:1.2 -->
+    <img src="@team_info.戰隊圖片" style="width:100%;"/>
+    <div id="team_logo">
+    <img src="@team_info.戰隊Logo"/>
+    </div>
+</div>

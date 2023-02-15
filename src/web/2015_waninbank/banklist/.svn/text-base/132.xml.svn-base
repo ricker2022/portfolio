@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bank>
+	<branch num="" name="請選擇分行.."/>
+   <branch num="0011" name="新竹第三信用合作社市中分社"/>
+   <branch num="0020" name="新竹第三信用合作社民生分社"/>
+   <branch num="0039" name="新竹第三信用合作社營業部"/>
+	<branch num="0048" name="新竹第三信用合作社中正分社"/>
+	<branch num="0057" name="新竹第三信用合作社東南分社"/>
+	<branch num="0066" name="新竹第三信用合作社西門分社"/>
+	<branch num="0075" name="新竹第三信用合作社東光分社"/>
+	<branch num="0084" name="新竹第三信用合作社香山分社"/>
+	<branch num="0093" name="新竹第三信用合作社新興分社"/>
+	<branch num="0109" name="新竹第三信用合作社延平分社"/>
+	<branch num="0118" name="新竹第三信用合作社光華簡易型分社"/>
+	<branch num="0127" name="新竹第三信用合作社新豐分社"/>
+	<branch num="0136" name="新竹第三信用合作社竹北分社"/>
+	<branch num="0145" name="新竹第三信用合作社六家簡易型分社"/>
+</bank>
+

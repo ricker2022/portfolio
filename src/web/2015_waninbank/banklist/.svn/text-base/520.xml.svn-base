@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bank>
+	<branch num="" name="請選擇分行.."/>
+	   <branch num="0012" name="高漁會信用"/>
+	   <branch num="0023" name="港漁信用"/>
+	   <branch num="0034" name="高漁旗津"/>
+	   <branch num="0056" name="高漁援中港"/>
+</bank>

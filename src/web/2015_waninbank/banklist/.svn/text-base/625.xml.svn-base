@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bank>
+	<branch num="" name="請選擇分行.."/>
+	   <branch num="0014" name="中市農信"/>
+	   <branch num="0025" name="中市農西屯"/>
+	   <branch num="0036" name="中市農北屯"/>
+	   <branch num="0047" name="中市農南屯"/>
+	   <branch num="0058" name="中市農四民"/>
+	   <branch num="0069" name="中市農西區"/>
+	   <branch num="0070" name="中市農東區"/>
+	   <branch num="0092" name="中市農南區"/>
+	   <branch num="0117" name="中市農北區"/>
+	   <branch num="0139" name="中市農軍功"/>
+	   <branch num="0140" name="中市農大坑"/>
+</bank>

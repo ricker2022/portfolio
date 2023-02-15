@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bank>
+	<branch num="" name="請選擇分行.."/>
+	   <branch num="0019" name="澳商澳盛銀行台北分行"/>
+	   <branch num="0020" name="澳商澳盛銀行高雄分行"/>
+	   <branch num="0053" name="澳商澳盛銀行松山分行"/>
+	   <branch num="0064" name="澳商澳盛銀行台中分行"/>
+	   <branch num="0075" name="澳商澳盛銀行板橋分行"/>
+	   <branch num="0086" name="澳商澳盛銀行台東分行"/>
+	   <branch num="0101" name="澳商澳盛銀行天母分行"/>
+	   <branch num="0123" name="澳商澳盛銀行竹北分行"/>
+	   <branch num="0134" name="澳商澳盛銀行內湖分行"/>
+	   <branch num="0167" name="澳商澳盛銀行北屯分行"/>
+	   <branch num="0178" name="澳商澳盛銀行新店分行"/>
+	   <branch num="0189" name="澳商澳盛銀行中山分行"/>
+	   <branch num="0190" name="澳商澳盛銀行鳳山分行"/>
+	   <branch num="0204" name="澳商澳盛銀行彰化分行"/>
+	   <branch num="0330" name="澳商澳盛銀行北高分行"/>
+	   <branch num="0341" name="澳商澳盛銀行台南分行"/>
+	   <branch num="0400" name="澳商澳盛銀行松江分行"/>
+	   <branch num="0411" name="澳商澳盛銀行桃園分行"/>
+              </bank>
+

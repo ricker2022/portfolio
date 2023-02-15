@@ -1,0 +1,23 @@
+﻿@{Layout = "~/Views/Shared/_TeamLayout.cshtml";}
+@using Wb.Models;
+@using Wb.Common;
+@model List<戰隊成員>
+@{
+
+    Dictionary<long, 電競選手> player_map = ViewBag.player_map;
+    
+}
+
+@Html.Partial("_TeamKv")
+
+<ul id="news_list" class="reset_ul" >
+@foreach (戰隊成員 item in Model)
+{
+    <li >
+        <a href="@Html.FUrl("ProMemberDetail", "", new {pn = item.選手流水號})" >
+            <div class="img"><img src="@Html.TryGetPlayer(player_map,item.選手流水號)" onerror="this.src='/upload/website/default.png'" /></div>
+            <h3 class="has_img">@item.選手名稱</h3>
+        </a>
+    </li>
+} 
+</ul>

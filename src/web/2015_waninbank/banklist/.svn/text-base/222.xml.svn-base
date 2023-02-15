@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bank>
+	<branch num="" name="請選擇分行.."/>
+	<branch num="0017" name="澎湖縣第一信用合作社營業部"/>
+	<branch num="0026" name="澎湖縣第一信用合作社民權分社"/>
+	<branch num="0035" name="澎湖縣第一信用合作社光復分社"/>
+	<branch num="0044" name="澎湖縣第一信用合作社澎南分社"/>
+	<branch num="0053" name="澎湖縣第一信用合作社赤崁分社"/>
+	<branch num="0062" name="澎湖縣第一信用合作社西嶼分社"/>
+	<branch num="0080" name="澎湖縣第一信用合作社湖西分社"/>
+	<branch num="0099" name="澎湖縣第一信用合作社港都分社"/>
+	<branch num="0105" name="澎湖縣第一信用合作社朝陽分社"/>
+</bank>
+

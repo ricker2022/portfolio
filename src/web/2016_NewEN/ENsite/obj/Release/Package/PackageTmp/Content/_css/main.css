@@ -1,0 +1,195 @@
+﻿body {background: url('/Content/_img/Layout/topBG.jpg') top center no-repeat #400018; color:#fff; font-family:Arial;}
+div {display: block;}
+ul, li {padding: 0; margin: 0;}
+li {list-style: none;}
+.wrap {position:relative;width: 100%; max-width: 1200px; height: 100%; background: url('/Content/_img/Layout/topMain.jpg') top center no-repeat; margin: 0 auto; background-size: contain; padding-bottom: 2%;}
+.mainArea {position:relative;}
+.playnowBtn {margin-top: 13%;}
+.fbBtn {margin-top: 1.5%;}
+.BtnShadow {box-shadow:3px 3px 20px #000; border-radius:12px;}
+.bodyArea {position:relative;}
+.titleSet {margin-top: 2.5%; margin-bottom: 2%;}
+.titleSet_gc {margin-top: 7%; margin-bottom: 2%;}
+#prev {display:block;background:url('/Content/_img/Layout/arrowLeft_nor.png') top left no-repeat; width:10%; height:auto; max-height:119px; background-size:contain; top:50%;margin-top:-8%;}
+#prev:hover {background:url('/Content/_img/Layout/arrowLeft_hover.png') top left no-repeat;width:10%; height:auto; max-height:119px; background-size:contain;}
+#next {float:right;display:block;background:url('/Content/_img/Layout/arrowRight_nor.png') top left no-repeat; width:10%; height:auto; max-height:119px; background-size:contain; top:50%;margin-top:-8%;}
+#next:hover {background:url('/Content/_img/Layout/arrowRight_hover.png') top left no-repeat;width:10%; height:auto; max-height:119px; background-size:contain;}
+#CasionGames {clear:left; width:66.8%; margin:0 auto; display:table;}
+#CasionGames li {margin-bottom:1.2%;}
+#CasionGames li a {padding:0; display:block;}
+.new, .hot {position:absolute; width:46%; margin:4.6% 0 0 -1%;}
+.footer {clear:both; height:auto; background:#313131 url('/Content/_img/Layout/footerBG.png') top left repeat-x;}
+#footerArea {width:100%; max-width:1200px; margin:0 auto; display:table;}
+.footerBtnArea {width:66.9%;margin:0 auto;display:table;}
+.footerBtnArea li {margin-top:4%; margin-bottom:1%;}
+.coLogo {width:23.4166667%;margin:2% auto;}
+.coCopyright {width:66.9%; color:#7a7a7a; font-family:Arial; font-size:2.4rem; margin:0 auto 10% auto; text-align:center;}
+#mask {position:fixed; width: 100%;height: 100%;float: left;background-color:#000;filter: alpha(opacity=80);opacity: 0.8; z-index:9;top:0;left:0;display:none;}
+#popGames {clear:both; position:fixed; z-index:99; top:0%; margin: 0 auto; width:100%; height:auto; display:none; zoom:0.7;}
+#popGames ul {display:table; margin:0 auto;}
+.pop_playnowBtn {margin-top:0.5%;}
+.closeBtnArea {width:100%; max-width:1200px !important;}
+.closeBtn {position:relative; width: 15%; height: auto; cursor: pointer; margin-left:85%;}
+
+.navArea {position:relative;width:100%; max-width:1200px;}
+.menuBtn {position:absolute; width: 12.0833333333333%; height: auto; cursor: pointer; float:left; left:85%; margin-top:2%;z-index:9;}
+.menuBtn > img {width:100%;}
+.menuCloseAnimation img {position:relative; margin:-74% 0 0 23%; width: 59%; height: auto; display:none;}
+.menuArea {position:absolute; width:66.666667%; max-width:600px; height:auto; min-height:1px; float:left; background:#260702 url(/Content/_img/nav/menuBG.jpg) 0% 0% repeat-y; padding-bottom:10%; left:-9999999px; display:none; z-index:10; box-shadow:3px 3px 20px #000;background-size:1% 100%;}
+.navbarArea {position:relative; padding-top:2%;}
+.navbarArea li {clear:both; float:none; height:auto;margin:0% 3%; line-height:100px; font-size:2.5rem; display:block;border-bottom:2px #6b2807 solid;}
+.navbarArea li a {display:block; color:#e3b34c; width:100%; height:100%;padding-left:16%; margin:1.2% 0;}
+.navbarArea li a:hover {text-decoration:none; color:#b36f27;}
+.home {background: url(/Content/_img/nav/home.png) 0.5% 50% no-repeat; background-size:contain;}
+.about {background: url(/Content/_img/nav/about.png) 0.5% 50% no-repeat; background-size:contain;}
+.games {background: url(/Content/_img/nav/games.png) 0.5% 50% no-repeat; background-size:contain;}
+.announcement {background: url(/Content/_img/nav/announcement.png) 0.5% 50% no-repeat; background-size:contain;}
+.promtions {background: url(/Content/_img/nav/promtions.png) 0.5% 50% no-repeat; background-size:contain;}
+.introduction {background: url(/Content/_img/nav/introduction.png) 0.5% 50% no-repeat; background-size:contain;}
+.contact {background: url(/Content/_img/nav/contact.png) 0.5% 50% no-repeat; background-size:contain;}
+
+.home:hover {background: url(/Content/_img/nav/home_hover.png) 0.5% 50% no-repeat; background-size:contain;}
+.about:hover {background: url(/Content/_img/nav/about_hover.png) 0.5% 50% no-repeat; background-size:contain;}
+.games:hover {background: url(/Content/_img/nav/games_hover.png) 0.5% 50% no-repeat; background-size:contain;}
+.announcement:hover {background: url(/Content/_img/nav/announcement_hover.png) 0.5% 50% no-repeat; background-size:contain;}
+.promtions:hover {background: url(/Content/_img/nav/promtions_hover.png) 0.5% 50% no-repeat; background-size:contain;}
+.introduction:hover {background: url(/Content/_img/nav/introduction_hover.png) 0.5% 50% no-repeat; background-size:contain;}
+.contact:hover {background: url(/Content/_img/nav/contact_hover.png) 0.5% 50% no-repeat; background-size:contain;}
+.goTop {position:fixed; right:5px; bottom:5px; cursor:pointer;filter: alpha(opacity=80);opacity: 0.8;display:none;}
+
+.menuClose {
+    -webkit-transform: rotate(-180deg);
+    -moz-transform: rotate(-180deg);
+    transform: rotate(-180deg);
+    -webkit-transition: all .3s cubic-bezier(0.285, -0.450, 0.935, 0.110);
+    -moz-transition: all .3s cubic-bezier(0.285, -0.450, 0.935, 0.110);
+    transition: all .3s cubic-bezier(0.285, -0.450, 0.935, 0.110);
+    -webkit-transition-delay: 0.2s;
+    -moz-transition-delay: 0.2s;
+    transition-delay: 0.2s;
+}
+.menuClose.active {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    transform: rotate(45deg);
+    -webkit-transition: all .6s cubic-bezier(0.000, 0.105, 0.035, 1.570);
+    -moz-transition: all .6s cubic-bezier(0.000, 0.105, 0.035, 1.570);
+    /* transition: all .6s cubic-bezier(0.000, 0.105, 0.035, 1.570); 
+     -webkit-transition-delay: 0.5s;*/
+    -moz-transition-delay: 0.5s;
+    transition-delay: 0.5s;
+}
+
+/*logo特效*/
+@-webkit-keyframes LOGOimg {
+    0% {
+        background: url(/Content/_img/Layout/logo1.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: top center;
+    }
+
+    25% {
+        background: url(/Content/_img/Layout/logo2.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: top center;
+    }
+
+    50% {
+        background: url(/Content/_img/Layout/logo3.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: top center;
+    }
+
+    75% {
+        background: url(/Content/_img/Layout/logo4.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: top center;
+    }
+
+    100% {
+        background: url(/Content/_img/Layout/logo5.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: top center;
+    }
+}
+
+#logoArea {
+    -webkit-animation-name: LOGOimg;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 1s;
+    animation-name: LOGOimg;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: linear;
+    animation-delay: 1s;
+    width: 62%;
+    display: block;
+    margin: 0 auto;
+    background: url(/Content/_img/Layout/logo1.png) top center no-repeat;
+    background-size: contain;
+}
+
+/* 大螢幕 */
+@Media (min-width: 1200px) {    
+    body {background: url('/Content/_img/Layout/topBG_b.jpg') top center no-repeat #400018;}
+    .wrap {background: url('/Content/_img/Layout/topMain_b.jpg') top center no-repeat #400018; min-height:1200px;}
+    .menuBtn {margin-top:1.2%; left:79%;}
+    .menuArea {max-width: 800px;}
+    .navArea {right:-6%;}
+    .navArea, .menuBtn img {zoom:0.8;}
+    .playnowBtn {margin-top:10%;}
+    #logoArea, .menuCloseAnimation img {zoom:0.8;}
+    .playnowBtn a img, .fbBtn a img, .titleSet img, .carousel-inner img, .carousel-control, .titleSet_gc img, .coLogo img {zoom:0.7; margin: 0 auto;}
+    .carousel-indicators {zoom:0.8;}
+    #prev {margin-left:5%;}
+    #next {margin-right:3%;}
+    #CasionGames, .footerBtnArea {width:60%;}
+}
+@Media (max-width: 1199px) {
+    .wrap {min-height:1200px;}
+}
+/* 平板電腦、橫向手機和一般桌機解析度 */
+@Media (min-width: 768px) and (max-width: 979px) {    
+    .BtnShadow {box-shadow:3px 3px 16px #000; border-radius:10px;}
+    .titleSet_gc {margin-top: 8%;}
+    #CasionGames, .footerBtnArea, .coCopyright {width:83%;}
+    .coCopyright {font-size:2.3rem;}
+    .navbarArea {zoom:0.8;}
+    .navbarArea li {font-size:2rem;}
+    .navbarArea li a {padding-left:17%;}
+}
+
+/* 橫向智慧手機到竪立平板電腦解析度 */
+@Media (max-width: 767px) {
+    .BtnShadow {box-shadow:2px 2px 12px #000; border-radius:8px;}
+    .mainArea {position:relative;}
+    #CasionGames, .footerBtnArea, .coCopyright {width:97%;}
+    .coCopyright {font-size:1.7rem;}
+    .navbarArea {zoom:0.6;}
+    .navbarArea li {margin:0 4%; font-size:1.8rem;}
+    .navbarArea li a {padding-left:22%;}
+    .col-xs-12 {width:98% !important; margin-left:1% !important;}
+}
+
+/* 橫向智慧手機及其他更小解析度 */
+@Media (max-width: 480px) {
+    .wrap {min-height:1px;}
+    .BtnShadow {box-shadow:1px 1px 3px #000; border-radius:4px;}
+    .titleSet_gc {margin-top: 10%;}
+    #CasionGames, .footerBtnArea, .coCopyright {width:95%;}
+    .col-lg-4, .col-md-6, .col-sm-6, .col-xs-6 {padding-right:6px;padding-left:6px;}
+    .coCopyright {font-size:1.1rem;}
+    .navbarArea {zoom:0.4;}
+    .navbarArea li {margin:0 5%; font-size:1.5rem;}
+    .navbarArea li a {padding-left:23%;}
+    .col-xs-12 {width:98% !important;}
+}

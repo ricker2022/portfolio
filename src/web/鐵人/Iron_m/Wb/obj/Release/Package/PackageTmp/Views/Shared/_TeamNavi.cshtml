@@ -1,0 +1,65 @@
+﻿@using Wb.Models;
+@using Wb.Common;
+
+@{
+    string team_sn="" ;
+    if(ViewBag.amateur_team != null)
+    {
+        業餘戰隊 amateur_team = ViewBag.amateur_team;
+        team_sn = amateur_team.戰隊編號.ToString();
+    }
+   
+    
+    
+    string cur_controller = ViewBag.cur_controller;
+    string cur_action = ViewBag.cur_action;
+
+    string pro_selected = "";
+    string sp_selected = "";
+    string my_selected = "";
+
+    switch(cur_action)
+    {
+        case "pro":       
+        case "prodetail":       
+        case "promember":
+            pro_selected = "this";
+            break;
+            
+        case "sparetime":       
+        case "sparetimedetail":      
+        case "article":       
+        case "detail":     
+        case "post":     
+        case "reply":         
+        case "message":
+            sp_selected = "this";
+            break;
+
+        case "my":        
+        case "mysparetimedetail":       
+        case "mydetail":       
+        case "mypost":       
+        case "myreply":        
+        case "mymessage":
+            my_selected = "this";
+            break;  
+    }
+
+    
+    
+}
+
+<div  id="main_navi" >
+    <ul class="reset_ul">
+        <li>
+            <a href="@Url.RouteUrl("default", new { controller="team",action="pro"})" class="@pro_selected"><i class="fa fa-flag-checkered"></i>職業戰隊</a>
+        </li>
+        <li>
+            <a href="@Url.RouteUrl("default", new { controller="team",action="sparetime"})" class="@sp_selected"><i class="fa fa-flag" ></i>業餘戰隊</a>
+        </li>
+        <li>
+            <a href="@Url.RouteUrl("default", new { controller="team",action="my", t=team_sn})" class="@my_selected"><i class="fa fa-shield" ></i>我的戰隊</a>
+        </li>
+    </ul>
+</div>

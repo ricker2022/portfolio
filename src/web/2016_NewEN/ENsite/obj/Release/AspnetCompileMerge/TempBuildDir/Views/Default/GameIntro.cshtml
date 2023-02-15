@@ -1,0 +1,112 @@
+﻿@{
+    ViewBag.Title = "GameIntro";
+}
+
+<script>
+    $(function () {
+        SubjectSteering();
+        Dropdown_list();
+    });
+</script>
+
+<div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 bodyArea">
+    <div class="titleSet">
+        <img class="img-responsive" src="/Content/_img/titleBG/GameIntro_titleBG.png" />
+    </div>
+    <div class="inside_Content GameIntro_Content">
+        <ul>
+            <li>
+                <div class="Dropdown_Title">
+                    <div class="GI_title">Level</div>
+                    <div class="GI_arrow"></div>
+                </div>
+                <div class="Dropdown_Content">
+                    <div class="GI_content">
+                        Connect with Facebook to become a level 1 member. You gain one level for every 100 thousand Gold Coin or Silver Coin bets. There are different betting limits in every game, please refer to Lucky Table App and every games' INFO.
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="Dropdown_Title">
+                    <div class="GI_title">What is L coin?</div>
+                    <div class="GI_arrow"></div>
+                </div>
+                <div class="Dropdown_Content">
+                    <div class="GI_content">
+                        L coins are game coins in Lucky Table, and can be divided into Gold Coins and Silver Coins. Both Gold Coins and Silver Coins can be bet in most game machines, but some machines can only use Gold Coins to bet.<br />
+                        When you bet with Gold coins, coins will be added or deducted from the Gold Coins account balance. Likewise, when you bet with Silver Coins, coins will be added or deducted from the Silver Coins account balance.<br />
+                        <h2><b>How to get Gold Coins?</b></h2>
+                        <ul>
+                            <li>※Buy Gold Coins from Google Play.</li>
+                            <li>※Get Gold Coins by trading with other players.</li>
+                        </ul>
+                        <h2><b>How to get Silver Coins?</b></h2>
+                        <ul>
+                            <li>※Every new member can receive 30,000 Silver Coins when they login the game the first time.</li>
+                            <li>※If your Silver Coins account has lower than 15,000 coins, you can login the game every 3 hrs and claim Silver Coins up to 15,000.</li>
+                            <li>※You can receive a lot of Silver Coins from game events.</li>
+                            <li>PS 1. Gold Coins can not be transferred to Silver Coins.</li>
+                            <li>PS 2. Silver Coins can not be obtained from trade.</li>
+                        </ul>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="Dropdown_Title">
+                    <div class="GI_title">Action Card</div>
+                    <div class="GI_arrow"></div>
+                </div>
+                <div class="Dropdown_Content">
+                    <div class="GI_content">
+                        <h2><b>How to get Action Cards?</b></h2>
+                        <ul>
+                            <li>※You can use Gold Coins to buy Action Cards in the SHOP.</li>
+                            <li>※You can trade with your friends.</li>
+                        </ul>
+                        <table id="Card_tab">
+                            <tr>
+                                <td colspan="2"><h2><b>All cards' introduction</b></h2></td>
+                            </tr>
+                            <tr>
+                                <td><img class="img-responsive" src="~/Content/_img/GI_card01.png" /></td>
+                                <td>1. Lucky Boost Card: Enter your or your friend's nickname and give them the special luck boost effect to make them luck boost.</td>
+                            </tr>
+                            <tr>
+                                <td><img class="img-responsive" src="~/Content/_img/GI_card02.png" /></td>
+                                <td>2. Fortune Card: Enter your or your friend's nickname and bring in all the luck to you or your friends.</td>
+                            </tr>
+                            <tr>
+                                <td><img class="img-responsive" src="~/Content/_img/GI_card03.png" /></td>
+                                <td>3. Power Card: Increase your or your friends' luck.</td>
+                            </tr>
+                            <tr>
+                                <td><img class="img-responsive" src="~/Content/_img/GI_card04.png" /></td>
+                                <td>4. Firecracker Card: Give the special Firecracker effect to your friends and celebrate them won a big prize!</td>
+                            </tr>
+                            <tr>
+                                <td><img class="img-responsive" src="~/Content/_img/GI_card05.png" /></td>
+                                <td>5. Mute Card: Enter the Nickname of the player you wish to mute that they cannot send any messages through the Chat Channel for 30 minutes.</td>
+                            </tr>
+                            <tr>
+                                <td><img class="img-responsive" src="~/Content/_img/GI_card06.png" /></td>
+                                <td>6. Free Spin Card: Use a Free Spin Card to spin one round for free.</td>
+                            </tr>
+                        </table>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="Dropdown_Title">
+                    <div class="GI_title">Trade</div>
+                    <div class="GI_arrow"></div>
+                </div>
+                <div class="Dropdown_Content">
+                    <div class="GI_content">
+                        Only connect with Facebook member could use Trade Feature. You can trade Gold Coins or Machine Card with other player who is online. If you are trading Gold Coins, your Gold Coins account will be deducted 2% commision fee of the trading charge, and after you trading, your Gold Coins account must more than 30,000 Gold Coins.<br />
+                        ※Trade restraint : Both players must be online.
+                    </div>
+                </div>
+            </li>
+        </ul>
+    </div>
+</div>

@@ -1,0 +1,102 @@
+﻿@using Wb.Models;
+@using Wb.Common;
+@{    
+
+    List<文章屬性> category_list = ViewBag.category_list;
+    string routeUrl = Url.RouteUrl("default", new { controller = "forum", action = "index"});
+    if (Userinfo.myProfile != null && Userinfo.myProfile.nopostDisplay != "")
+    {
+        Response.Redirect(routeUrl);
+    }
+}
+<script>
+    
+    function trim(strvalue) {
+        ptntrim = /(^\s*)|(\s*$)/g;
+        return strvalue.replace(ptntrim, "");
+    }
+
+    function ValidEmail(emailtoCheck) {
+        emailRule = "/^\w+((-\w+)|(\.\w+))*\@@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z]+$/";
+
+        var regExp = /^[^@@^\s]+@@[^\.@@^\s]+(\.[^\.@@^\s]+)+$/;
+        if (emailtoCheck.match(regExp))
+            return true;
+        else
+            return false;
+    }
+
+    function CheckField() {
+        is_valid = true;
+
+        if (trim($('#post_title').val()).length == 0) {
+            $('#post_title_msg').html('請輸入標題');
+            $('#post_title').focus();
+            is_valid = false;
+            return;
+        }
+        else {
+            $('#post_title_msg').html('');
+        }
+
+
+        if (trim($('#message_textarea').val()).length == 0) {
+            $('#error_msg').html('字數太少');
+            $('#message_textarea').focus();
+            is_valid = false;
+            return;
+        }
+        else {
+            $('#error_msg').html('');
+        }
+
+
+        if (is_valid) {
+            $('#post_form').submit();
+        }
+    }
+</script>
+<div  class="sub_navi" data-role="none">
+    <div class="col_1"><a href="javascript:history.back()" class="back_btn"><i class="fa fa-arrow-left"></i></a></div>
+    <div class="col_9 category_title" >發表文章</div>
+    <br clear="all"/>
+</div>          
+
+
+<form action="@Html.FUrl("Post")" id="post_form" method="post">
+    @Html.AntiForgeryToken()
+    <table  id="member_info_table" class="forum_post" cellpadding="0" cellspacing="0" >
+        <tbody>
+            <tr>
+                <td >遊戲</td>
+                <td >@ViewBag.game_name</td>
+            </tr>               
+            <tr>
+                <td >文章類別</td>
+                <td >
+                <select name="csn">
+                @foreach (文章屬性 item in category_list)
+                {
+                        <option @(ViewBag.cat_sn==item.屬性編號?"selected":"") value="@item.屬性編號" >@item.屬性名稱</option>
+                }
+                </select>
+                <div class="error_message"></div></td>
+            </tr>
+            <tr>
+                <td >標題</td>
+                <td >
+                    <input type="text" id="post_title" name="post_title" placeholder="請輸入標題"/>   
+                    <div id="post_title_msg" class="error_message"></div>
+                </td>
+            </tr>
+            <tr>                    
+                <td colspan="2" style="padding-top:20px;">
+                <textarea id="message_textarea" name="post_message" data-role="none" placeholder="請輸入內文"></textarea>
+                <div  id="error_msg" class="error_message align_center"></div>
+                </td>
+            </tr>
+                  
+        </tbody>
+    </table>
+    <a href="javascript: CheckField();" class="reply_btn" >送出</a>
+</form>  

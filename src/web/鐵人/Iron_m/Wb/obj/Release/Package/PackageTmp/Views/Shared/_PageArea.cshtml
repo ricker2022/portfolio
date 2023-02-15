@@ -1,0 +1,105 @@
+﻿@using Wb.Common;
+<div style="display:none;">
+@if (ViewBag.page_count != null)
+{
+    int page = (int)ViewBag.page_count;
+    page = page>0?1:page;
+    
+    @:<div id="popupPager">
+        @:<ul class="reset_ul" >
+            for (int i = 0; i < page; i++)
+            {
+                <li><a href="@Url.Action("index", new { page =(i+1)})">第@(i+1)頁</a></li>
+            }      
+        @:</ul>
+    @:</div>    
+}
+
+@if (ViewBag.reply_page_count != null)
+{
+    int page = (int)ViewBag.reply_page_count;
+    page = page > 0 ? 1 : page;
+    @:<div id="popupPager">
+        @:<ul class="reset_ul" >
+            for (int i = 0; i < page; i++)
+            {
+                <li><a href="@Html.FUrl("Detail","",new { rpage =(i+1)})" >第@(i+1)頁</a></li>
+            }      
+        @:</ul>
+    @:</div>    
+}
+
+@if (ViewBag.search_page_count != null)
+{
+    int page = (int)ViewBag.search_page_count;
+    page = page > 0 ? 1 : page;
+    @:<div id="popupPager">
+        @:<ul class="reset_ul" >
+            for (int i = 0; i < page; i++)
+            {
+                <li><a href="@Html.FUrl("search","",new { page =(i+1)})" >第@(i+1)頁</a></li>
+            }      
+        @:</ul>
+    @:</div>    
+}    
+
+@if (ViewBag.pro_team_page_count != null)
+{
+    int page = (int)ViewBag.pro_team_page_count;
+    page = page > 0 ? 1 : page;
+    @:<div id="popupPager">
+        @:<ul class="reset_ul" >
+            for (int i = 0; i < page; i++)
+            {
+                <li><a href="@Html.FUrl("pro","",new { page =(i+1)})" >第@(i+1)頁</a></li>
+            }      
+        @:</ul>
+    @:</div>    
+}
+
+@if (ViewBag.sparetime_team_page_count != null)
+{
+    int page = (int)ViewBag.sparetime_team_page_count;
+    page = page > 0 ? 1 : page;
+    @:<div id="popupPager">
+        @:<ul class="reset_ul" >
+            for (int i = 0; i < page; i++)
+            {
+                <li><a href="@Html.FUrl("sparetime","",new { page =(i+1)})" >第@(i+1)頁</a></li>
+            }      
+        @:</ul>
+    @:</div>    
+}
+
+
+@if (ViewBag.friend_page_count != null)
+{
+    int page = (int)ViewBag.friend_page_count;
+    page = page > 0 ? 1 : page;
+    @:<div id="popupPager">
+        @:<ul class="reset_ul" >
+            for (int i = 0; i < page; i++)
+            {
+                <li><a href="@Html.FUrl("friends","",new { page =(i+1)})" >第@(i+1)頁</a></li>
+            }      
+        @:</ul>
+    @:</div>    
+}  
+
+@if (ViewBag.msg_page_count != null)
+{
+    int page = (int)ViewBag.msg_page_count;
+    page = page > 0 ? 1 : page;
+    @:<div id="popupPager">
+        @:<ul class="reset_ul" >
+            for (int i = 0; i < page; i++)
+            {
+                <li><a href="@Html.FUrl("usermsg","",new { page =(i+1)})" >第@(i+1)頁</a></li>
+            }      
+        @:</ul>
+    @:</div>    
+}  
+
+</div>
+
+

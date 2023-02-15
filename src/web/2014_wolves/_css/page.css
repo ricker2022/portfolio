@@ -1,0 +1,2753 @@
+﻿/*上方贊助商LOGO*/
+#topLogo {
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+    float: left;
+    z-index: 2;
+}
+
+    #topLogo ul {
+        padding: 0;
+        margin: 10px 0 0 75px;
+    }
+
+        #topLogo ul li {
+            width: 164px;
+            height: 48px;
+            display: block;
+            float: left;
+        }
+
+            #topLogo ul li a {
+                width: 144px;
+                height: 48px;
+                display: block;
+                margin: 0 10px;
+            }
+
+/*選手輪播banner*/
+#dSlideshow {
+    width: 100%;
+    height: 575px;
+    display: block;
+    margin: 114px auto 0 auto;
+    position: absolute;
+    top: 0;
+    left: 0;
+    float: left;
+}
+
+#dBanner {
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    height: 575px;
+    float: left;
+    overflow: hidden;
+}
+
+    #dBanner ul, #dBanner ul li {
+        margin: 0;
+        padding: 0;
+    }
+
+    #dBanner ul {
+        margin: 0;
+        padding: 0;
+        display: block;
+        width: 100%;
+        height: auto;
+        float: left;
+    }
+
+        #dBanner ul li {
+            position: absolute;
+            top: 0;
+            left: 0;
+            display: block;
+            width: 100%;
+            height: 575px;
+            float: left;
+        }
+
+/*banner裡選手介紹*/
+.dBannerInfo {
+    position: relative;
+    top: 332px;
+    left: -5px;
+    width: 966px;
+    height: 123px;
+    margin: 0 auto;
+    padding: 0;
+    display: block;
+}
+/*選手戰隊icon*/
+.dBIIcon {
+    width: 59px;
+    height: 58px;
+    margin: 0 0 0 61px;
+    display: block;
+    float: left;
+}
+/*選手名稱*/
+.dBIName {
+    width: 770px;
+    height: 57px;
+    font-size: 68px;
+    font-family: 'Arial';
+    line-height: 60px;
+    display: block;
+    float: left;
+    margin: 1px 0 0 11px;
+}
+
+.dBILine {
+    border-bottom: 1px #517590 solid;
+    width: 100%;
+    padding: 75px 0 0 0;
+}
+/*選手介紹內容*/
+.dBIIntro {
+    width: 717px;
+    height: 43px;
+    font-size: 12px;
+    font-family: 微軟正黑體;
+    display: block;
+    margin: 10px 0 0 58px;
+    line-height: 20px;
+    letter-spacing: 0.06px;
+    color: #265476;
+    float: left;
+    overflow: hidden;
+}
+/*選手read more 按鈕*/
+.dBIMoreBtn a {
+    width: 116px;
+    height: 38px;
+    display: block;
+    float: left;
+    margin: 10px 0 0 16px;
+    background: url(../_img/layout/ReadMoreBtn.png) 0px 0px no-repeat;
+}
+
+    .dBIMoreBtn a:hover {
+        background: url(../_img/layout/ReadMoreBtn.png) 0px -38px no-repeat;
+    }
+/*切換選手資料按鈕區*/
+.dBISelectBtnArea {
+    position: relative;
+    top: 218px;
+    left: -5px;
+    width: 966px;
+    height: 50px;
+    margin: 0 auto;
+    padding: 0;
+    display: block;
+}
+
+.dBILeftBtn {
+    position: absolute;
+    width: 35px;
+    height: 50px;
+    display: block;
+    margin: 0;
+    padding: 0;
+    background: url(../_img/layout/SelectBtn.png) 0px 0px no-repeat;
+}
+
+    .dBILeftBtn:hover {
+        background: url(../_img/layout/SelectBtn.png) 0px -50px no-repeat;
+    }
+
+.dBIRightBtn {
+    position: absolute;
+    width: 35px;
+    height: 50px;
+    display: block;
+    padding: 0;
+    margin: 0 0 0 931px;
+    background: url(../_img/layout/SelectBtn.png) -35px 0px no-repeat;
+}
+
+    .dBIRightBtn:hover {
+        background: url(../_img/layout/SelectBtn.png) -35px -50px no-repeat;
+    }
+
+#main {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 1024px;
+    height: auto;
+    display: block;
+    float: left;
+    padding: 0;
+    margin: 475px 0 0 0;
+    z-index: 5;
+}
+
+.MainLeftArea {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 626px;
+    height: auto;
+    display: block;
+    float: left;
+    margin: 0 22px;
+}
+
+.MainRightArea {
+    position: relative;
+    left: 7px;
+    width: 317px;
+    height: auto;
+    display: block;
+    float: left;
+}
+/*最新新聞區+新聞區*/
+.NNewsArea, .NewsArea {
+    width: 626px;
+    height: auto;
+    display: block;
+}
+
+.NNewsTitle {
+    width: 626px;
+    height: 27px;
+    display: block;
+    margin: 0 0 10px 0;
+    background: url(../_img/layout/BitemTitle.png) 0px 0px no-repeat;
+}
+
+.NewsTitle {
+    width: 626px;
+    height: 27px;
+    display: block;
+    margin: 0 0 10px 0;
+    background: url(../_img/layout/BitemTitle.png) 0px -135px no-repeat;
+}
+
+.NNewsMoreBtn, .NewsMoreBtn {
+    width: 91px;
+    height: 30px;
+    display: block;
+    margin: 0 0 0 536px;
+    border: 0px #FFF none;
+    cursor: pointer;
+    background: url(../_img/layout/BitemBtn.png) 0px 0px no-repeat;
+}
+
+    .NNewsMoreBtn:hover, .NewsMoreBtn:hover {
+        background: url(../_img/layout/BitemBtn.png) 0px -30px no-repeat;
+    }
+
+/*最新新聞區+新聞區*/
+.NNewsContent, .NewsContent {
+    width: 626px;
+    height: auto;
+    display: block;
+}
+
+    .NNewsContent ul, .NewsContent ul {
+        padding: 0;
+        margin: 0;
+    }
+
+        .NNewsContent ul li {
+            width: 626px;
+            height: 255px;
+            display: block;
+            margin-bottom: 34px;
+            background: url(../_img/layout/NewsItemsBG.png) top left no-repeat;
+        }
+
+        .NewsContent ul li {
+            width: 626px;
+            height: 255px;
+            display: block;
+            margin-bottom: 17px;
+            background: url(../_img/layout/NewsItemsBG.png) top left no-repeat;
+        }
+
+.NewsCPic {
+    position: relative;
+    top: 15px;
+    left: 15px;
+    width: 293px;
+    height: 220px;
+    border: 3px #fff solid;
+    border-radius: 8px;
+    float: left;
+}
+
+    .NewsCPic img {
+        width: 293px;
+        height: 220px;
+    }
+
+.NewsCTitle {
+    position: relative;
+    width: 290px;
+    height: 60px;
+    font-size: 19px;
+    font-weight: bold;
+    font-family: 微軟正黑體;
+    line-height: 30px;
+    float: left;
+    padding: 14px 0 0 23px;
+    overflow: hidden;
+}
+
+.NewsCDate {
+    position: relative;
+    top: 14px;
+    left: 32px;
+    width: 250px;
+    font-size: 13px;
+    font-family: 'Arial';
+    color: #265476;
+    display: table;
+    float: left;
+    letter-spacing: 0.6px;
+}
+
+.NewsCContent {
+    position: relative;
+    top: 31px;
+    left: 32px;
+    width: 280px;
+    height: 74px;
+    margin: 0 0 11px 0;
+    font-size: 13px;
+    font-family: 微軟正黑體;
+    color: #265476;
+    display: block;
+    float: left;
+    letter-spacing: 0.5px;
+    line-height: 18px;
+    overflow: hidden;
+}
+
+.NewsCTeam {
+    position: relative;
+    top: 35px;
+    left: 34px;
+    width: 170px;
+    height: 30px;
+    display: block;
+    float: left;
+}
+
+    .NewsCTeam ul {
+        padding: 0;
+        margin: 0;
+    }
+
+        .NewsCTeam ul li {
+            width: 28px;
+            height: 28px;
+            display: inline-block;
+            margin: 0 1px 0 0;
+        }
+
+.NewsCMoreBtn {
+    position: relative;
+    top: 34px;
+    left: 43px;
+    width: 91px;
+    height: 30px;
+    display: block;
+    border: 0px #FFF none;
+    cursor: pointer;
+    float: left;
+    background: url(../_img/layout/BitemBtn.png) -91px 0px no-repeat;
+}
+
+    .NewsCMoreBtn:hover {
+        background: url(../_img/layout/BitemBtn.png) -91px -30px no-repeat;
+    }
+
+/*團隊介紹*/
+.TeamArea {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 317px;
+    height: auto;
+    display: block;
+    float: left;
+}
+
+.TeamTitle {
+    width: 317px;
+    height: 27px;
+    display: block;
+    margin: 0 0 10px 0;
+    background: url(../_img/layout/BitemTitle.png) 0px -27px no-repeat;
+}
+
+.TeamContent {
+    width: 317px;
+    height: 70px;
+    display: block;
+    background: url(../_img/layout/TeamItemsBG.png) top left no-repeat;
+}
+
+    .TeamContent ul {
+        padding: 0 18px;
+        margin: 0;
+    }
+
+        .TeamContent ul li {
+            width: 48px;
+            height: 48px;
+            display: inline-block;
+            padding: 0;
+            margin: 11px 9px;
+        }
+
+/*搜尋區*/
+.SearchArea {
+    position: relative;
+    width: 317px;
+    height: 52px;
+    display: block;
+    float: left;
+    margin: 7px 0 0 0;
+}
+
+.SearchClass {
+    width: 111px;
+    height: 52px;
+    display: block;
+    float: left;
+    font-size: 18px;
+    text-align: center;
+    font-family: 微軟正黑體;
+    color: #696868;
+    background: url(../_img/layout/SearchAreaBG.png) 0px 0px no-repeat;
+}
+
+.searchBg2 {
+    background: transparent;
+    -webkit-appearance: none;
+    cursor: pointer;
+}
+
+.SearchClass select {
+    width: 111px;
+    height: 52px;
+    display: block;
+    font-size: 18px;
+    text-align: center;
+    font-family: 微軟正黑體;
+    color: #696868;
+    padding: 2px 0 0 15px;
+}
+
+.SearchContent {
+    width: 203px;
+    height: 52px;
+    display: block;
+    float: left;
+    background: url(../_img/layout/SearchAreaBG.png) -111px 0px no-repeat;
+}
+
+.SearchText {
+    width: 135px;
+    height: 52px;
+    font-size: 18px;
+    border: none;
+    background: none;
+    float: left;
+    padding: 0 0 0 8px;
+}
+
+.SearchBtn {
+    width: 46px;
+    height: 48px;
+    margin: 2px 0 0 7px;
+    border: none;
+    background: none;
+    cursor: pointer;
+}
+
+/*近期賽事*/
+.DateActionArea {
+    position: relative;
+    width: 317px;
+    height: auto;
+    display: block;
+    float: left;
+    margin: 14px 0 0 0;
+}
+
+.DATitle {
+    width: 317px;
+    height: 27px;
+    display: block;
+    margin: 0 0 10px 0;
+    background: url(../_img/layout/BitemTitle.png) 0px -54px no-repeat;
+}
+
+.DAContent {
+    width: 317px;
+    height: auto;
+    display: block;
+    float: left;
+    background: url(../_img/layout/DateActionTopBG.png) top left no-repeat;
+}
+
+.DACCalendar {
+    width: 277px;
+    height: 252px;
+    display: block;
+    margin: 13px 0 0 19px;
+    border: 1px #000 solid;
+}
+
+.DACActionBtn {
+    width: 27px;
+    height: 27px;
+    display: block;
+    border: 0px #fff none;
+    cursor: pointer;
+    float: left;
+    margin: 20px 0 0 277px;
+    background: url(../_img/layout/DACActionBtn.png) 0px 0px no-repeat;
+}
+
+.DACActionBtn_click {
+    width: 27px;
+    height: 27px;
+    display: block;
+    border: 0px #fff none;
+    cursor: pointer;
+    background: url(../_img/layout/DACActionBtn.png) -27px 0px no-repeat;
+}
+
+.DACAtion {
+    width: 317px;
+    height: 130px;
+    display: block;
+    float: left;
+    margin: 6px 0 0 0;
+    background: url(../_img/layout/DACAtionBG.png) top left no-repeat;
+}
+
+.DACALeft {
+    width: 92px;
+    height: 130px;
+    display: block;
+    float: left;
+}
+
+.DACAPic {
+    width: 66px;
+    height: 66px;
+    display: block;
+    float: left;
+    margin: 10px 0 0 12px;
+    border-radius: 3px;
+}
+
+    .DACAPic img {
+        width: 66px;
+        height: 66px;
+    }
+
+.DACABtn {
+    width: 66px;
+    height: 30px;
+    border: 0px #fff none;
+    display: block;
+    float: left;
+    cursor: pointer;
+    margin: 11px 0 0 12px;
+    background: url(../_img/layout/BitemBtn.png) -336px 0px no-repeat;
+}
+
+    .DACABtn:hover {
+        background: url(../_img/layout/BitemBtn.png) -336px -30px no-repeat;
+    }
+
+.DACARight {
+    width: 220px;
+    height: 130px;
+    display: block;
+    float: left;
+}
+
+.DACATitle {
+    width: 210px;
+    height: 38px;
+    display: block;
+    float: left;
+    font-size: 16px;
+    font-family: 微軟正黑體;
+    line-height: 20px;
+    font-weight: bold;
+    margin: 12px 0 0 0;
+    overflow: hidden;
+    color: #000;
+}
+
+.DACATeams {
+    width: 210px;
+    height: 20px;
+    display: block;
+    float: left;
+    font-size: 14px;
+    font-family: 微軟正黑體;
+    color: #265476;
+    font-weight: bold;
+    margin: 6px 0 0 0;
+}
+
+.DACADate {
+    width: 210px;
+    height: 20px;
+    display: block;
+    float: left;
+    font-size: 14px;
+    font-family: 微軟正黑體;
+    color: #265476;
+    font-weight: bold;
+    margin: 20px 0 0 0;
+}
+
+.ADBanner {
+    width: 317px;
+    height: 180px;
+    display: block;
+    float: left;
+    margin: 16px auto 0 auto;
+    border-radius: 5px;
+}
+
+    .ADBanner ul {
+        padding: 0;
+        margin: 0;
+    }
+
+/*推薦影片+推薦相簿*/
+.VideoArea, .AlbumArea {
+    position: relative;
+    width: 317px;
+    height: auto;
+    display: block;
+    float: left;
+    margin: 7px 0 0 0;
+    overflow: hidden;
+}
+
+.VideoTitle {
+    width: 317px;
+    height: 27px;
+    display: block;
+    margin: 0 0 10px 0;
+    background: url(../_img/layout/BitemTitle.png) 0px -81px no-repeat;
+}
+
+.AlbumTitle {
+    width: 317px;
+    height: 27px;
+    display: block;
+    margin: 0 0 10px 0;
+    background: url(../_img/layout/BitemTitle.png) 0px -108px no-repeat;
+}
+
+.VideoContent, .AlbumContent {
+    width: 317px;
+    height: 249px;
+    display: block;
+    float: left;
+    background: url(../_img/layout/RecommendBG.png) top center no-repeat;
+}
+
+#VideoPic {
+    width: 294px;
+    height: 165px;
+    display: block;
+    float: left;
+    margin: 18px 0 0 12px;
+}
+
+.VideoLeftBtn, .AlbumLeftBtn {
+    position: absolute;
+    width: 27px;
+    height: 38px;
+    display: block;
+    float: left;
+    border: 0px #fff none;
+    margin: 82px 0 0 12px;
+    background: url(../_img/layout/VideoPic/VideoSelectBtn.png) 0px 0px no-repeat;
+}
+
+    .VideoLeftBtn:hover, .AlbumLeftBtn:hover {
+        background: url(../_img/layout/VideoPic/VideoSelectBtn.png) 0px -38px no-repeat;
+    }
+
+.VideoRightBtn, .AlbumRightBtn {
+    position: absolute;
+    width: 27px;
+    height: 38px;
+    display: block;
+    float: left;
+    border: 0px #fff none;
+    margin: 82px 0 0 279px;
+    background: url(../_img/layout/VideoPic/VideoSelectBtn.png) -27px 0px no-repeat;
+}
+
+    .VideoRightBtn:hover, .AlbumRightBtn:hover {
+        background: url(../_img/layout/VideoPic/VideoSelectBtn.png) -27px -38px no-repeat;
+    }
+
+.AlbumPic {
+    width: 219px;
+    height: 165px;
+    display: block;
+    float: left;
+    margin: 18px 0 0 48px;
+}
+
+.Videodate, .Albumdate {
+    width: 190px;
+    height: 27px;
+    display: block;
+    float: left;
+    font-size: 13px;
+    font-family: 'Arial';
+    line-height: 27px;
+    color: #265476;
+    margin: 8px 0 0 15px;
+    letter-spacing: 0.8px;
+}
+
+.VideoTeamIcon, .AlbumTeamIcon {
+    width: 98px;
+    height: 27px;
+    display: block;
+    float: right;
+    margin: 5px 11px 0 0;
+}
+
+
+    .VideoTeamIcon ul, .AlbumTeamIcon ul {
+        padding: 0;
+        margin: 0;
+    }
+
+        .VideoTeamIcon ul li, .AlbumTeamIcon ul li {
+            display: block;
+            float: right;
+            margin: 0 0 0 4px;
+        }
+
+.VideoInfo, .AlbumInfo {
+    width: 290px;
+    height: 14px;
+    display: block;
+    float: left;
+    font-size: 13px;
+    font-family: 微軟正黑體;
+    color: #265476;
+    margin: 5px 0 0 14px;
+    overflow: hidden;
+}
+
+/*內頁背景設定*/
+.pageBG {
+    position: absolute;
+    top: 114px;
+    left: 0;
+    padding: 0;
+    margin: 0 auto;
+    width: 100%;
+    height: 1055px;
+    display: block;
+    background: url(../_img/layout/pageBG.jpg) top left no-repeat;
+    z-index: 0;
+}
+
+#pagemain {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 1024px;
+    height: auto;
+    display: block;
+    float: left;
+    padding: 20px 0;
+    margin: 143px 0 0 0;
+    z-index: 5;
+    background: rgba(255, 255, 255, 0.9);
+    border-radius: 12px;
+}
+
+/*戰隊頁*/
+.TTeamsArea {
+    width: 626px;
+    height: auto;
+    display: block;
+}
+
+.TTeamsTitle {
+    width: 626px;
+    height: 27px;
+    display: block;
+    margin: 0 0 0px 0px;
+    background: url(../_img/layout/BitemTitle.png) 0px -162px no-repeat;
+}
+
+.TTeamsContent {
+    width: 626px;
+    height: auto;
+    display: block;
+}
+
+    .TTeamsContent ul {
+        padding: 0;
+        margin: 10px 0 0 0;
+    }
+
+        .TTeamsContent ul li {
+            width: 626px;
+            height: 300px;
+            display: block;
+            float: left;
+            padding: 0;
+            margin: 0 0 16px 0;
+        }
+
+.TTeamsCPic {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 624px;
+    height: 300px;
+    float: left;
+    padding: 0;
+    margin: 0;
+}
+
+    .TTeamsCPic img {
+        width: 624px;
+        height: 300px;
+    }
+
+.TTeamsCMoreBtn {
+    position: relative;
+    top: -81px;
+    left: 75px;
+    width: 129px;
+    height: 33px;
+    display: block;
+    border: 0px #FFF none;
+    cursor: pointer;
+    float: left;
+    background: url(../_img/Teams/MoreBtn.png) 0px 0px no-repeat;
+}
+
+    .TTeamsCMoreBtn:hover {
+        background: url(../_img/Teams/MoreBtn.png) 0px -33px no-repeat;
+    }
+
+/*贊助頁*/
+.SponsorArea {
+    width: 626px;
+    height: auto;
+    display: block;
+}
+
+.SponsorTitle {
+    width: 626px;
+    height: 27px;
+    display: block;
+    margin: 0 0 0px 0px;
+    background: url(../_img/layout/BitemTitle.png) 0px -189px no-repeat;
+}
+
+.SponsorContent {
+    width: 626px;
+    height: auto;
+    display: block;
+}
+
+.SB01 {
+    width: 626px;
+    height: 390px;
+    display: block;
+    float: left;
+    margin: 10px 0;
+    background: url(../_img/Sponsor/SB01.jpg) top left no-repeat;
+}
+
+.SB02 {
+    width: 626px;
+    height: 232px;
+    display: block;
+    float: left;
+    margin: 10px 0;
+    background: url(../_img/Sponsor/SB02.jpg) top left no-repeat;
+}
+
+.SB01Pic, .SB02Pic {
+    width: 293px;
+    height: 193px;
+    border-radius: 8px;
+    border: 3px #fff solid;
+    border-radius: 5px;
+    display: block;
+    float: left;
+    margin: 16px 0 0 15px;
+}
+
+    .SB01Pic:hover, .SB02Pic:hover {
+        border: 3px #00b7ee solid;
+        border-radius: 8px;
+    }
+
+    .SB01Pic img, .SB02Pic img {
+        width: 293px;
+        height: 193px;
+    }
+
+.SB01Title, .SB02Title {
+    width: 280px;
+    height: 30px;
+    display: block;
+    float: left;
+    font-size: 23px;
+    font-weight: bold;
+    font-family: 微軟正黑體;
+    color: #000;
+    line-height: 30px;
+    margin: 22px 0 0 12px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.SB01Link a, .SB02Link a {
+    width: 280px;
+    height: 28px;
+    display: block;
+    float: left;
+    font-size: 13px;
+    font-family: Arial;
+    color: #1e67ac;
+    margin: 6px 0 0 15px;
+    letter-spacing: 0.6px;
+    text-decoration: none;
+}
+
+    .SB01Link a:hover, .SB02Link a:hover {
+        text-decoration: underline;
+    }
+
+.SB01Content, .SB02Content {
+    width: 275px;
+    height: 129px;
+    display: block;
+    float: left;
+    font-size: 12px;
+    font-family: 微軟正黑體;
+    color: #265476;
+    margin: 1px 0px 0 15px;
+    letter-spacing: 0.3px;
+    line-height: 18px;
+    overflow: hidden;
+}
+
+.SB01Products {
+    width: 615px;
+    height: 128px;
+    padding: 0;
+    margin: 32px 0 0 14px;
+    display: block;
+    float: left;
+}
+
+    .SB01Products ul {
+        padding: 0;
+        margin: 0 0 0 5px;
+    }
+
+        .SB01Products ul li {
+            width: 283px;
+            height: 121px;
+            display: block;
+            float: left;
+            border: 2px #696c6e solid;
+            border-radius: 3px;
+            margin: 0 15px 0 0;
+        }
+
+/*賽事頁*/
+/*賽事區*/
+.EventsArea {
+    width: 626px;
+    height: auto;
+    display: block;
+}
+
+.EventsTitle {
+    width: 626px;
+    height: 27px;
+    display: block;
+    margin: 0 0 0px 0px;
+    background: url(../_img/layout/BitemTitle.png) 0px -216px no-repeat;
+}
+
+.EventsContent {
+    width: 626px;
+    height: auto;
+    display: block;
+}
+
+    .EventsContent ul {
+        padding: 0;
+        margin: 5px 0 0 0;
+    }
+
+        .EventsContent ul li {
+            width: 626px;
+            height: 174px;
+            display: block;
+            float: left;
+            padding: 0;
+            margin: 6px 0;
+            background: url(../_img/Events/EventContentBG.png) top left no-repeat;
+        }
+
+.EventsCLeft {
+    width: 115px;
+    height: 145px;
+    display: block;
+    float: left;
+    margin: 16px 0 0 20px;
+}
+
+.EventsCRight {
+    width: 450px;
+    height: 145px;
+    display: block;
+    float: left;
+    margin: 16px 0 0 15px;
+}
+
+.EventsCPic {
+    width: 106px;
+    height: 106px;
+    display: block;
+    float: left;
+}
+
+    .EventsCPic img {
+        width: 106px;
+        height: 106px;
+    }
+
+.EventsCGameIcon {
+    width: 115px;
+    height: 28px;
+    display: block;
+    float: left;
+}
+
+    .EventsCGameIcon ul {
+        padding: 0;
+        margin: 8px 0 0 0;
+    }
+
+        .EventsCGameIcon ul li {
+            width: 28px;
+            height: 28px;
+            display: block;
+            float: left;
+            margin: 0 10px 0 0;
+        }
+
+.EventsCTitle {
+    width: 450px;
+    height: 50px;
+    display: block;
+    float: left;
+    font-size: 18px;
+    line-height: 26px;
+    font-family: 微軟正黑體;
+    color: #000;
+    margin: 7px 0 0 5px;
+    font-weight: bold;
+    overflow: hidden;
+}
+
+.EventsCTeamName {
+    width: 450px;
+    height: 20px;
+    display: block;
+    float: left;
+    font-size: 17px;
+    font-family: 微軟正黑體;
+    color: #265476;
+    font-weight: bold;
+    overflow: hidden;
+    margin: 17px 0 0 8px;
+    line-height: 20px;
+}
+
+.EventsCLiveBtn {
+    width: 63px;
+    height: 30px;
+    display: block;
+    float: left;
+    background: url(../_img/layout/BitemBtn.png) -182px 0px no-repeat;
+    border: 0px #fff none;
+    cursor: pointer;
+    margin: 19px 0 0 7px;
+}
+
+    .EventsCLiveBtn:hover {
+        background: url(../_img/layout/BitemBtn.png) -182px -30px no-repeat;
+    }
+
+.EventsCTime {
+    width: 200px;
+    height: 20px;
+    display: block;
+    float: left;
+    font-size: 16px;
+    font-family: Arial;
+    font-weight: bold;
+    color: #0068b7;
+    margin: 27px 0 0 15px;
+    letter-spacing: 0.65px;
+}
+/*賽事頁 最新新聞區*/
+.RNewsArea, .MRNewsArea {
+    width: 317px;
+    height: auto;
+    display: block;
+    float: left;
+    margin: 26px 0 0 0;
+}
+
+.RNewsTitle {
+    width: 317px;
+    height: 27px;
+    display: block;
+    margin: 0 0 0 0;
+    background: url(../_img/layout/BitemTitle.png) 0px 0px no-repeat;
+}
+
+.MRNewsTitle {
+    width: 317px;
+    height: 27px;
+    display: block;
+    margin: 0 0 0 0;
+    background: url(../_img/layout/BitemTitle.png) 0px -378px no-repeat;
+}
+
+.RNewsContent, .MRNewsContent {
+    width: 317px;
+    height: auto;
+    display: block;
+    float: left;
+}
+
+    .RNewsContent ul, .MRNewsContent ul {
+        padding: 0;
+        margin: 3px 0 0 0;
+    }
+
+        .RNewsContent ul li, .MRNewsContent ul li {
+            width: 317px;
+            height: 204px;
+            display: block;
+            float: left;
+            margin: 9px 0;
+            background: url(../_img/Events/RNewsBG.png) top left no-repeat;
+        }
+
+.RNewsCTitle {
+    width: 276px;
+    height: 40px;
+    display: block;
+    float: left;
+    line-height: 20px;
+    font-size: 14px;
+    font-family: 微軟正黑體;
+    font-weight: bold;
+    color: #000;
+    margin: 10px 0 0 15px;
+    letter-spacing: 0.1px;
+    overflow: hidden;
+}
+
+.RNewsCPic {
+    width: 128px;
+    height: 96px;
+    display: block;
+    float: left;
+    margin: 2px 0 0 13px;
+    border: 3px #fff solid;
+    border-radius: 3px;
+}
+
+.RNewsCTime {
+    width: 150px;
+    height: 14px;
+    display: block;
+    float: left;
+    font-size: 13px;
+    font-family: Arial;
+    color: #265476;
+    margin: 3px 0 0 6px;
+    letter-spacing: 0.4px;
+}
+
+.RNewsCConent {
+    width: 150px;
+    height: 69px;
+    display: block;
+    float: left;
+    font-size: 12px;
+    line-height: 18px;
+    color: #265476;
+    margin: 5px 0 15px 5px;
+    letter-spacing: 0.45px;
+    overflow: hidden;
+}
+
+.RNewsCGameIcon {
+    width: 130px;
+    height: 28px;
+    display: block;
+    float: left;
+}
+
+    .RNewsCGameIcon ul {
+        padding: 0;
+        margin: 7px 0 0 16px;
+    }
+
+        .RNewsCGameIcon ul li {
+            width: 28px;
+            height: 28px;
+            display: block;
+            float: left;
+            margin: 0 5px 0 0;
+        }
+
+.RNewsCMoreBtn {
+    width: 91px;
+    height: 30px;
+    display: block;
+    float: left;
+    border: 0px #fff none;
+    cursor: pointer;
+    background: url(../_img/layout/BitemBtn.png) -245px 0px no-repeat;
+    margin: 6px 0 0 79px;
+}
+
+    .RNewsCMoreBtn:hover {
+        background: url(../_img/layout/BitemBtn.png) -245px -30px no-repeat;
+    }
+
+/*新聞內頁*/
+.PageNewsArea {
+    width: 966px;
+    height: 82px;
+    display: block;
+    float: left;
+    margin: 9px 0 0 26px;
+    border-bottom: 1px #517590 solid;
+}
+
+.PageNewsTitle {
+    width: 931px;
+    height: 30px;
+    display: block;
+    float: left;
+    font-size: 24px;
+    font-family: 微軟正黑體;
+    font-weight: bold;
+    color: #000;
+    line-height: 30px;
+    padding: 0 0 0 35px;
+    background: url(../_img/News/PageNewsTitleIcon.png) top left no-repeat;
+}
+
+.PageNewsGameIcon {
+    width: auto;
+    height: 28px;
+    display: block;
+    float: left;
+}
+
+    .PageNewsGameIcon ul {
+        padding: 0;
+        margin: 12px 0 0 36px;
+    }
+
+        .PageNewsGameIcon ul li {
+            width: 28px;
+            height: 28px;
+            display: block;
+            float: left;
+            margin: 0 5px 0 0;
+        }
+
+.PageNewsTime {
+    width: 200px;
+    height: 28px;
+    line-height: 28px;
+    display: block;
+    float: left;
+    color: #265476;
+    font-size: 16px;
+    font-family: Arial;
+    font-weight: bold;
+    margin: 12px 0 0 13px;
+    letter-spacing: 1px;
+}
+
+.PageNewsShareFBBtn {
+    width: 69px;
+    height: 30px;
+    display: block;
+    float: right;
+    border: 0px #fff none;
+    background: url(../_img/layout/BitemBtn.png) -402px 0px no-repeat;
+    cursor: pointer;
+    margin: 12px 0 0 0;
+}
+
+    .PageNewsShareFBBtn:hover {
+        background: url(../_img/layout/BitemBtn.png) -402px -30px no-repeat;
+    }
+
+.PageNewsContent {
+    width: 588px;
+    height: auto;
+    margin: 20px 0 0 37px;
+    padding: 0 0 16px 0;
+    font-size: 14px;
+    font-family: 微軟正黑體;
+    color: #265476;
+    line-height: 25px;
+}
+/*FB留言區*/
+.PageNewsFBArea {
+    width: 620px;
+    height: auto;
+    display: block;
+    float: left;
+    border-top: 1px #517590 solid;
+    margin: 0;
+    padding: 13px 0 0 0;
+}
+
+.PageNewsFBTitle {
+    width: 620px;
+    height: 27px;
+    display: block;
+    float: left;
+    background: url(../_img/layout/BitemTitle.png) 0px -243px no-repeat;
+    margin: 0 0 13px 0;
+}
+
+.PageNewsFBContent {
+    width: 620px;
+    height: auto;
+    display: block;
+    float: left;
+}
+
+/*戰隊頁 戰隊隊員*/
+#TeamGLogo {
+    position: absolute;
+    top: 103px;
+    left: 375px;
+    width: 500px;
+    height: 214px;
+    display: block;
+    float: left;
+}
+
+.PageTeamsArea {
+    width: 626px;
+    height: auto;
+    display: block;
+}
+
+.PageTeamsTitle {
+    width: 626px;
+    height: 27px;
+    display: block;
+    float: left;
+    background: url(../_img/layout/BitemTitle.png) 0px -270px no-repeat;
+}
+
+#PageTeamsContent {
+    width: 626px;
+    height: auto;
+    display: block;
+    float: left;
+}
+
+    #PageTeamsContent ul {
+        padding: 0;
+        margin: 0;
+    }
+
+        #PageTeamsContent ul li {
+            width: 626px;
+            height: 279px;
+            display: block;
+            float: left;
+            background: url(../_img/Teams/PageTeamBG.png) top left no-repeat;
+            margin: 13px 0 0 0;
+        }
+
+    #PageTeamsContent .PageTeamsCPic a {
+        width: 181px;
+        height: 181px;
+        display: block;
+        float: left;
+        border: 3px #000 solid;
+        border-radius: 5px;
+        margin: 18px 0 0 18px;
+    }
+
+        #PageTeamsContent .PageTeamsCPic a:hover {
+            border: 3px #00b7ee solid;
+        }
+
+    #PageTeamsContent .PageTeamsCName {
+        width: 235px;
+        height: 35px;
+        line-height: 35px;
+        display: block;
+        float: left;
+        font-size: 32px;
+        font-family: 微軟正黑體;
+        letter-spacing: 1.8px;
+        color: #000;
+        font-weight: bold;
+        margin: 16px 0 0 22px;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+    }
+
+    #PageTeamsContent .PageTeamsCLinkBtn {
+        width: 152px;
+        height: 35px;
+        display: block;
+        float: left;
+    }
+
+        #PageTeamsContent .PageTeamsCLinkBtn ul {
+            padding: 0;
+            margin: 15px 0 0 2px;
+        }
+
+            #PageTeamsContent .PageTeamsCLinkBtn ul li {
+                width: 37px;
+                height: 37px;
+                display: block;
+                float: left;
+                margin: 0 12px 0 0;
+                cursor: pointer;
+            }
+
+    #PageTeamsContent .PageTCL01 {
+        background: url(../_img/Teams/PageTeamsLinkBtn.png) 0px 0px no-repeat;
+    }
+
+        #PageTeamsContent .PageTCL01:hover {
+            background: url(../_img/Teams/PageTeamsLinkBtn.png) 0px -37px no-repeat;
+        }
+
+    #PageTeamsContent .PageTCL02 {
+        background: url(../_img/Teams/PageTeamsLinkBtn.png) -37px 0px no-repeat;
+    }
+
+        #PageTeamsContent .PageTCL02:hover {
+            background: url(../_img/Teams/PageTeamsLinkBtn.png) -37px -37px no-repeat;
+        }
+
+    #PageTeamsContent .PageTCL03 {
+        background: url(../_img/Teams/PageTeamsLinkBtn.png) -74px 0px no-repeat;
+    }
+
+        #PageTeamsContent .PageTCL03:hover {
+            background: url(../_img/Teams/PageTeamsLinkBtn.png) -74px -37px no-repeat;
+        }
+
+.PageTeamsCInfo {
+    width: 370px;
+    height: 140px;
+    display: block;
+    float: left;
+    font-size: 13px;
+    font-family: 微軟正黑體;
+    color: #535353;
+    line-height: 23px;
+    letter-spacing: 1px;
+    margin: 19px 0 0 25px;
+    overflow: hidden;
+}
+
+.PageTeamsCIntroArea {
+    width: 486px;
+    height: 21px;
+    display: block;
+    float: left;
+    margin: 33px 0 0 18px;
+    font-size: 16px;
+    font-family: 微軟正黑體;
+    font-weight: bold;
+    color: #005982;
+    letter-spacing: 1.5px;
+}
+
+.PageTeamsCIName {
+    width: auto;
+    height: 16px;
+    display: block;
+    float: left;
+    margin: 0 18px 0 0;
+}
+
+.PageTeamsCIYear {
+    width: auto;
+    height: 16px;
+    display: block;
+    float: left;
+    margin: 0 21px 0 0;
+}
+
+.PageTeamsCICountry {
+    width: auto;
+    height: 16px;
+    display: block;
+    float: left;
+    margin: 0;
+}
+
+.PageTeamsCMoreBtn {
+    width: 91px;
+    height: 30px;
+    display: block;
+    float: left;
+    border: 0px #000 none;
+    background: url(../_img/layout/BitemBtn.png) -245px 0px no-repeat;
+    margin: 26px 0 0 4px;
+    cursor: pointer;
+}
+
+    .PageTeamsCMoreBtn:hover {
+        background: url(../_img/layout/BitemBtn.png) -245px -30px no-repeat;
+    }
+
+/*戰隊選手介紹頁*/
+.PageTMSABG {
+    position: absolute;
+    top: 86px;
+    width: 1024px;
+    height: 295px;
+    display: block;
+    float: left;
+    background: url(../_img/Teams/PageTMSABG.png) top center no-repeat;
+    margin: 0 auto;
+    z-index: -99;
+}
+
+.PageTeamsMIArea {
+    width: 966px;
+    height: auto;
+    display: block;
+    margin: 0 0 0 26px;
+}
+
+.PageTeamsMITitle {
+    width: 966px;
+    height: 27px;
+    display: block;
+    float: left;
+    background: url(../_img/layout/BitemTitle.png) 0px -297px no-repeat;
+}
+
+/*戰隊選手介紹下拉*/
+.TMSelectArea {
+    position: absolute;
+    width: 160px;
+    height: 34px;
+    display: block;
+    float: left;
+    margin: -5px 0 0 804px;
+}
+
+#TMSelectClass {
+    width: 160px;
+    height: 34px;
+    display: block;
+    float: left;
+    background: url(../_img/Teams/TMSearchBG.png) 0px 0px no-repeat;
+    cursor: pointer;
+}
+
+#TMSMenu li a {
+    width: 160px;
+    height: 56px;
+    display: block;
+    float: left;
+}
+
+#TMSMenu li ul.SubMenu {
+    padding: 0;
+    margin: 0;
+    position: absolute;
+    top: 34px;
+    left: 0;
+    width: 160px;
+    height: auto;
+    z-index: 5;
+    display: none;
+}
+
+    #TMSMenu li ul.SubMenu .submenu01 {
+        width: 160px;
+        height: 56px;
+        background: url(../_img/Teams/SC2TMSelect.png) 0px 0px no-repeat;
+    }
+
+        #TMSMenu li ul.SubMenu .submenu01:hover {
+            background: url(../_img/Teams/SC2TMSelect.png) -160px 0px no-repeat;
+        }
+
+    #TMSMenu li ul.SubMenu .submenu02 {
+        width: 160px;
+        height: 56px;
+        background: url(../_img/Teams/SC2TMSelect.png) 0px -56px no-repeat;
+    }
+
+        #TMSMenu li ul.SubMenu .submenu02:hover {
+            background: url(../_img/Teams/SC2TMSelect.png) -160px -56px no-repeat;
+        }
+
+    #TMSMenu li ul.SubMenu .submenu03 {
+        width: 160px;
+        height: 56px;
+        background: url(../_img/Teams/SC2TMSelect.png) 0px -112px no-repeat;
+    }
+
+        #TMSMenu li ul.SubMenu .submenu03:hover {
+            background: url(../_img/Teams/SC2TMSelect.png) -160px -112px no-repeat;
+        }
+
+
+/*--end--*/
+
+.PageTeamsMIContent {
+    width: 966px;
+    height: auto;
+    display: block;
+    float: left;
+    border-top: 1px #517590 solid;
+    margin: 14px 0 0 0;
+}
+
+.PageTemasMICMain {
+    width: 966px;
+    height: 353px;
+    display: block;
+    float: left;
+    border-bottom: 1px #517590 solid;
+}
+
+.PageTMICLeft {
+    width: 342px;
+    height: 353px;
+    display: block;
+    float: left;
+}
+
+.PageTMICRight {
+    width: 620px;
+    height: 353px;
+    display: block;
+    float: left;
+}
+
+.PageTMICPic {
+    width: 344px;
+    height: 337px;
+    display: block;
+    float: left;
+    margin: 16px 0 0 0;
+    z-index: 99;
+}
+
+    .PageTMICPic img {
+        width: 344px;
+        height: 337px;
+    }
+
+.PageTMICRTop {
+    width: 600px;
+    height: 60px;
+    display: block;
+    float: left;
+    border-bottom: 1px #517590 solid;
+    margin: 0 0 0 20px;
+}
+
+.PageTMICRDown {
+    width: 600px;
+    height: 292px;
+    display: block;
+    float: left;
+    margin: 0 0 0 20px;
+}
+
+.PageTMICName {
+    width: 455px;
+    height: 36px;
+    display: block;
+    float: left;
+    font-size: 36px;
+    font-family: 微軟正黑體;
+    font-weight: bold;
+    color: #000;
+    letter-spacing: 1.2px;
+    margin: 20px 0 0 0;
+    overflow: hidden;
+}
+
+.PageTMICLinkBtn {
+    width: 143px;
+    height: 37px;
+    display: block;
+    float: right;
+    margin: 0;
+}
+
+    .PageTMICLinkBtn ul {
+        padding: 0;
+        margin: 15px 0 0 2px;
+    }
+
+        .PageTMICLinkBtn ul li {
+            width: 37px;
+            height: 37px;
+            display: block;
+            float: left;
+            cursor: pointer;
+        }
+
+.PageTCL01 {
+    margin: 0 15px 0 0;
+    background: url(../_img/Teams/PageTeamsLinkBtn.png) 0px 0px no-repeat;
+}
+
+    .PageTCL01:hover {
+        background: url(../_img/Teams/PageTeamsLinkBtn.png) 0px -37px no-repeat;
+    }
+
+.PageTCL02 {
+    margin: 0 15px 0 0;
+    background: url(../_img/Teams/PageTeamsLinkBtn.png) -37px 0px no-repeat;
+}
+
+    .PageTCL02:hover {
+        background: url(../_img/Teams/PageTeamsLinkBtn.png) -37px -37px no-repeat;
+    }
+
+.PageTCL03 {
+    margin: 0;
+    background: url(../_img/Teams/PageTeamsLinkBtn.png) -74px 0px no-repeat;
+}
+
+    .PageTCL03:hover {
+        background: url(../_img/Teams/PageTeamsLinkBtn.png) -74px -37px no-repeat;
+    }
+
+
+/*選手介紹捲軸區*/
+.PageTMICContentArea {
+    position: relative;
+    top: 10px;
+    left: 0px;
+    width: 600px;
+    height: 275px;
+    display: block;
+    float: left;
+    font-size: 13px;
+    font-family: 微軟正黑體;
+    color: #265476;
+    line-height: 20px;
+    letter-spacing: 0.8px;
+}
+
+#content .TM_index {
+    width: 600px;
+    padding: 0;
+    position: relative;
+    top: 0px;
+}
+
+#content .TM {
+    width: 600px;
+    padding: 0px;
+    position: relative;
+}
+
+#content {
+    width: 600px;
+    height: 275px;
+    padding: 0;
+    overflow-y: auto;
+}
+
+ul#TMListBlock {
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+    ul#TMListBlock li {
+        padding: 0;
+        margin: 0;
+        width: 565px;
+        display: block;
+        height: auto;
+    }
+
+.mCustomScrollBox > .mCSB_scrollTools {
+    width: 12px;
+    height: 100%;
+    top: 0;
+    right: 2px;
+    *right: 0; /*ie8*/
+}
+
+.mCSB_scrollTools .mCSB_draggerContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: auto;
+}
+
+.mCustomScrollBox {
+    *width: 600px;
+}
+
+.mCSB_scrollTools .mCSB_dragger {
+    cursor: pointer;
+    width: 100%;
+}
+
+    .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+        background: #00b7ee;
+        width: 9px;
+        height: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+.mCSB_scrollTools .mCSB_draggerRail {
+    background: #535353;
+    width: 12px;
+    height: 100%;
+    margin: 0 auto;
+    *min-height: 270px!important;
+}
+
+.PageTMICCPicArea {
+    width: 966px;
+    height: 174px;
+    display: block;
+    float: left;
+    border-bottom: 1px #517590 solid;
+}
+
+    .PageTMICCPicArea ul {
+        padding: 0;
+        margin: 20px 0 0 -4px;
+    }
+
+        .PageTMICCPicArea ul li {
+            width: 186px;
+            height: 128px;
+            display: block;
+            float: left;
+            margin: 0 4px;
+        }
+
+/*戰隊選手介紹頁 選手相關影片*/
+.PageTMICVideoArea {
+    width: 617px;
+    height: auto;
+    display: block;
+    float: left;
+    margin: 26px 0 0 0;
+}
+
+.PageTMICVTitle {
+    width: 617px;
+    height: 27px;
+    display: block;
+    float: left;
+    background: url(../_img/layout/BitemTitle.png) 0px -324px no-repeat;
+}
+
+.PageTMICVContent {
+    width: 617px;
+    height: 255px;
+    display: block;
+    float: left;
+    margin: 11px 0 0 0;
+    background: url(../_img/Teams/PageTMICVBG.png) top left no-repeat;
+}
+
+.TMICVArea {
+    width: 540px;
+    height: 200px;
+    display: block;
+    float: left;
+    margin: 22px 0 0 38px;
+}
+
+    .TMICVArea ul {
+        padding: 0;
+        margin: 0;
+    }
+
+        .TMICVArea ul li {
+            width: 260px;
+            height: 200px;
+            display: block;
+            float: left;
+            margin: 0px;
+            padding: 0;
+        }
+
+.TMICV01 {
+    width: 260px;
+    height: 200px;
+    display: block;
+    float: left;
+    margin: 0;
+}
+
+.TMICV02 {
+    width: 261px;
+    height: 200px;
+    display: block;
+    float: left;
+    margin: 0 0 0 16px;
+}
+
+.TMICVPic {
+    width: 260px;
+    height: 151px;
+    display: block;
+    float: left;
+    margin: 0;
+}
+
+.TMICVTitle {
+    width: 260px;
+    height: 26px;
+    display: block;
+    float: left;
+    font-size: 13px;
+    font-family: 微軟正黑體;
+    font-weight: bold;
+    color: #000;
+    margin: 6px 0 0 0;
+    letter-spacing: 0.2px;
+}
+
+.TMICVDate {
+    width: 260px;
+    height: 12px;
+    display: block;
+    float: left;
+    font-size: 12px;
+    font-family: Arial;
+    color: #265476;
+    margin: -3px 0 0 0;
+    letter-spacing: 0.5px;
+}
+
+.TMICVLeftBtn {
+    position: absolute;
+    width: 27px;
+    height: 38px;
+    display: block;
+    float: left;
+    border: 0px #fff none;
+    cursor: pointer;
+    margin: 80px 0 0 2px;
+    background: url(../_img/Teams/SelectBtn.png) 0px 0px no-repeat;
+}
+
+    .TMICVLeftBtn:hover {
+        background: url(../_img/Teams/SelectBtn.png) 0px -38px no-repeat;
+    }
+
+.TMICVRightBtn {
+    width: 27px;
+    height: 38px;
+    display: block;
+    float: left;
+    border: 0px #fff none;
+    cursor: pointer;
+    margin: -142px 0 0 588px;
+    background: url(../_img/Teams/SelectBtn.png) -27px 0px no-repeat;
+}
+
+    .TMICVRightBtn:hover {
+        background: url(../_img/Teams/SelectBtn.png) -27px -38px no-repeat;
+    }
+
+
+/*影音-相簿頁*/
+.PageAlbumArea {
+    width: 619px;
+    height: auto;
+    display: block;
+    float: left;
+}
+
+.PageAlbumTitle {
+    width: 619px;
+    height: 27px;
+    display: block;
+    float: left;
+    background: url(../_img/layout/BitemTitle.png) 0px -405px no-repeat;
+}
+
+.PageAlbumContent {
+    width: 619px;
+    height: auto;
+    display: block;
+    float: left;
+}
+
+    .PageAlbumContent ul {
+        padding: 0;
+        margin: 20px 0 0 0;
+    }
+
+        .PageAlbumContent ul li {
+            width: 619px;
+            height: 250px;
+            display: block;
+            float: left;
+            margin: 0 0 22px 0;
+        }
+
+.PageACDate {
+    width: 120px;
+    height: 20px;
+    display: block;
+    float: left;
+    font-size: 20px;
+    font-family: Arial;
+    font-weight: bold;
+    color: #265476;
+    letter-spacing: 1px;
+    margin: -2px 0 0 0;
+}
+
+.PageACLine {
+    width: 497px;
+    height: 20px;
+    display: block;
+    float: left;
+    border-bottom: 1px #517590 solid;
+    margin: -7px 0 0 0;
+}
+
+.PageACTitle {
+    width: 510px;
+    height: 20px;
+    display: block;
+    float: left;
+    font-size: 18px;
+    font-family: 微軟正黑體;
+    font-weight: bold;
+    color: #000;
+    margin: 18px 0 0 0;
+    overflow: hidden;
+    line-height: 20px;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.PageACGameIcon {
+    width: 107px;
+    height: 28px;
+    display: block;
+    float: left;
+}
+
+    .PageACGameIcon ul {
+        padding: 0;
+        margin: 10px 0 0 0;
+    }
+
+        .PageACGameIcon ul li {
+            width: 28px;
+            height: 28px;
+            display: block;
+            float: right;
+            margin: 0 0 0 5px;
+        }
+
+.PageACPicArea {
+    width: 624px;
+    height: 188px;
+    display: block;
+    float: left;
+}
+
+.PagePicB {
+    width: 178px;
+    height: 178px;
+    display: block;
+    float: left;
+    border: 3px #000 solid;
+    margin: 8px 0 0 0;
+}
+
+.PagePicS {
+    width: 424px;
+    height: 188px;
+    display: block;
+    float: left;
+    margin: 7px 0 0 16px;
+}
+
+    .PagePicS ul {
+        padding: 0;
+        margin: 0;
+    }
+
+        .PagePicS ul li {
+            width: 127px;
+            height: 81px;
+            display: block;
+            float: left;
+            border: 3px #000 solid;
+            margin: 1px 6px 10px 2px;
+        }
+
+.PageAlbumMoreBtn {
+    position: absolute;
+    width: 134px;
+    height: 89px;
+    display: block;
+    float: left;
+    border: 0px #fff none;
+    cursor: pointer;
+    background: url(../_img/Media/AlbumMoreBtn.png) 0px 0px no-repeat;
+    margin: 105px 0 0 485px;
+}
+
+/*相簿專區內頁+影片放大頁*/
+.PageAlubmAllArea, .PageVideoAllArea {
+    width: 966px;
+    height: auto;
+    display: block;
+    float: left;
+    margin: 0 0 0 26px;
+    padding: 0 0 8px 0;
+    border-bottom: 1px #517590 solid;
+}
+
+.PageAlbumAllTop, .PageVideoAllTop {
+    width: 966px;
+    height: 33px;
+    display: block;
+    float: left;
+    border-bottom: 1px #517590 solid;
+}
+
+.PageAATitle, .PageVATitle {
+    width: 640px;
+    height: 25px;
+    display: block;
+    float: left;
+    font-size: 25px;
+    font-family: 微軟正黑體;
+    color: #000;
+    letter-spacing: 0.8px;
+    padding: 0 0 0 37px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    background: url(../_img/Media/PageAlbumTitleIcon.png) 0px 0px no-repeat;
+}
+
+.PageAADate, .PageVADate {
+    width: 170px;
+    height: 25px;
+    display: block;
+    float: left;
+    font-size: 16px;
+    font-family: 微軟正黑體;
+    color: #000;
+    letter-spacing: 0.8px;
+    margin: 7px 0 0 28px;
+    font-weight: bold;
+}
+
+.PageAAMoreBtn{
+    width: 91px;
+    height: 30px;
+    display: block;
+    float: left;
+    border: 0px #fff none;
+    cursor: pointer;
+    background: url(../_img/layout/BitemBtn.png) -471px 0px no-repeat;
+    margin: -3px 0 0 0;
+}
+
+    .PageAAMoreBtn:hover {
+        background: url(../_img/layout/BitemBtn.png) -471px -30px no-repeat;
+    }
+
+.PageAAContent {
+    width: 988px;
+    height: auto;
+    display: block;
+    float: left;
+}
+
+    .PageAAContent ul {
+        padding: 0;
+        margin: 16px 0 0 0;
+    }
+
+        .PageAAContent ul li {
+            width: 140px;
+            height: 140px;
+            border: 3px #000 solid;
+            display: block;
+            float: left;
+            margin: 0 18px 18px 0;
+        }
+
+/*影片放大頁*/
+.PageVAContent {
+    width:855px;
+    height:511px;
+    display:block;
+    border:1px #000 solid;
+    margin:54px auto 23px auto;
+}
+.PageVAMoreBtn {
+    width: 91px;
+    height: 30px;
+    display: block;
+    float: left;
+    border: 0px #fff none;
+    cursor: pointer;
+    background: url(../_img/layout/BitemBtn.png) -562px 0px no-repeat;
+    margin: -3px 0 0 0;
+}
+.PageVAMoreBtn:hover {
+    background: url(../_img/layout/BitemBtn.png) -562px -30px no-repeat;
+}
+
+/*相簿內頁放大*/
+.PageAlubmDisplayArea {
+    position: relative;
+    width: 810px;
+    height: 579px;
+    display: block;
+    float: left;
+    margin: 16px 0 0 90px;
+}
+
+.PADPic {
+    width: 802px;
+    height: 530px;
+    display: block;
+    border: 4px #FFF solid;
+    border-radius: 5px;
+    margin: 0 auto;
+}
+
+    .PADPic img {
+        width: 802px;
+        height: 530px;
+    }
+.PADPTitle {
+    width:300px;
+    height:20px;
+    display:block;
+    font-size:14px;
+    font-family:微軟正黑體;
+    color:#030000;
+    font-weight:bold;
+    letter-spacing:0.7px;
+    margin:9px 0 0 7px;
+}
+.PADPNum {
+    width:300px;
+    height:20px;
+    display:block;
+    font-size:12px;
+    font-family:微軟正黑體;
+    color:#030000;
+    font-weight:bold;
+    letter-spacing:0.7px;
+    margin:0 0 0 6px;
+}
+.PADPLeftBtn {
+    position:absolute;
+    width:31px;
+    height:46px;
+    display:block;
+    border:0px #fff none;
+    cursor:pointer;
+    background:url(../_img/Media/AlbumBtn.png) 0px 0px no-repeat;
+    margin:255px 0 0 14px;
+}
+.PADPRightBtn {
+    position:absolute;
+    width:31px;
+    height:46px;
+    display:block;
+    border:0px #fff none;
+    cursor:pointer;
+    background:url(../_img/Media/AlbumBtn.png) -31px 0px no-repeat;
+    margin:255px 0 0 765px;
+}
+.PADPCloseBtn {
+    position:absolute;
+    width:25px;
+    height:25px;
+    display:block;
+    border:0px #fff none;
+    cursor:pointer;
+    background:url(../_img/Media/AlbumBtn.png) -62px 0px no-repeat;
+    margin:547px 0 0 781px;
+}
+
+/*影音-影片頁*/
+.PageVideoArea {
+    width:619px;
+    height:auto;
+    display:block;
+    float:left;
+}
+.PageVideoTitle {
+    width: 619px;
+    height: 27px;
+    display: block;
+    float: left;
+    background: url(../_img/layout/BitemTitle.png) 0px -432px no-repeat;
+}
+.PageVideoContent {
+    width:650px;
+    height:auto;
+    display:block;
+    float:left;
+}
+    .PageVideoContent ul {
+        padding:0;
+        margin:9px 0 0 0;
+    }
+        .PageVideoContent ul li {
+            width:295px;
+            height:233px;
+            display:block;
+            float:left;
+            margin:0 29px 17px 0;
+        }
+.PageVideoCPic {
+    width:294px;
+    height:158px;
+    display:block;
+    float:left;
+}
+.PageVideoCDate {
+    width:180px;
+    height:15px;
+    display:block;
+    float:left;
+    font-size:13px;
+    font-family:Arial;
+    color:#265476;
+    letter-spacing:0.85px;
+    margin:14px 0 0 0;
+}
+.PageVideoCGameIcon {
+    width:100px;
+    height:28px;
+    display:block;
+    float:right;
+}
+    .PageVideoCGameIcon ul.PageVCGI {
+        padding:0;
+        margin:5px 0 0 0;
+    }
+        .PageVideoCGameIcon ul.PageVCGI li {
+            width:28px;
+            height:28px;
+            display:block;
+            float:right;
+            margin:0 0 0 5px;
+        }
+.PageVideoCTxt {
+    width:295px;
+    height:38px;
+    display:block;
+    float:left;
+    font-size:14px;
+    font-family:微軟正黑體;
+    font-weight:bold;
+    color:#000;
+    line-height:20px;
+    margin:10px 0 0 0;
+    overflow:hidden;
+}
+
+/*關於頁*/
+.AboutArea {
+    width:966px;
+    height:auto;
+    display:block;
+    float:left;
+    margin:-20px 0 0 26px;
+}
+.AboutMainBtnArea {
+    position:absolute;
+    width:150px;
+    height:auto;
+    display:block;
+    float:left;
+    margin:91px 0 0 776px;
+}
+.AboutMB01 {
+    width:150px;
+    height:35px;
+    display:block;
+    float:left;
+    border:0px #fff none;
+    cursor:pointer;
+    background:url(../_img/About/AboutMainBtn.png) 0px 0px no-repeat;
+}
+.AboutMB01:hover {
+    background:url(../_img/About/AboutMainBtn.png) 0px -35px no-repeat;
+}
+.AboutMB02 {
+    width:150px;
+    height:35px;
+    display:block;
+    float:left;
+    border:0px #fff none;
+    cursor:pointer;
+    margin:14px 0 0 0;
+    background:url(../_img/About/AboutMainBtn.png) -150px 0px no-repeat;
+}
+.AboutMB02:hover {
+    background:url(../_img/About/AboutMainBtn.png) -150px -35px no-repeat;
+}
+.AboutMB03 {
+    width:150px;
+    height:35px;
+    display:block;
+    float:left;
+    border:0px #fff none;
+    cursor:pointer;
+    margin:14px 0 0 0;
+    background:url(../_img/About/AboutMainBtn.png) -300px 0px no-repeat;
+}
+.AboutMB03:hover {
+    background:url(../_img/About/AboutMainBtn.png) -300px -35px no-repeat;
+}
+.AboutMB04 {
+    width:150px;
+    height:35px;
+    display:block;
+    float:left;
+    border:0px #fff none;
+    cursor:pointer;
+    margin:14px 0 0 0;
+    background:url(../_img/About/AboutMainBtn.png) -450px 0px no-repeat;
+}
+.AboutMB04:hover {
+    background:url(../_img/About/AboutMainBtn.png) -450px -35px no-repeat;
+}
+.AboutMainPic {
+    width:966px;
+    height:327px;
+    display:block;
+    float:left;
+    border-bottom:1px #517590 solid;
+}
+/*yoe FlashWolves*/
+.AboutInfo {
+    width:966px;
+    height:auto;
+    display:block;
+    float:left;
+    margin:21px 0 0 0;
+}
+.AboutInfoTitle {
+    width:966px;
+    display:block;
+    float:left;
+    margin:0 0 16px 0;
+}
+.AboutITtxt {
+    width:204px;
+    height:25px;
+    display:block;
+    float:left;
+    font-size:24px;
+    font-family:Arial;
+    font-weight:bold;
+    color:#265476;
+}
+.AboutITline {
+    width:762px;
+    height:18px;
+    display:block;
+    float:left;
+    border-bottom:1px #517590 solid;
+}
+.AboutInfoContent {
+    width:966px;
+    height:auto;
+    display:block;
+    float:left;
+}
+/*yoe FlashWolves大事件*/
+.AboutEvents {
+    width:966px;
+    height:auto;
+    display:block;
+    float:left;
+    margin:21px 0 0 0;
+}
+.AboutEventsTitle {
+    width:966px;
+    display:block;
+    float:left;
+    margin:0 0 16px 0;
+}
+.AboutETtxt {
+    width:277px;
+    height:25px;
+    display:block;
+    float:left;
+    font-size:24px;
+    font-family:微軟正黑體, Arial;
+    font-weight:bold;
+    color:#265476;
+}
+.AboutETline {
+    width:689px;
+    height:18px;
+    display:block;
+    float:left;
+    border-bottom:1px #517590 solid;
+}
+.AboutEventsContent {
+    width:966px;
+    height:auto;
+    display:block;
+    float:left;
+}
+/*yoe FlashWolves幕後團隊*/
+.AboutBackTeam {
+    width:966px;
+    height:auto;
+    display:block;
+    float:left;
+    margin:21px 0 0 0;
+}
+.AboutBackTeamTitle {
+    width:966px;
+    display:block;
+    float:left;
+    margin:0 0 16px 0;
+}
+.AboutBTTtxt {
+    width:301px;
+    height:25px;
+    display:block;
+    float:left;
+    font-size:24px;
+    font-family:微軟正黑體, Arial;
+    font-weight:bold;
+    color:#265476;
+}
+.AboutBTTline {
+    width:665px;
+    height:18px;
+    display:block;
+    float:left;
+    border-bottom:1px #517590 solid;
+}
+.AboutBackTeamContent {
+    width:966px;
+    height:auto;
+    display:block;
+    float:left;
+}
+    .AboutBackTeamContent ul {
+        padding:0;
+        margin:0 0 0 11px;
+    }
+        .AboutBackTeamContent ul li {
+            width:454px;
+            height:291px;
+            display:block;
+            float:left;
+            margin:0 9px 11px 9px;
+            background:url(../_img/About/AboutBackTeamContentBG.png) top left no-repeat;
+        }
+.AboutBTCLeft {
+    width:200px;
+    height:260px;
+    display:block;
+    float:left;
+    margin:15px 0 0 11px;
+}
+.AboutBTCPic {
+    width:188px;
+    height:188px;
+    display:block;
+    float:left;
+}
+.AboutBTCTitle {
+    width:188px;
+    height:20px;
+    display:block;
+    float:left;
+    font-size:18px;
+    font-family:微軟正黑體;
+    font-weight:bold;
+    color:#265476;
+    letter-spacing:1.4px;
+    margin:15px 0 0 4px;
+    overflow:hidden;
+}
+.AboutBTCName {
+    width:188px;
+    height:24px;
+    display:block;
+    float:left;
+    font-size:22px;
+    font-family:微軟正黑體;
+    font-weight:bold;
+    color:#265476;
+    letter-spacing:1.8px;
+    margin:11px 0 0 4px;
+    overflow:hidden;
+}
+
+.AboutBTCRight {
+    width:225px;
+    height:260px;
+    display:block;
+    float:left;
+    margin:15px 0 0 0;
+}
+.AboutBTCContent {
+    width:225px;
+    height:260px;
+    display:block;
+    float:left;
+    font-size:13.5px;
+    font-family:新細明體, 微軟正黑體;
+    color:#535353;
+    letter-spacing:1px;
+    line-height:24px;
+    overflow:hidden;
+}
+/*聯繫我們*/
+.AboutContact {
+    width:966px;
+    height:auto;
+    display:block;
+    float:left;
+    margin:21px 0 0 0;
+}
+.AboutContactTitle {
+    width:966px;
+    display:block;
+    float:left;
+    margin:0 0 16px 0;
+}
+.AboutCTtxt {
+    width:301px;
+    height:25px;
+    display:block;
+    float:left;
+    font-size:24px;
+    font-family:微軟正黑體, Arial;
+    font-weight:bold;
+    color:#265476;
+}
+.AboutContactContent {
+    width:966px;
+    height:auto;
+    display:block;
+    float:left;
+    font-size:18px;
+    font-family:微軟正黑體;
+    color:#000;
+    letter-spacing:0.8px;
+}
+/*goTop*/
+.goTop {
+    width:34px;
+    height:34px;
+    display:block;
+    position:fixed;
+    right:396px;
+    bottom:70px;
+    cursor:pointer;
+    background:url(../_img/About/topBtn.png) 0px 0px no-repeat;
+}
+
+/*搜尋結果頁*/
+.PageSearchNewsTitle {
+    width: 619px;
+    height: 27px;
+    display: block;
+    float: left;
+    background: url(../_img/layout/BitemTitle.png) 0px -459px no-repeat;
+}
+.PageSearchVideoTitle {
+    width: 619px;
+    height: 27px;
+    display: block;
+    float: left;
+    background: url(../_img/layout/BitemTitle.png) 0px -486px no-repeat;
+}
+.PageSearchAlbumTitle {
+    width: 619px;
+    height: 27px;
+    display: block;
+    float: left;
+    background: url(../_img/layout/BitemTitle.png) 0px -513px no-repeat;
+}

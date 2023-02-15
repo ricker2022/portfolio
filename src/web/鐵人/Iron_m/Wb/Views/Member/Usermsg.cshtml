@@ -1,0 +1,29 @@
+﻿@using Wb.Models;
+@using Wb.Pager;
+@using Wb.Common;
+
+@model PagedList<imsgObj>
+<div  class="sub_navi list_row_title" >
+    <div class="col_8">即時訊息</div>
+    <div class="col_2"><a href="#popupPager" class="function_btn call_pager"><i class="fa fa-sort"></i></a></div>
+    <br clear="all"/>
+</div>
+
+<ul id="news_list" class="reset_ul" >
+@foreach (imsgObj item in Model)
+{    
+    <li >
+        <a href="@Url.RouteUrl("Default", new { controller = "member", action = "msgbox", name = item.target })">
+            <div class="img member">
+                <img alt="" src="@item.targeticon" />
+            </div>
+            <h3 class="has_img">@item.target</h3>
+            <div class="chat_message">@item.content</div>
+            <div class="chat_date">@item.date</div>            
+            
+            
+        </a>
+    </li>
+}
+
+</ul>

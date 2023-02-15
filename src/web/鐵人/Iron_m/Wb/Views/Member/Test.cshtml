@@ -1,0 +1,25 @@
+﻿@using Wb.Models;
+@using Wb.Common;
+@{
+    Userinfo userinfo = (Userinfo)Session["mobile_userinfo"];
+}
+
+        <input type="hidden" id="nickname" value="@userinfo.nickname" />
+        <div id="chatlog"></div>
+        <div id="onlineusers"><b>online user</b></div>
+        <input type="text" id="message" />
+        <input type="button" id="btnsend" value="Send" />
+        <select id="users">
+            <option value="All">All</option>
+            <option value="老皮超正">老皮超正</option>
+        </select>
+        <input type="hidden" id="displayname" />
+        <ul id="discussion">
+        </ul>
+
+
+        <div id="dialog" title="Enter your nick name to start chat">
+            <input type="text" id="nick" />
+        </div>
+
+    

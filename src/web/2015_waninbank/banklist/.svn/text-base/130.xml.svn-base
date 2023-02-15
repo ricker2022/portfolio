@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bank>
+	<branch num="" name="請選擇分行.."/>
+   <branch num="0013" name="新竹第一信用合作社營業部"/>
+   <branch num="0022" name="新竹第一信用合作社城中分社"/>
+	<branch num="0031" name="新竹第一信用合作社武昌分社"/>
+	<branch num="0040" name="新竹第一信用合作社城東分社"/>
+	<branch num="0068" name="新竹第一信用合作社三民分社"/>
+	<branch num="0077" name="新竹第一信用合作社香山分社"/>
+	<branch num="0086" name="新竹第一信用合作社東南分社"/>
+	<branch num="0095" name="新竹第一信用合作社光復分社"/>
+	<branch num="0101" name="新竹第一信用合作社南寮分社"/>
+	<branch num="0110" name="新竹第一信用合作社南香山分社"/>
+	<branch num="0129" name="新竹第一信用合作社武陵分社"/>
+	<branch num="0138" name="新竹第一信用合作社延平分社"/>
+</bank>
+

@@ -1,0 +1,128 @@
+﻿body {background: url('../_img/topBG.jpg') top center no-repeat #400018;}
+div {display: block;}
+ul, li {padding: 0; margin: 0;}
+li {list-style: none;}
+.wrap {width: 100%; max-width: 1200px; height: 100%; min-height: 1200px; background: url('../_img/topMain.jpg') top center no-repeat; margin: 0 auto; background-size: contain; padding-bottom: 2%; display: table;}
+.menuBtn {width: 12.0833333333333%; height: auto; margin: 2% 0 0 79.7%; cursor: pointer;}
+.playnowBtn {margin-top: 14%;}
+.fbBtn {margin-top: 1.5%;}
+.BtnShadow {box-shadow:3px 3px 20px #000; border-radius:12px;}
+.titleSet {margin-top: 2.5%; margin-bottom: 2%;}
+.titleSet_gc {margin-top: 7%; margin-bottom: 2%;}
+.carousel-inner > .item > img, .carousel-inner > .item > a > img {width: 100%; margin: auto;}
+.carousel-indicators {bottom:-50px;}
+.carousel-indicators li {width: 25px; height:25px; border-radius:13px; background:#b99000; border:3px #400018 solid; margin:0 5px;}
+.carousel-indicators .active {width: 25px; height:25px; border-radius:13px; background:#6b0a26; border:5px #b99000 solid; margin:0 5px;}
+.carousel-control {opacity:1; filter: alpha(opacity=100);}
+#prev {display:block;background:url('../_img/arrowLeft_nor.png') top left no-repeat; width:10%; height:auto; max-height:119px; background-size:contain; top:50%;margin-top:-8%;}
+#prev:hover {background:url('../_img/arrowLeft_hover.png') top left no-repeat;width:10%; height:auto; max-height:119px; background-size:contain;}
+#next {float:right;display:block;background:url('../_img/arrowRight_nor.png') top left no-repeat; width:10%; height:auto; max-height:119px; background-size:contain; top:50%;margin-top:-8%;}
+#next:hover {background:url('../_img/arrowRight_hover.png') top left no-repeat;width:10%; height:auto; max-height:119px; background-size:contain;}
+#CasionGames {clear:both; width:66.9%; margin:0 auto; display:table;}
+#CasionGames li {margin-bottom:1.2%;}
+.new, .hot {position:absolute; width:46%; margin:4.6% 0 0 -1%;}
+.footer {clear:both; background:#313131; height:auto;}
+#footerArea {width:100%; max-width:1200px; margin:0 auto; display:table;}
+.footerBtnArea {width:66.9%;margin:0 auto;display:table;}
+.footerBtnArea li {margin-top:4%; margin-bottom:1%;}
+.coLogo {width:23.4166667%;margin:2% auto;}
+.coCopyright {width:66.9%; color:#7a7a7a; font-family:Arial; font-size:2.4rem; margin:0 auto 10% auto; text-align:center;}
+
+/*logo特效*/
+@-webkit-keyframes LOGOimg {
+    0% {
+        background: url(../_img/logo1.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: top center;
+    }
+
+    25% {
+        background: url(../_img/logo2.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: top center;
+    }
+
+    50% {
+        background: url(../_img/logo3.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: top center;
+    }
+
+    75% {
+        background: url(../_img/logo4.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: top center;
+    }
+
+    100% {
+        background: url(../_img/logo5.png);
+        background-size: contain;
+        background-repeat: no-repeat;
+        background-position: top center;
+    }
+}
+
+#logoArea {
+    -webkit-animation-name: LOGOimg;
+    -webkit-animation-duration: 3s;
+    -webkit-animation-iteration-count: infinite;
+    -webkit-animation-direction: normal;
+    -webkit-animation-timing-function: linear;
+    -webkit-animation-delay: 2s;
+    animation-name: LOGOimg;
+    animation-duration: 5s;
+    animation-iteration-count: infinite;
+    animation-direction: normal;
+    animation-timing-function: linear;
+    animation-delay: 2s;
+    width: 55.5%;
+    display: block;
+    margin: -9.5% 0 0 22.2%;
+    background: url(../_img/logo1.png) top center no-repeat;
+    background-size: contain;
+}
+
+
+
+/* 大螢幕 */
+@Media (min-width: 1200px) {
+}
+
+/* 平板電腦、橫向手機和一般桌機解析度 */
+@Media (min-width: 768px) and (max-width: 979px) {
+    .BtnShadow {box-shadow:3px 3px 16px #000; border-radius:10px;}
+    .carousel-indicators {bottom:-17%;bottom:-50px;}
+    .carousel-indicators li {width: 23px; height:23px; border-radius:13px; background:#b99000; border:1px #400018 solid; margin:0 3px;}
+    .carousel-indicators .active {width: 23px; height:23px; border-radius:13px; background:#6b0a26; border:3px #b99000 solid; margin:0 3px;}
+    .titleSet_gc {margin-top: 8%;}
+    #CasionGames, .footerBtnArea, .coCopyright {width:83.5%;}
+    .coCopyright {font-size: 2rem;}
+}
+
+/* 橫向智慧手機到竪立平板電腦解析度 */
+@Media (max-width: 767px) {
+    .BtnShadow {box-shadow:2px 2px 12px #000; border-radius:8px;}
+    .carousel-indicators {bottom:-50px;}
+    .carousel-indicators li {width: 23px; height:23px; border-radius:13px; background:#b99000; border:1px #400018 solid; margin:0 3px;}
+    .carousel-indicators .active {width: 23px; height:23px; border-radius:13px; background:#6b0a26; border:3px #b99000 solid; margin:0 3px;}
+    .titleSet_gc {margin-top: 10%;}
+    #CasionGames, .footerBtnArea, .coCopyright {width:99.5%;}
+    .coCopyright {font-size: 1.7rem;}
+}
+
+/* 橫向智慧手機及其他更小解析度 */
+@Media (max-width: 480px) {
+    .wrap {min-height:1px;}
+    .BtnShadow {box-shadow:1px 1px 3px #000; border-radius:4px;}
+    .carousel-indicators {bottom:-37px;}
+    .carousel-indicators li {width: 14px; height:14px; border-radius:13px; background:#b99000; border:1px #400018 solid; margin:0 2px;}
+    .carousel-indicators .active {width: 14px; height:14px; border-radius:13px; background:#6b0a26; border:3px #b99000 solid; margin:0 2px;}
+    .titleSet_gc {margin-top: 10%;}
+    #CasionGames, .footerBtnArea, .coCopyright {width:95%;}
+    .col-lg-4, .col-md-6, .col-sm-6, .col-xs-6 {padding-right:6px;padding-left:6px;}
+    .coCopyright {font-size: 1.07rem;}
+}

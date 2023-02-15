@@ -1,0 +1,73 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeBehind="Site.master.cs" Inherits="ENmobile.SiteMaster" %>
+
+<!DOCTYPE html>
+
+<html lang="zh">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title><%: Page.Title %></title>
+
+    <asp:PlaceHolder runat="server">
+        <%: Scripts.Render("~/bundles/modernizr") %>
+        <%:Scripts.Render("~/Scripts/jquery") %>
+    </asp:PlaceHolder>
+
+    <webopt:bundlereference runat="server" path="~/Content/css" />
+    <link href="Content/_img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <link href="Content/bootstrap.min.css" rel="stylesheet" />
+    <link href="Content/_css/main.css" rel="stylesheet" />
+
+    <script>
+        $(document).ready(function () {
+            $("#myCarousel").swiperight(function () {
+                $(this).carousel('prev');
+            });
+            $("#myCarousel").swipeleft(function () {
+                $(this).carousel('next');
+            });
+        });
+</script>
+
+</head>
+<body>
+    <div class="wrap">
+        <%--topArea--%>
+        <div class="container-fluid">
+            <img class="menuBtn" src="Content/_img/menuBtn.png" />
+            <a id="logoArea" href="Default.aspx">
+                <img class="img-responsive" src="Content/_img/logobg.gif" /></a>
+            <div class="col-lg-offset-2 col-lg-8 col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10 col-xs-12 playnowBtn">
+                <a href="javascript:void(0);">
+                    <img class="img-responsive BtnShadow" src="Content/_img/playnowBtn.png" />
+                </a>
+            </div>
+            <div class="col-lg-offset-2 col-lg-8 col-md-offset-2 col-md-8 col-sm-offset-1 col-sm-10 col-xs-12 fbBtn">
+                <a href="https://www.facebook.com/Lucky-Table-US-1102692443107924/" target="_blank">
+                    <img class="img-responsive BtnShadow" src="Content/_img/fbBtn.png" />
+                </a>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            <asp:ContentPlaceHolder ID="MainContent" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div id="footerArea">
+            <div class="container-fluid">
+                <ul class="footerBtnArea">
+                    <li class="col-lg-4 col-md-4 col-sm-4 col-xs-4"><a href="javascript:void(0);"><img class="img-responsive" src="Content/_img/coBtn1.png" /></a></li>
+                    <li class="col-lg-4 col-md-4 col-sm-4 col-xs-4"><a href="http://www.wanin.tw/provision.aspx?l=en&p=2" target="_blank"><img class="img-responsive" src="Content/_img/coBtn2.png" /></a></li>
+                    <li class="col-lg-4 col-md-4 col-sm-4 col-xs-4"><a href="http://www.wanin.tw/provision.aspx?l=en&p=1" target="_blank"><img class="img-responsive" src="Content/_img/coBtn3.png" /></a></li>
+                </ul>
+                <div class="coLogo"><img class="img-responsive" src="Content/_img/coLogo.png" /></div>
+                <div class="coCopyright">Copyright © 2016 Wanin International Inc, All rights reserved</div>
+            </div>
+        </div>
+    </footer>
+</body>
+</html>

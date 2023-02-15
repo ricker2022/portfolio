@@ -1,0 +1,153 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <script src="JS/jquery.mobile-1.1.1.css"></script>
+    <script src="JS/jquery.mobile-1.1.1.js"></script>
+    <script src="JS/jquery-1.10.2.js"></script>
+    <script src="JS/wanin.js"></script>
+    <script src="JS/jquery.lazyload.js"></script>
+    <link href="JS/wanin.css" rel="stylesheet" type="text/css" />
+    <script>
+        $(function () {
+
+            $('img').lazyload();
+            $(window).resize(function () {
+                if ($(window).height() > $(window).width()) {
+                    $('.imgBox img').css('height', '50%');
+                } else {
+                    $('.imgBox img').css('height', '100%');
+                }
+                $('.imgBox img').css('width', '100%');
+            })
+            var tAgent = navigator.userAgent;
+            if (tAgent.indexOf("Opera") != -1) {
+                $('a').each(function () {
+                    if (($(this).attr("id") == "") && ($(this).attr("href").indexOf("tel:") != -1)) {
+                        $(this).removeAttr("href");
+                    }
+                });
+            }
+
+            var contentH = $(window).height() - 63 - 94 - 50;
+            $('.content').css('min-height', contentH);
+        });
+    </script>
+    <style>
+        .imgBox img {
+            height: 50%;
+            width: 50%;
+        }
+         .ui-block-a {
+            background: url('img/topmenuBg.jpg') repeat-x top left;
+            height: 47px;
+        }
+
+            .ui-block-a a {
+                display: inline-block;
+                float: left;
+                line-height: 47px;
+                width: 33.3%;
+                text-align: center;
+                text-decoration: none;
+                color: #fff;
+                font-size: 20px;
+            }
+
+        .content ul.blue li {
+            background: url(img/about_01.jpg) 0px 0px no-repeat;
+            padding: 30px;
+        }
+
+        .arrowLi {
+            background: url(img/about_01.jpg) 0px 0px no-repeat;
+            padding-left: 37px;
+        }
+
+        .history span {
+            color: #00b0ff;
+        }
+    </style>
+</head>
+<body>
+    <!-- Home -->
+    <div data-role="page" id="page1">
+        <div data-theme="a" data-role="header">
+            <div class="ui-grid-b">
+                <a name="t1" id="a1"></a>
+                <div class="ui-grid-b">
+                    <div class="ui-block-a">
+                        <div>
+                            <a href="molo.html" data-transition="fade">
+                                數位雲端
+                            </a>
+                            <a href="yoe.html" data-transition="fade">
+                                點數加值
+                            </a>
+                            <a href="game.html" data-transition="fade">
+                                遊戲娛樂
+                            </a>
+                        </div>
+                    </div>
+                    <div class="ui-block-a">
+                        <div>
+                            <a href="FlashWolves.html" data-transition="fade">
+                                職業電競
+                            </a>
+                            <a href="mgame.html" data-transition="fade">
+                                手機遊戲
+                            </a>
+                            <a href="forum.html" data-transition="fade">
+                                遊戲論壇
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-role="content" style="background:url('img/關於網銀底.png') repeat top left;padding:10px;">
+            <ul class="content" id="t1" style="height:100%">
+                <li id="tab1" style="width:100%;word-wrap: break-word;word-break: normal; line-height:40px">
+                    <ul class="imgBox">
+                        <li><img src="../image/bookImg/01/01.jpg" /></li>
+                        <li><img src="" data-original="../image/bookImg/01/02.jpg" /></li>
+                        <li><img src="" data-original="../image/bookImg/01/03.jpg" /></li>
+                        <li><img src="" data-original="../image/bookImg/01/04.jpg" /></li>
+                        <li><img src="" data-original="../image/bookImg/01/05.jpg" /></li>
+                        <li><img src="" data-original="../image/bookImg/01/06.jpg" /></li>
+                        <li><img src="" data-original="../image/bookImg/01/07.jpg" /></li>
+                        <li><img src="" data-original="../image/bookImg/01/08.jpg" /></li>
+                        <li><img src="" data-original="../image/bookImg/01/09.jpg" /></li>
+                        <li><img src="" data-original="../image/bookImg/01/10.jpg" /></li>
+                        <li><img src="" data-original="../image/bookImg/01/11.jpg" /></li>
+                        <li><img src="" data-original="../image/bookImg/01/12.jpg" /></li>
+                        <li><img src="" data-original="../image/bookImg/01/13.jpg" /></li>
+                        <li><img src="" data-original="../image/bookImg/01/14.jpg" /></li>
+                        <li><img src="" data-original="../image/bookImg/01/15.jpg" /></li>
+                        <li><img src="" data-original="../image/bookImg/01/16.jpg" /></li>
+                        <li><img src="" data-original="../image/bookImg/01/17.jpg" /></li>
+                        <li><img src="" data-original="../image/bookImg/01/18.jpg" /></li>
+                        <li><img src="" data-original="../image/bookImg/01/19.jpg" /></li>
+                    </ul>
+                </li>
+                <li style="position:relative">
+                    <a href="#a1"><img src="img/about_03.jpg" width="69" /></a>
+                </li>
+            </ul>
+        </div>
+        <div data-theme="a" data-role="footer" data-position="fixed" class="footer" style="clear:both">
+            <!--<img src="img/footerL.png" style="float:left;" />-->
+            <a href="about.html" data-transition="fade" class="footerAbout"></a>
+            <a href="index.html" data-transition="fade" class="footerHome"></a>
+        </div>
+    </div>
+    <script>
+        $(function () {
+            //alert($(window).width());
+            $('.imgBox img').css('width', $(window).width() - 50);
+        });
+    </script>
+</body>
+</html>

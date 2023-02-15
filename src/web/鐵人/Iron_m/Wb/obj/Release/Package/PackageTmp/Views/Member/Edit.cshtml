@@ -1,0 +1,113 @@
+﻿@using Wb.Models;
+@using Wb.Common;
+@model 會員
+<script>
+    
+    function trim(strvalue) {
+        ptntrim = /(^\s*)|(\s*$)/g;
+        return strvalue.replace(ptntrim, "");
+    }
+
+    function ValidEmail(emailtoCheck) {
+        emailRule = "/^\w+((-\w+)|(\.\w+))*\@@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z]+$/";
+
+        var regExp = /^[^@@^\s]+@@[^\.@@^\s]+(\.[^\.@@^\s]+)+$/;
+        if (emailtoCheck.match(regExp))
+            return true;
+        else
+            return false;
+    }
+
+    function CheckField() {
+        is_valid = true;
+
+        if (trim($('#nickname').val()).length == 0) {
+            $('#nickname_msg').html('請輸入暱稱');
+            $('#nickname').focus();
+            is_valid = false;
+            return;
+        }
+        else {
+            $('#nickname_msg').html('');
+        }
+
+
+        if (trim($('#birthday').val()).length == 0) {
+            $('#birthday_msg').html('請輸入生日');
+            $('#birthday').focus();
+            is_valid = false;
+            return;
+        }
+        else {
+            $('#birthday_msg').html('');
+        }
+
+        if (trim($('#email').val()).length == 0) {          
+            $('#email_msg').html('請輸入E-mail');
+            $('#email').focus();
+            is_valid = false;
+            return;
+        }
+        else if (!ValidEmail($('#email').val())) {
+            $('#email_msg').html('E-mail格式錯誤');
+            $('#email').focus();
+            is_valid = false;
+            return;
+        }
+        else {
+            $('#email_msg').html('');
+        }
+
+
+        if (is_valid) {
+            $('#birthday').attr('disabled', false);
+            $('#member_form').submit();
+        }
+    }
+</script>
+
+
+<div  class="sub_navi" data-role="none">
+    <div class="col_1"><a href="javascript:window.history.back()" class="back_btn"><i class="fa fa-arrow-left"></i></a></div>
+    <div class="col_9 category_title" >會員資料</div>
+    <br clear="all"/>
+</div>
+<form action="@Url.RouteUrl("Default", new { action = "Edit"})" id="member_form" method="post">
+    
+    <div id="member_name">
+        <input type="text" id="nickname" name="nickname" placeholder="請輸入會員暱稱" value="@Model.暱稱" maxlength="10"/>   
+        <div id="nickname_msg" class="error_message">@ViewBag.nickname_msg</div>
+    </div>
+
+
+    <table  id="member_info_table" cellpadding="0" cellspacing="0" >
+        <tbody>
+
+            <tr>
+                <td>生日</td>
+                <td >
+                    <input name="birthday" id="birthday" type="text" disabled="disabled" value="@Model.生日">
+                    <a href="#" id="calendar_icon"><i class="fa fa-calendar"></i></a>  
+                    <div id="birthday_msg" class="error_message"></div>
+                </td>
+            </tr>
+            <tr style="display:none">
+                <td colspan="2"><div id="datepicker" ></div></td>
+            </tr>
+
+
+            <tr>
+                <td >E-mail</td>
+                <td>
+                    <input name="email" id="email" type="text" value="@Model.電子信箱" placeholder="請輸入E-mail"/>
+                    <div id="email_msg" class="error_message"></div>
+                </td>
+            </tr>
+                  
+        </tbody>
+    </table>
+    <a href="javascript: CheckField();" rel="external" class="reply_btn"  >送出</a>
+</form>
+
+
+

@@ -1,0 +1,23 @@
+﻿@using Wb.Models;
+@{
+    Userinfo userinfo = M_Member.myProfile;
+ }
+
+  <div id="header">
+    <a href="@Url.RouteUrl("default", new { controller="home",action="index"})"  id="home_btn" >
+      	<i class="fa fa-home fa-2x"></i>
+    </a>
+    <div id="logo"><img src="@Url.Content("~/templates/default/images/logo.png")"/></div>
+
+    <!--登入前-->   
+    @if (userinfo == null || string.IsNullOrEmpty(userinfo.molokey))
+    {
+    <a href="@Url.RouteUrl("default", new { action = "Login"})"    ><i class="fa fa-user fa-2x"></i></a>
+	}
+
+    <!--登入後-->
+    @if (userinfo != null && !string.IsNullOrEmpty(userinfo.molokey))
+    {
+    <a href="#"  id="member_btn" ><i class="fa fa-bars fa-2x"></i></a>
+    }	
+</div>

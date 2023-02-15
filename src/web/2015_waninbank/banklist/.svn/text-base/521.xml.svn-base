@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bank>
+	<branch num="" name="請選擇分行.."/>
+	   <branch num="0024" name="興達漁本會"/>
+	   <branch num="0035" name="興達漁下茄"/>
+	   <branch num="0068" name="林漁本會"/>
+	   <branch num="0079" name="彌漁本會"/>
+	   <branch num="0091" name="永漁本會"/>
+	   <branch num="0105" name="彌漁舊港"/>
+	   <branch num="0149" name="彌漁南寮"/>
+</bank>

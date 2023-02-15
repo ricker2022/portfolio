@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bank>
+	<branch num="" name="請選擇分行.."/>
+	<branch num="0015" name="有限責任金門縣信用合作社營業部"/>
+	<branch num="0024" name="有限責任金門縣信用合作社金沙分社"/>
+	<branch num="0033" name="有限責任金門縣信用合作社金湖分社"/>
+	<branch num="0042" name="有限責任金門縣信用合作社列嶼分社"/>
+</bank>
+

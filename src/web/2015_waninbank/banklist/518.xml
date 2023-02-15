@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bank>
+	<branch num="" name="請選擇分行.."/>
+	   <branch num="0017" name="南縣漁本會"/>
+	   <branch num="0028" name="南縣漁七股"/>
+	   <branch num="0039" name="南縣漁北門"/>
+	   <branch num="0040" name="南縣漁將軍"/>
+	   <branch num="0051" name="南縣漁青山"/>
+	   <branch num="0073" name="南縣漁永吉"/>
+</bank>

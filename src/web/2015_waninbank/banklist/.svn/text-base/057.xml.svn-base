@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bank>
+	<branch num="" name="請選擇分行.."/>
+   <branch num="0013" name="台東區中小企業銀行台東分行"/>
+	<branch num="0024" name="台東區中小企業銀行營業部"/>
+	<branch num="0035" name="台東區中小企業銀行新港分行"/>
+	<branch num="0046" name="台東區中小企業銀行關山分行"/>
+	<branch num="0057" name="台東區中小企業銀行池上分行"/>
+	<branch num="0079" name="台東區中小企業銀行大武分行"/>
+	<branch num="0080" name="台東區中小企業銀行卑南分行"/>
+	<branch num="0116" name="台東區中小企業銀行鳳山分行"/>
+   <branch num="0127" name="台東區中小企業銀行屏東分行"/>
+   <branch num="0138" name="台東區中小企業銀行信託部"/>
+	<branch num="0149" name="台東區中小企業銀行大發分行"/>
+	<branch num="0150" name="台東區中小企業銀行萬丹簡易型分行"/>
+	<branch num="0161" name="台東區中小企業銀行橋頭分行"/>
+	<branch num="0172" name="台東區中小企業銀行林園分行"/>
+	<branch num="0183" name="台東區中小企業銀行內埔簡易型分行"/>
+	<branch num="0194" name="台東區中小企業銀行台北分行"/>
+	<branch num="0208" name="台東區中小企業銀行五甲分行"/>
+	<branch num="0219" name="台東區中小企業銀行板橋分行"/>
+	<branch num="0220" name="台東區中小企業銀行烏松分行"/>
+	<branch num="0231" name="台東區中小企業銀行大社分行"/>
+	<branch num="0242" name="台東區中小企業銀行大樹簡易型分行"/>
+	<branch num="0253" name="台東區中小企業銀行路竹分行"/>
+	<branch num="0264" name="台東區中小企業銀行信義分行"/>
+	<branch num="0275" name="台東區中小企業銀行燕巢簡易型分行"/>
+	<branch num="0286" name="台東區中小企業銀行岡山簡易型分行"/>
+	<branch num="0297" name="台東區中小企業銀行東港簡易型分行"/>
+	<branch num="0301" name="台東區中小企業銀行屏東簡易型分行"/>
+	<branch num="0312" name="台東區中小企業銀行仁武簡易型分行"/>
+	<branch num="1261" name="台東區中小企業銀行知本分行"/>
+	<branch num="1272" name="台東區中小企業銀行太麻里分行"/>
+	<branch num="1283" name="台東區中小企業銀行鹿野分行"/>
+</bank>
+

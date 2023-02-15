@@ -1,0 +1,898 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="MainDBModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="MainDBModelStoreContainer">
+    <EntitySet Name="form_item" EntityType="MainDBModel.Store.form_item" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="form_setting" EntityType="MainDBModel.Store.form_setting" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="html_page" EntityType="MainDBModel.Store.html_page" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="index_promotion" EntityType="MainDBModel.Store.index_promotion" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="index_setting" EntityType="MainDBModel.Store.index_setting" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="index_web_menu" EntityType="MainDBModel.Store.index_web_menu" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="member" EntityType="MainDBModel.Store.member" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="module" EntityType="MainDBModel.Store.module" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="module_action" EntityType="MainDBModel.Store.module_action" store:Type="Tables" store:Schema="dbo" store:Name="module_action">
+      <DefiningQuery>SELECT 
+      [module_action].[sn] AS [sn], 
+      [module_action].[module_sn] AS [module_sn], 
+      [module_action].[title] AS [title], 
+      [module_action].[action] AS [action], 
+      [module_action].[update_date] AS [update_date]
+      FROM [dbo].[module_action] AS [module_action]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="sys_config" EntityType="MainDBModel.Store.sys_config" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="templates" EntityType="MainDBModel.Store.templates" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="web_admin" EntityType="MainDBModel.Store.web_admin" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="web_admin_belong_group" EntityType="MainDBModel.Store.web_admin_belong_group" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="web_admin_group" EntityType="MainDBModel.Store.web_admin_group" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="web_admin_group_admin" EntityType="MainDBModel.Store.web_admin_group_admin" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="web_admin_group_authority" EntityType="MainDBModel.Store.web_admin_group_authority" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="web_backend_log" EntityType="MainDBModel.Store.web_backend_log" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="web_menu" EntityType="MainDBModel.Store.web_menu" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="web_menu_banner" EntityType="MainDBModel.Store.web_menu_banner" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="web_menu_content" EntityType="MainDBModel.Store.web_menu_content" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="website" EntityType="MainDBModel.Store.website" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="website_allow_ip_list" EntityType="MainDBModel.Store.website_allow_ip_list" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="word_language_mapping" EntityType="MainDBModel.Store.word_language_mapping" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="word_mapping" EntityType="MainDBModel.Store.word_mapping" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="word_mapping_category" EntityType="MainDBModel.Store.word_mapping_category" store:Type="Tables" Schema="dbo" />
+    <AssociationSet Name="FK_form_item_web_menu" Association="MainDBModel.Store.FK_form_item_web_menu">
+      <End Role="web_menu" EntitySet="web_menu" />
+      <End Role="form_item" EntitySet="form_item" />
+    </AssociationSet>
+    <AssociationSet Name="FK_form_setting_web_menu" Association="MainDBModel.Store.FK_form_setting_web_menu">
+      <End Role="web_menu" EntitySet="web_menu" />
+      <End Role="form_setting" EntitySet="form_setting" />
+    </AssociationSet>
+    <AssociationSet Name="FK_html_page_web_admin" Association="MainDBModel.Store.FK_html_page_web_admin">
+      <End Role="web_admin" EntitySet="web_admin" />
+      <End Role="html_page" EntitySet="html_page" />
+    </AssociationSet>
+    <AssociationSet Name="FK_html_page_web_menu" Association="MainDBModel.Store.FK_html_page_web_menu">
+      <End Role="web_menu" EntitySet="web_menu" />
+      <End Role="html_page" EntitySet="html_page" />
+    </AssociationSet>
+    <AssociationSet Name="FK_index_promotion_avail_language" Association="MainDBModel.Store.FK_index_promotion_avail_language">
+      <End Role="website" EntitySet="website" />
+      <End Role="index_promotion" EntitySet="index_promotion" />
+    </AssociationSet>
+    <AssociationSet Name="FK_index_setting_avail_language" Association="MainDBModel.Store.FK_index_setting_avail_language">
+      <End Role="website" EntitySet="website" />
+      <End Role="index_setting" EntitySet="index_setting" />
+    </AssociationSet>
+    <AssociationSet Name="FK_index_setting_web_admin" Association="MainDBModel.Store.FK_index_setting_web_admin">
+      <End Role="web_admin" EntitySet="web_admin" />
+      <End Role="index_setting" EntitySet="index_setting" />
+    </AssociationSet>
+    <AssociationSet Name="FK_index_web_menu_website" Association="MainDBModel.Store.FK_index_web_menu_website">
+      <End Role="website" EntitySet="website" />
+      <End Role="index_web_menu" EntitySet="index_web_menu" />
+    </AssociationSet>
+    <AssociationSet Name="FK_member_avail_language" Association="MainDBModel.Store.FK_member_avail_language">
+      <End Role="website" EntitySet="website" />
+      <End Role="member" EntitySet="member" />
+    </AssociationSet>
+    <AssociationSet Name="FK_module_action_module" Association="MainDBModel.Store.FK_module_action_module">
+      <End Role="module" EntitySet="module" />
+      <End Role="module_action" EntitySet="module_action" />
+    </AssociationSet>
+    <AssociationSet Name="FK_sys_config_website" Association="MainDBModel.Store.FK_sys_config_website">
+      <End Role="website" EntitySet="website" />
+      <End Role="sys_config" EntitySet="sys_config" />
+    </AssociationSet>
+    <AssociationSet Name="FK_web_admin_belong_group_web_admin" Association="MainDBModel.Store.FK_web_admin_belong_group_web_admin">
+      <End Role="web_admin" EntitySet="web_admin" />
+      <End Role="web_admin_belong_group" EntitySet="web_admin_belong_group" />
+    </AssociationSet>
+    <AssociationSet Name="FK_web_admin_belong_group_web_admin_group" Association="MainDBModel.Store.FK_web_admin_belong_group_web_admin_group">
+      <End Role="web_admin_group" EntitySet="web_admin_group" />
+      <End Role="web_admin_belong_group" EntitySet="web_admin_belong_group" />
+    </AssociationSet>
+    <AssociationSet Name="FK_web_admin_group_admin_web_admin" Association="MainDBModel.Store.FK_web_admin_group_admin_web_admin">
+      <End Role="web_admin" EntitySet="web_admin" />
+      <End Role="web_admin_group_admin" EntitySet="web_admin_group_admin" />
+    </AssociationSet>
+    <AssociationSet Name="FK_web_admin_group_admin_web_admin_group" Association="MainDBModel.Store.FK_web_admin_group_admin_web_admin_group">
+      <End Role="web_admin_group" EntitySet="web_admin_group" />
+      <End Role="web_admin_group_admin" EntitySet="web_admin_group_admin" />
+    </AssociationSet>
+    <AssociationSet Name="FK_web_admin_group_authority_web_admin_group" Association="MainDBModel.Store.FK_web_admin_group_authority_web_admin_group">
+      <End Role="web_admin_group" EntitySet="web_admin_group" />
+      <End Role="web_admin_group_authority" EntitySet="web_admin_group_authority" />
+    </AssociationSet>
+    <AssociationSet Name="FK_web_admin_group_authority_web_menu" Association="MainDBModel.Store.FK_web_admin_group_authority_web_menu">
+      <End Role="web_menu" EntitySet="web_menu" />
+      <End Role="web_admin_group_authority" EntitySet="web_admin_group_authority" />
+    </AssociationSet>
+    <AssociationSet Name="FK_web_admin_group_web_admin" Association="MainDBModel.Store.FK_web_admin_group_web_admin">
+      <End Role="web_admin" EntitySet="web_admin" />
+      <End Role="web_admin_group" EntitySet="web_admin_group" />
+    </AssociationSet>
+    <AssociationSet Name="FK_web_admin_group_web_admin1" Association="MainDBModel.Store.FK_web_admin_group_web_admin1">
+      <End Role="web_admin" EntitySet="web_admin" />
+      <End Role="web_admin_group" EntitySet="web_admin_group" />
+    </AssociationSet>
+    <AssociationSet Name="FK_web_backend_log_avail_language" Association="MainDBModel.Store.FK_web_backend_log_avail_language">
+      <End Role="website" EntitySet="website" />
+      <End Role="web_backend_log" EntitySet="web_backend_log" />
+    </AssociationSet>
+    <AssociationSet Name="FK_web_backend_log_web_admin" Association="MainDBModel.Store.FK_web_backend_log_web_admin">
+      <End Role="web_admin" EntitySet="web_admin" />
+      <End Role="web_backend_log" EntitySet="web_backend_log" />
+    </AssociationSet>
+    <AssociationSet Name="FK_web_menu_banner_web_menu_banner" Association="MainDBModel.Store.FK_web_menu_banner_web_menu_banner">
+      <End Role="web_menu" EntitySet="web_menu" />
+      <End Role="web_menu_banner" EntitySet="web_menu_banner" />
+    </AssociationSet>
+    <AssociationSet Name="FK_web_menu_content_web_menu_content" Association="MainDBModel.Store.FK_web_menu_content_web_menu_content">
+      <End Role="web_menu_content" EntitySet="web_menu_content" />
+      <End Role="web_menu_content1" EntitySet="web_menu_content" />
+    </AssociationSet>
+    <AssociationSet Name="FK_web_menu_module" Association="MainDBModel.Store.FK_web_menu_module">
+      <End Role="module" EntitySet="module" />
+      <End Role="web_menu" EntitySet="web_menu" />
+    </AssociationSet>
+    <AssociationSet Name="FK_web_menu_web_menu" Association="MainDBModel.Store.FK_web_menu_web_menu">
+      <End Role="web_menu" EntitySet="web_menu" />
+      <End Role="web_menu1" EntitySet="web_menu" />
+    </AssociationSet>
+    <AssociationSet Name="FK_web_menu_website" Association="MainDBModel.Store.FK_web_menu_website">
+      <End Role="website" EntitySet="website" />
+      <End Role="web_menu" EntitySet="web_menu" />
+    </AssociationSet>
+    <AssociationSet Name="FK_word_language_mapping_avail_language" Association="MainDBModel.Store.FK_word_language_mapping_avail_language">
+      <End Role="website" EntitySet="website" />
+      <End Role="word_language_mapping" EntitySet="word_language_mapping" />
+    </AssociationSet>
+    <AssociationSet Name="FK_word_language_mapping_word_mapping" Association="MainDBModel.Store.FK_word_language_mapping_word_mapping">
+      <End Role="word_mapping" EntitySet="word_mapping" />
+      <End Role="word_language_mapping" EntitySet="word_language_mapping" />
+    </AssociationSet>
+    <AssociationSet Name="FK_word_mapping_word_mapping_category" Association="MainDBModel.Store.FK_word_mapping_word_mapping_category">
+      <End Role="word_mapping_category" EntitySet="word_mapping_category" />
+      <End Role="word_mapping" EntitySet="word_mapping" />
+    </AssociationSet>
+  </EntityContainer>
+  <EntityType Name="form_item">
+    <Key>
+      <PropertyRef Name="sn" />
+    </Key>
+    <Property Name="sn" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="id" Type="nvarchar" Nullable="false" MaxLength="200" />
+    <Property Name="title" Type="nvarchar" MaxLength="500" />
+    <Property Name="launch" Type="tinyint" Nullable="false" />
+    <Property Name="update_date" Type="datetime" />
+    <Property Name="sort" Type="int" Nullable="false" />
+    <Property Name="web_menu_sn" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="form_setting">
+    <Key>
+      <PropertyRef Name="sn" />
+    </Key>
+    <Property Name="sn" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="web_menu_sn" Type="bigint" Nullable="false" />
+    <Property Name="header_content" Type="ntext" />
+    <Property Name="footer_content" Type="ntext" />
+    <Property Name="mail_list" Type="ntext" />
+    <Property Name="form_submit_message" Type="ntext" />
+    <Property Name="create_date" Type="datetime" />
+    <Property Name="update_date" Type="datetime" />
+    <Property Name="create_admin_sn" Type="int" />
+    <Property Name="update_admin_sn" Type="int" />
+  </EntityType>
+  <EntityType Name="html_page">
+    <Key>
+      <PropertyRef Name="sn" />
+    </Key>
+    <Property Name="sn" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="web_menu_sn" Type="bigint" Nullable="false" />
+    <Property Name="description" Type="ntext" />
+    <Property Name="create_date" Type="datetime" />
+    <Property Name="update_date" Type="datetime" />
+    <Property Name="create_admin_sn" Type="int" />
+    <Property Name="update_admin_sn" Type="int" />
+  </EntityType>
+  <EntityType Name="index_promotion">
+    <Key>
+      <PropertyRef Name="sn" />
+    </Key>
+    <Property Name="sn" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="title" Type="nvarchar" MaxLength="500" />
+    <Property Name="img_filename" Type="nvarchar" MaxLength="500" />
+    <Property Name="img2_filename" Type="nvarchar" MaxLength="500" />
+    <Property Name="url" Type="nvarchar(max)" />
+    <Property Name="target" Type="tinyint" Nullable="false" />
+    <Property Name="brief" Type="ntext" />
+    <Property Name="start_date" Type="datetime" Nullable="false" />
+    <Property Name="end_date" Type="datetime" />
+    <Property Name="forever" Type="tinyint" Nullable="false" />
+    <Property Name="sort" Type="int" Nullable="false" />
+    <Property Name="launch" Type="tinyint" Nullable="false" />
+    <Property Name="avail_language_sn" Type="int" />
+    <Property Name="create_date" Type="datetime" Nullable="false" />
+    <Property Name="update_date" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="index_setting">
+    <Key>
+      <PropertyRef Name="sn" />
+    </Key>
+    <Property Name="sn" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="avail_language_sn" Type="int" Nullable="false" />
+    <Property Name="header_area" Type="ntext" />
+    <Property Name="footer_area" Type="ntext" />
+    <Property Name="area1_title" Type="nvarchar" MaxLength="500" />
+    <Property Name="area1" Type="ntext" />
+    <Property Name="area2_title" Type="nvarchar" MaxLength="500" />
+    <Property Name="area2" Type="ntext" />
+    <Property Name="update_date" Type="datetime" Nullable="false" />
+    <Property Name="update_admin_sn" Type="int" />
+    <Property Name="area1_link" Type="nvarchar" MaxLength="500" />
+    <Property Name="area2_link" Type="nvarchar" MaxLength="500" />
+  </EntityType>
+  <EntityType Name="index_web_menu">
+    <Key>
+      <PropertyRef Name="sn" />
+    </Key>
+    <Property Name="sn" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="website_sn" Type="int" />
+    <Property Name="web_menu_sn" Type="bigint" />
+    <Property Name="module_sn" Type="bigint" />
+  </EntityType>
+  <EntityType Name="member">
+    <Key>
+      <PropertyRef Name="sn" />
+    </Key>
+    <Property Name="sn" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="id" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="password" Type="nvarchar" Nullable="false" MaxLength="1000" />
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="500" />
+    <Property Name="company" Type="nvarchar" MaxLength="1000" />
+    <Property Name="email" Type="nvarchar" MaxLength="500" />
+    <Property Name="avail_language_sn" Type="int" Nullable="false" />
+    <Property Name="update_admin_sn" Type="int" />
+    <Property Name="update_date" Type="datetime" />
+    <Property Name="start_date" Type="datetime" />
+    <Property Name="end_date" Type="datetime" />
+    <Property Name="forever" Type="tinyint" Nullable="false" />
+    <Property Name="launch" Type="tinyint" Nullable="false" />
+    <Property Name="phone" Type="nvarchar" MaxLength="250" />
+    <Property Name="address" Type="ntext" />
+  </EntityType>
+  <EntityType Name="module">
+    <Key>
+      <PropertyRef Name="sn" />
+    </Key>
+    <Property Name="sn" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="title" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="id" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="frontend" Type="tinyint" Nullable="false" />
+    <Property Name="backend" Type="tinyint" Nullable="false" />
+    <Property Name="type" Type="tinyint" Nullable="false" />
+    <Property Name="reusable" Type="tinyint" Nullable="false" />
+    <Property Name="sort" Type="smallint" Nullable="false" />
+  </EntityType>
+  <!--產生期間發現錯誤:
+      警告 6002: 資料表/檢視 'wolf.dbo.module_action' 未定義主索引鍵。已推斷此索引鍵，並將定義建立成唯讀的資料表/檢視。
+      -->
+  <EntityType Name="module_action">
+    <Key>
+      <PropertyRef Name="sn" />
+      <PropertyRef Name="module_sn" />
+      <PropertyRef Name="title" />
+      <PropertyRef Name="update_date" />
+    </Key>
+    <Property Name="sn" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="module_sn" Type="int" Nullable="false" />
+    <Property Name="title" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="action" Type="nvarchar" MaxLength="100" />
+    <Property Name="update_date" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sys_config">
+    <Key>
+      <PropertyRef Name="sn" />
+    </Key>
+    <Property Name="sn" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="website_sn" Type="int" Nullable="false" />
+    <Property Name="id" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="value" Type="ntext" />
+    <Property Name="update_date" Type="datetime" />
+  </EntityType>
+  <EntityType Name="templates">
+    <Key>
+      <PropertyRef Name="sn" />
+    </Key>
+    <Property Name="sn" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="title" Type="nvarchar" Nullable="false" MaxLength="500" />
+    <Property Name="id" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="create_date" Type="datetime" Nullable="false" />
+    <Property Name="update_date" Type="datetime" Nullable="false" />
+    <Property Name="is_default" Type="tinyint" Nullable="false" />
+    <Property Name="img_filename" Type="nvarchar" MaxLength="500" />
+    <Property Name="description" Type="nvarchar" MaxLength="1000" />
+  </EntityType>
+  <EntityType Name="web_admin">
+    <Key>
+      <PropertyRef Name="sn" />
+    </Key>
+    <Property Name="sn" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="id" Type="nchar" Nullable="false" MaxLength="50" />
+    <Property Name="password" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="name" Type="nvarchar" MaxLength="200" />
+    <Property Name="email" Type="nvarchar" MaxLength="100" />
+    <Property Name="is_default" Type="tinyint" Nullable="false" />
+    <Property Name="start_date" Type="datetime" />
+    <Property Name="end_date" Type="datetime" />
+    <Property Name="forever" Type="tinyint" Nullable="false" />
+    <Property Name="launch" Type="tinyint" Nullable="false" />
+    <Property Name="update_date" Type="datetime" />
+    <Property Name="create_date" Type="datetime" />
+  </EntityType>
+  <EntityType Name="web_admin_belong_group">
+    <Key>
+      <PropertyRef Name="sn" />
+    </Key>
+    <Property Name="sn" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="web_admin_sn" Type="int" Nullable="false" />
+    <Property Name="web_admin_group_sn" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="web_admin_group">
+    <Key>
+      <PropertyRef Name="sn" />
+    </Key>
+    <Property Name="sn" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="nvarchar" MaxLength="500" />
+    <Property Name="is_default" Type="tinyint" Nullable="false" />
+    <Property Name="create_date" Type="datetime" />
+    <Property Name="update_date" Type="datetime" />
+    <Property Name="create_admin_sn" Type="int" />
+    <Property Name="update_admin_sn" Type="int" />
+  </EntityType>
+  <EntityType Name="web_admin_group_admin">
+    <Key>
+      <PropertyRef Name="sn" />
+    </Key>
+    <Property Name="sn" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="admin_group_sn" Type="int" />
+    <Property Name="admin_sn" Type="int" />
+  </EntityType>
+  <EntityType Name="web_admin_group_authority">
+    <Key>
+      <PropertyRef Name="sn" />
+    </Key>
+    <Property Name="sn" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="web_admin_group_sn" Type="int" Nullable="false" />
+    <Property Name="web_menu_sn" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="web_backend_log">
+    <Key>
+      <PropertyRef Name="sn" />
+    </Key>
+    <Property Name="sn" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="admin_sn" Type="int" />
+    <Property Name="description" Type="nvarchar" MaxLength="1000" />
+    <Property Name="create_date" Type="datetime" Nullable="false" />
+    <Property Name="ip" Type="varchar" MaxLength="16" />
+    <Property Name="avail_language_sn" Type="int" />
+  </EntityType>
+  <EntityType Name="web_menu">
+    <Key>
+      <PropertyRef Name="sn" />
+    </Key>
+    <Property Name="sn" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="title" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="id" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="module_sn" Type="int" />
+    <Property Name="website_sn" Type="int" Nullable="false" />
+    <Property Name="b_launch" Type="tinyint" Nullable="false" />
+    <Property Name="start_date" Type="datetime" Nullable="false" />
+    <Property Name="end_date" Type="datetime" />
+    <Property Name="forever" Type="tinyint" Nullable="false" />
+    <Property Name="launch" Type="tinyint" Nullable="false" />
+    <Property Name="sort" Type="int" Nullable="false" />
+    <Property Name="display" Type="tinyint" Nullable="false" />
+    <Property Name="parent_sn" Type="bigint" />
+    <Property Name="sitemap_code" Type="nvarchar(max)" />
+    <Property Name="node_type" Type="tinyint" Nullable="false" />
+    <Property Name="type" Type="tinyint" Nullable="false" />
+    <Property Name="frontend_type" Type="tinyint" />
+    <Property Name="is_root" Type="tinyint" Nullable="false" />
+    <Property Name="is_home" Type="tinyint" Nullable="false" />
+    <Property Name="url" Type="nvarchar" MaxLength="500" />
+    <Property Name="target" Type="tinyint" Nullable="false" />
+    <Property Name="update_date" Type="datetime" />
+    <Property Name="create_date" Type="datetime" />
+    <Property Name="img_filename" Type="nvarchar" MaxLength="1000" />
+    <Property Name="action" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="web_menu_banner">
+    <Key>
+      <PropertyRef Name="sn" />
+    </Key>
+    <Property Name="sn" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="web_menu_sn" Type="bigint" Nullable="false" />
+    <Property Name="type" Type="tinyint" Nullable="false" />
+    <Property Name="path" Type="ntext" />
+    <Property Name="filename" Type="ntext" />
+    <Property Name="bg_filename" Type="ntext" />
+    <Property Name="url" Type="nvarchar(max)" />
+    <Property Name="target" Type="tinyint" Nullable="false" />
+    <Property Name="create_date" Type="datetime" Nullable="false" />
+    <Property Name="update_date" Type="datetime" Nullable="false" />
+    <Property Name="start_date" Type="datetime" Nullable="false" />
+    <Property Name="end_date" Type="datetime" />
+    <Property Name="forever" Type="tinyint" Nullable="false" />
+    <Property Name="launch" Type="tinyint" Nullable="false" />
+    <Property Name="sort" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="web_menu_content">
+    <Key>
+      <PropertyRef Name="sn" />
+    </Key>
+    <Property Name="sn" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="website_sn" Type="int" Nullable="false" />
+    <Property Name="web_menu_sn" Type="bigint" Nullable="false" />
+    <Property Name="title" Type="nvarchar" MaxLength="100" />
+    <Property Name="description" Type="nvarchar(max)" />
+    <Property Name="description2" Type="nvarchar(max)" />
+    <Property Name="brief" Type="nvarchar(max)" />
+    <Property Name="brief2" Type="nvarchar(max)" />
+    <Property Name="filename" Type="nvarchar" MaxLength="200" />
+    <Property Name="img_filename" Type="nvarchar" MaxLength="250" />
+    <Property Name="img_filename2" Type="nvarchar" MaxLength="250" />
+    <Property Name="url" Type="nvarchar" MaxLength="200" />
+    <Property Name="target" Type="tinyint" />
+    <Property Name="start_date" Type="datetime" />
+    <Property Name="end_date" Type="datetime" />
+    <Property Name="forever" Type="tinyint" />
+    <Property Name="launch" Type="tinyint" />
+    <Property Name="sort" Type="int" />
+    <Property Name="hot" Type="tinyint" />
+    <Property Name="create_date" Type="datetime" />
+    <Property Name="update_date" Type="datetime" />
+    <Property Name="create_admin_sn" Type="int" />
+    <Property Name="update_admin_sn" Type="int" />
+    <Property Name="content_type" Type="nvarchar" MaxLength="50" />
+    <Property Name="parent_sn" Type="bigint" />
+    <Property Name="related_sn" Type="int" />
+  </EntityType>
+  <EntityType Name="website">
+    <Key>
+      <PropertyRef Name="sn" />
+    </Key>
+    <Property Name="sn" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="500" />
+    <Property Name="id" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="sort" Type="int" Nullable="false" />
+    <Property Name="launch" Type="tinyint" Nullable="false" />
+    <Property Name="display" Type="smallint" Nullable="false" />
+    <Property Name="is_default" Type="tinyint" Nullable="false" />
+    <Property Name="update_date" Type="datetime" Nullable="false" />
+    <Property Name="create_date" Type="datetime" />
+  </EntityType>
+  <EntityType Name="website_allow_ip_list">
+    <Key>
+      <PropertyRef Name="sn" />
+    </Key>
+    <Property Name="sn" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="type" Type="tinyint" Nullable="false" />
+    <Property Name="ip_1_start" Type="tinyint" />
+    <Property Name="ip_1_end" Type="tinyint" />
+    <Property Name="ip_2_start" Type="tinyint" />
+    <Property Name="ip_2_end" Type="tinyint" />
+    <Property Name="ip_3_start" Type="tinyint" />
+    <Property Name="ip_3_end" Type="tinyint" />
+    <Property Name="ip_4_start" Type="tinyint" />
+    <Property Name="ip_4_end" Type="tinyint" />
+    <Property Name="start_date" Type="datetime" Nullable="false" />
+    <Property Name="end_date" Type="datetime" />
+    <Property Name="forever" Type="tinyint" Nullable="false" />
+    <Property Name="launch" Type="tinyint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="word_language_mapping">
+    <Key>
+      <PropertyRef Name="sn" />
+    </Key>
+    <Property Name="sn" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="word_mapping_sn" Type="bigint" Nullable="false" />
+    <Property Name="value" Type="nvarchar(max)" />
+    <Property Name="avail_language_sn" Type="int" Nullable="false" />
+    <Property Name="update_date" Type="datetime" />
+  </EntityType>
+  <EntityType Name="word_mapping">
+    <Key>
+      <PropertyRef Name="sn" />
+    </Key>
+    <Property Name="sn" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="id" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="value" Type="nvarchar(max)" />
+    <Property Name="create_date" Type="datetime" Nullable="false" />
+    <Property Name="update_date" Type="datetime" Nullable="false" />
+    <Property Name="word_mapping_category_sn" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="word_mapping_category">
+    <Key>
+      <PropertyRef Name="sn" />
+    </Key>
+    <Property Name="sn" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="title" Type="nvarchar" MaxLength="100" />
+    <Property Name="id" Type="nvarchar" MaxLength="50" />
+    <Property Name="create_date" Type="datetime" Nullable="false" />
+    <Property Name="update_date" Type="datetime" Nullable="false" />
+    <Property Name="is_frontend" Type="tinyint" Nullable="false" />
+    <Property Name="sort" Type="int" Nullable="false" />
+  </EntityType>
+  <Association Name="FK_form_item_web_menu">
+    <End Role="web_menu" Type="MainDBModel.Store.web_menu" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="form_item" Type="MainDBModel.Store.form_item" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="web_menu">
+        <PropertyRef Name="sn" />
+      </Principal>
+      <Dependent Role="form_item">
+        <PropertyRef Name="web_menu_sn" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_form_setting_web_menu">
+    <End Role="web_menu" Type="MainDBModel.Store.web_menu" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="form_setting" Type="MainDBModel.Store.form_setting" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="web_menu">
+        <PropertyRef Name="sn" />
+      </Principal>
+      <Dependent Role="form_setting">
+        <PropertyRef Name="web_menu_sn" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_html_page_web_admin">
+    <End Role="web_admin" Type="MainDBModel.Store.web_admin" Multiplicity="0..1" />
+    <End Role="html_page" Type="MainDBModel.Store.html_page" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="web_admin">
+        <PropertyRef Name="sn" />
+      </Principal>
+      <Dependent Role="html_page">
+        <PropertyRef Name="update_admin_sn" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_html_page_web_menu">
+    <End Role="web_menu" Type="MainDBModel.Store.web_menu" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="html_page" Type="MainDBModel.Store.html_page" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="web_menu">
+        <PropertyRef Name="sn" />
+      </Principal>
+      <Dependent Role="html_page">
+        <PropertyRef Name="web_menu_sn" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_index_promotion_avail_language">
+    <End Role="website" Type="MainDBModel.Store.website" Multiplicity="0..1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="index_promotion" Type="MainDBModel.Store.index_promotion" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="website">
+        <PropertyRef Name="sn" />
+      </Principal>
+      <Dependent Role="index_promotion">
+        <PropertyRef Name="avail_language_sn" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_index_setting_avail_language">
+    <End Role="website" Type="MainDBModel.Store.website" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="index_setting" Type="MainDBModel.Store.index_setting" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="website">
+        <PropertyRef Name="sn" />
+      </Principal>
+      <Dependent Role="index_setting">
+        <PropertyRef Name="avail_language_sn" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_index_setting_web_admin">
+    <End Role="web_admin" Type="MainDBModel.Store.web_admin" Multiplicity="0..1" />
+    <End Role="index_setting" Type="MainDBModel.Store.index_setting" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="web_admin">
+        <PropertyRef Name="sn" />
+      </Principal>
+      <Dependent Role="index_setting">
+        <PropertyRef Name="update_admin_sn" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_index_web_menu_website">
+    <End Role="website" Type="MainDBModel.Store.website" Multiplicity="0..1" />
+    <End Role="index_web_menu" Type="MainDBModel.Store.index_web_menu" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="website">
+        <PropertyRef Name="sn" />
+      </Principal>
+      <Dependent Role="index_web_menu">
+        <PropertyRef Name="website_sn" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_member_avail_language">
+    <End Role="website" Type="MainDBModel.Store.website" Multiplicity="1" />
+    <End Role="member" Type="MainDBModel.Store.member" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="website">
+        <PropertyRef Name="sn" />
+      </Principal>
+      <Dependent Role="member">
+        <PropertyRef Name="avail_language_sn" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_module_action_module">
+    <End Role="module" Type="MainDBModel.Store.module" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="module_action" Type="MainDBModel.Store.module_action" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="module">
+        <PropertyRef Name="sn" />
+      </Principal>
+      <Dependent Role="module_action">
+        <PropertyRef Name="module_sn" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_sys_config_website">
+    <End Role="website" Type="MainDBModel.Store.website" Multiplicity="1" />
+    <End Role="sys_config" Type="MainDBModel.Store.sys_config" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="website">
+        <PropertyRef Name="sn" />
+      </Principal>
+      <Dependent Role="sys_config">
+        <PropertyRef Name="website_sn" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_web_admin_belong_group_web_admin">
+    <End Role="web_admin" Type="MainDBModel.Store.web_admin" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="web_admin_belong_group" Type="MainDBModel.Store.web_admin_belong_group" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="web_admin">
+        <PropertyRef Name="sn" />
+      </Principal>
+      <Dependent Role="web_admin_belong_group">
+        <PropertyRef Name="web_admin_sn" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_web_admin_belong_group_web_admin_group">
+    <End Role="web_admin_group" Type="MainDBModel.Store.web_admin_group" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="web_admin_belong_group" Type="MainDBModel.Store.web_admin_belong_group" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="web_admin_group">
+        <PropertyRef Name="sn" />
+      </Principal>
+      <Dependent Role="web_admin_belong_group">
+        <PropertyRef Name="web_admin_group_sn" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_web_admin_group_admin_web_admin">
+    <End Role="web_admin" Type="MainDBModel.Store.web_admin" Multiplicity="0..1" />
+    <End Role="web_admin_group_admin" Type="MainDBModel.Store.web_admin_group_admin" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="web_admin">
+        <PropertyRef Name="sn" />
+      </Principal>
+      <Dependent Role="web_admin_group_admin">
+        <PropertyRef Name="admin_sn" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_web_admin_group_admin_web_admin_group">
+    <End Role="web_admin_group" Type="MainDBModel.Store.web_admin_group" Multiplicity="0..1" />
+    <End Role="web_admin_group_admin" Type="MainDBModel.Store.web_admin_group_admin" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="web_admin_group">
+        <PropertyRef Name="sn" />
+      </Principal>
+      <Dependent Role="web_admin_group_admin">
+        <PropertyRef Name="admin_group_sn" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_web_admin_group_authority_web_admin_group">
+    <End Role="web_admin_group" Type="MainDBModel.Store.web_admin_group" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="web_admin_group_authority" Type="MainDBModel.Store.web_admin_group_authority" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="web_admin_group">
+        <PropertyRef Name="sn" />
+      </Principal>
+      <Dependent Role="web_admin_group_authority">
+        <PropertyRef Name="web_admin_group_sn" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_web_admin_group_authority_web_menu">
+    <End Role="web_menu" Type="MainDBModel.Store.web_menu" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="web_admin_group_authority" Type="MainDBModel.Store.web_admin_group_authority" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="web_menu">
+        <PropertyRef Name="sn" />
+      </Principal>
+      <Dependent Role="web_admin_group_authority">
+        <PropertyRef Name="web_menu_sn" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_web_admin_group_web_admin">
+    <End Role="web_admin" Type="MainDBModel.Store.web_admin" Multiplicity="0..1" />
+    <End Role="web_admin_group" Type="MainDBModel.Store.web_admin_group" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="web_admin">
+        <PropertyRef Name="sn" />
+      </Principal>
+      <Dependent Role="web_admin_group">
+        <PropertyRef Name="create_admin_sn" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_web_admin_group_web_admin1">
+    <End Role="web_admin" Type="MainDBModel.Store.web_admin" Multiplicity="0..1" />
+    <End Role="web_admin_group" Type="MainDBModel.Store.web_admin_group" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="web_admin">
+        <PropertyRef Name="sn" />
+      </Principal>
+      <Dependent Role="web_admin_group">
+        <PropertyRef Name="update_admin_sn" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_web_backend_log_avail_language">
+    <End Role="website" Type="MainDBModel.Store.website" Multiplicity="0..1" />
+    <End Role="web_backend_log" Type="MainDBModel.Store.web_backend_log" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="website">
+        <PropertyRef Name="sn" />
+      </Principal>
+      <Dependent Role="web_backend_log">
+        <PropertyRef Name="avail_language_sn" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_web_backend_log_web_admin">
+    <End Role="web_admin" Type="MainDBModel.Store.web_admin" Multiplicity="0..1" />
+    <End Role="web_backend_log" Type="MainDBModel.Store.web_backend_log" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="web_admin">
+        <PropertyRef Name="sn" />
+      </Principal>
+      <Dependent Role="web_backend_log">
+        <PropertyRef Name="admin_sn" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_web_menu_banner_web_menu_banner">
+    <End Role="web_menu" Type="MainDBModel.Store.web_menu" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="web_menu_banner" Type="MainDBModel.Store.web_menu_banner" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="web_menu">
+        <PropertyRef Name="sn" />
+      </Principal>
+      <Dependent Role="web_menu_banner">
+        <PropertyRef Name="web_menu_sn" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_web_menu_content_web_menu_content">
+    <End Role="web_menu_content" Type="MainDBModel.Store.web_menu_content" Multiplicity="0..1" />
+    <End Role="web_menu_content1" Type="MainDBModel.Store.web_menu_content" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="web_menu_content">
+        <PropertyRef Name="sn" />
+      </Principal>
+      <Dependent Role="web_menu_content1">
+        <PropertyRef Name="parent_sn" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_web_menu_module">
+    <End Role="module" Type="MainDBModel.Store.module" Multiplicity="0..1" />
+    <End Role="web_menu" Type="MainDBModel.Store.web_menu" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="module">
+        <PropertyRef Name="sn" />
+      </Principal>
+      <Dependent Role="web_menu">
+        <PropertyRef Name="module_sn" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_web_menu_web_menu">
+    <End Role="web_menu" Type="MainDBModel.Store.web_menu" Multiplicity="0..1" />
+    <End Role="web_menu1" Type="MainDBModel.Store.web_menu" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="web_menu">
+        <PropertyRef Name="sn" />
+      </Principal>
+      <Dependent Role="web_menu1">
+        <PropertyRef Name="parent_sn" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_web_menu_website">
+    <End Role="website" Type="MainDBModel.Store.website" Multiplicity="1" />
+    <End Role="web_menu" Type="MainDBModel.Store.web_menu" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="website">
+        <PropertyRef Name="sn" />
+      </Principal>
+      <Dependent Role="web_menu">
+        <PropertyRef Name="website_sn" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_word_language_mapping_avail_language">
+    <End Role="website" Type="MainDBModel.Store.website" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="word_language_mapping" Type="MainDBModel.Store.word_language_mapping" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="website">
+        <PropertyRef Name="sn" />
+      </Principal>
+      <Dependent Role="word_language_mapping">
+        <PropertyRef Name="avail_language_sn" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_word_language_mapping_word_mapping">
+    <End Role="word_mapping" Type="MainDBModel.Store.word_mapping" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="word_language_mapping" Type="MainDBModel.Store.word_language_mapping" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="word_mapping">
+        <PropertyRef Name="sn" />
+      </Principal>
+      <Dependent Role="word_language_mapping">
+        <PropertyRef Name="word_mapping_sn" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+  <Association Name="FK_word_mapping_word_mapping_category">
+    <End Role="word_mapping_category" Type="MainDBModel.Store.word_mapping_category" Multiplicity="1">
+      <OnDelete Action="Cascade" />
+    </End>
+    <End Role="word_mapping" Type="MainDBModel.Store.word_mapping" Multiplicity="*" />
+    <ReferentialConstraint>
+      <Principal Role="word_mapping_category">
+        <PropertyRef Name="sn" />
+      </Principal>
+      <Dependent Role="word_mapping">
+        <PropertyRef Name="word_mapping_category_sn" />
+      </Dependent>
+    </ReferentialConstraint>
+  </Association>
+</Schema>

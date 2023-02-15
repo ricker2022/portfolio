@@ -1,0 +1,66 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPage.master.cs" Inherits="MasterPage" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <title>閃電狼FlashWolves官方網站</title>
+
+    <link href="_css/main.css" rel="stylesheet" type="text/css" />
+    <link href="_css/page.css" rel="stylesheet" type="text/css" />
+    <link href="_css/reset.css" rel="stylesheet" type="text/css" />
+
+    <script type="text/javascript" src="_js/jquery.min.js"></script>
+    <script type="text/javascript" src="_js/jquery.FX.js"></script>
+    
+    <asp:ContentPlaceHolder id="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="dPageHolder">
+            <div id="dHeader">
+                <div id="logo"><a href="Default.aspx"></a></div>
+                <div id="menu">
+                    <ul id="mainmenu">
+                        <li><a class="mainmenu01" href="Default.aspx"></a></li>
+                        <li><a class="mainmenu02" href="News.aspx"></a></li>
+                        <li><a class="mainmenu03" href="Teams.aspx"></a></li>
+                        <li><a class="mainmenu04" href="Sponsor.aspx"></a></li>
+                        <li><a class="mainmenu05" href="#"></a>
+                             <ul class="SubMenu">
+                                 <li><a class="submenu01" href="Video.aspx"></a></li>
+                                 <li><a class="submenu02" href="Album.aspx"></a></li>
+                            </ul>
+                        </li>
+                        <li><a class="mainmenu06" href="Events.aspx"></a></li>
+                        <li><a class="mainmenu07" href="#"></a></li>
+                        <li><a class="mainmenu08" href="About.aspx"></a></li>
+                    </ul>
+                    <ul id="iconmenu">
+                        <li><a class="iconmenu01" href="https://zh-tw.facebook.com/FlashWolves" target="_blank"></a></li>
+                        <li><a class="iconmenu02" href="http://www.youtube.com/channel/UCYlR7sckITRRtwF-mRdqu8A" target="_blank"></a></li>
+                        <li><a class="iconmenu03" href="http://www.twitch.tv/yoeflashwolves" target="_blank"></a></li>
+                    </ul>
+                </div>
+            </div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+            <div id="dFooter">
+                <div class="dFooterLogo">
+                    <ul>
+                        <li><a href="http://www.waninbank.com.tw/" target="_blank" title="網銀國際"><img src="_img/layout/footer/logo01.jpg" /></a></li>
+                        <li><a href="http://www.ironforum.com.tw/" target="_blank" title="鉄人論壇"><img src="_img/layout/footer/logo02.jpg" /></a></li>
+                        <li><a href="http://www.jian-pin.com/" target="_blank" title="ZOWIE"><img src="_img/layout/footer/logo03.jpg" /></a></li>
+                        <li><a href="http://tw.msi.com/" target="_blank" title="MSI"><img src="_img/layout/footer/logo04.jpg" /></a></li>
+                        <li><a href="http://www.yoe.com.tw/" target="_blank" title="遊e卡"><img src="_img/layout/footer/logo05.jpg" /></a></li>
+                        <li><a href="http://www.family.com.tw/Marketing/index.aspx" target="_blank" title="全家便利商店"><img src="_img/layout/footer/logo06.jpg" /></a></li>
+                    </ul>
+                </div>
+                <div class="dFooterInfo">© 2014網銀國際股份有限公司 版權所有</div>
+            </div>
+        </div>
+    </form>
+</body>
+</html>

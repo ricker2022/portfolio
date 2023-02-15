@@ -1,0 +1,520 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <script src="JS/jquery.mobile-1.1.1.css"></script>
+    <script src="JS/jquery.mobile-1.1.1.js"></script>
+    <script src="JS/jquery-1.10.2.js"></script>
+    <script src="JS/wanin.js"></script>
+    <script src="JS/provision.js"></script>
+    <link href="JS/wanin.css" rel="stylesheet" type="text/css" />
+    <link href="JS/provision.css" rel="stylesheet" type="text/css" />
+    <script>
+        var tabName = ['', '使用者合約', '廠商條款', '隱私權條款', '使用者合约', '厂商服务条款', '隐私权条款']
+    </script>
+
+</head>
+<body>
+    <!-- Home -->
+    <div data-role="page" id="page1">
+        <div data-theme="a" data-role="header">
+            <div class="ui-grid-b">
+                <div class="ui-grid-b">
+                    <div class="ui-block-a">
+                        <a href="provision.html" data-transition="fade">
+                            使用者合約
+                        </a>
+                        <a href="provisionTerms.html" data-transition="fade">
+                            廠商條款
+                        </a>
+                        <a href="provisionPrivacy.html" data-transition="fade">
+                            隱私權條款
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div data-role="content" id="content" style="background: url('img/使用合約底.png') repeat top left; padding: 10px; overflow-y: auto; -webkit-overflow-scrolling: touch; margin-bottom: 63px;">
+            <div id="prov01tw" class="lang">
+                <ul class="content" style="height:100%">
+                    <li style="position:relative; text-align:center">
+                        <table style=" margin: -15px 0 0 -15px; height: 60px; " cellspacing="0">
+                            <tr>
+                                <td style="width:50%;border-right: 1px solid #e1e1e1; border-bottom: 1px solid #e1e1e1;">
+                                    <div class="lbtn l1person">繁體中文</div>
+                                </td>
+                                <td style="width: 50%; border-bottom: 1px solid #e1e1e1; ">
+                                    <div class="lbtn l2person">简体中文</div>
+                                </td>
+                            </tr>
+                        </table>
+                        <p id="title">本個人資料使用同意書自2014年08月19日公佈</p>
+                        <img src="img/分隔線2.png" width="100%" style="text-align:center; vertical-align:text-top" />
+                    </li>
+
+                    <li style="width:100%;word-wrap: break-word;word-break: normal;line-height:40px">
+
+                    </li>
+
+                    <li style="width: 100%; word-wrap: break-word; word-break: normal; line-height: 40px;margin-top:50px; " ">
+                        <b>為保障您個人資料之安全性</b><br/>
+                        <ul>
+                            <li>
+                                網銀國際股份有限公司(下簡稱本公司)特別制定「個人資料使用同意書」（下簡稱本同意書），讓您瞭解本 公司使用您所屬個人資料之相關資訊：
+                            </li>
+                            <li>
+                                1. 蒐集之目的；
+                            </li>
+                            <li>
+                                2. 個人資料之類別；
+                            </li>
+                            <li>
+                                3. 個人資料利用之期間、地區、對象及方式；
+                            </li>
+                            <li>
+                                4. 您得行使之權利及方式；
+                            </li>
+                            <li>
+                                5. 若您無法提供完整的個人資料時，可能對您權益之影響；
+                            </li>
+                            <li>
+                                6. 個人資料的安全維護；
+                            </li>
+                            <li>
+                                為了維護您的權利，請花一點時間閱讀下面的資訊，如果有任何問題請讓我們知道。
+                            </li>
+                        </ul>
+                    </li>
+                    <li style="width: 100%; word-wrap: break-word; word-break: normal; line-height: 40px;margin-top:50px; " ">
+                        <b>一、適用範圍</b><br />
+                        <ul>
+                            <li>
+                                （一）本同意書適用於您在本公司網站內與其所附屬之網站活動時，所涉及的個人資料蒐集、處理、利用、
+                                國際傳遞以及保護措施。
+                            </li>
+                            <li>
+                                （二）本公司網站、產品、應用和服務可能包含指向第三方網站的產品和服務，我們的產品和服務也可能使
+                                用或提供來自第三方的產品或服務，包括如位置數據或聯繫方式收集的資料，這些將受到他們個人資
+                                料保護相關規定的約束。
+                            </li>
+                            <li>
+                                （三）當您使用某些本公司產品、服務或應用程序時，您分享的個人資料是其他用戶可以見到、閱讀、收集
+                                或使用的，您應該對在這些情況下提交的個人資料負責。例如，如果你發布在某論壇上發帖您的姓名
+                                和電子郵件地址，這些資料是公開的，使用這些功能時請小心。
+                            </li>
+                        </ul>
+                    </li>
+                    <li style="width: 100%; word-wrap: break-word; word-break: normal; line-height: 40px;margin-top:50px; " ">
+                        <b>二、資料蒐集之目的及類別</b><br />
+                        <ul>
+                            <li>
+                                依法務部頒布之「個人資料保護法之特定目的及個人資料之類別」，本公司蒐集之目的有：○四○行銷、○ 六九契約或類似契約或其他法律關係事務、○九○消費者、客戶管理與服務、一三六資訊與資料庫管理、一 四八網路購物及其他電子商務服務、一五七調查、統計與研究分析、一八二其他諮詢與顧問服務；類別有： Ｃ○○一辨識個人者、Ｃ○○三政府資料中之辨識者、Ｃ○一一個人描述、Ｃ○三一住家及設施、Ｃ○三五 休閒活動及興趣、Ｃ○三八職業、Ｃ○八三信用評等。詳細情形如下：
+                            </li>
+                        </ul>
+                    </li>
+                    <li style="width: 100%; word-wrap: break-word; word-break: normal; line-height: 40px;margin-top:50px; " ">
+                        <b>加入會員</b><br />
+                        <ul>
+                            <li>
+                                當您申請加入會員時，您將會被要求填寫一份您的個人資料，包括姓名、性別、暱稱、身份證字號、住址、 生日、手機門號、電話、電子信箱、銀行帳號、載具條碼等相關必要資料；成為會員後，您會擁有一組會員 帳號與密碼，並由經由本組帳號、密碼登入網站及使用會員的各項服務。
+                            </li>
+                        </ul>
+                    </li>
+                    <li style="width: 100%; word-wrap: break-word; word-break: normal; line-height: 40px;margin-top:50px; " ">
+                        <b>（二） 線上交易</b><br />
+                        <ul>
+                            <li>
+                                如您使用線上交易服務，我們會依照您選擇的線上交易形態，蒐集您所填寫的訂單相關資料，以確保您完成 付款、儲值或物流等消費服務。
+                            </li>
+                        </ul>
+                    </li>
+                    <li style="width: 100%; word-wrap: break-word; word-break: normal; line-height: 40px;margin-top:50px; " ">
+                        <b>（三） 線上活動</b><br />
+                        <ul>
+                            <li>
+                                若您因參加本公司舉辦之線上活動或網路調查而登入會員帳號與密碼時，您的個人資料將直接由會員資料庫 提供；如該項活動仍需您配合補充相關資料時，請詳細登錄所需之資料，這些補充的資料也會一併受到我們 的保護。
+                            </li>
+                        </ul>
+                    </li>
+                    <li style="width: 100%; word-wrap: break-word; word-break: normal; line-height: 40px;margin-top:50px; " ">
+                        <b>（四） 瀏覽網頁</b><br />
+                        <ul>
+                            <li>
+                                當您於本公司的網站或附屬網站中進行瀏覽或查詢時，伺服器將自動紀錄您使用連線的IP位置、時間及瀏覽 相關記錄，這些資料僅供作流量統計分析及網路服務優化，以便改善我們的服務品質；這些資料僅作為總量 上的分析，不會和特定個人相聯繫。
+                            </li>
+                        </ul>
+                    </li>
+                    <li style="width: 100%; word-wrap: break-word; word-break: normal; line-height: 40px;margin-top:50px; " ">
+                        <b>（五） 其他</b><br />
+                        <ul>
+                            <li>
+                                個人資料除了由您直接提供之外，如果您在您在本公司的合作廠商處有主動提供個人資料，基於您的同意或 為履行契約目的前提下，合作廠商會提供您的個人資料給本公司；這些資料只會在您同意或為履行契約的服 務範圍內利用及處理，不會用於其他用途。
+                            </li>
+                        </ul>
+                    </li>
+                    <li style="width: 100%; word-wrap: break-word; word-break: normal; line-height: 40px;margin-top:50px; " ">
+                        <b>三、資料利用的期間、地區、對象及方式</b><br />
+                        <ul>
+                            <li>
+                                （一）利用期間 除法令另有規定外，我們使用您個人資料期間自您成為本公司網站內與其所附屬網站的會員
+                                起，至本公司網站內與其所附屬網站服務完畢或您提出停止使用之請求為止。
+                            </li>
+                            <li>
+                                （二）利用地區 臺灣地區及提供本公司網站內與其所附屬網站服務之地區。
+                            </li>
+                            <li>
+                                （三）利用對象 除法令另有規定外，您個人資料的使用僅限於您同意之服務目的及本公司內部在相關連之範
+                                圍內，不會任意將您提供的個人資料轉供其他第三人或移作其他目的使用；但基於履行契約目的情形
+                                下，我們將提供相關資料予合作廠商，以履行與您的契約義務。
+                            </li>
+                            <li>
+                                （四）利用方式
+                            </li>
+                            <li>
+                                1. 會員資料
+                            </li>
+                            <li>
+                                您在加入會員時所填寫的資料，本公司將會進行手機及e-mail驗證，並分析您個人在網站上行為及 消費習慣，以作為將來提供會員所需之詳盡資料以及設計會員活動時之依據。
+                            </li>
+                            <li>
+                                2. 線上交易
+                            </li>
+                            <li>
+                                如您使用線上交易服務，我們將會依照你提出的線上交易形態，蒐集您所填寫的訂單相關資料，以 確保您完成付款、儲值或物流等消費服務。
+                            </li>
+                            <li>
+                                3. 訂閱電子報
+                            </li>
+                            <li>
+                                在您加入會員或使用本公司網站與其所附屬網站服務後，為提供行銷或其他加值服務之目的，我們 會不定期的發送電子報、手機簡訊或其他即時通訊軟體訊息至您所登錄的電子信箱帳號或手機門號 ；如果您表明不想再接受相關資訊，我們會停止繼續對您發送相類似的訊息；如有相關疑問，請洽 詢本公司顧客服務中心。
+                            </li>
+                            <li>
+                                4. 線上活動及調查
+                            </li>
+                            <li>
+                                如果您參加本公司舉辦的線上活動或網路調查，所留下的個人資料僅供該次活動或調查使用，這些 資料將於活動或調查結束後銷毀。
+                            </li>
+                            <li>
+                                5. 統計與分析
+                            </li>
+                            <li>
+                                本公司針對您加入會員時所填寫的資料，以及站內瀏覽時伺服器所產生的紀錄，將不定期進行總體 會員行為分析與統計，不會針對個人行為進行分析。
+                            </li>
+                        </ul>
+                    </li>
+                    <li style="width: 100%; word-wrap: break-word; word-break: normal; line-height: 40px;margin-top:50px; " ">
+                        <b>四、 您可以行使的權利及方式</b><br />
+                        <ul>
+                            <li>
+                                （一）對於您的個人資料，您可以以書面的方式向本公司請求行使以下權利：
+                            </li>
+                            <li>
+                                1. 查詢或請求閱覽。
+                            </li>
+                            <li>
+                                2. 請求製給複製本。
+                            </li>
+                            <li>
+                                3. 請求補充或更正。
+                            </li>
+                            <li>
+                                4. 請求停止蒐集、處理或利用。
+                            </li>
+                            <li>
+                                5. 請求刪除。
+                            </li>
+                            <li>
+                                （二）權利限制 前項的權利，如果您不符合本公司申請程序或法令另有規定時，將會受到限制
+                            </li>
+                            <li>
+                                （三）酌收費用 您向本公司請求閱覽個人資料或製給複製本時，本公司將酌收必要成本費用。
+                            </li>
+                            <li>
+                                （四）權利行使之方式 上開權利之申請，應填具申請文件，本公司得向您請求提出可資確認之身分證明文件
+                                ；如果是委託他人代為申請，請出具委任書，並且提供本人及代理人的身分證明文件。
+                            </li>
+                        </ul>
+                    </li>
+                    <li style="width: 100%; word-wrap: break-word; word-break: normal; line-height: 40px;margin-top:50px; " ">
+                        <b>五、無法提供完整的個人資料時對您權益的影響</b><br />
+                        <ul>
+                            <li>
+                                若您無法提供完整且確實的個人資料，將影響本公司和您的聯繫、完成交易、提供服務、身分驗證或處理消 費、交易或客訴等等問題，建議您應提供完整的個人資料及隨時更新正確的資料。若因您未提供完整且確實 個人資料，造成對您及第三人的損害時，您應負擔一切責任；如造成本公司的損失，本公司有權向您請求損 害賠償。
+                            </li>
+                        </ul>
+                    </li>
+                    <li style="width: 100%; word-wrap: break-word; word-break: normal; line-height: 40px;margin-top:50px; " ">
+                        <b>六、個人資料安全維護</b><br />
+                        <ul>
+                            <li>
+                                關於您的個人資料檔案，本公司將採行適當之安全措施，並盡力以合理之技術及措施，依相關法令辦理安全 維護事項，防止您的個人資料被竊取、竄改、毀損、滅失或洩漏。
+                            </li>
+                        </ul>
+                    </li>
+                    <li style="width: 100%; word-wrap: break-word; word-break: normal; line-height: 40px;margin-top:50px; " ">
+                        <b>七、個人資料保護同意書的修改</b><br />
+                        <ul>
+                            <li>
+                                因為法令的改變，我們會修訂本同意書之內容，相關修正內容以及規定會公告於本公司的網站上；為保障您 的權益，請定期瀏覽我們網站的公告。當您於本同意書任何修改或變更後繼續使用本公司網站與其所附屬之 網站服務，表示您已閱讀、瞭解並同意接受本同意書修改或變更後之內容。 如果您不同意本同意書，請您立 即停止使用本公司網站與其所附屬之網站服務。
+                            </li>
+                        </ul>
+                    </li>
+                    <li style="width: 100%; word-wrap: break-word; word-break: normal; line-height: 40px;margin-top:50px; " ">
+                        <b>八、看法與建議</b><br />
+                        <ul>
+                            <li>
+                                您如果對於個人資料有關之相關事項有任何意見或疑問，可以和本公司客服中心聯絡，
+                                電話：(04)2708-5191。
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+            
+            <!--簡體中文-->
+            <div id="prov01ch" class="lang">
+                <ul class="content" style="height:100%">
+                    <li style="position:relative; text-align:center">
+                        <table style=" margin: -15px 0 0 -15px; height: 60px; " cellspacing="0">
+                            <tr>
+                                <td style="width:50%;border-right: 1px solid #e1e1e1; border-bottom: 1px solid #e1e1e1;">
+                                    <div class="lbtn l1person">繁體中文</div>
+                                </td>
+                                <td style="width: 50%; border-bottom: 1px solid #e1e1e1; ">
+                                    <div class="lbtn l2person">简体中文</div>
+                                </td>
+                            </tr>
+                        </table>
+                        <p id="title">本个人资料使用同意书自2014年08月19日公</p>
+                        <img src="img/分隔線2.png" width="100%" style="text-align:center; vertical-align:text-top" />
+                    </li>
+
+                    <li style="width:100%;word-wrap: break-word;word-break: normal;line-height:40px">
+
+                    </li>
+
+                    <li style="width: 100%; word-wrap: break-word; word-break: normal; line-height: 40px;margin-top:50px; " ">
+                        <b>为保障您个人资料之安全性</b><br />
+                        <ul>
+                            <li>
+                                网银国际股份有限公司(下简称本公司)特别制定「个人资料使用同意书」（下简称本同意书），让您了解本 公司使用您所属个人资料之相关信息：
+                            </li>
+                            <li>
+                                1. 搜集之目的；
+                            </li>
+                            <li>
+                                2. 个人资料之类别；
+                            </li>
+                            <li>
+                                3. 个人资料利用之期间、地区、对象及方式；
+                            </li>
+                            <li>
+                                4. 您得行使之权利及方式；
+                            </li>
+                            <li>
+                                5. 若您无法提供完整的个人资料时，可能对您权益之影响；
+                            </li>
+                            <li>
+                                6. 个人资料的安全维护；
+                            </li>
+                            <li>
+                                为了维护您的权利，请花一点时间阅读下面的信息，如果有任何问题请让我们知道。
+                            </li>
+                        </ul>
+                    </li>
+                    <li style="width: 100%; word-wrap: break-word; word-break: normal; line-height: 40px;margin-top:50px; " ">
+                        <b>一、适用范围</b><br />
+                        <ul>
+                            <li>
+                                （一）本同意书适用于您在本公司网站内与其所附属之网站活动时，所涉及的个人资料搜集、处理、利用、
+                                国际传递以及保护措施。
+                            </li>
+                            <li>
+                                （二）本公司网站、产品、应用和服务可能包含指向第三方网站的产品和服务，我们的产品和服务也可能使
+                                用或提供来自第三方的产品或服务，包括如位置数据或联系方式收集的数据，这些将受到他们个人资
+                                料保护相关规定的约束。
+                            </li>
+                            <li>
+                                （三）当您使用某些本公司产品、服务或应用程序时，您分享的个人资料是其他用户可以见到、阅读、收集
+                                或使用的，您应该对在这些情况下提交的个人资料负责。例如，如果你发布在某论坛上发帖您的姓名
+                                和电子邮件地址，这些数据是公开的，使用这些功能时请小心。
+                            </li>
+                        </ul>
+                    </li>
+                    <li style="width: 100%; word-wrap: break-word; word-break: normal; line-height: 40px;margin-top:50px; " ">
+                        <b>二、资料搜集之目的及类别</b><br />
+                        <ul>
+                            <li>
+                                依法务部颁布之「个人资料保护法之特定目的及个人资料之类别」，本公司搜集之目的有：○四○营销、○ 六九契约或类似契约或其他法律关系事务、○九○消费者、客户管理与服务、一三六信息与数据库管理、一 四八网络购物及其他电子商务服务、一五七调查、统计与研究分析、一八二其他咨询与顾问服务；类别有： Ｃ○○一辨识个人者、Ｃ○○三政府资料中之辨识者、Ｃ○一一个人描述、Ｃ○三一住家及设施、Ｃ○三五 休闲活动及兴趣、Ｃ○三八职业、Ｃ○八三信用评等。详细情形如下：
+                            </li>
+                        </ul>
+                    </li>
+                    <li style="width: 100%; word-wrap: break-word; word-break: normal; line-height: 40px;margin-top:50px; " ">
+                        <b>（一） 加入会员</b><br />
+                        <ul>
+                            <li>
+                                当您申请加入会员时，您将会被要求填写一份您的个人资料，包括姓名、性别、昵称、身份证字号、住址、 生日、手机门号、电话、电子信箱、银行账号、载具条形码等相关必要资料；成为会员后，您会拥有一组会员 账号与密码，并由经由本组账号、密码登入网站及使用会员的各项服务。
+                            </li>
+                        </ul>
+                    </li>
+                    <li style="width: 100%; word-wrap: break-word; word-break: normal; line-height: 40px;margin-top:50px; " ">
+                        <b>（二） 在线交易</b><br />
+                        <ul>
+                            <li>
+                                如您使用在线交易服务，我们会依照您选择的在线交易形态，搜集您所填写的订单相关数据，以确保您完成 付款、储值或物流等消费服务。
+                            </li>
+                        </ul>
+                    </li>
+                    <li style="width: 100%; word-wrap: break-word; word-break: normal; line-height: 40px;margin-top:50px; " ">
+                        <b>（三） 在线活动</b><br />
+                        <ul>
+                            <li>
+                                若您因参加本公司举办之在线活动或网络调查而登入会员账号与密码时，您的个人资料将直接由会员数据库 提供；如该项活动仍需您配合补充相关资料时，请详细登录所需之资料，这些补充的数据也会一并受到我们 的保护。
+                            </li>
+                        </ul>
+                    </li>
+                    <li style="width: 100%; word-wrap: break-word; word-break: normal; line-height: 40px;margin-top:50px; " ">
+                        <b>（四） 浏览网页</b><br />
+                        <ul>
+                            <li>
+                                当您于本公司的网站或附属网站中进行浏览或查询时，服务器将自动纪录您使用联机的IP位置、时间及浏览 相关记录，这些数据仅供作流量统计分析及网络服务优化，以便改善我们的服务质量；这些资料仅作为总量 上的分析，不会和特定个人相联系。
+                            </li>
+                        </ul>
+                    </li>
+                    <li style="width: 100%; word-wrap: break-word; word-break: normal; line-height: 40px;margin-top:50px; " ">
+                        <b>（五） 其他</b><br />
+                        <ul>
+                            <li>
+                                个人资料除了由您直接提供之外，如果您在您在本公司的合作厂商处有主动提供个人资料，基于您的同意或 为履行契约目的前提下，合作厂商会提供您的个人资料给本公司；这些数据只会在您同意或为履行契约的服 务范围内利用及处理，不会用于其他用途。
+                            </li>
+                        </ul>
+                    </li>
+                    <li style="width: 100%; word-wrap: break-word; word-break: normal; line-height: 40px;margin-top:50px; " ">
+                        <b>三、数据利用的期间、地区、对象及方式</b><br />
+                        <ul>
+                            <li>
+                                （一）利用期间 除法令另有规定外，我们使用您个人资料期间自您成为本公司网站内与其所附属网站的会员
+                                起，至本公司网站内与其所附属网站服务完毕或您提出停止使用之请求为止。
+                            </li>
+                            <li>
+                                （二）利用地区 台湾地区及提供本公司网站内与其所附属网站服务之地区。
+                            </li>
+                            <li>
+                                （三）利用对象 除法令另有规定外，您个人资料的使用仅限于您同意之服务目的及本公司内部在相关连之范
+                                围内，不会任意将您提供的个人资料转供其他第三人或移作其他目的使用；但基于履行契约目的情形
+                                下，我们将提供相关资料予合作厂商，以履行与您的契约义务。
+                            </li>
+                            <li>
+                                （四）利用方式
+                            </li>
+                            <li>
+                                1. 会员资料
+                            </li>
+                            <li>
+                                您在加入会员时所填写的数据，本公司将会进行手机及e-mail验证，并分析您个人在网站上行为及 消费习惯，以作为将来提供会员所需之详尽数据以及设计会员活动时之依据。
+                            </li>
+                            <li>
+                                2. 在线交易
+                            </li>
+                            <li>
+                                如您使用在线交易服务，我们将会依照你提出的在线交易形态，搜集您所填写的订单相关数据，以 确保您完成付款、储值或物流等消费服务。
+                            </li>
+                            <li>
+                                3. 订阅电子报
+                            </li>
+                            <li>
+                                在您加入会员或使用本公司网站与其所附属网站服务后，为提供营销或其他加值服务之目的，我们 会不定期的发送电子报、手机简讯或其他实时通讯软件讯息至您所登录的电子信箱账号或手机门号 ；如果您表明不想再接受相关信息，我们会停止继续对您发送相类似的讯息；如有相关疑问，请洽 询本公司顾客服务中心。
+                            </li>
+                            <li>
+                                4. 在线活动及调查
+                            </li>
+                            <li>
+                                如果您参加本公司举办的在线活动或网络调查，所留下的个人资料仅供该次活动或调查使用，这些 资料将于活动或调查结束后销毁。
+                            </li>
+                            <li>
+                                5. 统计与分析
+                            </li>
+                            <li>
+                                本公司针对您加入会员时所填写的数据，以及站内浏览时服务器所产生的纪录，将不定期进行总体 会员行为分析与统计，不会针对个人行为进行分析。
+                            </li>
+                        </ul>
+                    </li>
+                    <li style="width: 100%; word-wrap: break-word; word-break: normal; line-height: 40px;margin-top:50px; " ">
+                        <b>四、 您可以行使的权利及方式</b><br />
+                        <ul>
+                            <li>
+                                （一）对于您的个人资料，您可以以书面的方式向本公司请求行使以下权利：
+                            </li>
+                            <li>
+                                1. 查询或请求阅览。
+                            </li>
+                            <li>
+                                2. 请求制给复制本。
+                            </li>
+                            <li>
+                                3. 请求补充或更正。
+                            </li>
+                            <li>
+                                4. 请求停止搜集、处理或利用。
+                            </li>
+                            <li>
+                                5. 请求删除。
+                            </li>
+                            <li>
+                                （二）权利限制 前项的权利，如果您不符合本公司申请程序或法令另有规定时，将会受到限制
+                            </li>
+                            <li>
+                                （三）酌收费用 您向本公司请求阅览个人资料或制给复制本时，本公司将酌收必要成本费用。
+                            </li>
+                            <li>
+                                （四）权利行使之方式 上开权利之申请，应填具申请文件，本公司得向您请求提出可资确认之身分证明文件
+                                ；如果是委托他人代为申请，请出具委任书，并且提供本人及代理人的身分证明文件。
+                            </li>
+                        </ul>
+                    </li>
+                    <li style="width: 100%; word-wrap: break-word; word-break: normal; line-height: 40px;margin-top:50px; " ">
+                        <b>五、无法提供完整的个人资料时对您权益的影响</b><br />
+                        <ul>
+                            <li>
+                                若您无法提供完整且确实的个人资料，将影响本公司和您的联系、完成交易、提供服务、身分验证或处理消 费、交易或客诉等等问题，建议您应提供完整的个人资料及随时更新正确的数据。若因您未提供完整且确实 个人资料，造成对您及第三人的损害时，您应负担一切责任；如造成本公司的损失，本公司有权向您请求损 害赔偿
+                            </li>
+                        </ul>
+                    </li>
+                    <li style="width: 100%; word-wrap: break-word; word-break: normal; line-height: 40px;margin-top:50px; " ">
+                        <b>六、个人资料安全维护</b><br />
+                        <ul>
+                            <li>
+                                关于您的个人资料档案，本公司将实行适当之安全措施，并尽力以合理之技术及措施，依相关法令办理安全 维护事项，防止您的个人资料被窃取、窜改、毁损、灭失或泄漏。
+                            </li>
+                        </ul>
+                    </li>
+                    <li style="width: 100%; word-wrap: break-word; word-break: normal; line-height: 40px;margin-top:50px; " ">
+                        <b>七、个人资料保护同意书的修改</b><br />
+                        <ul>
+                            <li>
+                                因为法令的改变，我们会修订本同意书之内容，相关修正内容以及规定会公告于本公司的网站上；为保障您 的权益，请定期浏览我们网站的公告。当您于本同意书任何修改或变更后继续使用本公司网站与其所附属之 网站服务，表示您已阅读、了解并同意接受本同意书修改或变更后之内容。 如果您不同意本同意书，请您立 即停止使用本公司网站与其所附属之网站服务。
+                            </li>
+                        </ul>
+                    </li>
+                    <li style="width: 100%; word-wrap: break-word; word-break: normal; line-height: 40px;margin-top:50px; " ">
+                        <b>八、看法与建议</b><br />
+                        <ul>
+                            <li>
+                                您如果对于个人资料有关之相关事项有任何意见或疑问，可以和本公司客服中心联络，
+                                电话：(04)2708-5191。
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+        </div>
+        <div data-theme="a" data-role="footer" class="footer" style="width: 100%;position:fixed;z-index:500;bottom:0;">
+            <a href="about.html" data-transition="fade" class="footerAbout"></a>
+            <a href="index.html" data-transition="fade" class="footerHome"></a>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,1544 @@
+﻿/*首頁*/
+/*Banner*/
+#MainBanner {
+    width: 100%;
+    height: auto;
+    display: block;
+    float: left;
+    padding: 0;
+    margin: 0;
+}
+
+    #MainBanner ul {
+        padding: 0;
+        margin: 0;
+    }
+
+        #MainBanner ul li {
+            width: 100%;
+            height: auto;
+            display: block;
+            float: left;
+            padding: 0;
+            margin: 0;
+        }
+
+        #MainBanner ul li img{
+            width: 100%;
+            height: auto;
+        }
+
+/*登入/登出按鈕*/
+.LogBtnArea {
+    height: 193px;
+    display: block;
+    float: left;
+    margin: 49px 71px;
+}
+
+.MloginBtn, .MlogoutBtn {
+    width: 334px;
+    height: 77px;
+    display: block;
+    float: left;
+    border-radius: 5px;
+    background: #44b6ff;
+    text-align: center;
+    font-size: 30px;
+    color: #353535;
+    text-decoration: none;
+    line-height: 75px;
+    letter-spacing: 2px;
+}
+
+    .MloginBtn:hover, .MlogoutBtn:hover {
+        color: #353535;
+        text-decoration: none;
+    }
+
+    .MloginBtn:active, .MlogoutBtn:active {
+        background: #327cff;
+        color: #fff;
+    }
+
+.MdownloadinBtn, .MdownloadoutBtn {
+    width: 334px;
+    height: 77px;
+    display: block;
+    float: left;
+    border-radius: 5px;
+    background: #c6f05d;
+    text-align: center;
+    font-size: 30px;
+    color: #353535;
+    text-decoration: none;
+    line-height: 75px;
+    margin: 39px 0 0 0;
+}
+
+    .MdownloadinBtn:hover, .MdownloadoutBtn:hover {
+        color: #353535;
+        text-decoration: none;
+    }
+
+    .MdownloadinBtn:active, .MdownloadoutBtn:active {
+        background: #88c043;
+        color: #fff;
+    }
+
+/*slogan*/
+.SloganTxt {
+    width: 430px;
+    height: 44px;
+    display: block;
+    float: left;
+    font-size: 24px;
+    color: #737373;
+    margin: 0 0 0 28px;
+}
+
+/*領航員 + moLo App + moLo Sport*/
+.ItemsArea {
+    width: 100%;
+    height: auto;
+    display: block;
+    float: left;
+}
+
+.pcArea {
+    width: 100%;
+    height: 203px;
+    display: block;
+    float: left;
+    background: #f3f3f3;
+    margin: 0 0 22px 0;
+}
+
+.pcimg {
+    width: 120px;
+    height: 203px;
+    display: block;
+    float: left;
+    margin: 0 12px 0 29px;
+    padding: 40px 0 0 0;
+}
+
+    .pcimg img {
+        width: 120px;
+        height: 124px;
+    }
+
+.pctxt {
+    width: 287px;
+    height: 203px;
+    display: block;
+    float: left;
+    font-size: 26px;
+    color: #a4a4a4;
+    line-height: 28px;
+}
+
+.mobileArea {
+    width: 100%;
+    height: 207px;
+    display: block;
+    float: left;
+    background: #f3f3f3;
+    margin: 0 0 22px 0;
+}
+
+.mobileimg {
+    width: 120px;
+    height: 207px;
+    display: block;
+    float: left;
+    margin: 0 12px 0 29px;
+    padding: 26px 0 0 24px;
+}
+
+    .mobileimg img {
+        width: 88px;
+        height: 159px;
+    }
+
+.mobiletxt {
+    width: 287px;
+    height: 203px;
+    display: block;
+    float: left;
+    font-size: 26px;
+    color: #a4a4a4;
+    line-height: 28px;
+}
+
+.sportArea {
+    width: 100%;
+    height: 227px;
+    display: block;
+    float: left;
+    background: #f3f3f3;
+    margin: 0 0 22px 0;
+}
+
+.sportimg {
+    width: 120px;
+    height: 227px;
+    display: block;
+    float: left;
+    margin: 0 12px 0 29px;
+    padding: 11px 0 0 8px;
+}
+
+    .sportimg img {
+        width: 109px;
+        height: 185px;
+    }
+
+.soprttxt {
+    width: 287px;
+    height: 203px;
+    display: block;
+    float: left;
+    font-size: 26px;
+    color: #a4a4a4;
+    line-height: 28px;
+    letter-spacing: 1px;
+}
+
+/*Download頁*/
+#TopTitle {
+    position: absolute;
+    top: 0;
+    width: 236px;
+    height: 24px;
+    display: block;
+    text-align: center;
+    font-size: 22px;
+    font-weight: bold;
+    margin: 27px 0 0 136px;
+}
+
+#DownloadArea {
+    width: 100%;
+    height: auto;
+    display: block;
+    float: left;
+}
+
+.downloadApp {
+    width: 100%;
+    height: 292px;
+    display: block;
+    float: left;
+    background: #ffe16a url(../_img/Download/icon01.png) 46px 103px no-repeat;
+}
+
+.downloadAppBtn {
+    width: 271px;
+    height: 86px;
+    display: block;
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    line-height: 86px;
+    text-align: center;
+    background: url(../_img/Download/DownloadBtn.png) 0px 0px no-repeat;
+    margin: 110px 0 0 154px;
+    padding: 2px 0 0 35px;
+}
+
+.downloadSport {
+    width: 100%;
+    height: 292px;
+    display: block;
+    float: left;
+    background: #99ddf8 url(../_img/Download/icon02.png) 48px 75px no-repeat;
+}
+
+.downloadSportBtn {
+    width: 271px;
+    height: 86px;
+    display: block;
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+    color: #fff;
+    text-decoration: none;
+    line-height: 86px;
+    text-align: center;
+    background: url(../_img/Download/DownloadBtn.png) 0px -86px no-repeat;
+    margin: 106px 0 0 154px;
+    padding: 4px 0 0 35px;
+}
+
+    .downloadAppBtn:hover, .downloadSportBtn:hover {
+        color: #fff;
+        text-decoration: none;
+    }
+
+/*moLo服務頁*/
+.moLoServiceItemsArea {
+    width: 100%;
+    height: auto;
+    display: block;
+    float: left;
+}
+
+.SI01, .SI02, .SI03, .SI04, .SI05 {
+    width: 100%;
+    height: 136px;
+    display: block;
+    float: left;
+    border-bottom: 2px #f3f3f3 solid;
+    font-size: 24px;
+    font-weight: bold;
+    color: #535353;
+    text-decoration: none;
+}
+
+    .SI01:hover, .SI02:hover, .SI03:hover, .SI04:hover, .SI05:hover {
+        color: #535353;
+        text-decoration: none;
+    }
+
+.SI01 {
+    background: #fff url(../_img/moLoService/SI01.png) 111px 41px no-repeat;
+    padding: 60px 0 0 191px;
+}
+
+.SI02 {
+    background: #fff url(../_img/moLoService/SI02.png) 106px 22px no-repeat;
+    padding: 42px 0 0 191px;
+    line-height: 30px;
+}
+
+.SI03 {
+    background: #fff url(../_img/moLoService/SI03.png) 103px 44px no-repeat;
+    padding: 54px 0 0 191px;
+}
+
+.SI04 {
+    background: #fff url(../_img/moLoService/SI04.png) 106px 39px no-repeat;
+    padding: 59px 0 0 191px;
+}
+
+.SI05 {
+    background: #fff url(../_img/moLoService/SI05.png) 100px 45px no-repeat;
+    padding: 57px 0 0 191px;
+}
+
+.isMask {
+    position: absolute;
+    width: 480px;
+    height: 136px;
+    display: block;
+    background: rgba(53, 238,255, 0.52);
+}
+
+/*會員專區*/
+.IDArea {
+    width: 480px;
+    height: auto;
+    display: block;
+    float: left;
+    border-top: 3px #636363 solid;
+}
+
+.IDtitle {
+    width: 452px;
+    height: 28px;
+    display: block;
+    float: left;
+    font-size: 28px;
+    font-weight: bold;
+    color: #636967;
+    letter-spacing: 1px;
+    margin: 44px 16px 0 16px;
+    padding: 0 0 0 23px;
+}
+
+.IDcontent {
+    width: 452px;
+    height: 83px;
+    display: block;
+    float: left;
+    font-size: 28px;
+    color: #4a91c8;
+    letter-spacing: 1px;
+    margin: 25px 16px 0 16px;
+    padding: 0 0 0 23px;
+    border-bottom: 1px #d0d0d0 solid;
+}
+
+.InfoItems {
+    width: 452px;
+    height: auto;
+    display: block;
+    float: left;
+    margin: 0px 16px 67px 16px;
+}
+
+    .InfoItems ul {
+        padding: 0;
+        margin: 0;
+    }
+
+        .InfoItems ul li {
+            width: 452px;
+            height: 103px;
+            display: block;
+            float: left;
+            border-bottom: 1px #d0d0d0 solid;
+            line-height: 103px;
+            color: #787878;
+            padding: 0 0 0 40px;
+        }
+
+.InfoItemsTxt01 {
+    width: 300px;
+    display: block;
+    float: left;
+    font-size: 24px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.InfoItemsTxt02 {
+    width: 300px;
+    display: block;
+    float: left;
+    font-size: 38px;
+    letter-spacing: 2px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    margin: 8px 0 0 0;
+}
+
+.InfoItemsTxt03 {
+    width: 300px;
+    display: block;
+    float: left;
+    font-size: 24px;
+    letter-spacing: 1px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.InfoItemsBtn {
+    width: 88px;
+    height: 62px;
+    display: block;
+    float: right;
+    background: #4a91c8;
+    margin: 23px 8px 0 0;
+    font-size: 24px;
+    color: #addbff;
+    line-height: 62px;
+    text-align: center;
+    letter-spacing: 2px;
+}
+
+    .InfoItemsBtn:hover {
+        color: #addbff;
+        text-decoration: none;
+    }
+
+/*會員專區-mail*/
+.IDsectitle {
+    width: 452px;
+    height: 24px;
+    display: block;
+    float: left;
+    font-size: 24px;
+    color: #787878;
+    margin: 31px 16px 0 16px;
+    padding: 0 0 0 23px;
+}
+
+.IDseccontent {
+    width: 452px;
+    height: 28px;
+    display: block;
+    float: left;
+    font-size: 28px;
+    font-weight: bold;
+    color: #787878;
+    margin: 19px 16px 0 16px;
+    padding: 0 0 0 23px;
+}
+
+.IDthirdtitle {
+    width: 452px;
+    height: 24px;
+    display: block;
+    float: left;
+    font-size: 24px;
+    color: #787878;
+    margin: 56px 16px 0 16px;
+    padding: 0 0 0 23px;
+}
+
+.IDthirdcontent {
+    width: 403px;
+    height: 28px;
+    display: block;
+    float: left;
+    font-size: 28px;
+    font-weight: bold;
+    color: #787878;
+    margin: 37px 16px 0 16px;
+    padding: 0 0 0 23px;
+    overflow: hidden;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+}
+
+.IDthirdLine {
+    width: 403px;
+    height: 9px;
+    display: block;
+    float: left;
+    border-right: 2px #b3b3b3 solid;
+    border-left: 2px #b3b3b3 solid;
+    border-bottom: 2px #b3b3b3 solid;
+    margin: 0px 21px 79px 34px;
+}
+
+.IDStoredMailBtn {
+    width: 403px;
+    height: 60px;
+    display: block;
+    float: left;
+    font-size: 24px;
+    color: #addbff;
+    line-height: 60px;
+    text-align: center;
+    background: #4a91c8;
+    margin: 0 21px 0 34px;
+    letter-spacing: 2px;
+}
+
+.IDCancelBtn {
+    width: 403px;
+    height: 60px;
+    display: block;
+    float: left;
+    font-size: 24px;
+    color: #addbff;
+    line-height: 60px;
+    text-align: center;
+    background: #4a91c8;
+    margin: 45px 21px 80px 34px;
+    letter-spacing: 2px;
+}
+
+    .IDStoredMailBtn:hover, .IDCancelBtn:hover {
+        color: #addbff;
+        text-decoration: none;
+    }
+
+/*會員專區-密碼*/
+.IDPWtitle {
+    width: 452px;
+    height: 28px;
+    display: block;
+    float: left;
+    font-size: 28px;
+    font-weight: bold;
+    color: #636967;
+    letter-spacing: 1px;
+    margin: 35px 16px 0 16px;
+    padding: 0 0 0 23px;
+}
+
+.IDPWsectitle {
+    width: 452px;
+    height: 24px;
+    display: block;
+    float: left;
+    font-size: 24px;
+    color: #787878;
+    margin: 47px 16px 0 16px;
+    padding: 0 0 0 23px;
+}
+
+.IDPWLine {
+    width: 403px;
+    height: 9px;
+    display: block;
+    float: left;
+    border-right: 2px #b3b3b3 solid;
+    border-left: 2px #b3b3b3 solid;
+    border-bottom: 2px #b3b3b3 solid;
+    margin: 0px 21px 0px 34px;
+}
+
+.IDPWtip {
+    width: 403px;
+    height: 18px;
+    display: block;
+    float: left;
+    font-size: 18px;
+    color: #a7a7a7;
+    margin: 9px 27px 32px 41px;
+}
+
+.IDPWLvl {
+    width: 328px;
+    height: 48px;
+    display: block;
+    float: left;
+    font-size: 24px;
+    color: #cacaca;
+    border: 1px #b9b9b9 solid;
+    line-height: 48px;
+    margin: 1px 27px 58px 41px;
+    padding: 0 0 0 24px;
+}
+
+.IDPWpic {
+    width: 131px;
+    height: 15px;
+    display: block;
+    float: right;
+    background: url(../_img/layout/PW_bg.png) top left no-repeat;
+    margin: 16px 90px 0 0;
+}
+
+.IDPWStoredBtn {
+    width: 403px;
+    height: 60px;
+    display: block;
+    float: left;
+    font-size: 24px;
+    color: #addbff;
+    line-height: 60px;
+    text-align: center;
+    background: #4a91c8;
+    margin: 0 21px 0 34px;
+    letter-spacing: 2px;
+}
+
+.IDPWCancelBtn {
+    width: 403px;
+    height: 60px;
+    display: block;
+    float: left;
+    font-size: 24px;
+    color: #addbff;
+    line-height: 60px;
+    text-align: center;
+    background: #4a91c8;
+    margin: 27px 21px 90px 34px;
+    letter-spacing: 2px;
+}
+
+    .IDPWStoredBtn:hover, .IDPWCancelBtn:hover {
+        color: #addbff;
+        text-decoration: none;
+    }
+
+/*會員專區-登入模式*/
+.IDMODsectitle {
+    width: 452px;
+    height: 24px;
+    display: block;
+    float: left;
+    font-size: 24px;
+    color: #787878;
+    margin: 46px 16px 0 16px;
+    padding: 0 0 0 23px;
+}
+
+.IDMODseccontent {
+    width: 452px;
+    height: 24px;
+    display: block;
+    float: left;
+    font-size: 24px;
+    color: #787878;
+    font-weight: bold;
+    margin: 16px 16px 0 16px;
+    padding: 0 0 0 23px;
+}
+
+.IDMODthirdtitle {
+    width: 452px;
+    height: 24px;
+    display: block;
+    float: left;
+    font-size: 24px;
+    color: #787878;
+    margin: 56px 16px 16px 16px;
+    padding: 0 0 0 23px;
+}
+
+.IDMODSelect {
+    width: 480px;
+    height: auto;
+    display: block;
+    float: left;
+}
+
+.IDMODSelectItems {
+    width: 480px;
+    height: 100px;
+    display: block;
+    float: left;
+    border-bottom: 2px #fff solid;
+    font-size: 24px;
+    font-weight: bold;
+    color: #898989;
+    line-height: 100px;
+    padding: 0 0 0 53px;
+    background: #e6e6e6;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+    input[type="radio"] + label span {
+        position: absolute;
+        width: 31px;
+        height: 31px;
+        display: block;
+        float: left;
+        background: url(../_img/Member/SelectBtn.png) 0px -31px no-repeat;
+        cursor: pointer;
+        margin: -67px 0 0 340px;
+    }
+
+    input[type="radio"]:checked + label span {
+        background: url(../_img/Member/SelectBtn.png) 0px 0px no-repeat;
+    }
+
+.IDMODStoredMailBtn {
+    width: 403px;
+    height: 60px;
+    display: block;
+    float: left;
+    font-size: 24px;
+    color: #addbff;
+    line-height: 60px;
+    text-align: center;
+    background: #4a91c8;
+    margin: 52px 21px 0 34px;
+    letter-spacing: 2px;
+}
+
+.IDMODCancelBtn {
+    width: 403px;
+    height: 60px;
+    display: block;
+    float: left;
+    font-size: 24px;
+    color: #addbff;
+    line-height: 60px;
+    text-align: center;
+    background: #4a91c8;
+    margin: 28px 21px 58px 34px;
+    letter-spacing: 2px;
+}
+
+    .IDMODStoredMailBtn:hover, .IDMODCancelBtn:hover {
+        color: #addbff;
+        text-decoration: none;
+    }
+
+/*教學說明*/
+#qaContent {
+    width: 480px;
+    height: auto;
+    display: block;
+    float: left;
+    border-top: 3px #636363 solid;
+}
+
+    #qaContent ul.accordionPart {
+        margin: 0;
+        padding: 0;
+    }
+
+        #qaContent ul.accordionPart li {
+            padding: 40px 0px;
+            border-bottom: 1px #d0d0d0 solid;
+            font-size: 24px;
+            font-weight: bold;
+        }
+
+            #qaContent ul.accordionPart li ul li {
+                border-bottom: 1px #d0d0d0 solid;
+                padding-bottom: 0;
+                margin-top: 0;
+            }
+
+            #qaContent ul.accordionPart li a {
+                color: #898989;
+            }
+
+                #qaContent ul.accordionPart li a:hover,
+                #qaContent ul.accordionPart li a:focus {
+                    color: #898989;
+                }
+
+            #qaContent ul.accordionPart li .qa_title, .qa_title_sub {
+                background: url(../_img/icon_Q.png) no-repeat;
+                padding-left: 28px;
+                color: #898989;
+                cursor: pointer;
+            }
+
+            #qaContent ul.accordionPart li .qa_title_on, .qa_title_on_sub {
+                text-decoration: none;
+            }
+
+            #qaContent ul.accordionPart li .qa_content, .qa_content_sub {
+                margin: 6px 0;
+                background: url(../_img/icon_A.png) no-repeat;
+                margin-left: 15px;
+                padding-left: 25px;
+                color: #5e5e5e;
+                font-size: 22px;
+            }
+
+/*客服中心*/
+.ServiceArea {
+    width: 480px;
+    height: auto;
+    display: block;
+    float: left;
+    border-top: 3px #636363 solid;
+}
+
+.ServTitle {
+    width: 363px;
+    height: 54px;
+    display: block;
+    float: left;
+    padding: 0 0 0 48px;
+    margin: 67px 0 0 54px;
+    border-bottom: 2px #d0d0d0 solid;
+    font-size: 32px;
+    font-weight: bold;
+    color: #636967;
+    background: url(../_img/layout/ServiceTitleIcon.png) top left no-repeat;
+}
+
+.ServContent {
+    display: block;
+    float: left;
+    padding: 0 0 0 98px;
+    margin: 28px 0 110px 0;
+}
+
+    .ServContent ul li {
+    }
+
+.SCtitle {
+    font-size: 28px;
+    font-weight: bold;
+    color: #505050;
+    margin: 0 0 12px 0;
+}
+
+.SCcontent {
+    font-size: 22px;
+    color: #5e5e5e;
+    margin: 0 0 32px 0;
+}
+/*合作夥伴-與moLo合作*/
+.Partner01Area {
+    width: 480px;
+    height: auto;
+    display: block;
+    float: left;
+}
+
+.Partner01Items {
+    width: 480px;
+    height: 80px;
+    display: block;
+    float: left;
+    background: #4a91c8;
+}
+
+.P01I01, .P01I01:hover {
+    font-size: 24px;
+    font-weight: bold;
+    color: #b7d9f4;
+    text-decoration: underline;
+    line-height: 80px;
+    padding: 0 0 0 60px;
+}
+
+.P01I02, .P01I02:hover {
+    font-size: 24px;
+    font-weight: bold;
+    color: #184c74;
+    text-decoration: none;
+    padding: 0 0 0 63px;
+    line-height: 80px;
+}
+
+.Partner01Content {
+    width: 480px;
+    height: auto;
+    display: block;
+    float: left;
+    margin: 52px 0 14px 0;
+}
+
+.P01IinfoTitle {
+    font-size: 26px;
+    font-weight: bold;
+    color: #636967;
+    margin: 0 50px 23px 50px;
+}
+
+.P01IinfoContent {
+    width: 380px;
+    font-size: 22px;
+    color: #9e9e9e;
+    line-height: 30px;
+    margin: 0 0 0 50px;
+}
+
+.P01Items {
+    width: 403px;
+    height: auto;
+    display: block;
+    float: left;
+    margin: 0 0 103px 0;
+}
+
+.P01Itemstitle {
+    display: block;
+    float: left;
+    font-size: 22px;
+    color: #535353;
+    margin: 0 0 10px 60px;
+    padding: 64px 0 0 0;
+    letter-spacing: 5px;
+}
+
+.P01Itemstitle01 {
+    display: block;
+    float: left;
+    font-size: 22px;
+    color: #535353;
+    margin: 0 0 10px 60px;
+    padding: 64px 0 0 0;
+    letter-spacing: -1px;
+}
+
+.P01Itemstitle02 {
+    display: block;
+    float: left;
+    font-size: 22px;
+    color: #535353;
+    margin: 0 0 10px 60px;
+    padding: 64px 0 0 0;
+    letter-spacing: 60px;
+}
+
+.PItemsSBtn, .PItemsSBtn:hover {
+    width: 188px;
+    height: 80px;
+    display: block;
+    float: left;
+    background: #4a91c8;
+    line-height: 80px;
+    font-size: 24px;
+    color: #535353;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 0 0 138px;
+}
+
+.PItemsCBtn, .PItemsCBtn:hover {
+    width: 188px;
+    height: 80px;
+    display: block;
+    float: left;
+    background: #c8c8c8;
+    line-height: 80px;
+    font-size: 24px;
+    color: #535353;
+    text-align: center;
+    text-decoration: none;
+    margin: 60px 0 95px 138px;
+}
+/*合作夥伴-夥伴專區*/
+.Partner02Area {
+    width: 480px;
+    height: auto;
+    display: block;
+    float: left;
+}
+
+.Partner02Items {
+    width: 480px;
+    height: 80px;
+    display: block;
+    float: left;
+    background: #3cae87;
+}
+
+.P02I01, .P02I01:hover {
+    font-size: 24px;
+    font-weight: bold;
+    color: #156b4d;
+    text-decoration: none;
+    line-height: 80px;
+    padding: 0 0 0 60px;
+}
+
+.P02I02, .P02I02:hover {
+    font-size: 24px;
+    font-weight: bold;
+    color: #9df0d3;
+    text-decoration: underline;
+    padding: 0 0 0 63px;
+    line-height: 80px;
+}
+
+.Partner02Content {
+    width: 480px;
+    height: auto;
+    display: block;
+    float: left;
+    margin: 40px 0 58px 0;
+}
+
+.P02IinfoTitle {
+    font-size: 26px;
+    font-weight: bold;
+    color: #636967;
+    margin: 0 50px 23px 36px;
+}
+
+.P02IinfoContent {
+    width: 440px;
+    font-size: 22px;
+    color: #9e9e9e;
+    line-height: 30px;
+    margin: 0 0 0 36px;
+}
+
+.P02ItemsBtn, .P02ItemsBtn:hover {
+    width: 386px;
+    height: 70px;
+    display: block;
+    float: left;
+    background: #3cae87;
+    font-size: 24px;
+    color: #404040;
+    line-height: 70px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 0 35px 44px;
+}
+
+.P02ServiceItems {
+    width: 480px;
+    height: auto;
+    display: block;
+    float: left;
+    margin: 40px 0 105px 0;
+}
+
+.P02SItitle {
+    font-size: 24px;
+    color: #404040;
+    margin: 0 0 20px 53px;
+}
+
+.P02SIcontent {
+    font-size: 22px;
+    color: #9e9e9e;
+    margin: 0 0 -5px 53px;
+}
+/*合作夥伴-夥伴專區add*/
+.Partner02AddContent {
+    width: 480px;
+    height: auto;
+    display: block;
+    float: left;
+    margin: 63px 0 85px 0;
+}
+
+.P02AddIinfoTitle {
+    font-size: 26px;
+    font-weight: bold;
+    color: #636967;
+    margin: 0 0 16px 36px;
+}
+
+.P02AddIinfoContent {
+    width: 385px;
+    font-size: 22px;
+    color: #9e9e9e;
+    line-height: 30px;
+    margin: 0 0 0 36px;
+}
+
+.P02AddSerItems {
+    width: 440px;
+    height: auto;
+    display: block;
+    float: left;
+    margin: 0 0 35px 0;
+}
+
+    .P02AddSerItems ul {
+        margin: 0 0 0 28px;
+    }
+
+        .P02AddSerItems ul li {
+            width: 440px;
+            height: 62px;
+            margin: 0 0 42px 0;
+        }
+
+.P02ASItitle {
+    width: 105px;
+    height: 62px;
+    display: block;
+    float: left;
+    font-size: 22px;
+    color: #253b32;
+    background: #3cae87;
+    line-height: 62px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.P02ASIcontent {
+    width: 294px;
+    height: 62px;
+    display: block;
+    float: left;
+}
+
+.P02ASItxt {
+    width: 275px;
+    height: 52px;
+    display: block;
+    font-size: 20px;
+    color: #535353;
+    line-height: 50px;
+    margin: 0 0 0 24px;
+    overflow: hidden;
+}
+
+.P02ASILine {
+    width: 294px;
+    height: 9px;
+    border-bottom: 2px #b3b3b3 solid;
+    border-right: 2px #b3b3b3 solid;
+    border-left: 2px #b3b3b3 solid;
+    margin: 0 0 0 14px;
+}
+
+.P02ASIEditBtn, .P02ASIEditBtn:hover {
+    width: 188px;
+    height: 80px;
+    display: block;
+    float: left;
+    background: #3cae87;
+    font-size: 24px;
+    color: #404040;
+    letter-spacing: 1px;
+    line-height: 80px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 0 30px 145px;
+}
+
+.P02ASIDelBtn, .P02ASIDelBtn:hover {
+    width: 188px;
+    height: 80px;
+    display: block;
+    float: left;
+    background: #3cae87;
+    font-size: 24px;
+    color: #404040;
+    letter-spacing: 1px;
+    line-height: 80px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0 0 90px 145px;
+}
+/*合作夥伴-夥伴專區add2*/
+.Partner02MSContent {
+    width: 480px;
+    height: auto;
+    display: block;
+    float: left;
+    margin: 68px 0 -7px 0;
+}
+
+.P02MSIinfoTitle {
+    font-size: 26px;
+    font-weight: bold;
+    color: #636967;
+    margin: 0 0 26px 42px;
+}
+
+.P02MSIinfoContent {
+    width: 385px;
+    font-size: 22px;
+    color: #9e9e9e;
+    line-height: 30px;
+    margin: 0 0 0 42px;
+}
+
+.P02MSerItems {
+    width: 480px;
+    height: auto;
+    display: block;
+    float: left;
+}
+
+.P02Itemstitle {
+    display: block;
+    float: left;
+    font-size: 22px;
+    color: #535353;
+    margin: 73px 0 0px 60px;
+    padding: 0;
+    letter-spacing: 2px;
+}
+
+.P02MSIBtn, .P02MSIBtn:hover {
+    width: 188px;
+    height: 80px;
+    display: block;
+    float: left;
+    background: #3cae87;
+    font-size: 24px;
+    color: #535353;
+    line-height: 80px;
+    text-align: center;
+    text-decoration: none;
+    margin: 80px 0 59px 138px;
+}
+
+.P02MSICBtn, .P02MSICBtn:hover {
+    width: 188px;
+    height: 80px;
+    display: block;
+    float: left;
+    background: #c8c8c8;
+    font-size: 24px;
+    color: #535353;
+    line-height: 80px;
+    text-align: center;
+    text-decoration: none;
+    margin: 0px 0 115px 138px;
+}
+/*常見問題 + 教學說明*/
+#FAQArea, #TouchArea {
+    width: 100%;
+    height: auto;
+    display: block;
+    float: left;
+    border-top: 3px #636363 solid;
+    margin: 0 0 62px 0;
+}
+
+.FqaItems, .qaItems {
+    border-bottom: 1px solid #d0d0d0;
+    min-height: 87px;
+    text-align: left;
+}
+
+.FqaTitle, .qaTitle {
+    text-align: left;
+    background: url(../_img/FAQ/qa_arrow.png) 34px 27px no-repeat;
+    color: #898989;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 30px;
+    padding: 27px 28px 27px 70px;
+    cursor: pointer;
+}
+
+.FqaTitle_down, .qaTitle_down {
+    background: url(../_img/FAQ/qa_arrow1.png) 20px 36px no-repeat;
+    color: #5d4732;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 30px;
+    padding: 27px 28px 27px 70px;
+}
+
+.FqaContent, .qaContent {
+    width: 100%;
+    background-color: #fff9df;
+    display: none;
+}
+
+    .FqaContent ul, .qaContent ul {
+        padding: 47px 0;
+    }
+
+        .FqaContent ul li {
+            display:block;
+            color: #333333;
+            padding: 0 28px 21px 28px;
+            line-height: 26px;
+            font-size: 22px;
+            letter-spacing: 0.5px;
+        }
+
+        .qaContent ul li {
+            display:block;
+            color: #5e5e5e;
+            padding: 0 28px 21px 28px;
+            line-height: 30px;
+            font-size: 22px;
+            letter-spacing: 0.5px;
+        }
+
+h3 {
+    font-weight: bold;
+    font-size: 26px;
+    font-family: 微軟正黑體;
+    color: #5e5e5e;
+    margin: 0 0 12px 0;
+}
+/*驗證後修改密碼*/
+.TipArea {
+    width:480px;
+    height:auto;
+    display:block;
+    float:left;
+    font-size:18px;
+    font-weight:bold;
+    color:#636967;
+    line-height:28px;
+    border-top: 3px #636363 solid;
+    padding:55px 45px 44px 45px;
+}
+.PWtitle {
+    font-size:32px;
+    color:#787878;
+    padding:45px 0 13px 43px;
+}
+.PWnoTitle {
+    font-size:26px;
+    color:#787878;
+    padding:0 0 40px 43px;
+    display:block;
+    float:left;
+}
+.PWno {
+    font-size:26px;
+    color:#787878;
+    padding:0 0 40px 0px;
+    display:block;
+    float:left;
+}
+.PWcontent {
+    width:403px;
+    height:auto;
+    display:block;
+    float:left;
+    font-size:24px;
+    color:#787878;
+    padding:0 0 0 50px;
+}
+.PWLine {
+    width: 403px;
+    height: 9px;
+    display: block;
+    float: left;
+    border-right: 2px #b3b3b3 solid;
+    border-left: 2px #b3b3b3 solid;
+    border-bottom: 2px #b3b3b3 solid;
+    margin: 0px 21px 7px 34px;
+}
+.PWtip {
+    font-size:18px;
+    color:#a7a7a7;
+    padding:0;
+    float:left;
+    padding:0 0 52px 36px;
+}
+.RedTip {
+    width:480px;
+    height:auto;
+    display:block;
+    float:left;
+    padding:0 0 22px 47px;
+    font-size:18px;
+    color:#ea2626;
+}
+.PWBtn, .PWBtn:hover {
+    width:403px;
+    height:61px;
+    display:block;
+    float:left;
+    font-size:30px;
+    color:#353535;
+    background:#44b6ff;
+    line-height:61px;
+    text-align:center;
+    text-decoration:none;
+    margin:0 0 68px 37px;
+}
+/*驗證後提示頁*/
+.TipTitle {
+    width:480px;
+    height:auto;
+    display:block;
+    float:left;
+    font-size:26px;
+    font-weight:bold;
+    color:#636967;
+    text-align:center;
+    padding:107px 0 50px 0;
+    border-top: 3px #636363 solid;
+}
+.TipContent {
+    width:480px;
+    height:auto;
+    display:block;
+    float:left;
+    font-size:22px;
+    color:#9e9e9e;
+    text-align:center;
+    line-height:26px;
+    padding:0 0 130px 0;
+}
+    .TipContent a {
+        color:#0099ff;
+        text-decoration:underline;
+    }
+.YellowArea {
+    background:#ffe16a;
+    width:100%;
+    height:auto;
+    display:block;
+    float:left;
+    padding:47px 0 74px 0;
+}
+.YTitle {
+    font-size :24px;
+    font-weight:bold;
+    color:#636967;
+    padding:0 0px 22px 68px;
+}
+.YContent {
+    font-size:20px;
+    color:#636967;
+    line-height :26px;
+     padding:0 43px 0 68px;
+}
+/*無法登入頁*/
+.ULtitle {
+    width:480px;
+    height:auto;
+    display:block;
+    float:left;
+    font-size:24px;
+    color:#787878;
+    padding:78px 0 21px 71px;
+    border-top: 3px #636363 solid;
+}
+.ULSelect {
+    width: 480px;
+    height: auto;
+    display: block;
+    float: left;
+}
+
+.ULSelectItems {
+    width: 480px;
+    height: 90px;
+    display: block;
+    float: left;
+    border-bottom: 2px #fff solid;
+    font-size: 24px;
+    font-weight: bold;
+    color: #898989;
+    line-height: 90px;
+    padding: 0 0 0 53px;
+    background: #e6e6e6;
+}
+.ULS1Area {
+    width:480px;
+    height:auto;
+    display:block;
+    float:left;
+    padding:29px 0 60px 0;
+}
+.ULScontent {
+    width:403px;
+    height:auto;
+    display:block;
+    float:left;
+    font-size:24px;
+    color:#787878;
+    padding:45px 0 0 50px;
+}
+.ULStip {
+    display:block;
+    float:left;
+    font-size:20px;
+    color:#ea2626;
+    padding:65px 0 10px 48px;
+}
+.ULSBtn, .ULSBtn:hover {
+    width:403px;
+    height:61px;
+    display:block;
+    float:left;
+    font-size:30px;
+    color:#353535;
+    background:#44b6ff;
+    line-height:61px;
+    text-align:center;
+    text-decoration:none;
+    margin:0 0 0 37px;
+}
+.SelectClass {
+    width: 440px;
+    height: 52px;
+    display: block;
+    float: left;
+    font-size: 24px;
+    color: #787878;
+    background: url(../_img/layout/SelectBtn.png) 408px 32px no-repeat;
+}
+
+.SelectBg2 {
+    background: transparent;
+    -webkit-appearance: none;
+    cursor: pointer;
+}
+
+.SelectClass select {
+    width: 385px;
+    height: 52px;
+    display: block;
+    font-size: 24px;
+    color: #787878;
+    margin:12px 0 0 50px;
+    border:none;
+}
+.ULS2tip {
+    display:block;
+    float:left;
+    font-size:22px;
+    line-height:28px;
+    color:#9e9e9e;
+    padding:65px 0 100px 40px;
+}

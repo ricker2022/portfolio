@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bank>
+	<branch num="" name="請選擇分行.."/>
+	<branch num="0019" name="鹿港信用合作社營業部"/>
+	<branch num="0028" name="鹿港信用合作社彰鹿分社"/>
+	<branch num="0037" name="鹿港信用合作社頂番分社"/>
+	<branch num="0046" name="鹿港信用合作社埔鹽分社"/>
+	<branch num="0055" name="鹿港信用合作社彰濱分社"/>
+	<branch num="0064" name="鹿港信用合作社管嶼分社"/>
+	<branch num="0073" name="鹿港信用合作社王功分社"/>
+	<branch num="0082" name="鹿港信用合作社草港分社"/>
+	<branch num="0091" name="鹿港信用合作社福興分社"/>
+</bank>
+

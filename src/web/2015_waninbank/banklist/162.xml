@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bank>
+	<branch num="" name="請選擇分行.."/>
+	<branch num="0012" name="彰化第六信用合作社車路口分社"/>
+	<branch num="0021" name="彰化第六信用合作社營業部"/>
+	<branch num="0030" name="彰化第六信用合作社亭口分社"/>
+	<branch num="0049" name="彰化第六信用合作社華陽分社"/>
+	<branch num="0058" name="彰化第六信用合作社和美分社"/>
+	<branch num="0067" name="彰化第六信用合作社花壇分社"/>
+	<branch num="0076" name="彰化第六信用合作社曉陽分社"/>
+	<branch num="0085" name="彰化第六信用合作社伸港分社"/>
+	<branch num="0094" name="彰化第六信用合作社秀水分社"/>
+	<branch num="0100" name="彰化第六信用合作社福興分社"/>
+</bank>
+

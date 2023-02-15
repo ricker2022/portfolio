@@ -1,0 +1,91 @@
+﻿<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title></title>
+    <script src="JS/jquery.mobile-1.1.1.css"></script>
+    <script src="JS/jquery.mobile-1.1.1.js"></script>
+    <script src="JS/jquery-1.10.2.js"></script>
+    <script src="JS/wanin.js"></script>
+    <script>
+        $(function () {
+        var contentH = $(window).height()-63-94-50;
+         $('.content').css('min-height',contentH);
+        });
+    </script>
+    <link href="JS/wanin.css" rel="stylesheet" type="text/css" />
+    <style>
+       
+        .ui-block-a{
+            background:url('img/topmenuBg.jpg') repeat-x top left;
+            height:47px;
+        }
+        .ui-block-a a{
+            display:inline-block;
+            float:left;
+            line-height:47px;
+            width:33.3%;
+            text-align:center;
+            text-decoration:none;
+            color:#fff;
+            font-size:20px;
+        }
+        
+    </style>
+</head>
+<body>
+<!-- Home -->
+<div data-role="page" id="page1">
+    <div data-theme="a" data-role="header">
+        <div class="ui-grid-b">
+            <div class="ui-grid-b">
+                <div class="ui-block-a">
+                    <div>
+                         <a href="molo.html" data-transition="fade">
+                            數位雲端
+                        </a>
+                        <a href="yoe.html" data-transition="fade">
+                            點數加值
+                        </a>
+                        <a href="game.html" data-transition="fade">
+                           遊戲娛樂
+                        </a>
+                    </div>
+                </div>
+                <div class="ui-block-a">
+                    <div>
+                        <a href="FlashWolves.html" data-transition="fade">
+                            職業電競
+                        </a>
+                          <a href="mgame.html" data-transition="fade">
+                            手機遊戲
+                        </a>
+                        <a href="forum.html" data-transition="fade">
+                            遊戲論壇
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-role="content" style="background:url('img/職業電競底.png') repeat top left;padding:10px;">
+        <ul class="content"  style="height:100%">
+            <li  style="position:relative">
+                <img src="img/電競.png" id="logoImg" />
+                <img src="img/分隔線2.png" width="100%" style="text-align:center; vertical-align:text-top"  />
+                <span style="color:#848484; position:absolute; right:0;  bottom:35px;" id="logoSpan">eSPORTS LEAGUE</span>
+            </li>
+            <li style="width:100%;word-wrap: break-word;word-break: normal;line-height:40px ">【閃電狼(Flash Wolves)】為台灣電子競技聯盟所屬的一支職業電競隊伍，原名為【yoe鋼鐵人(yoe IRONMEN)】自2012年8月納入網銀國際成為正式員工，便提供日常生活照料以及相關培訓.公關宣傳等管理經營。目前分為(Special Force 2 Online).(星海爭霸II).(英雄聯盟).(爐石戰記)隊伍，更名為【yoe閃電狼(Flash Wolves)】新增加了〈戰車世界〉隊伍，期許未來能放眼國際賽事，爭取最高榮譽</li>            <li><a style="color:#00b0ff;line-height:40px" href="http://www.yoeflashwolves.com/" target="_blank">→前往《Flash Wolves》官網</a></li>            <li><a style="color:#00b0ff;line-height:40px" href="https://www.facebook.com/FlashWolves" target="_blank">→前往《Flash Wolves》粉絲團</a></li>
+            
+
+        </ul>
+    </div>
+    <div data-theme="a" data-role="footer" data-position="fixed" class="footer" style="clear:both">
+       <!--<img src="img/footerL.png" style="float:left;" />-->
+        <a href="about.html" data-transition="fade" class="footerAbout"></a>
+        <a href="index.html" data-transition="fade" class="footerHome"></a>
+    </div>
+</div>
+</body>
+</html>

@@ -1,0 +1,73 @@
+﻿@{Layout = "~/Views/Shared/_TeamLayout.cshtml";}
+@using Wb.Models;
+@using Wb.Common;
+@model 電競選手
+
+@Html.Partial("_TeamKv")
+
+<ul class="reset_ul" id="team_description">
+
+    <li>
+        <div class="team_description_title">
+        <i class="fa fa-dot-circle-o"></i>
+        選手資訊</div>
+        <div id="member_pic">
+        <img src="@Model.選手圖片"  onerror="this.src='/upload/website/default.png'"/>
+        </div>
+        <table id='team_spec'>
+            <tr>
+                <td>暱稱:</td>
+                <td>@Model.選手名稱</td>
+            </tr>
+            <tr>
+                <td>年齡:</td>
+                <td>@Model.age</td>
+            </tr>
+            <tr>
+                <td>國家:</td>
+                <td>@Model.國名</td>
+            </tr>
+            <tr>
+                <td>遊戲年齡:</td>
+                <td>@Model.gameage 年</td>
+            </tr>
+            <tr>
+                <td>競技項目:</td>
+                <td>@Model.競技項目</td>
+            </tr>
+            @if (ViewBag.game_id == "lol")
+            {
+            <tr>
+                <td>團隊位置:</td>
+                <td>@Model.團隊位置</td>
+            </tr>
+            <tr>
+                <td>擅用:</td>
+                <td>
+                    @foreach (擅用英雄 item in Model.DTexpertin)
+                    {
+                       <img src="@item.圖片路徑" title="@item.英雄名稱" />
+                    }
+                </td>
+            </tr>
+            }
+            else if (ViewBag.game_id == "SCII")
+            {
+                string img = "http://www.ironforum.com.tw/image/race/rece0"+Model.種族+".jpg";
+                
+                <tr>
+                    <td>種族:</td>
+                    <td><img title="" src="@img"></td>
+                </tr>                
+            }
+        </table>          
+    </li>
+    <li>
+        <div class="team_description_title">
+        <i class="fa fa-dot-circle-o"></i>
+        選用配備</div>
+        <div class="team_contet">
+            @Html.Raw(Model.使用配備)
+        </div>
+    </li>
+</ul>

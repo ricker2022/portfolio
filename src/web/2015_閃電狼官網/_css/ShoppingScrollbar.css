@@ -1,0 +1,76 @@
+﻿#Cartcontent .Cart_index {
+    width:350px;
+    padding: 0;
+    position: relative;
+    top: 0px;
+}
+
+#Cartcontent .Cart {
+    width:350px;
+    padding: 0px;
+    position: relative;
+}
+
+#Cartcontent {
+    width:350px;
+    height: 500px;
+    padding: 0;
+    overflow-y: hidden;
+}
+
+ul#CartListBlock {
+    position: relative;
+    top: 0px;
+    left: 0px;
+}
+
+    ul#CartListBlock li {
+        padding: 0;
+        margin: 0;
+        max-width:324px;
+        display: block;
+        height: auto;
+    }
+
+.mCustomScrollBox > .mCSB_scrollTools {
+    width: 15px;
+    height: 100%;
+    top: 0;
+    right: 2px;
+    *right: 0; /*ie8*/
+}
+
+.mCSB_scrollTools .mCSB_draggerContainer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: auto;
+}
+
+.mCustomScrollBox {
+    *width: 324px;
+}
+
+.mCSB_scrollTools .mCSB_dragger {
+    cursor: pointer;
+    width: 100%;
+}
+
+    .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+        background: #00b7ee;
+        width: 15px;
+        height:100%;
+        margin: 0 auto;
+        text-align: center;
+        background:url(../_img/Shopping/layout/scrolldragger.png) 0px 0px no-repeat;
+    }
+
+.mCSB_scrollTools .mCSB_draggerRail {
+    background: #a0a0a0;
+    width: 1px;
+    height: 100%;
+    margin: 0 auto;
+    *min-height: 500px!important;
+}

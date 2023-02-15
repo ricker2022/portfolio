@@ -1,0 +1,26 @@
+﻿@using Wb.Models;
+@using Wb.Pager;
+@using Wb.Common;
+@model PagedList<新聞>
+@{
+    
+    Dictionary<int, string> type_map = ViewBag.type_map;
+}
+
+
+
+
+<div  class="sub_navi list_row_title"  data-role="none">
+  <div class="col_9">新聞列表</div>
+  <div class="col_1"><a href="#popupPager" class="function_btn" data-rel="popup"><i class="fa fa-ellipsis-h"></i></a></div>
+  <br clear="all"/>
+</div>
+
+<ul data-role="listview" data-scroll="false" id="news_list" >
+@foreach (新聞 item in Model)
+{
+    <li data-icon="false"><a href="@Url.Action("Detail", new { sn = item.新聞流水號})" rel="external"><img src="@item.行動圖片路徑"/><h3>《@type_map[item.屬性編號]》 @item.標題</h3></a></li>
+}
+
+
+</ul>

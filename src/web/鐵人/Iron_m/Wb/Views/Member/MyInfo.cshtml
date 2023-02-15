@@ -1,0 +1,65 @@
+﻿@using Wb.Models;
+@using Wb.Common;
+@model Userinfo
+
+<div  class="sub_navi" >
+    <div class="col_2"><a href="javascript:window.history.back()" class="back_btn"><i class="fa fa-arrow-left"></i></a></div>
+    <div class="col_8 category_title" >會員資料</div>
+    <br clear="all"/>
+</div>
+<div id="member_name">@Model.Nickname</div>
+<div id="member_pic">
+    @Html.MemberIcon(Model)   
+</div>
+
+<form>
+<table  id="member_info_table" cellpadding="0" cellspacing="0" >
+    <tbody>
+        <tr>
+            <td >稱號</td>
+            <td >&nbsp;@Model.titleDisplay</td>
+        </tr>
+        <tr>
+            <td>所屬戰隊</td>
+            <td>&nbsp;@Model.myteam</td>
+        </tr>
+        <tr>
+            <td>moLo手機</td>
+            <td>@Model.DisplayPhone</td>
+        </tr> 
+        <tr>
+            <td>電子信箱</td>
+            <td>@Model.email</td>
+        </tr>   
+        <tr>
+            <td >生日</td>
+            <td >@string.Format("{0:yyyy-MM-d}", Model.birth)</td>
+        </tr>
+        <tr>
+            <td>鉄幣</td>
+            <td>@Model.CoinOnlyMe</td>
+        </tr> 
+        <tr>
+            <td>註冊時間</td>
+            <td>@Model.RegTime</td>
+        </tr> 
+        <tr>
+            <td>經驗值</td>
+            <td>@Model.Exp</td>
+        </tr> 
+        <tr>
+            <td>發文次數</td>
+            <td>@Model.postCount</td>
+        </tr> 
+        <tr>
+            <td>回覆次數</td>
+            <td>@Model.replyCount</td>
+        </tr> 
+        <tr>
+            <td>推文次數</td>
+            <td>@Model.pushCount</td>
+        </tr>             
+    </tbody>
+</table>
+                
+</form>

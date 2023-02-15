@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bank>
+	<branch num="" name="請選擇分行.."/>
+	   <branch num="0012" name="北投農本會"/>
+	   <branch num="0023" name="士林農會"/>
+	   <branch num="0034" name="內湖農本會"/>
+	   <branch num="0045" name="南港農會"/>
+	   <branch num="0056" name="木柵本會"/>
+	   <branch num="0089" name="北投農關渡"/>
+	   <branch num="0090" name="士農社子"/>
+	   <branch num="0104" name="內湖潭美"/>
+	   <branch num="0115" name="南港農中研"/>
+	   <branch num="0126" name="北投農立農"/>
+	   <branch num="0137" name="北投農大屯"/>
+	   <branch num="0148" name="士農文林"/>
+	   <branch num="0159" name="士農天母"/>
+	   <branch num="0171" name="內湖東湖"/>
+	   <branch num="0182" name="內湖西湖"/>
+	   <branch num="0207" name="士農陽明山"/>
+	   <branch num="0229" name="士農延平"/>
+	   <branch num="0241" name="北投農福興"/>
+	   <branch num="0252" name="木柵木新"/>
+	   <branch num="0274" name="內湖農民權"/>
+</bank>

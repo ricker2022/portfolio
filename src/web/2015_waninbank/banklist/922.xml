@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bank>
+	<branch num="" name="請選擇分行.."/>
+	   <branch num="0012" name="台南農信用"/>
+	   <branch num="0023" name="台南農成功"/>
+	   <branch num="0034" name="台南農聯合"/>
+	   <branch num="0056" name="台南農安順"/>
+	   <branch num="0067" name="台南農和順"/>
+	   <branch num="0078" name="台南農土城"/>
+	   <branch num="0089" name="台南農灣裡"/>
+</bank>

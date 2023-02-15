@@ -1,0 +1,43 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="MasterPageMaintain.master.cs" Inherits="MasterPageMaintain" %>
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div>
+            logout
+        </div>
+        <div >
+            <ul>
+                <li>Flash wovles
+                </li>
+                  <li>news
+                </li>
+                  <li>staff
+                </li>
+                  <li>history rewards
+                </li>
+                  <li>rewards
+                </li>
+                  <li>schedule
+                </li>
+                  <li>other settings
+                </li>
+                   <li>other information
+                </li>
+            </ul>
+        </div>
+        <div>
+            <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+            </asp:ContentPlaceHolder>
+        </div>
+    </form>
+</body>
+</html>

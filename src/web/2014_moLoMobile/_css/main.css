@@ -1,0 +1,230 @@
+﻿body {
+    /*font-family: Verdana, Geneva, sans-serif,"細明體","新細明體","微軟正黑體";
+    font-size: 12px;
+    line-height: 1.8em;
+    color: #000;*/
+    background: #f3f3f3;
+    font-family:微軟正黑體;
+    overflow-x:hidden;
+}
+
+/*master 主顯示區*/
+#dPageHolder {
+    width:480px;
+    height: auto;
+    margin: 0 auto;
+    padding: 0;
+    max-width:480px;
+}
+
+/*上方區塊*/
+#dHeader {
+    width: 100%;
+    height: 60px;
+    display: block;
+    margin: 0 auto;
+    padding: 0;
+    background: #fff;
+}
+
+/*logo*/
+#logo a {
+    width: 107px;
+    height: 31px;
+    display: block;
+    background: url(../_img/layout/logo.png) top left no-repeat;
+    float: left;
+    margin: 16px 0 0 29px;
+}
+/*all menu*/
+#menu {
+    width: 35px;
+    height: 34px;
+    display: block;
+    float: right;
+    margin: 14px 20px 0 0;
+    padding: 0;
+}
+
+#mainmenu {
+    width: 35px;
+    height: 60px;
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0;
+}
+
+    #mainmenu li a {
+        width: 35px;
+        height: 60px;
+        margin: 0;
+        padding: 0;
+        display: block;
+        float: left;
+        background: url(../_img/layout/menuBtn.png) top left no-repeat;
+    }
+
+    #mainmenu li ul#SubMenu {
+        position: absolute;
+        top:60px;
+        left:480px;
+        width: 480px;
+        height: auto;
+        padding: 0;
+        margin: 0;
+        float:left;
+        z-index: 5;
+        display:none;
+    }
+
+        #mainmenu li ul#SubMenu .submenu01 {
+            width: 100%;
+            height: 85px;
+            display: block;
+            float: left;
+            border-bottom: 1px #cfcfcf solid;
+            text-align: left;
+            font-size: 28px;
+            font-weight: bold;
+            line-height: 82px;
+            text-decoration: none;
+            color: #f3f3f3;
+            padding: 0 0 0 85px;
+            margin:0 auto;
+            background: url(../_img/layout/menuBG.png) 0px 0px no-repeat;
+        }
+
+            #mainmenu li ul#SubMenu .submenu01:hover {
+                color: #7b7a79;
+                background: url(../_img/layout/menuBG.png) 0px -85px no-repeat;
+            }
+/*main*/
+#main {
+    width: 100%;
+    height: auto;
+    display: block;
+    float: left;
+    background: #fff;
+}
+
+/*langBtn*/
+.langBtn {
+    width: 100%;
+    height: 56px;
+    display: block;
+    float: left;
+    padding: 10px 0 0 60px;
+    background: rgba(166,166,166,0.99);
+    color: #373737;
+    font-size: 24px;
+    line-height: 31px;
+}
+
+.langIcon {
+    position: absolute;
+    width: 45px;
+    height: 31px;
+    display: block;
+    float: left;
+    background: url(../_img/layout/langIcon.png) 0px -31px no-repeat;
+    margin: -34px 0 0 120px;
+    cursor: pointer;
+}
+
+
+#langBtn ul {
+    margin: 0;
+    padding: 0;
+    position: relative;
+    top: -5px;
+    left: 39px;
+    width: 185px;
+    z-index: 5;
+    display:none;
+}
+
+    #langBtn ul li {
+        width: 185px;
+        height: 54px;
+        display: block;
+        float: left;
+        background: #303030;
+        font-size: 24px;
+        letter-spacing: 2px;
+        line-height: 54px;
+        text-align: center;
+        margin: 0 0 2px 0;
+    }
+
+.langTxt a {
+    width: 185px;
+    height: 54px;
+    display: block;
+}
+
+#langBtn ul li a {
+    color: #ececec;
+    text-decoration: none;
+}
+
+/*downLink*/
+.bownLink {
+    width: 100%;
+    height: auto;
+    display: block;
+    float: left;
+}
+
+    .bownLink ul {
+        padding: 0;
+        margin: 0;
+    }
+
+        .bownLink ul li {
+            width: 240px;
+            height: 65px;
+            display: block;
+            float: left;
+            font-size: 24px;
+            line-height: 65px;
+            border-bottom-color: rgba(205,205,205,0.99);
+            border-bottom-style: solid;
+            border-bottom-width: 1px;
+        }
+
+            .bownLink ul li a {
+                color: #373737;
+                text-decoration: none;
+            }
+
+.bLink01 {
+    border-right-color: rgba(205,205,205,0.99);
+    border-right-style: solid;
+    border-right-width: 1px;
+    padding: 0 0 0 62px;
+}
+
+.bLink02 {
+    padding: 0 0 0 46px;
+}
+
+/*footer*/
+#dFooter {
+    position: relative;
+    width: 100%;
+    height: auto;
+    display: block;
+    float: left;
+    margin: 0;
+    padding: 0;
+    background: #f3f3f3;
+}
+
+.dFooterInfo {
+    text-align: center;
+    line-height: 78px;
+    color: #7d7d7d;
+    font-size: 20px;
+    color: #b0b0b0;
+}

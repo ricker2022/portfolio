@@ -1,0 +1,262 @@
+﻿@charset "utf-8";
+/* CSS Document */
+
+body{
+	font-family:Verdana, Geneva, sans-serif,"細明體","新細明體","微軟正黑體";
+	font-size:12px;
+	color:#666;
+	background:url('../_img/layout/bg.jpg') top center no-repeat;
+	margin:auto;
+    padding:0;
+}
+
+/* 網站外框 */
+#wrapper{
+	width:1024px;
+	margin:auto;
+}
+
+/* 網站寬 */
+#header
+{
+    width:1024px;
+    background:url('../_img/layout/header.jpg') top center no-repeat;
+    height:220px;
+    position:relative;
+    top:0;
+    float:left;
+    z-index:2;
+}
+
+#logo{
+		display:block;
+		width:353px;
+		height:265px;
+		position:absolute;
+		left:343px;
+		top:0px;
+		background:url('../../_img/layout/logo.png')no-repeat;
+		z-index:3;
+	}
+#main
+{
+    width:1024px;
+    background:url('../_img/layout/main.jpg') top center no-repeat;
+    height:789px;
+    position:relative;
+    top:0;
+    float:left;
+    z-index:1;
+}
+/* 戰績表 */
+#gameScore
+{
+    width:280px;
+    height:238px;
+    position:relative;
+    top:63px;
+    left:49px;
+    float:left;
+    margin:0;
+    background:url('../_img/layout/gameScore.png') top center no-repeat;
+}
+
+#gameScoreTitle
+{
+    width:190px;
+    height:25px;
+    padding:5px 0 0 90px;
+}
+#gameScoreTitle ul li
+{
+    float:left;
+    width:34px;
+    height:20px;
+    padding:2px 2px 2px 2px;
+}
+#gameScoreTitle ul li a
+{
+    float:left;
+    width:34px;
+    height:20px;
+    text-align:center;
+    color:#5e8cd0;
+    padding:4px 3px 0px 1px;
+    font-family:Verdana, Geneva, sans-serif,"細明體","新細明體","微軟正黑體";
+    font-weight:bold;
+    font-size:12px;
+    text-decoration:none;
+    background:url('../_img/layout/gameScoreTitle.png') top center no-repeat;
+}
+#gameScoreTitle ul li a:hover
+{
+    float:left;
+    width:34px;
+    height:20px;
+    text-align:center;
+    color:#fff;
+    padding:4px 3px 0px 1px;
+    font-family:Verdana, Geneva, sans-serif,"細明體","新細明體","微軟正黑體";
+    font-weight:bold;
+    font-size:12px;
+    text-decoration:none;
+    background:url('../_img/layout/gameScoreTitle.png') bottom center no-repeat;
+}
+
+/* 戰績表表格內style */
+#Stabs{ 
+    width:276px;
+    height:220px;
+    margin-left:4px;
+    margin-top:4px;
+    /*border:1px solid #fff;*/
+}
+
+#ContentPlaceHolder1_NewsTabs_racecontent table
+{
+    width:276px;
+    height:211px;
+    text-align:center;
+    font-size:12px;
+    position:absolute;
+    color:#fff;
+}
+
+.tabRow {
+    color:#01b0ff;
+}
+
+
+#hotDefault
+{
+    width:349px;
+    height:265px;
+    position:relative;
+    top:64px;
+    left:58px;
+    float:left;
+    margin:0;
+    padding:0;
+    border:1px solid #2188a5;
+    /*background:url('../_img/layout/silderFrame.png') no-repeat center top;*/
+}
+
+/*slideShow banner preview style*/
+/* 廣告輪播區域 */
+	#dSlideshow{margin:0;padding:0px;width:346px;height:262px;border:1px solid #000;}
+
+#gmaeTime
+{
+    width:280px;
+    height:238px;
+    position:relative;
+    top:-205px;
+    left:695px;
+    float:left;
+    margin:0;
+    background:url('../_img/layout/gameTime.png') no-repeat center top;
+    clear:both;
+}
+#news
+{
+    width:276px;
+    height:295px;
+    position:relative;
+    top:-146px;
+    margin:0;
+    float:left;
+    left: 375px;
+    clear:both;
+} 
+#newsTitle_all
+{
+    width:276px;
+    height:25px;
+    position:relative;
+    float:left;
+    background-image:url(../_img/layout/newsTitle.png);
+    background-repeat:no-repeat;
+    background-position:0px 0px;
+    clear:both;
+}
+#newsTitle_yoeFW
+{
+    width:276px;
+    height:25px;
+    position:relative;
+    float:left;
+    background-image:url(../_img/layout/newsTitle.png);
+    background-repeat:no-repeat;
+    background-position:0px -25px;
+    clear:both;
+}
+#newsTitle_TeSL
+{
+    width:276px;
+    height:25px;
+    position:relative;
+    float:left;
+    background-image:url(../_img/layout/newsTitle.png);
+    background-repeat:no-repeat;
+    background-position:0px -50px;
+    clear:both;
+}
+#newsTitle_all .newsMore a, #newsTitle_yoeFW .newsMore a, #newsTitle_TeSL .newsMore a
+{
+    width:48px;
+    height:23px;
+    position:relative;
+    float:right;
+    background:url(../_img/layout/newsMore.png) top center no-repeat;
+    padding-right:10px;
+}
+#news table
+{
+    margin: 2px 0 2px 0;
+}
+#news table a
+{
+    display:table;
+    float:left;	
+    color:#a5c1ff;
+    margin-left:17px;
+    line-height:20px;
+    font-size:12px;
+    font-family:Verdana, Geneva, sans-serif,"細明體","新細明體","微軟正黑體";
+}
+#news table a:hover
+{
+    display:table;
+    float:left;	
+    color:#fff;
+    margin-left:17px;
+    line-height:20px;
+    font-size:12px;
+    font-family:Verdana, Geneva, sans-serif,"細明體","新細明體","微軟正黑體";
+}
+
+#footer{
+    margin:0;
+    padding:0;
+	width:100%;
+	height:71px;
+	background:url(../_img/layout/footer.jpg) top center no-repeat;
+	float:left;
+	z-index:0;
+	clear:both;
+}
+#footer ul
+{
+    width:885px;
+    float:left;
+    padding-left:139px;
+    height:71px;
+}
+#footer ul li a,#footer ul li
+{
+    margin:0;
+    padding:0;
+    float:left;
+    position:relative;
+    height:71px;
+}

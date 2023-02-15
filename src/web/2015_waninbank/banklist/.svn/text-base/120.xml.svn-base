@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bank>
+	<branch num="" name="請選擇分行.."/>
+	<branch num="0016" name="淡水信用合作社營業部"/>
+	<branch num="0025" name="淡水信用合作社水碓分社"/>
+	<branch num="0034" name="淡水信用合作社竹圍分社"/>
+	<branch num="0043" name="淡水信用合作社英專分社"/>
+	<branch num="0061" name="淡水信用合作社三芝分社"/>
+	<branch num="0070" name="淡水信用合作社八里分社"/>
+	<branch num="0098" name="淡水信用合作社五股分社"/>
+</bank>
+

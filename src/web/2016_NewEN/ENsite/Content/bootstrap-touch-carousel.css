@@ -1,0 +1,26 @@
+﻿.carousel-indicators {bottom:-50px; z-index:3;}
+.carousel-indicators li {width: 25px; height:25px; border-radius:13px; background:#b99000; border:3px #400018 solid; margin:0 5px;}
+.carousel-indicators .active {width: 25px; height:25px; border-radius:13px; background:#6b0a26; border:5px #b99000 solid; margin:0 5px;}
+.carousel-control {opacity:1; filter: alpha(opacity=100);}
+
+/* 平板電腦、橫向手機和一般桌機解析度 */
+@Media (min-width: 768px) and (max-width: 979px) {
+    .carousel-indicators {bottom:-17%;bottom:-50px;}
+    .carousel-indicators li {width: 23px; height:23px; border-radius:13px; background:#b99000; border:1px #400018 solid; margin:0 3px;}
+    .carousel-indicators .active {width: 23px; height:23px; border-radius:13px; background:#6b0a26; border:3px #b99000 solid; margin:0 3px;}
+}
+
+/* 橫向智慧手機到竪立平板電腦解析度 */
+@Media (max-width: 767px) {
+    .carousel-indicators {bottom:-41px;}
+    .carousel-indicators li {width: 20px; height:20px; border-radius:13px; background:#b99000; border:1px #400018 solid; margin:0 3px;}
+    .carousel-indicators .active {width: 20px; height:20px; border-radius:13px; background:#6b0a26; border:3px #b99000 solid; margin:0 3px;}
+}
+
+/* 橫向智慧手機及其他更小解析度 */
+@Media (max-width: 480px) {
+    .carousel-control {display: none !important;}
+    .carousel-indicators {bottom:-37px;}
+    .carousel-indicators li {width: 14px; height:14px; border-radius:13px; background:#b99000; border:1px #400018 solid; margin:0 2px;}
+    .carousel-indicators .active {width: 14px; height:14px; border-radius:13px; background:#6b0a26; border:2px #b99000 solid; margin:0 2px;}
+}

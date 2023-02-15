@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bank>
+	<branch num="" name="請選擇分行.."/>
+	<branch num="0015" name="基隆第一信用合作社營業部"/>
+	<branch num="0024" name="基隆第一信用合作社仁一路分社"/>
+	<branch num="0033" name="基隆第一信用合作社三路分社"/>
+	<branch num="0042" name="基隆第一信用合作社忠二路分社"/>
+	<branch num="0051" name="基隆第一信用合作社安一路分社"/>
+	<branch num="0060" name="基隆第一信用合作社信二路分社"/>
+	<branch num="0079" name="基隆第一信用合作社中華路分社"/>
+	<branch num="0088" name="基隆第一信用合作社八斗子分社"/>
+	<branch num="0097" name="基隆第一信用合作社南興路分社"/>
+	<branch num="0103" name="基隆第一信用合作社大武崙分社"/>
+	<branch num="0112" name="基隆第一信用合作社碇內分社"/>
+	<branch num="0121" name="基隆第一信用合作社仁二路分社"/>
+</bank>
+

@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bank>
+	<branch num="" name="請選擇分行.."/>
+	   <branch num="0076" name="五結本會"/>
+	   <branch num="0157" name="五結利澤"/>
+	   <branch num="0168" name="五結二結"/>
+	   <branch num="0179" name="五結四結"/>
+</bank>

@@ -1,0 +1,69 @@
+﻿@using Wb.Models;
+@using Wb.Pager;
+@using Wb.Common;
+@model PagedList<文章>
+@{    
+    Dictionary<int, string> cat_map = ViewBag.cat_map;
+    List<文章屬性> category_list = ViewBag.category_list;
+    string keyword = ViewBag.keyword;
+    string title = "";
+    
+}
+
+<script>  
+    function goGameCategory(game_id) {
+        location.href = '/' + game_id;
+    }
+
+
+    function goSearch() {
+        $('#search_form').submit();
+    }
+</script>
+
+<!-- 遊戲選單 -->
+<div  class="sub_navi">
+    <div class="col_10">
+        <div class="game_select">
+        <i class="fa fa-sort-asc"></i>
+         <select id="game_selection" onchange=goGameCategory($('#game_selection').val())>
+            <option @(ViewBag.game_id=="SCII"?"selected":"") value="SCII">星海爭霸</option>
+            <option @(ViewBag.game_id=="lol"?"selected":"") value="lol">英雄聯盟</option>
+        </select>
+    </div>
+    </div>
+ 
+    <br clear="all"/>
+</div>
+
+<div  class="sub_navi">
+    
+    <div class="col_8">
+        <form id="search_form" action="@Html.FUrl("Search")"><input type="text" name="k" value="@keyword" class="search_text"/></form>
+    </div>
+    <div class="col_2"><a href="javascript: goSearch();" class="function_btn"><i class="fa fa-search"></i></a></div>
+    <br clear="all"/>
+    
+</div>
+
+
+
+
+
+
+<ul id="news_list" class="forum reset_ul">
+@foreach (文章 item in Model)
+{
+    title = item.標題.Replace(keyword, "<span class='search_high_line'>" + keyword + "</span>");
+    <li class="@(item.置頂YN == true ? "blue_line" : "")">
+        <a href="@Html.FUrl("Detail", "", new { asn = item.文章流水號 })">
+            <h6>【@cat_map[item.屬性編號]】</h6><h3>@Html.Raw(title)</h3>
+            <div class="datetime">作者:@item.異動者 推文:@item.推文數 日期:@string.Format("{0:yyyy/MM/d}", item.建立日期)</div>
+        </a>
+    </li>    
+}
+@if(Model.Count>0)
+{
+<a href="#popupPager" class="function_btn black call_pager"><i class="fa fa-ellipsis-h"></i></a>
+}
+</ul>

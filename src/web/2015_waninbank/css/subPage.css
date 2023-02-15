@@ -1,0 +1,458 @@
+﻿body, div, p, ul, li, td, tr {
+    margin: 0;
+    padding: 0;
+    font-family: 微軟正黑體, MS PMincho, 新細明體;
+}
+
+a, img {
+    border: none;
+    border: 0;
+}
+
+ul, li {
+    list-style: none;
+}
+
+/* 子業頁籤 */
+.subTag {
+    width: 820px;
+    height: auto;
+    margin: 0 auto;
+}
+
+    .subTag ul {
+        display: inline-block;
+        *display: inline;
+        *zoom: 1;
+        vertical-align: top;
+    }
+
+ul.subTagM {
+    width: 150px;
+    height: 500px;
+    padding: 30px 0 0 0;
+    background: #ffffff bottom;
+    position: relative;
+    box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.44);
+    -moz-box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.44);
+    -webkit-box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.44);
+}
+
+    ul.subTagM li {
+        float: left;
+        height: 30px;
+        width: 150px;
+    }
+
+        ul.subTagM li.active {
+            margin-bottom: 13px;
+        }
+
+            ul.subTagM li.active a:hover {
+            }
+/* 子業頁籤list01 */
+ul#list01 {
+    background: url(../image/aboutBG_01.jpg) bottom no-repeat #ffffff;
+}
+
+    ul#list01 li {
+        background: url(../image/listImg.png) no-repeat 0 -30px;
+    }
+
+        ul#list01 li a {
+            font-size: 14px;
+            height: 30px;
+            display: block;
+            color: #6c6c6c;
+            text-align: left;
+            text-decoration: none;
+            padding: 0px 0 0 30px;
+        }
+
+            ul#list01 li a:hover {
+                color: #00b0ff;
+            }
+
+        ul#list01 li.active {
+            margin-bottom: 13px;
+        }
+
+            ul#list01 li.active a {
+                color: #ffffff;
+                background: url(../image/listImg.png) no-repeat 0 -60px #00b0ff;
+                line-height: 30px;
+            }
+/* 子業頁籤list02 */
+ul#list02 {
+    background: url(../image/businesBG_01.jpg) bottom no-repeat #ffffff;
+}
+
+    ul#list02 li {
+        background: url(../image/listImg.png) no-repeat 0 -120px;
+    }
+
+        ul#list02 li a {
+            font-size: 14px;
+            height: 30px;
+            display: block;
+            color: #6c6c6c;
+            text-align: left;
+            text-decoration: none;
+            padding: 0px 0 0 30px;
+        }
+
+            ul#list02 li a:hover {
+                color: #02e0b5;
+            }
+
+        ul#list02 li.active a {
+            color: #ffffff;
+            background: url(../image/listImg.png) no-repeat 0 -60px #02e0b5;
+            line-height: 30px;
+        }
+/* 子業頁籤list03 */
+ul#list03 {
+    background: url(../image/pinkBG__01.jpg) bottom no-repeat #ffffff;
+}
+
+    ul#list03 li {
+        background: url(../image/listImg.png) no-repeat 0 0px;
+    }
+
+        ul#list03 li a {
+            font-size: 14px;
+            height: 30px;
+            display: block;
+            color: #6c6c6c;
+            text-align: left;
+            text-decoration: none;
+            padding: 0px 0 0 30px;
+        }
+
+            ul#list03 li a:hover {
+                color: #ff76b3;
+            }
+
+        ul#list03 li.active a {
+            color: #ffffff;
+            background: url(../image/listImg.png) no-repeat 0 -60px #ff76b3;
+            line-height: 30px;
+        }
+/* 子業頁籤list04 */
+ul#list04 {
+    background: url(../image/contactBG_01.jpg) bottom no-repeat #ffffff;
+}
+
+    ul#list04 li {
+        background: url(../image/listImg.png) no-repeat 0 -150px;
+    }
+
+        ul#list04 li a {
+            font-size: 14px;
+            height: 30px;
+            display: block;
+            color: #6c6c6c;
+            text-align: left;
+            text-decoration: none;
+            padding: 0px 0 0 30px;
+        }
+
+            ul#list04 li a:hover {
+                color: #ff0101;
+            }
+
+        ul#list04 li.active a {
+            color: #ffffff;
+            background: url(../image/listImg.png) no-repeat 0 -60px #ff0101;
+            line-height: 30px;
+        }
+/* 子業頁籤list05 */
+ul#list05 {
+    background: url(../image/join_01.jpg) bottom no-repeat #ffffff;
+}
+
+    ul#list05 li {
+        background: url(../image/listImg.png) no-repeat 0 -90px;
+    }
+
+        ul#list05 li a {
+            font-size: 14px;
+            height: 30px;
+            display: block;
+            color: #6c6c6c;
+            text-align: left;
+            text-decoration: none;
+            padding: 0px 0 0 30px;
+        }
+
+            ul#list05 li a:hover {
+                color: #ffb11b;
+            }
+
+        ul#list05 li.active a {
+            color: #ffffff;
+            background: url(../image/listImg.png) no-repeat 0 -60px #ffb11b;
+            line-height: 30px;
+        }
+/* 子業頁籤list06 */
+ul#list06 {
+    background: url(../image/provision01.jpg) bottom no-repeat #ffffff;
+}
+
+    ul#list06 li {
+        background: url(../image/listImg.png) no-repeat 0 -179px;
+    }
+
+        ul#list06 li a {
+            font-size: 14px;
+            height: 30px;
+            display: block;
+            color: #6c6c6c;
+            text-align: left;
+            text-decoration: none;
+            padding: 0px 0 0 22px;
+        }
+
+            ul#list06 li a:hover {
+                color: #9600FF;
+            }
+
+        ul#list06 li.active a {
+            color: #ffffff;
+            background: url(../image/listImg.png) no-repeat 0 -60px #9600FF;
+            line-height: 30px;
+        }
+/* 合作夥伴聯結 */
+.partner li a {
+    display: block;
+    width: 386px;
+    margin: 10px auto;
+}
+
+    .partner li a:hover {
+        border: #02e0b5 5px solid;
+        -moz-border-radius: 10px; /* Firefox */
+        -webkit-border-radius: 10px; /* Safari, Chrome */
+        -khtml-border-radius: 10px; /* Konqueror */
+        border-radius: 10px; /* Opera 10.50 and later (CSS3 standard) */
+        behavior: url(border-radius.htc); /* IE6, IE7, IE8 */
+    }
+
+.foundation a {
+    display: block;
+    width: 386px;
+    margin: 0 auto;
+}
+
+    .foundation a:hover {
+        border: #ff76b3 5px solid;
+        -moz-border-radius: 10px; /* Firefox */
+        -webkit-border-radius: 10px; /* Safari, Chrome */
+        -khtml-border-radius: 10px; /* Konqueror */
+        border-radius: 10px; /* Opera 10.50 and later (CSS3 standard) */
+        behavior: url(border-radius.htc); /* IE6, IE7, IE8 */
+    }
+
+.tab_container {
+    color: #7a7a7a;
+    width: 640px;
+    margin: 0 10px;
+    height: auto;
+    min-height: 500px;
+    position: relative;
+    box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.44);
+    -moz-box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.44);
+    -webkit-box-shadow: 0px 5px 12px rgba(0, 0, 0, 0.44);
+}
+
+    .tab_container p {
+        line-height: 25px;
+    }
+
+.headP {
+    padding: 10px 0 0px 10px;
+    color: #00b0ff;
+}
+
+.imgP {
+    text-align: center;
+    padding: 5px;
+}
+
+.tab_container ul li {
+    width: 550px;
+    padding-left: 20px;
+    color: #262626;
+    margin: 10px 0 10px 20px;
+    line-height: 30px;
+}
+
+.tab_container ul.provtext li {
+    width: 570px;
+    margin: -10px 0 10px 20px;
+    line-height: 18px;
+}
+
+    .tab_container ul.provtext li.left1 {
+        margin-left: 26px;
+        width: 563px;
+    }
+
+    .tab_container ul.provtext li.left2 {
+        margin-left: 55px;
+        width: 535px;
+    }
+
+    .tab_container ul.provtext li.left3 {
+        margin-left: 65px;
+        width: 530px;
+    }
+
+    .tab_container ul.provtext li.left4 {
+        margin-left: 42px;
+        width: 550px;
+    }
+
+    .tab_container ul.provtext li.left5 {
+        margin-left: 35px;
+        width: 555px;
+    }
+
+    .tab_container ul.provtext li.left6 {
+        margin-left: 61px;
+        width: 555px;
+    }
+
+    .tab_container ul.provtext li.left7 {
+        margin-left: 79px;
+        width: 515px;
+    }
+
+.tab_container ul.blue li {
+    background: url(../image/arrow__02.png) 0px 0px no-repeat;
+}
+
+.tab_container ul.blue2 li {
+    background: url(../image/arrow__02.png) 0px 0px no-repeat;
+    font-size: 16px;
+    margin: 10px auto;
+}
+
+.tab_container ul.blue2 span {
+    vertical-align: top;
+    display: inline-block;
+    width: 400px;
+}
+
+#timeT {
+    width: 80px;
+    color: #939393;
+    vertical-align: top;
+}
+
+.tab_container ul.pink li {
+    background: url(../image/arrow__01.png) 0px 0px no-repeat;
+}
+
+.tab_container ul.red li {
+    background: url(../image/arrow__04.png) 0px 0px no-repeat;
+    margin-left: 40px;
+}
+
+    .tab_container ul.red li.head {
+        color: #ff0101;
+        padding: 20px 0 5px 0;
+        background: none;
+    }
+
+.tab_container ul.yellow li {
+    background: url(../image/arrow__03.png) 0px 0px no-repeat;
+}
+
+#blueHeader {
+    background: url(../image/blueBar.jpg) no-repeat;
+    color: #ffffff;
+    padding-left: 15px;
+    margin: 30px 0 20px 0;
+    width: 640px;
+}
+
+#greenHeader {
+    background: url(../image/greenBar.jpg) no-repeat;
+    color: #ffffff;
+    padding-left: 15px;
+    margin: 30px 0 20px 0;
+    width: 640px;
+}
+
+#pinkHeader {
+    background: url(../image/pinkBar.jpg) no-repeat;
+    color: #ffffff;
+    padding-left: 15px;
+    margin: 30px 0 20px 0;
+    width: 640px;
+}
+
+#redHeader {
+    background: url(../image/redBar.jpg) no-repeat;
+    color: #ffffff;
+    padding-left: 15px;
+    margin: 30px 0 20px 0;
+    width: 640px;
+}
+
+#yellowHeader {
+    background: url(../image/yellowBar.jpg) no-repeat;
+    color: #ffffff;
+    padding-left: 15px;
+    margin: 30px 0 20px 0;
+    width: 640px;
+}
+
+#purpleHeader {
+    background: url(../image/purpleBar.jpg) no-repeat;
+    color: #ffffff;
+    padding-left: 15px;
+    margin: 30px 0 20px 0;
+    width: 640px;
+}
+
+.bookItem {
+    margin: 30px 0 20px 0;
+}
+
+.fontRight {
+    text-align: right;
+}
+
+.l_btns {
+    margin-top: -1px;
+    margin-right: 26px;
+    width: 160px;
+    height: 28px;
+    float: right;
+}
+
+.l_btn {
+    margin-top: -1px;
+    margin-left: 2px;
+    width: 74px;
+    height: 29px;
+    padding: 4px;
+    background-color: white;
+    border: 1px solid #606A76;
+    display: inline;
+    text-align: center;
+    color: #606A76;
+    cursor: pointer;
+}
+
+.l_btn1 {
+    margin-top: 1px;
+    margin-left: 77px;
+}
+
+.l_btn:hover {
+    background-color: #606A76;
+    color: white;
+}

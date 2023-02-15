@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bank>
+	<branch num="" name="請選擇分行.."/>
+	   <branch num="0086" name="冬農"/>
+	   <branch num="0189" name="冬農羅東"/>
+	   <branch num="0190" name="冬農順安"/>
+	   <branch num="0271" name="冬農廣興"/>
+	   <branch num="0488" name="冬農群英"/>
+</bank>

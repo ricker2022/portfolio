@@ -1,0 +1,65 @@
+﻿.inside_Content {width:90%; margin:0 auto; display:table;padding-top: 0.5%; padding-bottom:2%;}
+.About_Content, .Promotions_Content {width:85%; line-height:1.2; font-size:2.3rem;}
+.About_Content h1, .About_Content b, .Dropdown_Title, .new_date, .GI_content b, .GameIntro_Content h1 {color:#e5e5e5;}
+.About_Content h2, .Announcement_Content, .GameIntro_Content, .GameIntro_Content h2 {color:#bfbfbf;}
+.About_Content b {line-height:1.6;}
+.Announcement_Content, .GameIntro_Content, .GameIntro_Content h2 {display:table; font-size:2.5rem;width:100%;}
+.Announcement_Content li, .GameIntro_Content li {padding-bottom:2px;}
+.Dropdown_Title {background:#7c5012; padding:2.5% 3%; color:#1c0505; cursor:pointer;font-size:2.8rem; display:table; width:100%; table-layout:fixed;}
+.new_subject, .GI_title {float:left; width:88%; overflow: hidden; white-space: nowrap; text-overflow: ellipsis; display:table-cell;}
+.new_subject.active, .GI_title.active {color:#e5e5e5;}
+.new_arrow, .GI_arrow {float:right; width:7%; background:url(/Content/_img/nor_arrow.png) 100% 50% no-repeat; background-size:contain;}
+.new_arrow.active, .GI_arrow.active {width:7%; background:url(/Content/_img/down_arrow.png) 100% 50% no-repeat; background-size:contain;}
+.Dropdown_Content {padding:2% 3%; display:none;}
+.new_date {font-weight:bold; padding-bottom:2%;}
+.Promotions_Content {width:100%;}
+.Promotions_Content li {padding-bottom:1.5%;}
+.GameIntro_Content b {line-height:1;}
+#Card_tab {display:table; padding:2% 1%;background:#333a3b;border:1px #400018 solid;}
+#Card_tab td {border:1px #400018 solid; text-align:center;}
+#Card_tab td:nth-child(odd) {width:16%; padding:2%;}
+#Card_tab td:nth-child(even) {text-align:left;padding:2%;}
+.ContactUs_Content, .ContactUs_Content form {width:98%; margin:0 auto;}
+.inputSet {height:70px; border-radius:0; margin-bottom:2px; font-size:2.5rem;}
+.btnSet {background:#117131; color:#fff; border:#117131 1px solid; margin-top:1%;}
+
+/* 大螢幕 */
+@Media (min-width: 1200px) {
+    .About_Content {zoom:0.8;}
+    .Announcement_Content, .Promotions_Content, .GameIntro_Content {width:90%;}
+    .ContactUs_Content, .ContactUs_Content form {width:93%;}
+}
+
+@Media (max-width: 1199px) {
+    .About_Content {width:90%;zoom:0.8;}    
+}
+
+/* 平板電腦、橫向手機和一般桌機解析度 */
+@Media (min-width: 768px) and (max-width: 979px) {
+    .About_Content {width:90%;zoom:0.7;}
+    .About_Content h1, .GameIntro_Content h1 {font-size:2.5rem;}
+    .About_Content h2, .Announcement_Content, .GameIntro_Content, .GameIntro_Content h2 {font-size:2.3rem;}
+    .Dropdown_Title {font-size:3.2rem;}    
+    .inputSet {height:60px;}
+}
+
+/* 橫向智慧手機到竪立平板電腦解析度 */
+@Media (max-width: 767px) {
+    .About_Content {width:97%;zoom:0.6;}
+    .About_Content h1, .GameIntro_Content h1 {font-size:2.5rem;}
+    .About_Content h2, .Announcement_Content, .GameIntro_Content, .GameIntro_Content h2, .inputSet {font-size:2rem;}
+    .Dropdown_Title {font-size:2.7rem; padding:3%;}
+    .ContactUs_Content, .ContactUs_Content form {width:97%;}
+    .inputSet {height:50px;}
+}
+
+/* 橫向智慧手機及其他更小解析度 */
+@Media (max-width: 480px) {
+    .About_Content {width:95%;zoom:0.5;}
+    .About_Content h1, .GameIntro_Content h1 {font-size:2rem;}
+    .About_Content h2, .Announcement_Content, .GameIntro_Content, .GameIntro_Content h2, .inputSet {font-size:1.5rem;}
+    .Dropdown_Title {font-size:1.7rem;}
+    #Card_tab td:nth-child(odd) {width:20%;}
+    .ContactUs_Content, .ContactUs_Content form {width:95%;}
+    .inputSet {height:40px;}
+}

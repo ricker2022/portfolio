@@ -1,0 +1,76 @@
+﻿@using Wb.Models;
+@using Wb.Common;
+@model 專欄
+@{
+     List<專欄回覆> reply_list = ViewBag.reply_list;
+     Dictionary<string, 會員> member_map = ViewBag.member_map;
+     會員 poster = ViewBag.poster;
+     
+     bool isPost = true;
+     string errorRouteUrl = Url.RouteUrl("default", new { controller = "Member", action = "alertMsg", txt = "禁言中，無法操作!" });
+
+     if (Userinfo.myProfile != null)
+     {
+         if (Userinfo.myProfile.nopostDisplay != "")
+         {
+             isPost = false;
+         }
+     }
+}
+
+<div  class="sub_navi" data-role="none">
+    <div class="col_1"><a href="@Html.FUrl("index","",null,"sn")" class="back_btn"  rel="external"><i class="fa fa-arrow-left"></i></a></div>
+    <div class="col_9 category_title" >專欄列表</div>
+    <br clear="all"/>
+</div>
+
+<div  class="sub_navi list_row_title"  >
+    <div class="col_8" id="Detail_ID">@Html.Raw(Model.標題)</div>
+    <div class="col_2"><a href="#popupPager" class="function_btn call_pager"><i class="fa fa-sort"></i></a></div>
+    <br clear="all"/>
+</div>
+
+
+<ul data-scroll="false" id="news_detail_list" class="reset_ul" >
+    <li>
+        <div class="member_info">
+            <a href="@Url.RouteUrl("Default", new { controller = "member",action="info",molo=WbUtil.EncryptDES(poster.MoloKey)})" class="member_pic">@Html.IconUrl(poster.Icon名稱,64)</a>
+            <div class="member_name_time">
+                <div class="forum_user_name" id="Detail_ID">@Model.異動者</div>
+            <div class="forum_detail">
+                <div>@string.Format("{0:yyyy-MM-d hh:mm}", Model.發佈開始日)</div>
+            </div>
+            </div>
+        </div>
+        <div class="news_detail_content">
+            @Html.Raw(Model.內容)
+        </div>
+    </li>
+    @if (M_Member.myProfile != null)
+    {
+        <li><a href="@(isPost ? Html.FUrl("reply").ToString() : errorRouteUrl)" class="@(isPost ? "reply_btn" : "reply_btn push_btn")">回覆</a></li>
+    }
+
+</ul>
+
+<ul class="reply_list reset_ul" >
+@foreach (專欄回覆 item in reply_list)
+{
+    <li>
+        <div class="member_info">
+            <a href="@Url.RouteUrl("Default", new { controller = "member",action="info",molo=WbUtil.EncryptDES(item.MoloKey)})" class="member_pic">@Html.IconUrl(member_map,item.MoloKey,42)</a>
+            <div class="member_name_time">
+                <div class="forum_user_name" id="Detail_ID">@member_map[item.MoloKey].暱稱</div>
+                <div class="forum_detail">
+                <div>@string.Format("{0:yyyy-MM-d hh:mm}", item.建立日期)</div>                         
+                </div>
+            </div>
+        </div>
+        <div class="news_detail_content">
+        @Html.Raw(item.內容)
+        </div>
+
+    </li>
+}
+    
+</ul>

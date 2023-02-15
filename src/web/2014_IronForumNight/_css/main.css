@@ -1,0 +1,1279 @@
+﻿body {
+    font-family: Verdana, Geneva, sans-serif,"細明體","新細明體","微軟正黑體";
+    font-size: 12px;
+    width: 100%;
+    height: 980px;
+    background: url('../_img/index/bg.jpg') top center no-repeat #000;
+}
+
+a {
+    text-decoration: none;
+}
+/* 網站外框 */
+#wrapper {
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin: 0 auto;
+    height: 909px;
+}
+
+#header {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 112px;
+    display: block;
+    margin: 0 auto;
+    z-index: 5;
+    background: url('../_img/index/headerBg.png') top center no-repeat;
+}
+
+#header_logo {
+    position: absolute;
+    top: 7px;
+    left: 302px;
+    width: 332px;
+    height: 59px;
+    border: 0 #fff none;
+    background: url('../_img/index/logo.png') top left no-repeat;
+}
+
+#main {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+    padding: 0;
+    width: 1300px;
+    height: 840px;
+    z-index: 2;
+}
+
+#footer {
+    position: relative;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    height: 71px;
+    display: block;
+    margin: 0 auto;
+    z-index: 5;
+    background: url('../_img/index/footerBg.png') bottom center no-repeat;
+}
+.footer_S {
+    position: absolute;
+    bottom: 0;
+    left: 294px;
+    width:200px;
+    height:60px;
+    background: url('../_img/footerLine.png') center right no-repeat;
+}
+    .footer_S ul {
+        padding:15px 20px 0 20px;
+        height:33px;
+    }
+        .footer_S ul li {
+            width:35px;
+            height:33px;
+            margin:0 7px;
+            float:left;
+        }
+.footer_C {
+    position: absolute;
+    bottom: 0;
+    left: 494px;
+    width:800px;
+    height:60px;
+    background: url('../_img/footerLine.png') center right no-repeat;
+}
+    .footer_C ul {
+        margin:0 20px;
+        height:60px;
+    }
+        .footer_C ul li {
+            float:left;
+            height:60px;
+        }
+.footer_Contact {
+    position: absolute;
+    bottom: 0;
+    left: 1300px;
+    width:166px;
+    height:60px;
+    padding:0 20px;
+}
+.footer_Share {
+    position: absolute;
+    bottom: 0;
+    left: 1492px;
+    width:63px;
+    height:60px;
+    padding:0 20px;
+}
+
+
+/*首頁*/
+.indexA {
+    position: relative;
+    top: 147px;
+    left: 8px;
+    padding: 0;
+    margin: 0;
+    width: 718px;
+    height: 258px;
+}
+
+.indexTimer {
+    position: absolute;
+    top: 550px;
+    left: 820px;
+    padding: 0;
+    margin: 0;
+    width: 475px;
+    height: 130px;
+}
+
+.indexBtnA {
+    position: absolute;
+    top: 687px;
+    left: 0px;
+    padding: 0;
+    margin: 0 auto;
+    width: 1300px;
+    height: 203px;
+}
+
+    .indexBtnA ul li {
+        width: 325px;
+        height: 203px;
+        float: left;
+    }
+
+.indexBtn01 {
+    width: 325px;
+    height: 203px;
+    border: 0 #fff none;
+    cursor: pointer;
+    background: url('../_img/index/indexBtn01.png') top left no-repeat;
+}
+
+.indexBtn02 {
+    width: 325px;
+    height: 203px;
+    border: 0 #fff none;
+    cursor: pointer;
+    background: url('../_img/index/indexBtn02.png') top left no-repeat;
+}
+
+.indexBtn03 {
+    width: 325px;
+    height: 203px;
+    border: 0 #fff none;
+    cursor: pointer;
+    background: url('../_img/index/indexBtn03.png') top left no-repeat;
+}
+
+.indexBtn04 {
+    width: 318px;
+    height: 203px;
+    border: 0 #fff none;
+    cursor: pointer;
+    background: url('../_img/index/indexBtn04.png') top left no-repeat;
+}
+
+/*呈現區塊*/
+.informationA, .newsA, .contestA, .teamA, .playersA, .scheduleA, .AnthorA, .trafficInfoA, .eventsA, .contactA {
+    position: relative;
+    top: 137px;
+    left: 0px;
+    padding: 0;
+    margin: 0 auto;
+    width: 1300px;
+    height: 740px;
+    background: url('../_img/informationBg.png') top left no-repeat;
+}
+
+
+.informationTxt, .newsItemsA, .contestContent, .teamContent, .playersContent, .scheduleContent, .AnthorContent, .trafficInfoContent, .eventsContent, .contactContent {
+    position: relative;
+    top: 0px;
+    left: 522px;
+    padding: 0;
+    margin: 0;
+    width: 768px;
+    height: 740px;
+}
+
+/*關於*/
+.informationTitle {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    padding: 25px;
+    width: 700px;
+    height: 60px;
+    font-size: 22px;
+    font-family: 微軟正黑體;
+    font-weight: bold;
+    color: #e5e5e5;
+    letter-spacing: 1px;
+    line-height: 28px;
+}
+
+.informationContent {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    padding: 0 25px;
+    width: 700px;
+    height: 615px;
+    font-size: 16px;
+    font-family: 微軟正黑體;
+    font-weight: bold;
+    color: #e5e5e5;
+    letter-spacing: 1px;
+    line-height: 28px;
+}
+
+/*新聞*/
+.newsItems {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 688px;
+    height: 113px;
+    padding: 20px 0 0 30px;
+}
+
+.newsItemPic {
+    position: relative;
+    top: 0;
+    left: 0;
+    float: left;
+    width: 109px;
+    height: 109px;
+    border: 2px #0a0204 solid;
+}
+
+    .newsItemPic img {
+        width: 109px;
+        height: 109px;
+    }
+
+.newsItemTitle {
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 5px 0 0 5px;
+    float: left;
+    width: 565px;
+    height: 24px;
+    line-height: 24px;
+    font-size: 16px;
+    font-family: 微軟正黑體;
+    font-weight: bold;
+    color: #00b7ee;
+}
+
+.newsItemContent {
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 5px 0 0 5px;
+    float: left;
+    width: 565px;
+    height: 95px;
+    line-height: 20px;
+    font-size: 12px;
+    font-family: 新細明體;
+    color: #e5e5e5;
+}
+
+/*賽事*/
+.contestContentLogo {
+    position: relative;
+    top: -30px;
+    left: 0;
+    width: 766px;
+    height: 230px;
+    text-align: center;
+}
+
+.contestContentMain {
+    position: relative;
+    top: -30px;
+    left: 16px;
+    width: 714px;
+    height: 518px;
+    border: 1px #a0a0a0 solid;
+    background: rgba(0,0,0,.6);
+}
+
+.contestCMTxt {
+    font-size: 13px;
+    font-family: 新細明體;
+    color: #fff;
+    line-height: 24px;
+    letter-spacing: 1px;
+}
+
+/*戰隊內頁*/
+.teamContentLogo {
+    position: relative;
+    top: 0px;
+    left: 0;
+    width: 766px;
+    height: 164px;
+    text-align: center;
+    padding: 10px 0;
+}
+
+.teamContentMain {
+    position: relative;
+    top: 0px;
+    left: 30px;
+    width: 710px;
+    height: 518px;
+}
+
+.teamCoach {
+    position: relative;
+    top: 0px;
+    left: 0;
+    width: 109px;
+    height: 150px;
+    font-size: 16px;
+    font-family: 微軟正黑體;
+    font-weight: bold;
+    color: #00b7ee;
+    text-align: center;
+    float: left;
+    padding: 0 30px 0 0;
+}
+
+    .teamCoach ul {
+        padding: 5px 0 0 0;
+    }
+
+        .teamCoach ul li {
+            width: 109px;
+            height: 109px;
+            border: 2px #0a0204 solid;
+        }
+
+.teamPlayers {
+    position: relative;
+    top: 0px;
+    left: 0;
+    width: 560px;
+    height: 150px;
+    font-size: 16px;
+    font-family: 微軟正黑體;
+    font-weight: bold;
+    color: #00b7ee;
+    float: left;
+}
+
+    .teamPlayers ul {
+        padding: 8px 0 0 0;
+    }
+
+        .teamPlayers ul li {
+            width: 98px;
+            height: 98px;
+            float: left;
+            margin: 0 10px 0 0;
+            border: 2px #0a0204 solid;
+        }
+
+.teamTxt {
+    font-size: 13px;
+    font-family: 新細明體;
+    color: #fff;
+    line-height: 24px;
+    letter-spacing: 1px;
+    padding: 10px;
+}
+
+/*選手內頁*/
+.playersPic {
+    position: relative;
+    top: 30px;
+    left: 0px;
+    margin: 0 0 30px 40px;
+    width: 291px;
+    height: 328px;
+    border: 2px #0a0204 solid;
+    float: left;
+}
+
+.playersName {
+    position: relative;
+    top: 0px;
+    left: 20px;
+    padding: 100px 0 25px 0;
+    font-size: 30px;
+    font-family: Arial;
+    font-weight: bold;
+    color: #fff;
+    float: left;
+    width: 400px;
+    text-align: center;
+    letter-spacing: 1px;
+}
+
+.playersImg {
+    position: relative;
+    top: 0px;
+    left: 20px;
+    width: 400px;
+    float: left;
+    text-align: center;
+}
+
+.playersContentMain {
+    clear: both;
+    position: relative;
+    top: 0px;
+    left: 30px;
+    width: 710px;
+}
+
+.playTxt {
+    font-size: 13px;
+    font-family: 新細明體;
+    color: #fff;
+    line-height: 24px;
+    letter-spacing: 1px;
+    padding: 10px;
+}
+
+/*時程內頁*/
+.scheduleTitle {
+    position: relative;
+    top: 25px;
+    left: 15px;
+    width: 178px;
+    height: 30px;
+    background: url('../_img/scheduleTitle.png') top left no-repeat;
+}
+
+
+/*直播*/
+.liveOnA, .liveOffA {
+    position: relative;
+    top: 90px;
+    left: 0;
+    padding: 0;
+    margin: 0 auto;
+    width: 1284px;
+    height: 825px;
+    background: url('../_img/liveBg.png') top left no-repeat;
+}
+
+.liveLink {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 1120px;
+    height: 88px;
+    padding: 5px 0 0 0;
+}
+
+.liveCh, .liveEn {
+    position: relative;
+    top: 0;
+    left: 0;
+    font-size: 20px;
+    font-family: 微軟正黑體;
+    font-weight: bold;
+    color: #00b7ee;
+    letter-spacing: 1px;
+    padding: 0 0 0 20px;
+}
+
+    .liveCh ul li, .liveEn ul li {
+        width: 151px;
+        height: 75px;
+        float: left;
+    }
+
+.liveChatBtn {
+    position: relative;
+    top: 15px;
+    left: 1130px;
+    width: 103px;
+    height: 40px;
+    background: url('../_img/chatBtn.png') top left no-repeat;
+}
+
+    .liveChatBtn:hover {
+        background: url('../_img/chatBtn.png') bottom left no-repeat;
+    }
+
+.liveoffMovie {
+    position: relative;
+    top: -10px;
+    left: 0;
+    margin: 0 auto;
+    width: 1242px;
+    height: 725px;
+    border: 1px #fff solid;
+}
+.liveonMovie {
+    position: relative;
+    top: -10px;
+    left: 0px;
+    width: 951px;
+    height: 725px;
+    margin:0 0 0 15px;
+    float:left;
+    border: 1px #fff solid;
+}
+.liveChat {
+    position: relative;
+    top: -10px;
+    left: 0;
+    width: 278px;
+    height: 725px;
+    margin:0 0 0 15px;
+    float:left;
+    border: 1px #fff solid;
+}
+
+
+/*主播賽評*/
+.AnthorTitle {
+    position: relative;
+    top: 25px;
+    left: 15px;
+    width: 203px;
+    height: 30px;
+    background: url('../_img/anthorTitle.png') top left no-repeat;
+}
+
+.AnthorContentMain, .trafficInfoContentMain, .eventsContentMain, .scheduleContentMain, .contactContentMain {
+    position: relative;
+    top: 30px;
+    left: 16px;
+    width: 714px;
+    height: 653px;
+    border: 1px #a0a0a0 solid;
+    background: rgba(0,0,0,.6);
+}
+
+.AnthorSF, .AnthorHS {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 700px;
+    height: 325px;
+}
+
+.AnthorSFLogo, .AnthorHSLogo {
+    position: relative;
+    top: -20px;
+    left: 0;
+    margin: 0 auto;
+    width: 496px;
+    height: 227px;
+}
+
+.AnthorSFPlayer, .AnthorHSPlayer {
+    position: relative;
+    top: -40px;
+    left: 0;
+    margin: 0 auto;
+}
+
+    .AnthorSFPlayer ul li, .AnthorHSPlayer ul li {
+        float: left;
+        width: 98px;
+        height: 98px;
+        margin: 0 0 0 10px;
+        border: 2px #0a0204 solid;
+    }
+
+.AnthorSFName, .AnthorHSName {
+    padding: 5px;
+    text-align: center;
+    font-size: 13px;
+    font-family: 新細明體;
+    color: #fff;
+    letter-spacing: 1px;
+}
+
+.AnthorPlayerA {
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 0;
+    margin: 0;
+    width: 700px;
+    height: auto;
+}
+
+.AnthorPlayerPic {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 265px;
+    height: 265px;
+    margin: 0 auto;
+    text-align:center;
+    /*border: 2px #0a0204 solid;*/
+}
+
+.AnthorPlayerName {
+    position: relative;
+    top: 0px;
+    left: 0px;
+    padding:15px;
+    font-size: 30px;
+    font-family: Arial;
+    font-weight: bold;
+    color: #fff;
+    width: 420px;
+    letter-spacing: 1px;
+    text-align:center;
+    margin: 0 auto;
+}
+
+.AnthorPlayerContentMain {
+    clear: both;
+    position: relative;
+    top: 0px;
+    left: 0px;
+    width: 680px;
+}
+
+/*交通資訊*/
+.trafficInfoTitle {
+    position: relative;
+    top: 25px;
+    left: 15px;
+    width: 359px;
+    height: 30px;
+    background: url('../_img/trafficInfoTitle.png') top left no-repeat;
+}
+
+.trafficAdd {
+    padding: 5px;
+    font-size: 16px;
+    font-family: 微軟正黑體;
+    font-weight: bold;
+    color: #fff;
+    line-height: 22px;
+    letter-spacing: 1px;
+}
+
+.trafficMap {
+    position: relative;
+    top: 5px;
+    left: -7px;
+    width: 688px;
+    height: 332px;
+    border: 1px #fff solid;
+}
+
+.trafficTxt, .contentTxt {
+    font-size: 13px;
+    font-family: 新細明體;
+    color: #fff;
+    line-height: 22px;
+    letter-spacing: 1px;
+    padding: 40px 5px 5px 5px;
+}
+
+/*精彩活動*/
+.eventsTitle {
+    position: relative;
+    top: 25px;
+    left: 15px;
+    width: 197px;
+    height: 30px;
+    background: url('../_img/eventsTitle.png') top left no-repeat;
+}
+
+.eventsItems {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 672px;
+    height: auto;
+}
+
+    .eventsItems ul li {
+        height: 246px;
+        background: url('../_img/line1.png') bottom center no-repeat;
+    }
+
+.eventsPic {
+    width: 630px;
+    height: 182px;
+    padding: 15px 0;
+    margin: 0 auto;
+}
+
+.eventsTxt {
+    width: 630px;
+    text-align: center;
+    font-size: 20px;
+    font-family: 微軟正黑體;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 1px;
+    line-height: 22px;
+}
+
+/*連繫我們*/
+.contactTitle {
+    position: relative;
+    top: 25px;
+    left: 15px;
+    width: 254px;
+    height: 30px;
+    background: url('../_img/contactTitle.png') top left no-repeat;
+}
+
+
+/*下拉區塊*/
+.information_downA, .news_downA, .contest_downA, .players_downA, .schedule_downA, .live_downA {
+    position: absolute;
+    top: 77px;
+    left: 0;
+    padding: 0;
+    margin: 0 auto;
+    width: 1287px;
+    height: 399px;
+    background: url('../_img/downBg.png') top left no-repeat;
+}
+
+/*關於下拉*/
+
+/*新聞下拉*/
+.newsDownLeft {
+    position: relative;
+    top: 0;
+    left: 0;
+    float: left;
+    padding: 17px;
+    width: 374px;
+    height: 364px;
+}
+
+.newsDLPic {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 370px;
+    height: 256px;
+    border: 1px #000 solid;
+}
+
+    .newsDLPic img {
+        width: 370px;
+        height: 256px;
+    }
+
+.newsDLTitle {
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 5px 0 0 0;
+    width: 370px;
+    height: 24px;
+    line-height: 24px;
+    font-size: 16px;
+    font-family: 微軟正黑體;
+    font-weight: bold;
+    color: #e5e5e5;
+    letter-spacing: 1px;
+}
+
+.newsDLContent {
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 5px 0 0 0;
+    width: 370px;
+    height: 76px;
+    line-height: 19px;
+    font-size: 13px;
+    font-family: 微軟正黑體;
+    color: #e5e5e5;
+    letter-spacing: 1px;
+}
+
+.newsDownRight {
+    position: relative;
+    top: 0;
+    left: 0;
+    float: left;
+    padding: 17px 0 17px 0px;
+    width: 840px;
+    height: 364px;
+}
+
+.newsDRItems {
+    position: relative;
+    top: 0;
+    left: 0;
+    padding: 3px;
+    float: left;
+    width: 268px;
+    height: 118px;
+}
+
+.newsDRItemPic {
+    position: relative;
+    top: 0;
+    left: 0;
+    float: left;
+    width: 109px;
+    height: 109px;
+    border: 2px #0a0204 solid;
+}
+
+    .newsDRItemPic img {
+        width: 109px;
+        height: 109px;
+    }
+
+.newsDRItemTitle {
+    position: relative;
+    top: 0;
+    left: 0px;
+    float: left;
+    padding: 2px 0 0 2px;
+    width: 151px;
+    height: 40px;
+    line-height: 19px;
+    font-size: 14px;
+    font-family: 微軟正黑體;
+    font-weight: bold;
+    color: #00b7ee;
+}
+
+.newsDRItemContent {
+    position: relative;
+    top: 0px;
+    left: 0;
+    padding: 3px 0 0 2px;
+    float: left;
+    width: 147px;
+    height: 60px;
+    line-height: 13px;
+    font-size: 12px;
+    font-family: 新細明體;
+    color: #e5e5e5;
+}
+
+#moreBtn {
+    position: absolute;
+    top: 145px;
+    left: 830px;
+    width: 41px;
+    height: 64px;
+    border: 0 #fff none;
+    cursor: pointer;
+    background: url('../_img/moreBtn.png') top left no-repeat;
+}
+
+    #moreBtn:hover {
+        background: url('../_img/moreBtn.png') bottom left no-repeat;
+    }
+
+/*賽事下拉*/
+.contestLogo {
+    position: relative;
+    top: 0;
+    left: 0;
+    margin: 0 auto;
+    width: 1287px;
+    height: 399px;
+}
+
+    .contestLogo ul {
+        padding: 10px 40px 0 40px;
+    }
+
+        .contestLogo ul li {
+            width: 600px;
+            height: 348px;
+            float: left;
+            cursor: pointer;
+        }
+
+/*選手下拉*/
+.playersDownTop, .scheduleDownTop {
+    position: relative;
+    top: -15px;
+    left: 0;
+    margin: 0 auto;
+    width: 1287px;
+    height: 171px;
+    background: url('../_img/line.png') bottom center no-repeat;
+}
+
+    .playersDownTop ul, .scheduleDownTop ul {
+        padding: 0 40px;
+    }
+
+        .playersDownTop ul li, .scheduleDownTop ul li {
+            width: 373px;
+            height: 171px;
+            margin: 0 113px;
+            float: left;
+        }
+
+.playersDownTop1 {
+    width: 373px;
+    height: 171px;
+    border: 0 #fff none;
+    cursor: pointer;
+    background: url('../_img/starcraftLogos.png') top center no-repeat;
+}
+
+.playersDownTop2 {
+    width: 373px;
+    height: 171px;
+    border: 0 #fff none;
+    cursor: pointer;
+    background: url('../_img/hearthstoneLogos.png') top center no-repeat;
+}
+
+.playersDownBottom, .scheduleDownBottom {
+    position: relative;
+    top: -15px;
+    left: 0;
+    margin: 0 auto;
+    width: 1287px;
+    height: 240px;
+}
+
+.playersDBLeft {
+    position: relative;
+    top: 0px;
+    left: 0;
+    float: left;
+    width: 610px;
+    height: 240px;
+    background: url('../_img/vs.png') center center no-repeat;
+}
+
+.playersDBTeam, .playersDBTeam1 {
+    position: relative;
+    top: 0px;
+    left: 0;
+    margin: 30px 0 0 2px;
+    float: left;
+    width: 300px;
+    height: 200px;
+    text-align: center;
+}
+
+.playersDBTLogo img {
+    width: 209px;
+    height: 128px;
+}
+
+.playersDBTName, .playersDBTName a {
+    padding: 15px 0 0 0;
+    font-size: 26px;
+    font-family: Arial;
+    font-weight: bold;
+    color: #fff;
+    letter-spacing: 1px;
+    text-decoration: none;
+}
+
+.playersDBRight {
+    position: relative;
+    top: 0px;
+    left: 0;
+    float: left;
+    width: 670px;
+    height: 240px;
+}
+
+.playersDBRinvite {
+    position: relative;
+    top: 0px;
+    left: 0;
+    float: left;
+    width: 350px;
+    height: 240px;
+    font-size: 18px;
+    font-family: 微軟正黑體;
+    color: #fff;
+    padding: 7px 0 0 130px;
+}
+
+    .playersDBRinvite ul {
+        padding: 1px;
+    }
+
+        .playersDBRinvite ul li {
+            float: left;
+            width: 98px;
+            height: 98px;
+            padding: 1px;
+            border: 2px #0a0204 solid;
+        }
+
+            .playersDBRinvite ul li img {
+                width: 98px;
+                height: 98px;
+            }
+
+.playersDBRopen {
+    position: relative;
+    top: 0px;
+    left: 0;
+    float: left;
+    width: 180px;
+    height: 240px;
+    font-size: 18px;
+    font-family: 微軟正黑體;
+    color: #fff;
+    padding: 7px 0 0 0px;
+}
+
+    .playersDBRopen ul {
+        padding: 1px;
+    }
+
+        .playersDBRopen ul li {
+            float: left;
+            width: 98px;
+            height: 98px;
+            padding: 1px;
+            border: 2px #0a0204 solid;
+        }
+
+/*時程下拉*/
+.scheduleDownTopTxt {
+    position: absolute;
+    top: 40px;
+    left: 90px;
+    font-size: 30px;
+    font-family: Arial;
+    color: #fff;
+    width: 1287px;
+}
+
+    .scheduleDownTopTxt ul li {
+        float: left;
+        margin: 0 490px 0 0;
+    }
+
+.scheduleDBtab1 {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 515px;
+    height: 240px;
+    margin: 7px 0 0 50px;
+    font-size: 20px;
+    font-family: 微軟正黑體;
+    font-weight: bold;
+    color: #00b7ee;
+    float: left;
+}
+
+#TableES, #TableES1 {
+    font-size: 18px;
+    font-family: 微軟正黑體;
+    color: #fff;
+    line-height: 28px;
+    font-weight: 100;
+    letter-spacing: 1px;
+    margin: 5px 0 0 0;
+    width: 513px;
+}
+
+    #TableES tr td, #TableES1 tr td {
+        border-collapse: collapse;
+        border: 1px #626262 solid;
+        padding: 5px;
+    }
+
+    #TableES .tab_tr1, #TableES1 .tab_tr1 {
+        background: url('../_img/000000BG.png') top left repeat;
+    }
+
+    #TableES .tab_tr2, #TableES1 .tab_tr2 {
+        background: url('../_img/1b1b1bBG.png') top left repeat;
+    }
+
+    #TableES td a, #TableES1 td a {
+        font-size: 18px;
+        font-family: 微軟正黑體;
+        color: #fff;
+        line-height: 28px;
+        font-weight: 100;
+        letter-spacing: 1px;
+        text-decoration: none;
+    }
+
+
+.scheduleDBtab2 {
+    position: relative;
+    top: 0;
+    left: 0px;
+    width: 515px;
+    height: 240px;
+    margin: 7px 0 0 120px;
+    font-size: 20px;
+    font-family: 微軟正黑體;
+    font-weight: bold;
+    color: #00b7ee;
+    float: left;
+}
+
+/*直播下拉*/
+.liveDownLeft {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 650px;
+    height: 392px;
+    float: left;
+}
+
+.liveDownLeftMovie {
+    padding: 20px;
+}
+
+.liveDownRight {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 630px;
+    height: 392px;
+    float: left;
+}
+
+.liveDownRightCh {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 630px;
+    height: 178px;
+    float: left;
+    margin: 27px 0 0 10px;
+    font-size: 20px;
+    font-family: 微軟正黑體;
+    font-weight: bold;
+    color: #00b7ee;
+}
+
+    .liveDownRightCh ul li {
+        float: left;
+        width: 207px;
+        height: 94px;
+    }
+
+.liveDownRightEn {
+    position: relative;
+    top: 0;
+    left: 0;
+    width: 630px;
+    height: 178px;
+    float: left;
+    margin: 0px 0 0 10px;
+    font-size: 20px;
+    font-family: 微軟正黑體;
+    font-weight: bold;
+    color: #00b7ee;
+}
+
+/*捲軸*/
+#content_1.main_index {
+    width: 732px;
+    padding: 0px 0 0 0;
+    position: relative;
+    top: 0px;
+}
+
+#content_1.main {
+    width: 732px;
+    padding: 0px 0 0 0px;
+    position: relative;
+}
+
+#content_1 {
+    width: 730px;
+    height: 518px;
+    overflow-y: auto;
+}
+
+#content_2.main_index {
+    width: 732px;
+    padding: 0px 0 0 0;
+    position: relative;
+    top: 0px;
+}
+
+#content_2.main {
+    width: 732px;
+    padding: 0px 0 0 0px;
+    position: relative;
+}
+
+#content_2 {
+    width: 730px;
+    height: 653px;
+    overflow-y: auto;
+}
+
+.mCSB_container {
+    padding: 20px;
+}
+
+.mCustomScrollBox > .mCSB_scrollTools {
+    width: 16px;
+    height: 100%;
+    top: -2px;
+    right: 2px;
+    *right: 0; /*ie8*/
+}
+
+.mCSB_scrollTools .mCSB_draggerContainer {
+    position: absolute;
+    top: 2px;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    height: auto;
+}
+
+.mCustomScrollBox {
+    *width: 518px;
+}
+
+.mCSB_scrollTools .mCSB_dragger {
+    cursor: pointer;
+    width: 100%;
+}
+
+    .mCSB_scrollTools .mCSB_dragger .mCSB_dragger_bar {
+        background: #00b7ee;
+        width: 16px;
+        height: 100%;
+        margin: 0 auto;
+        text-align: center;
+    }
+
+.mCSB_scrollTools .mCSB_draggerRail {
+    background: #000;
+    width: 16px;
+    height: 100%;
+    margin: 0 auto;
+    border: 1px #a0a0a0 solid;
+    *min-height: 518px!important;
+}

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bank>
+	<branch num="" name="請選擇分行.."/>
+	   <branch num="0013" name="彭農信"/>
+	   <branch num="0024" name="彭農湖西"/>
+	   <branch num="0035" name="彭農西嶼"/>
+	   <branch num="0046" name="彭農望安"/>
+	   <branch num="0057" name="彭農白沙"/>
+	   <branch num="0068" name="彭農七美"/>
+</bank>

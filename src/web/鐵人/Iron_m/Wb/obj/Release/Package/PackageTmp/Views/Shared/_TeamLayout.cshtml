@@ -1,0 +1,42 @@
+﻿@using Wb.Common;
+<!DOCTYPE HTML>
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+<title>鐵人論壇</title> 
+@Html.Partial("_CssArea")
+<link rel="shortcut icon" href="/favicon.ico" />
+</head>
+
+<body>
+    <div id="primary"  >
+         <!-- 右側選單 -->
+        @Html.Partial("_RightMenu")
+        <div id="block_area"></div>
+
+        <!-- 頁碼 -->
+        @Html.Partial("_PageArea")
+
+        <!-- 頁首-->
+        @Html.Partial("_HeaderArea") 
+
+        <div role="main" class="ui-content">
+
+        <!-- 主選單-->
+        @Html.Partial("_TeamNavi") 
+
+
+            @RenderBody()
+
+        </div>
+        <!-- 頁尾-->
+        @Html.Partial("_FooterArea")
+
+    </div>
+    <!-- js -->
+    @Html.Partial("_JsArea")  
+
+   
+</body>
+</html>

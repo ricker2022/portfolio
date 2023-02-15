@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bank>
+	<branch num="" name="請選擇分行.."/>
+	<branch num="0011" name="大台北商業銀行營業部"/>
+	<branch num="0020" name="大台北商業銀行民生分行"/>
+	<branch num="0039" name="大台北商業銀行建成分行"/>
+	<branch num="0048" name="大台北商業銀行大橋分行"/>
+	<branch num="0057" name="大台北商業銀行南京東路分行"/>
+	<branch num="0066" name="大台北商業銀行昆明分行"/>
+	<branch num="0075" name="大台北商業銀行長安分行"/>
+	<branch num="0084" name="大台北商業銀行永吉分行"/>
+	<branch num="0093" name="大台北商業銀行和平東路分行"/>
+	<branch num="0109" name="大台北商業銀行石牌分行"/>
+	<branch num="0118" name="大台北商業銀行內湖分行"/>
+	<branch num="0127" name="大台北商業銀行成功分行"/>
+	<branch num="0136" name="大台北商業銀行古亭分行"/>
+	<branch num="0145" name="大台北商業銀行景美分行"/>
+	<branch num="0154" name="大台北商業銀行南港分行"/>
+	<branch num="0163" name="大台北商業銀行信義分行"/>
+	<branch num="0172" name="大台北商業銀行萬華分行"/>
+	<branch num="0181" name="大台北商業銀行士林分行"/>
+	<branch num="0190" name="大台北商業銀行松山分行"/>
+	<branch num="0206" name="大台北商業銀行城內分行"/>
+	<branch num="0215" name="大台北商業銀行中山分行"/>
+	<branch num="0224" name="大台北商業銀行中和分行"/>
+</bank>
+

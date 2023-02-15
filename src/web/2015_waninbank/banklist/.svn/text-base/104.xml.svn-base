@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bank>
+	<branch num="" name="請選擇分行.."/>
+	<branch num="0018" name="台北市第五信用合作社營業部"/>
+	<branch num="0027" name="台北市第五信用合作社吉林分社"/>
+	<branch num="0036" name="台北市第五信用合作社大同分社"/>
+	<branch num="0045" name="台北市第五信用合作社中山分社"/>
+	<branch num="0054" name="台北市第五信用合作社松山分社"/>
+	<branch num="0063" name="台北市第五信用合作社大安分社"/>
+	<branch num="0072" name="台北市第五信用合作社石牌分社"/>
+	<branch num="0081" name="台北市第五信用合作社南港分社"/>
+	<branch num="0090" name="台北市第五信用合作社文山分社"/>
+	<branch num="0106" name="台北市第五信用合作社中正分社"/>
+	<branch num="0115" name="台北市第五信用合作社北投分社"/>
+	<branch num="0124" name="台北市第五信用合作社內湖分社"/>
+	<branch num="0133" name="台北市第五信用合作社天母分社"/>
+</bank>
+

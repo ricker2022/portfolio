@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bank>
+	<branch num="" name="請選擇分行.."/>
+	   <branch num="0018" name="莊農"/>
+	   <branch num="0029" name="莊農丹鳳"/>
+	   <branch num="0030" name="莊農頭前"/>
+	   <branch num="0063" name="莊農西盛"/>
+	   <branch num="0074" name="莊農中港"/>
+	   <branch num="0085" name="莊農後港"/>
+	   <branch num="0096" name="莊農營盤"/>
+	   <branch num="0100" name="莊農瓊林"/>
+	   <branch num="0111" name="莊農思源"/>
+	   <branch num="0122" name="莊農新泰"/>
+</bank>

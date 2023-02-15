@@ -1,0 +1,1814 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="IronModel.Store" Alias="Self" Provider="System.Data.SqlClient" ProviderManifestToken="2008" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityContainer Name="IronModelStoreContainer">
+    <EntitySet Name="DB日統計資訊" EntityType="IronModel.Store.DB日統計資訊" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="DB錯誤記錄" EntityType="IronModel.Store.DB錯誤記錄" store:Type="Tables" store:Schema="dbo" store:Name="DB錯誤記錄">
+      <DefiningQuery>SELECT 
+      [DB錯誤記錄].[錯誤號碼] AS [錯誤號碼], 
+      [DB錯誤記錄].[錯誤嚴重性] AS [錯誤嚴重性], 
+      [DB錯誤記錄].[錯誤狀態碼] AS [錯誤狀態碼], 
+      [DB錯誤記錄].[觸發程序名稱] AS [觸發程序名稱], 
+      [DB錯誤記錄].[錯誤訊息] AS [錯誤訊息], 
+      [DB錯誤記錄].[錯誤行號] AS [錯誤行號], 
+      [DB錯誤記錄].[建立日期] AS [建立日期]
+      FROM [dbo].[DB錯誤記錄] AS [DB錯誤記錄]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="RP檔" EntityType="IronModel.Store.RP檔" store:Type="Tables" store:Schema="dbo" store:Name="RP檔">
+      <DefiningQuery>SELECT 
+      [RP檔].[RP流水號] AS [RP流水號], 
+      [RP檔].[種族A] AS [種族A], 
+      [RP檔].[選手A] AS [選手A], 
+      [RP檔].[選手A圖片] AS [選手A圖片], 
+      [RP檔].[種族B] AS [種族B], 
+      [RP檔].[選手B] AS [選手B], 
+      [RP檔].[選手B圖片] AS [選手B圖片], 
+      [RP檔].[賽事] AS [賽事], 
+      [RP檔].[檔案路徑] AS [檔案路徑], 
+      [RP檔].[下載次數] AS [下載次數], 
+      [RP檔].[上傳時間] AS [上傳時間], 
+      [RP檔].[異動者] AS [異動者], 
+      [RP檔].[論壇識別] AS [論壇識別]
+      FROM [dbo].[RP檔] AS [RP檔]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="sysdiagrams" EntityType="IronModel.Store.sysdiagrams" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="人員識別" EntityType="IronModel.Store.人員識別" store:Type="Tables" store:Schema="dbo" store:Name="人員識別">
+      <DefiningQuery>SELECT 
+      [人員識別].[論壇識別] AS [論壇識別], 
+      [人員識別].[MoloKey] AS [MoloKey], 
+      [人員識別].[身份識別] AS [身份識別], 
+      [人員識別].[啟用YN] AS [啟用YN], 
+      [人員識別].[建立日期] AS [建立日期]
+      FROM [dbo].[人員識別] AS [人員識別]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="公告" EntityType="IronModel.Store.公告" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="文章" EntityType="IronModel.Store.文章" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="文章回覆" EntityType="IronModel.Store.文章回覆" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="文章回覆檔案" EntityType="IronModel.Store.文章回覆檔案" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="文章留言" EntityType="IronModel.Store.文章留言" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="文章動作記錄" EntityType="IronModel.Store.文章動作記錄" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="文章檔案" EntityType="IronModel.Store.文章檔案" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="文章屬性" EntityType="IronModel.Store.文章屬性" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="好友" EntityType="IronModel.Store.好友" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="行事曆" EntityType="IronModel.Store.行事曆" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="即時訊息" EntityType="IronModel.Store.即時訊息" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="系統使用者" EntityType="IronModel.Store.系統使用者" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="系統使用者異動歷程" EntityType="IronModel.Store.系統使用者異動歷程" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="直播列表" EntityType="IronModel.Store.直播列表" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="活動_連續登入加碼送" EntityType="IronModel.Store.活動_連續登入加碼送" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="相片" EntityType="IronModel.Store.相片" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="相簿" EntityType="IronModel.Store.相簿" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="英雄列表" EntityType="IronModel.Store.英雄列表" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="英雄攻略" EntityType="IronModel.Store.英雄攻略" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="英雄攻略_會員推文" EntityType="IronModel.Store.英雄攻略_會員推文" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="英雄攻略回覆" EntityType="IronModel.Store.英雄攻略回覆" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="訊息通知" EntityType="IronModel.Store.訊息通知" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="國家" EntityType="IronModel.Store.國家" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="專欄" EntityType="IronModel.Store.專欄" store:Type="Tables" store:Schema="dbo" store:Name="專欄">
+      <DefiningQuery>SELECT 
+      [專欄].[專欄流水號] AS [專欄流水號], 
+      [專欄].[標題] AS [標題], 
+      [專欄].[內容] AS [內容], 
+      [專欄].[專欄狀態] AS [專欄狀態], 
+      [專欄].[置首YN] AS [置首YN], 
+      [專欄].[推薦YN] AS [推薦YN], 
+      [專欄].[圖片路徑] AS [圖片路徑], 
+      [專欄].[影片連結] AS [影片連結], 
+      [專欄].[發佈開始日] AS [發佈開始日], 
+      [專欄].[發佈結束日] AS [發佈結束日], 
+      [專欄].[異動者] AS [異動者], 
+      [專欄].[建立日期] AS [建立日期], 
+      [專欄].[論壇識別] AS [論壇識別], 
+      [專欄].[相簿編號] AS [相簿編號], 
+      [專欄].[行動圖片路徑] AS [行動圖片路徑]
+      FROM [dbo].[專欄] AS [專欄]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="專欄回覆" EntityType="IronModel.Store.專欄回覆" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="專欄動作記錄" EntityType="IronModel.Store.專欄動作記錄" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="專欄牆" EntityType="IronModel.Store.專欄牆" store:Type="Tables" store:Schema="dbo" store:Name="專欄牆">
+      <DefiningQuery>SELECT 
+      [專欄牆].[圖片編號] AS [圖片編號], 
+      [專欄牆].[圖片路徑] AS [圖片路徑], 
+      [專欄牆].[標題] AS [標題], 
+      [專欄牆].[圖片連結] AS [圖片連結], 
+      [專欄牆].[論壇識別] AS [論壇識別], 
+      [專欄牆].[異動者] AS [異動者], 
+      [專欄牆].[建立日期] AS [建立日期]
+      FROM [dbo].[專欄牆] AS [專欄牆]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="登出入歷程" EntityType="IronModel.Store.登出入歷程" store:Type="Tables" store:Schema="dbo" store:Name="登出入歷程">
+      <DefiningQuery>SELECT 
+      [登出入歷程].[論壇識別] AS [論壇識別], 
+      [登出入歷程].[流水號] AS [流水號], 
+      [登出入歷程].[MoloKey] AS [MoloKey], 
+      [登出入歷程].[項目] AS [項目], 
+      [登出入歷程].[使用IP] AS [使用IP], 
+      [登出入歷程].[備註] AS [備註], 
+      [登出入歷程].[建立日期] AS [建立日期]
+      FROM [dbo].[登出入歷程] AS [登出入歷程]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="意見反應" EntityType="IronModel.Store.意見反應" store:Type="Tables" store:Schema="dbo" store:Name="意見反應">
+      <DefiningQuery>SELECT 
+      [意見反應].[問題流水號] AS [問題流水號], 
+      [意見反應].[MoloKey] AS [MoloKey], 
+      [意見反應].[屬性編號] AS [屬性編號], 
+      [意見反應].[問題說明] AS [問題說明], 
+      [意見反應].[處理狀態] AS [處理狀態], 
+      [意見反應].[處理說明] AS [處理說明], 
+      [意見反應].[處理人員] AS [處理人員], 
+      [意見反應].[建立日期] AS [建立日期], 
+      [意見反應].[論壇識別] AS [論壇識別]
+      FROM [dbo].[意見反應] AS [意見反應]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="意見反應屬性" EntityType="IronModel.Store.意見反應屬性" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="新聞" EntityType="IronModel.Store.新聞" store:Type="Tables" store:Schema="dbo" store:Name="新聞">
+      <DefiningQuery>SELECT 
+      [新聞].[屬性編號] AS [屬性編號], 
+      [新聞].[新聞流水號] AS [新聞流水號], 
+      [新聞].[標題] AS [標題], 
+      [新聞].[內容] AS [內容], 
+      [新聞].[新聞狀態] AS [新聞狀態], 
+      [新聞].[置首YN] AS [置首YN], 
+      [新聞].[推薦YN] AS [推薦YN], 
+      [新聞].[圖片路徑] AS [圖片路徑], 
+      [新聞].[影片連結] AS [影片連結], 
+      [新聞].[發佈開始日] AS [發佈開始日], 
+      [新聞].[發佈結束日] AS [發佈結束日], 
+      [新聞].[異動者] AS [異動者], 
+      [新聞].[建立日期] AS [建立日期], 
+      [新聞].[論壇識別] AS [論壇識別], 
+      [新聞].[點擊率] AS [點擊率], 
+      [新聞].[相簿編號] AS [相簿編號], 
+      [新聞].[行動圖片路徑] AS [行動圖片路徑]
+      FROM [dbo].[新聞] AS [新聞]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="新聞回覆" EntityType="IronModel.Store.新聞回覆" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="新聞動作記錄" EntityType="IronModel.Store.新聞動作記錄" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="新聞點擊" EntityType="IronModel.Store.新聞點擊" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="新聞屬性" EntityType="IronModel.Store.新聞屬性" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="會員" EntityType="IronModel.Store.會員" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="會員文章收藏" EntityType="IronModel.Store.會員文章收藏" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="會員文章訂閱" EntityType="IronModel.Store.會員文章訂閱" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="會員交易" EntityType="IronModel.Store.會員交易" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="會員回覆推文" EntityType="IronModel.Store.會員回覆推文" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="會員訂閱" EntityType="IronModel.Store.會員訂閱" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="會員計數" EntityType="IronModel.Store.會員計數" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="會員停權鎖定" EntityType="IronModel.Store.會員停權鎖定" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="會員停權鎖定歷程" EntityType="IronModel.Store.會員停權鎖定歷程" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="會員專欄收藏" EntityType="IronModel.Store.會員專欄收藏" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="會員推文" EntityType="IronModel.Store.會員推文" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="會員異動歷程" EntityType="IronModel.Store.會員異動歷程" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="會員新聞收藏" EntityType="IronModel.Store.會員新聞收藏" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="會員簽到" EntityType="IronModel.Store.會員簽到" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="業餘戰隊" EntityType="IronModel.Store.業餘戰隊" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="業餘戰隊_文章" EntityType="IronModel.Store.業餘戰隊_文章" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="業餘戰隊_文章回覆" EntityType="IronModel.Store.業餘戰隊_文章回覆" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="業餘戰隊_文章留言" EntityType="IronModel.Store.業餘戰隊_文章留言" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="業餘戰隊_文章屬性" EntityType="IronModel.Store.業餘戰隊_文章屬性" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="業餘戰隊_推文" EntityType="IronModel.Store.業餘戰隊_推文" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="業餘戰隊加入區" EntityType="IronModel.Store.業餘戰隊加入區" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="業餘戰隊申請區" EntityType="IronModel.Store.業餘戰隊申請區" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="業餘戰隊回覆推文" EntityType="IronModel.Store.業餘戰隊回覆推文" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="業餘戰隊成員" EntityType="IronModel.Store.業餘戰隊成員" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="業餘戰隊約戰" EntityType="IronModel.Store.業餘戰隊約戰" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="電競選手" EntityType="IronModel.Store.電競選手" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="電競選手照片" EntityType="IronModel.Store.電競選手照片" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="稱號設定" EntityType="IronModel.Store.稱號設定" store:Type="Tables" store:Schema="dbo" store:Name="稱號設定">
+      <DefiningQuery>SELECT 
+      [稱號設定].[流水號] AS [流水號], 
+      [稱號設定].[啟始等級] AS [啟始等級], 
+      [稱號設定].[結束等級] AS [結束等級], 
+      [稱號設定].[稱號] AS [稱號]
+      FROM [dbo].[稱號設定] AS [稱號設定]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="影片" EntityType="IronModel.Store.影片" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="影片回覆" EntityType="IronModel.Store.影片回覆" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="暱稱列表" EntityType="IronModel.Store.暱稱列表" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="論壇列表" EntityType="IronModel.Store.論壇列表" store:Type="Tables" store:Schema="dbo" store:Name="論壇列表">
+      <DefiningQuery>SELECT 
+      [論壇列表].[論壇識別] AS [論壇識別], 
+      [論壇列表].[論壇名稱] AS [論壇名稱]
+      FROM [dbo].[論壇列表] AS [論壇列表]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="趣味遊戲_下注" EntityType="IronModel.Store.趣味遊戲_下注" store:Type="Tables" store:Schema="dbo" store:Name="趣味遊戲_下注">
+      <DefiningQuery>SELECT 
+      [趣味遊戲_下注].[遊戲編號] AS [遊戲編號], 
+      [趣味遊戲_下注].[MoloKey] AS [MoloKey], 
+      [趣味遊戲_下注].[開盤流水號] AS [開盤流水號], 
+      [趣味遊戲_下注].[下注流水號] AS [下注流水號], 
+      [趣味遊戲_下注].[下注張數] AS [下注張數], 
+      [趣味遊戲_下注].[輸贏] AS [輸贏], 
+      [趣味遊戲_下注].[派彩YN] AS [派彩YN], 
+      [趣味遊戲_下注].[派彩時間] AS [派彩時間], 
+      [趣味遊戲_下注].[獲得鐵幣] AS [獲得鐵幣], 
+      [趣味遊戲_下注].[建立日期] AS [建立日期], 
+      [趣味遊戲_下注].[論壇識別] AS [論壇識別]
+      FROM [dbo].[趣味遊戲_下注] AS [趣味遊戲_下注]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="趣味遊戲_主客" EntityType="IronModel.Store.趣味遊戲_主客" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="趣味遊戲_主檔" EntityType="IronModel.Store.趣味遊戲_主檔" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="趣味遊戲_明細" EntityType="IronModel.Store.趣味遊戲_明細" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="趣味遊戲_開盤" EntityType="IronModel.Store.趣味遊戲_開盤" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="趣味遊戲_對戰表" EntityType="IronModel.Store.趣味遊戲_對戰表" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="趣味遊戲主客編號" EntityType="IronModel.Store.趣味遊戲主客編號" store:Type="Tables" store:Schema="dbo" store:Name="趣味遊戲主客編號">
+      <DefiningQuery>SELECT 
+      [趣味遊戲主客編號].[主客流水號] AS [主客流水號], 
+      [趣味遊戲主客編號].[異動日期] AS [異動日期]
+      FROM [dbo].[趣味遊戲主客編號] AS [趣味遊戲主客編號]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="趣味遊戲項目" EntityType="IronModel.Store.趣味遊戲項目" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="趣味遊戲編號" EntityType="IronModel.Store.趣味遊戲編號" store:Type="Tables" store:Schema="dbo" store:Name="趣味遊戲編號">
+      <DefiningQuery>SELECT 
+      [趣味遊戲編號].[遊戲流水號] AS [遊戲流水號], 
+      [趣味遊戲編號].[異動日期] AS [異動日期]
+      FROM [dbo].[趣味遊戲編號] AS [趣味遊戲編號]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="導覽圖片" EntityType="IronModel.Store.導覽圖片" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="導覽廣告" EntityType="IronModel.Store.導覽廣告" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="導覽影片" EntityType="IronModel.Store.導覽影片" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="戰隊" EntityType="IronModel.Store.戰隊" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="戰隊成員" EntityType="IronModel.Store.戰隊成員" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="擅用英雄" EntityType="IronModel.Store.擅用英雄" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="賽事" EntityType="IronModel.Store.賽事" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="賽事隊伍" EntityType="IronModel.Store.賽事隊伍" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="賽事隊員" EntityType="IronModel.Store.賽事隊員" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="爐石卡片" EntityType="IronModel.Store.爐石卡片" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="爐石攻略" EntityType="IronModel.Store.爐石攻略" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="爐石攻略回覆" EntityType="IronModel.Store.爐石攻略回覆" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="爐石套牌" EntityType="IronModel.Store.爐石套牌" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="爐石素質" EntityType="IronModel.Store.爐石素質" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="爐石職業" EntityType="IronModel.Store.爐石職業" store:Type="Tables" Schema="dbo" />
+    <EntitySet Name="鐵幣異動記錄" EntityType="IronModel.Store.鐵幣異動記錄" store:Type="Tables" Schema="dbo" />
+  </EntityContainer>
+  <EntityType Name="DB日統計資訊">
+    <Key>
+      <PropertyRef Name="年月日" />
+    </Key>
+    <Property Name="年月日" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="註冊數" Type="int" Nullable="false" />
+    <Property Name="Molo註冊數" Type="int" Nullable="false" />
+    <Property Name="總人數" Type="int" Nullable="false" />
+    <Property Name="登入數" Type="int" Nullable="false" />
+    <Property Name="簽到數" Type="int" Nullable="false" />
+    <Property Name="FB推廣總數" Type="int" Nullable="false" />
+    <Property Name="文章發文總數" Type="int" Nullable="false" />
+    <Property Name="文章回覆總數" Type="int" Nullable="false" />
+    <Property Name="文章推文總數" Type="int" Nullable="false" />
+    <Property Name="文章留言總數" Type="int" Nullable="false" />
+    <Property Name="文章瀏覽總數" Type="int" Nullable="false" />
+    <Property Name="新聞回覆總數" Type="int" Nullable="false" />
+    <Property Name="專欄回覆總數" Type="int" Nullable="false" />
+    <Property Name="會員持有鐵幣" Type="int" Nullable="false" />
+    <Property Name="贈送總鐵幣" Type="int" Nullable="false" />
+    <Property Name="收回總鐵幣" Type="int" Nullable="false" />
+    <Property Name="建立日期" Type="datetime" />
+  </EntityType>
+  <!--產生期間發現錯誤:
+      警告 6002: 資料表/檢視 '鐵人論壇2.dbo.DB錯誤記錄' 未定義主索引鍵。已推斷此索引鍵，並將定義建立成唯讀的資料表/檢視。
+      -->
+  <EntityType Name="DB錯誤記錄">
+    <Key>
+      <PropertyRef Name="錯誤號碼" />
+      <PropertyRef Name="錯誤嚴重性" />
+      <PropertyRef Name="錯誤狀態碼" />
+      <PropertyRef Name="觸發程序名稱" />
+      <PropertyRef Name="錯誤訊息" />
+      <PropertyRef Name="錯誤行號" />
+      <PropertyRef Name="建立日期" />
+    </Key>
+    <Property Name="錯誤號碼" Type="int" Nullable="false" />
+    <Property Name="錯誤嚴重性" Type="int" Nullable="false" />
+    <Property Name="錯誤狀態碼" Type="int" Nullable="false" />
+    <Property Name="觸發程序名稱" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="錯誤訊息" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="錯誤行號" Type="int" Nullable="false" />
+    <Property Name="建立日期" Type="datetime" Nullable="false" />
+  </EntityType>
+  <!--產生期間發現錯誤:
+      警告 6002: 資料表/檢視 '鐵人論壇2.dbo.RP檔' 未定義主索引鍵。已推斷此索引鍵，並將定義建立成唯讀的資料表/檢視。
+      -->
+  <EntityType Name="RP檔">
+    <Key>
+      <PropertyRef Name="RP流水號" />
+      <PropertyRef Name="種族A" />
+      <PropertyRef Name="選手A" />
+      <PropertyRef Name="選手A圖片" />
+      <PropertyRef Name="種族B" />
+      <PropertyRef Name="選手B" />
+      <PropertyRef Name="選手B圖片" />
+      <PropertyRef Name="賽事" />
+      <PropertyRef Name="檔案路徑" />
+      <PropertyRef Name="下載次數" />
+      <PropertyRef Name="上傳時間" />
+      <PropertyRef Name="異動者" />
+      <PropertyRef Name="論壇識別" />
+    </Key>
+    <Property Name="RP流水號" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="種族A" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="選手A" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="選手A圖片" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="種族B" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="選手B" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="選手B圖片" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="賽事" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="檔案路徑" Type="nvarchar" Nullable="false" MaxLength="512" />
+    <Property Name="下載次數" Type="int" Nullable="false" />
+    <Property Name="上傳時間" Type="datetime" Nullable="false" />
+    <Property Name="異動者" Type="nvarchar" Nullable="false" MaxLength="30" />
+    <Property Name="論壇識別" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="sysdiagrams">
+    <Key>
+      <PropertyRef Name="diagram_id" />
+    </Key>
+    <Property Name="name" Type="nvarchar" Nullable="false" MaxLength="128" />
+    <Property Name="principal_id" Type="int" Nullable="false" />
+    <Property Name="diagram_id" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="version" Type="int" />
+    <Property Name="definition" Type="varbinary(max)" />
+  </EntityType>
+  <!--產生期間發現錯誤:
+      警告 6002: 資料表/檢視 '鐵人論壇2.dbo.人員識別' 未定義主索引鍵。已推斷此索引鍵，並將定義建立成唯讀的資料表/檢視。
+      -->
+  <EntityType Name="人員識別">
+    <Key>
+      <PropertyRef Name="論壇識別" />
+      <PropertyRef Name="MoloKey" />
+      <PropertyRef Name="身份識別" />
+      <PropertyRef Name="啟用YN" />
+      <PropertyRef Name="建立日期" />
+    </Key>
+    <Property Name="論壇識別" Type="int" Nullable="false" />
+    <Property Name="MoloKey" Type="nvarchar" Nullable="false" MaxLength="16" />
+    <Property Name="身份識別" Type="int" Nullable="false" />
+    <Property Name="啟用YN" Type="bit" Nullable="false" />
+    <Property Name="建立日期" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="公告">
+    <Key>
+      <PropertyRef Name="公告流水號" />
+      <PropertyRef Name="論壇識別" />
+    </Key>
+    <Property Name="公告流水號" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="標題" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="內容" Type="nvarchar" Nullable="false" MaxLength="1024" />
+    <Property Name="公告狀態" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="狀態" Type="int" Nullable="false" />
+    <Property Name="置首YN" Type="bit" Nullable="false" />
+    <Property Name="登入YN" Type="bit" Nullable="false" />
+    <Property Name="圖片路徑" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="影片連結" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="發佈開始日" Type="datetime" />
+    <Property Name="發佈結束日" Type="datetime" />
+    <Property Name="異動者" Type="nvarchar" Nullable="false" MaxLength="30" />
+    <Property Name="建立日期" Type="datetime" Nullable="false" />
+    <Property Name="論壇識別" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="文章">
+    <Key>
+      <PropertyRef Name="文章流水號" />
+      <PropertyRef Name="論壇識別" />
+    </Key>
+    <Property Name="屬性編號" Type="int" Nullable="false" />
+    <Property Name="MoloKey" Type="nvarchar" Nullable="false" MaxLength="16" />
+    <Property Name="文章流水號" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="標題" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="內容" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="文章狀態" Type="int" Nullable="false" />
+    <Property Name="置頂YN" Type="bit" Nullable="false" />
+    <Property Name="置頂時間" Type="datetime" Nullable="false" />
+    <Property Name="推薦YN" Type="bit" Nullable="false" />
+    <Property Name="前台推薦YN" Type="bit" Nullable="false" />
+    <Property Name="精華YN" Type="bit" Nullable="false" />
+    <Property Name="隱藏YN" Type="bit" Nullable="false" />
+    <Property Name="鎖定YN" Type="bit" Nullable="false" />
+    <Property Name="水桶YN" Type="bit" Nullable="false" />
+    <Property Name="圖片路徑" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="影片連結" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="推文數" Type="int" Nullable="false" />
+    <Property Name="回覆數" Type="int" Nullable="false" />
+    <Property Name="人氣數" Type="int" Nullable="false" />
+    <Property Name="發佈開始日" Type="datetime" Nullable="false" />
+    <Property Name="最後回覆日" Type="datetime" />
+    <Property Name="異動者" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="建立日期" Type="datetime" Nullable="false" />
+    <Property Name="前台刪除YN" Type="bit" Nullable="false" />
+    <Property Name="論壇識別" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="文章回覆">
+    <Key>
+      <PropertyRef Name="文章流水號" />
+      <PropertyRef Name="回覆流水號" />
+      <PropertyRef Name="論壇識別" />
+    </Key>
+    <Property Name="文章流水號" Type="bigint" Nullable="false" />
+    <Property Name="回覆流水號" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="MoloKey" Type="nvarchar" Nullable="false" MaxLength="16" />
+    <Property Name="內容" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="回覆狀態" Type="int" Nullable="false" />
+    <Property Name="置頂YN" Type="bit" Nullable="false" />
+    <Property Name="置頂時間" Type="datetime" Nullable="false" />
+    <Property Name="隱藏YN" Type="bit" Nullable="false" />
+    <Property Name="水桶YN" Type="bit" Nullable="false" />
+    <Property Name="建立日期" Type="datetime" Nullable="false" />
+    <Property Name="前台刪除YN" Type="bit" Nullable="false" />
+    <Property Name="推文數" Type="int" Nullable="false" />
+    <Property Name="論壇識別" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="文章回覆檔案">
+    <Key>
+      <PropertyRef Name="檔案流水號" />
+      <PropertyRef Name="論壇識別" />
+    </Key>
+    <Property Name="MoloKey" Type="nvarchar" Nullable="false" MaxLength="16" />
+    <Property Name="回覆流水號" Type="bigint" Nullable="false" />
+    <Property Name="檔案流水號" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="檔案名稱" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="檔案路徑" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="建立日期" Type="datetime" Nullable="false" />
+    <Property Name="論壇識別" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="文章留言">
+    <Key>
+      <PropertyRef Name="回覆流水號" />
+      <PropertyRef Name="留言流水號" />
+      <PropertyRef Name="論壇識別" />
+    </Key>
+    <Property Name="文章流水號" Type="bigint" Nullable="false" />
+    <Property Name="回覆流水號" Type="bigint" Nullable="false" />
+    <Property Name="留言流水號" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="MoloKey" Type="nvarchar" Nullable="false" MaxLength="16" />
+    <Property Name="暱稱" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="內容" Type="nvarchar" Nullable="false" MaxLength="1024" />
+    <Property Name="留言狀態" Type="int" Nullable="false" />
+    <Property Name="置頂YN" Type="bit" Nullable="false" />
+    <Property Name="置頂時間" Type="datetime" Nullable="false" />
+    <Property Name="隱藏YN" Type="bit" Nullable="false" />
+    <Property Name="水桶YN" Type="bit" Nullable="false" />
+    <Property Name="建立日期" Type="datetime" Nullable="false" />
+    <Property Name="論壇識別" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="文章動作記錄">
+    <Key>
+      <PropertyRef Name="動作記錄編號" />
+      <PropertyRef Name="論壇識別" />
+    </Key>
+    <Property Name="動作記錄編號" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="文章流水號" Type="bigint" Nullable="false" />
+    <Property Name="MoloKey" Type="nvarchar" Nullable="false" MaxLength="16" />
+    <Property Name="暱稱" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="動作識別" Type="int" Nullable="false" />
+    <Property Name="執行動作" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="備註" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="備註2" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="異動者" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="會員識別" Type="int" Nullable="false" />
+    <Property Name="建立日期" Type="datetime" Nullable="false" />
+    <Property Name="論壇識別" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="文章檔案">
+    <Key>
+      <PropertyRef Name="檔案流水號" />
+      <PropertyRef Name="論壇識別" />
+    </Key>
+    <Property Name="MoloKey" Type="nvarchar" Nullable="false" MaxLength="16" />
+    <Property Name="文章流水號" Type="bigint" Nullable="false" />
+    <Property Name="檔案流水號" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="檔案名稱" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="檔案路徑" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="建立日期" Type="datetime" Nullable="false" />
+    <Property Name="論壇識別" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="文章屬性">
+    <Key>
+      <PropertyRef Name="屬性編號" />
+      <PropertyRef Name="論壇識別" />
+    </Key>
+    <Property Name="屬性編號" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="屬性名稱" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="屬性圖片" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="屬性狀態" Type="int" Nullable="false" />
+    <Property Name="備註" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="隱藏YN" Type="bit" Nullable="false" />
+    <Property Name="版主" Type="nvarchar" Nullable="false" MaxLength="16" />
+    <Property Name="副版主" Type="nvarchar" Nullable="false" MaxLength="16" />
+    <Property Name="置頂時間" Type="datetime" Nullable="false" />
+    <Property Name="建立時間" Type="datetime" Nullable="false" />
+    <Property Name="論壇識別" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="好友">
+    <Key>
+      <PropertyRef Name="名稱1" />
+      <PropertyRef Name="名稱2" />
+    </Key>
+    <Property Name="名稱1" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Icon名稱1" Type="nvarchar" Nullable="false" MaxLength="512" />
+    <Property Name="問候訊息" Type="nvarchar" Nullable="false" MaxLength="1024" />
+    <Property Name="名稱2" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Icon名稱2" Type="nvarchar" Nullable="false" MaxLength="512" />
+    <Property Name="確認2" Type="bit" Nullable="false" />
+    <Property Name="確認日" Type="datetime" />
+    <Property Name="好友狀態" Type="tinyint" Nullable="false" />
+    <Property Name="建立日期" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="行事曆">
+    <Key>
+      <PropertyRef Name="流水號" />
+      <PropertyRef Name="論壇識別" />
+    </Key>
+    <Property Name="流水號" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="MoloKey" Type="nvarchar" Nullable="false" MaxLength="16" />
+    <Property Name="年月日" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="星期" Type="nvarchar" Nullable="false" MaxLength="2" />
+    <Property Name="項目" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="標題" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="內容" Type="nvarchar" Nullable="false" MaxLength="1024" />
+    <Property Name="直播網址" Type="nvarchar" Nullable="false" MaxLength="512" />
+    <Property Name="新聞連結" Type="nvarchar" Nullable="false" MaxLength="512" />
+    <Property Name="開始時間" Type="datetime" Nullable="false" />
+    <Property Name="建立日期" Type="datetime" Nullable="false" />
+    <Property Name="論壇識別" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="即時訊息">
+    <Key>
+      <PropertyRef Name="流水號" />
+    </Key>
+    <Property Name="流水號" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="訊息發送者" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Icon名稱1" Type="nvarchar" Nullable="false" MaxLength="512" />
+    <Property Name="訊息接收者" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="Icon名稱2" Type="nvarchar" Nullable="false" MaxLength="512" />
+    <Property Name="訊息內容" Type="nvarchar" Nullable="false" MaxLength="1024" />
+    <Property Name="讀取YN" Type="bit" Nullable="false" />
+    <Property Name="建立日期" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="系統使用者">
+    <Key>
+      <PropertyRef Name="MoloKey" />
+    </Key>
+    <Property Name="MoloKey" Type="nvarchar" Nullable="false" MaxLength="16" />
+    <Property Name="帳號" Type="nvarchar" Nullable="false" MaxLength="30" />
+    <Property Name="密碼" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="名稱" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="啟用YN" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="系統使用者異動歷程">
+    <Key>
+      <PropertyRef Name="異動編號" />
+    </Key>
+    <Property Name="異動編號" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="MoloKey" Type="nvarchar" Nullable="false" MaxLength="16" />
+    <Property Name="異動說明" Type="nvarchar" Nullable="false" MaxLength="30" />
+    <Property Name="舊資料" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="新資料" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="異動者" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="備註" Type="nvarchar" Nullable="false" MaxLength="512" />
+    <Property Name="建立日期" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="直播列表">
+    <Key>
+      <PropertyRef Name="直播編號" />
+      <PropertyRef Name="論壇識別" />
+    </Key>
+    <Property Name="直播編號" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="行程日期" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="直播名稱" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="直播網址" Type="nvarchar" Nullable="false" MaxLength="1024" />
+    <Property Name="直播狀態" Type="nvarchar" Nullable="false" MaxLength="30" />
+    <Property Name="人數" Type="int" Nullable="false" />
+    <Property Name="發佈開始日" Type="datetime" />
+    <Property Name="發佈結束日" Type="datetime" />
+    <Property Name="異動者" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="建立時間" Type="datetime" Nullable="false" />
+    <Property Name="論壇識別" Type="int" Nullable="false" />
+    <Property Name="直播描述" Type="nvarchar" Nullable="false" MaxLength="512" />
+    <Property Name="直播類別" Type="nvarchar" Nullable="false" MaxLength="20" />
+  </EntityType>
+  <EntityType Name="活動_連續登入加碼送">
+    <Key>
+      <PropertyRef Name="論壇識別" />
+      <PropertyRef Name="MoloKey" />
+    </Key>
+    <Property Name="論壇識別" Type="int" Nullable="false" />
+    <Property Name="MoloKey" Type="nvarchar" Nullable="false" MaxLength="16" />
+    <Property Name="贈送YN" Type="bit" Nullable="false" />
+    <Property Name="建立日期" Type="datetime" />
+  </EntityType>
+  <EntityType Name="相片">
+    <Key>
+      <PropertyRef Name="相片編號" />
+    </Key>
+    <Property Name="相簿編號" Type="int" Nullable="false" />
+    <Property Name="相片編號" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="相片路徑" Type="nvarchar" Nullable="false" MaxLength="512" />
+    <Property Name="異動者" Type="nvarchar" Nullable="false" MaxLength="30" />
+    <Property Name="論壇識別" Type="int" Nullable="false" />
+    <Property Name="建立日期" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="相簿">
+    <Key>
+      <PropertyRef Name="相簿編號" />
+    </Key>
+    <Property Name="相簿編號" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="相簿名稱" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="封面路徑" Type="nvarchar" Nullable="false" MaxLength="512" />
+    <Property Name="異動者" Type="nvarchar" Nullable="false" MaxLength="30" />
+    <Property Name="論壇識別" Type="int" Nullable="false" />
+    <Property Name="建立日期" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="英雄列表">
+    <Key>
+      <PropertyRef Name="英雄名稱" />
+    </Key>
+    <Property Name="流水號" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="英雄名稱" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="被動技" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="被動技Icon" Type="nvarchar" Nullable="false" MaxLength="512" />
+    <Property Name="被動技說明" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="主動技Q" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="主動技QIcon" Type="nvarchar" Nullable="false" MaxLength="512" />
+    <Property Name="主動技Q說明" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="主動技W" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="主動技WIcon" Type="nvarchar" Nullable="false" MaxLength="512" />
+    <Property Name="主動技W說明" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="主動技E" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="主動技EIcon" Type="nvarchar" Nullable="false" MaxLength="512" />
+    <Property Name="主動技E說明" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="主動技R" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="主動技RIcon" Type="nvarchar" Nullable="false" MaxLength="512" />
+    <Property Name="主動技R說明" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="圖片路徑" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="背景" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="建立日期" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="英雄攻略">
+    <Key>
+      <PropertyRef Name="流水號" />
+    </Key>
+    <Property Name="流水號" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="選手流水號" Type="bigint" Nullable="false" />
+    <Property Name="標題" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="英雄介紹" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="MoloKey" Type="nvarchar" Nullable="false" MaxLength="16" />
+    <Property Name="人氣數" Type="int" Nullable="false" />
+    <Property Name="推文數" Type="int" Nullable="false" />
+    <Property Name="攻略類別" Type="int" Nullable="false" />
+    <Property Name="英雄流水號" Type="bigint" Nullable="false" />
+    <Property Name="符文" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="天賦" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="召喚師" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="道具" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="技能" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="敵對英雄" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="其它道具" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="技能解釋" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="技能解釋Q" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="技能解釋W" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="技能解釋E" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="技能解釋R" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="備註" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="建立日期" Type="datetime" Nullable="false" />
+    <Property Name="置頂YN" Type="bit" Nullable="false" />
+    <Property Name="刪除YN" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="英雄攻略_會員推文">
+    <Key>
+      <PropertyRef Name="流水號" />
+    </Key>
+    <Property Name="流水號" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="英雄攻略流水號" Type="bigint" Nullable="false" />
+    <Property Name="推文MoloKey" Type="nvarchar" Nullable="false" MaxLength="16" />
+    <Property Name="建立日期" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="英雄攻略回覆">
+    <Key>
+      <PropertyRef Name="回覆流水號" />
+    </Key>
+    <Property Name="回覆流水號" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="攻略流水號" Type="bigint" Nullable="false" />
+    <Property Name="MoloKey" Type="nvarchar" Nullable="false" MaxLength="16" />
+    <Property Name="內容" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="建立日期" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="訊息通知">
+    <Key>
+      <PropertyRef Name="訊息編號" />
+    </Key>
+    <Property Name="訊息編號" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="訊息發送者" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="訊息接收者" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="讀取YN" Type="bit" Nullable="false" />
+    <Property Name="標題" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="訊息內容" Type="nvarchar" Nullable="false" MaxLength="1024" />
+    <Property Name="傳送次數" Type="int" Nullable="false" />
+    <Property Name="連結網址" Type="nvarchar" Nullable="false" MaxLength="512" />
+    <Property Name="建立日期" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="國家">
+    <Key>
+      <PropertyRef Name="國名" />
+    </Key>
+    <Property Name="國名" Type="nvarchar" Nullable="false" MaxLength="30" />
+    <Property Name="圖示" Type="nvarchar" Nullable="false" MaxLength="512" />
+    <Property Name="國內外識別" Type="int" Nullable="false" />
+  </EntityType>
+  <!--產生期間發現錯誤:
+      警告 6002: 資料表/檢視 '鐵人論壇2.dbo.專欄' 未定義主索引鍵。已推斷此索引鍵，並將定義建立成唯讀的資料表/檢視。
+      -->
+  <EntityType Name="專欄">
+    <Key>
+      <PropertyRef Name="專欄流水號" />
+      <PropertyRef Name="標題" />
+      <PropertyRef Name="內容" />
+      <PropertyRef Name="專欄狀態" />
+      <PropertyRef Name="置首YN" />
+      <PropertyRef Name="推薦YN" />
+      <PropertyRef Name="圖片路徑" />
+      <PropertyRef Name="影片連結" />
+      <PropertyRef Name="發佈開始日" />
+      <PropertyRef Name="異動者" />
+      <PropertyRef Name="建立日期" />
+      <PropertyRef Name="論壇識別" />
+      <PropertyRef Name="相簿編號" />
+      <PropertyRef Name="行動圖片路徑" />
+    </Key>
+    <Property Name="專欄流水號" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="標題" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="內容" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="專欄狀態" Type="int" Nullable="false" />
+    <Property Name="置首YN" Type="bit" Nullable="false" />
+    <Property Name="推薦YN" Type="bit" Nullable="false" />
+    <Property Name="圖片路徑" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="影片連結" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="發佈開始日" Type="datetime" Nullable="false" />
+    <Property Name="發佈結束日" Type="datetime" />
+    <Property Name="異動者" Type="nvarchar" Nullable="false" MaxLength="30" />
+    <Property Name="建立日期" Type="datetime" Nullable="false" />
+    <Property Name="論壇識別" Type="int" Nullable="false" />
+    <Property Name="相簿編號" Type="int" Nullable="false" />
+    <Property Name="行動圖片路徑" Type="nvarchar" Nullable="false" MaxLength="256" />
+  </EntityType>
+  <EntityType Name="專欄回覆">
+    <Key>
+      <PropertyRef Name="專欄流水號" />
+      <PropertyRef Name="回覆流水號" />
+      <PropertyRef Name="論壇識別" />
+    </Key>
+    <Property Name="專欄流水號" Type="bigint" Nullable="false" />
+    <Property Name="回覆流水號" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="MoloKey" Type="nvarchar" Nullable="false" MaxLength="16" />
+    <Property Name="內容" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="回覆狀態" Type="int" Nullable="false" />
+    <Property Name="置頂YN" Type="bit" Nullable="false" />
+    <Property Name="置頂時間" Type="datetime" Nullable="false" />
+    <Property Name="隱藏YN" Type="bit" Nullable="false" />
+    <Property Name="建立日期" Type="datetime" Nullable="false" />
+    <Property Name="論壇識別" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="專欄動作記錄">
+    <Key>
+      <PropertyRef Name="動作記錄編號" />
+      <PropertyRef Name="論壇識別" />
+    </Key>
+    <Property Name="動作記錄編號" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="專欄流水號" Type="bigint" Nullable="false" />
+    <Property Name="動作識別" Type="int" Nullable="false" />
+    <Property Name="執行動作" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="備註" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="異動者" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="建立日期" Type="datetime" Nullable="false" />
+    <Property Name="論壇識別" Type="int" Nullable="false" />
+  </EntityType>
+  <!--產生期間發現錯誤:
+      警告 6002: 資料表/檢視 '鐵人論壇2.dbo.專欄牆' 未定義主索引鍵。已推斷此索引鍵，並將定義建立成唯讀的資料表/檢視。
+      -->
+  <EntityType Name="專欄牆">
+    <Key>
+      <PropertyRef Name="圖片編號" />
+      <PropertyRef Name="圖片路徑" />
+      <PropertyRef Name="標題" />
+      <PropertyRef Name="圖片連結" />
+      <PropertyRef Name="論壇識別" />
+      <PropertyRef Name="異動者" />
+      <PropertyRef Name="建立日期" />
+    </Key>
+    <Property Name="圖片編號" Type="int" Nullable="false" />
+    <Property Name="圖片路徑" Type="nvarchar" Nullable="false" MaxLength="512" />
+    <Property Name="標題" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="圖片連結" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="論壇識別" Type="int" Nullable="false" />
+    <Property Name="異動者" Type="nvarchar" Nullable="false" MaxLength="30" />
+    <Property Name="建立日期" Type="datetime" Nullable="false" />
+  </EntityType>
+  <!--產生期間發現錯誤:
+      警告 6002: 資料表/檢視 '鐵人論壇2.dbo.登出入歷程' 未定義主索引鍵。已推斷此索引鍵，並將定義建立成唯讀的資料表/檢視。
+      -->
+  <EntityType Name="登出入歷程">
+    <Key>
+      <PropertyRef Name="論壇識別" />
+      <PropertyRef Name="流水號" />
+      <PropertyRef Name="MoloKey" />
+      <PropertyRef Name="項目" />
+      <PropertyRef Name="使用IP" />
+      <PropertyRef Name="備註" />
+      <PropertyRef Name="建立日期" />
+    </Key>
+    <Property Name="論壇識別" Type="int" Nullable="false" />
+    <Property Name="流水號" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="MoloKey" Type="nvarchar" Nullable="false" MaxLength="16" />
+    <Property Name="項目" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="使用IP" Type="nvarchar" Nullable="false" MaxLength="16" />
+    <Property Name="備註" Type="nvarchar" Nullable="false" MaxLength="512" />
+    <Property Name="建立日期" Type="datetime" Nullable="false" />
+  </EntityType>
+  <!--產生期間發現錯誤:
+      警告 6002: 資料表/檢視 '鐵人論壇2.dbo.意見反應' 未定義主索引鍵。已推斷此索引鍵，並將定義建立成唯讀的資料表/檢視。
+      -->
+  <EntityType Name="意見反應">
+    <Key>
+      <PropertyRef Name="問題流水號" />
+      <PropertyRef Name="MoloKey" />
+      <PropertyRef Name="屬性編號" />
+      <PropertyRef Name="問題說明" />
+      <PropertyRef Name="處理狀態" />
+      <PropertyRef Name="處理說明" />
+      <PropertyRef Name="處理人員" />
+      <PropertyRef Name="建立日期" />
+      <PropertyRef Name="論壇識別" />
+    </Key>
+    <Property Name="問題流水號" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="MoloKey" Type="nvarchar" Nullable="false" MaxLength="16" />
+    <Property Name="屬性編號" Type="int" Nullable="false" />
+    <Property Name="問題說明" Type="nvarchar" Nullable="false" MaxLength="1024" />
+    <Property Name="處理狀態" Type="int" Nullable="false" />
+    <Property Name="處理說明" Type="nvarchar" Nullable="false" MaxLength="1024" />
+    <Property Name="處理人員" Type="nvarchar" Nullable="false" MaxLength="30" />
+    <Property Name="建立日期" Type="datetime" Nullable="false" />
+    <Property Name="論壇識別" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="意見反應屬性">
+    <Key>
+      <PropertyRef Name="屬性編號" />
+      <PropertyRef Name="論壇識別" />
+    </Key>
+    <Property Name="屬性編號" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="屬性名稱" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="屬性圖片" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="屬性狀態" Type="int" Nullable="false" />
+    <Property Name="備註" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="隱藏YN" Type="bit" Nullable="false" />
+    <Property Name="建立時間" Type="datetime" Nullable="false" />
+    <Property Name="論壇識別" Type="int" Nullable="false" />
+  </EntityType>
+  <!--產生期間發現錯誤:
+      警告 6002: 資料表/檢視 '鐵人論壇2.dbo.新聞' 未定義主索引鍵。已推斷此索引鍵，並將定義建立成唯讀的資料表/檢視。
+      -->
+  <EntityType Name="新聞">
+    <Key>
+      <PropertyRef Name="屬性編號" />
+      <PropertyRef Name="新聞流水號" />
+      <PropertyRef Name="標題" />
+      <PropertyRef Name="內容" />
+      <PropertyRef Name="新聞狀態" />
+      <PropertyRef Name="置首YN" />
+      <PropertyRef Name="推薦YN" />
+      <PropertyRef Name="圖片路徑" />
+      <PropertyRef Name="影片連結" />
+      <PropertyRef Name="發佈開始日" />
+      <PropertyRef Name="異動者" />
+      <PropertyRef Name="建立日期" />
+      <PropertyRef Name="論壇識別" />
+      <PropertyRef Name="點擊率" />
+      <PropertyRef Name="相簿編號" />
+      <PropertyRef Name="行動圖片路徑" />
+    </Key>
+    <Property Name="屬性編號" Type="int" Nullable="false" />
+    <Property Name="新聞流水號" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="標題" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="內容" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="新聞狀態" Type="int" Nullable="false" />
+    <Property Name="置首YN" Type="bit" Nullable="false" />
+    <Property Name="推薦YN" Type="bit" Nullable="false" />
+    <Property Name="圖片路徑" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="影片連結" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="發佈開始日" Type="datetime" Nullable="false" />
+    <Property Name="發佈結束日" Type="datetime" />
+    <Property Name="異動者" Type="nvarchar" Nullable="false" MaxLength="30" />
+    <Property Name="建立日期" Type="datetime" Nullable="false" />
+    <Property Name="論壇識別" Type="int" Nullable="false" />
+    <Property Name="點擊率" Type="bigint" Nullable="false" />
+    <Property Name="相簿編號" Type="int" Nullable="false" />
+    <Property Name="行動圖片路徑" Type="nvarchar" Nullable="false" MaxLength="256" />
+  </EntityType>
+  <EntityType Name="新聞回覆">
+    <Key>
+      <PropertyRef Name="新聞流水號" />
+      <PropertyRef Name="回覆流水號" />
+      <PropertyRef Name="論壇識別" />
+    </Key>
+    <Property Name="新聞流水號" Type="bigint" Nullable="false" />
+    <Property Name="回覆流水號" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="MoloKey" Type="nvarchar" Nullable="false" MaxLength="16" />
+    <Property Name="內容" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="回覆狀態" Type="int" Nullable="false" />
+    <Property Name="置頂YN" Type="bit" Nullable="false" />
+    <Property Name="置頂時間" Type="datetime" Nullable="false" />
+    <Property Name="隱藏YN" Type="bit" Nullable="false" />
+    <Property Name="建立日期" Type="datetime" Nullable="false" />
+    <Property Name="論壇識別" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="新聞動作記錄">
+    <Key>
+      <PropertyRef Name="動作記錄編號" />
+      <PropertyRef Name="論壇識別" />
+    </Key>
+    <Property Name="動作記錄編號" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="新聞流水號" Type="bigint" Nullable="false" />
+    <Property Name="動作識別" Type="int" Nullable="false" />
+    <Property Name="執行動作" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="備註" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="異動者" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="建立日期" Type="datetime" Nullable="false" />
+    <Property Name="論壇識別" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="新聞點擊">
+    <Key>
+      <PropertyRef Name="論壇識別" />
+      <PropertyRef Name="年月日" />
+      <PropertyRef Name="新聞流水號" />
+    </Key>
+    <Property Name="論壇識別" Type="int" Nullable="false" />
+    <Property Name="年月日" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="新聞流水號" Type="bigint" Nullable="false" />
+    <Property Name="標題" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="點擊率" Type="bigint" Nullable="false" />
+    <Property Name="更新日期" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="新聞屬性">
+    <Key>
+      <PropertyRef Name="屬性編號" />
+      <PropertyRef Name="論壇識別" />
+    </Key>
+    <Property Name="屬性編號" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="屬性名稱" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="屬性圖片" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="屬性狀態" Type="int" Nullable="false" />
+    <Property Name="備註" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="建立時間" Type="datetime" Nullable="false" />
+    <Property Name="論壇識別" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="會員">
+    <Key>
+      <PropertyRef Name="MoloKey" />
+    </Key>
+    <Property Name="MoloKey" Type="nvarchar" Nullable="false" MaxLength="16" />
+    <Property Name="Icon名稱" Type="nvarchar" Nullable="false" MaxLength="512" />
+    <Property Name="暱稱" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="性別" Type="nchar" Nullable="false" MaxLength="2" />
+    <Property Name="生日" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="門號" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="電子信箱" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="信箱公開YN" Type="bit" Nullable="false" />
+    <Property Name="等級" Type="int" Nullable="false" />
+    <Property Name="經驗值" Type="int" Nullable="false" />
+    <Property Name="鐵幣" Type="int" Nullable="false" />
+    <Property Name="上次發文時間" Type="datetime" />
+    <Property Name="上次登入IP" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="上次活動時間" Type="datetime" />
+    <Property Name="累計在線時間" Type="int" Nullable="false" />
+    <Property Name="註冊時間" Type="datetime" Nullable="false" />
+    <Property Name="MoloYN" Type="bit" Nullable="false" />
+    <Property Name="註冊來源" Type="int" Nullable="false" />
+    <Property Name="永久停權YN" Type="bit" Nullable="false" />
+    <Property Name="停權日期" Type="datetime" />
+    <Property Name="永久鎖定YN" Type="bit" Nullable="false" />
+    <Property Name="鎖定日期" Type="datetime" />
+    <Property Name="上次登入時間" Type="datetime" />
+    <Property Name="簽名檔" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="鐵幣顯示YN" Type="bit" Nullable="false" />
+    <Property Name="特殊稱號" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="邊框名稱" Type="nvarchar" Nullable="false" MaxLength="512" />
+    <Property Name="邊框Icon" Type="nvarchar" Nullable="false" MaxLength="512" />
+  </EntityType>
+  <EntityType Name="會員文章收藏">
+    <Key>
+      <PropertyRef Name="收藏流水號" />
+      <PropertyRef Name="論壇識別" />
+    </Key>
+    <Property Name="收藏流水號" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="屬性編號" Type="int" Nullable="false" />
+    <Property Name="發文MoloKey" Type="nvarchar" Nullable="false" MaxLength="16" />
+    <Property Name="收藏MoloKey" Type="nvarchar" Nullable="false" MaxLength="16" />
+    <Property Name="文章流水號" Type="bigint" Nullable="false" />
+    <Property Name="標題" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="文章發佈日" Type="datetime" Nullable="false" />
+    <Property Name="建立日期" Type="datetime" Nullable="false" />
+    <Property Name="論壇識別" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="會員文章訂閱">
+    <Key>
+      <PropertyRef Name="訂閱流水號" />
+      <PropertyRef Name="論壇識別" />
+    </Key>
+    <Property Name="訂閱流水號" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="屬性編號" Type="int" Nullable="false" />
+    <Property Name="發文MoloKey" Type="nvarchar" Nullable="false" MaxLength="16" />
+    <Property Name="訂閱MoloKey" Type="nvarchar" Nullable="false" MaxLength="16" />
+    <Property Name="文章流水號" Type="bigint" Nullable="false" />
+    <Property Name="標題" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="文章發佈日" Type="datetime" Nullable="false" />
+    <Property Name="通知YN" Type="bit" Nullable="false" />
+    <Property Name="讀取YN" Type="bit" Nullable="false" />
+    <Property Name="建立日期" Type="datetime" Nullable="false" />
+    <Property Name="論壇識別" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="會員交易">
+    <Key>
+      <PropertyRef Name="交易流水號" />
+      <PropertyRef Name="論壇識別" />
+    </Key>
+    <Property Name="交易流水號" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="發起方MoloKey" Type="nvarchar" Nullable="false" MaxLength="16" />
+    <Property Name="發起方暱稱" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="接收方MoloKey" Type="nvarchar" Nullable="false" MaxLength="16" />
+    <Property Name="接收方暱稱" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="鐵幣" Type="int" Nullable="false" />
+    <Property Name="手續費" Type="int" Nullable="false" />
+    <Property Name="狀態" Type="int" Nullable="false" />
+    <Property Name="建立時間" Type="datetime" Nullable="false" />
+    <Property Name="發起方刪除YN" Type="bit" Nullable="false" />
+    <Property Name="接收方刪除YN" Type="bit" Nullable="false" />
+    <Property Name="論壇識別" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="會員回覆推文">
+    <Key>
+      <PropertyRef Name="文章回覆流水號" />
+      <PropertyRef Name="推文MoloKey" />
+    </Key>
+    <Property Name="屬性編號" Type="int" Nullable="false" />
+    <Property Name="文章回覆流水號" Type="bigint" Nullable="false" />
+    <Property Name="推文MoloKey" Type="nvarchar" Nullable="false" MaxLength="16" />
+    <Property Name="建立日期" Type="datetime" Nullable="false" />
+    <Property Name="論壇識別" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="會員訂閱">
+    <Key>
+      <PropertyRef Name="發文MoloKey" />
+      <PropertyRef Name="訂閱MoloKey" />
+      <PropertyRef Name="論壇識別" />
+    </Key>
+    <Property Name="發文MoloKey" Type="nvarchar" Nullable="false" MaxLength="16" />
+    <Property Name="訂閱MoloKey" Type="nvarchar" Nullable="false" MaxLength="16" />
+    <Property Name="建立日期" Type="datetime" Nullable="false" />
+    <Property Name="論壇識別" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="會員計數">
+    <Key>
+      <PropertyRef Name="MoloKey" />
+    </Key>
+    <Property Name="MoloKey" Type="nvarchar" Nullable="false" MaxLength="16" />
+    <Property Name="發文次數" Type="int" Nullable="false" />
+    <Property Name="星海發文次數" Type="int" Nullable="false" />
+    <Property Name="英雄發文次數" Type="int" Nullable="false" />
+    <Property Name="英雄攻略次數" Type="int" Nullable="false" />
+    <Property Name="爐石發文次數" Type="int" Nullable="false" />
+    <Property Name="回覆次數" Type="int" Nullable="false" />
+    <Property Name="推文次數" Type="int" Nullable="false" />
+    <Property Name="留言次數" Type="int" Nullable="false" />
+    <Property Name="文章總瀏覽數" Type="int" Nullable="false" />
+    <Property Name="文章被瀏覽數" Type="int" Nullable="false" />
+    <Property Name="FB宣傳次數" Type="int" Nullable="false" />
+    <Property Name="累計贈送次數" Type="int" Nullable="false" />
+    <Property Name="登入次數" Type="int" Nullable="false" />
+    <Property Name="連續登入天數" Type="int" Nullable="false" />
+    <Property Name="好友數" Type="int" Nullable="false" />
+    <Property Name="連續簽到天數" Type="int" Nullable="false" />
+    <Property Name="下載RP次數" Type="int" Nullable="false" />
+    <Property Name="刪文次數" Type="int" Nullable="false" />
+    <Property Name="約戰次數" Type="int" Nullable="false" />
+    <Property Name="被收藏次數" Type="int" Nullable="false" />
+    <Property Name="總贏次數" Type="int" Nullable="false" />
+    <Property Name="連贏次數" Type="int" Nullable="false" />
+    <Property Name="連輸次數" Type="int" Nullable="false" />
+    <Property Name="下注次數" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="會員停權鎖定">
+    <Key>
+      <PropertyRef Name="識別" />
+      <PropertyRef Name="MoloKey" />
+      <PropertyRef Name="論壇識別" />
+    </Key>
+    <Property Name="異動編號" Type="bigint" Nullable="false" />
+    <Property Name="識別" Type="int" Nullable="false" />
+    <Property Name="MoloKey" Type="nvarchar" Nullable="false" MaxLength="16" />
+    <Property Name="天數" Type="int" />
+    <Property Name="開始日" Type="datetime" />
+    <Property Name="結束日" Type="datetime" />
+    <Property Name="建立日期" Type="datetime" Nullable="false" />
+    <Property Name="論壇識別" Type="int" Nullable="false" />
+    <Property Name="永久YN" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="會員停權鎖定歷程">
+    <Key>
+      <PropertyRef Name="異動編號" />
+      <PropertyRef Name="論壇識別" />
+    </Key>
+    <Property Name="異動編號" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="MoloKey" Type="nvarchar" Nullable="false" MaxLength="16" />
+    <Property Name="異動說明" Type="nvarchar" Nullable="false" MaxLength="30" />
+    <Property Name="舊資料" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="新資料" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="異動者" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="備註" Type="nvarchar" Nullable="false" MaxLength="512" />
+    <Property Name="建立日期" Type="datetime" Nullable="false" />
+    <Property Name="論壇識別" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="會員專欄收藏">
+    <Key>
+      <PropertyRef Name="收藏流水號" />
+      <PropertyRef Name="論壇識別" />
+    </Key>
+    <Property Name="收藏流水號" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="收藏MoloKey" Type="nvarchar" Nullable="false" MaxLength="16" />
+    <Property Name="專欄流水號" Type="bigint" Nullable="false" />
+    <Property Name="標題" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="專欄發佈日" Type="datetime" Nullable="false" />
+    <Property Name="建立日期" Type="datetime" Nullable="false" />
+    <Property Name="論壇識別" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="會員推文">
+    <Key>
+      <PropertyRef Name="文章流水號" />
+      <PropertyRef Name="推文MoloKey" />
+    </Key>
+    <Property Name="屬性編號" Type="int" Nullable="false" />
+    <Property Name="文章流水號" Type="bigint" Nullable="false" />
+    <Property Name="推文MoloKey" Type="nvarchar" Nullable="false" MaxLength="16" />
+    <Property Name="建立日期" Type="datetime" Nullable="false" />
+    <Property Name="論壇識別" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="會員異動歷程">
+    <Key>
+      <PropertyRef Name="異動編號" />
+    </Key>
+    <Property Name="異動編號" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="MoloKey" Type="nvarchar" Nullable="false" MaxLength="16" />
+    <Property Name="異動說明" Type="nvarchar" Nullable="false" MaxLength="30" />
+    <Property Name="舊資料" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="新資料" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="異動者" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="備註" Type="nvarchar" Nullable="false" MaxLength="512" />
+    <Property Name="建立日期" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="會員新聞收藏">
+    <Key>
+      <PropertyRef Name="收藏流水號" />
+      <PropertyRef Name="論壇識別" />
+    </Key>
+    <Property Name="收藏流水號" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="收藏MoloKey" Type="nvarchar" Nullable="false" MaxLength="16" />
+    <Property Name="新聞流水號" Type="bigint" Nullable="false" />
+    <Property Name="標題" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="新聞發佈日" Type="datetime" Nullable="false" />
+    <Property Name="建立日期" Type="datetime" Nullable="false" />
+    <Property Name="論壇識別" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="會員簽到">
+    <Key>
+      <PropertyRef Name="年月日" />
+      <PropertyRef Name="MoloKey" />
+      <PropertyRef Name="論壇識別" />
+    </Key>
+    <Property Name="年月日" Type="nvarchar" Nullable="false" MaxLength="10" />
+    <Property Name="MoloKey" Type="nvarchar" Nullable="false" MaxLength="16" />
+    <Property Name="建立日期" Type="datetime" Nullable="false" />
+    <Property Name="論壇識別" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="業餘戰隊">
+    <Key>
+      <PropertyRef Name="戰隊編號" />
+    </Key>
+    <Property Name="論壇識別" Type="int" Nullable="false" />
+    <Property Name="戰隊編號" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="戰隊Logo" Type="nvarchar" Nullable="false" MaxLength="512" />
+    <Property Name="戰隊隊名" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="戰隊圖片" Type="nvarchar" Nullable="false" MaxLength="512" />
+    <Property Name="戰隊簡介" Type="nvarchar" Nullable="false" MaxLength="1024" />
+    <Property Name="成員數" Type="int" Nullable="false" />
+    <Property Name="成立時間" Type="datetime" Nullable="false" />
+    <Property Name="備註" Type="nvarchar" Nullable="false" MaxLength="512" />
+    <Property Name="關閉YN" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="業餘戰隊_文章">
+    <Key>
+      <PropertyRef Name="文章流水號" />
+      <PropertyRef Name="論壇識別" />
+    </Key>
+    <Property Name="屬性編號" Type="int" Nullable="false" />
+    <Property Name="戰隊編號" Type="int" Nullable="false" />
+    <Property Name="MoloKey" Type="nvarchar" Nullable="false" MaxLength="16" />
+    <Property Name="文章流水號" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="標題" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="內容" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="文章狀態" Type="int" Nullable="false" />
+    <Property Name="置頂YN" Type="bit" Nullable="false" />
+    <Property Name="置頂時間" Type="datetime" Nullable="false" />
+    <Property Name="推薦YN" Type="bit" Nullable="false" />
+    <Property Name="前台推薦YN" Type="bit" Nullable="false" />
+    <Property Name="精華YN" Type="bit" Nullable="false" />
+    <Property Name="隱藏YN" Type="bit" Nullable="false" />
+    <Property Name="鎖定YN" Type="bit" Nullable="false" />
+    <Property Name="水桶YN" Type="bit" Nullable="false" />
+    <Property Name="圖片路徑" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="影片連結" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="推文數" Type="int" Nullable="false" />
+    <Property Name="回覆數" Type="int" Nullable="false" />
+    <Property Name="人氣數" Type="int" Nullable="false" />
+    <Property Name="發佈開始日" Type="datetime" Nullable="false" />
+    <Property Name="最後回覆日" Type="datetime" />
+    <Property Name="異動者" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="建立日期" Type="datetime" Nullable="false" />
+    <Property Name="前台刪除YN" Type="bit" Nullable="false" />
+    <Property Name="論壇識別" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="業餘戰隊_文章回覆">
+    <Key>
+      <PropertyRef Name="文章流水號" />
+      <PropertyRef Name="回覆流水號" />
+      <PropertyRef Name="論壇識別" />
+    </Key>
+    <Property Name="文章流水號" Type="bigint" Nullable="false" />
+    <Property Name="回覆流水號" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="MoloKey" Type="nvarchar" Nullable="false" MaxLength="16" />
+    <Property Name="內容" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="回覆狀態" Type="int" Nullable="false" />
+    <Property Name="置頂YN" Type="bit" Nullable="false" />
+    <Property Name="置頂時間" Type="datetime" Nullable="false" />
+    <Property Name="隱藏YN" Type="bit" Nullable="false" />
+    <Property Name="水桶YN" Type="bit" Nullable="false" />
+    <Property Name="建立日期" Type="datetime" Nullable="false" />
+    <Property Name="前台刪除YN" Type="bit" Nullable="false" />
+    <Property Name="推文數" Type="int" Nullable="false" />
+    <Property Name="論壇識別" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="業餘戰隊_文章留言">
+    <Key>
+      <PropertyRef Name="回覆流水號" />
+      <PropertyRef Name="留言流水號" />
+      <PropertyRef Name="論壇識別" />
+    </Key>
+    <Property Name="文章流水號" Type="bigint" Nullable="false" />
+    <Property Name="回覆流水號" Type="bigint" Nullable="false" />
+    <Property Name="留言流水號" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="MoloKey" Type="nvarchar" Nullable="false" MaxLength="16" />
+    <Property Name="暱稱" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="內容" Type="nvarchar" Nullable="false" MaxLength="1024" />
+    <Property Name="留言狀態" Type="int" Nullable="false" />
+    <Property Name="置頂YN" Type="bit" Nullable="false" />
+    <Property Name="置頂時間" Type="datetime" Nullable="false" />
+    <Property Name="隱藏YN" Type="bit" Nullable="false" />
+    <Property Name="水桶YN" Type="bit" Nullable="false" />
+    <Property Name="建立日期" Type="datetime" Nullable="false" />
+    <Property Name="論壇識別" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="業餘戰隊_文章屬性">
+    <Key>
+      <PropertyRef Name="屬性編號" />
+      <PropertyRef Name="論壇識別" />
+    </Key>
+    <Property Name="戰隊編號" Type="int" Nullable="false" />
+    <Property Name="屬性編號" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="屬性名稱" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="屬性圖片" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="屬性狀態" Type="int" Nullable="false" />
+    <Property Name="備註" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="隱藏YN" Type="bit" Nullable="false" />
+    <Property Name="版主" Type="nvarchar" Nullable="false" MaxLength="16" />
+    <Property Name="副版主" Type="nvarchar" Nullable="false" MaxLength="16" />
+    <Property Name="置頂時間" Type="datetime" Nullable="false" />
+    <Property Name="建立時間" Type="datetime" Nullable="false" />
+    <Property Name="論壇識別" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="業餘戰隊_推文">
+    <Key>
+      <PropertyRef Name="文章流水號" />
+      <PropertyRef Name="推文MoloKey" />
+    </Key>
+    <Property Name="屬性編號" Type="int" Nullable="false" />
+    <Property Name="文章流水號" Type="bigint" Nullable="false" />
+    <Property Name="推文MoloKey" Type="nvarchar" Nullable="false" MaxLength="16" />
+    <Property Name="建立日期" Type="datetime" Nullable="false" />
+    <Property Name="論壇識別" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="業餘戰隊加入區">
+    <Key>
+      <PropertyRef Name="流水號" />
+    </Key>
+    <Property Name="流水號" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="戰隊編號" Type="int" Nullable="false" />
+    <Property Name="MoloKey" Type="nvarchar" Nullable="false" MaxLength="16" />
+    <Property Name="暱稱" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="核准YN" Type="nchar" Nullable="false" MaxLength="1" />
+    <Property Name="建立日期" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="業餘戰隊申請區">
+    <Key>
+      <PropertyRef Name="申請編號" />
+    </Key>
+    <Property Name="論壇識別" Type="int" Nullable="false" />
+    <Property Name="申請編號" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="申請隊名" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="MoloKey" Type="nvarchar" Nullable="false" MaxLength="16" />
+    <Property Name="暱稱" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="說明" Type="nvarchar" Nullable="false" MaxLength="512" />
+    <Property Name="核准YN" Type="nchar" Nullable="false" MaxLength="1" />
+    <Property Name="異動者" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="簽核日期" Type="datetime" />
+    <Property Name="建立日期" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="業餘戰隊回覆推文">
+    <Key>
+      <PropertyRef Name="文章回覆流水號" />
+      <PropertyRef Name="推文MoloKey" />
+    </Key>
+    <Property Name="屬性編號" Type="int" Nullable="false" />
+    <Property Name="文章回覆流水號" Type="bigint" Nullable="false" />
+    <Property Name="推文MoloKey" Type="nvarchar" Nullable="false" MaxLength="16" />
+    <Property Name="建立日期" Type="datetime" Nullable="false" />
+    <Property Name="論壇識別" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="業餘戰隊成員">
+    <Key>
+      <PropertyRef Name="流水號" />
+    </Key>
+    <Property Name="流水號" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="論壇識別" Type="int" Nullable="false" />
+    <Property Name="戰隊編號" Type="int" Nullable="false" />
+    <Property Name="隊員名稱" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="隊長YN" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="業餘戰隊約戰">
+    <Key>
+      <PropertyRef Name="流水號" />
+    </Key>
+    <Property Name="流水號" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="約戰確認方" Type="int" Nullable="false" />
+    <Property Name="約戰提出方" Type="int" Nullable="false" />
+    <Property Name="約戰時間" Type="datetime" Nullable="false" />
+    <Property Name="約戰原因" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="約戰回覆" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="約戰狀態" Type="int" Nullable="false" />
+    <Property Name="建立日期" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="電競選手">
+    <Key>
+      <PropertyRef Name="流水號" />
+    </Key>
+    <Property Name="流水號" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="選手名稱" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="選手圖片" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="年齡" Type="datetime" />
+    <Property Name="國名" Type="nvarchar" Nullable="false" MaxLength="30" />
+    <Property Name="遊戲年齡" Type="datetime" />
+    <Property Name="競技項目" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="種族" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="隱藏YN" Type="bit" Nullable="false" />
+    <Property Name="使用配備" Type="nvarchar" Nullable="false" MaxLength="512" />
+    <Property Name="建立日期" Type="datetime" Nullable="false" />
+    <Property Name="論壇識別" Type="int" Nullable="false" />
+    <Property Name="選手介紹" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="團隊位置" Type="nvarchar" Nullable="false" MaxLength="512" />
+  </EntityType>
+  <EntityType Name="電競選手照片">
+    <Key>
+      <PropertyRef Name="流水號" />
+    </Key>
+    <Property Name="流水號" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="戰隊編號" Type="int" Nullable="false" />
+    <Property Name="選手流水號" Type="bigint" Nullable="false" />
+    <Property Name="選手名稱" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="照片路徑" Type="nvarchar" Nullable="false" MaxLength="512" />
+  </EntityType>
+  <!--產生期間發現錯誤:
+      警告 6002: 資料表/檢視 '鐵人論壇2.dbo.稱號設定' 未定義主索引鍵。已推斷此索引鍵，並將定義建立成唯讀的資料表/檢視。
+      -->
+  <EntityType Name="稱號設定">
+    <Key>
+      <PropertyRef Name="流水號" />
+      <PropertyRef Name="啟始等級" />
+      <PropertyRef Name="結束等級" />
+      <PropertyRef Name="稱號" />
+    </Key>
+    <Property Name="流水號" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="啟始等級" Type="int" Nullable="false" />
+    <Property Name="結束等級" Type="int" Nullable="false" />
+    <Property Name="稱號" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="影片">
+    <Key>
+      <PropertyRef Name="影片流水號" />
+      <PropertyRef Name="論壇識別" />
+    </Key>
+    <Property Name="影片流水號" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="標題" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="內容" Type="nvarchar" Nullable="false" MaxLength="1024" />
+    <Property Name="影片狀態" Type="int" Nullable="false" />
+    <Property Name="置首YN" Type="bit" Nullable="false" />
+    <Property Name="推薦YN" Type="bit" Nullable="false" />
+    <Property Name="圖片路徑" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="影片連結" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="發佈開始日" Type="datetime" Nullable="false" />
+    <Property Name="發佈結束日" Type="datetime" />
+    <Property Name="異動者" Type="nvarchar" Nullable="false" MaxLength="30" />
+    <Property Name="建立日期" Type="datetime" Nullable="false" />
+    <Property Name="論壇識別" Type="int" Nullable="false" />
+    <Property Name="影片識別" Type="int" Nullable="false" />
+    <Property Name="點擊數" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="影片回覆">
+    <Key>
+      <PropertyRef Name="影片流水號" />
+      <PropertyRef Name="回覆流水號" />
+      <PropertyRef Name="論壇識別" />
+    </Key>
+    <Property Name="影片流水號" Type="bigint" Nullable="false" />
+    <Property Name="回覆流水號" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="MoloKey" Type="nvarchar" Nullable="false" MaxLength="16" />
+    <Property Name="內容" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="回覆狀態" Type="int" Nullable="false" />
+    <Property Name="置頂YN" Type="bit" Nullable="false" />
+    <Property Name="置頂時間" Type="datetime" Nullable="false" />
+    <Property Name="隱藏YN" Type="bit" Nullable="false" />
+    <Property Name="建立日期" Type="datetime" Nullable="false" />
+    <Property Name="論壇識別" Type="int" Nullable="false" />
+    <Property Name="推文數" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="暱稱列表">
+    <Key>
+      <PropertyRef Name="流水號" />
+    </Key>
+    <Property Name="流水號" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="MoloKey" Type="nvarchar" Nullable="false" MaxLength="16" />
+    <Property Name="暱稱" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <!--產生期間發現錯誤:
+      警告 6002: 資料表/檢視 '鐵人論壇2.dbo.論壇列表' 未定義主索引鍵。已推斷此索引鍵，並將定義建立成唯讀的資料表/檢視。
+      -->
+  <EntityType Name="論壇列表">
+    <Key>
+      <PropertyRef Name="論壇識別" />
+      <PropertyRef Name="論壇名稱" />
+    </Key>
+    <Property Name="論壇識別" Type="int" Nullable="false" />
+    <Property Name="論壇名稱" Type="nvarchar" Nullable="false" MaxLength="30" />
+  </EntityType>
+  <!--產生期間發現錯誤:
+      警告 6002: 資料表/檢視 '鐵人論壇2.dbo.趣味遊戲_下注' 未定義主索引鍵。已推斷此索引鍵，並將定義建立成唯讀的資料表/檢視。
+      -->
+  <EntityType Name="趣味遊戲_下注">
+    <Key>
+      <PropertyRef Name="遊戲編號" />
+      <PropertyRef Name="MoloKey" />
+      <PropertyRef Name="開盤流水號" />
+      <PropertyRef Name="下注流水號" />
+      <PropertyRef Name="下注張數" />
+      <PropertyRef Name="輸贏" />
+      <PropertyRef Name="派彩YN" />
+      <PropertyRef Name="獲得鐵幣" />
+      <PropertyRef Name="建立日期" />
+      <PropertyRef Name="論壇識別" />
+    </Key>
+    <Property Name="遊戲編號" Type="nvarchar" Nullable="false" MaxLength="12" />
+    <Property Name="MoloKey" Type="nvarchar" Nullable="false" MaxLength="16" />
+    <Property Name="開盤流水號" Type="bigint" Nullable="false" />
+    <Property Name="下注流水號" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="下注張數" Type="int" Nullable="false" />
+    <Property Name="輸贏" Type="nvarchar" Nullable="false" MaxLength="2" />
+    <Property Name="派彩YN" Type="bit" Nullable="false" />
+    <Property Name="派彩時間" Type="datetime" />
+    <Property Name="獲得鐵幣" Type="int" Nullable="false" />
+    <Property Name="建立日期" Type="datetime" Nullable="false" />
+    <Property Name="論壇識別" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="趣味遊戲_主客">
+    <Key>
+      <PropertyRef Name="流水號" />
+    </Key>
+    <Property Name="流水號" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="遊戲編號" Type="nvarchar" Nullable="false" MaxLength="12" />
+    <Property Name="場次" Type="int" Nullable="false" />
+    <Property Name="選手流水號" Type="bigint" Nullable="false" />
+    <Property Name="排序" Type="int" Nullable="false" />
+    <Property Name="選手名稱" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="位置" Type="nvarchar" Nullable="false" MaxLength="2" />
+    <Property Name="選用角色" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="備註" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="建立日期" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="趣味遊戲_主檔">
+    <Key>
+      <PropertyRef Name="遊戲編號" />
+      <PropertyRef Name="論壇識別" />
+    </Key>
+    <Property Name="遊戲編號" Type="nvarchar" Nullable="false" MaxLength="12" />
+    <Property Name="遊戲項目" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="比賽時間" Type="datetime" />
+    <Property Name="比賽YN" Type="bit" Nullable="false" />
+    <Property Name="封盤時間" Type="datetime" />
+    <Property Name="封盤YN" Type="bit" Nullable="false" />
+    <Property Name="單複選" Type="int" Nullable="false" />
+    <Property Name="比賽賽制" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="遊戲玩法" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="直播連結" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="總投注" Type="int" Nullable="false" />
+    <Property Name="狀態" Type="int" Nullable="false" />
+    <Property Name="比賽結果" Type="bigint" Nullable="false" />
+    <Property Name="備註" Type="nvarchar" Nullable="false" MaxLength="1024" />
+    <Property Name="論壇回收" Type="int" Nullable="false" />
+    <Property Name="派彩時間" Type="datetime" />
+    <Property Name="上傳時間" Type="datetime" Nullable="false" />
+    <Property Name="異動者" Type="nvarchar" Nullable="false" MaxLength="30" />
+    <Property Name="論壇識別" Type="int" Nullable="false" />
+    <Property Name="標題" Type="nvarchar" Nullable="false" MaxLength="256" />
+  </EntityType>
+  <EntityType Name="趣味遊戲_明細">
+    <Key>
+      <PropertyRef Name="遊戲編號" />
+      <PropertyRef Name="對戰流水號" />
+      <PropertyRef Name="論壇識別" />
+    </Key>
+    <Property Name="遊戲編號" Type="nvarchar" Nullable="false" MaxLength="12" />
+    <Property Name="對戰流水號" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="A選手" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="B選手" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="建立日期" Type="datetime" Nullable="false" />
+    <Property Name="論壇識別" Type="int" Nullable="false" />
+    <Property Name="戰隊YN" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="趣味遊戲_開盤">
+    <Key>
+      <PropertyRef Name="遊戲編號" />
+      <PropertyRef Name="開盤流水號" />
+      <PropertyRef Name="論壇識別" />
+    </Key>
+    <Property Name="遊戲編號" Type="nvarchar" Nullable="false" MaxLength="12" />
+    <Property Name="開盤流水號" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="A選手" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="B選手" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="累積張數" Type="int" Nullable="false" />
+    <Property Name="建立日期" Type="datetime" Nullable="false" />
+    <Property Name="論壇識別" Type="int" Nullable="false" />
+  </EntityType>
+  <EntityType Name="趣味遊戲_對戰表">
+    <Key>
+      <PropertyRef Name="遊戲編號" />
+      <PropertyRef Name="場次" />
+    </Key>
+    <Property Name="遊戲編號" Type="nvarchar" Nullable="false" MaxLength="12" />
+    <Property Name="場次" Type="int" Nullable="false" />
+    <Property Name="主隊" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="主隊得分" Type="int" Nullable="false" />
+    <Property Name="客隊" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="客隊得分" Type="int" Nullable="false" />
+    <Property Name="論壇識別" Type="int" Nullable="false" />
+    <Property Name="地圖" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="備註1" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="備註2" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="建立日期" Type="datetime" Nullable="false" />
+  </EntityType>
+  <!--產生期間發現錯誤:
+      警告 6002: 資料表/檢視 '鐵人論壇2.dbo.趣味遊戲主客編號' 未定義主索引鍵。已推斷此索引鍵，並將定義建立成唯讀的資料表/檢視。
+      -->
+  <EntityType Name="趣味遊戲主客編號">
+    <Key>
+      <PropertyRef Name="主客流水號" />
+      <PropertyRef Name="異動日期" />
+    </Key>
+    <Property Name="主客流水號" Type="int" Nullable="false" />
+    <Property Name="異動日期" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="趣味遊戲項目">
+    <Key>
+      <PropertyRef Name="項目名稱" />
+      <PropertyRef Name="論壇識別" />
+    </Key>
+    <Property Name="項目名稱" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="項目狀態" Type="int" Nullable="false" />
+    <Property Name="備註" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="建立時間" Type="datetime" Nullable="false" />
+    <Property Name="論壇識別" Type="int" Nullable="false" />
+    <Property Name="項目Logo" Type="nvarchar" Nullable="false" MaxLength="512" />
+    <Property Name="連結" Type="nvarchar" Nullable="false" MaxLength="512" />
+  </EntityType>
+  <!--產生期間發現錯誤:
+      警告 6002: 資料表/檢視 '鐵人論壇2.dbo.趣味遊戲編號' 未定義主索引鍵。已推斷此索引鍵，並將定義建立成唯讀的資料表/檢視。
+      -->
+  <EntityType Name="趣味遊戲編號">
+    <Key>
+      <PropertyRef Name="遊戲流水號" />
+      <PropertyRef Name="異動日期" />
+    </Key>
+    <Property Name="遊戲流水號" Type="int" Nullable="false" />
+    <Property Name="異動日期" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="導覽圖片">
+    <Key>
+      <PropertyRef Name="編號" />
+    </Key>
+    <Property Name="編號" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="名稱" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="路徑" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="網址" Type="nvarchar" Nullable="false" MaxLength="1024" />
+    <Property Name="上架YN" Type="bit" Nullable="false" />
+    <Property Name="建立日期" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="導覽廣告">
+    <Key>
+      <PropertyRef Name="編號" />
+    </Key>
+    <Property Name="編號" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="名稱" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="路徑" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="網址" Type="nvarchar" Nullable="false" MaxLength="1024" />
+    <Property Name="上架YN" Type="bit" Nullable="false" />
+    <Property Name="建立日期" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="導覽影片">
+    <Key>
+      <PropertyRef Name="編號" />
+    </Key>
+    <Property Name="編號" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="名稱" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="路徑" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="網址" Type="nvarchar" Nullable="false" MaxLength="1024" />
+    <Property Name="上架YN" Type="bit" Nullable="false" />
+    <Property Name="建立日期" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="戰隊">
+    <Key>
+      <PropertyRef Name="戰隊編號" />
+    </Key>
+    <Property Name="論壇識別" Type="int" Nullable="false" />
+    <Property Name="戰隊編號" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="戰隊Logo" Type="nvarchar" Nullable="false" MaxLength="512" />
+    <Property Name="戰隊隊名" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="戰隊圖片" Type="nvarchar" Nullable="false" MaxLength="512" />
+    <Property Name="母企業" Type="nvarchar" Nullable="false" MaxLength="512" />
+    <Property Name="贊助企業" Type="nvarchar" Nullable="false" MaxLength="1024" />
+    <Property Name="戰隊介紹" Type="nvarchar" Nullable="false" MaxLength="1024" />
+    <Property Name="歷年戰績" Type="nvarchar" Nullable="false" MaxLength="1024" />
+    <Property Name="國名" Type="nvarchar" Nullable="false" MaxLength="30" />
+    <Property Name="成員數" Type="int" Nullable="false" />
+    <Property Name="成立時間" Type="datetime" />
+    <Property Name="備註" Type="nvarchar" Nullable="false" MaxLength="512" />
+  </EntityType>
+  <EntityType Name="戰隊成員">
+    <Key>
+      <PropertyRef Name="流水號" />
+    </Key>
+    <Property Name="流水號" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="論壇識別" Type="int" Nullable="false" />
+    <Property Name="戰隊編號" Type="int" Nullable="false" />
+    <Property Name="選手流水號" Type="bigint" Nullable="false" />
+    <Property Name="選手名稱" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="擅用英雄">
+    <Key>
+      <PropertyRef Name="流水號" />
+    </Key>
+    <Property Name="流水號" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="論壇識別" Type="int" Nullable="false" />
+    <Property Name="選手流水號" Type="bigint" Nullable="false" />
+    <Property Name="選手名稱" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="英雄名稱" Type="nvarchar" Nullable="false" MaxLength="50" />
+  </EntityType>
+  <EntityType Name="賽事">
+    <Key>
+      <PropertyRef Name="賽事編號" />
+    </Key>
+    <Property Name="賽事編號" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="論壇識別" Type="int" Nullable="false" />
+    <Property Name="賽事名稱" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="賽事圖片" Type="nvarchar" Nullable="false" MaxLength="512" />
+    <Property Name="參賽規則" Type="nvarchar" Nullable="false" MaxLength="1024" />
+    <Property Name="賽事資訊" Type="nvarchar" Nullable="false" MaxLength="1024" />
+    <Property Name="賽程表" Type="nvarchar" Nullable="false" MaxLength="512" />
+    <Property Name="開始時間" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="結束時間" Type="nvarchar" Nullable="false" MaxLength="20" />
+    <Property Name="賽事結果" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="結束YN" Type="bit" Nullable="false" />
+    <Property Name="建立日期" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="賽事隊伍">
+    <Key>
+      <PropertyRef Name="隊伍編號" />
+    </Key>
+    <Property Name="賽事編號" Type="int" Nullable="false" />
+    <Property Name="隊伍編號" Type="int" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="論壇識別" Type="int" Nullable="false" />
+    <Property Name="隊伍Logo" Type="nvarchar" Nullable="false" MaxLength="512" />
+    <Property Name="隊名" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="建立日期" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="賽事隊員">
+    <Key>
+      <PropertyRef Name="流水號" />
+    </Key>
+    <Property Name="隊伍編號" Type="int" Nullable="false" />
+    <Property Name="流水號" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="隊員名稱" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="隊長YN" Type="bit" Nullable="false" />
+    <Property Name="建立日期" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="爐石卡片">
+    <Key>
+      <PropertyRef Name="卡片流水號" />
+    </Key>
+    <Property Name="卡片流水號" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="卡片名稱" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="卡片介紹" Type="nvarchar" Nullable="false" MaxLength="512" />
+    <Property Name="數量限制" Type="int" Nullable="false" />
+    <Property Name="一般圖片" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="特殊圖片" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="能力" Type="nvarchar" Nullable="false" MaxLength="512" />
+    <Property Name="職業" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="類型" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="種族" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="法力" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="攻擊力" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="生命力" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="稀有度" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="系列" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="技能" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="下架YN" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="爐石攻略">
+    <Key>
+      <PropertyRef Name="流水號" />
+    </Key>
+    <Property Name="流水號" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="MoloKey" Type="nvarchar" Nullable="false" MaxLength="16" />
+    <Property Name="標題" Type="nvarchar" Nullable="false" MaxLength="100" />
+    <Property Name="戰術" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="說明" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="建立日期" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="爐石攻略回覆">
+    <Key>
+      <PropertyRef Name="回覆流水號" />
+    </Key>
+    <Property Name="回覆流水號" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="攻略流水號" Type="bigint" Nullable="false" />
+    <Property Name="MoloKey" Type="nvarchar" Nullable="false" MaxLength="16" />
+    <Property Name="內容" Type="nvarchar(max)" Nullable="false" />
+    <Property Name="建立日期" Type="datetime" Nullable="false" />
+  </EntityType>
+  <EntityType Name="爐石套牌">
+    <Key>
+      <PropertyRef Name="套牌流水號" />
+    </Key>
+    <Property Name="套牌流水號" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="moLoKey" Type="nvarchar" Nullable="false" MaxLength="16" />
+    <Property Name="卡片流水號" Type="bigint" Nullable="false" />
+    <Property Name="攻略流水號" Type="bigint" Nullable="false" />
+  </EntityType>
+  <EntityType Name="爐石素質">
+    <Key>
+      <PropertyRef Name="素質流水號" />
+    </Key>
+    <Property Name="素質流水號" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="素質分類" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="素質項目" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="下架YN" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="爐石職業">
+    <Key>
+      <PropertyRef Name="職業流水號" />
+    </Key>
+    <Property Name="職業流水號" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="職業名稱" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="職業介紹" Type="nvarchar" Nullable="false" MaxLength="512" />
+    <Property Name="職業圖片A" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="職業圖片B" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="職業圖片C" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="職業圖片D" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="職業圖片E" Type="nvarchar" Nullable="false" MaxLength="256" />
+    <Property Name="下架YN" Type="bit" Nullable="false" />
+  </EntityType>
+  <EntityType Name="鐵幣異動記錄">
+    <Key>
+      <PropertyRef Name="異動編號" />
+    </Key>
+    <Property Name="論壇識別" Type="int" Nullable="false" />
+    <Property Name="異動編號" Type="bigint" Nullable="false" StoreGeneratedPattern="Identity" />
+    <Property Name="MoloKey" Type="nvarchar" Nullable="false" MaxLength="16" />
+    <Property Name="異動識別" Type="int" Nullable="false" />
+    <Property Name="異動說明" Type="nvarchar" Nullable="false" MaxLength="30" />
+    <Property Name="異動額" Type="int" Nullable="false" />
+    <Property Name="異動後餘額" Type="int" Nullable="false" />
+    <Property Name="備註" Type="nvarchar" Nullable="false" MaxLength="512" />
+    <Property Name="異動者名稱" Type="nvarchar" Nullable="false" MaxLength="50" />
+    <Property Name="建立日期" Type="datetime" Nullable="false" />
+    <Property Name="取消YN" Type="bit" Nullable="false" />
+    <Property Name="顯示YN" Type="bit" Nullable="false" />
+  </EntityType>
+</Schema>

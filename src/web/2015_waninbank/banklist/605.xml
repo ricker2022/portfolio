@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bank>
+	<branch num="" name="請選擇分行.."/>
+	   <branch num="0018" name="高農信用部"/>
+	   <branch num="0029" name="高農三民"/>
+	   <branch num="0030" name="高農鼓山"/>
+	   <branch num="0041" name="高農新興"/>
+	   <branch num="0052" name="高農鼎力"/>
+	   <branch num="0063" name="高農苓雅"/>
+	   <branch num="0074" name="高農前鎮"/>
+	   <branch num="0085" name="高農楠梓"/>
+	   <branch num="0096" name="高農右昌"/>
+	   <branch num="0100" name="高農後勁"/>
+	   <branch num="0111" name="高農左營"/>
+	   <branch num="0122" name="高農營北"/>
+	   <branch num="0133" name="高農新庄"/>
+</bank>

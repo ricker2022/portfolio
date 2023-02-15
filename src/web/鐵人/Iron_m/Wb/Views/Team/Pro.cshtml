@@ -1,0 +1,53 @@
+﻿@{Layout = "~/Views/Shared/_TeamLayout.cshtml";}
+@using Wb.Models;
+@using Wb.Pager;
+@using Wb.Common;
+@model PagedList<戰隊>
+ 
+<script>
+    
+
+    function goForeign() {
+        //alert($('#game_selection').val());
+        //alert($('#cat_select').val());
+
+        var location_string = '@Url.RouteUrl("Default", new {controller="team", action = "pro", f = "#f#"})';
+        //alert(location_string);
+        location_string = location_string.replace(encodeURIComponent("#f#"), $('#team_foreign').val());
+        location.href = location_string;
+    }
+
+
+</script>
+
+<div  class="sub_navi" >
+    <div class="col_8">
+        <div class="game_select">
+        <i class="fa fa-sort-asc"></i>
+        <select id="team_foreign" onchange=goForeign()>
+            <option @(ViewBag.foreign_sn==1?"selected":"") value="1">國內職業戰隊</option>
+            <option @(ViewBag.foreign_sn==2?"selected":"") value="2">國外職業戰隊</option>
+        </select>
+        </div>
+    </div>
+    <div class="col_2"><a href="#" class="function_btn"><i class="fa fa-search"></i></a></div>
+    <br clear="all"/>
+</div>    
+
+<ul id="news_list" class="reset_ul team_list" >
+@foreach (戰隊 item in Model)
+{    
+    <li >
+        <a href="@Html.FUrl("ProDetail", "", new { sn = item.戰隊編號 })" >
+        <div class="img">
+            <img src="@item.戰隊Logo"/>
+        </div>
+        <h3 class="has_img">
+            <div >@item.戰隊隊名</div>
+            @Html.Raw(item.戰隊介紹)
+        </h3>
+        </a>
+    </li>
+}
+</ul>
+<a href="#popupPager" class="function_btn black call_pager"><i class="fa fa-ellipsis-h"></i></a>

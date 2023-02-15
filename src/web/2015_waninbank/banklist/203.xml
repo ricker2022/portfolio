@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bank>
+	<branch num="" name="請選擇分行.."/>
+	<branch num="0012" name="高雄第二信用合作社營業部"/>
+	<branch num="0021" name="高雄第二信用合作社三多分社"/>
+	<branch num="0030" name="高雄第二信用合作社旗津分社"/>
+	<branch num="0049" name="高雄第二信用合作社苓雅分行"/>
+	<branch num="0058" name="高雄第二信用合作社新興分社"/>
+	<branch num="0067" name="高雄第二信用合作社左營分社"/>
+	<branch num="0076" name="高雄第二信用合作社瑞隆分社"/>
+	<branch num="0085" name="高雄第二信用合作社鹽埕分社"/>
+	<branch num="0094" name="高雄第二信用合作社灣子分社"/>
+	<branch num="0100" name="高雄第二信用合作社前鎮分社"/>
+	<branch num="0119" name="高雄第二信用合作社大昌分社"/>
+	<branch num="0128" name="高雄第二信用合作社後勁分社"/>
+	<branch num="0137" name="高雄第二信用合作社右昌分社"/>
+	<branch num="0146" name="高雄第二信用合作社四維簡易型分社"/>
+	<branch num="0155" name="高雄第二信用合作社明誠分社"/>
+	<branch num="0164" name="高雄第二信用合作社光華簡易型分社"/>
+</bank>
+

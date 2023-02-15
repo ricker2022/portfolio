@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bank>
+	<branch num="" name="請選擇分行.."/>
+	   <branch num="0075" name="名間本會"/>
+	   <branch num="0260" name="名間新街"/>
+	   <branch num="0271" name="名間大庄"/>
+	   <branch num="0282" name="名間赤水"/>
+	   <branch num="0293" name="名間松柏嶺"/>
+	   <branch num="0466" name="名間新光"/>
+</bank>

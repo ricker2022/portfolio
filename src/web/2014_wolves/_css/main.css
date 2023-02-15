@@ -1,0 +1,224 @@
+﻿body {
+    /*font-family: Verdana, Geneva, sans-serif,"細明體","新細明體","微軟正黑體";
+    font-size: 12px;
+    line-height: 1.8em;
+    color: #000;*/
+    background: url(../_img/layout/menuBG.png) top center repeat-x;
+    background-color: #fff;
+}
+
+/*master 主顯示區*/
+#dPageHolder {
+    width: 1024px;
+    margin: 0 auto;
+    padding: 0;
+}
+
+/*上方區塊*/
+#dHeader {
+    width: 972px;
+    height: 106px;
+    display: block;
+    margin: 0;
+    padding: 8px 26px 0 26px;
+}
+
+/*logo*/
+#logo a {
+    width: 159px;
+    height: 97px;
+    display: block;
+    background: url(../_img/layout/logo.png) top left no-repeat;
+    float: left;
+}
+
+/*all menu*/
+#menu {
+    margin: 0 0 0 28px;
+    width: 785px;
+    height: 104px;
+    display: block;
+    padding: 0;
+    float: left;
+}
+/*頁面選單*/
+#mainmenu {
+    width: 632px;
+    display: block;
+    margin: 30px 0 0 0;
+    padding: 0;
+    float: left;
+}
+
+    #mainmenu li a {
+        width: 71px;
+        height: 52px;
+        margin: 0 4px;
+        padding: 0;
+        display: block;
+        float: left;
+    }
+
+.mainmenu01 {
+    background: url(../_img/layout/menu.png) -4px 0px no-repeat;
+}
+
+.mainmenu02 {
+    background: url(../_img/layout/menu.png) -83px 0px no-repeat;
+}
+
+.mainmenu03 {
+    background: url(../_img/layout/menu.png) -162px 0px no-repeat;
+}
+
+.mainmenu04 {
+    background: url(../_img/layout/menu.png) -241px 0px no-repeat;
+}
+
+.mainmenu05 {
+    background: url(../_img/layout/menu.png) -320px 0px no-repeat;
+}
+
+.mainmenu06 {
+    background: url(../_img/layout/menu.png) -399px 0px no-repeat;
+}
+
+.mainmenu07 {
+    background: url(../_img/layout/menu.png) -478px 0px no-repeat;
+}
+
+.mainmenu08 {
+    background: url(../_img/layout/menu.png) -557px 0px no-repeat;
+}
+
+.mainmenu01:hover {
+    background: url(../_img/layout/menu.png) -4px -52px no-repeat;
+}
+
+.mainmenu02:hover {
+    background: url(../_img/layout/menu.png) -83px -52px no-repeat;
+}
+
+.mainmenu03:hover {
+    background: url(../_img/layout/menu.png) -162px -52px no-repeat;
+}
+
+.mainmenu04:hover {
+    background: url(../_img/layout/menu.png) -241px -52px no-repeat;
+}
+
+.mainmenu05:hover {
+    background: url(../_img/layout/menu.png) -320px -52px no-repeat;
+}
+
+.mainmenu06:hover {
+    background: url(../_img/layout/menu.png) -399px -52px no-repeat;
+}
+
+.mainmenu07:hover {
+    background: url(../_img/layout/menu.png) -478px -52px no-repeat;
+}
+
+.mainmenu08:hover {
+    background: url(../_img/layout/menu.png) -557px -52px no-repeat;
+}
+
+#mainmenu li ul.SubMenu{padding:0;margin:0;position:absolute;top:0;left:0;width:107px;height:auto;z-index:5; top:114px; left:953px; display:none;}
+    #mainmenu li ul.SubMenu .submenu01 {
+        width:107px;
+        height:35px;
+        background:url(../_img/layout/SubMenu.png) 0px 0px no-repeat;
+    }
+    #mainmenu li ul.SubMenu .submenu01:hover {
+        background:url(../_img/layout/SubMenu.png) -107px 0px no-repeat;
+    }
+    #mainmenu li ul.SubMenu .submenu02 {
+        width:107px;
+        height:35px;
+        background:url(../_img/layout/SubMenu.png) 0px -35px no-repeat;
+    }
+    #mainmenu li ul.SubMenu .submenu02:hover {
+        background:url(../_img/layout/SubMenu.png) -107px -35px no-repeat;
+    }
+
+/*icon連結*/
+#iconmenu {
+    width: 153px;
+    display: block;
+    margin: 30px 0 0 0;
+    padding: 0;
+    float: left;
+}
+
+    #iconmenu li a {
+        width: 43px;
+        height: 52px;
+        margin: 0 4px;
+        padding: 0;
+        display: block;
+        float: left;
+    }
+
+.iconmenu01 {
+    background: url(../_img/layout/menu.png) -636px 0px no-repeat;
+}
+
+.iconmenu02 {
+    background: url(../_img/layout/menu.png) -687px 0px no-repeat;
+}
+
+.iconmenu03 {
+    background: url(../_img/layout/menu.png) -738px 0px no-repeat;
+}
+
+.iconmenu01:hover {
+    background: url(../_img/layout/menu.png) -636px -52px no-repeat;
+}
+
+.iconmenu02:hover {
+    background: url(../_img/layout/menu.png) -687px -52px no-repeat;
+}
+
+.iconmenu03:hover {
+    background: url(../_img/layout/menu.png) -738px -52px no-repeat;
+}
+
+
+
+/*footer*/
+#dFooter {
+    position:relative;
+    width: 1024px;
+    height: 162px;
+    display: block;
+    float:left;
+    margin: 0;
+    padding: 0;
+}
+
+.dFooterLogo {
+    width: 1024px;
+    height: 53px;
+    display: block;
+    padding: 0;
+    margin: 27px 0;
+}
+
+    .dFooterLogo ul {
+        padding: 0;
+        margin: 0;
+    }
+
+        .dFooterLogo ul li {
+            display: inline-block;
+            padding: 0;
+            margin: 0 19px;
+        }
+
+.dFooterInfo {
+    text-align: center;
+    line-height: 54px;
+    color: #7d7d7d;
+    font-size: 14px;
+    border-top: 1px #517590 solid;
+}

@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bank>
+	<branch num="" name="請選擇分行.."/>
+	   <branch num="0016" name="新港漁本會"/>
+</bank>

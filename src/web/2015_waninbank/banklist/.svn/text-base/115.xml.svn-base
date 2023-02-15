@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bank>
+	<branch num="" name="請選擇分行.."/>
+   <branch num="0023" name="基隆第二信用合作社廟口分社"/>
+   <branch num="0032" name="基隆第二信用合作社中正區分社"/>
+   <branch num="0041" name="基隆第二信用合作社新店分社"/>
+   <branch num="0050" name="基隆第二信用合作社七堵分社"/>
+	<branch num="0069" name="基隆第二信用合作社安樂分社"/>
+	<branch num="0078" name="基隆第二信用合作社信義分社"/>
+	<branch num="0087" name="基隆第二信用合作社港東分社"/>
+	<branch num="0096" name="基隆第二信用合作社暖暖分社"/>
+	<branch num="0102" name="基隆第二信用合作社安和分社"/>
+	<branch num="0111" name="基隆第二信用合作社銘傳簡易型分社"/>
+	<branch num="0120" name="基隆第二信用合作社百福分社"/>
+	<branch num="0139" name="基隆第二信用合作社基金簡易型分社"/>
+	<branch num="0148" name="基隆第二信用合作社新豐簡易型分社"/>
+	<branch num="0157" name="基隆第二信用合作社復興簡易型分社"/>
+</bank>
+

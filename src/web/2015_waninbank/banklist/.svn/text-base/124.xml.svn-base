@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bank>
+	<branch num="" name="請選擇分行.."/>
+	<branch num="0012" name="宜蘭信用合作社營業部"/>
+	<branch num="0021" name="宜蘭信用合作社復興分社"/>
+	<branch num="0030" name="宜蘭信用合作社東門分社"/>
+	<branch num="0058" name="宜蘭信用合作社頭城分社"/>
+	<branch num="0067" name="宜蘭信用合作社礁溪分社"/>
+</bank>
+

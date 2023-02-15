@@ -1,0 +1,93 @@
+﻿<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="/Content/_img/favicon.ico" rel="shortcut icon" type="image/x-icon" />
+    <title>@ViewBag.Title</title>
+    @Styles.Render("~/Content/css")
+    @Scripts.Render("~/bundles/modernizr")
+    @Scripts.Render("~/Scripts/functionJS")
+
+</head>
+<body>
+    <div class="wrap">
+        <div class="navArea">
+            <div class="container-fluid">
+                <div class="menuBtn">                    
+                    <img src="/Content/_img/Layout/menuBtn.png" />
+                    <div class="menuCloseAnimation"><img src="/Content/_img/nav/closeBtn.png" /></div>
+                </div>
+                <div class="menuArea">
+                    <ul class="navbarArea">
+                        <li class="active"><a class="home" href="/">Home</a></li>
+                        <li><a class="about" href="/Default/AboutUs">About Us</a></li>
+                        <li><a class="games" href="/Default/Index#CasionGames">Casino Games</a></li>
+                        <li><a class="announcement" href="/Default/Announcement">Announcement</a></li>
+                        <li><a class="promtions" href="/Default/Promotions">Promotions</a></li>
+                        <li><a class="introduction" href="/Default/GameIntro">Game Introduction</a></li>
+                        <li><a class="contact" href="/Default/ContactUs">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+
+        @*topArea*@
+        <div class="container-fluid">
+            <div class="mainArea">
+                <a id="logoArea" href="/">
+                    <img class="img-responsive" src="/Content/_img/Layout/logobg.gif" />
+                </a>
+                <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 playnowBtn">
+                    <a href="javascript:void(0);" target="_blank">
+                        <img class="img-responsive BtnShadow" src="/Content/_img/Layout/playnowBtn.png" />
+                    </a>
+                </div>
+                <div class="col-xs-12 col-sm-10 col-sm-offset-1 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2 fbBtn">
+                    <a href="https://www.facebook.com/Lucky-Table-US-1102692443107924/" target="_blank">
+                        <img class="img-responsive BtnShadow" src="/Content/_img/Layout/fbBtn.png" />
+                    </a>
+                </div>
+            </div>
+        </div>
+
+        <div class="container-fluid">
+            @RenderBody()
+        </div>        
+    </div>
+
+    <footer class="footer">
+        <div id="footerArea">
+            <div class="container-fluid">
+                <ul class="footerBtnArea">
+                    <li class="col-xs-4 col-sm-4 col-md-4 col-lg-4"><a href="http://us.luckytablegame.com/Rule.aspx" target="_blank"><img class="img-responsive" src="/Content/_img/Layout/coBtn1.png" /></a></li>
+                    <li class="col-xs-4 col-sm-4 col-md-4 col-lg-4"><a href="http://www.wanin.tw/provision.aspx?l=en&p=2" target="_blank"><img class="img-responsive" src="/Content/_img/Layout/coBtn2.png" /></a></li>
+                    <li class="col-xs-4 col-sm-4 col-md-4 col-lg-4"><a href="http://www.wanin.tw/provision.aspx?l=en&p=1" target="_blank"><img class="img-responsive" src="/Content/_img/Layout/coBtn3.png" /></a></li>
+                </ul>
+                <div class="coLogo"><img class="img-responsive" src="/Content/_img/Layout/coLogo.png" /></div>
+                <div class="coCopyright">Copyright © 2016 Wanin International Inc, All rights reserved</div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="popGames">
+        <div class="container closeBtnArea">
+            <div class="col-xs-12 col-sm-8 col-sm-offset-2 col-md-8 col-md-offset-2 col-lg-8 col-lg-offset-2">
+                <div class="closeBtn">
+                    <img class="img-responsive" src="/Content/_img//Layout/closeBtn.png" />
+                </div>
+                <div class="popGame">
+                    <img id="popGameName" class="img-responsive" src="/Content/_img/popGames/Pandora.png" />
+                    <div class="pop_playnowBtn"><a href="javascript:void(0)" target="_blank"><img class="img-responsive" src="/Content/_img/Layout/playnowBtn.png" /></a></div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div id="mask"></div>    
+    <div id="goTop" class="goTop" onclick="gotop();"><img class="img-responsive" src="~/Content/_img/topBtn.png" /></div>
+    <script>
+        menuSet();
+    </script>
+    @RenderSection("scripts", required: false)
+</body>
+</html>

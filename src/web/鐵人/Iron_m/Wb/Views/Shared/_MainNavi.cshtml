@@ -1,0 +1,24 @@
+﻿@{
+    string errorRouteUrl = Url.RouteUrl("default", new { controller = "Member", action = "alertMsg", txt = "停權中，無法瀏覽頁面!" });
+    bool isPower = true;
+    if (Userinfo.myProfile!=null)
+    {
+        if (Userinfo.myProfile.nologinDisplay != "")
+        {
+            isPower = false;
+        }
+    }
+}
+<div  id="main_navi" >
+    <ul class="reset_ul">
+        <li>
+            <a href="@(isPower ? Url.RouteUrl("default", new { controller = "news", action = "index" }) : errorRouteUrl)" class="@(isPower ? "" : "push_btn")"><i class="fa fa-rss"></i>新聞</a>
+        </li>
+        <li>
+            <a href="@(isPower ? Url.RouteUrl("default", new { controller = "project", action = "index" }) : errorRouteUrl)" class="@(isPower ? "" : "push_btn")"><i class="fa fa-users"></i>專欄</a>
+        </li>
+        <li>
+            <a href="@(isPower ? Url.RouteUrl("default", new { controller = "forum", action = "index" }) : errorRouteUrl)" class="@(isPower ? "" : "push_btn")"><i class="fa fa-list-alt"></i>討論區</a>
+        </li>
+    </ul>
+</div>

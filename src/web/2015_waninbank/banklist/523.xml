@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bank>
+	<branch num="" name="請選擇分行.."/>
+	   <branch num="0015" name="琉球漁本會"/>
+	   <branch num="0037" name="東港漁本會"/>
+	   <branch num="0048" name="林邊漁本會"/>
+	   <branch num="0059" name="林邊漁塭豐"/>
+	   <branch num="0082" name="林邊漁崎峰"/>
+	   <branch num="0118" name="東漁興台"/>
+	   <branch num="0129" name="東漁新園"/>
+</bank>

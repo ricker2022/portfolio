@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bank>
+	<branch num="" name="請選擇分行.."/>
+	<branch num="0019" name="桃園信用合作社營業部"/>
+	<branch num="0028" name="桃園信用合作社大林分社"/>
+	<branch num="0037" name="桃園信用合作社永興分社"/>
+	<branch num="0046" name="桃園信用合作社南華分社"/>
+	<branch num="0055" name="桃園信用合作社介壽分社"/>
+	<branch num="0064" name="桃園信用合作社中山分社"/>
+	<branch num="0073" name="桃園信用合作社永安分社"/>
+	<branch num="0082" name="桃園信用合作社會稽分社"/>
+	<branch num="0091" name="桃園信用合作社莊敬分社"/>
+	<branch num="0107" name="桃園信用合作社大湳分社"/>
+	<branch num="0116" name="桃園信用合作社南崁分社"/>
+</bank>
+

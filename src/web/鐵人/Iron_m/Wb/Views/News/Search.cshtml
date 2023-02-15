@@ -1,0 +1,42 @@
+﻿@using Wb.Models;
+@using Wb.Pager;
+@using Wb.Common;
+@model PagedList<新聞>
+@{    
+    //Dictionary<int, string> type_map = ViewBag.type_map;
+    Dictionary<string, string> type_map = ViewBag.type_map;
+    string keyword = ViewBag.keyword;
+    string title = "";
+}
+<script>   
+    function goSearch() {
+        $('#search_form').submit();
+    }    
+</script>
+
+
+
+<!-- 遊戲選單 -->
+@Html.Partial("_GameCategory") 
+
+<div  class="sub_navi">    
+    <div class="col_8">
+        <form id="search_form" action="@Html.FUrl("Search")"><input type="text" name="k" value="@ViewBag.keyword" class="search_text"/></form>
+    </div>
+    <div class="col_2"><a href="javascript: goSearch();" class="function_btn"><i class="fa fa-search"></i></a></div>
+    <br clear="all"/>    
+</div>
+
+
+
+<ul id="news_list" class="reset_ul" >
+@foreach (新聞 item in Model)
+{
+    title = item.標題.Replace(keyword, "<span class='search_high_line'>" + keyword + "</span>");
+    <li ><a href="@Url.Action("Detail", new { sn = item.新聞流水號})" ><div class="img"><img src="@item.圖片路徑"/></div><h3 class="has_img">《@type_map[item.屬性編號 + "-" + item.論壇識別]》@Html.Raw(title) <div class="news_datetime"> @string.Format("{0:yyyy/MM/d}", item.建立日期)</div></h3></a></li>
+}
+@if(Model.Count>0)
+{
+<a href="#popupPager" class="function_btn black call_pager"><i class="fa fa-ellipsis-h"></i></a>
+}
+</ul>

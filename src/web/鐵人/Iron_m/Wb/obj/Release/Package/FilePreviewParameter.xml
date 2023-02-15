@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<parameters>
+  <parameter name="IIS Web Application Name" description="" value="Iron_m" tags="IisApp">
+    <parameterEntry kind="ProviderPath" scope="IisApp" match="^D:\\htdocs\\Iron_m\\Wb\\obj\\Release\\Package\\PackageTmp$" />
+    <parameterEntry kind="ProviderPath" scope="setAcl" match="^D:\\htdocs\\Iron_m\\Wb\\obj\\Release\\Package\\PackageTmp$" />
+  </parameter>
+  <parameter name="DefaultConnection-Web.config Connection String" description="" value="Data Source=192.168.10.209;Initial Catalog=鐵人論壇;User ID=sa;Password=P@ssw0rd;MultipleActiveResultSets=True;Application Name=EntityFramework" tags="">
+    <parameterEntry kind="XmlFile" scope="D:\\htdocs\\Iron_m\\Wb\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='DefaultConnection']/@connectionString" />
+  </parameter>
+  <parameter name="IronEntities-Web.config Connection String" description="" value="metadata=res://*/Models.Iron.csdl|res://*/Models.Iron.ssdl|res://*/Models.Iron.msl;provider=System.Data.SqlClient;provider connection string=&quot;Data Source=192.168.10.209;Initial Catalog=鐵人論壇;User ID=sa;Password=P@ssw0rd;MultipleActiveResultSets=True;Application Name=EntityFramework&quot;" tags="">
+    <parameterEntry kind="XmlFile" scope="D:\\htdocs\\Iron_m\\Wb\\obj\\Release\\Package\\PackageTmp\\Web\.config$" match="/configuration/connectionStrings/add[@name='IronEntities']/@connectionString" />
+  </parameter>
+</parameters>

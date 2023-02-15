@@ -1,0 +1,42 @@
+﻿@using Wb.Models;
+@using Wb.Common;
+@model 會員
+@{
+    業餘戰隊 ateam = ViewBag.ateam;
+}
+<div  class="sub_navi" >
+    <div class="col_2"><a href="javascript:window.history.back()" class="back_btn"><i class="fa fa-arrow-left"></i></a></div>
+    <div class="col_8 category_title" >會員資料</div>
+    <br clear="all"/>
+</div>
+<div id="member_name">@Model.暱稱</div>
+<div id="member_pic">
+    @Html.MemberIcon(Model)   
+</div>
+
+@if (ViewBag.add_friend_btn == 1)
+{
+ <ul class="reply_btn_group reset_ul">                     
+    <li class="two_col"><a href="@Url.RouteUrl("Default", new { controller = "member",action="msgbox",molo=WbUtil.EncryptDES(Model.MoloKey)})" class="reply_btn">聊天</a></li>
+    <li class="two_col"><a href="@Html.Raw(Url.RouteUrl("Default", new { action="AjaxAddToFriend"}))"  sn="@WbUtil.EncryptDES(Model.MoloKey)" class="reply_btn join_add_friend">加入好友</a></li>
+</ul>       
+}
+else
+{
+    <a href="@Url.RouteUrl("Default", new { controller = "member",action="msgbox",molo=WbUtil.EncryptDES(Model.MoloKey)})" class="reply_btn">聊天</a>
+}
+<form>
+<table  id="member_info_table" cellpadding="0" cellspacing="0" >
+    <tbody>
+        <tr>
+            <td >稱號</td>
+            <td >@Model.特殊稱號</td>
+        </tr>
+        <tr>
+            <td >戰隊</td>
+            <td >@ateam.戰隊隊名</td>
+        </tr>         
+    </tbody>
+</table>
+                
+</form>

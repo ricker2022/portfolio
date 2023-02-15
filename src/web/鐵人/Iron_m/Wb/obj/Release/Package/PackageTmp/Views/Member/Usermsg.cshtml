@@ -1,0 +1,33 @@
+﻿@using Wb.Models;
+@using Wb.Pager;
+@using Wb.Common;
+@model PagedList<Friend>
+<div  class="sub_navi list_row_title" >
+    <div class="col_8">即時訊息</div>
+    <div class="col_2"><a href="#popupPager" class="function_btn call_pager"><i class="fa fa-sort"></i></a></div>
+    <br clear="all"/>
+</div>
+
+<ul id="news_list" class="reset_ul" >
+@foreach (Friend item in Model)
+{
+
+    
+    <li >
+        <a href="@Url.RouteUrl("Default", new { controller = "member",action="msgbox",molo=WbUtil.EncryptDES(item.member.MoloKey)})">
+            <div class="img member">
+                <img src="http://w3.ironforum.com.tw/icon/@item.member.Icon名稱" onerror="this.src='/upload/website/default.png'" />            
+            </div>
+            <h3 class="has_img">@item.member.暱稱</h3>
+            <div class="chat_message">@item.LastMessage</div>
+            <div class="chat_date">@string.Format("{0:yyyy/MM/d}", item.LastTime)</div>            
+            @if(item.hasMessage)
+            {               
+                <div class="new_attention"><i class="fa fa-bell-o"></i></div>
+            }
+            
+        </a>
+    </li>
+}
+
+</ul>

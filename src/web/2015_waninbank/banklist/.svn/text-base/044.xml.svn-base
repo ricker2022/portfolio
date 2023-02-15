@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bank>
+	<branch num="" name="請選擇分行.."/>
+	   <branch num="0028" name="亞洲信託投資公司業務部"/>
+        <branch num="0039" name="亞洲信託投資公司信託部"/>
+	   <branch num="0040" name="亞洲信託投資公司台北分公司"/>
+        <branch num="0051" name="亞洲信託投資公司中壢分公司"/>
+        <branch num="0062" name="亞洲信託投資公司台中分公司"/>
+        <branch num="0073" name="亞洲信託投資公司嘉義分公司"/>
+        <branch num="0084" name="亞洲信託投資公司台南分公司"/>
+        <branch num="0095" name="亞洲信託投資公司高雄分公司"/>
+	         </bank>
+

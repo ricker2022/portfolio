@@ -1,0 +1,66 @@
+﻿<%@ Master Language="C#" AutoEventWireup="true" CodeFile="Master.master.cs" Inherits="Master" %>
+
+<%@ Register Src="~/_uc/menu.ascx" TagPrefix="uc1" TagName="menu" %>
+
+
+<!DOCTYPE html>
+
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head runat="server">
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title>鉄人盃國際賽</title>
+
+    <link href="_css/reset.css" rel="stylesheet" />
+    <link href="_css/main.css" rel="stylesheet" />
+    <script src="_js/jquery-1.10.2.min.js"></script>
+    <asp:ContentPlaceHolder ID="head" runat="server">
+    </asp:ContentPlaceHolder>
+</head>
+<body>
+    <form id="form1" runat="server">
+        <div id="wrapper">
+            <div id="header">
+                <a id="header_logo" href="Default.aspx" title="鉄人盃國際賽"></a>
+                <uc1:menu runat="server" ID="menu" />
+            </div>
+
+            
+                <asp:ContentPlaceHolder ID="ContentPlaceHolder1" runat="server">
+                    <div id="main"></div>
+                </asp:ContentPlaceHolder>
+            
+
+        </div>
+
+        <div id="footer">
+            <div class="footer_S">
+                <ul>
+                    <li><a href="https://www.facebook.com/ironforum"><img src="_img/footerS01.png" /></a></li>
+                    <li><a href="https://www.youtube.com/channel/UC9GWwB__9ry9i66Tq8lSxwQ"><img src="_img/footerS02.png" /></a></li>
+                    <li><a href="http://www.twitch.tv/ironforum"><img src="_img/footerS03.png" /></a></li>
+                </ul>
+            </div>
+            <div class="footer_C">
+                <ul>
+                    <li>
+                        <a href="http://www.waninbank.com.tw/waninIndex.aspx"><img src="_img/footerC01.png" /></a></li>
+                    <li>
+                        <a href="http://www.ironforum.com.tw/"><img src="_img/footerC02.png" /></a></li>
+                    <li>
+                        <a href="https://www.yoe.com.tw/"><img src="_img/footerC03.png" /></a></li>
+                    <li>
+                        <a href="http://tw.blizzard.com/zh-tw/"><img src="_img/footerC04.png" /></a></li>
+                    <li>
+                        <a href="http://www.zowiegear.com/"><img src="_img/footerC05.png" /></a></li>
+                    <li>
+                        <a href="http://www.benq.com.tw/"><img src="_img/footerC06.png" /></a></li>
+                    <li>
+                        <a href="http://tw.msi.com/"><img src="_img/footerC07.png" /></a></li>
+                </ul>
+            </div>
+            <div class="footer_Contact"><a href="contact.aspx"><img src="_img/footerContact.png" /></a></div>
+            <div class="footer_Share"><a href=""><img src="_img/footerShare.png" /></a></div>
+        </div>
+    </form>
+</body>
+</html>

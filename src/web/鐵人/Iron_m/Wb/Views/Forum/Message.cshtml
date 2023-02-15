@@ -1,0 +1,63 @@
+﻿@using Wb.Common;
+@{
+    string routeUrl = Url.RouteUrl("default", new { controller = "forum", action = "Detail", asn = ViewBag.asn });
+    if (Userinfo.myProfile != null && Userinfo.myProfile.nopostDisplay != "")
+    {
+        Response.Redirect(routeUrl);
+    }
+}
+<script>
+    
+    function trim(strvalue) {
+        ptntrim = /(^\s*)|(\s*$)/g;
+        return strvalue.replace(ptntrim, "");
+    }
+
+    function ValidEmail(emailtoCheck) {
+        emailRule = "/^\w+((-\w+)|(\.\w+))*\@@[A-Za-z0-9]+((\.|-)[A-Za-z0-9]+)*\.[A-Za-z]+$/";
+
+        var regExp = /^[^@@^\s]+@@[^\.@@^\s]+(\.[^\.@@^\s]+)+$/;
+        if (emailtoCheck.match(regExp))
+            return true;
+        else
+            return false;
+    }
+
+    function CheckField() {
+        is_valid = true;
+
+        var text_area_return = check_textarea_length($('#message_textarea'), 70);
+        if (!text_area_return) {
+            $('#error_msg').html('字元超過70字');
+            is_valid = false;
+            return;
+        }
+        else if (trim($('#message_textarea').val()).length == 0) {
+            $('#error_msg').html('回覆字數太少');
+            $('#message_textarea').focus();
+            is_valid = false;
+            return;
+        }
+        else {
+            $('#error_msg').html('');
+        }
+
+
+        if (is_valid) {
+            $('#reply_form').submit();
+        }
+    }
+</script>
+<div  class="sub_navi" data-role="none">
+    <div class="col_1"><a href="@Html.FUrl("Detail","",null,"rsn")" class="back_btn"  rel="external"><i class="fa fa-arrow-left"></i></a></div>
+    <div class="col_9 category_title" >留言</div>
+    <br clear="all"/>
+</div>          
+<form action="@Html.FUrl("Message")" id="reply_form" method="post">
+    <textarea id="message_textarea" name="reply_message" data-role="none"></textarea>
+    <input type="hidden" name="asn" value="@ViewBag.asn" />
+    <input type="hidden" name="rsn" value="@ViewBag.rsn" />
+    <div id="error_msg" class="error_message"></div>
+    <a href="javascript: CheckField();" rel="external" class="reply_btn" >留言</a>
+    @Html.AntiForgeryToken()
+</form>  

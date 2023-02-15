@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<bank>
+	<branch num="" name="請選擇分行.."/>
+	   <branch num="0018" name="板農本會"/>
+	   <branch num="0029" name="板農後埔"/>
+	   <branch num="0030" name="板農埔墘"/>
+	   <branch num="0041" name="板農社後"/>
+	   <branch num="0052" name="板農江翠"/>
+	   <branch num="0063" name="板農溪崑"/>
+	   <branch num="0074" name="板農浮洲"/>
+	   <branch num="0111" name="板農新埔"/>
+	   <branch num="0122" name="板農文化"/>
+</bank>
